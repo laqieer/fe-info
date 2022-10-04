@@ -94,7 +94,7 @@ def dump_room_sprites(roms: RomDict) -> None:
                     layout_count = check_flatten_int(layout_count)
                     label = f"{area_name}_{room:02X}_SpriteLayout{i}"
                     layouts.append((label, layout_addr, layout_count))
-        layouts.sort(key=lambda x: x[1]["U"])
+        layouts.sort(key=lambda x: x[1]["J"])
         for entry in layouts:
             label, addr, count = entry
             y = yaml_data_entry(label, label, RSE, addr, count)
@@ -104,9 +104,9 @@ def dump_room_sprites(roms: RomDict) -> None:
 def dump_pcm(roms: RomDict) -> None:
     addrs = []
 
-    mf_u = roms[GAME_MF][REGION_U]
-    mf_e = roms[GAME_MF][REGION_E]
-    mf_j = roms[GAME_MF][REGION_J]
+    mf_u = roms[GAME_FE6][REGION_U]
+    mf_e = roms[GAME_FE6][REGION_E]
+    mf_j = roms[GAME_FE6][REGION_J]
 
     for addr in addrs:
         size = mf_u.read32(addr + 0xC) + 0x10
@@ -124,8 +124,8 @@ def dump_pcm(roms: RomDict) -> None:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("rom_dir", type=str)
-    parser.add_argument("-g", "--game", type=str, choices=["mf", "zm"])
-    parser.add_argument("-r", "--region", type=str, choices=["U", "E", "J"])
+    parser.add_argument("-g", "--game", type=str, choices=["fe6", "fe8"])
+    parser.add_argument("-r", "--region", type=str, choices=["J", "U", "E"])
     args = parser.parse_args()
 
     # read rom files

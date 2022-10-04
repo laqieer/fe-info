@@ -2,9 +2,9 @@
   desc: Interrupt setup
   label: InterruptSetup
   addr:
+    J: 0xC0
     U: 0xC0
     E: 0xC0
-    J: 0xC0
   size: 0x44
   mode: arm
   params: null
@@ -13,9 +13,9 @@
   desc: Interrupt code
   label: InterruptCode
   addr:
+    J: 0x104
     U: 0x104
     E: 0x104
-    J: 0x104
   size: 0x12C
   mode: arm
   params: null
@@ -24,13 +24,13 @@
   desc: Main game loop
   label: MainGameLoop
   addr:
+    J: 0x230
     U: 0x230
     E: 0x230
-    J: 0x230
   size:
+    J: 0x588
     U: 0x568
     E: 0x568
-    J: 0x588
   mode: thumb
   params: null
   return: null
@@ -38,13 +38,13 @@
   desc: Initialize game
   label: InitGame
   addr:
+    J: 0x7B8
     U: 0x798
     E: 0x798
-    J: 0x7B8
   size:
+    J: 0x120
     U: 0x118
     E: 0x118
-    J: 0x120
   mode: thumb
   params: null
   return: null
@@ -52,9 +52,9 @@
   desc: Empty function for V-Blank code
   label: EmptyFunctionForVBlankCode
   addr:
+    J: 0x8D8
     U: 0x8B0
     E: 0x8B0
-    J: 0x8D8
   size: 0x4
   mode: thumb
   params: null
@@ -63,9 +63,9 @@
   desc: Soft reset check
   label: SoftResetCheck
   addr:
+    J: 0x8DC
     U: 0x8B4
     E: 0x8B4
-    J: 0x8DC
   size: 0x34
   mode: thumb
   params: null
@@ -74,9 +74,9 @@
   desc: Empty function (soft reset)
   label: EmptyFunction_SoftReset
   addr:
+    J: 0x910
     U: 0x8E8
     E: 0x8E8
-    J: 0x910
   size: 0x4
   mode: thumb
   params: null
@@ -85,13 +85,13 @@
   desc: Soft reset
   label: SoftReset
   addr:
+    J: 0x914
     U: 0x8EC
     E: 0x8EC
-    J: 0x914
   size:
+    J: 0x108
     U: 0x100
     E: 0x100
-    J: 0x108
   mode: thumb
   params: null
   return: null
@@ -99,9 +99,9 @@
   desc: Call LZ77UnComp16Bit
   label: CallLZ77UnComp16Bit
   addr:
+    J: 0xA1C
     U: 0x9EC
     E: 0x9EC
-    J: 0xA1C
   size: 0xC
   mode: thumb
   params:
@@ -114,9 +114,9 @@
   desc: Call LZ77UnComp8Bit
   label: CallLZ77UnComp8Bit
   addr:
+    J: 0xA28
     U: 0x9F8
     E: 0x9F8
-    J: 0xA28
   size: 0xC
   mode: thumb
   params:
@@ -129,9 +129,9 @@
   desc: Call DivArm
   label: CallDivArm
   addr:
+    J: 0xA34
     U: 0xA04
     E: 0xA04
-    J: 0xA34
   size: 0x18
   mode: thumb
   params: null
@@ -140,9 +140,9 @@
   desc: Call SoundBias
   label: CallSoundBias
   addr:
+    J: 0xA4C
     U: 0xA1C
     E: 0xA1C
-    J: 0xA4C
   size: 0x10
   mode: thumb
   params: null
@@ -151,9 +151,9 @@
   desc: Update input
   label: UpdateInput
   addr:
+    J: 0xA5C
     U: 0xA2C
     E: 0xA2C
-    J: 0xA5C
   size: 0x38
   mode: thumb
   params: null
@@ -162,9 +162,9 @@
   desc: Clear RAM
   label: ClearRAM
   addr:
+    J: 0xA94
     U: 0xA64
     E: 0xA64
-    J: 0xA94
   size: 0x48
   mode: thumb
   params: null
@@ -173,9 +173,9 @@
   desc: Load interrupt code
   label: LoadInterruptCode
   addr:
+    J: 0xADC
     U: 0xAAC
     E: 0xAAC
-    J: 0xADC
   size: 0x30
   mode: thumb
   params: null
@@ -184,9 +184,9 @@
   desc: Reset free OAM
   label: ResetFreeOam
   addr:
+    J: 0xB0C
     U: 0xADC
     E: 0xADC
-    J: 0xB0C
   size: 0x34
   mode: thumb
   params: null
@@ -195,9 +195,9 @@
   desc: Fixed-point multiply
   label: FixedPointMultiply
   addr:
+    J: 0xB40
     U: 0xB10
     E: 0xB10
-    J: 0xB40
   size: 0x1C
   mode: thumb
   params:
@@ -214,9 +214,9 @@
   desc: Fixed-point divide
   label: FixedPointDivide
   addr:
+    J: 0xB5C
     U: 0xB2C
     E: 0xB2C
-    J: 0xB5C
   size: 0x18
   mode: thumb
   params:
@@ -233,9 +233,9 @@
   desc: Fixed-point inverse
   label: FixedPointInverse
   addr:
+    J: 0xB74
     U: 0xB44
     E: 0xB44
-    J: 0xB74
   size: 0x18
   mode: thumb
   params:
@@ -249,9 +249,9 @@
   desc: Call V-Blank code
   label: CallVBlankCode
   addr:
+    J: 0xB8C
     U: 0xB5C
     E: 0xB5C
-    J: 0xB8C
   size: 0x2C
   mode: thumb
   params: null
@@ -260,9 +260,9 @@
   desc: Set V-Blank code pointer
   label: SetVBlankCodePtr
   addr:
+    J: 0xBB8
     U: 0xB88
     E: 0xB88
-    J: 0xBB8
   size: 0x1C
   mode: thumb
   params:
@@ -273,9 +273,9 @@
   desc: Call H-Blank code
   label: CallHBlankCode
   addr:
+    J: 0xBD4
     U: 0xBA4
     E: 0xBA4
-    J: 0xBD4
   size: 0x24
   mode: thumb
   params: null
@@ -284,9 +284,9 @@
   desc: Set H-Blank code pointer
   label: SetHBlankCodePtr
   addr:
+    J: 0xBF8
     U: 0xBC8
     E: 0xBC8
-    J: 0xBF8
   size: 0x1C
   mode: thumb
   params:
@@ -297,9 +297,9 @@
   desc: Call V-Count code
   label: CallVCountCode
   addr:
+    J: 0xC14
     U: 0xBE4
     E: 0xBE4
-    J: 0xC14
   size: 0x24
   mode: thumb
   params: null
@@ -308,9 +308,9 @@
   desc: Set V-Count code pointer
   label: SetVCountCodePtr
   addr:
+    J: 0xC38
     U: 0xC08
     E: 0xC08
-    J: 0xC38
   size: 0x1C
   mode: thumb
   params:
@@ -321,9 +321,9 @@
   desc: Empty function for blanking code
   label: EmptyFunctionForBlankingCode
   addr:
+    J: 0xC54
     U: 0xC24
     E: 0xC24
-    J: 0xC54
   size: 0x4
   mode: thumb
   params: null
@@ -332,9 +332,9 @@
   desc: Empty function (sound related?)
   label: EmptyFunction_SoundRelated
   addr:
+    J: 0x2238
     U: 0x21F0
     E: 0x21F0
-    J: 0x2238
   size: 0x4
   mode: thumb
   params: null
@@ -343,9 +343,9 @@
   desc: Play sound 1
   label: PlaySound1
   addr:
+    J: 0x2754
     U: 0x270C
     E: 0x270C
-    J: 0x2754
   size: 0x2C
   mode: thumb
   params:
@@ -356,9 +356,9 @@
   desc: Play sound 2
   label: PlaySound2
   addr:
+    J: 0x2780
     U: 0x2738
     E: 0x2738
-    J: 0x2780
   size: 0x3C
   mode: thumb
   params:
@@ -369,9 +369,9 @@
   desc: Play sound 3
   label: PlaySound3
   addr:
+    J: 0x289C
     U: 0x2854
     E: 0x2854
-    J: 0x289C
   size: 0x40
   mode: thumb
   params:
@@ -382,9 +382,9 @@
   desc: Play sound 4
   label: PlaySound4
   addr:
+    J: 0x28DC
     U: 0x2894
     E: 0x2894
-    J: 0x28DC
   size: 0x68
   mode: thumb
   params:
@@ -395,9 +395,9 @@
   desc: DMA transfer
   label: DmaTransfer
   addr:
+    J: 0x2F64
     U: 0x2F1C
     E: 0x2F1C
-    J: 0x2F64
   size: 0xD0
   mode: thumb
   params:
@@ -416,9 +416,9 @@
   desc: Empty function (music related?)
   label: EmptyFunction_MusicRelated
   addr:
+    J: 0x34F8
     U: 0x3494
     E: 0x3494
-    J: 0x34F8
   size: 0x4
   mode: thumb
   params: null
@@ -427,9 +427,9 @@
   desc: Check set new music track
   label: CheckSetNewMusicTrack
   addr:
+    J: 0x34FC
     U: 0x3498
     E: 0x3498
-    J: 0x34FC
   size: 0x5C
   mode: thumb
   params:
@@ -440,9 +440,9 @@
   desc: Check play new music track
   label: CheckPlayNewMusicTrack
   addr:
+    J: 0x3558
     U: 0x34F4
     E: 0x34F4
-    J: 0x3558
   size: 0x44
   mode: thumb
   params: null
@@ -451,9 +451,9 @@
   desc: Play music
   label: PlayMusic
   addr:
+    J: 0x359C
     U: 0x3538
     E: 0x3538
-    J: 0x359C
   size: 0x18C
   mode: thumb
   params:
@@ -466,9 +466,9 @@
   desc: Fade out music
   label: FadeOutMusic
   addr:
+    J: 0x3754
     U: 0x36F0
     E: 0x36F0
-    J: 0x3754
   size: 0x3C
   mode: thumb
   params:
@@ -479,9 +479,9 @@
   desc: Play character appearing sound
   label: PlayCharacterAppearingSound
   addr:
+    J: 0x3D8C
     U: 0x3D28
     E: 0x3D28
-    J: 0x3D8C
   size: 0x40
   mode: thumb
   params:
@@ -494,9 +494,9 @@
   desc: Call sound code B
   label: CallSoundCodeB
   addr:
+    J: 0x3DCC
     U: 0x3D68
     E: 0x3D68
-    J: 0x3DCC
   size: 0x10
   mode: thumb
   params:
@@ -515,9 +515,9 @@
   desc: Sound code B
   label: SoundCodeB
   addr:
+    J: 0x3DDC
     U: 0x3D78
     E: 0x3D78
-    J: 0x3DDC
   size: 0x94
   mode: arm
   params:
@@ -536,9 +536,9 @@
   desc: Call sound code C
   label: CallSoundCodeC
   addr:
+    J: 0x3E70
     U: 0x3E0C
     E: 0x3E0C
-    J: 0x3E70
   size: 0x10
   mode: thumb
   params:
@@ -555,9 +555,9 @@
   desc: Sound code C
   label: SoundCodeC
   addr:
+    J: 0x3E80
     U: 0x3E1C
     E: 0x3E1C
-    J: 0x3E80
   size: 0xA0
   mode: arm
   params:
@@ -574,9 +574,9 @@
   desc: Call sound code A
   label: CallSoundCodeA
   addr:
+    J: 0x3F20
     U: 0x3EBC
     E: 0x3EBC
-    J: 0x3F20
   size: 0x10
   mode: thumb
   params:
@@ -593,9 +593,9 @@
   desc: Sound code A
   label: SoundCodeA
   addr:
+    J: 0x3F30
     U: 0x3ECC
     E: 0x3ECC
-    J: 0x3F30
   size: 0x648
   mode: arm
   params:
@@ -612,9 +612,9 @@
   desc: Call get note frequency
   label: CallGetNoteFrenquency
   addr:
+    J: 0x4578
     U: 0x4514
     E: 0x4514
-    J: 0x4578
   size: 0x4
   mode: thumb
   params:
@@ -629,9 +629,9 @@
   desc: Get note frequency
   label: GetNoteFrequency
   addr:
+    J: 0x457C
     U: 0x4518
     E: 0x4518
-    J: 0x457C
   size: 0x18
   mode: arm
   params:
@@ -646,9 +646,9 @@
   desc: CpuFastSet
   label: CpuFastSet
   addr:
+    J: 0x4C00
     U: 0x4B9C
     E: 0x4B9C
-    J: 0x4C00
   size: 0x4
   mode: thumb
   params:
@@ -663,9 +663,9 @@
   desc: CpuSet
   label: CpuSet
   addr:
+    J: 0x4C04
     U: 0x4BA0
     E: 0x4BA0
-    J: 0x4C04
   size: 0x4
   mode: thumb
   params:
@@ -680,9 +680,9 @@
   desc: DivArm quotient
   label: DivArmQuotient
   addr:
+    J: 0x4C08
     U: 0x4BA4
     E: 0x4BA4
-    J: 0x4C08
   size: 0x4
   mode: thumb
   params:
@@ -697,9 +697,9 @@
   desc: DivArm remainder
   label: DivArmRemainder
   addr:
+    J: 0x4C0C
     U: 0x4BA8
     E: 0x4BA8
-    J: 0x4C0C
   size: 0x8
   mode: thumb
   params:
@@ -714,9 +714,9 @@
   desc: LZ77 uncompress 16-bit
   label: LZ77UnComp16Bit
   addr:
+    J: 0x4C14
     U: 0x4BB0
     E: 0x4BB0
-    J: 0x4C14
   size: 0x4
   mode: thumb
   params:
@@ -729,9 +729,9 @@
   desc: LZ77 uncompress 8-bit
   label: LZ77UnComp8Bit
   addr:
+    J: 0x4C18
     U: 0x4BB4
     E: 0x4BB4
-    J: 0x4C18
   size: 0x4
   mode: thumb
   params:
@@ -744,9 +744,9 @@
   desc: MidiKey2Freq
   label: MidiKey2Freq
   addr:
+    J: 0x4C1C
     U: 0x4BB8
     E: 0x4BB8
-    J: 0x4C1C
   size: 0x4
   mode: thumb
   params:
@@ -763,9 +763,9 @@
   desc: SoundBias 0
   label: SoundBias0
   addr:
+    J: 0x4C20
     U: 0x4BBC
     E: 0x4BBC
-    J: 0x4C20
   size: 0x8
   mode: thumb
   params: null
@@ -774,9 +774,9 @@
   desc: SoundBias 1
   label: SoundBias1
   addr:
+    J: 0x4C28
     U: 0x4BC4
     E: 0x4BC4
-    J: 0x4C28
   size: 0x8
   mode: thumb
   params: null
@@ -785,9 +785,9 @@
   desc: Copy Samus data
   label: CopySamusData
   addr:
+    J: 0x4DC4
     U: 0x4D60
     E: 0x4D60
-    J: 0x4DC4
   size: 0x68
   mode: thumb
   params: null
@@ -796,9 +796,9 @@
   desc: Set suit palette
   label: SetSuitPalette
   addr:
+    J: 0x4E88
     U: 0x4E24
     E: 0x4E24
-    J: 0x4E88
   size: 0x44
   mode: thumb
   params:
@@ -815,9 +815,9 @@
   desc: Set Samus gravity-based velocity and SA-X suit colors
   label: SetSamusGravityBasedVelocityAndSaxSuitColors
   addr:
+    J: 0x4ECC
     U: 0x4E68
     E: 0x4E68
-    J: 0x4ECC
   size: 0x184
   mode: thumb
   params: null
@@ -828,9 +828,9 @@
   desc: Call update arm cannon OAM
   label: CallUpdateArmCannonOam
   addr:
+    J: 0x516C
     U: 0x5108
     E: 0x5108
-    J: 0x516C
   size: 0x30
   mode: thumb
   params: null
@@ -839,9 +839,9 @@
   desc: Samus pose handler for beam charging, bombs, and power bombs
   label: SamusPoseHandler_BeamCharging_Bombs_PBs
   addr:
+    J: 0x5DA8
     U: 0x5D44
     E: 0x5D44
-    J: 0x5DA8
   size: 0x1A8
   mode: thumb
   params: null
@@ -852,9 +852,9 @@
   desc: Check Samus standing on drop-through clipdata
   label: CheckSamusStandingOnDropThroughClipdata
   addr:
+    J: 0x5F50
     U: 0x5EEC
     E: 0x5EEC
-    J: 0x5F50
   size: 0x74
   mode: thumb
   params: null
@@ -865,9 +865,9 @@
   desc: Set forced movement flag for jumping or dropping through clipdata
   label: SetForcedMovementFlagForJumpingDroppingThroughClipdata
   addr:
+    J: 0x5FC4
     U: 0x5F60
     E: 0x5F60
-    J: 0x5FC4
   size: 0x4C
   mode: thumb
   params: null
@@ -878,9 +878,9 @@
   desc: Samus pose handler for diffusion charging, missiles, and weapon icons
   label: SamusPoseHandler_DiffusionCharging_Missiles_WeaponIcons
   addr:
+    J: 0x6010
     U: 0x5FAC
     E: 0x5FAC
-    J: 0x6010
   size: 0x1C4
   mode: thumb
   params: null
@@ -891,9 +891,9 @@
   desc: Check play low health sound
   label: CheckPlayLowHealthSound
   addr:
+    J: 0xC1D4
     U: 0xC134
     E: 0xC134
-    J: 0xC1D4
   size: 0x40
   mode: thumb
   params: null
@@ -902,9 +902,9 @@
   desc: Update arm cannon OAM
   label: UpdateArmCannonOam
   addr:
+    J: 0xC28C
     U: 0xC1EC
     E: 0xC1EC
-    J: 0xC28C
   size: 0x264
   mode: thumb
   params:
@@ -915,9 +915,9 @@
   desc: Initialize Samus data
   label: InitSamusData
   addr:
+    J: 0xC4F0
     U: 0xC450
     E: 0xC450
-    J: 0xC4F0
   size: 0x144
   mode: thumb
   params: null
@@ -926,9 +926,9 @@
   desc: Copy demo button input
   label: CopyDemoButtonInput
   addr:
+    J: 0xCBB8
     U: 0xCB18
     E: 0xCB18
-    J: 0xCBB8
   size: 0x34
   mode: thumb
   params: null
@@ -937,9 +937,9 @@
   desc: Set SA-X pose
   label: SetSaxPose
   addr:
+    J: 0xD164
     U: 0xD0C4
     E: 0xD0C4
-    J: 0xD164
   size: 0xAC
   mode: thumb
   params:
@@ -951,9 +951,9 @@
   desc: In-game subroutine
   label: InGameSubroutine
   addr:
+    J: 0xDDD8
     U: 0xDD24
     E: 0xDD24
-    J: 0xDDD8
   size: 0x234
   mode: thumb
   params: null
@@ -964,9 +964,9 @@
   desc: Set V-Blank code for in-game
   label: SetVBlankCodeForInGame
   addr:
+    J: 0xE00C
     U: 0xDF58
     E: 0xDF58
-    J: 0xE00C
   size: 0x3C
   mode: thumb
   params: null
@@ -975,9 +975,9 @@
   desc: Update Samus/SA-X graphics
   label: UpdateSamusAndSaxGfx
   addr:
+    J: 0xE048
     U: 0xDF94
     E: 0xDF94
-    J: 0xE048
   size: 0x188
   mode: thumb
   params:
@@ -988,9 +988,9 @@
   desc: V-Blank code during in-game loads
   label: VBlankCodeDuringInGameLoads
   addr:
+    J: 0xE1D0
     U: 0xE11C
     E: 0xE11C
-    J: 0xE1D0
   size: 0x150
   mode: thumb
   params: null
@@ -999,9 +999,9 @@
   desc: V-Blank code during in-game
   label: VBlankCodeDuringInGame
   addr:
+    J: 0xE39C
     U: 0xE2E8
     E: 0xE2E8
-    J: 0xE39C
   size: 0x12C
   mode: thumb
   params: null
@@ -1010,9 +1010,9 @@
   desc: Start title screen demo
   label: StartTitleScreenDemo
   addr:
+    J: 0xE4D4
     U: 0xE420
     E: 0xE420
-    J: 0xE4D4
   size: 0x264
   mode: thumb
   params: null
@@ -1021,9 +1021,9 @@
   desc: Update sprite random number
   label: UpdateSpriteRandomNumber
   addr:
+    J: 0xE85C
     U: 0xE7A8
     E: 0xE7A8
-    J: 0xE85C
   size: 0x40
   mode: thumb
   params:
@@ -1034,9 +1034,9 @@
   desc: Load sprite data for room
   label: LoadSpriteDataForRoom
   addr:
+    J: 0xF768
     U: 0xF6B4
     E: 0xF6B4
-    J: 0xF768
   size: 0xB8
   mode: thumb
   params: null
@@ -1045,9 +1045,9 @@
   desc: Load spriteset
   label: LoadSpriteset
   addr:
+    J: 0xF820
     U: 0xF76C
     E: 0xF76C
-    J: 0xF820
   size: 0x140
   mode: thumb
   params: null
@@ -1056,9 +1056,9 @@
   desc: Load new sprite graphics
   label: LoadNewSpriteGfx
   addr:
+    J: 0xF960
     U: 0xF8AC
     E: 0xF8AC
-    J: 0xF960
   size: 0x44
   mode: thumb
   params:
@@ -1074,9 +1074,9 @@
   desc: Load new sprite palette
   label: LoadNewSpritePalette
   addr:
+    J: 0xF9A4
     U: 0xF8F0
     E: 0xF8F0
-    J: 0xF9A4
   size: 0x40
   mode: thumb
   params:
@@ -1092,9 +1092,9 @@
   desc: Clear sprite data
   label: ClearSpriteData
   addr:
+    J: 0xF9E4
     U: 0xF930
     E: 0xF930
-    J: 0xF9E4
   size: 0x3C
   mode: thumb
   params: null
@@ -1103,9 +1103,9 @@
   desc: Load room sprites
   label: LoadRoomSprites
   addr:
+    J: 0xFA20
     U: 0xF96C
     E: 0xF96C
-    J: 0xFA20
   size: 0x48
   mode: thumb
   params: null
@@ -1114,9 +1114,9 @@
   desc: Initialize primary sprite
   label: InitPrimarySprite
   addr:
+    J: 0xFA68
     U: 0xF9B4
     E: 0xF9B4
-    J: 0xFA68
   size: 0x12C
   mode: thumb
   params:
@@ -1133,9 +1133,9 @@
   desc: Spawn new secondary sprite
   label: SpawnNewSecondarySprite
   addr:
+    J: 0xFB94
     U: 0xFAE0
     E: 0xFAE0
-    J: 0xFB94
   size: 0xE8
   mode: thumb
   params:
@@ -1162,9 +1162,9 @@
   desc: Spawn new primary sprite
   label: SpawnNewPrimarySprite
   addr:
+    J: 0xFC7C
     U: 0xFBC8
     E: 0xFBC8
-    J: 0xFC7C
   size: 0xDC
   mode: thumb
   params:
@@ -1190,9 +1190,9 @@
   desc: Spawn new X parasite
   label: SpawnNewXParasite
   addr:
+    J: 0xFD58
     U: 0xFCA4
     E: 0xFCA4
-    J: 0xFD58
   size: 0xEC
   mode: thumb
   params:
@@ -1235,13 +1235,13 @@
   desc: Take damage from sprite
   label: TakeDamageFromSprite
   addr:
+    J: 0xFEF8
     U: 0xFE18
     E: 0xFE18
-    J: 0xFEF8
   size:
+    J: 0x124
     U: 0x110
     E: 0x110
-    J: 0x124
   mode: thumb
   params:
   - desc: Knockback flag
@@ -1255,9 +1255,9 @@
   desc: Check objects touching
   label: CheckObjectsTouching
   addr:
+    J: 0x1030C
     U: 0x101D0
     E: 0x101D0
-    J: 0x1030C
   size: 0x50
   mode: thumb
   params:
@@ -1284,9 +1284,9 @@
   desc: Samus and sprite collision
   label: SamusAndSpriteCollision
   addr:
+    J: 0x1035C
     U: 0x10220
     E: 0x10220
-    J: 0x1035C
   size: 0xE38
   mode: thumb
   params: null
@@ -1295,9 +1295,9 @@
   desc: Check vertical collision at position
   label: CheckVerticalCollisionAtPosition
   addr:
+    J: 0x11194
     U: 0x11058
     E: 0x11058
-    J: 0x11194
   size: 0x11C
   mode: thumb
   params:
@@ -1312,9 +1312,9 @@
   desc: Check vertical collision at position (account for slopes)
   label: CheckVerticalCollisionAtPosition_Slopes
   addr:
+    J: 0x112B0
     U: 0x11174
     E: 0x11174
-    J: 0x112B0
   size: 0x128
   mode: thumb
   params:
@@ -1329,9 +1329,9 @@
   desc: Check collision at position
   label: CheckCollisionAtPosition
   addr:
+    J: 0x114CC
     U: 0x11390
     E: 0x11390
-    J: 0x114CC
   size: 0x98
   mode: thumb
   params:
@@ -1344,9 +1344,9 @@
   desc: Enemy falling
   label: EnemyFalling
   addr:
+    J: 0x11564
     U: 0x11428
     E: 0x11428
-    J: 0x11564
   size: 0x70
   mode: thumb
   params: null
@@ -1355,9 +1355,9 @@
   desc: Make sprite face Samus (X-flip)
   label: MakeSpriteFaceSamus_XFlip
   addr:
+    J: 0x11678
     U: 0x1153C
     E: 0x1153C
-    J: 0x11678
   size: 0x30
   mode: thumb
   params: null
@@ -1366,9 +1366,9 @@
   desc: Make sprite face Samus (direction)
   label: MakeSpriteFaceSamus_Direction
   addr:
+    J: 0x116A8
     U: 0x1156C
     E: 0x1156C
-    J: 0x116A8
   size: 0x34
   mode: thumb
   params: null
@@ -1377,9 +1377,9 @@
   desc: Make sprite face away from Samus (X-flip)
   label: MakeSpriteFaceAwayFromSamus_XFlip
   addr:
+    J: 0x116DC
     U: 0x115A0
     E: 0x115A0
-    J: 0x116DC
   size: 0x30
   mode: thumb
   params: null
@@ -1388,9 +1388,9 @@
   desc: Make sprite face away from Samus (direction)
   label: MakeSpriteFaceAwayFromSamus_Direction
   addr:
+    J: 0x1170C
     U: 0x115D0
     E: 0x115D0
-    J: 0x1170C
   size: 0x34
   mode: thumb
   params: null
@@ -1399,9 +1399,9 @@
   desc: Check end of sprite animation (current)
   label: CheckEndOfSpriteAnimation_Curr
   addr:
+    J: 0x11A70
     U: 0x11934
     E: 0x11934
-    J: 0x11A70
   size: 0x38
   mode: thumb
   params: null
@@ -1412,9 +1412,9 @@
   desc: Check near end of sprite animation (current)
   label: CheckNearEndOfSpriteAnimation_Curr
   addr:
+    J: 0x11AA8
     U: 0x1196C
     E: 0x1196C
-    J: 0x11AA8
   size: 0x3C
   mode: thumb
   params: null
@@ -1425,9 +1425,9 @@
   desc: Check end of sprite animation (slot)
   label: CheckEndOfSpriteAnimation_Slot
   addr:
+    J: 0x11AE4
     U: 0x119A8
     E: 0x119A8
-    J: 0x11AE4
   size: 0x48
   mode: thumb
   params:
@@ -1440,9 +1440,9 @@
   desc: Check near end of sprite animation (slot)
   label: CheckNearEndOfSpriteAnimation_Slot
   addr:
+    J: 0x11B2C
     U: 0x119F0
     E: 0x119F0
-    J: 0x11B2C
   size: 0x4C
   mode: thumb
   params:
@@ -1455,9 +1455,9 @@
   desc: Check end of boss round?
   label: CheckEndBossRound
   addr:
+    J: 0x11BB0
     U: 0x11A74
     E: 0x11A74
-    J: 0x11BB0
   size: 0x3C
   mode: thumb
   params: null
@@ -1468,9 +1468,9 @@
   desc: Check Samus near sprite (left/right)
   label: CheckSamusNearSprite_LeftRight
   addr:
+    J: 0x11C60
     U: 0x11B24
     E: 0x11B24
-    J: 0x11C60
   size: 0x60
   mode: thumb
   params:
@@ -1485,9 +1485,9 @@
   desc: Check Samus near sprite (above/below)
   label: CheckSamusNearSprite_AboveBelow
   addr:
+    J: 0x11CC0
     U: 0x11B84
     E: 0x11B84
-    J: 0x11CC0
   size: 0x60
   mode: thumb
   params:
@@ -1502,9 +1502,9 @@
   desc: Check Samus near sprite (front/behind X)
   label: CheckSamusNearSprite_FrontBehindX
   addr:
+    J: 0x11D20
     U: 0x11BE4
     E: 0x11BE4
-    J: 0x11D20
   size: 0xA8
   mode: thumb
   params:
@@ -1521,9 +1521,9 @@
   desc: Check Samus near sprite (front/behind Y)
   label: CheckSamusNearSprite_FrontBehindY
   addr:
+    J: 0x11DC8
     U: 0x11C8C
     E: 0x11C8C
-    J: 0x11DC8
   size: 0xAC
   mode: thumb
   params:
@@ -1540,9 +1540,9 @@
   desc: Check Samus near sprite (above/below, separate ranges)
   label: CheckSamusNearSprite_AboveBelowSeparate
   addr:
+    J: 0x11E74
     U: 0x11D38
     E: 0x11D38
-    J: 0x11E74
   size: 0x64
   mode: thumb
   params:
@@ -1559,9 +1559,9 @@
   desc: Update sprite freeze timer
   label: UpdateSpriteFreezeTimer
   addr:
+    J: 0x11F80
     U: 0x11E44
     E: 0x11E44
-    J: 0x11F80
   size: 0x60
   mode: thumb
   params: null
@@ -1570,9 +1570,9 @@
   desc: Update secondary sprites freeze timer
   label: UpdateSecondarySpritesFreezeTimer
   addr:
+    J: 0x11FE0
     U: 0x11EA4
     E: 0x11EA4
-    J: 0x11FE0
   size: 0x9C
   mode: thumb
   params: null
@@ -1581,9 +1581,9 @@
   desc: Update primary sprite freeze timer
   label: UpdatePrimarySpriteFreezeTimer
   addr:
+    J: 0x1207C
     U: 0x11F40
     E: 0x11F40
-    J: 0x1207C
   size: 0x60
   mode: thumb
   params: null
@@ -1592,9 +1592,9 @@
   desc: Unfreeze secondary sprites
   label: UnfreezeSecondarySprites
   addr:
+    J: 0x120DC
     U: 0x11FA0
     E: 0x11FA0
-    J: 0x120DC
   size: 0x68
   mode: thumb
   params: null
@@ -1603,9 +1603,9 @@
   desc: Set secondary sprite OAM pointer
   label: SetSecondarySpriteOamPtr
   addr:
+    J: 0x12440
     U: 0x12304
     E: 0x12304
-    J: 0x12440
   size: 0x28
   mode: thumb
   params:
@@ -1616,9 +1616,9 @@
   desc: Set energy and ammo to full
   label: SetEnergyAndAmmoToFull
   addr:
+    J: 0x12468
     U: 0x1232C
     E: 0x1232C
-    J: 0x12468
   size: 0x14
   mode: thumb
   params: null
@@ -1627,9 +1627,9 @@
   desc: Check energy full and missiles not full
   label: CheckEnergyFullAndMissilesNotFull
   addr:
+    J: 0x1260C
     U: 0x124A0
     E: 0x124A0
-    J: 0x1260C
   size: 0x30
   mode: thumb
   params: null
@@ -1640,9 +1640,9 @@
   desc: Check missiles full and energy not full
   label: CheckMissilesFullAndEnergyNotFull
   addr:
+    J: 0x1263C
     U: 0x124D0
     E: 0x124D0
-    J: 0x1263C
   size: 0x30
   mode: thumb
   params: null
@@ -1653,9 +1653,9 @@
   desc: Check Samus passes through frozen sprite
   label: CheckSamusPassesThroughFrozenSprite
   addr:
+    J: 0x1266C
     U: 0x12500
     E: 0x12500
-    J: 0x1266C
   size: 0xC4
   mode: thumb
   params:
@@ -1668,9 +1668,9 @@
   desc: Check crouching or morphed
   label: CheckCrouchingOrMorphed
   addr:
+    J: 0x12730
     U: 0x125C4
     E: 0x125C4
-    J: 0x12730
   size: 0x5C
   mode: thumb
   params: null
@@ -1681,9 +1681,9 @@
   desc: Check morphed
   label: CheckMorphed
   addr:
+    J: 0x1278C
     U: 0x12620
     E: 0x12620
-    J: 0x1278C
   size: 0x24
   mode: thumb
   params: null
@@ -1694,9 +1694,9 @@
   desc: Check Samus movement is prevented
   label: CheckSamusMovementIsPrevented
   addr:
+    J: 0x127B0
     U: 0x12644
     E: 0x12644
-    J: 0x127B0
   size: 0xB4
   mode: thumb
   params: null
@@ -1707,9 +1707,9 @@
   desc: Check screw attacking/shinesparking/speed boosting
   label: CheckScrewingSparkingBoosting
   addr:
+    J: 0x12864
     U: 0x126F8
     E: 0x126F8
-    J: 0x12864
   size: 0x24
   mode: thumb
   params: null
@@ -1720,9 +1720,9 @@
   desc: Check pseudo screw attacking
   label: CheckPseudoScrewing
   addr:
+    J: 0x12888
     U: 0x1271C
     E: 0x1271C
-    J: 0x12888
   size: 0xA0
   mode: thumb
   params:
@@ -1735,9 +1735,9 @@
   desc: Check hanging from ledge
   label: CheckHangingFromLedge
   addr:
+    J: 0x12928
     U: 0x127BC
     E: 0x127BC
-    J: 0x12928
   size: 0x1C
   mode: thumb
   params: null
@@ -1748,9 +1748,9 @@
   desc: Check hanging from ceiling ladder
   label: CheckHangingFromCeilingLadder
   addr:
+    J: 0x12944
     U: 0x127D8
     E: 0x127D8
-    J: 0x12944
   size: 0x20
   mode: thumb
   params: null
@@ -1761,9 +1761,9 @@
   desc: Check pulling self up
   label: CheckPullingSelfUp
   addr:
+    J: 0x12964
     U: 0x127F8
     E: 0x127F8
-    J: 0x12964
   size: 0x20
   mode: thumb
   params: null
@@ -1774,9 +1774,9 @@
   desc: Try set absorb X flag on new sprite
   label: TrySetAbsorbXFlagOnNewSprite
   addr:
+    J: 0x12984
     U: 0x12818
     E: 0x12818
-    J: 0x12984
   size: 0x40
   mode: thumb
   params: null
@@ -1785,9 +1785,9 @@
   desc: Count secondary sprites
   label: CountSecondarySprites
   addr:
+    J: 0x129C4
     U: 0x12858
     E: 0x12858
-    J: 0x129C4
   size: 0x50
   mode: thumb
   params:
@@ -1801,9 +1801,9 @@
   desc: Count primary sprites
   label: CountPrimarySprites
   addr:
+    J: 0x12A14
     U: 0x128A8
     E: 0x128A8
-    J: 0x12A14
   size: 0x50
   mode: thumb
   params:
@@ -1817,9 +1817,9 @@
   desc: Find primary sprite
   label: FindPrimarySprite
   addr:
+    J: 0x12A64
     U: 0x128F8
     E: 0x128F8
-    J: 0x12A64
   size: 0x4C
   mode: thumb
   params:
@@ -1833,9 +1833,9 @@
   desc: Find secondary sprite
   label: FindSecondarySprite
   addr:
+    J: 0x12AB0
     U: 0x12944
     E: 0x12944
-    J: 0x12AB0
   size: 0x4C
   mode: thumb
   params:
@@ -1849,9 +1849,9 @@
   desc: Count secondary sprites with primary sprite slot
   label: CountSecondarySpritesWithPrimarySlot
   addr:
+    J: 0x12AFC
     U: 0x12990
     E: 0x12990
-    J: 0x12AFC
   size: 0x5C
   mode: thumb
   params:
@@ -1867,9 +1867,9 @@
   desc: Move Eye Core-X beam
   label: MoveEyeCoreXBeam
   addr:
+    J: 0x12B58
     U: 0x129EC
     E: 0x129EC
-    J: 0x12B58
   size: 0x9C
   mode: thumb
   params:
@@ -1880,9 +1880,9 @@
   desc: Process sprite debris
   label: ProcessSpriteDebris
   addr:
+    J: 0x13D04
     U: 0x13B98
     E: 0x13B98
-    J: 0x13D04
   size: 0x4E0
   mode: thumb
   params: null
@@ -1891,9 +1891,9 @@
   desc: Initialize sprite debris
   label: InitSpriteDebris
   addr:
+    J: 0x143BC
     U: 0x14250
     E: 0x14250
-    J: 0x143BC
   size: 0xC0
   mode: thumb
   params:
@@ -1912,9 +1912,9 @@
   desc: Check Main Deck room displays location
   label: CheckMainDeckRoomDisplaysLocation
   addr:
+    J: 0x1447C
     U: 0x14310
     E: 0x14310
-    J: 0x1447C
   size: 0x190
   mode: thumb
   params: null
@@ -1925,9 +1925,9 @@
   desc: Check Sector 1 room displays location
   label: CheckSector1RoomDisplaysLocation
   addr:
+    J: 0x1460C
     U: 0x144A0
     E: 0x144A0
-    J: 0x1460C
   size: 0x2C
   mode: thumb
   params: null
@@ -1938,9 +1938,9 @@
   desc: Check Sector 2 room displays location
   label: CheckSector2RoomDisplaysLocation
   addr:
+    J: 0x14638
     U: 0x144CC
     E: 0x144CC
-    J: 0x14638
   size: 0xA0
   mode: thumb
   params: null
@@ -1951,9 +1951,9 @@
   desc: Check Sector 3 room displays location
   label: CheckSector3RoomDisplaysLocation
   addr:
+    J: 0x146D8
     U: 0x1456C
     E: 0x1456C
-    J: 0x146D8
   size: 0x88
   mode: thumb
   params: null
@@ -1964,9 +1964,9 @@
   desc: Check Sector 4 room displays location
   label: CheckSector4RoomDisplaysLocation
   addr:
+    J: 0x14760
     U: 0x145F4
     E: 0x145F4
-    J: 0x14760
   size: 0x2C
   mode: thumb
   params: null
@@ -1977,9 +1977,9 @@
   desc: Check Sector 5 room displays location
   label: CheckSector5RoomDisplaysLocation
   addr:
+    J: 0x1478C
     U: 0x14620
     E: 0x14620
-    J: 0x1478C
   size: 0x84
   mode: thumb
   params: null
@@ -1990,9 +1990,9 @@
   desc: Check Sector 6 room displays location
   label: CheckSector6RoomDisplaysLocation
   addr:
+    J: 0x14810
     U: 0x146A4
     E: 0x146A4
-    J: 0x14810
   size: 0x2C
   mode: thumb
   params: null
@@ -2003,9 +2003,9 @@
   desc: Get location banner graphics slot
   label: GetLocationBannerGfxSlot
   addr:
+    J: 0x1483C
     U: 0x146D0
     E: 0x146D0
-    J: 0x1483C
   size: 0x84
   mode: thumb
   params: null
@@ -2016,9 +2016,9 @@
   desc: Check display location
   label: CheckDisplayLocation
   addr:
+    J: 0x148C0
     U: 0x14754
     E: 0x14754
-    J: 0x148C0
   size: 0x130
   mode: thumb
   params: null
@@ -2029,9 +2029,9 @@
   desc: Check advance event
   label: CheckAdvanceEvent
   addr:
+    J: 0x60F7C
     U: 0x60940
     E: 0x60940
-    J: 0x60F7C
   size: 0x214
   mode: thumb
   params:
@@ -2045,9 +2045,9 @@
   desc: Check on event 4B (nav after Yakuza)
   label: CheckOnEvent4B
   addr:
+    J: 0x61190
     U: 0x60B54
     E: 0x60B54
-    J: 0x61190
   size: 0x18
   mode: thumb
   params: null
@@ -2058,9 +2058,9 @@
   desc: Check on event 4C (engaged TRO SA-X 2)
   label: CheckOnEvent4C
   addr:
+    J: 0x611A8
     U: 0x60B6C
     E: 0x60B6C
-    J: 0x611A8
   size: 0x18
   mode: thumb
   params: null
@@ -2071,9 +2071,9 @@
   desc: Check after event 6B (Ice beam recovered)
   label: CheckAfterEvent6B
   addr:
+    J: 0x611C0
     U: 0x60B84
     E: 0x60B84
-    J: 0x611C0
   size: 0x18
   mode: thumb
   params: null
@@ -2084,9 +2084,9 @@
   desc: Check after event 6A (SA-X killed by Omega)
   label: CheckAfterEvent6A
   addr:
+    J: 0x611D8
     U: 0x60B9C
     E: 0x60B9C
-    J: 0x611D8
   size: 0x18
   mode: thumb
   params: null
@@ -2097,9 +2097,9 @@
   desc: Check on event 65 (entered operations deck)
   label: CheckOnEvent65
   addr:
+    J: 0x611F0
     U: 0x60BB4
     E: 0x60BB4
-    J: 0x611F0
   size: 0x18
   mode: thumb
   params: null
@@ -2110,9 +2110,9 @@
   desc: Check on event 5A (triggered BOX 2 rumble)
   label: CheckOnEvent5A
   addr:
+    J: 0x61208
     U: 0x60BCC
     E: 0x60BCC
-    J: 0x61208
   size: 0x18
   mode: thumb
   params: null
@@ -2123,9 +2123,9 @@
   desc: Check on event 59 (Restricted Zone warning)
   label: CheckOnEvent59
   addr:
+    J: 0x61220
     U: 0x60BE4
     E: 0x60BE4
-    J: 0x61220
   size: 0x18
   mode: thumb
   params: null
@@ -2136,9 +2136,9 @@
   desc: Check after event 34 (Blue X flee)
   label: CheckAfterEvent34
   addr:
+    J: 0x61238
     U: 0x60BFC
     E: 0x60BFC
-    J: 0x61238
   size: 0x18
   mode: thumb
   params: null
@@ -2149,9 +2149,9 @@
   desc: Check event 46 (power outage)
   label: CheckEvent46
   addr:
+    J: 0x61250
     U: 0x60C14
     E: 0x60C14
-    J: 0x61250
   size: 0x1C
   mode: thumb
   params: null
@@ -2162,9 +2162,9 @@
   desc: Check on event 5B (wave beam recovered)
   label: CheckOnEvent5B
   addr:
+    J: 0x6126C
     U: 0x60C30
     E: 0x60C30
-    J: 0x6126C
   size: 0x18
   mode: thumb
   params: null
@@ -2175,9 +2175,9 @@
   desc: Check on event 5C (restricted lab explosion)
   label: CheckOnEvent5C
   addr:
+    J: 0x61284
     U: 0x60C48
     E: 0x60C48
-    J: 0x61284
   size: 0x18
   mode: thumb
   params: null
@@ -2188,9 +2188,9 @@
   desc: Check on event 17 (earthquake after bombs)
   label: CheckOnEvent17
   addr:
+    J: 0x6129C
     U: 0x60C60
     E: 0x60C60
-    J: 0x6129C
   size: 0x18
   mode: thumb
   params: null
@@ -2201,9 +2201,9 @@
   desc: Check on event 16 (bomb data downloaded)
   label: CheckOnEvent16
   addr:
+    J: 0x612B4
     U: 0x60C78
     E: 0x60C78
-    J: 0x612B4
   size: 0x18
   mode: thumb
   params: null
@@ -2214,9 +2214,9 @@
   desc: Check on event 31 (escaped NOC SA-X)
   label: CheckOnEvent31
   addr:
+    J: 0x612CC
     U: 0x60C90
     E: 0x60C90
-    J: 0x612CC
   size: 0x18
   mode: thumb
   params: null
@@ -2227,9 +2227,9 @@
   desc: Check on event 43 (ARC SA-X encounter)
   label: CheckOnEvent43
   addr:
+    J: 0x612E4
     U: 0x60CA8
     E: 0x60CA8
-    J: 0x612E4
   size: 0x18
   mode: thumb
   params: null
@@ -2240,9 +2240,9 @@
   desc: Check on event 42 (power bomb data downloaded)
   label: CheckOnEvent42
   addr:
+    J: 0x612FC
     U: 0x60CC0
     E: 0x60CC0
-    J: 0x612FC
   size: 0x18
   mode: thumb
   params: null
@@ -2253,9 +2253,9 @@
   desc: Check on event 30 (NOC SA-X encounter)
   label: CheckOnEvent30
   addr:
+    J: 0x61314
     U: 0x60CD8
     E: 0x60CD8
-    J: 0x61314
   size: 0x18
   mode: thumb
   params: null
@@ -2266,9 +2266,9 @@
   desc: Check on event 2F (NOC 1 nav conversation)
   label: CheckOnEvent2F
   addr:
+    J: 0x6132C
     U: 0x60CF0
     E: 0x60CF0
-    J: 0x6132C
   size: 0x18
   mode: thumb
   params: null
@@ -2279,9 +2279,9 @@
   desc: Check on event 19 (hi-jump recovered)
   label: CheckOnEvent19
   addr:
+    J: 0x61344
     U: 0x60D08
     E: 0x60D08
-    J: 0x61344
   size: 0x18
   mode: thumb
   params: null
@@ -2292,9 +2292,9 @@
   desc: Check after event 1A (escaped TRO SA-X 1)
   label: CheckAfterEvent1A
   addr:
+    J: 0x6135C
     U: 0x60D20
     E: 0x60D20
-    J: 0x6135C
   size: 0x18
   mode: thumb
   params: null
@@ -2305,9 +2305,9 @@
   desc: Check after event 28 (BOX 1 defeated)
   label: CheckAfterEvent28
   addr:
+    J: 0x61374
     U: 0x60D38
     E: 0x60D38
-    J: 0x61374
   size: 0x18
   mode: thumb
   params: null
@@ -2318,9 +2318,9 @@
   desc: Check on event 27 (triggered BOX 1 rumble)
   label: CheckOnEvent27
   addr:
+    J: 0x6138C
     U: 0x60D50
     E: 0x60D50
-    J: 0x6138C
   size: 0x18
   mode: thumb
   params: null
@@ -2331,9 +2331,9 @@
   desc: Check on event 26 (super missile data downloaded)
   label: CheckOnEvent26
   addr:
+    J: 0x613A4
     U: 0x60D68
     E: 0x60D68
-    J: 0x613A4
   size: 0x18
   mode: thumb
   params: null
@@ -2344,9 +2344,9 @@
   desc: Check on event 25 (entered super missile data room)
   label: CheckOnEvent25
   addr:
+    J: 0x613BC
     U: 0x60D80
     E: 0x60D80
-    J: 0x613BC
   size: 0x18
   mode: thumb
   params: null
@@ -2357,9 +2357,9 @@
   desc: Check after event 20 (water level lowered)
   label: CheckAfterEvent20
   addr:
+    J: 0x613D4
     U: 0x60D98
     E: 0x60D98
-    J: 0x613D4
   size: 0x18
   mode: thumb
   params: null
@@ -2370,9 +2370,9 @@
   desc: Check on event 1 (nav before quarantine bay)
   label: CheckOnEvent01
   addr:
+    J: 0x613EC
     U: 0x60DB0
     E: 0x60DB0
-    J: 0x613EC
   size: 0x18
   mode: thumb
   params: null
@@ -2383,9 +2383,9 @@
   desc: Check on event with save disabled
   label: CheckOnEventWithSaveDisabled
   addr:
+    J: 0x61404
     U: 0x60DC8
     E: 0x60DC8
-    J: 0x61404
   size: 0x30
   mode: thumb
   params: null
@@ -2396,9 +2396,9 @@
   desc: Check on event with nav disabled
   label: CheckOnEventWithNavDisabled
   addr:
+    J: 0x61434
     U: 0x60DF8
     E: 0x60DF8
-    J: 0x61434
   size: 0x24
   mode: thumb
   params: null
@@ -2409,9 +2409,9 @@
   desc: Check on event with recharge disabled
   label: CheckOnEventWithRechargeDisabled
   addr:
+    J: 0x61458
     U: 0x60E1C
     E: 0x60E1C
-    J: 0x61458
   size: 0x20
   mode: thumb
   params: null
@@ -2422,9 +2422,9 @@
   desc: Check on event 1F (entered pump control unit)
   label: CheckOnEvent1F
   addr:
+    J: 0x61478
     U: 0x60E3C
     E: 0x60E3C
-    J: 0x61478
   size: 0x18
   mode: thumb
   params: null
@@ -2435,9 +2435,9 @@
   desc: Check event 3B/3C (meltdown)
   label: CheckOnEventMeltdown
   addr:
+    J: 0x61490
     U: 0x60E54
     E: 0x60E54
-    J: 0x61490
   size: 0x20
   mode: thumb
   params: null
@@ -2448,9 +2448,9 @@
   desc: Check on event 3E (to animals)
   label: CheckOnEvent3E
   addr:
+    J: 0x614B0
     U: 0x60E74
     E: 0x60E74
-    J: 0x614B0
   size: 0x18
   mode: thumb
   params: null
@@ -2461,9 +2461,9 @@
   desc: Check after event 3F (animals released)
   label: CheckAfterEvent3F
   addr:
+    J: 0x614C8
     U: 0x60E8C
     E: 0x60E8C
-    J: 0x614C8
   size: 0x18
   mode: thumb
   params: null
@@ -2474,9 +2474,9 @@
   desc: Check on event 49 (space jump recovered)
   label: CheckOnEvent49
   addr:
+    J: 0x614E0
     U: 0x60EA4
     E: 0x60EA4
-    J: 0x614E0
   size: 0x18
   mode: thumb
   params: null
@@ -2487,9 +2487,9 @@
   desc: Check on event 66 (SA-X defeated)
   label: CheckOnEvent66
   addr:
+    J: 0x614F8
     U: 0x60EBC
     E: 0x60EBC
-    J: 0x614F8
   size: 0x18
   mode: thumb
   params: null
@@ -2500,9 +2500,9 @@
   desc: Check after event 66 (SA-X defeated)
   label: CheckAfterEvent66
   addr:
+    J: 0x61510
     U: 0x60ED4
     E: 0x60ED4
-    J: 0x61510
   size: 0x18
   mode: thumb
   params: null
@@ -2513,9 +2513,9 @@
   desc: Check on event with timer displayed
   label: CheckOnEventWithTimerDisplayed
   addr:
+    J: 0x61528
     U: 0x60EEC
     E: 0x60EEC
-    J: 0x61528
   size: 0xF8
   mode: thumb
   params: null
@@ -2526,9 +2526,9 @@
   desc: Check on event with timer stopped
   label: CheckOnEventWithTimerStopped
   addr:
+    J: 0x61620
     U: 0x60FE4
     E: 0x60FE4
-    J: 0x61620
   size: 0x20
   mode: thumb
   params: null
@@ -2539,9 +2539,9 @@
   desc: Enemy dying start
   label: EnemyDyingStart
   addr:
+    J: 0x61CFC
     U: 0x616C0
     E: 0x616C0
-    J: 0x61CFC
   size: 0x2C
   mode: thumb
   params: null
@@ -2550,9 +2550,9 @@
   desc: Enemy dying
   label: EnemyDying
   addr:
+    J: 0x61D28
     U: 0x616EC
     E: 0x616EC
-    J: 0x61D28
   size: 0x90
   mode: thumb
   params: null
@@ -2561,9 +2561,9 @@
   desc: Determine X-parasite type
   label: DetermineXParasiteType
   addr:
+    J: 0x61E00
     U: 0x617C4
     E: 0x617C4
-    J: 0x61E00
   size: 0x174
   mode: thumb
   params:
@@ -2576,9 +2576,9 @@
   desc: Initialize X-parasite
   label: InitXParasite
   addr:
+    J: 0x61F74
     U: 0x61938
     E: 0x61938
-    J: 0x61F74
   size: 0x200
   mode: thumb
   params: null
@@ -2587,9 +2587,9 @@
   desc: Enemy spawning from X parasite
   label: EnemySpawningFromX
   addr:
+    J: 0x62910
     U: 0x622D4
     E: 0x622D4
-    J: 0x62910
   size: 0x54
   mode: thumb
   params: null
@@ -2598,9 +2598,9 @@
   desc: Start vertical screen shake
   label: StartVerticalScreenShake
   addr:
+    J: 0x62BC8
     U: 0x6258C
     E: 0x6258C
-    J: 0x62BC8
   size: 0x34
   mode: thumb
   params:
@@ -2613,9 +2613,9 @@
   desc: Start horizontal screen shake
   label: StartHorizontalScreenShake
   addr:
+    J: 0x62BFC
     U: 0x625C0
     E: 0x625C0
-    J: 0x62BFC
   size: 0x34
   mode: thumb
   params:
@@ -2628,9 +2628,9 @@
   desc: Check room should be dim
   label: CheckMakeRoomDim
   addr:
+    J: 0x632FC
     U: 0x62CF8
     E: 0x62CF8
-    J: 0x632FC
   size: 0x70
   mode: thumb
   params: null
@@ -2641,9 +2641,9 @@
   desc: Check main elevator is active
   label: CheckMainElevatorActive
   addr:
+    J: 0x6336C
     U: 0x62D68
     E: 0x62D68
-    J: 0x6336C
   size: 0x48
   mode: thumb
   params: null
@@ -2654,9 +2654,9 @@
   desc: Check set meltdown effect
   label: CheckSetMeltdownEffect
   addr:
+    J: 0x633B4
     U: 0x62DB0
     E: 0x62DB0
-    J: 0x633B4
   size: 0x28
   mode: thumb
   params: null
@@ -2667,9 +2667,9 @@
   desc: Check room should be dark
   label: CheckRoomShouldBeRoomDark
   addr:
+    J: 0x633DC
     U: 0x62DD8
     E: 0x62DD8
-    J: 0x633DC
   size: 0x18
   mode: thumb
   params: null
@@ -2680,9 +2680,9 @@
   desc: Lock hatches
   label: LockHatches
   addr:
+    J: 0x63674
     U: 0x63070
     E: 0x63070
-    J: 0x63674
   size: 0x90
   mode: thumb
   params:
@@ -2693,9 +2693,9 @@
   desc: Set current navigation room
   label: SetCurrNavRoom
   addr:
+    J: 0x637D4
     U: 0x631D0
     E: 0x631D0
-    J: 0x637D4
   size: 0x60
   mode: thumb
   params: null
@@ -2704,9 +2704,9 @@
   desc: Determine navigation room hatches to lock
   label: DetermineNavRoomHatchesToLock
   addr:
+    J: 0x63834
     U: 0x63230
     E: 0x63230
-    J: 0x63834
   size: 0x1CC
   mode: thumb
   params: null
@@ -2717,9 +2717,9 @@
   desc: Check lock hatches and process event based effect
   label: CheckLockHatchesAndProcessEventBasedEffect
   addr:
+    J: 0x63A48
     U: 0x63444
     E: 0x63444
-    J: 0x63A48
   size: 0x248
   mode: thumb
   params: null
@@ -2728,9 +2728,9 @@
   desc: Set event based effect bit 7
   label: SetEventBasedEffectBit7
   addr:
+    J: 0x63C90
     U: 0x6368C
     E: 0x6368C
-    J: 0x63C90
   size: 0x28
   mode: thumb
   params: null
@@ -2739,9 +2739,9 @@
   desc: Check set event based effect bit 7
   label: CheckSetEventBasedEffectBit7
   addr:
+    J: 0x63CE0
     U: 0x636DC
     E: 0x636DC
-    J: 0x63CE0
   size: 0x144
   mode: thumb
   params: null
@@ -2750,9 +2750,9 @@
   desc: Determine hatches to lock
   label: DetermineHatchesToLock
   addr:
+    J: 0x64344
     U: 0x63D40
     E: 0x63D40
-    J: 0x64344
   size: 0xA8
   mode: thumb
   params: null
@@ -2763,9 +2763,9 @@
   desc: Update animated palette for Omega Metroid room
   label: UpdateAnimatedPaletteForOmegaRoom
   addr:
+    J: 0x64B4C
     U: 0x64548
     E: 0x64548
-    J: 0x64B4C
   size: 0x7C
   mode: thumb
   params: null
@@ -2774,9 +2774,9 @@
   desc: Load room
   label: LoadRoom
   addr:
+    J: 0x64BC8
     U: 0x645C4
     E: 0x645C4
-    J: 0x64BC8
   size: 0x124
   mode: thumb
   params: null
@@ -2785,9 +2785,9 @@
   desc: Load tileset
   label: LoadTileset
   addr:
+    J: 0x64CEC
     U: 0x646E8
     E: 0x646E8
-    J: 0x64CEC
   size: 0x138
   mode: thumb
   params: null
@@ -2796,9 +2796,9 @@
   desc: Load room entry
   label: LoadRoomEntry
   addr:
+    J: 0x64E24
     U: 0x64820
     E: 0x64820
-    J: 0x64E24
   size: 0x158
   mode: thumb
   params: null
@@ -2807,9 +2807,9 @@
   desc: Load room backgrounds
   label: LoadRoomBackgrounds
   addr:
+    J: 0x64F7C
     U: 0x64978
     E: 0x64978
-    J: 0x64F7C
   size: 0x164
   mode: thumb
   params: null
@@ -2818,9 +2818,9 @@
   desc: Remove never reform blocks and collected tanks
   label: RemoveNeverReformBlocksTanks
   addr:
+    J: 0x650E0
     U: 0x64ADC
     E: 0x64ADC
-    J: 0x650E0
   size: 0x10
   mode: thumb
   params: null
@@ -2829,9 +2829,9 @@
   desc: Reset room RAM values
   label: ResetRoomRamValues
   addr:
+    J: 0x650F0
     U: 0x64AEC
     E: 0x64AEC
-    J: 0x650F0
   size: 0x448
   mode: thumb
   params: null
@@ -2840,9 +2840,9 @@
   desc: Load scrolls and event based effects
   label: LoadScrollsAndEventBasedEffects
   addr:
+    J: 0x65538
     U: 0x64F34
     E: 0x64F34
-    J: 0x65538
   size: 0x38C
   mode: thumb
   params: null
@@ -2851,9 +2851,9 @@
   desc: RLE decompress
   label: RleDecompress
   addr:
+    J: 0x65EA8
     U: 0x658A4
     E: 0x658A4
-    J: 0x65EA8
   size: 0xFC
   mode: thumb
   params:
@@ -2870,9 +2870,9 @@
   desc: Initialize power bomb explosion
   label: InitPowerBombExplosion
   addr:
+    J: 0x68A2C
     U: 0x68408
     E: 0x68408
-    J: 0x68A2C
   size: 0x60
   mode: thumb
   params: null
@@ -2881,9 +2881,9 @@
   desc: Copy clipdata handling code
   label: CopyClipdataHandlingCode
   addr:
+    J: 0x69114
     U: 0x68AF0
     E: 0x68AF0
-    J: 0x69114
   size: 0x2C
   mode: thumb
   params: null
@@ -2892,9 +2892,9 @@
   desc: Update clipdata at position
   label: UpdateClipdataAtPosition
   addr:
+    J: 0x691E4
     U: 0x68BC0
     E: 0x68BC0
-    J: 0x691E4
   size: 0x108
   mode: thumb
   params:
@@ -2909,9 +2909,9 @@
   desc: Check ground type under Samus
   label: CheckGroundTypeUnderSamus
   addr:
+    J: 0x69724
     U: 0x69100
     E: 0x69100
-    J: 0x69724
   size: 0x84
   mode: thumb
   params:
@@ -2927,9 +2927,9 @@
   desc: Check enter door
   label: CheckEnterDoor
   addr:
+    J: 0x697A8
     U: 0x69184
     E: 0x69184
-    J: 0x697A8
   size: 0x1F8
   mode: thumb
   params:
@@ -2944,9 +2944,9 @@
   desc: Find event based door number
   label: FindEventBasedDoor
   addr:
+    J: 0x69B2C
     U: 0x69508
     E: 0x69508
-    J: 0x69B2C
   size: 0x64
   mode: thumb
   params:
@@ -2959,9 +2959,9 @@
   desc: Get room scrolls pointer
   label: GetRoomScrollsPtr
   addr:
+    J: 0x6A314
     U: 0x69CF0
     E: 0x69CF0
-    J: 0x6A314
   size: 0x60
   mode: thumb
   params: null
@@ -2970,9 +2970,9 @@
   desc: Set never reform block as broken
   label: SetNeverReformBlockAsBroken
   addr:
+    J: 0x6B6D0
     U: 0x6B0AC
     E: 0x6B0AC
-    J: 0x6B6D0
   size: 0x84
   mode: thumb
   params:
@@ -2987,9 +2987,9 @@
   desc: Remove never reform blocks
   label: RemoveNeverReformBlocks
   addr:
+    J: 0x6B754
     U: 0x6B130
     E: 0x6B130
-    J: 0x6B754
   size: 0xDC
   mode: thumb
   params: null
@@ -2998,9 +2998,9 @@
   desc: Break reform block
   label: BreakReformBlock
   addr:
+    J: 0x6C064
     U: 0x6BA40
     E: 0x6BA40
-    J: 0x6C064
   size: 0xC0
   mode: thumb
   params: null
@@ -3009,13 +3009,13 @@
   desc: Check touching transition or tank
   label: CheckTouchingTransitionOrTank
   addr:
+    J: 0x6C75C
     U: 0x6C138
     E: 0x6C138
-    J: 0x6C75C
   size:
+    J: 0x3D8
     U: 0x360
     E: 0x360
-    J: 0x3D8
   mode: thumb
   params: null
   return: null
@@ -3023,9 +3023,9 @@
   desc: Finish collecting tank
   label: FinishCollectingTank
   addr:
+    J: 0x6CB34
     U: 0x6C498
     E: 0x6C498
-    J: 0x6CB34
   size: 0x60
   mode: thumb
   params: null
@@ -3034,9 +3034,9 @@
   desc: Set BG1 block value
   label: SetBG1BlockValue
   addr:
+    J: 0x6CCB0
     U: 0x6C614
     E: 0x6C614
-    J: 0x6CCB0
   size: 0xD0
   mode: thumb
   params:
@@ -3051,9 +3051,9 @@
   desc: Set BG1 block value (0x8000)
   label: SetBG1BlockValue_8000
   addr:
+    J: 0x6CD80
     U: 0x6C6E4
     E: 0x6C6E4
-    J: 0x6CD80
   size: 0xD0
   mode: thumb
   params:
@@ -3068,9 +3068,9 @@
   desc: Set clipdata block value
   label: SetClipdataBlockValue
   addr:
+    J: 0x6CEC8
     U: 0x6C82C
     E: 0x6C82C
-    J: 0x6CEC8
   size: 0x28
   mode: thumb
   params:
@@ -3085,9 +3085,9 @@
   desc: Update hatch data
   label: UpdateHatchData
   addr:
+    J: 0x6CEF0
     U: 0x6C854
     E: 0x6C854
-    J: 0x6CEF0
   size: 0xDC
   mode: thumb
   params: null
@@ -3096,13 +3096,13 @@
   desc: Update opening/closing hatch
   label: UpdateOpeningClosingHatch
   addr:
+    J: 0x6CFCC
     U: 0x6C930
     E: 0x6C930
-    J: 0x6CFCC
   size:
+    J: 0x15C
     U: 0x14C
     E: 0x14C
-    J: 0x15C
   mode: thumb
   params:
   - desc: Hatch index
@@ -3112,9 +3112,9 @@
   desc: Check projectile hit hatch
   label: CheckProjectileHitHatch
   addr:
+    J: 0x6D1F0
     U: 0x6CB44
     E: 0x6CB44
-    J: 0x6D1F0
   size: 0xB0
   mode: thumb
   params:
@@ -3129,9 +3129,9 @@
   desc: Update BG1 and sub-event during SA-X elevator cutscene
   label: UpdateBG1AndSubEvent_SaxElevatorScene
   addr:
+    J: 0x6D2F8
     U: 0x6CC4C
     E: 0x6CC4C
-    J: 0x6D2F8
   size: 0xAC
   mode: thumb
   params:
@@ -3142,9 +3142,9 @@
   desc: Set tank as collected
   label: SetTankAsCollected
   addr:
+    J: 0x6D3A4
     U: 0x6CCF8
     E: 0x6CCF8
-    J: 0x6D3A4
   size: 0x84
   mode: thumb
   params: null
@@ -3153,9 +3153,9 @@
   desc: Remove collected tanks
   label: RemoveCollectedTanks
   addr:
+    J: 0x6D4EC
     U: 0x6CE40
     E: 0x6CE40
-    J: 0x6D4EC
   size: 0xCC
   mode: thumb
   params: null
@@ -3164,9 +3164,9 @@
   desc: Update animated palette
   label: UpdateAnimatedPalette
   addr:
+    J: 0x70574
     U: 0x6FEC8
     E: 0x6FEC8
-    J: 0x70574
   size: 0x144
   mode: thumb
   params: null
@@ -3175,9 +3175,9 @@
   desc: Check set animated palette to 0
   label: CheckSetAnimatedPaletteTo0
   addr:
+    J: 0x70724
     U: 0x70078
     E: 0x70078
-    J: 0x70724
   size: 0x44
   mode: thumb
   params: null
@@ -3188,9 +3188,9 @@
   desc: Update sub-event for SA-X encounter
   label: UpdateSubEventForSaxEncounter
   addr:
+    J: 0x70768
     U: 0x700BC
     E: 0x700BC
-    J: 0x70768
   size: 0x38
   mode: thumb
   params: null
@@ -3199,9 +3199,9 @@
   desc: Update sub-event after obtaining ability
   label: UpdateSubEventAfterObtainingAbility
   addr:
+    J: 0x707A0
     U: 0x700F4
     E: 0x700F4
-    J: 0x707A0
   size: 0x2C
   mode: thumb
   params: null
@@ -3210,9 +3210,9 @@
   desc: Update sub-event after navigation conversation
   label: UpdateSubEventAfterNavConversation
   addr:
+    J: 0x707CC
     U: 0x70120
     E: 0x70120
-    J: 0x707CC
   size: 0x44
   mode: thumb
   params: null
@@ -3221,9 +3221,9 @@
   desc: Set sub-event and update music
   label: SetSubEventAndUpdateMusic
   addr:
+    J: 0x70810
     U: 0x70164
     E: 0x70164
-    J: 0x70810
   size: 0x1C
   mode: thumb
   params:
@@ -3238,9 +3238,9 @@
   desc: Check update sub-event and music
   label: CheckUpdateSubEventAndMusic
   addr:
+    J: 0x7082C
     U: 0x70180
     E: 0x70180
-    J: 0x7082C
   size: 0x142C
   mode: thumb
   params:
@@ -3252,9 +3252,9 @@
   desc: Initialize Demo RAM
   label: InitDemoRam
   addr:
+    J: 0x71E68
     U: 0x717BC
     E: 0x717BC
-    J: 0x71E68
   size: 0x110
   mode: thumb
   params:
@@ -3265,9 +3265,9 @@
   desc: Draw HUD OAM
   label: DrawHudOam
   addr:
+    J: 0x720A4
     U: 0x719F8
     E: 0x719F8
-    J: 0x720A4
   size: 0x254
   mode: thumb
   params: null
@@ -3276,9 +3276,9 @@
   desc: Draw HUD energy
   label: DrawHudEnergy
   addr:
+    J: 0x722F8
     U: 0x71C4C
     E: 0x71C4C
-    J: 0x722F8
   size: 0x5F0
   mode: thumb
   params: null
@@ -3287,9 +3287,9 @@
   desc: Draw HUD missiles
   label: DrawHudMissiles
   addr:
+    J: 0x728E8
     U: 0x7223C
     E: 0x7223C
-    J: 0x728E8
   size: 0x1F8
   mode: thumb
   params:
@@ -3300,9 +3300,9 @@
   desc: Draw HUD power bombs
   label: DrawHudPowerBombs
   addr:
+    J: 0x72AE0
     U: 0x72434
     E: 0x72434
-    J: 0x72AE0
   size: 0x1F8
   mode: thumb
   params:
@@ -3313,9 +3313,9 @@
   desc: Draw HUD
   label: DrawHud
   addr:
+    J: 0x72E14
     U: 0x72768
     E: 0x72768
-    J: 0x72E14
   size: 0x20
   mode: thumb
   params: null
@@ -3324,9 +3324,9 @@
   desc: Process particle effects
   label: ProcessParticleEffects
   addr:
+    J: 0x736AC
     U: 0x73000
     E: 0x73000
-    J: 0x736AC
   size: 0xE4
   mode: thumb
   params: null
@@ -3335,9 +3335,9 @@
   desc: Set particle effect
   label: SetParticleEffect
   addr:
+    J: 0x73790
     U: 0x730E4
     E: 0x730E4
-    J: 0x73790
   size: 0x98
   mode: thumb
   params:
@@ -3353,9 +3353,9 @@
   desc: Play beam charging sound
   label: PlayBeamChargingSound
   addr:
+    J: 0x74940
     U: 0x7427C
     E: 0x7427C
-    J: 0x74940
   size: 0x58
   mode: thumb
   params: null
@@ -3364,9 +3364,9 @@
   desc: Stop beam charging sound
   label: StopBeamChargingSound
   addr:
+    J: 0x74998
     U: 0x742D4
     E: 0x742D4
-    J: 0x74998
   size: 0x58
   mode: thumb
   params: null
@@ -3375,9 +3375,9 @@
   desc: Play beam charged sound
   label: PlayBeamChargedSound
   addr:
+    J: 0x749F0
     U: 0x7432C
     E: 0x7432C
-    J: 0x749F0
   size: 0x58
   mode: thumb
   params: null
@@ -3386,9 +3386,9 @@
   desc: Set event
   label: SetEvent
   addr:
+    J: 0x7501C
     U: 0x74890
     E: 0x74890
-    J: 0x7501C
   size: 0x318
   mode: thumb
   params:
@@ -3400,9 +3400,9 @@
   desc: Check play cutscene during transition
   label: CheckPlayCutscene
   addr:
+    J: 0x75334
     U: 0x74BA8
     E: 0x74BA8
-    J: 0x75334
   size: 0x14C
   mode: thumb
   params:
@@ -3418,9 +3418,9 @@
   desc: Check/download data item
   label: CheckOrDownloadDataItem
   addr:
+    J: 0x756BC
     U: 0x74F30
     E: 0x74F30
-    J: 0x756BC
   size: 0x40
   mode: thumb
   params:
@@ -3433,9 +3433,9 @@
   desc: Check/unlock security level
   label: CheckOrUnlockSecurityLevel
   addr:
+    J: 0x756FC
     U: 0x74F70
     E: 0x74F70
-    J: 0x756FC
   size: 0x8C
   mode: thumb
   params:
@@ -3448,9 +3448,9 @@
   desc: Set minimap square explored
   label: SetMinimapSquareExplored
   addr:
+    J: 0x75834
     U: 0x750A8
     E: 0x750A8
-    J: 0x75834
   size: 0x44
   mode: thumb
   params: null
@@ -3459,9 +3459,9 @@
   desc: Update minimap square for collected tank
   label: UpdateMinimapSquareForCollectedTank
   addr:
+    J: 0x763F0
     U: 0x75C64
     E: 0x75C64
-    J: 0x763F0
   size: 0x64
   mode: thumb
   params:
@@ -3474,9 +3474,9 @@
   desc: Downloading map subroutine
   label: DownloadingMapSubroutine
   addr:
+    J: 0x76994
     U: 0x761D8
     E: 0x761D8
-    J: 0x76994
   size: 0x420
   mode: thumb
   params: null
@@ -3487,9 +3487,9 @@
   desc: Get minimap data
   label: GetMinimapData
   addr:
+    J: 0x77840
     U: 0x77084
     E: 0x77084
-    J: 0x77840
   size: 0x30
   mode: thumb
   params:
@@ -3502,9 +3502,9 @@
   desc: Get character width
   label: GetCharacterWidth
   addr:
+    J: 0x798EC
     U: 0x79118
     E: 0x79118
-    J: 0x798EC
   size: 0x24
   mode: thumb
   params:
@@ -3517,9 +3517,9 @@
   desc: Draw character
   label: DrawCharacter
   addr:
+    J: 0x79910
     U: 0x7913C
     E: 0x7913C
-    J: 0x79910
   size: 0x1CC
   mode: thumb
   params:
@@ -3538,9 +3538,9 @@
   desc: Draw character (debug menu)
   label: DrawCharacter_DebugMenu
   addr:
+    J: 0x79ADC
     U: 0x79308
     E: 0x79308
-    J: 0x79ADC
   size: 0x130
   mode: thumb
   params:
@@ -3555,9 +3555,9 @@
   desc: Display message
   label: DisplayMessage
   addr:
+    J: 0x7A0B4
     U: 0x798E0
     E: 0x798E0
-    J: 0x7A0B4
   size: 0x158
   mode: thumb
   params:
@@ -3570,9 +3570,9 @@
   desc: Clear text VRAM
   label: ClearTextVram
   addr:
+    J: 0x7A20C
     U: 0x79A38
     E: 0x79A38
-    J: 0x7A20C
   size: 0xC4
   mode: thumb
   params:
@@ -3583,13 +3583,13 @@
   desc: Debug menu handle input and update timer
   label: DebugMenuHandleInputAndUpdateTimer
   addr:
+    J: 0x7DB20
     U: 0x7D34C
     E: 0x7D34C
-    J: 0x7DB20
   size:
+    J: 0x64
     U: 0x70
     E: 0x70
-    J: 0x64
   mode: thumb
   params: null
   return: null
@@ -3597,9 +3597,9 @@
   desc: Debug menu modify values
   label: DebugMenuModifyValues
   addr:
+    J: 0x7DB84
     U: 0x7D3BC
     E: 0x7D3BC
-    J: 0x7DB84
   size: 0x778
   mode: thumb
   params: null
@@ -3608,9 +3608,9 @@
   desc: Debug menu show event text
   label: DebugMenuShowEventText
   addr:
+    J: 0x7E2FC
     U: 0x7DB34
     E: 0x7DB34
-    J: 0x7E2FC
   size: 0x44
   mode: thumb
   params: null
@@ -3619,9 +3619,9 @@
   desc: Draw debug menu abilities, security level, maps
   label: DrawDebugMenu_Abilities_Security_Maps
   addr:
+    J: 0x7E340
     U: 0x7DB78
     E: 0x7DB78
-    J: 0x7E340
   size: 0x38C
   mode: thumb
   params:
@@ -3632,9 +3632,9 @@
   desc: Set ability count
   label: SetAbilityCount
   addr:
+    J: 0x7E6CC
     U: 0x7DF04
     E: 0x7DF04
-    J: 0x7E6CC
   size: 0x60
   mode: thumb
   params:
@@ -3645,9 +3645,9 @@
   desc: Draw debug menu ability count
   label: DrawDebugMenu_AbilityCount
   addr:
+    J: 0x7E824
     U: 0x7E05C
     E: 0x7E05C
-    J: 0x7E824
   size: 0x54
   mode: thumb
   params: null
@@ -3656,9 +3656,9 @@
   desc: Draw debug menu room, door
   label: DrawDebugMenu_Room_Door
   addr:
+    J: 0x7E878
     U: 0x7E0B0
     E: 0x7E0B0
-    J: 0x7E878
   size: 0xA8
   mode: thumb
   params: null
@@ -3667,9 +3667,9 @@
   desc: Draw debug menu timer
   label: DrawDebugMenu_Timer
   addr:
+    J: 0x7E920
     U: 0x7E158
     E: 0x7E158
-    J: 0x7E920
   size: 0xCC
   mode: thumb
   params: null
@@ -3698,9 +3698,9 @@
   desc: Draw debug menu ammo, events
   label: DrawDebugMenu_Ammo_Events
   addr:
+    J: 0x7ED3C
     U: 0x7E478
     E: 0x7E478
-    J: 0x7ED3C
   size: 0xA8
   mode: thumb
   params:
@@ -3711,13 +3711,13 @@
   desc: Draw debug menu values
   label: DrawDebugMenuValues
   addr:
+    J: 0x7EF0C
     U: 0x7E62C
     E: 0x7E62C
-    J: 0x7EF0C
   size:
+    J: 0x28
     U: 0x20
     E: 0x20
-    J: 0x28
   mode: thumb
   params: null
   return: null
@@ -3725,13 +3725,13 @@
   desc: Write RAM to save
   label: WriteRamToSave
   addr:
+    J: 0x7FE58
     U: 0x7F450
     E: 0x7F450
-    J: 0x7FE58
   size:
+    J: 0x398
     U: 0x370
     E: 0x370
-    J: 0x398
   mode: thumb
   params: null
   return: null
@@ -3739,13 +3739,13 @@
   desc: Initialize RAM from save
   label: InitRamFromSave
   addr:
+    J: 0x801F0
     U: 0x7F7C0
     E: 0x7F7C0
-    J: 0x801F0
   size:
+    J: 0x310
     U: 0x2E8
     E: 0x2E8
-    J: 0x310
   mode: thumb
   params: null
   return: null
@@ -3753,9 +3753,9 @@
   desc: Write "MetroidEpisode4A" to save
   label: Write_MetroidEpisode4A_ToSave
   addr:
+    J: 0x80500
     U: 0x7FAA8
     E: 0x7FAA8
-    J: 0x80500
   size: 0x1C
   mode: thumb
   params:
@@ -3768,9 +3768,9 @@
   desc: Write "SAVE_END" to save
   label: Write_SAVE_END_ToSave
   addr:
+    J: 0x8051C
     U: 0x7FAC4
     E: 0x7FAC4
-    J: 0x8051C
   size: 0x1C
   mode: thumb
   params:
@@ -3783,9 +3783,9 @@
   desc: Verify save data checksum
   label: VerifySaveDataChecksum
   addr:
+    J: 0x8080C
     U: 0x7FDB0
     E: 0x7FDB0
-    J: 0x8080C
   size: 0xB0
   mode: thumb
   params:
@@ -3798,9 +3798,9 @@
   desc: Write minimap, never reform blocks, and tanks collected to save
   label: Write_Minimap_Blocks_Tanks_ToSave
   addr:
+    J: 0x80900
     U: 0x7FEA4
     E: 0x7FEA4
-    J: 0x80900
   size: 0xD8
   mode: thumb
   params: null
@@ -3809,9 +3809,9 @@
   desc: Check amount of projectiles
   label: CheckAmountOfProjectiles
   addr:
+    J: 0x81DCC
     U: 0x8116C
     E: 0x8116C
-    J: 0x81DCC
   size: 0x50
   mode: thumb
   params:
@@ -3827,9 +3827,9 @@
   desc: Initialize projectile
   label: InitProjectile
   addr:
+    J: 0x81E1C
     U: 0x811BC
     E: 0x811BC
-    J: 0x81E1C
   size: 0xA0
   mode: thumb
   params:
@@ -3849,9 +3849,9 @@
   desc: Initialize secondary projectile
   label: InitSecondaryProjectile
   addr:
+    J: 0x81EBC
     U: 0x8125C
     E: 0x8125C
-    J: 0x81EBC
   size: 0x94
   mode: thumb
   params:
@@ -3877,9 +3877,9 @@
   desc: Update arm cannon and weapons
   label: UpdateArmCannonAndWeapons
   addr:
+    J: 0x81F50
     U: 0x812F0
     E: 0x812F0
-    J: 0x81F50
   size: 0x674
   mode: thumb
   params: null
@@ -3888,9 +3888,9 @@
   desc: Advance projectile animation
   label: AdvanceProjectileAnimation
   addr:
+    J: 0x825C4
     U: 0x81964
     E: 0x81964
-    J: 0x825C4
   size: 0x3C
   mode: thumb
   params: null
@@ -3899,9 +3899,9 @@
   desc: Draw projectiles (over sprites)
   label: DrawProjectiles_OverSprites
   addr:
+    J: 0x82600
     U: 0x819A0
     E: 0x819A0
-    J: 0x82600
   size: 0x4C
   mode: thumb
   params: null
@@ -3910,9 +3910,9 @@
   desc: Draw projectiles (under sprites)
   label: DrawProjectiles_UnderSprites
   addr:
+    J: 0x8264C
     U: 0x819EC
     E: 0x819EC
-    J: 0x8264C
   size: 0x4C
   mode: thumb
   params: null
@@ -3921,9 +3921,9 @@
   desc: Draw projectile
   label: DrawProjectile
   addr:
+    J: 0x82698
     U: 0x81A38
     E: 0x81A38
-    J: 0x82698
   size: 0x1C0
   mode: thumb
   params: null
@@ -3932,9 +3932,9 @@
   desc: Check despawn projectile
   label: CheckDespawnProjectile
   addr:
+    J: 0x82858
     U: 0x81BF8
     E: 0x81BF8
-    J: 0x82858
   size: 0x104
   mode: thumb
   params: null
@@ -3943,9 +3943,9 @@
   desc: Load eye core-x beam graphics
   label: LoadEyeCoreXBeamGfx
   addr:
+    J: 0x8295C
     U: 0x81CFC
     E: 0x81CFC
-    J: 0x8295C
   size: 0x160
   mode: thumb
   params: null
@@ -3954,9 +3954,9 @@
   desc: Load beam graphics
   label: LoadBeamGfx
   addr:
+    J: 0x82ABC
     U: 0x81E5C
     E: 0x81E5C
-    J: 0x82ABC
   size: 0x1B4
   mode: thumb
   params: null
@@ -3965,9 +3965,9 @@
   desc: Load missile graphics
   label: LoadMissileGfx
   addr:
+    J: 0x82C70
     U: 0x82010
     E: 0x82010
-    J: 0x82C70
   size: 0xDC
   mode: thumb
   params: null
@@ -3976,9 +3976,9 @@
   desc: Load projectile graphics and clear projectiles
   label: LoadProjectileGfxAndClearProjectiles
   addr:
+    J: 0x82D4C
     U: 0x820EC
     E: 0x820EC
-    J: 0x82D4C
   size: 0x34
   mode: thumb
   params: null
@@ -3987,9 +3987,9 @@
   desc: Move projectile
   label: MoveProjectile
   addr:
+    J: 0x82D80
     U: 0x82120
     E: 0x82120
-    J: 0x82D80
   size: 0xCC
   mode: thumb
   params:
@@ -4000,9 +4000,9 @@
   desc: Move wide beam parts
   label: MoveWideBeamParts
   addr:
+    J: 0x830C4
     U: 0x82464
     E: 0x82464
-    J: 0x830C4
   size: 0xC8
   mode: thumb
   params: null
@@ -4011,9 +4011,9 @@
   desc: Move wave beam parts
   label: MoveWaveBeamParts
   addr:
+    J: 0x8318C
     U: 0x8252C
     E: 0x8252C
-    J: 0x8318C
   size: 0xFC
   mode: thumb
   params: null
@@ -4022,9 +4022,9 @@
   desc: Unused move wave beam parts
   label: MoveWaveBeamParts_Unused
   addr:
+    J: 0x83288
     U: 0x82628
     E: 0x82628
-    J: 0x83288
   size: 0xFC
   mode: thumb
   params: null
@@ -4033,9 +4033,9 @@
   desc: Set missile trail graphics
   label: SetMissileTrailGfx
   addr:
+    J: 0x83384
     U: 0x82724
     E: 0x82724
-    J: 0x83384
   size: 0xBC
   mode: thumb
   params:
@@ -4049,9 +4049,9 @@
   desc: Set beam trail graphics
   label: SetBeamTrailGfx
   addr:
+    J: 0x83440
     U: 0x827E0
     E: 0x827E0
-    J: 0x83440
   size: 0xA8
   mode: thumb
   params:
@@ -4065,9 +4065,9 @@
   desc: Check weapon hit sprite
   label: CheckWeaponHitSprite
   addr:
+    J: 0x834E8
     U: 0x82888
     E: 0x82888
-    J: 0x834E8
   size: 0x764
   mode: thumb
   params: null
@@ -4076,9 +4076,9 @@
   desc: Check sprite makes debris when hit
   label: CheckSpriteMakesDebrisWhenHit
   addr:
+    J: 0x83C4C
     U: 0x82FEC
     E: 0x82FEC
-    J: 0x83C4C
   size: 0x58
   mode: thumb
   params:
@@ -4091,9 +4091,9 @@
   desc: Get sprite weakness
   label: GetSpriteWeakness
   addr:
+    J: 0x83CA4
     U: 0x83044
     E: 0x83044
-    J: 0x83CA4
   size: 0x4C
   mode: thumb
   params:
@@ -4107,9 +4107,9 @@
   desc: Create sprite debris
   label: CreateSpriteDebris
   addr:
+    J: 0x83CF0
     U: 0x83090
     E: 0x83090
-    J: 0x83CF0
   size: 0x134
   mode: thumb
   params:
@@ -4127,9 +4127,9 @@
   desc: Create sprite debris (piercing beam)
   label: CreateSpriteDebris_PiercingBeam
   addr:
+    J: 0x83E24
     U: 0x831C4
     E: 0x831C4
-    J: 0x83E24
   size: 0xF8
   mode: thumb
   params:
@@ -4147,13 +4147,13 @@
   desc: Lower sprite health
   label: LowerSpriteHealth
   addr:
+    J: 0x8425C
     U: 0x835F8
     E: 0x835F8
-    J: 0x8425C
   size:
+    J: 0xC8
     U: 0xCC
     E: 0xCC
-    J: 0xC8
   mode: thumb
   params:
   - desc: Sprite slot number
@@ -4167,9 +4167,9 @@
   desc: Pseudo screw attack hit sprite
   label: PseudoScrewAttackHitSprite
   addr:
+    J: 0x84324
     U: 0x836C4
     E: 0x836C4
-    J: 0x84324
   size: 0xC4
   mode: thumb
   params:
@@ -4184,13 +4184,13 @@
   desc: Lower sprite health (ice missile)
   label: LowerSpriteHealth_IceMissile
   addr:
+    J: 0x843E8
     U: 0x83788
     E: 0x83788
-    J: 0x843E8
   size:
+    J: 0x164
     U: 0x168
     E: 0x168
-    J: 0x164
   mode: thumb
   params:
   - desc: Sprite slot number
@@ -4206,13 +4206,13 @@
   desc: Lower sprite health (diffusion flake)
   label: LowerSpriteHealth_DiffusionFlake
   addr:
+    J: 0x8454C
     U: 0x838F0
     E: 0x838F0
-    J: 0x8454C
   size:
+    J: 0x154
     U: 0x15C
     E: 0x15C
-    J: 0x154
   mode: thumb
   params:
   - desc: Sprite slot number
@@ -4226,13 +4226,13 @@
   desc: Lower sprite health (ice beam)
   label: LowerSpriteHealth_IceBeam
   addr:
+    J: 0x846A0
     U: 0x83A4C
     E: 0x83A4C
-    J: 0x846A0
   size:
+    J: 0x134
     U: 0x12C
     E: 0x12C
-    J: 0x134
   mode: thumb
   params:
   - desc: Sprite slot number
@@ -4248,9 +4248,9 @@
   desc: Normal beam hit sprite
   label: NormalBeamHitSprite
   addr:
+    J: 0x84808
     U: 0x83BAC
     E: 0x83BAC
-    J: 0x84808
   size: 0xC4
   mode: thumb
   params:
@@ -4267,9 +4267,9 @@
   desc: Charged normal beam hit sprite
   label: ChargedNormalBeamHitSprite
   addr:
+    J: 0x848CC
     U: 0x83C70
     E: 0x83C70
-    J: 0x848CC
   size: 0xC4
   mode: thumb
   params:
@@ -4286,9 +4286,9 @@
   desc: Charge beam hit sprite
   label: ChargeBeamHitSprite
   addr:
+    J: 0x84990
     U: 0x83D34
     E: 0x83D34
-    J: 0x84990
   size: 0xE0
   mode: thumb
   params:
@@ -4305,9 +4305,9 @@
   desc: Charged charge beam hit sprite
   label: ChargedChargeBeamHitSprite
   addr:
+    J: 0x84A70
     U: 0x83E14
     E: 0x83E14
-    J: 0x84A70
   size: 0xE0
   mode: thumb
   params:
@@ -4324,9 +4324,9 @@
   desc: Wide beam hit sprite
   label: WideBeamHitSprite
   addr:
+    J: 0x84B50
     U: 0x83EF4
     E: 0x83EF4
-    J: 0x84B50
   size: 0xC4
   mode: thumb
   params:
@@ -4343,9 +4343,9 @@
   desc: Charged wide beam hit sprite
   label: ChargedWideBeamHitSprite
   addr:
+    J: 0x84C14
     U: 0x83FB8
     E: 0x83FB8
-    J: 0x84C14
   size: 0xC4
   mode: thumb
   params:
@@ -4362,9 +4362,9 @@
   desc: Plasma beam hit sprite
   label: PlasmaBeamHitSprite
   addr:
+    J: 0x84CD8
     U: 0x8407C
     E: 0x8407C
-    J: 0x84CD8
   size: 0xE0
   mode: thumb
   params:
@@ -4381,9 +4381,9 @@
   desc: Charged plasma beam hit sprite
   label: ChargedPlasmaBeamHitSprite
   addr:
+    J: 0x84DB8
     U: 0x8415C
     E: 0x8415C
-    J: 0x84DB8
   size: 0xE0
   mode: thumb
   params:
@@ -4400,9 +4400,9 @@
   desc: Wave beam hit sprite
   label: WaveBeamHitSprite
   addr:
+    J: 0x84E98
     U: 0x8423C
     E: 0x8423C
-    J: 0x84E98
   size: 0x164
   mode: thumb
   params:
@@ -4419,9 +4419,9 @@
   desc: Charged wave beam hit sprite
   label: ChargedWaveBeamHitSprite
   addr:
+    J: 0x84FFC
     U: 0x843A0
     E: 0x843A0
-    J: 0x84FFC
   size: 0x194
   mode: thumb
   params:
@@ -4438,9 +4438,9 @@
   desc: Flare hit sprite
   label: FlareHitSprite
   addr:
+    J: 0x85190
     U: 0x84534
     E: 0x84534
-    J: 0x85190
   size: 0x12C
   mode: thumb
   params:
@@ -4457,9 +4457,9 @@
   desc: Start missile tumble
   label: StartMissileTumble
   addr:
+    J: 0x852BC
     U: 0x84660
     E: 0x84660
-    J: 0x852BC
   size: 0x64
   mode: thumb
   params:
@@ -4472,9 +4472,9 @@
   desc: Normal missile hit sprite
   label: NormalMissileHitSprite
   addr:
+    J: 0x85320
     U: 0x846C4
     E: 0x846C4
-    J: 0x85320
   size: 0xD8
   mode: thumb
   params:
@@ -4491,9 +4491,9 @@
   desc: Super missile hit sprite
   label: SuperMissileHitSprite
   addr:
+    J: 0x853F8
     U: 0x8479C
     E: 0x8479C
-    J: 0x853F8
   size: 0xD0
   mode: thumb
   params:
@@ -4510,9 +4510,9 @@
   desc: Ice missile hit sprite
   label: IceMissileHitSprite
   addr:
+    J: 0x854C8
     U: 0x8486C
     E: 0x8486C
-    J: 0x854C8
   size: 0x118
   mode: thumb
   params:
@@ -4529,9 +4529,9 @@
   desc: Diffusion missile hit sprite
   label: DiffusionMissileHitSprite
   addr:
+    J: 0x855E0
     U: 0x84984
     E: 0x84984
-    J: 0x855E0
   size: 0x1DC
   mode: thumb
   params:
@@ -4548,9 +4548,9 @@
   desc: Diffusion flake hit sprite
   label: DiffusionFlakeHitSprite
   addr:
+    J: 0x857BC
     U: 0x84B60
     E: 0x84B60
-    J: 0x857BC
   size: 0xD0
   mode: thumb
   params:
@@ -4567,9 +4567,9 @@
   desc: Bomb hit sprite
   label: BombHitSprite
   addr:
+    J: 0x8588C
     U: 0x84C30
     E: 0x84C30
-    J: 0x8588C
   size: 0x7C
   mode: thumb
   params:
@@ -4584,9 +4584,9 @@
   desc: Set sprite flash timer for non-charge beams and bombs
   label: SetSpriteFlashTimer_Beams_Bombs
   addr:
+    J: 0x85908
     U: 0x84CAC
     E: 0x84CAC
-    J: 0x85908
   size: 0x1C
   mode: thumb
   params:
@@ -4603,9 +4603,9 @@
   desc: Set sprite flash timer for charge beam
   label: SetSpriteFlashTimer_ChargeBeam
   addr:
+    J: 0x85924
     U: 0x84CC8
     E: 0x84CC8
-    J: 0x85924
   size: 0x1C
   mode: thumb
   params:
@@ -4622,9 +4622,9 @@
   desc: Set sprite flash timer for missiles
   label: SetSpriteFlashTimer_Missiles
   addr:
+    J: 0x85940
     U: 0x84CE4
     E: 0x84CE4
-    J: 0x85940
   size: 0x1C
   mode: thumb
   params:
@@ -4641,9 +4641,9 @@
   desc: Lower Zazabi health
   label: LowerZazabiHealth
   addr:
+    J: 0x8595C
     U: 0x84D00
     E: 0x84D00
-    J: 0x8595C
   size: 0x74
   mode: thumb
   params:
@@ -4654,9 +4654,9 @@
   desc: Initialize charged normal beam
   label: InitChargedNormalBeam
   addr:
+    J: 0x859D0
     U: 0x84D74
     E: 0x84D74
-    J: 0x859D0
   size: 0xA4
   mode: thumb
   params: null
@@ -4665,9 +4665,9 @@
   desc: Process charged normal beam
   label: ProcessChargedNormalBeam
   addr:
+    J: 0x85A74
     U: 0x84E18
     E: 0x84E18
-    J: 0x85A74
   size: 0x70
   mode: thumb
   params: null
@@ -4676,9 +4676,9 @@
   desc: Initialize normal beam
   label: InitNormalBeam
   addr:
+    J: 0x85AE4
     U: 0x84E88
     E: 0x84E88
-    J: 0x85AE4
   size: 0xB0
   mode: thumb
   params: null
@@ -4687,9 +4687,9 @@
   desc: Process normal beam
   label: ProcessNormalBeam
   addr:
+    J: 0x85B94
     U: 0x84F38
     E: 0x84F38
-    J: 0x85B94
   size: 0x68
   mode: thumb
   params: null
@@ -4698,9 +4698,9 @@
   desc: Initialize missile
   label: InitMissile
   addr:
+    J: 0x85BFC
     U: 0x84FA0
     E: 0x84FA0
-    J: 0x85BFC
   size: 0xF4
   mode: thumb
   params:
@@ -4711,9 +4711,9 @@
   desc: Move tumbling missile
   label: MoveTumblingMissile
   addr:
+    J: 0x85CF0
     U: 0x85094
     E: 0x85094
-    J: 0x85CF0
   size: 0x70
   mode: thumb
   params: null
@@ -4722,9 +4722,9 @@
   desc: Process normal missile
   label: ProcessNormalMissile
   addr:
+    J: 0x85D60
     U: 0x85104
     E: 0x85104
-    J: 0x85D60
   size: 0xB0
   mode: thumb
   params: null
@@ -4733,9 +4733,9 @@
   desc: Process super misile
   label: ProcessSuperMisile
   addr:
+    J: 0x85E10
     U: 0x851B4
     E: 0x851B4
-    J: 0x85E10
   size: 0xB0
   mode: thumb
   params: null
@@ -4744,9 +4744,9 @@
   desc: Process ice missile
   label: ProcessIceMissile
   addr:
+    J: 0x85EC0
     U: 0x85264
     E: 0x85264
-    J: 0x85EC0
   size: 0xB8
   mode: thumb
   params: null
@@ -4755,9 +4755,9 @@
   desc: Process diffusion missile
   label: ProcessDiffusionMissile
   addr:
+    J: 0x85F78
     U: 0x8531C
     E: 0x8531C
-    J: 0x85F78
   size: 0x194
   mode: thumb
   params: null
@@ -4766,9 +4766,9 @@
   desc: Process diffusion flake
   label: ProcessDiffusionFlake
   addr:
+    J: 0x8610C
     U: 0x854B0
     E: 0x854B0
-    J: 0x8610C
   size: 0x120
   mode: thumb
   params: null
@@ -4777,9 +4777,9 @@
   desc: Initialize bomb
   label: InitBomb
   addr:
+    J: 0x86368
     U: 0x8570C
     E: 0x8570C
-    J: 0x86368
   size: 0x50
   mode: thumb
   params: null
@@ -4788,9 +4788,9 @@
   desc: Process bomb
   label: ProcessBomb
   addr:
+    J: 0x863B8
     U: 0x8575C
     E: 0x8575C
-    J: 0x863B8
   size: 0x184
   mode: thumb
   params: null
@@ -4799,9 +4799,9 @@
   desc: Initialize power bomb
   label: InitPowerBomb
   addr:
+    J: 0x8653C
     U: 0x858E0
     E: 0x858E0
-    J: 0x8653C
   size: 0xB0
   mode: thumb
   params: null
@@ -4810,9 +4810,9 @@
   desc: Process power bomb
   label: ProcessPowerBomb
   addr:
+    J: 0x865EC
     U: 0x85990
     E: 0x85990
-    J: 0x865EC
   size: 0x7C
   mode: thumb
   params: null
@@ -4821,9 +4821,9 @@
   desc: Initialize charged charge beam
   label: InitChargedChargeBeam
   addr:
+    J: 0x86668
     U: 0x85A0C
     E: 0x85A0C
-    J: 0x86668
   size: 0x118
   mode: thumb
   params: null
@@ -4832,9 +4832,9 @@
   desc: Process charged charge beam
   label: ProcessChargedChargeBeam
   addr:
+    J: 0x86780
     U: 0x85B24
     E: 0x85B24
-    J: 0x86780
   size: 0x10C
   mode: thumb
   params: null
@@ -4843,9 +4843,9 @@
   desc: Initialize charge beam
   label: InitChargeBeam
   addr:
+    J: 0x8688C
     U: 0x85C30
     E: 0x85C30
-    J: 0x8688C
   size: 0x118
   mode: thumb
   params: null
@@ -4854,9 +4854,9 @@
   desc: Process charge beam
   label: ProcessChargeBeam
   addr:
+    J: 0x869A4
     U: 0x85D48
     E: 0x85D48
-    J: 0x869A4
   size: 0xFC
   mode: thumb
   params: null
@@ -4865,9 +4865,9 @@
   desc: Initialize charged wide beam
   label: InitChargedWideBeam
   addr:
+    J: 0x86AA0
     U: 0x85E44
     E: 0x85E44
-    J: 0x86AA0
   size: 0xBC
   mode: thumb
   params: null
@@ -4876,9 +4876,9 @@
   desc: Process charged wide beam
   label: ProcessChargedWideBeam
   addr:
+    J: 0x86B5C
     U: 0x85F00
     E: 0x85F00
-    J: 0x86B5C
   size: 0x8C
   mode: thumb
   params: null
@@ -4887,9 +4887,9 @@
   desc: Initialize wide beam
   label: InitWideBeam
   addr:
+    J: 0x86BE8
     U: 0x85F8C
     E: 0x85F8C
-    J: 0x86BE8
   size: 0xB4
   mode: thumb
   params: null
@@ -4898,9 +4898,9 @@
   desc: Process wide beam
   label: ProcessWideBeam
   addr:
+    J: 0x86C9C
     U: 0x86040
     E: 0x86040
-    J: 0x86C9C
   size: 0x84
   mode: thumb
   params: null
@@ -4909,9 +4909,9 @@
   desc: Initialize charged plasma beam
   label: InitChargedPlasmaBeam
   addr:
+    J: 0x86D20
     U: 0x860C4
     E: 0x860C4
-    J: 0x86D20
   size: 0xC0
   mode: thumb
   params: null
@@ -4920,9 +4920,9 @@
   desc: Process charged plasma beam
   label: ProcessChargedPlasmaBeam
   addr:
+    J: 0x86DE0
     U: 0x86184
     E: 0x86184
-    J: 0x86DE0
   size: 0x8C
   mode: thumb
   params: null
@@ -4931,9 +4931,9 @@
   desc: Initialize plasma beam
   label: InitPlasmaBeam
   addr:
+    J: 0x86E6C
     U: 0x86210
     E: 0x86210
-    J: 0x86E6C
   size: 0xBC
   mode: thumb
   params: null
@@ -4942,9 +4942,9 @@
   desc: Process plasma beam
   label: ProcessPlasmaBeam
   addr:
+    J: 0x86F28
     U: 0x862CC
     E: 0x862CC
-    J: 0x86F28
   size: 0x84
   mode: thumb
   params: null
@@ -4953,9 +4953,9 @@
   desc: Initialize charged wave beam
   label: InitChargedWaveBeam
   addr:
+    J: 0x86FAC
     U: 0x86350
     E: 0x86350
-    J: 0x86FAC
   size: 0x108
   mode: thumb
   params: null
@@ -4964,9 +4964,9 @@
   desc: Process charged wave beam
   label: ProcessChargedWaveBeam
   addr:
+    J: 0x870B4
     U: 0x86458
     E: 0x86458
-    J: 0x870B4
   size: 0x7C
   mode: thumb
   params: null
@@ -4975,9 +4975,9 @@
   desc: Initialize wave beam
   label: InitWaveBeam
   addr:
+    J: 0x87130
     U: 0x864D4
     E: 0x864D4
-    J: 0x87130
   size: 0x108
   mode: thumb
   params: null
@@ -4986,9 +4986,9 @@
   desc: Process wave beam
   label: ProcessWaveBeam
   addr:
+    J: 0x87238
     U: 0x865DC
     E: 0x865DC
-    J: 0x87238
   size: 0x70
   mode: thumb
   params: null
@@ -4997,9 +4997,9 @@
   desc: Load flare graphics
   label: LoadFlareGfx
   addr:
+    J: 0x872A8
     U: 0x8664C
     E: 0x8664C
-    J: 0x872A8
   size: 0xD0
   mode: thumb
   params:
@@ -5010,9 +5010,9 @@
   desc: Initialize flare
   label: InitFlare
   addr:
+    J: 0x87378
     U: 0x8671C
     E: 0x8671C
-    J: 0x87378
   size: 0x84
   mode: thumb
   params: null
@@ -5021,9 +5021,9 @@
   desc: Process flare
   label: ProcessFlare
   addr:
+    J: 0x873FC
     U: 0x867A0
     E: 0x867A0
-    J: 0x873FC
   size: 0xB4
   mode: thumb
   params: null
@@ -5032,13 +5032,13 @@
   desc: New file intro subroutine
   label: NewFileIntroSubroutine
   addr:
+    J: 0x8862C
     U: 0x87708
     E: 0x877C8
-    J: 0x8862C
   size:
+    J: 0x26C
     U: 0x218
     E: 0x218
-    J: 0x26C
   mode: thumb
   params: null
   return:
@@ -5048,9 +5048,9 @@
   desc: New file intro Samus found subroutine
   label: NewFileIntroSamusFoundSubroutine
   addr:
+    J: 0x8F0B8
     U: 0x8E140
     E: 0x8E200
-    J: 0x8F0B8
   size: 0x594
   mode: thumb
   params: null
@@ -5061,9 +5061,9 @@
   desc: New file intro Samus cured subroutine
   label: NewIntroSamusCuredSubroutine
   addr:
+    J: 0x8FD48
     U: 0x8EDD0
     E: 0x8EE90
-    J: 0x8FD48
   size: 0x428
   mode: thumb
   params: null
@@ -5074,9 +5074,9 @@
   desc: New file intro approaching BSL subroutine
   label: NewFileIntroApproachingBslSubroutine
   addr:
+    J: 0x9076C
     U: 0x8F7F4
     E: 0x8F8B4
-    J: 0x9076C
   size: 0x750
   mode: thumb
   params: null
@@ -5087,9 +5087,9 @@
   desc: Generate random number for title intro
   label: GenerateRandomNumForTitleIntro
   addr:
+    J: 0x9A82C
     U: 0x998AC
     E: 0x9996C
-    J: 0x9A82C
   size: 0x48
   mode: thumb
   params: null
@@ -5100,13 +5100,13 @@
   desc: File select subroutine
   label: FileSelectSubroutine
   addr:
+    J: 0x9F510
     U: 0x9E598
     E: 0x9E658
-    J: 0x9F510
   size:
+    J: 0x1BC
     U: 0x1B8
     E: 0x1B8
-    J: 0x1BC
   mode: thumb
   params: null
   return:
@@ -5117,13 +5117,13 @@
   desc: File select input
   label: FileSelectInput
   addr:
+    J: 0x9FA7C
     U: 0x9EAB0
     E: 0x9EB70
-    J: 0x9FA7C
   size:
+    J: 0x11EC
     U: 0xA68
     E: 0xA68
-    J: 0x11EC
   mode: thumb
   params: null
   return:
@@ -5134,13 +5134,13 @@
   desc: Set language
   label: SetLanguage
   addr:
+    J: 0xA3648
     U: 0xA13D0
     E: 0xA1490
-    J: 0xA3648
   size:
+    J: 0x4
     U: 0x10
     E: 0xA8
-    J: 0x4
   mode: thumb
   params: null
   return:
@@ -5150,13 +5150,13 @@
   desc: Setup BG control for language select menu
   label: SetupBGControlForLanguageSelectMenu
   addr:
+    J: 0xA364C
     U: 0xA13E0
     E: 0xA1538
-    J: 0xA364C
   size:
+    J: 0x98
     U: 0x98
     E: 0x14C
-    J: 0x98
   mode: thumb
   params: null
   return: null
@@ -5210,9 +5210,9 @@
   desc: Draw ending time and percent in VRAM
   label: DrawEndingTimeAndPercentInVram
   addr:
+    J: 0xA36EC
     U: 0xA1480
     E: 0xA1ADC
-    J: 0xA36EC
   size: 0x1A8
   mode: thumb
   params: null
@@ -5221,9 +5221,9 @@
   desc: bx r0
   label: bx_r0
   addr:
+    J: 0xA5718
     U: 0xA342C
     E: 0xA3A88
-    J: 0xA5718
   size: 0x4
   mode: thumb
   params: null
@@ -5232,9 +5232,9 @@
   desc: bx r1
   label: bx_r1
   addr:
+    J: 0xA571C
     U: 0xA3430
     E: 0xA3A8C
-    J: 0xA571C
   size: 0x4
   mode: thumb
   params: null
@@ -5243,9 +5243,9 @@
   desc: bx r2
   label: bx_r2
   addr:
+    J: 0xA5720
     U: 0xA3434
     E: 0xA3A90
-    J: 0xA5720
   size: 0x4
   mode: thumb
   params: null
@@ -5254,9 +5254,9 @@
   desc: bx r3
   label: bx_r3
   addr:
+    J: 0xA5724
     U: 0xA3438
     E: 0xA3A94
-    J: 0xA5724
   size: 0x4
   mode: thumb
   params: null
@@ -5265,9 +5265,9 @@
   desc: bx r4
   label: bx_r4
   addr:
+    J: 0xA5728
     U: 0xA343C
     E: 0xA3A98
-    J: 0xA5728
   size: 0x4
   mode: thumb
   params: null
@@ -5276,9 +5276,9 @@
   desc: bx r5
   label: bx_r5
   addr:
+    J: 0xA572C
     U: 0xA3440
     E: 0xA3A9C
-    J: 0xA572C
   size: 0x4
   mode: thumb
   params: null
@@ -5287,9 +5287,9 @@
   desc: bx r6
   label: bx_r6
   addr:
+    J: 0xA5730
     U: 0xA3444
     E: 0xA3AA0
-    J: 0xA5730
   size: 0x4
   mode: thumb
   params: null
@@ -5298,9 +5298,9 @@
   desc: bx r7
   label: bx_r7
   addr:
+    J: 0xA5734
     U: 0xA3448
     E: 0xA3AA4
-    J: 0xA5734
   size: 0x4
   mode: thumb
   params: null
@@ -5309,9 +5309,9 @@
   desc: bx r8
   label: bx_r8
   addr:
+    J: 0xA5738
     U: 0xA344C
     E: 0xA3AA8
-    J: 0xA5738
   size: 0x4
   mode: thumb
   params: null
@@ -5320,9 +5320,9 @@
   desc: bx r9
   label: bx_r9
   addr:
+    J: 0xA573C
     U: 0xA3450
     E: 0xA3AAC
-    J: 0xA573C
   size: 0x4
   mode: thumb
   params: null
@@ -5331,9 +5331,9 @@
   desc: bx r10
   label: bx_r10
   addr:
+    J: 0xA5740
     U: 0xA3454
     E: 0xA3AB0
-    J: 0xA5740
   size: 0x4
   mode: thumb
   params: null
@@ -5342,9 +5342,9 @@
   desc: bx r11
   label: bx_r11
   addr:
+    J: 0xA5744
     U: 0xA3458
     E: 0xA3AB4
-    J: 0xA5744
   size: 0x4
   mode: thumb
   params: null
@@ -5353,9 +5353,9 @@
   desc: bx r12
   label: bx_r12
   addr:
+    J: 0xA5748
     U: 0xA345C
     E: 0xA3AB8
-    J: 0xA5748
   size: 0x4
   mode: thumb
   params: null
@@ -5364,9 +5364,9 @@
   desc: bx r13
   label: bx_r13
   addr:
+    J: 0xA574C
     U: 0xA3460
     E: 0xA3ABC
-    J: 0xA574C
   size: 0x4
   mode: thumb
   params: null
@@ -5375,9 +5375,9 @@
   desc: bx r14
   label: bx_r14
   addr:
+    J: 0xA5750
     U: 0xA3464
     E: 0xA3AC0
-    J: 0xA5750
   size: 0x4
   mode: thumb
   params: null
@@ -5386,9 +5386,9 @@
   desc: Divide (signed)
   label: Divide_Signed
   addr:
+    J: 0xA5754
     U: 0xA3468
     E: 0xA3AC4
-    J: 0xA5754
   size: 0x94
   mode: thumb
   params:
@@ -5404,9 +5404,9 @@
   desc: Divide by 0 handler (empty)
   label: DivideBy0Handler
   addr:
+    J: 0xA57E8
     U: 0xA34FC
     E: 0xA3B58
-    J: 0xA57E8
   size: 0x4
   mode: thumb
   params: null
@@ -5415,9 +5415,9 @@
   desc: Double to integer with overflow
   label: DoubleToInt_Overflow
   addr:
+    J: 0xA57EC
     U: 0xA3500
     E: 0xA3B5C
-    J: 0xA57EC
   size: 0x44
   mode: thumb
   params:
@@ -5434,9 +5434,9 @@
   desc: Modulo (signed)
   label: Modulo_Signed
   addr:
+    J: 0xA5830
     U: 0xA3544
     E: 0xA3BA0
-    J: 0xA5830
   size: 0xD0
   mode: thumb
   params:
@@ -5452,9 +5452,9 @@
   desc: Divide (unsigned)
   label: Divide_Unsigned
   addr:
+    J: 0xA5900
     U: 0xA3614
     E: 0xA3C70
-    J: 0xA5900
   size: 0x78
   mode: thumb
   params:
@@ -5470,9 +5470,9 @@
   desc: Modulo (unsigned)
   label: Modulo_Unsigned
   addr:
+    J: 0xA5978
     U: 0xA368C
     E: 0xA3CE8
-    J: 0xA5978
   size: 0xC0
   mode: thumb
   params:
@@ -5488,9 +5488,9 @@
   desc: Pack double
   label: PackDouble
   addr:
+    J: 0xA5A38
     U: 0xA374C
     E: 0xA3DA8
-    J: 0xA5A38
   size: 0x148
   mode: thumb
   params:
@@ -5504,9 +5504,9 @@
   desc: Unpack double
   label: UnpackDouble
   addr:
+    J: 0xA5B80
     U: 0xA3894
     E: 0xA3EF0
-    J: 0xA5B80
   size: 0xD8
   mode: thumb
   params:
@@ -5520,9 +5520,9 @@
   desc: Add double parts
   label: AddDoubleParts
   addr:
+    J: 0xA5C58
     U: 0xA396C
     E: 0xA3FC8
-    J: 0xA5C58
   size: 0x26C
   mode: thumb
   params:
@@ -5540,9 +5540,9 @@
   desc: Add doubles
   label: AddDoubles
   addr:
+    J: 0xA5EC4
     U: 0xA3BD8
     E: 0xA4234
-    J: 0xA5EC4
   size: 0x30
   mode: thumb
   params:
@@ -5562,9 +5562,9 @@
   desc: Subtract doubles
   label: SubtractDoubles
   addr:
+    J: 0xA5EF4
     U: 0xA3C08
     E: 0xA4264
-    J: 0xA5EF4
   size: 0x38
   mode: thumb
   params:
@@ -5584,9 +5584,9 @@
   desc: Multiply doubles
   label: MultiplyDoubles
   addr:
+    J: 0xA5F2C
     U: 0xA3C40
     E: 0xA429C
-    J: 0xA5F2C
   size: 0x2A8
   mode: thumb
   params:
@@ -5606,9 +5606,9 @@
   desc: Divide doubles
   label: DivideDoubles
   addr:
+    J: 0xA61D4
     U: 0xA3EE8
     E: 0xA4544
-    J: 0xA61D4
   size: 0x188
   mode: thumb
   params:
@@ -5628,9 +5628,9 @@
   desc: Compare double parts
   label: CompareDoubleParts
   addr:
+    J: 0xA635C
     U: 0xA4070
     E: 0xA46CC
-    J: 0xA635C
   size: 0x100
   mode: thumb
   params:
@@ -5646,9 +5646,9 @@
   desc: Compare doubles
   label: CompareDoubles
   addr:
+    J: 0xA645C
     U: 0xA4170
     E: 0xA47CC
-    J: 0xA645C
   size: 0x2C
   mode: thumb
   params:
@@ -5668,9 +5668,9 @@
   desc: Doubles equal
   label: DoublesEqual
   addr:
+    J: 0xA6488
     U: 0xA419C
     E: 0xA47F8
-    J: 0xA6488
   size: 0x4C
   mode: thumb
   params:
@@ -5690,9 +5690,9 @@
   desc: Doubles not equal
   label: DoublesNotEqual
   addr:
+    J: 0xA64D4
     U: 0xA41E8
     E: 0xA4844
-    J: 0xA64D4
   size: 0x4C
   mode: thumb
   params:
@@ -5712,9 +5712,9 @@
   desc: Doubles greater than
   label: DoublesGreaterThan
   addr:
+    J: 0xA6520
     U: 0xA4234
     E: 0xA4890
-    J: 0xA6520
   size: 0x4C
   mode: thumb
   params:
@@ -5734,9 +5734,9 @@
   desc: Doubles greater equal
   label: DoublesGreaterEqual
   addr:
+    J: 0xA656C
     U: 0xA4280
     E: 0xA48DC
-    J: 0xA656C
   size: 0x4C
   mode: thumb
   params:
@@ -5756,9 +5756,9 @@
   desc: Doubles less than
   label: DoublesLessThan
   addr:
+    J: 0xA65B8
     U: 0xA42CC
     E: 0xA4928
-    J: 0xA65B8
   size: 0x4C
   mode: thumb
   params:
@@ -5778,9 +5778,9 @@
   desc: Doubles less equal
   label: DoublesLessEqual
   addr:
+    J: 0xA6604
     U: 0xA4318
     E: 0xA4974
-    J: 0xA6604
   size: 0x4C
   mode: thumb
   params:
@@ -5800,9 +5800,9 @@
   desc: Integer to double
   label: IntToDouble
   addr:
+    J: 0xA6650
     U: 0xA4364
     E: 0xA49C0
-    J: 0xA6650
   size: 0x7C
   mode: thumb
   params:
@@ -5816,9 +5816,9 @@
   desc: Double to int
   label: DoubleToInt
   addr:
+    J: 0xA66CC
     U: 0xA43E0
     E: 0xA4A3C
-    J: 0xA66CC
   size: 0x74
   mode: thumb
   params:
@@ -5834,9 +5834,9 @@
   desc: Negate double
   label: NegateDouble
   addr:
+    J: 0xA6740
     U: 0xA4454
     E: 0xA4AB0
-    J: 0xA6740
   size: 0x28
   mode: thumb
   params:
@@ -5852,9 +5852,9 @@
   desc: Create double from parts
   label: CreateDouble
   addr:
+    J: 0xA6768
     U: 0xA447C
     E: 0xA4AD8
-    J: 0xA6768
   size: 0x28
   mode: thumb
   params:
@@ -5877,9 +5877,9 @@
   desc: Convert double to float
   label: DoubleToFloat
   addr:
+    J: 0xA6790
     U: 0xA44A4
     E: 0xA4B00
-    J: 0xA6790
   size: 0x44
   mode: thumb
   params:
@@ -5895,9 +5895,9 @@
   desc: Pack float
   label: PackFloat
   addr:
+    J: 0xA67D4
     U: 0xA44E8
     E: 0xA4B44
-    J: 0xA67D4
   size: 0xB8
   mode: thumb
   params:
@@ -5911,9 +5911,9 @@
   desc: Unpack float
   label: UnpackFloat
   addr:
+    J: 0xA688C
     U: 0xA45A0
     E: 0xA4BFC
-    J: 0xA688C
   size: 0x7C
   mode: thumb
   params:
@@ -5927,9 +5927,9 @@
   desc: Add float parts
   label: AddFloatParts
   addr:
+    J: 0xA6908
     U: 0xA461C
     E: 0xA4C78
-    J: 0xA6908
   size: 0x17C
   mode: thumb
   params:
@@ -5947,9 +5947,9 @@
   desc: Add floats
   label: AddFloats
   addr:
+    J: 0xA6A84
     U: 0xA4798
     E: 0xA4DF4
-    J: 0xA6A84
   size: 0x2C
   mode: thumb
   params:
@@ -5965,9 +5965,9 @@
   desc: Subtract floats
   label: SubtractFloats
   addr:
+    J: 0xA6AB0
     U: 0xA47C4
     E: 0xA4E20
-    J: 0xA6AB0
   size: 0x34
   mode: thumb
   params:
@@ -5983,9 +5983,9 @@
   desc: Multiply floats
   label: MultiplyFloats
   addr:
+    J: 0xA6AE4
     U: 0xA47F8
     E: 0xA4E54
-    J: 0xA6AE4
   size: 0x164
   mode: thumb
   params:
@@ -6001,9 +6001,9 @@
   desc: Divide floats
   label: DivideFloats
   addr:
+    J: 0xA6C48
     U: 0xA495C
     E: 0xA4FB8
-    J: 0xA6C48
   size: 0xEC
   mode: thumb
   params:
@@ -6019,9 +6019,9 @@
   desc: Compare float parts
   label: CompareFloatParts
   addr:
+    J: 0xA6D34
     U: 0xA4A48
     E: 0xA50A4
-    J: 0xA6D34
   size: 0xE4
   mode: thumb
   params:
@@ -6037,9 +6037,9 @@
   desc: Compare floats
   label: CompareFloats
   addr:
+    J: 0xA6E18
     U: 0xA4B2C
     E: 0xA5188
-    J: 0xA6E18
   size: 0x28
   mode: thumb
   params:
@@ -6055,9 +6055,9 @@
   desc: Floats equal
   label: FloatsEqual
   addr:
+    J: 0xA6E40
     U: 0xA4B54
     E: 0xA51B0
-    J: 0xA6E40
   size: 0x48
   mode: thumb
   params:
@@ -6073,9 +6073,9 @@
   desc: Floats not equal
   label: FloatsNotEqual
   addr:
+    J: 0xA6E88
     U: 0xA4B9C
     E: 0xA51F8
-    J: 0xA6E88
   size: 0x48
   mode: thumb
   params:
@@ -6091,9 +6091,9 @@
   desc: Floats greater than
   label: FloatsGreaterThan
   addr:
+    J: 0xA6ED0
     U: 0xA4BE4
     E: 0xA5240
-    J: 0xA6ED0
   size: 0x48
   mode: thumb
   params:
@@ -6109,9 +6109,9 @@
   desc: Floats greater equal
   label: FloatsGreaterEqual
   addr:
+    J: 0xA6F18
     U: 0xA4C2C
     E: 0xA5288
-    J: 0xA6F18
   size: 0x48
   mode: thumb
   params:
@@ -6127,9 +6127,9 @@
   desc: Floats less than
   label: FloatsLessThan
   addr:
+    J: 0xA6F60
     U: 0xA4C74
     E: 0xA52D0
-    J: 0xA6F60
   size: 0x48
   mode: thumb
   params:
@@ -6145,9 +6145,9 @@
   desc: Floats less equal
   label: FloatsLessEqual
   addr:
+    J: 0xA6FA8
     U: 0xA4CBC
     E: 0xA5318
-    J: 0xA6FA8
   size: 0x48
   mode: thumb
   params:
@@ -6163,9 +6163,9 @@
   desc: Integer to float
   label: IntToFloat
   addr:
+    J: 0xA6FF0
     U: 0xA4D04
     E: 0xA5360
-    J: 0xA6FF0
   size: 0x60
   mode: thumb
   params:
@@ -6179,9 +6179,9 @@
   desc: Float to int
   label: FloatToInt
   addr:
+    J: 0xA7050
     U: 0xA4D64
     E: 0xA53C0
-    J: 0xA7050
   size: 0x68
   mode: thumb
   params:
@@ -6195,9 +6195,9 @@
   desc: Negate float
   label: NegateFloat
   addr:
+    J: 0xA70B8
     U: 0xA4DCC
     E: 0xA5428
-    J: 0xA70B8
   size: 0x24
   mode: thumb
   params:
@@ -6211,9 +6211,9 @@
   desc: Create float from parts
   label: CreateFloat
   addr:
+    J: 0xA70DC
     U: 0xA4DF0
     E: 0xA544C
-    J: 0xA70DC
   size: 0x18
   mode: thumb
   params:
@@ -6234,9 +6234,9 @@
   desc: Convert float to double
   label: FloatToDouble
   addr:
+    J: 0xA70F4
     U: 0xA4E08
     E: 0xA5464
-    J: 0xA70F4
   size: 0x2C
   mode: thumb
   params:
@@ -6250,9 +6250,9 @@
   desc: Right shift long integer
   label: RightShiftLongInt
   addr:
+    J: 0xA7120
     U: 0xA4E34
     E: 0xA5490
-    J: 0xA7120
   size: 0x34
   mode: thumb
   params:
@@ -6269,9 +6269,9 @@
   desc: Multiply long integers
   label: MultiplyLongInts
   addr:
+    J: 0xA7154
     U: 0xA4E68
     E: 0xA54C4
-    J: 0xA7154
   size: 0x70
   mode: thumb
   params:
@@ -6290,9 +6290,9 @@
   desc: Negate long integer
   label: NegateLongInt
   addr:
+    J: 0xA71C4
     U: 0xA4ED8
     E: 0xA5534
-    J: 0xA71C4
   size: 0x18
   mode: thumb
   params:
@@ -6307,9 +6307,9 @@
   desc: Memory copy
   label: MemoryCopy
   addr:
+    J: 0xA71DC
     U: 0xA4EF0
     E: 0xA554C
-    J: 0xA71DC
   size: 0x60
   mode: thumb
   params:
@@ -6327,9 +6327,9 @@
   desc: Memory set
   label: MemorySet
   addr:
+    J: 0xA723C
     U: 0xA4F50
     E: 0xA55AC
-    J: 0xA723C
   size: 0x54
   mode: thumb
   params:

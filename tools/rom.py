@@ -3,6 +3,7 @@ from constants import *
 
 
 SIZE_8MB = 0x800000
+SIZE_16MB = 0x800000
 ROM_OFFSET = 0x80000000
 
 
@@ -12,30 +13,24 @@ class Rom(object):
         with open(path, "rb") as f:
             self.data = f.read()
         # check length
-        if len(self.data) != SIZE_8MB:
-            raise ValueError("ROM should be 8MB")
+        if len(self.data) not in (SIZE_8MB, SIZE_16MB):
+            raise ValueError("ROM should be 8MB or 16MB")
         # check title and code
         title = self.read_ascii(0xA0, 0x10)
-        if title == "METROID4USA\0AMTE":
-            self.game = GAME_MF
-            self.region = REGION_U
-        elif title == "METROID4EUR\0AMTP":
-            self.game = GAME_MF
-            self.region = REGION_E
-        elif title == "METROID4JPN\0AMTJ":
-            self.game = GAME_MF
+        if title == "FIREEMBLEM6\0AFEJ":
+            self.game = GAME_FE6
             self.region = REGION_J
-        elif title == "ZEROMISSIONEBMXE":
-            self.game = GAME_ZM
-            self.region = REGION_U
-        elif title == "ZEROMISSIONPBMXP":
-            self.game = GAME_ZM
-            self.region = REGION_E
-        elif title == "ZEROMISSIONJBMXJ":
-            self.game = GAME_ZM
+        elif title == "FIREEMBLEM8\0BE8J":
+            self.game = GAME_FE8
             self.region = REGION_J
+        elif title == "FIREEMBLEM2EBE8E":
+            self.game = GAME_FE8
+            self.region = REGION_U
+        elif title == "FIREEMBLEM2PBE8P":
+            self.game = GAME_FE8
+            self.region = REGION_E
         else:
-            raise ValueError("Not a valid GBA Metroid ROM")
+            raise ValueError("Not a valid GBA FE6/FE8 ROM")
 
     def read8(self, addr: int) -> int:
         return self.data[addr]
@@ -68,9 +63,9 @@ class Rom(object):
 
     def code_start(self, virt: bool = False) -> int:
         addr = None
-        if self.game == GAME_MF:
+        if self.game == GAME_FE6:
             addr = 0x230
-        elif self.game == GAME_ZM:
+        elif self.game == GAME_FE8:
             addr = 0x23C
         if virt:
             addr += ROM_OFFSET
@@ -78,14 +73,14 @@ class Rom(object):
 
     def code_end(self, virt: bool = False) -> int:
         addr = None
-        if self.game == GAME_MF:
+        if self.game == GAME_FE6:
             if self.region == REGION_U:
                 addr = 0xA4FA4
             elif self.region == REGION_E:
                 addr = 0xA5600
             elif self.region == REGION_J:
                 addr = 0xA7290
-        elif self.game == GAME_ZM:
+        elif self.game == GAME_FE8:
             if self.region == REGION_U:
                 addr = 0x8C71C
             elif self.region == REGION_E:
@@ -101,14 +96,14 @@ class Rom(object):
 
     def data_end(self, virt: bool = False) -> int:
         addr = None
-        if self.game == GAME_MF:
+        if self.game == GAME_FE6:
             if self.region == REGION_U:
                 addr = 0x79ECC8
             elif self.region == REGION_E:
                 addr = 0x79F524
             elif self.region == REGION_J:
                 addr = 0x7F145C
-        elif self.game == GAME_ZM:
+        elif self.game == GAME_FE8:
             if self.region == REGION_U:
                 addr = 0x760D38
             elif self.region == REGION_E:
@@ -120,7 +115,7 @@ class Rom(object):
         return addr
 
     def arm_functions(self) -> Dict[int, int]:
-        if self.game == GAME_MF:
+        if self.game == GAME_FE6:
             if self.region == REGION_U:
                 return {
                     0x3D78: 0x3E0C,
@@ -145,7 +140,7 @@ class Rom(object):
                     0x457C: 0x4594,
                     0x4598: 0x460C
                 }
-        elif self.game == GAME_ZM:
+        elif self.game == GAME_FE8:
             if self.region == REGION_U:
                 return {
                     0x4320: 0x43B4,

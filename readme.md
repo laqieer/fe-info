@@ -1,7 +1,7 @@
-# Metroid Fusion and Metroid Zero Mission Info Files
+# Fire Emblem Info Files
 
 ## About
-These files contain labeled RAM and ROM data, along with struct and enum definitions. They're used for the data maps website: http://labk.org/maps/
+These files contain labeled RAM and ROM data, along with struct and enum definitions. They're used for the data maps website: https://laqieer.github.io/fe-maps/
 
 ## Structure
 - `yaml` - Info files in YAML format; large files are split for easier editing
@@ -13,7 +13,7 @@ These files contain labeled RAM and ROM data, along with struct and enum definit
   - `dumper.py` - Script for finding and outputing data from a ROM file
   - `constants.py` - Defines constants used by other scripts
 
-Game directories are `mf` for Fusion and `zm` for Zero Mission, while `unk` is for unlabeled data.
+Game directories are `fe6` for Binding Blade and `fe8` for The Sacred Stones, while `unk` is for unlabeled data.
 
 ## Data Format
 - ram / rom
