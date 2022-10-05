@@ -1,4 +1,3 @@
-from ensurepip import version
 from functools import cmp_to_key
 import os
 import re
