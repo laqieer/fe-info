@@ -183,7 +183,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: random.c:9
 -
@@ -227,7 +227,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: random.c:72
 -
@@ -240,7 +240,7 @@
   - desc: max
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: random.c:79
 -
@@ -253,7 +253,7 @@
   - desc: threshold
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: random.c:86
 -
@@ -266,7 +266,7 @@
   - desc: threshold
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: random.c:91
 -
@@ -288,7 +288,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: unsigned
   line: random.c:111
 -
@@ -299,7 +299,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: unsigned
   line: hardware.c:56
 -
@@ -338,7 +338,7 @@
   - desc: seconds
     type: u16 *
   return:
-  - desc: result
+    desc: result
     type: i8
   line: hardware.c:77
 -
@@ -426,7 +426,7 @@
   - desc: bgid
     type: u16
   return:
-  - desc: result
+    desc: result
     type: struct BgCnt *
   line: hardware.c:168
 -
@@ -439,7 +439,7 @@
   - desc: bg
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: hardware.c:181
 -
@@ -454,7 +454,7 @@
   - desc: offset
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: hardware.c:187
 -
@@ -467,7 +467,7 @@
   - desc: bg
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: hardware.c:194
 -
@@ -879,7 +879,7 @@
   - desc: bg
     type: int
   return:
-  - desc: result
+    desc: result
     type: u16 *
   line: hardware.c:710
 -
@@ -1009,7 +1009,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: oam.c:31
 -
@@ -1072,7 +1072,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: sound.c:64
 -
@@ -1083,7 +1083,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: sound.c:69
 -
@@ -1426,7 +1426,7 @@
   - desc: parent
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: proc.c:67
 -
@@ -1441,7 +1441,7 @@
   - desc: parent
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: proc.c:97
 -
@@ -1474,7 +1474,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: proc.c:146
 -
@@ -1568,7 +1568,7 @@
   - desc: script
     type: const struct ProcScr *
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: proc.c:247
 -
@@ -1581,7 +1581,7 @@
   - desc: script
     type: const struct ProcScr *
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: proc.c:261
 -
@@ -1594,7 +1594,7 @@
   - desc: mark
     type: int
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: proc.c:275
 -
@@ -1799,7 +1799,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:441
 -
@@ -1812,7 +1812,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:447
 -
@@ -1825,7 +1825,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:455
 -
@@ -1838,7 +1838,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:465
 -
@@ -1851,7 +1851,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:473
 -
@@ -1864,7 +1864,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:485
 -
@@ -1877,7 +1877,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:500
 -
@@ -1890,7 +1890,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:508
 -
@@ -1903,7 +1903,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:516
 -
@@ -1916,7 +1916,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:524
 -
@@ -1929,7 +1929,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:532
 -
@@ -1942,7 +1942,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:544
 -
@@ -1955,7 +1955,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:554
 -
@@ -1968,7 +1968,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:562
 -
@@ -1981,7 +1981,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:570
 -
@@ -1994,7 +1994,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:577
 -
@@ -2007,7 +2007,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:584
 -
@@ -2031,7 +2031,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:599
 -
@@ -2044,7 +2044,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:612
 -
@@ -2057,7 +2057,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:620
 -
@@ -2070,7 +2070,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:626
 -
@@ -2083,7 +2083,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:631
 -
@@ -2096,7 +2096,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:653
 -
@@ -2109,7 +2109,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:675
 -
@@ -2122,7 +2122,7 @@
   - desc: proc
     type: struct ProcDummy *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: proc.c:682
 -
@@ -2265,7 +2265,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: icon.c:45
 -
@@ -2278,7 +2278,7 @@
   - desc: num
     type: int
   return:
-  - desc: result
+    desc: result
     type: u16
   line: icon.c:58
 -
@@ -2291,7 +2291,7 @@
   - desc: icon
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: icon.c:63
 -
@@ -2304,7 +2304,7 @@
   - desc: icon
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: icon.c:79
 -
@@ -2509,7 +2509,7 @@
   - desc: pressed
     type: u16
   return:
-  - desc: result
+    desc: result
     type: bool
   line: debug-text.c:240
 -
@@ -2582,7 +2582,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: text.c:88
 -
@@ -2715,7 +2715,7 @@
   - desc: text
     type: struct Text *
   return:
-  - desc: result
+    desc: result
     type: int
   line: text.c:192
 -
@@ -2728,7 +2728,7 @@
   - desc: text
     type: struct Text *
   return:
-  - desc: result
+    desc: result
     type: int
   line: text.c:197
 -
@@ -2780,7 +2780,7 @@
   - desc: text
     type: struct Text *
   return:
-  - desc: result
+    desc: result
     type: int
   line: text.c:217
 -
@@ -2834,7 +2834,7 @@
   - desc: str
     type: const char *
   return:
-  - desc: result
+    desc: result
     type: int
   line: text.c:260
 -
@@ -2849,7 +2849,7 @@
   - desc: out_width
     type: int *
   return:
-  - desc: result
+    desc: result
     type: const char *
   line: text.c:296
 -
@@ -2864,7 +2864,7 @@
   - desc: str
     type: const char *
   return:
-  - desc: result
+    desc: result
     type: int
   line: text.c:322
 -
@@ -2892,7 +2892,7 @@
   - desc: str
     type: const char *
   return:
-  - desc: result
+    desc: result
     type: const char *
   line: text.c:350
 -
@@ -2946,7 +2946,7 @@
   - desc: str
     type: const char *
   return:
-  - desc: result
+    desc: result
     type: const char *
   line: text.c:442
 -
@@ -2959,7 +2959,7 @@
   - desc: text
     type: struct Text *
   return:
-  - desc: result
+    desc: result
     type: u8 *
   line: text.c:478
 -
@@ -2972,7 +2972,7 @@
   - desc: color
     type: int
   return:
-  - desc: result
+    desc: result
     type: const u16 *
   line: text.c:485
 -
@@ -3108,7 +3108,7 @@
   - desc: str
     type: const char *
   return:
-  - desc: result
+    desc: result
     type: const char *
   line: text.c:605
 -
@@ -3121,7 +3121,7 @@
   - desc: str
     type: const char *
   return:
-  - desc: result
+    desc: result
     type: int
   line: text.c:617
 -
@@ -3193,7 +3193,7 @@
   - desc: text
     type: struct Text *
   return:
-  - desc: result
+    desc: result
     type: u8 *
   line: text.c:682
 -
@@ -3236,7 +3236,7 @@
   - desc: char_per_tick
     type: int
   return:
-  - desc: result
+    desc: result
     type: const char *
   line: text.c:768
 -
@@ -3249,7 +3249,7 @@
   - desc: text
     type: struct Text *
   return:
-  - desc: result
+    desc: result
     type: i8
   line: text.c:792
 -
@@ -3321,7 +3321,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: text.c:846
 -
@@ -3336,7 +3336,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: text.c:859
 -
@@ -3562,7 +3562,7 @@
   - desc: script
     type: const void *
   return:
-  - desc: result
+    desc: result
     type: struct BaSprite *
   line: banim-sprite.c:125
 -
@@ -3577,7 +3577,7 @@
   - desc: displayPriority
     type: u16
   return:
-  - desc: result
+    desc: result
     type: struct BaSprite *
   line: banim-sprite.c:163
 -
@@ -3621,7 +3621,7 @@
   - desc: bas
     type: struct BaSprite *
   return:
-  - desc: result
+    desc: result
     type: int
   line: banim-sprite.c:255
 -
@@ -3754,7 +3754,7 @@
   - desc: tileref
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct SpriteProc *
   line: sprite.c:193
 -
@@ -3782,7 +3782,7 @@
   - desc: fid
     type: int
   return:
-  - desc: result
+    desc: result
     type: const struct FaceInfo *
   line: face.c:221
 -
@@ -3795,7 +3795,7 @@
   - desc: fid
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: face.c:226
 -
@@ -3826,7 +3826,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: face.c:255
 -
@@ -3867,7 +3867,7 @@
   - desc: disp
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct FaceProc *
   line: face.c:307
 -
@@ -3888,7 +3888,7 @@
   - desc: disp
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct FaceProc *
   line: face.c:317
 -
@@ -3925,7 +3925,7 @@
   - desc: disp
     type: u32
   return:
-  - desc: result
+    desc: result
     type: u32
   line: face.c:387
 -
@@ -3940,7 +3940,7 @@
   - desc: disp
     type: u32
   return:
-  - desc: result
+    desc: result
     type: u32
   line: face.c:393
 -
@@ -3953,7 +3953,7 @@
   - desc: proc
     type: struct FaceProc *
   return:
-  - desc: result
+    desc: result
     type: u32
   line: face.c:398
 -
@@ -3966,7 +3966,7 @@
   - desc: slot
     type: int
   return:
-  - desc: result
+    desc: result
     type: u32
   line: face.c:403
 -
@@ -4207,7 +4207,7 @@
   - desc: fid
     type: int
   return:
-  - desc: result
+    desc: result
     type: const u8 *
   line: face.c:643
 -
@@ -4278,7 +4278,7 @@
   - desc: parent
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: talk.c:386
 -
@@ -4295,7 +4295,7 @@
   - desc: msg
     type: int
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: talk.c:418
 -
@@ -4314,7 +4314,7 @@
   - desc: parent
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: talk.c:423
 -
@@ -4331,7 +4331,7 @@
   - desc: str
     type: const char *
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: talk.c:428
 -
@@ -4386,7 +4386,7 @@
   - desc: flag
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: talk.c:454
 -
@@ -4454,7 +4454,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: talk.c:599
 -
@@ -4467,7 +4467,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: talk.c:636
 -
@@ -4489,7 +4489,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: i8
   line: talk.c:657
 -
@@ -4511,7 +4511,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: int
   line: talk.c:667
 -
@@ -4565,7 +4565,7 @@
   - desc: x
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: talk.c:987
 -
@@ -4602,7 +4602,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: talk.c:1069
 -
@@ -4809,7 +4809,7 @@
   - desc: cmd
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: talk.c:1358
 -
@@ -4990,7 +4990,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: talk.c:1660
 -
@@ -5003,7 +5003,7 @@
   - desc: talk_face
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: talk.c:1668
 -
@@ -5049,7 +5049,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: i8
   line: talk.c:1700
 -
@@ -5060,7 +5060,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: i8
   line: talk.c:1705
 -
@@ -5071,7 +5071,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: talk.c:1710
 -
@@ -5184,7 +5184,7 @@
   - desc: isBubbleOpen
     type: i8
   return:
-  - desc: result
+    desc: result
     type: int
   line: talk.c:1808
 -
@@ -5195,7 +5195,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: i8
   line: talk.c:2008
 -
@@ -5320,7 +5320,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: event.c:403
 -
@@ -5331,7 +5331,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: event.c:411
 -
@@ -5342,7 +5342,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:417
 -
@@ -5355,7 +5355,7 @@
   - desc: proc
     type: struct PopupProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:424
 -
@@ -5519,7 +5519,7 @@
   - desc: parent
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: event.c:703
 -
@@ -5542,7 +5542,7 @@
   - desc: parent
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: event.c:708
 -
@@ -5650,7 +5650,7 @@
   - desc: script
     type: const u32 *
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: event.c:801
 -
@@ -5665,7 +5665,7 @@
   - desc: parent
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: event.c:806
 -
@@ -5680,7 +5680,7 @@
   - desc: parent
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: event.c:811
 -
@@ -5759,7 +5759,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: event.c:924
 -
@@ -5851,7 +5851,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1093
 -
@@ -5864,7 +5864,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1110
 -
@@ -5877,7 +5877,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1129
 -
@@ -5890,7 +5890,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1148
 -
@@ -5903,7 +5903,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1164
 -
@@ -5938,7 +5938,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1209
 -
@@ -5951,7 +5951,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1229
 -
@@ -5964,7 +5964,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1249
 -
@@ -5977,7 +5977,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1265
 -
@@ -6001,7 +6001,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1293
 -
@@ -6014,7 +6014,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1322
 -
@@ -6031,7 +6031,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: event.c:1346
 -
@@ -6044,7 +6044,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1360
 -
@@ -6057,7 +6057,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1391
 -
@@ -6070,7 +6070,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1417
 -
@@ -6083,7 +6083,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1449
 -
@@ -6096,7 +6096,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1481
 -
@@ -6132,7 +6132,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: event.c:1545
 -
@@ -6149,7 +6149,7 @@
   - desc: movescr
     type: const u8 *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: event.c:1579
 -
@@ -6184,7 +6184,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1645
 -
@@ -6197,7 +6197,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1659
 -
@@ -6210,7 +6210,7 @@
   - desc: start
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1671
 -
@@ -6223,7 +6223,7 @@
   - desc: info
     type: const struct UnitInfo *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: event.c:1694
 -
@@ -6269,7 +6269,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1828
 -
@@ -6282,7 +6282,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1837
 -
@@ -6295,7 +6295,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1843
 -
@@ -6308,7 +6308,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1849
 -
@@ -6321,7 +6321,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1867
 -
@@ -6334,7 +6334,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1890
 -
@@ -6347,7 +6347,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1913
 -
@@ -6360,7 +6360,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1918
 -
@@ -6375,7 +6375,7 @@
   - desc: label
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1923
 -
@@ -6388,7 +6388,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1939
 -
@@ -6401,7 +6401,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1946
 -
@@ -6414,7 +6414,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1965
 -
@@ -6427,7 +6427,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:1984
 -
@@ -6440,7 +6440,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2000
 -
@@ -6453,7 +6453,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2016
 -
@@ -6466,7 +6466,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2024
 -
@@ -6479,7 +6479,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2050
 -
@@ -6492,7 +6492,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2076
 -
@@ -6505,7 +6505,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2102
 -
@@ -6518,7 +6518,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2116
 -
@@ -6531,7 +6531,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2124
 -
@@ -6548,7 +6548,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2138
 -
@@ -6561,7 +6561,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2148
 -
@@ -6574,7 +6574,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2184
 -
@@ -6587,7 +6587,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2225
 -
@@ -6600,7 +6600,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2251
 -
@@ -6613,7 +6613,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2274
 -
@@ -6659,7 +6659,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2316
 -
@@ -6683,7 +6683,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2342
 -
@@ -6696,7 +6696,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2348
 -
@@ -6709,7 +6709,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2364
 -
@@ -6750,7 +6750,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2422
 -
@@ -6763,7 +6763,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2447
 -
@@ -6776,7 +6776,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2476
 -
@@ -6789,7 +6789,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2484
 -
@@ -6802,7 +6802,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2492
 -
@@ -6815,7 +6815,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2504
 -
@@ -6828,7 +6828,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2517
 -
@@ -6841,7 +6841,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2524
 -
@@ -6854,7 +6854,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2536
 -
@@ -6867,7 +6867,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2546
 -
@@ -6880,7 +6880,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2560
 -
@@ -6893,7 +6893,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2572
 -
@@ -6906,7 +6906,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2578
 -
@@ -6919,7 +6919,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2600
 -
@@ -6932,7 +6932,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2608
 -
@@ -6945,7 +6945,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2631
 -
@@ -6969,7 +6969,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2657
 -
@@ -6982,7 +6982,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2672
 -
@@ -6995,7 +6995,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2682
 -
@@ -7008,7 +7008,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2694
 -
@@ -7021,7 +7021,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2706
 -
@@ -7034,7 +7034,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2718
 -
@@ -7047,7 +7047,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2730
 -
@@ -7060,7 +7060,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2736
 -
@@ -7073,7 +7073,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2742
 -
@@ -7086,7 +7086,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2765
 -
@@ -7121,7 +7121,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2852
 -
@@ -7134,7 +7134,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2858
 -
@@ -7147,7 +7147,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2866
 -
@@ -7171,7 +7171,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2883
 -
@@ -7184,7 +7184,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2901
 -
@@ -7197,7 +7197,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2914
 -
@@ -7210,7 +7210,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2932
 -
@@ -7234,7 +7234,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:2984
 -
@@ -7269,7 +7269,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3048
 -
@@ -7315,7 +7315,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3113
 -
@@ -7350,7 +7350,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3148
 -
@@ -7363,7 +7363,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3156
 -
@@ -7376,7 +7376,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3164
 -
@@ -7389,7 +7389,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3187
 -
@@ -7402,7 +7402,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3202
 -
@@ -7415,7 +7415,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3217
 -
@@ -7428,7 +7428,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3227
 -
@@ -7441,7 +7441,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3240
 -
@@ -7454,7 +7454,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3255
 -
@@ -7478,7 +7478,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3280
 -
@@ -7502,7 +7502,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3301
 -
@@ -7515,7 +7515,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3318
 -
@@ -7528,7 +7528,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3330
 -
@@ -7541,7 +7541,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3347
 -
@@ -7554,7 +7554,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3359
 -
@@ -7567,7 +7567,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3379
 -
@@ -7580,7 +7580,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3391
 -
@@ -7593,7 +7593,7 @@
   - desc: proc
     type: struct EventProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3409
 -
@@ -7642,7 +7642,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: event.c:3449
 -
@@ -7653,7 +7653,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: event.c:3454
 -
@@ -7684,7 +7684,7 @@
   - desc: msgid
     type: int
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: event.c:3473
 -
@@ -7697,7 +7697,7 @@
   - desc: msgid
     type: int
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: event.c:3481
 -
@@ -7915,7 +7915,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: event.c:3619
 -
@@ -8039,7 +8039,7 @@
   - desc: layer
     type: u16
   return:
-  - desc: result
+    desc: result
     type: struct SpriteAnim *
   line: sprite-anim.c:53
 -
@@ -8067,7 +8067,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: sprite-anim.c:75
 -
@@ -8095,7 +8095,7 @@
   - desc: anim
     type: struct SpriteAnim *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: sprite-anim.c:103
 -
@@ -8195,7 +8195,7 @@
   - desc: info
     type: const u16 *
   return:
-  - desc: result
+    desc: result
     type: struct SpriteAnim *
   line: sprite-anim.c:335
 -
@@ -8218,7 +8218,7 @@
   - desc: layer
     type: int
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: sprite-anim.c:348
 -
@@ -8288,7 +8288,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: sprite-anim.c:399
 -
@@ -8299,7 +8299,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: game-controller.c:224
 -
@@ -8312,7 +8312,7 @@
   - desc: proc
     type: struct GameController *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: game-controller.c:249
 -
@@ -8530,7 +8530,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: struct GameController *
   line: game-controller.c:505
 -
@@ -8563,7 +8563,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: game-controller.c:522
 -
@@ -8612,7 +8612,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: char *
   line: msg.c:12
 -
@@ -8633,7 +8633,7 @@
   - desc: end
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: util.c:52
 -
@@ -8657,7 +8657,7 @@
   - desc: strB
     type: const char *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: util.c:172
 -
@@ -8722,7 +8722,7 @@
   - desc: data
     type: const void *
   return:
-  - desc: result
+    desc: result
     type: int
   line: util.c:235
 -
@@ -8739,7 +8739,7 @@
   - desc: arg_2
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct Unk *
   line: util.c:246
 -
@@ -8754,7 +8754,7 @@
   - desc: src
     type: const u8 *
   return:
-  - desc: result
+    desc: result
     type: int
   line: util.c:256
 -
@@ -8769,7 +8769,7 @@
   - desc: arg_1
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: util.c:272
 -
@@ -8962,7 +8962,7 @@
   - desc: arg_0
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct Unk *
   line: util.c:494
 -
@@ -9082,7 +9082,7 @@
   - desc: parent
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: struct PalFadeSt *
   line: util.c:671
 -
@@ -9232,7 +9232,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: util.c:875
 -
@@ -9819,7 +9819,7 @@
   - desc: proc
     type: struct FadeUnkProc *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: util.c:1269
 -
@@ -9907,7 +9907,7 @@
   - desc: buf
     type: char *
   return:
-  - desc: result
+    desc: result
     type: int
   line: util.c:1368
 -
@@ -9926,7 +9926,7 @@
   - desc: str
     type: const char *
   return:
-  - desc: result
+    desc: result
     type: struct Text *
   line: util.c:1422
 -
@@ -9943,7 +9943,7 @@
   - desc: str
     type: const char *
   return:
-  - desc: result
+    desc: result
     type: struct Text *
   line: util.c:1439
 -
@@ -9973,7 +9973,7 @@
   - desc: parent
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: struct UnkProc_085C4E64 *
   line: util.c:1478
 -
@@ -10318,7 +10318,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: u16 *
   line: util.c:1823
 -
@@ -10340,7 +10340,7 @@
   - desc: x
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: util.c:1861
 -
@@ -10561,7 +10561,7 @@
   - desc: rvec
     type: const int *
   return:
-  - desc: result
+    desc: result
     type: int
   line: util.c:2081
 -
@@ -10595,7 +10595,7 @@
   - desc: arg_3
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: util.c:2093
 -
@@ -10642,7 +10642,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: u8
   line: bm.c:380
 -
@@ -10664,7 +10664,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: int
   line: bm.c:410
 -
@@ -10699,7 +10699,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: int
   line: bm.c:454
 -
@@ -10783,7 +10783,7 @@
   - desc: x
     type: int
   return:
-  - desc: result
+    desc: result
     type: u16
   line: bm.c:659
 -
@@ -10796,7 +10796,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: u16
   line: bm.c:678
 -
@@ -10809,7 +10809,7 @@
   - desc: x
     type: int
   return:
-  - desc: result
+    desc: result
     type: u16
   line: bm.c:697
 -
@@ -10822,7 +10822,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: u16
   line: bm.c:710
 -
@@ -10919,7 +10919,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: bm.c:868
 -
@@ -10934,7 +10934,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: bm.c:895
 -
@@ -10947,7 +10947,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: bm.c:906
 -
@@ -10984,7 +10984,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: bm.c:956
 -
@@ -11006,7 +11006,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:160
 -
@@ -11019,7 +11019,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:173
 -
@@ -11032,7 +11032,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:186
 -
@@ -11045,7 +11045,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:199
 -
@@ -11058,7 +11058,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:212
 -
@@ -11071,7 +11071,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:225
 -
@@ -11084,7 +11084,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:238
 -
@@ -11097,7 +11097,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:251
 -
@@ -11112,7 +11112,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item.c:261
 -
@@ -11127,7 +11127,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item.c:300
 -
@@ -11206,7 +11206,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: u16
   line: item.c:386
 -
@@ -11219,7 +11219,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: u16
   line: item.c:399
 -
@@ -11232,7 +11232,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:412
 -
@@ -11247,7 +11247,7 @@
   - desc: distance
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item.c:425
 -
@@ -11275,7 +11275,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item.c:448
 -
@@ -11288,7 +11288,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: const char *
   line: item.c:485
 -
@@ -11301,7 +11301,7 @@
   - desc: wexp
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:537
 -
@@ -11314,7 +11314,7 @@
   - desc: wexp
     type: int
   return:
-  - desc: result
+    desc: result
     type: const char *
   line: item.c:560
 -
@@ -11327,7 +11327,7 @@
   - desc: wexp
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:576
 -
@@ -11340,7 +11340,7 @@
   - desc: kind
     type: int
   return:
-  - desc: result
+    desc: result
     type: const char *
   line: item.c:592
 -
@@ -11355,7 +11355,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item.c:612
 -
@@ -11370,7 +11370,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item.c:635
 -
@@ -11385,7 +11385,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:643
 -
@@ -11400,7 +11400,7 @@
   - desc: iid
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:687
 -
@@ -11413,7 +11413,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item.c:700
 -
@@ -11426,7 +11426,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item.c:705
 -
@@ -11439,7 +11439,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:722
 -
@@ -11454,7 +11454,7 @@
   - desc: item_slot
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:757
 -
@@ -11469,7 +11469,7 @@
   - desc: item_slot
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:773
 -
@@ -11482,7 +11482,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:824
 -
@@ -11493,7 +11493,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:860
 -
@@ -11504,7 +11504,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:875
 -
@@ -11515,7 +11515,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:888
 -
@@ -11528,7 +11528,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:28
 -
@@ -11541,7 +11541,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: const char *
   line: item.c:33
 -
@@ -11554,7 +11554,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:38
 -
@@ -11567,7 +11567,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:43
 -
@@ -11580,7 +11580,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:48
 -
@@ -11593,7 +11593,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:56
 -
@@ -11606,7 +11606,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:61
 -
@@ -11619,7 +11619,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:69
 -
@@ -11632,7 +11632,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:77
 -
@@ -11645,7 +11645,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:82
 -
@@ -11658,7 +11658,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:87
 -
@@ -11671,7 +11671,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:92
 -
@@ -11684,7 +11684,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:97
 -
@@ -11697,7 +11697,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:102
 -
@@ -11710,7 +11710,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:107
 -
@@ -11723,7 +11723,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:112
 -
@@ -11736,7 +11736,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:117
 -
@@ -11749,7 +11749,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: const u8 *
   line: item.c:122
 -
@@ -11762,7 +11762,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: const struct ItemBonuses *
   line: item.c:127
 -
@@ -11775,7 +11775,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:132
 -
@@ -11788,7 +11788,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:140
 -
@@ -11801,7 +11801,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:145
 -
@@ -11814,7 +11814,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:150
 -
@@ -11827,7 +11827,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item.c:155
 -
@@ -11840,7 +11840,7 @@
   - desc: iid
     type: int
   return:
-  - desc: result
+    desc: result
     type: const struct ItemInfo *
   line: item.c:23
 -
@@ -11886,7 +11886,7 @@
   - desc: faction
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct Unit *
   line: unit.c:93
 -
@@ -11899,7 +11899,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:221
 -
@@ -11925,7 +11925,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:259
 -
@@ -11940,7 +11940,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: unit.c:282
 -
@@ -11964,7 +11964,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:332
 -
@@ -11979,7 +11979,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: unit.c:345
 -
@@ -11992,7 +11992,7 @@
   - desc: info
     type: const struct UnitInfo *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:360
 -
@@ -12005,7 +12005,7 @@
   - desc: info
     type: const struct UnitInfo *
   return:
-  - desc: result
+    desc: result
     type: struct Unit *
   line: unit.c:375
 -
@@ -12140,7 +12140,7 @@
   - desc: pid
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct Unit *
   line: unit.c:605
 -
@@ -12155,7 +12155,7 @@
   - desc: other
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: unit.c:626
 -
@@ -12198,7 +12198,7 @@
   - desc: other
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: unit.c:663
 -
@@ -12336,7 +12336,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:931
 -
@@ -12349,7 +12349,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:942
 -
@@ -12362,7 +12362,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: unit.c:947
 -
@@ -12392,7 +12392,7 @@
   - desc: terrain
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:970
 -
@@ -12405,7 +12405,7 @@
   - desc: attributes
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:1002
 -
@@ -12418,7 +12418,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:1016
 -
@@ -12429,7 +12429,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: unit.c:1032
 -
@@ -12442,7 +12442,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:116
 -
@@ -12455,7 +12455,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:111
 -
@@ -12468,7 +12468,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:124
 -
@@ -12481,7 +12481,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:129
 -
@@ -12494,7 +12494,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:139
 -
@@ -12507,7 +12507,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:149
 -
@@ -12520,7 +12520,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:154
 -
@@ -12533,7 +12533,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:159
 -
@@ -12546,7 +12546,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:164
 -
@@ -12559,7 +12559,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:177
 -
@@ -12572,7 +12572,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit.c:185
 -
@@ -12624,7 +12624,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: const char *
   line: unit.c:677
 -
@@ -12637,7 +12637,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: const char *
   line: unit.c:254
 -
@@ -12650,7 +12650,7 @@
   - desc: uid
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct Unit *
   line: unit.c:38
 -
@@ -12663,7 +12663,7 @@
   - desc: jid
     type: int
   return:
-  - desc: result
+    desc: result
     type: const struct JInfo *
   line: unit.c:43
 -
@@ -12676,7 +12676,7 @@
   - desc: pid
     type: int
   return:
-  - desc: result
+    desc: result
     type: const struct PInfo *
   line: unit.c:51
 -
@@ -12704,7 +12704,7 @@
   - desc: terrain
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: unit.c:718
 -
@@ -12956,7 +12956,7 @@
   - desc: terrain
     type: int
   return:
-  - desc: result
+    desc: result
     type: const char *
   line: map.c:624
 -
@@ -12969,7 +12969,7 @@
   - desc: terrain
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: map.c:629
 -
@@ -12982,7 +12982,7 @@
   - desc: terrain
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: map.c:634
 -
@@ -13266,7 +13266,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: const i8 *
   line: mapwork.c:694
 -
@@ -13316,7 +13316,7 @@
   - desc: menu
     type: struct MenuProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:93
 -
@@ -13331,7 +13331,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:104
 -
@@ -13346,7 +13346,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:127
 -
@@ -13361,7 +13361,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:138
 -
@@ -13376,7 +13376,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: u32
   line: debug-menu.c:148
 -
@@ -13391,7 +13391,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:166
 -
@@ -13406,7 +13406,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:179
 -
@@ -13421,7 +13421,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: u32
   line: debug-menu.c:184
 -
@@ -13436,7 +13436,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:207
 -
@@ -13451,7 +13451,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:251
 -
@@ -13466,7 +13466,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: u32
   line: debug-menu.c:256
 -
@@ -13481,7 +13481,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:268
 -
@@ -13496,7 +13496,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:320
 -
@@ -13511,7 +13511,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:325
 -
@@ -13526,7 +13526,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:333
 -
@@ -13539,7 +13539,7 @@
   - desc: menu
     type: struct MenuProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:351
 -
@@ -13561,7 +13561,7 @@
   - desc: menu
     type: struct MenuProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:375
 -
@@ -13574,7 +13574,7 @@
   - desc: menu
     type: struct MenuProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:399
 -
@@ -13589,7 +13589,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:410
 -
@@ -13604,7 +13604,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:436
 -
@@ -13619,7 +13619,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:453
 -
@@ -13634,7 +13634,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:460
 -
@@ -13649,7 +13649,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:467
 -
@@ -13664,7 +13664,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:474
 -
@@ -13679,7 +13679,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:479
 -
@@ -13694,7 +13694,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:489
 -
@@ -13709,7 +13709,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:494
 -
@@ -13724,7 +13724,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:508
 -
@@ -13739,7 +13739,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:513
 -
@@ -13754,7 +13754,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: u32
   line: debug-menu.c:524
 -
@@ -13769,7 +13769,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:540
 -
@@ -13784,7 +13784,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:556
 -
@@ -13799,7 +13799,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:561
 -
@@ -13814,7 +13814,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:568
 -
@@ -13829,7 +13829,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: u32
   line: debug-menu.c:575
 -
@@ -13844,7 +13844,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:601
 -
@@ -13859,7 +13859,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: debug-menu.c:635
 -
@@ -13969,7 +13969,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: player-phase.c:608
 -
@@ -13982,7 +13982,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: player-phase.c:662
 -
@@ -13995,7 +13995,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: player-phase.c:694
 -
@@ -14008,7 +14008,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: player-phase.c:705
 -
@@ -14054,7 +14054,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: player-phase.c:793
 -
@@ -14069,7 +14069,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: player-phase.c:823
 -
@@ -14201,7 +14201,7 @@
   - desc: uid
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: player-phase.c:991
 -
@@ -14244,7 +14244,7 @@
   - desc: yb
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: bmfx.c:526
 -
@@ -14257,7 +14257,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: struct MuProc *
   line: bmfx.c:549
 -
@@ -14353,7 +14353,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: bmfx.c:662
 -
@@ -14414,7 +14414,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: int
   line: bmfx.c:764
 -
@@ -14427,7 +14427,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: int
   line: bmfx.c:772
 -
@@ -14440,7 +14440,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: int
   line: bmfx.c:786
 -
@@ -14453,7 +14453,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: int
   line: bmfx.c:792
 -
@@ -14483,7 +14483,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: u32
   line: bmfx.c:813
 -
@@ -14498,7 +14498,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: u32
   line: bmfx.c:818
 -
@@ -14513,7 +14513,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: bmfx.c:828
 -
@@ -14528,7 +14528,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: bmfx.c:838
 -
@@ -15517,7 +15517,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:99
 -
@@ -15532,7 +15532,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:106
 -
@@ -15547,7 +15547,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:114
 -
@@ -15562,7 +15562,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:127
 -
@@ -15577,7 +15577,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:133
 -
@@ -15592,7 +15592,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:141
 -
@@ -15607,7 +15607,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:147
 -
@@ -15622,7 +15622,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:153
 -
@@ -15637,7 +15637,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: u8
   line: map-menu.c:159
 -
@@ -15663,7 +15663,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:170
 -
@@ -15678,7 +15678,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:176
 -
@@ -15693,7 +15693,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:182
 -
@@ -15730,7 +15730,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:220
 -
@@ -15745,7 +15745,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:236
 -
@@ -15760,7 +15760,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:250
 -
@@ -15775,7 +15775,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:255
 -
@@ -15790,7 +15790,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:271
 -
@@ -15805,7 +15805,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:279
 -
@@ -15820,7 +15820,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:287
 -
@@ -15835,7 +15835,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:303
 -
@@ -15850,7 +15850,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:311
 -
@@ -15865,7 +15865,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:322
 -
@@ -15880,7 +15880,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:341
 -
@@ -15895,7 +15895,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:349
 -
@@ -15910,7 +15910,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:368
 -
@@ -15938,7 +15938,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:384
 -
@@ -15953,7 +15953,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:397
 -
@@ -15968,7 +15968,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:410
 -
@@ -15983,7 +15983,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:456
 -
@@ -15998,7 +15998,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:485
 -
@@ -16013,7 +16013,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:495
 -
@@ -16028,7 +16028,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:507
 -
@@ -16043,7 +16043,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:530
 -
@@ -16058,7 +16058,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:536
 -
@@ -16073,7 +16073,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:554
 -
@@ -16088,7 +16088,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: u32
   line: map-menu.c:569
 -
@@ -16103,7 +16103,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:579
 -
@@ -16118,7 +16118,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:596
 -
@@ -16133,7 +16133,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:604
 -
@@ -16170,7 +16170,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:631
 -
@@ -16185,7 +16185,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:638
 -
@@ -16198,7 +16198,7 @@
   - desc: proc
     type: struct MapSelectProc *
   return:
-  - desc: result
+    desc: result
     type: u32
   line: map-menu.c:663
 -
@@ -16213,7 +16213,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:674
 -
@@ -16228,7 +16228,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:690
 -
@@ -16243,7 +16243,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:700
 -
@@ -16258,7 +16258,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:708
 -
@@ -16273,7 +16273,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:720
 -
@@ -16288,7 +16288,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:726
 -
@@ -16303,7 +16303,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:743
 -
@@ -16318,7 +16318,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:755
 -
@@ -16333,7 +16333,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:771
 -
@@ -16348,7 +16348,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:787
 -
@@ -16363,7 +16363,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:798
 -
@@ -16378,7 +16378,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:806
 -
@@ -16393,7 +16393,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:817
 -
@@ -16408,7 +16408,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: u32
   line: map-menu.c:837
 -
@@ -16423,7 +16423,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:854
 -
@@ -16438,7 +16438,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:868
 -
@@ -16453,7 +16453,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:885
 -
@@ -16468,7 +16468,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:890
 -
@@ -16505,7 +16505,7 @@
   - desc: menu
     type: struct MenuProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:907
 -
@@ -16518,7 +16518,7 @@
   - desc: menu
     type: struct MenuProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:919
 -
@@ -16531,7 +16531,7 @@
   - desc: menu
     type: struct MenuProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:929
 -
@@ -16544,7 +16544,7 @@
   - desc: menu
     type: struct MenuProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:944
 -
@@ -16559,7 +16559,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:976
 -
@@ -16574,7 +16574,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:993
 -
@@ -16589,7 +16589,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1004
 -
@@ -16604,7 +16604,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1014
 -
@@ -16619,7 +16619,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1028
 -
@@ -16634,7 +16634,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1041
 -
@@ -16649,7 +16649,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1053
 -
@@ -16664,7 +16664,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1073
 -
@@ -16679,7 +16679,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1081
 -
@@ -16694,7 +16694,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: u32
   line: map-menu.c:1092
 -
@@ -16709,7 +16709,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1100
 -
@@ -16724,7 +16724,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1112
 -
@@ -16739,7 +16739,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1130
 -
@@ -16754,7 +16754,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1151
 -
@@ -16769,7 +16769,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1172
 -
@@ -16784,7 +16784,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1185
 -
@@ -16799,7 +16799,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1191
 -
@@ -16814,7 +16814,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1204
 -
@@ -16829,7 +16829,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: u32
   line: map-menu.c:1216
 -
@@ -16844,7 +16844,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1221
 -
@@ -16859,7 +16859,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1236
 -
@@ -16874,7 +16874,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1244
 -
@@ -16889,7 +16889,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1260
 -
@@ -16904,7 +16904,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1274
 -
@@ -16919,7 +16919,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1282
 -
@@ -16934,7 +16934,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1303
 -
@@ -16949,7 +16949,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1317
 -
@@ -16964,7 +16964,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1325
 -
@@ -16979,7 +16979,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1339
 -
@@ -16994,7 +16994,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1348
 -
@@ -17009,7 +17009,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1360
 -
@@ -17024,7 +17024,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1368
 -
@@ -17039,7 +17039,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1398
 -
@@ -17054,7 +17054,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1407
 -
@@ -17069,7 +17069,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1416
 -
@@ -17084,7 +17084,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1422
 -
@@ -17099,7 +17099,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1431
 -
@@ -17114,7 +17114,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1437
 -
@@ -17129,7 +17129,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1446
 -
@@ -17144,7 +17144,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1452
 -
@@ -17159,7 +17159,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1464
 -
@@ -17174,7 +17174,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1480
 -
@@ -17189,7 +17189,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1499
 -
@@ -17215,7 +17215,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1521
 -
@@ -17230,7 +17230,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1527
 -
@@ -17245,7 +17245,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1552
 -
@@ -17260,7 +17260,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: u32
   line: map-menu.c:1563
 -
@@ -17275,7 +17275,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1571
 -
@@ -17290,7 +17290,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1585
 -
@@ -17305,7 +17305,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1596
 -
@@ -17320,7 +17320,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1602
 -
@@ -17346,7 +17346,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1631
 -
@@ -17372,7 +17372,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1643
 -
@@ -17398,7 +17398,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1654
 -
@@ -17424,7 +17424,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1664
 -
@@ -17450,7 +17450,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1676
 -
@@ -17476,7 +17476,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1688
 -
@@ -17502,7 +17502,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1700
 -
@@ -17528,7 +17528,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1712
 -
@@ -17554,7 +17554,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: map-menu.c:1723
 -
@@ -17567,7 +17567,7 @@
   - desc: faction
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: faction.c:9
 -
@@ -17582,7 +17582,7 @@
   - desc: prohibited_state
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: faction.c:35
 -
@@ -17597,7 +17597,7 @@
   - desc: uidB
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: faction.c:58
 -
@@ -17612,7 +17612,7 @@
   - desc: uidB
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: faction.c:66
 -
@@ -17623,7 +17623,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: faction.c:74
 -
@@ -17634,7 +17634,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: faction.c:79
 -
@@ -17645,7 +17645,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: gold.c:9
 -
@@ -18358,7 +18358,7 @@
   - desc: id
     type: unsigned
   return:
-  - desc: result
+    desc: result
     type: int
   line: unitsprite.c:386
 -
@@ -18373,7 +18373,7 @@
   - desc: id
     type: unsigned
   return:
-  - desc: result
+    desc: result
     type: int
   line: unitsprite.c:424
 -
@@ -18388,7 +18388,7 @@
   - desc: id
     type: unsigned
   return:
-  - desc: result
+    desc: result
     type: int
   line: unitsprite.c:442
 -
@@ -18403,7 +18403,7 @@
   - desc: id
     type: unsigned
   return:
-  - desc: result
+    desc: result
     type: int
   line: unitsprite.c:462
 -
@@ -18434,7 +18434,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unitsprite.c:532
 -
@@ -18447,7 +18447,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: unitsprite.c:540
 -
@@ -18469,7 +18469,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct UnitSprite *
   line: unitsprite.c:645
 -
@@ -18529,7 +18529,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: unitsprite.c:888
 -
@@ -18628,7 +18628,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: u8
   line: unitsprite.c:1021
 -
@@ -18641,7 +18641,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: support.c:31
 -
@@ -18656,7 +18656,7 @@
   - desc: num
     type: int
   return:
-  - desc: result
+    desc: result
     type: u8
   line: support.c:39
 -
@@ -18671,7 +18671,7 @@
   - desc: num
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct Unit *
   line: support.c:47
 -
@@ -18686,7 +18686,7 @@
   - desc: num
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: support.c:70
 -
@@ -18699,7 +18699,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: support.c:86
 -
@@ -18740,7 +18740,7 @@
   - desc: num
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: support.c:120
 -
@@ -18755,7 +18755,7 @@
   - desc: num
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: support.c:145
 -
@@ -18770,7 +18770,7 @@
   - desc: pid
     type: u8
   return:
-  - desc: result
+    desc: result
     type: int
   line: support.c:153
 -
@@ -18803,7 +18803,7 @@
   - desc: affinity
     type: int
   return:
-  - desc: result
+    desc: result
     type: const struct SupportBonuses *
   line: support.c:250
 -
@@ -18844,7 +18844,7 @@
   - desc: bonuses
     type: struct SupportBonuses *
   return:
-  - desc: result
+    desc: result
     type: int
   line: support.c:285
 -
@@ -18857,7 +18857,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: support.c:334
 -
@@ -18870,7 +18870,7 @@
   - desc: pid
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: support.c:344
 -
@@ -18883,7 +18883,7 @@
   - desc: level
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: support.c:354
 -
@@ -18896,7 +18896,7 @@
   - desc: affinity
     type: int
   return:
-  - desc: result
+    desc: result
     type: const char *
   line: support.c:367
 -
@@ -18911,7 +18911,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item-use.c:78
 -
@@ -18926,7 +18926,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: item-use.c:181
 -
@@ -18954,7 +18954,7 @@
   - desc: )
     type: void (*list_targets)(struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item-use.c:311
 -
@@ -18967,7 +18967,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item-use.c:317
 -
@@ -18980,7 +18980,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item-use.c:325
 -
@@ -18993,7 +18993,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item-use.c:333
 -
@@ -19006,7 +19006,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item-use.c:341
 -
@@ -19019,7 +19019,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item-use.c:349
 -
@@ -19032,7 +19032,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item-use.c:357
 -
@@ -19045,7 +19045,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item-use.c:368
 -
@@ -19058,7 +19058,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item-use.c:374
 -
@@ -19071,7 +19071,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item-use.c:380
 -
@@ -19086,7 +19086,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item-use.c:391
 -
@@ -19101,7 +19101,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: item-use.c:434
 -
@@ -19138,7 +19138,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: item-use.c:501
 -
@@ -19221,7 +19221,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: item-use.c:637
 -
@@ -19247,7 +19247,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: item-use.c:661
 -
@@ -19275,7 +19275,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: item-use.c:684
 -
@@ -19301,7 +19301,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: item-use.c:713
 -
@@ -19327,7 +19327,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: item-use.c:724
 -
@@ -19342,7 +19342,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: item-use.c:729
 -
@@ -19357,7 +19357,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: item-use.c:733
 -
@@ -19372,7 +19372,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: u32
   line: item-use.c:746
 -
@@ -19387,7 +19387,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: item-use.c:757
 -
@@ -19426,7 +19426,7 @@
   - desc: proc
     type: struct MapSelectProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: item-use.c:804
 -
@@ -19441,7 +19441,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: item-use.c:809
 -
@@ -19465,7 +19465,7 @@
   - desc: proc
     type: struct MapSelectProc *
   return:
-  - desc: result
+    desc: result
     type: int
   line: item-use.c:826
 -
@@ -19480,7 +19480,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: item-use.c:831
 -
@@ -19508,7 +19508,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: int
   line: item-use.c:848
 -
@@ -19523,7 +19523,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: item-use.c:853
 -
@@ -19678,7 +19678,7 @@
   - desc: simulationResult
     type: bool
   return:
-  - desc: result
+    desc: result
     type: bool
   line: battle.c:225
 -
@@ -19693,7 +19693,7 @@
   - desc: simulationResult
     type: bool
   return:
-  - desc: result
+    desc: result
     type: bool
   line: battle.c:233
 -
@@ -19992,7 +19992,7 @@
   - desc: defender
     type: struct BattleUnit **
   return:
-  - desc: result
+    desc: result
     type: bool
   line: battle.c:615
 -
@@ -20007,7 +20007,7 @@
   - desc: defender
     type: struct BattleUnit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: battle.c:640
 -
@@ -20020,7 +20020,7 @@
   - desc: attacker
     type: struct BattleUnit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: battle.c:662
 -
@@ -20033,7 +20033,7 @@
   - desc: attacker
     type: struct BattleUnit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: battle.c:671
 -
@@ -20048,7 +20048,7 @@
   - desc: defender
     type: struct BattleUnit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: battle.c:680
 -
@@ -20113,7 +20113,7 @@
   - desc: defender
     type: struct BattleUnit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: battle.c:858
 -
@@ -20135,7 +20135,7 @@
   - desc: growth
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: battle.c:904
 -
@@ -20150,7 +20150,7 @@
   - desc: levels
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: battle.c:920
 -
@@ -20220,7 +20220,7 @@
   - desc: bu
     type: struct BattleUnit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: battle.c:1113
 -
@@ -20233,7 +20233,7 @@
   - desc: bu
     type: struct BattleUnit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: battle.c:1157
 -
@@ -20290,7 +20290,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: battle.c:1241
 -
@@ -20305,7 +20305,7 @@
   - desc: other
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: battle.c:1251
 -
@@ -20318,7 +20318,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: battle.c:1265
 -
@@ -20333,7 +20333,7 @@
   - desc: defeated
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: battle.c:1275
 -
@@ -20348,7 +20348,7 @@
   - desc: other
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: battle.c:1288
 -
@@ -20363,7 +20363,7 @@
   - desc: other
     type: struct BattleUnit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: battle.c:1308
 -
@@ -20385,7 +20385,7 @@
   - desc: bu
     type: struct BattleUnit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: battle.c:1344
 -
@@ -20502,7 +20502,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: battle.c:1561
 -
@@ -20513,7 +20513,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: battle.c:1574
 -
@@ -20607,7 +20607,7 @@
   - desc: target
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: battle.c:1707
 -
@@ -20629,7 +20629,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: battle.c:1770
 -
@@ -20642,7 +20642,7 @@
   - desc: bu
     type: struct BattleUnit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: battle.c:1775
 -
@@ -20710,7 +20710,7 @@
   - desc: row
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: trademenu.c:236
 -
@@ -20756,7 +20756,7 @@
   - desc: proc
     type: struct TradeMenuProc *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: trademenu.c:302
 -
@@ -20846,7 +20846,7 @@
   - desc: proc
     type: struct TradeMenuProc *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: trademenu.c:509
 -
@@ -20907,7 +20907,7 @@
   - desc: unused
     type: int
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: trademenu.c:605
 -
@@ -20931,7 +20931,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct Trap *
   line: trap.c:106
 -
@@ -20950,7 +20950,7 @@
   - desc: extra
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct Trap *
   line: trap.c:119
 -
@@ -20975,7 +20975,7 @@
   - desc: damage
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct Trap *
   line: trap.c:136
 -
@@ -21104,7 +21104,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct Trap *
   line: trap.c:235
 -
@@ -21119,7 +21119,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: trap.c:262
 -
@@ -21134,7 +21134,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: trap.c:306
 -
@@ -21149,7 +21149,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: trap.c:329
 -
@@ -21162,7 +21162,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: const struct MapChangeInfo *
   line: trap.c:349
 -
@@ -21177,7 +21177,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: trap.c:367
 -
@@ -21418,7 +21418,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: trap.c:720
 -
@@ -21431,7 +21431,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct Trap *
   line: trap.c:101
 -
@@ -22066,7 +22066,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: chapter.c:37
 -
@@ -22077,7 +22077,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: chapter.c:44
 -
@@ -22168,7 +22168,7 @@
   - desc: parent
     type: struct GenericProc *
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: chapter.c:261
 -
@@ -22261,7 +22261,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: u16 *
   line: supply.c:11
 -
@@ -22290,7 +22290,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: supply.c:42
 -
@@ -22303,7 +22303,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: supply.c:55
 -
@@ -22327,7 +22327,7 @@
   - desc: item
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: supply.c:80
 -
@@ -22413,7 +22413,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: arena.c:221
 -
@@ -22426,7 +22426,7 @@
   - desc: jinfo
     type: const struct JInfo *
   return:
-  - desc: result
+    desc: result
     type: int
   line: arena.c:243
 -
@@ -22439,7 +22439,7 @@
   - desc: weapon_kind
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: arena.c:265
 -
@@ -22452,7 +22452,7 @@
   - desc: weapon_kind
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: arena.c:330
 -
@@ -22465,7 +22465,7 @@
   - desc: level
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: arena.c:349
 -
@@ -22480,7 +22480,7 @@
   - desc: opponent_is_magic
     type: bool
   return:
-  - desc: result
+    desc: result
     type: int
   line: arena.c:361
 -
@@ -22511,7 +22511,7 @@
   - desc: item
     type: u16
   return:
-  - desc: result
+    desc: result
     type: u16
   line: arena.c:454
 -
@@ -22522,7 +22522,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: arena.c:483
 -
@@ -22533,7 +22533,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: arena.c:546
 -
@@ -22553,7 +22553,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: arena.c:631
 -
@@ -22564,7 +22564,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: arena.c:636
 -
@@ -22597,7 +22597,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: arena.c:666
 -
@@ -22628,7 +22628,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: action.c:118
 -
@@ -22641,7 +22641,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: action.c:177
 -
@@ -22654,7 +22654,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: action.c:189
 -
@@ -22667,7 +22667,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: action.c:211
 -
@@ -22695,7 +22695,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: action.c:228
 -
@@ -22708,7 +22708,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: action.c:238
 -
@@ -22721,7 +22721,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: action.c:248
 -
@@ -22734,7 +22734,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: action.c:265
 -
@@ -22747,7 +22747,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: action.c:271
 -
@@ -22760,7 +22760,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: action.c:287
 -
@@ -22773,7 +22773,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: action.c:293
 -
@@ -22786,7 +22786,7 @@
   - desc: proc
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: bool
   line: action.c:326
 -
@@ -22972,7 +22972,7 @@
   - desc: y
     type: i8
   return:
-  - desc: result
+    desc: result
     type: int
   line: movepath.c:103
 -
@@ -23019,7 +23019,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: movepath.c:190
 -
@@ -23052,7 +23052,7 @@
   - desc: path
     type: u8
   return:
-  - desc: result
+    desc: result
     type: u8
   line: movepath.c:272
 -
@@ -23065,7 +23065,7 @@
   - desc: path
     type: u8
   return:
-  - desc: result
+    desc: result
     type: u8
   line: movepath.c:290
 -
@@ -23084,7 +23084,7 @@
   - desc: yEdge
     type: u8
   return:
-  - desc: result
+    desc: result
     type: bool
   line: movepath.c:308
 -
@@ -23205,7 +23205,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: prep-phase.c:356
 -
@@ -23300,7 +23300,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: code_0802B814.c:17
 -
@@ -23311,7 +23311,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: code_0802B814.c:42
 -
@@ -23322,7 +23322,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: code_0802B814.c:67
 -
@@ -23333,7 +23333,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: code_0802B814.c:79
 -
@@ -23344,7 +23344,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: code_0802B814.c:86
 -
@@ -23355,7 +23355,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: code_0802B814.c:93
 -
@@ -23366,7 +23366,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: code_0802B814.c:108
 -
@@ -23377,7 +23377,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: code_0802B814.c:114
 -
@@ -23401,7 +23401,7 @@
   - desc: chapter
     type: int
   return:
-  - desc: result
+    desc: result
     type: const struct ChapterInfo *
   line: chapter-info.c:9
 -
@@ -23414,7 +23414,7 @@
   - desc: chapter
     type: int
   return:
-  - desc: result
+    desc: result
     type: const u8 *
   line: chapter-info.c:17
 -
@@ -23427,7 +23427,7 @@
   - desc: chapter
     type: int
   return:
-  - desc: result
+    desc: result
     type: const struct MapChangeInfo *
   line: chapter-info.c:26
 -
@@ -23440,7 +23440,7 @@
   - desc: chapter
     type: int
   return:
-  - desc: result
+    desc: result
     type: const struct ChapterEventInfo *
   line: chapter-info.c:34
 -
@@ -23453,7 +23453,7 @@
   - desc: chapter
     type: int
   return:
-  - desc: result
+    desc: result
     type: const char *
   line: chapter-info.c:42
 -
@@ -23477,7 +23477,7 @@
   - desc: parent
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: struct UnitPanelProc *
   line: unit-panel.c:74
 -
@@ -23511,7 +23511,7 @@
   - desc: lines
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct UnitPanelProc *
   line: unit-panel.c:103
 -
@@ -23526,7 +23526,7 @@
   - desc: width
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: unit-panel.c:143
 -
@@ -23968,7 +23968,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: subtitle-help.c:235
 -
@@ -24409,7 +24409,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: battle-preview.c:65
 -
@@ -24529,7 +24529,7 @@
   - desc: faction
     type: int
   return:
-  - desc: result
+    desc: result
     type: const u16 *
   line: battle-preview.c:320
 -
@@ -24690,7 +24690,7 @@
   - desc: target
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: battle-preview.c:679
 -
@@ -24705,7 +24705,7 @@
   - desc: isEffective
     type: bool
   return:
-  - desc: result
+    desc: result
     type: int
   line: battle-preview.c:713
 -
@@ -24806,7 +24806,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-order.c:99
 -
@@ -24819,7 +24819,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-order.c:136
 -
@@ -24830,7 +24830,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-order.c:161
 -
@@ -25075,7 +25075,7 @@
   - desc: proc
     type: struct AiPerformProc *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-perform.c:246
 -
@@ -25088,7 +25088,7 @@
   - desc: proc
     type: struct AiPerformProc *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-perform.c:280
 -
@@ -25101,7 +25101,7 @@
   - desc: proc
     type: struct AiPerformProc *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-perform.c:294
 -
@@ -25114,7 +25114,7 @@
   - desc: proc
     type: struct AiPerformProc *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-perform.c:307
 -
@@ -25127,7 +25127,7 @@
   - desc: proc
     type: struct AiPerformProc *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-perform.c:312
 -
@@ -25184,7 +25184,7 @@
   - desc: proc
     type: struct AiPerformProc *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-perform.c:464
 -
@@ -25197,7 +25197,7 @@
   - desc: proc
     type: struct AiPerformProc *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-perform.c:469
 -
@@ -25210,7 +25210,7 @@
   - desc: proc
     type: struct AiPerformProc *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-perform.c:480
 -
@@ -25238,7 +25238,7 @@
   - desc: right
     type: u32
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:31
 -
@@ -25253,7 +25253,7 @@
   - desc: out
     type: struct Vec2i *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:77
 -
@@ -25268,7 +25268,7 @@
   - desc: out
     type: struct Vec2i *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:132
 -
@@ -25283,7 +25283,7 @@
   - desc: out
     type: struct Vec2i *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:175
 -
@@ -25309,7 +25309,7 @@
   - desc: item
     type: u16
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:264
 -
@@ -25326,7 +25326,7 @@
   - desc: item
     type: u16
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:274
 -
@@ -25341,7 +25341,7 @@
   - desc: item
     type: u16
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:284
 -
@@ -25356,7 +25356,7 @@
   - desc: item
     type: u8
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:297
 -
@@ -25373,7 +25373,7 @@
   - desc: out
     type: struct Vec2i *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:310
 -
@@ -25388,7 +25388,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: u8
   line: ai-utility.c:354
 -
@@ -25405,7 +25405,7 @@
   - desc: out
     type: struct Vec2i *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:365
 -
@@ -25420,7 +25420,7 @@
   - desc: out
     type: struct Vec2i *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:412
 -
@@ -25431,7 +25431,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-utility.c:522
 -
@@ -25442,7 +25442,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-utility.c:545
 -
@@ -25453,7 +25453,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-utility.c:571
 -
@@ -25468,7 +25468,7 @@
   - desc: y
     type: short
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-utility.c:597
 -
@@ -25483,7 +25483,7 @@
   - desc: y
     type: short
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-utility.c:624
 -
@@ -25498,7 +25498,7 @@
   - desc: y
     type: short
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-utility.c:654
 -
@@ -25556,7 +25556,7 @@
   - desc: out
     type: struct Vec2i *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:743
 -
@@ -25569,7 +25569,7 @@
   - desc: item
     type: u16
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-utility.c:780
 -
@@ -25582,7 +25582,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: i8
   line: ai-utility.c:798
 -
@@ -25597,7 +25597,7 @@
   - desc: out
     type: struct Vec2i *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:827
 -
@@ -25612,7 +25612,7 @@
   - desc: outItemSlot
     type: u8 *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:869
 -
@@ -25625,7 +25625,7 @@
   - desc: out
     type: u8 *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:893
 -
@@ -25663,7 +25663,7 @@
   - desc: out
     type: struct Vec2i *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:990
 -
@@ -25676,7 +25676,7 @@
   - desc: jid
     type: u8
   return:
-  - desc: result
+    desc: result
     type: u8
   line: ai-utility.c:1034
 -
@@ -25689,7 +25689,7 @@
   - desc: pid
     type: u16
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:1058
 -
@@ -25710,7 +25710,7 @@
   - desc: maxDistance
     type: u8
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:1087
 -
@@ -25725,7 +25725,7 @@
   - desc: y
     type: u8
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:1097
 -
@@ -25797,7 +25797,7 @@
   - desc: out
     type: struct Vec2i *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:1242
 -
@@ -25808,7 +25808,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-utility.c:1280
 -
@@ -25819,7 +25819,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-utility.c:1306
 -
@@ -25832,7 +25832,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-utility.c:1333
 -
@@ -25854,7 +25854,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-script.c:58
 -
@@ -25865,7 +25865,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-script.c:71
 -
@@ -25876,7 +25876,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-script.c:83
 -
@@ -25887,7 +25887,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-script.c:96
 -
@@ -25955,7 +25955,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-script.c:256
 -
@@ -25968,7 +25968,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-script.c:264
 -
@@ -25981,7 +25981,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-script.c:272
 -
@@ -25994,7 +25994,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-script.c:280
 -
@@ -26007,7 +26007,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-script.c:288
 -
@@ -26020,7 +26020,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-script.c:296
 -
@@ -26313,7 +26313,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-script.c:679
 -
@@ -26326,7 +26326,7 @@
   - desc: arg
     type: const u8 *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-script.c:685
 -
@@ -26339,7 +26339,7 @@
   - desc: unit)
     type: bool (*is_enemy)(struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-battle.c:30
 -
@@ -26352,7 +26352,7 @@
   - desc: unit)
     type: bool (*is_enemy)(struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-battle.c:120
 -
@@ -26395,7 +26395,7 @@
   - desc: st
     type: struct AiCombatSimulationSt *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-battle.c:219
 -
@@ -26410,7 +26410,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: u8
   line: ai-battle.c:304
 -
@@ -26421,7 +26421,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-battle.c:315
 -
@@ -26434,7 +26434,7 @@
   - desc: st
     type: struct AiCombatSimulationSt *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-battle.c:377
 -
@@ -26449,7 +26449,7 @@
   - desc: item
     type: u16
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-battle.c:415
 -
@@ -26466,7 +26466,7 @@
   - desc: st
     type: struct AiCombatSimulationSt *
   return:
-  - desc: result
+    desc: result
     type: u32
   line: ai-battle.c:456
 -
@@ -26479,7 +26479,7 @@
   - desc: st
     type: struct AiCombatSimulationSt *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-battle.c:471
 -
@@ -26492,7 +26492,7 @@
   - desc: st
     type: struct AiCombatSimulationSt *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-battle.c:488
 -
@@ -26503,7 +26503,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-battle.c:512
 -
@@ -26514,7 +26514,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-battle.c:534
 -
@@ -26525,7 +26525,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-battle.c:547
 -
@@ -26536,7 +26536,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-battle.c:607
 -
@@ -26547,7 +26547,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-battle.c:622
 -
@@ -26558,7 +26558,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-battle.c:627
 -
@@ -26569,7 +26569,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-battle.c:649
 -
@@ -26580,7 +26580,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-battle.c:662
 -
@@ -26608,7 +26608,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-battle.c:704
 -
@@ -26623,7 +26623,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-battle.c:718
 -
@@ -26638,7 +26638,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: ai-battle.c:727
 -
@@ -26673,7 +26673,7 @@
   - desc: threshold
     type: u8
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-080326C4.c:124
 -
@@ -26686,7 +26686,7 @@
   - desc: out
     type: struct Vec2i *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-080326C4.c:132
 -
@@ -26708,7 +26708,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-080326C4.c:233
 -
@@ -26719,7 +26719,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-080326C4.c:263
 -
@@ -26730,7 +26730,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-080326C4.c:297
 -
@@ -26741,7 +26741,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: const struct AiEscapePt *
   line: ai-080326C4.c:325
 -
@@ -26752,7 +26752,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-080326C4.c:373
 -
@@ -26765,7 +26765,7 @@
   - desc: out
     type: u16 *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: ai-080326C4.c:445
 -
@@ -31158,7 +31158,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: ui.c:238
 -
@@ -31169,7 +31169,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: ui.c:243
 -
@@ -31251,7 +31251,7 @@
   - desc: right
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct MenuProc *
   line: menu.c:49
 -
@@ -31266,7 +31266,7 @@
   - desc: parent
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: struct MenuProc *
   line: menu.c:61
 -
@@ -31281,7 +31281,7 @@
   - desc: rect
     type: struct MenuRect
   return:
-  - desc: result
+    desc: result
     type: struct MenuProc *
   line: menu.c:66
 -
@@ -31294,7 +31294,7 @@
   - desc: info
     type: const struct MenuInfo *
   return:
-  - desc: result
+    desc: result
     type: struct MenuProc *
   line: menu.c:71
 -
@@ -31311,7 +31311,7 @@
   - desc: parent
     type: ProcPtr
   return:
-  - desc: result
+    desc: result
     type: struct MenuProc *
   line: menu.c:76
 -
@@ -31324,7 +31324,7 @@
   - desc: proc
     type: struct MenuProc *
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: menu.c:144
 -
@@ -31405,7 +31405,7 @@
   - desc: proc
     type: struct MenuProc *
   return:
-  - desc: result
+    desc: result
     type: u32
   line: menu.c:351
 -
@@ -31435,7 +31435,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: menu.c:389
 -
@@ -31450,7 +31450,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: menu.c:394
 -
@@ -31465,7 +31465,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: menu.c:399
 -
@@ -31480,7 +31480,7 @@
   - desc: ent
     type: struct MenuEntProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: menu.c:404
 -
@@ -31515,7 +31515,7 @@
   - desc: proc
     type: struct MenuProc *
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: menu.c:444
 -
@@ -31541,7 +31541,7 @@
   - desc: msg
     type: int
   return:
-  - desc: result
+    desc: result
     type: fu8
   line: menu.c:469
 -
@@ -31578,7 +31578,7 @@
   - desc: right
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct MenuProc *
   line: menu.c:499
 -
@@ -31606,7 +31606,7 @@
   - desc: proc
     type: struct MenuProc *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: menu.c:172
 -
@@ -31684,7 +31684,7 @@
   - desc: info
     type: const struct MapSelectInfo *
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: map-select.c:127
 -
@@ -31701,7 +31701,7 @@
   - desc: target)
     type: struct SelectTarget *
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: map-select.c:154
 -
@@ -31714,7 +31714,7 @@
   - desc: proc
     type: struct MapSelectProc *
   return:
-  - desc: result
+    desc: result
     type: ProcPtr
   line: map-select.c:164
 -
@@ -31738,7 +31738,7 @@
   - desc: proc
     type: struct MapSelectProc *
   return:
-  - desc: result
+    desc: result
     type: u32
   line: map-select.c:205
 -
@@ -31767,7 +31767,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: map-select.c:251
 -
@@ -31778,7 +31778,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: struct SelectTarget *
   line: map-select.c:276
 -
@@ -31789,7 +31789,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: struct SelectTarget *
   line: map-select.c:313
 -
@@ -31800,7 +31800,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: struct SelectTarget *
   line: map-select.c:319
 -
@@ -31811,7 +31811,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: int
   line: map-select.c:43
 -
@@ -31824,7 +31824,7 @@
   - desc: i
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct SelectTarget *
   line: map-select.c:48
 -
@@ -41716,7 +41716,7 @@
   - desc: pal
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct MuProc *
   line: mu.c:254
 -
@@ -41729,7 +41729,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: struct MuProc *
   line: mu.c:264
 -
@@ -41779,7 +41779,7 @@
   - desc: y
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct MuProc *
   line: mu.c:291
 -
@@ -41798,7 +41798,7 @@
   - desc: pal
     type: int
   return:
-  - desc: result
+    desc: result
     type: struct MuProc *
   line: mu.c:307
 -
@@ -41853,7 +41853,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: mu.c:400
 -
@@ -41864,7 +41864,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: mu.c:405
 -
@@ -41877,7 +41877,7 @@
   - desc: mu
     type: struct MuProc *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: mu.c:435
 -
@@ -41911,7 +41911,7 @@
   - desc: movescr
     type: const u8 *
   return:
-  - desc: result
+    desc: result
     type: struct MuProc *
   line: mu.c:467
 -
@@ -42049,7 +42049,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: mu.c:674
 -
@@ -42234,7 +42234,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: mu.c:898
 -
@@ -42254,7 +42254,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: struct MuConfig *
   line: mu.c:924
 -
@@ -42269,7 +42269,7 @@
   - desc: out
     type: struct Vec2i *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: mu.c:942
 -
@@ -42293,7 +42293,7 @@
   - desc: mu
     type: struct MuProc *
   return:
-  - desc: result
+    desc: result
     type: u16
   line: mu.c:1005
 -
@@ -42306,7 +42306,7 @@
   - desc: id
     type: int
   return:
-  - desc: result
+    desc: result
     type: u8 *
   line: mu.c:1026
 -
@@ -42319,7 +42319,7 @@
   - desc: mu
     type: struct MuProc *
   return:
-  - desc: result
+    desc: result
     type: const u8 *
   line: mu.c:1031
 -
@@ -42332,7 +42332,7 @@
   - desc: jid
     type: u16
   return:
-  - desc: result
+    desc: result
     type: const u16 *
   line: mu.c:1036
 -
@@ -42693,7 +42693,7 @@
   - desc: bu
     type: struct BattleUnit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: manim.c:433
 -
@@ -42717,7 +42717,7 @@
   - desc: bu
     type: struct BattleUnit *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: manim.c:457
 -
@@ -43031,7 +43031,7 @@
   - desc: y_to
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: manim.c:1003
 -
@@ -43193,7 +43193,7 @@
   - desc: unit
     type: struct Unit *
   return:
-  - desc: result
+    desc: result
     type: const u16 *
   line: manim.c:1217
 -
@@ -43392,7 +43392,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: manim.c:1759
 -
@@ -45157,7 +45157,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: struct EventInfo *
   line: eventinfo.c:75
 -
@@ -45170,7 +45170,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: struct EventInfo *
   line: eventinfo.c:101
 -
@@ -45183,7 +45183,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: int
   line: eventinfo.c:118
 -
@@ -45196,7 +45196,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: int
   line: eventinfo.c:123
 -
@@ -45209,7 +45209,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: int
   line: eventinfo.c:136
 -
@@ -45222,7 +45222,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: int
   line: eventinfo.c:166
 -
@@ -45235,7 +45235,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: int
   line: eventinfo.c:177
 -
@@ -45248,7 +45248,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: int
   line: eventinfo.c:193
 -
@@ -45261,7 +45261,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: int
   line: eventinfo.c:216
 -
@@ -45274,7 +45274,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: int
   line: eventinfo.c:223
 -
@@ -45287,7 +45287,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: int
   line: eventinfo.c:245
 -
@@ -45300,7 +45300,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: int
   line: eventinfo.c:268
 -
@@ -45313,7 +45313,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: int
   line: eventinfo.c:291
 -
@@ -45326,7 +45326,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: int
   line: eventinfo.c:312
 -
@@ -45339,7 +45339,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: int
   line: eventinfo.c:333
 -
@@ -45352,7 +45352,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: int
   line: eventinfo.c:344
 -
@@ -45369,7 +45369,7 @@
   - desc: pid_b
     type: fu8
   return:
-  - desc: result
+    desc: result
     type: int
   line: eventinfo.c:359
 -
@@ -45388,7 +45388,7 @@
   - desc: y2
     type: int
   return:
-  - desc: result
+    desc: result
     type: int
   line: eventinfo.c:372
 -
@@ -45407,7 +45407,7 @@
   - desc: y2
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:382
 -
@@ -45420,7 +45420,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:398
 -
@@ -45433,7 +45433,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:409
 -
@@ -45446,7 +45446,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:426
 -
@@ -45459,7 +45459,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:431
 -
@@ -45472,7 +45472,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:439
 -
@@ -45485,7 +45485,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:447
 -
@@ -45498,7 +45498,7 @@
   - desc: info
     type: struct EventInfo *
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:455
 -
@@ -45517,7 +45517,7 @@
   - desc: y2
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:463
 -
@@ -45528,7 +45528,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:479
 -
@@ -45552,7 +45552,7 @@
   - desc: pid_b
     type: fu8
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:510
 -
@@ -45595,7 +45595,7 @@
   - desc: y
     type: fi8
   return:
-  - desc: result
+    desc: result
     type: int
   line: eventinfo.c:572
 -
@@ -45636,7 +45636,7 @@
   - desc: y
     type: fi8
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:681
 -
@@ -45664,7 +45664,7 @@
   - desc: y
     type: fi8
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:697
 -
@@ -45692,7 +45692,7 @@
   - desc: y
     type: fi8
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:722
 -
@@ -45720,7 +45720,7 @@
   - desc: y
     type: fi8
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:738
 -
@@ -45748,7 +45748,7 @@
   - desc: y
     type: fi8
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:754
 -
@@ -45772,7 +45772,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:770
 -
@@ -45792,7 +45792,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:780
 -
@@ -45803,7 +45803,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:788
 -
@@ -45814,7 +45814,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:800
 -
@@ -45825,7 +45825,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:817
 -
@@ -45836,7 +45836,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:822
 -
@@ -45847,7 +45847,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:827
 -
@@ -45858,7 +45858,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:837
 -
@@ -45869,7 +45869,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:847
 -
@@ -45880,7 +45880,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:857
 -
@@ -45900,7 +45900,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:885
 -
@@ -45929,7 +45929,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: const struct UnitInfo *
   line: eventinfo.c:924
 -
@@ -45944,7 +45944,7 @@
   - desc: pid_b
     type: fu8
   return:
-  - desc: result
+    desc: result
     type: const struct BattleTalkEnt *
   line: eventinfo.c:929
 -
@@ -45959,7 +45959,7 @@
   - desc: it
     type: const struct BattleTalkEnt *
   return:
-  - desc: result
+    desc: result
     type: const struct BattleTalkEnt *
   line: eventinfo.c:954
 -
@@ -45974,7 +45974,7 @@
   - desc: pid_b
     type: fu8
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:974
 -
@@ -46000,7 +46000,7 @@
   - desc: pid
     type: fu8
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:1034
 -
@@ -46022,7 +46022,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:1080
 -
@@ -46051,7 +46051,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:1093
 -
@@ -46071,7 +46071,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:1102
 -
@@ -46082,7 +46082,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:1107
 -
@@ -46151,7 +46151,7 @@
   - desc: flag
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:1148
 -
@@ -46195,7 +46195,7 @@
   - desc: flag
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:1195
 -
@@ -46239,7 +46239,7 @@
   - desc: flag
     type: int
   return:
-  - desc: result
+    desc: result
     type: bool
   line: eventinfo.c:1240
 -
@@ -46261,7 +46261,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: u8 *
   line: eventinfo.c:1256
 -
@@ -46272,7 +46272,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: u32
   line: eventinfo.c:1261
 -
@@ -46283,7 +46283,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: u8 *
   line: eventinfo.c:1266
 -
@@ -46294,7 +46294,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: u32
   line: eventinfo.c:1271
 -
@@ -46305,7 +46305,7 @@
   mode: thumb
   params: null
   return:
-  - desc: result
+    desc: result
     type: bool
   line: event-functions.c:19
 -
@@ -46318,7 +46318,7 @@
   - desc: pid
     type: u8
   return:
-  - desc: result
+    desc: result
     type: int
   line: event-functions.c:27
 -
@@ -61113,7 +61113,7 @@
   - desc: fineAdjust
     type: u8
   return:
-  - desc: result
+    desc: result
     type: u32
   line: m4a.c:21
 -
@@ -61480,7 +61480,7 @@
   - desc: fineAdjust
     type: u8
   return:
-  - desc: result
+    desc: result
     type: u32
   line: m4a.c:782
 -
@@ -61979,7 +61979,7 @@
   - desc: size
     type: u32
   return:
-  - desc: result
+    desc: result
     type: u32
   line: agb-sram.c:25
 -
@@ -62005,7 +62005,7 @@
   - desc: size
     type: u32
   return:
-  - desc: result
+    desc: result
     type: u32
   line: agb-sram.c:75
 -
