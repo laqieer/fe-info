@@ -185,7 +185,8 @@
   label: gUnknown_0200050C
   type: u16 (*)[8][16]
   addr: 0x200050C
-  size: 0x294
+  size: 0x2
+  count: 0x80
   line: ''
 -
   desc: gUnknown_020007A0
@@ -325,7 +326,8 @@
   label: gTradeMenuText
   type: struct TextHandle [2][UNIT_ITEM_COUNT]
   addr: 0x200278C
-  size: 0x50
+  size: 0x8
+  count: 0xA
   line: ''
 -
   desc: sWeatherEffect
@@ -346,7 +348,8 @@
   label: gaBattleForecastTextStructs
   type: struct TextHandle [6]
   addr: 0x2002FDC
-  size: 0x18
+  size: 0x4
+  count: 0x6
   line: ''
 -
   desc: gUnknown_02002FF4
@@ -360,14 +363,8 @@
   label: gUnknown_0200300C
   type: u16 [8][16]
   addr: 0x200300C
-  size: 0x7C
-  line: ''
--
-  desc: gUnknown_02003088
-  label: gUnknown_02003088
-  type: null
-  addr: 0x2003088
-  size: 0x84
+  size: 0x2
+  count: 0x80
   line: ''
 -
   desc: gUnknown_0200310C
@@ -395,7 +392,8 @@
   label: gUnknown_020038C8
   type: struct Struct020038C8 [2]
   addr: 0x20038C8
-  size: 0x100
+  size: 0x80
+  count: 0x2
   line: ''
 -
   desc: gUnknown_020039C8
@@ -423,7 +421,8 @@
   label: gUnknown_02003B48
   type: struct TextHandle [8]
   addr: 0x2003B48
-  size: 0x28
+  size: 0x5
+  count: 0x8
   line: ''
 -
   desc: gUnknown_02003B70
@@ -465,119 +464,8 @@
   label: gBmFrameTmap0
   type: u16 []
   addr: 0x2003D2C
-  size: 0x28
-  line: ''
--
-  desc: gUnknown_02003D54
-  label: gUnknown_02003D54
-  type: u16 []
-  addr: 0x2003D54
-  size: 0x9C
-  line: ''
--
-  desc: gUnknown_02003DF0
-  label: gUnknown_02003DF0
-  type: null
-  addr: 0x2003DF0
-  size: 0x46
-  line: ''
--
-  desc: gUnknown_02003E36
-  label: gUnknown_02003E36
-  type: s16 []
-  addr: 0x2003E36
-  size: 0x3A
-  line: ''
--
-  desc: gUnknown_02003E70
-  label: gUnknown_02003E70
-  type: null
-  addr: 0x2003E70
-  size: 0xC
-  line: ''
--
-  desc: gUnknown_02003E7C
-  label: gUnknown_02003E7C
-  type: null
-  addr: 0x2003E7C
-  size: 0xA
-  line: ''
--
-  desc: gUnknown_02003E86
-  label: gUnknown_02003E86
-  type: null
-  addr: 0x2003E86
-  size: 0xFE
-  line: ''
--
-  desc: gUnknown_02003F84
-  label: gUnknown_02003F84
-  type: null
-  addr: 0x2003F84
-  size: 0x28
-  line: ''
--
-  desc: gUnknown_02003FAC
-  label: gUnknown_02003FAC
-  type: s16 []
-  addr: 0x2003FAC
-  size: 0x60
-  line: ''
--
-  desc: gUnknown_0200400C
-  label: gUnknown_0200400C
-  type: null
-  addr: 0x200400C
-  size: 0x48
-  line: ''
--
-  desc: gUnknown_02004054
-  label: gUnknown_02004054
-  type: u16 []
-  addr: 0x2004054
-  size: 0x28
-  line: ''
--
-  desc: gUnknown_0200407C
-  label: gUnknown_0200407C
-  type: null
-  addr: 0x200407C
-  size: 0xC
-  line: ''
--
-  desc: gUnknown_02004088
-  label: gUnknown_02004088
-  type: u8 []
-  addr: 0x2004088
-  size: 0x26
-  line: ''
--
-  desc: gUnknown_020040AE
-  label: gUnknown_020040AE
-  type: u16 []
-  addr: 0x20040AE
-  size: 0x4
-  line: ''
--
-  desc: gUnknown_020040B2
-  label: gUnknown_020040B2
-  type: null
-  addr: 0x20040B2
-  size: 0x76
-  line: ''
--
-  desc: gUnknown_02004128
-  label: gUnknown_02004128
-  type: null
-  addr: 0x2004128
-  size: 0xA0
-  line: ''
--
-  desc: gUnknown_020041C8
-  label: gUnknown_020041C8
-  type: u8 []
-  addr: 0x20041C8
-  size: 0x64
+  size: 0x2
+  count: 0x280
   line: ''
 -
   desc: gUnknown_0200422C
@@ -619,14 +507,16 @@
   label: gBmFrameTmap1
   type: u16 []
   addr: 0x200472C
-  size: 0x480
+  size: 0x2
+  count: 0x240
   line: ''
 -
   desc: gChapterStatusText
   label: gChapterStatusText
   type: struct TextHandle [2]
   addr: 0x2004BAC
-  size: 0x10
+  size: 0x8
+  count: 0x2
   line: ''
 -
   desc: gUnknown_02004BBC
@@ -647,77 +537,8 @@
   label: gMUGfxBuffer
   type: u8 []
   addr: 0x2004BE0
-  size: 0x2C58
-  line: ''
--
-  desc: gUnknown_02007838
-  label: gUnknown_02007838
-  type: null
-  addr: 0x2007838
-  size: 0xA0
-  line: ''
--
-  desc: gUnknown_020078D8
-  label: gUnknown_020078D8
-  type: null
-  addr: 0x20078D8
-  size: 0x728
-  line: ''
--
-  desc: gUnknown_02008000
-  label: gUnknown_02008000
-  type: null
-  addr: 0x2008000
-  size: 0x7A0
-  line: ''
--
-  desc: gUnknown_020087A0
-  label: gUnknown_020087A0
-  type: null
-  addr: 0x20087A0
-  size: 0x1228
-  line: ''
--
-  desc: gUnknown_020099C8
-  label: gUnknown_020099C8
-  type: null
-  addr: 0x20099C8
-  size: 0x910
-  line: ''
--
-  desc: gUnknown_0200A2D8
-  label: gUnknown_0200A2D8
-  type: null
-  addr: 0x200A2D8
-  size: 0x28
-  line: ''
--
-  desc: gUnknown_0200A300
-  label: gUnknown_0200A300
-  type: null
-  addr: 0x200A300
-  size: 0xC00
-  line: ''
--
-  desc: gUnknown_0200AF00
-  label: gUnknown_0200AF00
-  type: null
-  addr: 0x200AF00
-  size: 0x1400
-  line: ''
--
-  desc: gUnknown_0200C300
-  label: gUnknown_0200C300
-  type: null
-  addr: 0x200C300
-  size: 0x800
-  line: ''
--
-  desc: gUnknown_0200CB00
-  label: gUnknown_0200CB00
-  type: null
-  addr: 0x200CB00
-  size: 0x8E0
+  size: 0x1
+  count: 0x8800
   line: ''
 -
   desc: gUnknown_0200D3E0
@@ -3356,7 +3177,8 @@
   label: gUnknown_02024CDC
   type: struct TileDataTransfer []
   addr: 0x2024CDC
-  size: 0x180
+  size: 0xC
+  count: 0x20
   line: hardware.c:6
 -
   desc: sSoundStatus
@@ -3370,14 +3192,16 @@
   label: sProcArray
   type: struct Proc [64]
   addr: 0x2024E68
-  size: 0x1B00
+  size: 0x6C
+  count: 0x40
   line: proc.c:15
 -
   desc: sProcAllocList
   label: sProcAllocList
   type: struct Proc *[64 + 1]
   addr: 0x2026968
-  size: 0x104
+  size: 0x4
+  count: 0x41
   line: proc.c:17
 -
   desc: sProcAllocListHead
@@ -3391,21 +3215,24 @@
   label: gProcTreeRootArray
   type: struct Proc *[8]
   addr: 0x2026A70
-  size: 0x20
+  size: 0x4
+  count: 0x8
   line: proc.c:20
 -
   desc: DrawnIconLookupTable
   label: DrawnIconLookupTable
   type: struct IconStruct [224]
   addr: 0x2026A90
-  size: 0x380
+  size: 0x4
+  count: 0xE0
   line: icon.c:7
 -
   desc: IconGFXIDLookupTable
   label: IconGFXIDLookupTable
   type: u8 [32]
   addr: 0x2026E10
-  size: 0x20
+  size: 0x1
+  count: 0x20
   line: icon.c:8
 -
   desc: gUnknown_02026E30
@@ -3419,7 +3246,8 @@
   label: gUnknown_02028E44
   type: char [9]
   addr: 0x2028E44
-  size: 0x9
+  size: 0x1
+  count: 0x9
   line: fontgrp.c:32
 -
   desc: gUnknown_02028E50
@@ -3461,14 +3289,16 @@
   label: gUnknown_02028E78
   type: struct Struct02028E78 [64]
   addr: 0x2028E78
-  size: 0x100
+  size: 0x4
+  count: 0x40
   line: fontgrp.c:38
 -
   desc: sAnimPool
   label: sAnimPool
   type: struct Anim [ANIM_MAX_COUNT]
   addr: 0x2028F78
-  size: 0xE10
+  size: 0x48
+  count: 0x32
   line: animedrv.c:47
 -
   desc: sFirstAnim
@@ -3482,14 +3312,16 @@
   label: sSpritePool
   type: struct SpriteEntry [0x80]
   addr: 0x2029D8C
-  size: 0x800
+  size: 0x10
+  count: 0x80
   line: ctc.c:132
 -
   desc: sSpriteLayers
   label: sSpriteLayers
   type: struct SpriteEntry [0x10]
   addr: 0x202A58C
-  size: 0x100
+  size: 0x10
+  count: 0x10
   line: ctc.c:133
 -
   desc: gUnknown_0202A68C
@@ -3636,28 +3468,32 @@
   label: gUnitArrayBlue
   type: struct Unit [62]
   addr: 0x202BE4C
-  size: 0x1170
+  size: 0x48
+  count: 0x3E
   line: bmunit.c:25
 -
   desc: gUnitArrayRed
   label: gUnitArrayRed
   type: struct Unit [50]
   addr: 0x202CFBC
-  size: 0xE10
+  size: 0x48
+  count: 0x32
   line: bmunit.c:26
 -
   desc: gUnitArrayGreen
   label: gUnitArrayGreen
   type: struct Unit [20]
   addr: 0x202DDCC
-  size: 0x5A0
+  size: 0x48
+  count: 0x14
   line: bmunit.c:27
 -
   desc: gUnitArrayPurple
   label: gUnitArrayPurple
   type: struct Unit [5]
   addr: 0x202E36C
-  size: 0x168
+  size: 0x48
+  count: 0x5
   line: bmunit.c:28
 -
   desc: gBmMapSize
@@ -3720,49 +3556,56 @@
   label: sBmMapUnitPool
   type: u8 [MAP_POOL_SIZE]
   addr: 0x202E4F4
-  size: 0x7B8
+  size: 0x1
+  count: 0x7B8
   line: bmmap.c:38
 -
   desc: sBmMapTerrainPool
   label: sBmMapTerrainPool
   type: u8 [MAP_POOL_SIZE]
   addr: 0x202ECAC
-  size: 0x7B8
+  size: 0x1
+  count: 0x7B8
   line: bmmap.c:39
 -
   desc: sBmMapFogPool
   label: sBmMapFogPool
   type: u8 [MAP_POOL_SIZE]
   addr: 0x202F464
-  size: 0x7B8
+  size: 0x1
+  count: 0x7B8
   line: bmmap.c:40
 -
   desc: sBmMapHiddenPool
   label: sBmMapHiddenPool
   type: u8 [MAP_POOL_SIZE]
   addr: 0x202FC1C
-  size: 0x7B8
+  size: 0x1
+  count: 0x7B8
   line: bmmap.c:41
 -
   desc: sBmMapOtherPool
   label: sBmMapOtherPool
   type: u8 [MAP_POOL_SIZE]
   addr: 0x20303D4
-  size: 0x7B8
+  size: 0x1
+  count: 0x7B8
   line: bmmap.c:42
 -
   desc: sTilesetConfig
   label: sTilesetConfig
   type: u16 [0x1000 + 0x200]
   addr: 0x2030B8C
-  size: 0x2400
+  size: 0x2
+  count: 0x1200
   line: bmmap.c:44
 -
   desc: sBmBaseTilesPool
   label: sBmBaseTilesPool
   type: u16 [MAP_POOL_SIZE]
   addr: 0x2032F8C
-  size: 0xF70
+  size: 0x2
+  count: 0x7B8
   line: bmmap.c:46
 -
   desc: gWorkingMovementScript
@@ -3874,7 +3717,8 @@
   label: gBattleHitArray
   type: struct BattleHit [BATTLE_HIT_MAX]
   addr: 0x203A5EC
-  size: 0x1C
+  size: 0x4
+  count: 0x7
   line: bmbattle.c:65
 -
   desc: gBattleHitIterator
@@ -3902,7 +3746,8 @@
   label: sTrapPool
   type: struct Trap [TRAP_MAX_COUNT]
   addr: 0x203A614
-  size: 0x200
+  size: 0x8
+  count: 0x40
   line: bmtrick.c:19
 -
   desc: sTrapLast
@@ -3916,7 +3761,8 @@
   label: gConvoyItemArray
   type: u16 []
   addr: 0x203A81C
-  size: 0xC8
+  size: 0x2
+  count: 0x64
   line: bmcontainer.c:8
 -
   desc: sUnitStackBase
@@ -4266,7 +4112,8 @@
   label: sSelectTargetList
   type: struct SelectTarget [MAX_TARGET_LIST_COUNT]
   addr: 0x203DDEC
-  size: 0x300
+  size: 0xC
+  count: 0x40
   line: uiselecttarget.c:13
 -
   desc: sSelectTargetCount
@@ -4815,18 +4662,12 @@
   size: 0x4
   line: ''
 -
-  desc: end
-  label: end
-  type: int
-  addr: 0x203EFB8
-  size: 0x0
-  line: ''
--
   desc: gRNSeeds
   label: gRNSeeds
   type: u16 [3]
   addr: 0x3000000
-  size: 0x6
+  size: 0x2
+  count: 0x3
   line: rng.c:4
 -
   desc: gLCGRNValue
@@ -4959,7 +4800,8 @@
   label: sAPArray
   type: struct APHandle [0x14]
   addr: 0x3000108
-  size: 0x320
+  size: 0x28
+  count: 0x14
   line: ap.c:50
 -
   desc: gUnknown_03000428
@@ -4994,7 +4836,8 @@
   label: gEventSlots
   type: unsigned [0xE]
   addr: 0x30004B8
-  size: 0x2C
+  size: 0x3
+  count: 0xE
   line: ''
 -
   desc: gUnknown_030004E4
@@ -5043,14 +4886,16 @@
   label: gUnknown_030005B0
   type: struct ProcCmd [4]
   addr: 0x30005B0
-  size: 0x20
+  size: 0x8
+  count: 0x4
   line: ''
 -
   desc: gPopupInst
   label: gPopupInst
   type: struct PopupInstruction [4]
   addr: 0x30005D0
-  size: 0x20
+  size: 0x8
+  count: 0x4
   line: popup.c:37
 -
   desc: gpPopupUnit
@@ -5113,14 +4958,16 @@
   label: sBmMapMovementPool
   type: u8 [MAP_POOL_SIZE]
   addr: 0x3000810
-  size: 0x7B8
+  size: 0x1
+  count: 0x7B8
   line: bmmap.c:50
 -
   desc: sBmMapRangePool
   label: sBmMapRangePool
   type: u8 [MAP_POOL_SIZE]
   addr: 0x3000FC8
-  size: 0x7B8
+  size: 0x1
+  count: 0x7B8
   line: bmmap.c:51
 -
   desc: gUnknown_03001780
@@ -5330,7 +5177,8 @@
   label: sMenuOverrides
   type: struct MenuItemOverride [MENU_OVERRIDE_MAX]
   addr: 0x3001870
-  size: 0x80
+  size: 0x8
+  count: 0x10
   line: uimenu.c:698
 -
   desc: gUnknown_030018F0
@@ -5358,7 +5206,8 @@
   label: sMUConfigArray
   type: struct MUConfig [MU_MAX_COUNT]
   addr: 0x3001900
-  size: 0x130
+  size: 0x4C
+  count: 0x4
   line: mu.c:151
 -
   desc: gUnknown_03001A30
@@ -5568,14 +5417,16 @@
   label: verifySramFast_Work
   type: u16 [80]
   addr: 0x3002A68
-  size: 0xA0
+  size: 0x2
+  count: 0x50
   line: agb_sram.c:6
 -
   desc: readSramFast_Work
   label: readSramFast_Work
   type: u16 [64]
   addr: 0x3002B08
-  size: 0x80
+  size: 0x2
+  count: 0x40
   line: agb_sram.c:7
 -
   desc: heap_end.63
@@ -5624,7 +5475,8 @@
   label: SoundMainRAM_Buffer
   type: char [0x400]
   addr: 0x3002C60
-  size: 0x400
+  size: 0x1
+  count: 0x400
   line: m4a.c:7
 -
   desc: gUnknown_03002C61
@@ -5722,7 +5574,8 @@
   label: gIRQHandlers
   type: void *[14]
   addr: 0x30030F0
-  size: 0x38
+  size: 0x4
+  count: 0xE
   line: ''
 -
   desc: gUnknown_03003128
@@ -5827,7 +5680,8 @@
   label: IntrMain_Buffer
   type: u32 [0x200]
   addr: 0x3004160
-  size: 0x800
+  size: 0x4
+  count: 0x200
   line: ''
 -
   desc: gUnknown_03004960
@@ -6128,7 +5982,8 @@
   label: gMPlayJumpTable
   type: void *[]
   addr: 0x3006480
-  size: 0x90
+  size: 0x4
+  count: 0x24
   line: m4a.c:10
 -
   desc: gUnknown_03006484
@@ -6156,7 +6011,8 @@
   label: gCgbChans
   type: struct CgbChannel []
   addr: 0x3006510
-  size: 0x100
+  size: 0x40
+  count: 0x4
   line: m4a.c:11
 -
   desc: gMPlayInfo_SE6_BMP4
@@ -6191,7 +6047,8 @@
   label: gMPlayMemAccArea
   type: u8 []
   addr: 0x3006710
-  size: 0x10
+  size: 0x1
+  count: 0x10
   line: m4a.c:16
 -
   desc: gMPlayInfo_SE7_EVT

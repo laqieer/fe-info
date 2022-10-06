@@ -3,15 +3,15 @@ import re
 import sys
 import subprocess
 import pycparser
-from pycparser.c_ast import EllipsisParam
+from pycparser.c_ast import EllipsisParam, TypeDecl, ArrayDecl
 from pycparserext.ext_c_parser import GnuCParser
 from pycparserext.ext_c_generator import GnuCGenerator
 from constants import *
 from utils import write_yaml
 
 sections = {}
-
 symbols = {}
+enums = {}
 
 class MyVisitor(GnuCGenerator):
     def visit_FuncDef(self, n):
@@ -42,6 +42,22 @@ class MyVisitor(GnuCGenerator):
             if n.bitsize:
                 symbols[n.name]['type'] += ':' + self.visit(n.bitsize)
         return super().visit_Decl(n, no_type)
+
+    def visit_Enumerator(self, n):
+        if n.value:
+            v = self.visit(n.value)
+            if v in enums:
+                v = enums[v]
+            enums[n.name] = v
+        return super().visit_Enumerator(n)
+
+    def _generate_type(self, n, modifiers=[], emit_declname = True):
+        if emit_declname and type(n) == TypeDecl and n.declname and n.declname in symbols:
+            for modifier in modifiers:
+                if isinstance(modifier, ArrayDecl):
+                    if modifier.dim:
+                        symbols[n.declname]['count'] = self.visit(modifier.dim)
+        return super()._generate_type(n, modifiers, emit_declname)
 
 
 def readDeclFromSrc(path: str) -> None:
@@ -133,6 +149,13 @@ def writeDataToYaml(dstPath, mapType):
                 data[-1]['return'] = symbol.get('return')
             elif mapType in (MAP_DATA, MAP_RAM):
                 data[-1]['type'] = symbol.get('type')
+                if 'count' in symbol:
+                    count = symbol['count']
+                    for k, v in enums.items():
+                        count = count.replace(k, '(' + v + ')')
+                    count = eval(count)
+                    data[-1]['count'] = count
+                    data[-1]['size'] //= count
     write_yaml(os.path.join(dstPath, mapType + '.yml'), data, mapType)
 
 def main() -> int:

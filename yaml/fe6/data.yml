@@ -8606,7 +8606,8 @@
   label: sDefaultFaceConfig
   type: struct FaceVramEnt [FACE_SLOT_COUNT]
   addr: 0x85C3A40
-  size: 0x20
+  size: 0x8
+  count: 0x4
   line: face.c:33
 -
   desc: Sprite_Face64x80
@@ -9376,7 +9377,8 @@
   label: sDirKeysToOffsetLut
   type: i8 [][2]
   addr: 0x85C5124
-  size: 0x20
+  size: 0x1
+  count: 0x20
   line: bm.c:172
 -
   desc: Sprite_MapCursorA
@@ -10048,7 +10050,8 @@
   label: sItemDisplayTileLocation
   type: struct Vec2i [2][ITEMSLOT_INV_COUNT]
   addr: 0x85C620C
-  size: 0x28
+  size: 0x2
+  count: 0x14
   line: trademenu.c:78
 -
   desc: Sprite_085C6234
@@ -10650,7 +10653,8 @@
   label: gUnk_085C7E0C
   type: u16 [5][5]
   addr: 0x85C7E0C
-  size: 0x32
+  size: 0x2
+  count: 0x19
   line: movepath.c:54
 -
   desc: gMovePath
@@ -12141,7 +12145,8 @@
   label: gNearTargetLinkOrder
   type: struct NearTargetLinkOrderEnt [13]
   addr: 0x85CB4D0
-  size: 0x34
+  size: 0x4
+  count: 0xD
   line: map-select.c:267
 -
   desc: gUnk_085CB504
@@ -16355,7 +16360,8 @@
   label: sMoveOffsetLut
   type: short [4 * 2]
   addr: 0x8664794
-  size: 0x10
+  size: 0x2
+  count: 0x8
   line: mu.c:81
 -
   desc: MuSoundScr_Foot
@@ -16411,7 +16417,8 @@
   label: sMuChrOffLut
   type: u16 [MU_COUNT]
   addr: 0x86648D4
-  size: 0x8
+  size: 0x2
+  count: 0x4
   line: mu.c:158
 -
   desc: sMuWalkSpeedLut
