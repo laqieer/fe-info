@@ -1,1818 +1,861 @@
 -
-  desc: Pause screen BG0 map
-  label: PauseBG0Map
-  addr:
-    J: 0x200F800
-    U: 0x200F800
-    E: 0x200F800
-  size: 0x800
+  desc: sRandStA
+  label: sRandStA
+  type: u16 [3]
+  addr: 0x3000000
+  size: 0x6
+  line: random.c:5
 -
-  desc: Sleep mode BG0 map
-  label: SleepModeBG0Map
-  addr:
-    J: 0x2010000
-    U: 0x2010000
-    E: 0x2010000
-  size: 0x800
+  desc: sRandStB
+  label: sRandStB
+  type: int
+  addr: 0x3000008
+  size: 0x4
+  line: random.c:6
 -
-  desc: Holds common sprite graphics while paused
-  label: PausedCommonSpriteGfx
-  type: gfx
-  addr:
-    J: 0x201C000
-    U: 0x201C000
-    E: 0x201C000
-  size: 0x4000
+  desc: sBgSyncBits
+  label: sBgSyncBits
+  type: u8
+  addr: 0x300000C
+  size: 0x1
+  line: hardware.c:21
 -
-  desc: Holds room sprite graphics while paused
-  label: PausedRoomSpriteGfx
-  type: gfx
-  addr:
-    J: 0x2020000
-    U: 0x2020000
-    E: 0x2020000
-  size: 0x4000
+  desc: sPalSyncFlag
+  label: sPalSyncFlag
+  type: bool
+  addr: 0x300000D
+  size: 0x1
+  line: hardware.c:22
 -
-  desc: Decompressed clipdata
-  label: DecompClipdata
-  type: u16
-  addr:
-    J: 0x2026000
-    U: 0x2026000
-    E: 0x2026000
-  count: 0x1800
+  desc: sGameTime
+  label: sGameTime
+  type: unsigned
+  addr: 0x3000010
+  size: 0x4
+  line: hardware.c:24
 -
-  desc: Decompressed BG0 map
-  label: DecompBG0Data
-  type: u16
-  addr:
-    J: 0x2029000
-    U: 0x2029000
-    E: 0x2029000
-  count: 0x1800
+  desc: sUnk_03000014
+  label: sUnk_03000014
+  type: u8
+  addr: 0x3000014
+  size: 0x1
+  line: hardware.c:26
 -
-  desc: Decompressed BG1 map
-  label: DecompBG1Data
-  type: u16
-  addr:
-    J: 0x202C000
-    U: 0x202C000
-    E: 0x202C000
-  count: 0x1800
+  desc: sUnk_03000015
+  label: sUnk_03000015
+  type: u8
+  addr: 0x3000015
+  size: 0x1
+  line: hardware.c:27
 -
-  desc: Decompressed BG2 map
-  label: DecompBG2Data
-  type: u16
-  addr:
-    J: 0x202F000
-    U: 0x202F000
-    E: 0x202F000
-  count: 0x1800
+  desc: sOamHi
+  label: sOamHi
+  type: struct OamSection
+  addr: 0x3000018
+  size: 0xC
+  line: oam.c:14
 -
-  desc: Decompressed BG3 map
-  label: DecompBG3Data
-  addr:
-    J: 0x2032000
-    U: 0x2032000
-    E: 0x2032000
-  size: 0x2000
+  desc: sOamLo
+  label: sOamLo
+  type: struct OamSection
+  addr: 0x3000028
+  size: 0xC
+  line: oam.c:15
 -
-  desc: Current minimap data
-  label: CurrMinimapData
-  type: u16
-  addr:
-    J: 0x2034000
-    U: 0x2034000
-    E: 0x2034000
-  count: 0x400
--
-  desc: Decompressed minimap data
-  label: DecompMinimapData
-  type: u16
-  addr:
-    J: 0x2034800
-    U: 0x2034800
-    E: 0x2034800
-  count: 0x400
--
-  desc: Background palette
-  label: BackgroundPalette
-  type: palette
-  addr:
-    J: 0x2035400
-    U: 0x2035400
-    E: 0x2035400
-  count: 0x10
--
-  desc: Sprite palette
-  label: SpritePalette
-  type: palette
-  addr:
-    J: 0x2035600
-    U: 0x2035600
-    E: 0x2035600
-  count: 0x10
--
-  desc: Never reform blocks
-  label: NeverReformBlocks
-  type: NeverReformBlock
-  addr:
-    J: 0x2036000
-    U: 0x2036000
-    E: 0x2036000
-  count: 0x600
--
-  desc: Tanks collected
-  label: TanksCollected
-  type: CollectedTank
-  addr:
-    J: 0x2037200
-    U: 0x2037200
-    E: 0x2037200
-  count: 0x280
--
-  desc: Minimap visited tiles
-  label: MinimapVisitedTiles
-  addr:
-    J: 0x2037C00
-    U: 0x2037C00
-    E: 0x2037C00
-  size: 0x400
--
-  desc: 00-7F of SRAM
-  label: SramHeader
-  addr:
-    J: 0x2038000
-    U: 0x2038000
-    E: 0x2038000
+  desc: sTalkStObj
+  label: sTalkStObj
+  type: struct TalkSt
+  addr: 0x3000038
   size: 0x80
+  line: talk.c:96
 -
-  desc: Copy of 00-7F of SRAM
-  label: SramHeaderCopy
-  addr:
-    J: 0x2038080
-    U: 0x2038080
-    E: 0x2038080
+  desc: sTalkText
+  label: sTalkText
+  type: struct Text [3]
+  addr: 0x30000B8
+  size: 0x18
+  line: talk.c:99
+-
+  desc: sTalkChoiceResult
+  label: sTalkChoiceResult
+  type: int
+  addr: 0x30000D0
+  size: 0x4
+  line: talk.c:100
+-
+  desc: sTalkFont
+  label: sTalkFont
+  type: struct Font
+  addr: 0x30000D8
+  size: 0x18
+  line: talk.c:101
+-
+  desc: sUnk_030000F0
+  label: sUnk_030000F0
+  type: int
+  addr: 0x30000F0
+  size: 0x4
+  line: event.c:283
+-
+  desc: sPopupUnit
+  label: sPopupUnit
+  type: struct Unit *
+  addr: 0x30000F4
+  size: 0x4
+  line: event.c:285
+-
+  desc: sPopupItem
+  label: sPopupItem
+  type: u16
+  addr: 0x30000F8
+  size: 0x2
+  line: event.c:286
+-
+  desc: sPopupNumber
+  label: sPopupNumber
+  type: int
+  addr: 0x30000FC
+  size: 0x4
+  line: event.c:287
+-
+  desc: sAnims
+  label: sAnims
+  type: struct SpriteAnim [ANIM_COUNT]
+  addr: 0x3000100
+  size: 0x320
+  line: sprite-anim.c:34
+-
+  desc: sText_03000420
+  label: sText_03000420
+  type: struct Text
+  addr: 0x3000420
+  size: 0x8
+  line: util.c:1419
+-
+  desc: sInitializingMap
+  label: sInitializingMap
+  type: u8 **
+  addr: 0x3000428
+  size: 0x4
+  line: map.c:39
+-
+  desc: sMapMovementData
+  label: sMapMovementData
+  type: u8 [MAP_POOL_SIZE]
+  addr: 0x3000430
+  size: 0x7B8
+  line: map.c:43
+-
+  desc: sMapRangeData
+  label: sMapRangeData
+  type: u8 [MAP_POOL_SIZE]
+  addr: 0x3000BE8
+  size: 0x7B8
+  line: map.c:44
+-
+  desc: sScrEnded
+  label: sScrEnded
+  type: bool
+  addr: 0x30013A0
+  size: 0x1
+  line: ai-script.c:52
+-
+  desc: sScrKind
+  label: sScrKind
+  type: enum ScriptKind
+  addr: 0x30013A4
+  size: 0x4
+  line: ai-script.c:53
+-
+  desc: sScr
+  label: sScr
+  type: const struct AiScr *
+  addr: 0x30013A8
+  size: 0x4
+  line: ai-script.c:54
+-
+  desc: sScrFunc
+  label: sScrFunc
+  type: AiScrFunc
+  addr: 0x30013AC
+  size: 0x4
+  line: ai-script.c:55
+-
+  desc: sCombatScoreCoefficients
+  label: sCombatScoreCoefficients
+  type: const struct AiCombatScoreCoefficients *
+  addr: 0x30013B0
+  size: 0x4
+  line: ai-battle.c:27
+-
+  desc: gUnk_030013B8
+  label: gUnk_030013B8
+  type: null
+  addr: 0x30013B8
+  size: 0x4
+  line: ''
+-
+  desc: gUnk_030013BC
+  label: gUnk_030013BC
+  type: null
+  addr: 0x30013BC
+  size: 0x4
+  line: ''
+-
+  desc: gUnk_030013C0
+  label: gUnk_030013C0
+  type: null
+  addr: 0x30013C0
+  size: 0x4
+  line: ''
+-
+  desc: gUnk_030013C4
+  label: gUnk_030013C4
+  type: null
+  addr: 0x30013C4
+  size: 0x4
+  line: ''
+-
+  desc: gUnk_030013C8
+  label: gUnk_030013C8
+  type: null
+  addr: 0x30013C8
+  size: 0x2
+  line: ''
+-
+  desc: gUnk_030013CA
+  label: gUnk_030013CA
+  type: null
+  addr: 0x30013CA
+  size: 0x6
+  line: ''
+-
+  desc: gUnk_030013D0
+  label: gUnk_030013D0
+  type: null
+  addr: 0x30013D0
+  size: 0x8
+  line: ''
+-
+  desc: gUnk_030013D8
+  label: gUnk_030013D8
+  type: null
+  addr: 0x30013D8
+  size: 0x8
+  line: ''
+-
+  desc: gUnk_030013E0
+  label: gUnk_030013E0
+  type: null
+  addr: 0x30013E0
+  size: 0x4
+  line: ''
+-
+  desc: gUnk_030013E4
+  label: gUnk_030013E4
+  type: null
+  addr: 0x30013E4
+  size: 0x4
+  line: ''
+-
+  desc: gUnk_030013E8
+  label: gUnk_030013E8
+  type: null
+  addr: 0x30013E8
+  size: 0x8
+  line: ''
+-
+  desc: gUnk_030013F0
+  label: gUnk_030013F0
+  type: null
+  addr: 0x30013F0
+  size: 0x14
+  line: ''
+-
+  desc: gUnk_03001404
+  label: gUnk_03001404
+  type: null
+  addr: 0x3001404
+  size: 0x4
+  line: ''
+-
+  desc: gUnk_03001408
+  label: gUnk_03001408
+  type: null
+  addr: 0x3001408
+  size: 0x4
+  line: ''
+-
+  desc: gUnk_0300140C
+  label: gUnk_0300140C
+  type: null
+  addr: 0x300140C
+  size: 0x4
+  line: ''
+-
+  desc: gUnk_03001410
+  label: gUnk_03001410
+  type: null
+  addr: 0x3001410
+  size: 0x8
+  line: ''
+-
+  desc: gUnk_03001418
+  label: gUnk_03001418
+  type: null
+  addr: 0x3001418
+  size: 0x10
+  line: ''
+-
+  desc: gUnk_03001428
+  label: gUnk_03001428
+  type: null
+  addr: 0x3001428
+  size: 0x10
+  line: ''
+-
+  desc: gUnk_03001438
+  label: gUnk_03001438
+  type: null
+  addr: 0x3001438
+  size: 0x8
+  line: ''
+-
+  desc: sMuConfig
+  label: sMuConfig
+  type: struct MuConfig [MU_COUNT]
+  addr: 0x3001440
+  size: 0x130
+  line: mu.c:239
+-
+  desc: gUnk_03001570
+  label: gUnk_03001570
+  type: null
+  addr: 0x3001570
+  size: 0xBE8
+  line: ''
+-
+  desc: verifySramFast_Work
+  label: verifySramFast_Work
+  type: u16 [80]
+  addr: 0x3002158
+  size: 0xA0
+  line: agb-sram.c:4
+-
+  desc: readSramFast_Work
+  label: readSramFast_Work
+  type: u16 [64]
+  addr: 0x30021F8
   size: 0x80
--
-  desc: SRAM
-  label: Sram
-  type: SaveFileRam
-  addr:
-    J: 0x2038200
-    U: 0x2038200
-    E: 0x2038200
-  count: 0x6
--
-  desc: Debug flag
-  label: DebugFlag
-  type: u8
-  addr:
-    J: 0x3000000
-    U: 0x3000000
-    E: 0x3000000
--
-  desc: 16-bit frame counter
-  label: FrameCounter16Bit
-  type: u16
-  addr:
-    J: 0x3000002
-    U: 0x3000002
-    E: 0x3000002
--
-  desc: Stereo flag
-  label: StereoFlag
-  type: u8
-  addr:
-    J: 0x3000004
--
-  desc: Written to BLDALPHA (alpha blending coefficients)
-  label: WrittenToBLDALPHA
-  type: u16
-  addr:
-    J: 0x3000006
-    U: 0x3000004
-    E: 0x3000004
--
-  desc: Written to BLDCNT (color special effects selection)
-  label: WrittenToBLDCNT
-  type: u16
-  addr:
-    J: 0x3000008
-    U: 0x3000006
-    E: 0x3000006
--
-  desc: Written to DISPCNT (LCD control)
-  label: WrittenToDISPCNT
-  type: u16
-  addr:
-    J: 0x300000A
-    U: 0x3000008
-    E: 0x3000008
--
-  desc: Written to BG3CNT (BG3 control)
-  label: WrittenToBG3CNT
-  type: u16
-  addr:
-    J: 0x300000C
-    U: 0x300000A
-    E: 0x300000A
--
-  desc: Written to WININ_H (inside of window 1)
-  label: WrittenToWININ_H
-  type: u8
-  addr:
-    J: 0x300000E
-    U: 0x300000C
-    E: 0x300000C
--
-  desc: Written to WINOUT_L (outside of windows)
-  label: WrittenToWINOUT_L
-  type: u8
-  addr:
-    J: 0x300000F
-    U: 0x300000D
-    E: 0x300000D
--
-  desc: Written to 0x05000000 (transparent color)
-  label: WrittenTo5000000
-  type: u16
-  addr:
-    J: 0x3000010
-    U: 0x300000E
-    E: 0x300000E
--
-  desc: Copied to 0x0203800C
-  label: CopiedTo203800C
-  type: u8
-  addr:
-    J: 0x3000012
-    U: 0x3000010
-    E: 0x3000010
--
-  desc: Language
-  label: Language
-  type: u8
-  addr:
-    J: 0x3000014
-    U: 0x3000011
-    E: 0x3000011
-  enum: Language
--
-  desc: Game completion
-  label: GameCompletion
-  type: GameCompletion
-  addr:
-    J: 0x3000018
-    U: 0x3000014
-    E: 0x3000014
--
-  desc: Fades backgrounds to black or white
-  label: FadeBGBlackWhite
-  type: u8
-  addr:
-    J: 0x300001C
-    U: 0x3000018
-    E: 0x3000018
-  enum: BackgroundFade
--
-  desc: Which background's position is written to BG3OFS
-  label: BGPositionWrittenToBG3OFS
-  type: u8
-  addr:
-    J: 0x300001D
-    U: 0x3000019
-    E: 0x3000019
--
-  desc: Samus on top of backgrounds flag
-  label: SamusOnTopOfBGFlag
-  type: u8
-  addr:
-    J: 0x300001E
-    U: 0x300001A
-    E: 0x300001A
--
-  desc: Ability count
-  label: AbilityCount
-  type: u8
-  addr:
-    J: 0x300001F
-    U: 0x300001B
-    E: 0x300001B
-  enum: AbilityCount
--
-  desc: Difficulty
-  label: Difficulty
-  type: u8
-  addr:
-    J: 0x3000020
-  enum: Difficulty
--
-  desc: Security hatch flash level
-  label: SecurityHatchFlashLevel
-  type: u8
-  addr:
-    J: 0x3000021
-    U: 0x300001C
-    E: 0x300001C
-  enum: SecurityLevel
--
-  desc: Back-up of security hatch flash level during power outage
-  label: SecurityHatchFlashLevelBackup
-  type: u8
-  addr:
-    J: 0x3000022
-    U: 0x300001D
-    E: 0x300001D
-  enum: SecurityLevel
--
-  desc: Current demo
-  label: CurrDemo
-  type: u8
-  addr:
-    J: 0x3000023
-    U: 0x300001E
-    E: 0x300001E
-  enum: Demo
--
-  desc: Demo playing flag
-  label: DemoPlayingFlag
-  type: u8
-  addr:
-    J: 0x3000024
-    U: 0x300001F
-    E: 0x300001F
--
-  desc: Reboot game flag
-  label: RebootGameFlag
-  type: u8
-  addr:
-    J: 0x3000025
-    U: 0x3000020
-    E: 0x3000020
--
-  desc: Disable scrolling flag
-  label: DisableScrollingFlag
-  type: u8
-  addr:
-    J: 0x3000026
-    U: 0x3000021
-    E: 0x3000021
--
-  desc: Disable music flag
-  label: DisableMusicFlag
-  type: u8
-  addr:
-    J: 0x3000027
-    U: 0x3000022
-    E: 0x3000022
--
-  desc: Skip door transition flag
-  label: SkipDoorTransitionFlag
-  type: u8
-  addr:
-    J: 0x3000029
-    U: 0x3000024
-    E: 0x3000024
--
-  desc: Disable soft-reset flag
-  label: DisableSoftResetFlag
-  type: u8
-  addr:
-    J: 0x300002A
-    U: 0x3000025
-    E: 0x3000025
--
-  desc: Collecting tank flag
-  label: CollectingTankFlag
-  type: u8
-  addr:
-    J: 0x300002B
-    U: 0x3000026
-    E: 0x3000026
--
-  desc: Disable animated graphics timer
-  label: DisableAnimGfxTimer
-  type: u8
-  addr:
-    J: 0x300002C
-    U: 0x3000027
-    E: 0x3000027
--
-  desc: Animated graphics to update
-  label: AnimGfxToUpdate
-  type: flags16
-  addr:
-    J: 0x300002E
-    U: 0x3000028
-    E: 0x3000028
--
-  desc: Disable doors and tanks flag
-  label: DisableDoorsAndTanksFlag
-  type: u8
-  addr:
-    J: 0x3000030
-    U: 0x300002A
-    E: 0x300002A
--
-  desc: Disable pause flag
-  label: DisablePauseFlag
-  type: u8
-  addr:
-    J: 0x3000031
-    U: 0x300002B
-    E: 0x300002B
--
-  desc: Current area
-  label: AreaID
-  type: u8
-  addr:
-    J: 0x3000032
-    U: 0x300002C
-    E: 0x300002C
-  enum: AreaID
--
-  desc: Current room
-  label: RoomID
-  type: u8
-  addr:
-    J: 0x3000033
-    U: 0x300002D
-    E: 0x300002D
--
-  desc: Last door used
-  label: PrevDoor
-  type: u8
-  addr:
-    J: 0x3000034
-    U: 0x300002E
-    E: 0x300002E
--
-  desc: Last door properties
-  label: PrevDoorProperties
-  type: u8
-  addr:
-    J: 0x3000035
-    U: 0x300002F
-    E: 0x300002F
--
-  desc: Bit 6 of door properties, displays location pop-up
-  label: DoorDisplayLocationFlag
-  type: u8
-  addr:
-    J: 0x3000036
-    U: 0x3000030
-    E: 0x3000030
--
-  desc: Minimap X coordinate
-  label: MinimapXPosition
-  type: u8
-  addr:
-    J: 0x3000037
-    U: 0x3000031
-    E: 0x3000031
--
-  desc: Minimap Y coordinate
-  label: MinimapYPosition
-  type: u8
-  addr:
-    J: 0x3000038
-    U: 0x3000032
-    E: 0x3000032
--
-  desc: Number of never reform blocks broken
-  label: NumNeverReformBlocksBroken
-  type: NumNeverReformBlocksBroken
-  addr:
-    J: 0x3000039
-    U: 0x3000033
-    E: 0x3000033
--
-  desc: Number of tanks collected
-  label: NumTanksCollected
-  type: NumTanksCollected
-  addr:
-    J: 0x3000041
-    U: 0x300003B
-    E: 0x300003B
--
-  desc: Foreground effect
-  label: ForegroundEffect
-  type: u8
-  addr:
-    J: 0x3000049
-    U: 0x3000043
-    E: 0x3000043
-  enum: ForegroundEffect
--
-  desc: Foreground effect Y position
-  label: ForegroundEffectYPosition
-  type: u16
-  addr:
-    J: 0x300004A
-    U: 0x3000044
-    E: 0x3000044
--
-  desc: Door unlock timer
-  label: DoorUnlockTimer
-  type: u8
-  addr:
-    J: 0x300004C
-    U: 0x3000046
-    E: 0x3000046
--
-  desc: Current navigation room
-  label: CurrNavRoom
-  type: u8
-  addr:
-    J: 0x300004E
-    U: 0x3000048
-    E: 0x3000048
-  enum: NavRoom
--
-  desc: Last elevator used
-  label: LastElevatorUsed
-  type: u8
-  addr:
-    J: 0x300004F
-    U: 0x3000049
-    E: 0x3000049
-  enum: Elevator
--
-  desc: Current event based effect
-  label: CurrEventBasedEffect
-  type: u8
-  addr:
-    J: 0x3000050
-    U: 0x300004A
-    E: 0x300004A
-  enum: EventBasedEffect
--
-  desc: Event based effect copy
-  label: EventBasedEffectCopy
-  type: u8
-  addr:
-    J: 0x3000051
-    U: 0x300004B
-    E: 0x300004B
-  enum: EventBasedEffect
--
-  desc: Current flashing sector number
-  label: CurrFlashingSectorNum
-  type: u8
-  addr:
-    J: 0x3000053
-    U: 0x300004D
-    E: 0x300004D
--
-  desc: Screen shake X offset
-  label: ScreenShakeXOffset
-  type: u8
-  addr:
-    J: 0x3000054
-    U: 0x300004E
-    E: 0x300004E
--
-  desc: Screen shake Y offset
-  label: ScreenShakeYOffset
-  type: u8
-  addr:
-    J: 0x3000055
-    U: 0x300004F
-    E: 0x300004F
--
-  desc: Spriteset number
-  label: SpritesetNum
-  type: u8
-  addr:
-    J: 0x3000058
-    U: 0x3000052
-    E: 0x3000052
--
-  desc: Current clipdata affecting action
-  label: CurrClipdataAffectingAction
-  type: u8
-  addr:
-    J: 0x3000059
-    U: 0x3000053
-    E: 0x3000053
-  enum: ClipdataAffectingAction
--
-  desc: Which spriteset entry was used
-  label: SpritesetEntryUsed
-  type: u8
-  addr:
-    J: 0x300005A
-    U: 0x3000054
-    E: 0x3000054
--
-  desc: Use alternate animated tileset flag
-  label: UseAltAnimatedTilesetFlag
-  addr:
-    J: 0x300005E
-    U: 0x3000058
-    E: 0x3000058
-  size: 0x5
--
-  desc: Sub-event counter
-  label: SubEventCounter
-  type: u16
-  addr:
-    J: 0x3000066
-    U: 0x3000060
-    E: 0x3000060
--
-  desc: Previous sub-event
-  label: PrevSubEvent
-  type: u16
-  addr:
-    J: 0x3000068
-    U: 0x3000062
-    E: 0x3000062
--
-  desc: Backup of I/O registers
-  label: BackupOfIORegisters
-  type: BackupOfIORegisters
-  addr:
-    J: 0x3000074
-    U: 0x3000070
-    E: 0x3000070
--
-  desc: Background pointers and dimensions
-  label: BGPtrsAndDimensions
-  type: BGPtrsAndDimensions
-  addr:
-    J: 0x3000088
-    U: 0x3000084
-    E: 0x3000084
--
-  desc: Current room entry
-  label: CurrRoomEntry
-  type: CurrRoomEntry
-  addr:
-    J: 0x30000A8
-    U: 0x30000A4
-    E: 0x30000A4
--
-  desc: Current environment affecting Samus
-  label: CurrEnvironmentAffectingSamus
-  type: u16
-  addr:
-    J: 0x30000C6
-    U: 0x30000C2
-    E: 0x30000C2
-  enum: EnvironmentAffectingSamus
--
-  desc: Background positions
-  label: BGPositions
-  type: BGPositions
-  addr:
-    J: 0x30000CC
-    U: 0x30000C8
-    E: 0x30000C8
--
-  desc: Screen shake Y
-  label: ScreenShakeY
-  type: ScreenShake
-  addr:
-    J: 0x30000F4
-    U: 0x30000F0
-    E: 0x30000F0
--
-  desc: Screen shake X
-  label: ScreenShakeX
-  type: ScreenShake
-  addr:
-    J: 0x30000F8
-    U: 0x30000F4
-    E: 0x30000F4
--
-  desc: Current scrolls
-  label: CurrScrolls
-  type: CurrScrolls
-  addr:
-    J: 0x30000FC
-    U: 0x30000F8
-    E: 0x30000F8
--
-  desc: Current power bomb
-  label: CurrPowerBomb
-  type: CurrPowerBomb
-  addr:
-    J: 0x3000114
-    U: 0x3000110
-    E: 0x3000110
--
-  desc: Screen position and velocity
-  label: ScreenPositionAndVelocity
-  type: ScreenPositionAndVelocity
-  addr:
-    J: 0x3000128
-    U: 0x3000124
-    E: 0x3000124
--
-  desc: In-game timer
-  label: InGameTimer
-  type: InGameTime
-  addr:
-    J: 0x300013C
-    U: 0x3000138
-    E: 0x3000138
--
-  desc: Max in-game time flag
-  label: MaxInGameTimeFlag
-  type: u8
-  addr:
-    J: 0x3000140
-    U: 0x300013C
-    E: 0x300013C
--
-  desc: Best completion times (unused?)
-  label: BestCompletionTimes
-  type: InGameTime
-  addr:
-    J: 0x3000144
-  count: 0xC
--
-  desc: Sprite data
-  label: SpriteDataSlot0
-  type: SpriteData
-  addr:
-    J: 0x3000174
-    U: 0x3000140
-    E: 0x3000140
-  count: 0x18
--
-  desc: Spriteset sprite IDs
-  label: SpritesetSpriteIDs
-  type: u8
-  addr:
-    J: 0x30006B4
-    U: 0x3000680
-    E: 0x3000680
-  count: 0xF
-  enum: PrimarySpriteID
--
-  desc: Spriteset sprite graphics slots
-  label: SpritesetSpriteGfxSlots
-  addr:
-    J: 0x30006C3
-    U: 0x300068F
-    E: 0x300068F
-  size: 0xF
--
-  desc: X-parasite target Y position
-  label: XParasiteTargetYPosition
-  type: u16
-  addr:
-    J: 0x30006D4
-    U: 0x30006A0
-    E: 0x30006A0
--
-  desc: X-parasite target X position
-  label: XParasiteTargetXPosition
-  type: u16
-  addr:
-    J: 0x30006D6
-    U: 0x30006A2
-    E: 0x30006A2
--
-  desc: Ability resting Y position
-  label: AbilityRestingYPosition
-  type: u16
-  addr:
-    J: 0x30006D8
-    U: 0x30006A4
-    E: 0x30006A4
--
-  desc: Ability resting X position
-  label: AbilityRestingXPosition
-  type: u16
-  addr:
-    J: 0x30006DA
-    U: 0x30006A6
-    E: 0x30006A6
--
-  desc: Serris spawn Y position
-  label: SerrisSpawnYPosition
-  type: u16
-  addr:
-    J: 0x30006DC
-    U: 0x30006A8
-    E: 0x30006A8
--
-  desc: Serris spawn X position
-  label: SerrisSpawnXPosition
-  type: u16
-  addr:
-    J: 0x30006DE
-    U: 0x30006AA
-    E: 0x30006AA
--
-  desc: Boss formation sprite ID
-  label: BossFormationSpriteID
-  type: u8
-  addr:
-    J: 0x30006E0
-    U: 0x30006AC
-    E: 0x30006AC
-  enum: PrimarySpriteID
--
-  desc: Core-X formation sprite ID
-  label: CoreXFormationSpriteID
-  type: u8
-  addr:
-    J: 0x30006E1
-    U: 0x30006AD
-    E: 0x30006AD
-  enum: PrimarySpriteID
--
-  desc: Atmospheric stabilizers online
-  label: AtmosphericStabilizersOnline
-  type: flags16
-  addr:
-    J: 0x30006E2
-    U: 0x30006AE
-    E: 0x30006AE
--
-  desc: Normal X-barrier cores destroyed
-  label: NormalXBarriersDestroyed
-  type: flags16
-  addr:
-    J: 0x30006E4
-    U: 0x30006B0
-    E: 0x30006B0
--
-  desc: Super X-barrier cores destroyed
-  label: SuperXBarriersDestroyed
-  type: flags16
-  addr:
-    J: 0x30006E6
-    U: 0x30006B2
-    E: 0x30006B2
--
-  desc: Power X-barrier cores destroyed
-  label: PowerXBarriersDestroyed
-  type: flags16
-  addr:
-    J: 0x30006E8
-    U: 0x30006B4
-    E: 0x30006B4
--
-  desc: Eyedoors destroyed
-  label: EyedoorsDestroyed
-  type: flags16
-  addr:
-    J: 0x30006EA
-    U: 0x30006B6
-    E: 0x30006B6
--
-  desc: Missile hatch destroyed
-  label: MissileHatchDestroyed
-  type: u8
-  addr:
-    J: 0x30006EC
-    U: 0x30006B8
-    E: 0x30006B8
--
-  desc: Water lowered flag
-  label: WaterLoweredFlag
-  type: u8
-  addr:
-    J: 0x30006ED
-    U: 0x30006B9
-    E: 0x30006B9
--
-  desc: Current sprite being processed
-  label: CurrSpriteData
-  type: SpriteData
-  addr:
-    J: 0x30006F0
-    U: 0x30006BC
-    E: 0x30006BC
--
-  desc: Sprite debris
-  label: SpriteDebris
-  type: SpriteDebris
-  addr:
-    J: 0x3000728
-    U: 0x30006F4
-    E: 0x30006F4
-  count: 0x8
--
-  desc: Current sprite debris being processed
-  label: CurrSpriteDebris
-  type: SpriteDebris
-  addr:
-    J: 0x30007A8
-    U: 0x3000774
-    E: 0x3000774
--
-  desc: Previous vertical collision check
-  label: PrevVerticalCollisionCheck
-  type: u8
-  addr:
-    J: 0x30007D8
-    U: 0x30007A4
-    E: 0x30007A4
-  enum: CollisionCheck
--
-  desc: Previous collision check
-  label: PrevCollisionCheck
-  type: u8
-  addr:
-    J: 0x30007D9
-    U: 0x30007A5
-    E: 0x30007A5
-  enum: CollisionCheck
--
-  desc: Sprite draw order
-  label: SpriteDrawOrder
-  type: u8
-  addr:
-    J: 0x30007DB
-    U: 0x30007A7
-    E: 0x30007A7
-  count: 0x18
--
-  desc: Sprite random number
-  label: SpriteRandomNum
-  type: u8
-  addr:
-    J: 0x3000824
-    U: 0x30007F0
-    E: 0x30007F0
--
-  desc: Boss work 0
-  label: BossWork0
-  type: u8
-  addr:
-    J: 0x3000825
-    U: 0x30007F1
-    E: 0x30007F1
--
-  desc: Boss work 1
-  label: BossWork1
-  type: u8
-  addr:
-    J: 0x3000826
-    U: 0x30007F2
-    E: 0x30007F2
--
-  desc: Boss work 2
-  label: BossWork2
-  type: u8
-  addr:
-    J: 0x3000827
-    U: 0x30007F3
-    E: 0x30007F3
--
-  desc: Boss work 3
-  label: BossWork3
-  type: u8
-  addr:
-    J: 0x3000828
-    U: 0x30007F4
-    E: 0x30007F4
--
-  desc: Boss work 4
-  label: BossWork4
-  type: u8
-  addr:
-    J: 0x3000829
-    U: 0x30007F5
-    E: 0x30007F5
--
-  desc: Boss work 5
-  label: BossWork5
-  type: u16
-  addr:
-    J: 0x300082A
-    U: 0x30007F6
-    E: 0x30007F6
--
-  desc: Particle effects
-  label: ParticleEffects
-  type: ParticleEffect
-  addr:
-    J: 0x300082C
-    U: 0x30007F8
-    E: 0x30007F8
-  count: 0x10
--
-  desc: Current particle effect being processed
-  label: CurrParticleEffect
-  type: ParticleEffect
-  addr:
-    J: 0x30008EC
-    U: 0x30008B8
-    E: 0x30008B8
--
-  desc: Missiles highlight status
-  label: MissileHighlightStatus
-  type: u8
-  addr:
-    J: 0x30008F8
-    U: 0x30008C4
-    E: 0x30008C4
--
-  desc: Power bombs highlight status
-  label: PowerBombHighlightStatus
-  type: u8
-  addr:
-    J: 0x30008F9
-    U: 0x30008C5
-    E: 0x30008C5
--
-  desc: Update corner map flag
-  label: UpdateCornerMapFlag
-  type: u8
-  addr:
-    J: 0x30008FA
-    U: 0x30008C6
-    E: 0x30008C6
--
-  desc: Energy digits
-  label: EnergyDigits
-  type: AmmoDigits
-  addr:
-    J: 0x30008FB
-    U: 0x30008C7
-    E: 0x30008C7
--
-  desc: Max energy digits
-  label: MaxEnergyDigits
-  type: AmmoDigits
-  addr:
-    J: 0x30008FF
-    U: 0x30008CB
-    E: 0x30008CB
--
-  desc: Missiles digits
-  label: MissileDigits
-  type: AmmoDigits
-  addr:
-    J: 0x3000903
-    U: 0x30008CF
-    E: 0x30008CF
--
-  desc: Power bombs digits
-  label: PowerBombDigits
-  type: AmmoDigits
-  addr:
-    J: 0x3000907
-    U: 0x30008D3
-    E: 0x30008D3
--
-  desc: Escape timer digits
-  label: EscapeTimerDigits
-  type: EscapeTimerDigits
-  addr:
-    J: 0x300090D
-    U: 0x30008D9
-    E: 0x30008D9
--
-  desc: Projectile data
-  label: ProjectileDataSlot0
-  type: ProjectileData
-  addr:
-    J: 0x3000994
-    U: 0x3000960
-    E: 0x3000960
-  count: 0x10
--
-  desc: Current projectile being processed
-  label: CurrProjectileData
-  type: ProjectileData
-  addr:
-    J: 0x3000B94
-    U: 0x3000B60
-    E: 0x3000B60
--
-  desc: Arm cannon Y position
-  label: ArmCannonYPosition
-  type: u16
-  addr:
-    J: 0x3000BB4
-    U: 0x3000B80
-    E: 0x3000B80
--
-  desc: Arm cannon X position
-  label: ArmCannonXPosition
-  type: u16
-  addr:
-    J: 0x3000BB6
-    U: 0x3000B82
-    E: 0x3000B82
--
-  desc: Non-gameplay flag
-  label: NonGameplayFlag
-  type: u8
-  addr:
-    J: 0x3000BB8
-    U: 0x3000B84
-    E: 0x3000B84
-  enum: NonGameplayFlag
--
-  desc: Event counter
-  label: EventCounter
-  type: u8
-  addr:
-    J: 0x3000BBB
-    U: 0x3000B87
-    E: 0x3000B87
-  enum: Event
--
-  desc: Previous navigation conversation
-  label: PrevNavConversation
-  type: u8
-  addr:
-    J: 0x3000BBC
-    U: 0x3000B88
-    E: 0x3000B88
--
-  desc: Previous cutscene
-  label: PrevCutscene
-  type: u8
-  addr:
-    J: 0x3000BBD
-    U: 0x3000B89
-    E: 0x3000B89
--
-  desc: Most recent save file
-  label: MostRecentSaveFile
-  type: u8
-  addr:
-    J: 0x3000BC1
-    U: 0x3000B8D
-    E: 0x3000B8D
--
-  desc: SRAM corrupt flag
-  label: SramCorruptFlag
-  type: u8
-  addr:
-    J: 0x3000BC2
-    U: 0x3000B8E
-    E: 0x3000B8E
--
-  desc: Save file data
-  label: SaveFileData
-  addr:
-    J: 0x3000BC8
-    U: 0x3000B94
-    E: 0x3000B94
-  size: 0x3C
--
-  desc: Debug menu options
-  label: DebugMenuOptions
-  type: DebugMenuOptions
-  addr:
-    J: 0x3000C04
-    U: 0x3000BD0
-    E: 0x3000BD0
--
-  desc: Current cutscene
-  label: CurrCutscene
-  type: u8
-  addr:
-    J: 0x3000C10
-    U: 0x3000BDC
-    E: 0x3000BDC
--
-  desc: Game mode
-  label: GameMode
-  type: u16
-  addr:
-    J: 0x3000C12
-    U: 0x3000BDE
-    E: 0x3000BDE
-  enum: GameMode
--
-  desc: Sub-game mode 1
-  label: SubGameMode1
-  type: u16
-  addr:
-    J: 0x3000C14
-    U: 0x3000BE0
-    E: 0x3000BE0
--
-  desc: Sub-game mode 2
-  label: SubGameMode2
-  type: u16
-  addr:
-    J: 0x3000C16
-    U: 0x3000BE2
-    E: 0x3000BE2
--
-  desc: Cleared every frame
-  label: ClearedEveryFrame
-  type: u8
-  addr:
-    J: 0x3000C18
-    U: 0x3000BE4
-    E: 0x3000BE4
--
-  desc: 8-bit frame counter
-  label: FrameCounter8Bit
-  type: u8
-  addr:
-    J: 0x3000C19
-    U: 0x3000BE5
-    E: 0x3000BE5
--
-  desc: V-Blank request flag
-  label: VBlankRequestFlag
-  type: u16
-  addr:
-    J: 0x3000C1A
-    U: 0x3000BE6
-    E: 0x3000BE6
--
-  desc: Interrupt code
-  label: InterruptCode
-  addr:
-    J: 0x3000C1C
-    U: 0x3000BE8
-    E: 0x3000BE8
-  size: 0x200
--
-  desc: OAM data
-  label: OamData
-  addr:
-    J: 0x3000E1C
-    U: 0x3000DE8
-    E: 0x3000DE8
+  line: agb-sram.c:5
+-
+  desc: thenan.3
+  label: thenan.3
+  type: null
+  addr: 0x3002290
+  size: 0x10
+  line: ''
+-
+  desc: SoundMainRAM_Buffer
+  label: SoundMainRAM_Buffer
+  type: char [0x400]
+  addr: 0x30022A0
   size: 0x400
+  line: m4a.c:9
 -
-  desc: Button input
-  label: ButtonInput
-  type: flags16
-  addr:
-    J: 0x300121C
-    U: 0x30011E8
-    E: 0x30011E8
-  enum: ButtonInput
+  desc: gOamLoPutIt
+  label: gOamLoPutIt
+  type: u16 *
+  addr: 0x30026A0
+  size: 0x10
+  line: ''
 -
-  desc: Button input copy
-  label: ButtonInputCopy
-  type: flags16
-  addr:
-    J: 0x300121E
-    U: 0x30011EA
-    E: 0x30011EA
-  enum: ButtonInput
+  desc: gDispIo
+  label: gDispIo
+  type: struct DispIo
+  addr: 0x30026B0
+  size: 0x34
+  line: ''
 -
-  desc: Changed input
-  label: ChangedInput
-  type: flags16
-  addr:
-    J: 0x3001220
-    U: 0x30011EC
-    E: 0x30011EC
-  enum: ButtonInput
+  desc: gUnk_Banim_030026E4
+  label: gUnk_Banim_030026E4
+  type: null
+  addr: 0x30026E4
+  size: 0x10
+  line: ''
 -
-  desc: Next OAM slot
-  label: NextOamSlot
+  desc: gUnk_030026F4
+  label: gUnk_030026F4
+  type: null
+  addr: 0x30026F4
+  size: 0x1
+  line: ''
+-
+  desc: gUnk_030026F5
+  label: gUnk_030026F5
+  type: null
+  addr: 0x30026F5
+  size: 0x3
+  line: ''
+-
+  desc: gUnk_030026F8
+  label: gUnk_030026F8
+  type: null
+  addr: 0x30026F8
+  size: 0x2
+  line: ''
+-
+  desc: gUnk_030026FA
+  label: gUnk_030026FA
+  type: null
+  addr: 0x30026FA
+  size: 0x4
+  line: ''
+-
+  desc: gUnk_030026FE
+  label: gUnk_030026FE
+  type: null
+  addr: 0x30026FE
+  size: 0xA
+  line: ''
+-
+  desc: gUnk_03002708
+  label: gUnk_03002708
+  type: null
+  addr: 0x3002708
+  size: 0x18
+  line: ''
+-
+  desc: gIrqFuncs
+  label: gIrqFuncs
+  type: IrqFunc [INT_COUNT]
+  addr: 0x3002720
+  size: 0x38
+  line: ''
+-
+  desc: MapFloodCoreRamFunc
+  label: MapFloodCoreRamFunc
+  type: void (*)(void)
+  addr: 0x3002758
+  size: 0x4
+  line: ''
+-
+  desc: gOamAffinePutId
+  label: gOamAffinePutId
+  type: u16
+  addr: 0x300275C
+  size: 0x4
+  line: ''
+-
+  desc: PutOamHiRamFunc
+  label: PutOamHiRamFunc
+  type: void (*)(int x, int y, const u16 *oam_list, int oam2)
+  addr: 0x3002760
+  size: 0x4
+  line: ''
+-
+  desc: gOnHBlankA
+  label: gOnHBlankA
+  type: Func
+  addr: 0x3002764
+  size: 0xC
+  line: ''
+-
+  desc: gOam
+  label: gOam
+  type: u16 [0x200]
+  addr: 0x3002770
+  size: 0x600
+  line: ''
+-
+  desc: DrawGlyphRamFunc
+  label: DrawGlyphRamFunc
+  type: void (*)(const u16 *cvtLut, void *chr, const u32 *glyph, int offset)
+  addr: 0x3002D70
+  size: 0x4
+  line: ''
+-
+  desc: gOamHiPutIt
+  label: gOamHiPutIt
+  type: u16 *
+  addr: 0x3002D74
+  size: 0x4
+  line: ''
+-
+  desc: gOnHBlankB
+  label: gOnHBlankB
+  type: Func
+  addr: 0x3002D78
+  size: 0x8
+  line: ''
+-
+  desc: RamFuncArea
+  label: RamFuncArea
+  type: u8 []
+  addr: 0x3002D80
+  size: 0xA00
+  line: ''
+-
+  desc: DecodeStringRamFunc
+  label: DecodeStringRamFunc
+  type: void (*)(const char *src, char *dst)
+  addr: 0x3003780
+  size: 0x4
+  line: ''
+-
+  desc: PutOamLoRamFunc
+  label: PutOamLoRamFunc
+  type: void (*)(int x, int y, const u16 *oam_list, int oam2)
+  addr: 0x3003784
+  size: 0x4
+  line: ''
+-
+  desc: gOamAffinePutIt
+  label: gOamAffinePutIt
+  type: struct OamView *
+  addr: 0x3003788
+  size: 0x8
+  line: ''
+-
+  desc: IntrMainRam
+  label: IntrMainRam
+  type: u32 [0x200]
+  addr: 0x3003790
+  size: 0x800
+  line: ''
+-
+  desc: MapFloodCoreStepRamFunc
+  label: MapFloodCoreStepRamFunc
+  type: void (*)()
+  addr: 0x3003F90
+  size: 0x10
+  line: ''
+-
+  desc: gEventScriptQueueIt
+  label: gEventScriptQueueIt
   type: u8
-  addr:
-    J: 0x3001222
-    U: 0x30011EE
-    E: 0x30011EE
+  addr: 0x3003FA0
+  size: 0x10
+  line: ''
 -
-  desc: Written to MOSAIC_H (mosaic size)
-  label: WrittenToMOSAIC_H
-  type: u16
-  addr:
-    J: 0x3001240
-    U: 0x300120C
-    E: 0x300120C
+  desc: gEventScriptQueue
+  label: gEventScriptQueue
+  type: const u32 *[]
+  addr: 0x3003FB0
+  size: 0x20
+  line: ''
 -
-  desc: Written to MOSAIC_L (mosaic size)
-  label: WrittenToMOSAIC_L
-  type: u16
-  addr:
-    J: 0x3001242
-    U: 0x300120E
-    E: 0x300120E
--
-  desc: Written to BLDY (brightness coefficient)
-  label: WrittenToBLDY
-  type: u16
-  addr:
-    J: 0x3001252
-    U: 0x300121E
-    E: 0x300121E
--
-  desc: BG0 X position
-  label: BG0XPosition
-  type: u16
-  addr:
-    J: 0x3001258
-    U: 0x3001224
-    E: 0x3001224
--
-  desc: BG0 Y position
-  label: BG0YPosition
-  type: u16
-  addr:
-    J: 0x300125A
-    U: 0x3001226
-    E: 0x3001226
--
-  desc: BG1 X position
-  label: BG1XPosition
-  type: u16
-  addr:
-    J: 0x300125C
-    U: 0x3001228
-    E: 0x3001228
--
-  desc: BG1 Y position
-  label: BG1YPosition
-  type: u16
-  addr:
-    J: 0x300125E
-    U: 0x300122A
-    E: 0x300122A
--
-  desc: BG2 X position
-  label: BG2XPosition
-  type: u16
-  addr:
-    J: 0x3001260
-    U: 0x300122C
-    E: 0x300122C
--
-  desc: BG2 Y position
-  label: BG2YPosition
-  type: u16
-  addr:
-    J: 0x3001262
-    U: 0x300122E
-    E: 0x300122E
--
-  desc: BG3 X position
-  label: BG3XPosition
-  type: u16
-  addr:
-    J: 0x3001264
-    U: 0x3001230
-    E: 0x3001230
--
-  desc: BG3 Y position
-  label: BG3YPosition
-  type: u16
-  addr:
-    J: 0x3001266
-    U: 0x3001232
-    E: 0x3001232
--
-  desc: Pose lock
-  label: PoseLockFlag
-  type: u8
-  addr:
-    J: 0x3001277
-    U: 0x3001243
-    E: 0x3001243
--
-  desc: Samus data
-  label: SamusData
-  type: SamusData
-  addr:
-    J: 0x3001278
-    U: 0x3001244
-    E: 0x3001244
--
-  desc: Samus data copy when changing pose
-  label: SamusDataCopy
-  type: SamusData
-  addr:
-    J: 0x30012A4
-    U: 0x3001270
-    E: 0x3001270
--
-  desc: Samus graphics info
-  label: SamusGraphicsInfo
-  type: SamusGraphicsInfo
-  addr:
-    J: 0x30012D0
-    U: 0x300129C
-    E: 0x300129C
--
-  desc: Samus animation info
-  label: SamusAnimationInfo
-  type: SamusAnimationInfo
-  addr:
-    J: 0x300130C
-    U: 0x30012D8
-    E: 0x30012D8
--
-  desc: Samus echo
-  label: SamusEcho
-  type: SamusEcho
-  addr:
-    J: 0x3001318
-    U: 0x30012E4
-    E: 0x30012E4
--
-  desc: Samus timers/counters
-  label: SamusTimersAndCounters
-  type: SamusTimersAndCounters
-  addr:
-    J: 0x3001324
-    U: 0x30012F0
-    E: 0x30012F0
--
-  desc: Equipment
-  label: Equipment
-  type: Equipment
-  addr:
-    J: 0x3001344
-    U: 0x3001310
-    E: 0x3001310
--
-  desc: Horizontal movement direction
-  label: HorizontalMovementDirection
-  type: flags16
-  addr:
-    J: 0x3001354
-    U: 0x3001320
-    E: 0x3001320
-  enum: HorizontalDirection
--
-  desc: Vertical movement direction
-  label: VerticalMovementDirection
-  type: flags16
-  addr:
-    J: 0x3001356
-    U: 0x3001322
-    E: 0x3001322
-  enum: VerticalDirection
--
-  desc: Samus collision type
-  label: SamusCollisionType
-  type: u8
-  addr:
-    J: 0x300135D
-    U: 0x3001329
-    E: 0x3001329
-  enum: SamusCollisionType
--
-  desc: Samus physics
-  label: SamusPhysics
-  type: SamusPhysics
-  addr:
-    J: 0x3001364
-    U: 0x3001330
-    E: 0x3001330
--
-  desc: Previous value of Samus data 0
-  label: PrevValueOfSamusData0
-  type: u8
-  addr:
-    J: 0x3001374
-    U: 0x3001340
-    E: 0x3001340
--
-  desc: Previous X position
-  label: PrevXPosition
-  type: u16
-  addr:
-    J: 0x3001376
-    U: 0x3001342
-    E: 0x3001342
--
-  desc: Previous Y position
-  label: PrevYPosition
-  type: u16
-  addr:
-    J: 0x3001378
-    U: 0x3001344
-    E: 0x3001344
--
-  desc: Underwater flag
-  label: UnderwaterFlag
-  type: u8
-  addr:
-    J: 0x300137A
-    U: 0x3001346
-    E: 0x3001346
--
-  desc: Prevent movement timer
-  label: PreventMovementTimer
-  type: u16
-  addr:
-    J: 0x300137C
-    U: 0x3001348
-    E: 0x3001348
--
-  desc: Disable drawing Samus and scrolling flag
-  label: DisableDrawingSamusAndScrollingFlag
-  type: u8
-  addr:
-    J: 0x300137E
-    U: 0x300134A
-    E: 0x300134A
--
-  desc: Previous 64 positions
-  label: Prev64Positions
-  type: u16
-  addr:
-    J: 0x3001380
-    U: 0x300134C
-    E: 0x300134C
-  count: 0x80
--
-  desc: Previous position counter
-  label: PrevPositionCounter
-  type: u16
-  addr:
-    J: 0x3001480
-    U: 0x300144C
-    E: 0x300144C
--
-  desc: Button assignments
-  label: ButtonAssignments
-  type: ButtonAssignments
-  addr:
-    J: 0x3001484
-    U: 0x3001450
-    E: 0x3001450
--
-  desc: SA-X data
-  label: SaxData
-  type: SaxData
-  addr:
-    J: 0x300148C
-    U: 0x3001458
-    E: 0x3001458
--
-  desc: Non-gameplay RAM
-  label: NonGameplayRam
-  type: NonGameplayRam
-  addr:
-    J: 0x30014B8
-    U: 0x3001484
-    E: 0x3001484
--
-  desc: Pointer to V-Blank code
-  label: VBlankCodePtr
-  type: ptr.thumb
-  addr:
-    J: 0x30019F8
-    U: 0x30019C4
-    E: 0x30019C4
--
-  desc: Pointer to H-Blank code
-  label: HBlankCodePtr
-  type: ptr.thumb
-  addr:
-    J: 0x30019FC
-    U: 0x30019C8
-    E: 0x30019C8
--
-  desc: Pointer to V-Count code
-  label: VCountCodePtr
-  type: ptr.thumb
-  addr:
-    J: 0x3001A00
-    U: 0x30019CC
-    E: 0x30019CC
--
-  desc: Music info
-  label: MusicInfo
-  type: MusicInfo
-  addr:
-    J: 0x3001A04
-    U: 0x30019D0
-    E: 0x30019D0
--
-  desc: Pointer to sound code A
-  label: SoundCodeAPtr
-  type: ptr.arm
-  addr:
-    J: 0x3003688
-    U: 0x3003654
-    E: 0x3003654
--
-  desc: Sound code A
-  label: SoundCodeARam
-  addr:
-    J: 0x300368C
-    U: 0x3003658
-    E: 0x3003658
-  size: 0x658
--
-  desc: Pointer to sound code B
-  label: SoundCodeBPtr
-  type: ptr.arm
-  addr:
-    J: 0x3003CE4
-    U: 0x3003CB0
-    E: 0x3003CB0
--
-  desc: Sound code B
-  label: SoundCodeBRam
-  addr:
-    J: 0x3003CE8
-    U: 0x3003CB4
-    E: 0x3003CB4
-  size: 0xA4
--
-  desc: Pointer to sound code C
-  label: SoundCodeCPtr
-  type: ptr.arm
-  addr:
-    J: 0x3003D8C
-    U: 0x3003D58
-    E: 0x3003D58
--
-  desc: Sound code C
-  label: SoundCodeCRam
-  addr:
-    J: 0x3003D90
-    U: 0x3003D5C
-    E: 0x3003D5C
-  size: 0xAC
--
-  desc: Demo input number
-  label: DemoInputNumber
-  type: u16
-  addr:
-    J: 0x3004C42
-    U: 0x3004C12
-    E: 0x3004C12
--
-  desc: Demo input timer
-  label: DemoInputTimer
-  type: u16
-  addr:
-    J: 0x3004C44
-    U: 0x3004C14
-    E: 0x3004C14
--
-  desc: Demo button input
-  label: DemoButtonInput
-  type: u16
-  addr:
-    J: 0x3004C46
-    U: 0x3004C16
-    E: 0x3004C16
-  enum: ButtonInput
--
-  desc: Suit palette
-  label: SuitPalette
-  type: palette
-  addr:
-    J: 0x3004D58
-    U: 0x3004D28
-    E: 0x3004D28
-  count: 0x3
--
-  desc: Suit palette length
-  label: SuitPaletteLength
-  type: u16
-  addr:
-    J: 0x3004DB8
-    U: 0x3004D88
-    E: 0x3004D88
--
-  desc: SA-X suit palette
-  label: SaxSuitPalette
-  type: palette
-  addr:
-    J: 0x3004DC0
-    U: 0x3004D90
-    E: 0x3004D90
-  count: 0x1
--
-  desc: Tilemap and clipdata pointers
-  label: TilemapAndClipdataPtrs
-  type: TilemapAndClipdataPtrs
-  addr:
-    J: 0x3004E0C
-    U: 0x3004DDC
-    E: 0x3004DDC
--
-  desc: Current music track
-  label: CurrMusicTrack
-  type: u16
-  addr:
-    J: 0x3004E18
-    U: 0x3004DE8
-    E: 0x3004DE8
--
-  desc: Hatch data
-  label: HatchData
-  type: HatchData
-  addr:
-    J: 0x3004E1C
-    U: 0x3004DEC
-    E: 0x3004DEC
-  count: 0x6
--
-  desc: Door position start
-  label: DoorPositionStart
-  type: DoorPositionStart
-  addr:
-    J: 0x3004E3C
-    U: 0x3004E0C
-    E: 0x3004E0C
--
-  desc: BG3 movement
-  label: BG3Movement
-  type: BG3Movement
-  addr:
-    J: 0x3004E48
-    U: 0x3004E18
-    E: 0x3004E18
--
-  desc: Tileset's transparent color
-  label: TilesetTransparentColor
-  type: u16
-  addr:
-    J: 0x3004E58
-    U: 0x3004E28
-    E: 0x3004E28
--
-  desc: Destination room
-  label: DestinationRoom
-  type: u8
-  addr:
-    J: 0x3004E6C
-    U: 0x3004E3C
-    E: 0x3004E3C
--
-  desc: Broken reform blocks
-  label: BrokenReformBlocks
-  type: BrokenReformBlock
-  addr:
-    J: 0x3004E90
-    U: 0x3004E60
-    E: 0x3004E60
-  count: 0x20
--
-  desc: Animated palette timing
-  label: AnimatedPaletteTiming
-  type: AnimatedPaletteTiming
-  addr:
-    J: 0x3004FF0
-    U: 0x3004FC0
-    E: 0x3004FC0
--
-  desc: Animated palette and tileset number
-  label: AnimatedPaletteAndTilesetNum
-  type: AnimatedPaletteAndTilesetNum
-  addr:
-    J: 0x3004FF8
-    U: 0x3004FC8
-    E: 0x3004FC8
--
-  desc: Pointer to clipdata handling code
-  label: ClipdataHandlingCodePtr
-  type: ptr.thumb
-  addr:
-    J: 0x3005348
-    U: 0x3005318
-    E: 0x3005318
--
-  desc: Animated tileset data
-  label: AnimTilesetData
-  addr:
-    J: 0x300534C
-    U: 0x300531C
-    E: 0x300531C
+  desc: gSpriteAllocIt
+  label: gSpriteAllocIt
+  type: struct SpriteEntry *
+  addr: 0x3003FD0
   size: 0x30
+  line: ''
 -
-  desc: Collectible tank animation counters
-  label: CollectibleTankAnimation
-  type: CollectibleTankAnimation
-  addr:
-    J: 0x300540C
-    U: 0x30053DC
-    E: 0x30053DC
-  count: 0x3
+  desc: gFaces
+  label: gFaces
+  type: struct FaceProc *[FACE_SLOT_COUNT]
+  addr: 0x3004000
+  size: 0x10
+  line: ''
 -
-  desc: Pointer to room scrolls
-  label: RoomScrollsPtr
-  type: ptr
-  addr:
-    J: 0x3005418
-    U: 0x30053E8
-    E: 0x30053E8
+  desc: gWorkingMap
+  label: gWorkingMap
+  type: u8 **
+  addr: 0x3004010
+  size: 0x10
+  line: ''
 -
-  desc: Space cutscene random number
-  label: SpaceCutsceneRandomNum
-  type: u16
-  addr:
-    J: 0x3005434
-    U: 0x3005404
-    E: 0x3005404
+  desc: gMapFloodSquareBufB
+  label: gMapFloodSquareBufB
+  type: struct MapFloodSquareEnt []
+  addr: 0x3004020
+  size: 0x200
+  line: ''
 -
-  desc: Pointer to interrupt code
-  label: InterruptCodePtr
-  type: ptr.arm
-  addr:
-    J: 0x3007FFC
-    U: 0x3007FFC
-    E: 0x3007FFC
+  desc: gWorkingMovTable
+  label: gWorkingMovTable
+  type: i8 []
+  addr: 0x3004220
+  size: 0x40
+  line: ''
+-
+  desc: gStatGainSimUnit
+  label: gStatGainSimUnit
+  type: struct Unit
+  addr: 0x3004260
+  size: 0x50
+  line: ''
+-
+  desc: gMapFloodSquareBufA
+  label: gMapFloodSquareBufA
+  type: struct MapFloodSquareEnt []
+  addr: 0x30042B0
+  size: 0x200
+  line: ''
+-
+  desc: gActiveUnit
+  label: gActiveUnit
+  type: struct Unit *
+  addr: 0x30044B0
+  size: 0x10
+  line: ''
+-
+  desc: gMapFloodSt
+  label: gMapFloodSt
+  type: struct MapFloodSt
+  addr: 0x30044C0
+  size: 0x10
+  line: ''
+-
+  desc: gUnk_030044D0
+  label: gUnk_030044D0
+  type: null
+  addr: 0x30044D0
+  size: 0x4
+  line: ''
+-
+  desc: gUnk_030044D4
+  label: gUnk_030044D4
+  type: null
+  addr: 0x30044D4
+  size: 0xC
+  line: ''
+-
+  desc: gUnk_030044E0
+  label: gUnk_030044E0
+  type: null
+  addr: 0x30044E0
+  size: 0x6
+  line: ''
+-
+  desc: gUnk_030044E6
+  label: gUnk_030044E6
+  type: null
+  addr: 0x30044E6
+  size: 0x82
+  line: ''
+-
+  desc: gUnk_03004568
+  label: gUnk_03004568
+  type: null
+  addr: 0x3004568
+  size: 0x4
+  line: ''
+-
+  desc: gUnk_0300456C
+  label: gUnk_0300456C
+  type: null
+  addr: 0x300456C
+  size: 0x4
+  line: ''
+-
+  desc: AiDecideFunc
+  label: AiDecideFunc
+  type: Func
+  addr: 0x3004570
+  size: 0x10
+  line: ''
+-
+  desc: gUnk_03004580
+  label: gUnk_03004580
+  type: null
+  addr: 0x3004580
+  size: 0x80
+  line: ''
+-
+  desc: gManimDebugStObj
+  label: gManimDebugStObj
+  type: struct ManimDebugSt
+  addr: 0x3004600
+  size: 0xD0
+  line: ''
+-
+  desc: gUnk_030046D0
+  label: gUnk_030046D0
+  type: null
+  addr: 0x30046D0
+  size: 0x80
+  line: ''
+-
+  desc: gUnk_03004750
+  label: gUnk_03004750
+  type: null
+  addr: 0x3004750
+  size: 0x140
+  line: ''
+-
+  desc: gPermanentFlagBits
+  label: gPermanentFlagBits
+  type: u8 [((MAX_PERMANENT_FLAGS + 8) - 1) / 8]
+  addr: 0x3004890
+  size: 0x8
+  line: ''
+-
+  desc: gChapterFlagBits
+  label: gChapterFlagBits
+  type: u8 [((MAX_CHAPTER_FLAGS + 8) - 1) / 8]
+  addr: 0x3004898
+  size: 0xC
+  line: ''
+-
+  desc: gUnk_030048A4
+  label: gUnk_030048A4
+  type: null
+  addr: 0x30048A4
+  size: 0x4
+  line: ''
+-
+  desc: gUnk_030048A8
+  label: gUnk_030048A8
+  type: null
+  addr: 0x30048A8
+  size: 0x10
+  line: ''
+-
+  desc: gUnk_030048B8
+  label: gUnk_030048B8
+  type: null
+  addr: 0x30048B8
+  size: 0x8
+  line: ''
+-
+  desc: gUnk_030048C0
+  label: gUnk_030048C0
+  type: null
+  addr: 0x30048C0
+  size: 0x14
+  line: ''
+-
+  desc: gUnk_030048D4
+  label: gUnk_030048D4
+  type: null
+  addr: 0x30048D4
+  size: 0xC
+  line: ''
+-
+  desc: gUnk_030048E0
+  label: gUnk_030048E0
+  type: null
+  addr: 0x30048E0
+  size: 0x9A0
+  line: ''
+-
+  desc: gUnk_03005280
+  label: gUnk_03005280
+  type: null
+  addr: 0x3005280
+  size: 0x4
+  line: ''
+-
+  desc: gUnk_03005284
+  label: gUnk_03005284
+  type: null
+  addr: 0x3005284
+  size: 0xC
+  line: ''
+-
+  desc: gUnk_03005290
+  label: gUnk_03005290
+  type: null
+  addr: 0x3005290
+  size: 0x20
+  line: ''
+-
+  desc: gSoundInfo
+  label: gSoundInfo
+  type: struct SoundInfo
+  addr: 0x30052B0
+  size: 0xFB0
+  line: m4a.c:11
+-
+  desc: gMpi_03006260
+  label: gMpi_03006260
+  type: struct MusicPlayerInfo
+  addr: 0x3006260
+  size: 0x40
+  line: ''
+-
+  desc: gMpi_030062A0
+  label: gMpi_030062A0
+  type: struct MusicPlayerInfo
+  addr: 0x30062A0
+  size: 0x40
+  line: ''
+-
+  desc: gMpi_FightBgm
+  label: gMpi_FightBgm
+  type: struct MusicPlayerInfo
+  addr: 0x30062E0
+  size: 0x40
+  line: ''
+-
+  desc: gMPlayJumpTable
+  label: gMPlayJumpTable
+  type: void *[]
+  addr: 0x3006320
+  size: 0x90
+  line: m4a.c:12
+-
+  desc: gCgbChans
+  label: gCgbChans
+  type: struct CgbChannel []
+  addr: 0x30063B0
+  size: 0x100
+  line: m4a.c:13
+-
+  desc: gMpi_030064B0
+  label: gMpi_030064B0
+  type: struct MusicPlayerInfo
+  addr: 0x30064B0
+  size: 0x40
+  line: ''
+-
+  desc: gMpi_MainBgm
+  label: gMpi_MainBgm
+  type: struct MusicPlayerInfo
+  addr: 0x30064F0
+  size: 0x40
+  line: ''
+-
+  desc: gMpi_03006530
+  label: gMpi_03006530
+  type: struct MusicPlayerInfo
+  addr: 0x3006530
+  size: 0x40
+  line: ''
+-
+  desc: gMpi_03006570
+  label: gMpi_03006570
+  type: struct MusicPlayerInfo
+  addr: 0x3006570
+  size: 0x40
+  line: ''
+-
+  desc: gMPlayMemAccArea
+  label: gMPlayMemAccArea
+  type: u8 []
+  addr: 0x30065B0
+  size: 0x10
+  line: m4a.c:18
+-
+  desc: gMpi_03006600
+  label: gMpi_03006600
+  type: struct MusicPlayerInfo
+  addr: 0x3006600
+  size: 0x40
+  line: ''
+-
+  desc: ReadSramFast
+  label: ReadSramFast
+  type: void (*)(const u8 *src, u8 *dest, u32 size)
+  addr: 0x3006640
+  size: 0x4
+  line: agb-sram.c:8
+-
+  desc: VerifySramFast
+  label: VerifySramFast
+  type: u32 (*)(const u8 *src, u8 *dest, u32 size)
+  addr: 0x3006644
+  size: 0x4
+  line: agb-sram.c:7

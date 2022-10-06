@@ -32,14 +32,16 @@ class MyVisitor(GnuCGenerator):
                         if 'params' not in symbols[name]:
                             symbols[name]['params'] = []
                         symbols[name]['params'].append({'desc': paramName, 'type': paramType})
-        decl = self.visit(n.decl)
-        self.indent_level = 0
-        body = self.visit(n.body)
-        if n.param_decls:
-            knrdecls = ';\n'.join(self.visit(p) for p in n.param_decls)
-            return decl + '\n' + knrdecls + ';\n' + body + '\n'
-        else:
-            return decl + '\n' + body + '\n'
+        return super().visit_FuncDef(n)
+
+    def visit_Decl(self, n, no_type=False):
+        # no_type is used when a Decl is part of a DeclList, where the type is
+        # explicitly only for the first declaration in a list.
+        if not no_type and n.name in symbols and symbols[n.name]['mapType'] != MAP_CODE and 'type' not in symbols[n.name]:
+            symbols[n.name]['type'] = self.visit(n.type)
+            if n.bitsize:
+                symbols[n.name]['type'] += ':' + self.visit(n.bitsize)
+        return super().visit_Decl(n, no_type)
 
 
 def readDeclFromSrc(path: str) -> None:
@@ -129,6 +131,8 @@ def writeDataToYaml(dstPath, mapType):
                 data[-1]['mode'] = symbol['mode']
                 data[-1]['params'] = symbol.get('params')
                 data[-1]['return'] = symbol.get('return')
+            elif mapType in (MAP_DATA, MAP_RAM):
+                data[-1]['type'] = symbol.get('type')
     write_yaml(os.path.join(dstPath, mapType + '.yml'), data, mapType)
 
 def main() -> int:
@@ -139,6 +143,8 @@ def main() -> int:
     readSymbolsFromElf(srcPath + '.elf')
     readDeclFromSrc(srcPath + '.c')
     writeDataToYaml(dstPath, MAP_CODE)
+    writeDataToYaml(dstPath, MAP_DATA)
+    writeDataToYaml(dstPath, MAP_RAM)
     return 0
 
 if __name__ == '__main__':

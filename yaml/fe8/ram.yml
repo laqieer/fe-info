@@ -1,1303 +1,6265 @@
 -
-  desc: Clipdata collision types
-  label: ClipdataCollisionTypes_Ram
-  type: u8
-  addr: 0x2002000
-  count: 0x400
-  enum: ClipdataCollisionType
+  desc: gUnknown_02000000
+  label: gUnknown_02000000
+  type: null
+  addr: 0x2000000
+  size: 0x8
+  line: ''
 -
-  desc: Clipdata collision types (0x400)
-  label: ClipdataCollisionTypes_400_Ram
-  type: u8
-  addr: 0x2002400
-  count: 0x400
-  enum: ClipdataCollisionType
+  desc: gUnknown_02000008
+  label: gUnknown_02000008
+  type: null
+  addr: 0x2000008
+  size: 0x8
+  line: ''
 -
-  desc: Clipdata behavior types
-  label: ClipdataBehaviorTypes_Ram
-  type: u16
-  addr: 0x2003000
-  count: 0x400
-  enum: ClipdataBehaviorType
+  desc: gUnknown_02000010
+  label: gUnknown_02000010
+  type: null
+  addr: 0x2000010
+  size: 0x8
+  line: ''
 -
-  desc: Clipdata behavior types (0x400)
-  label: ClipdataBehaviorTypes_400_Ram
-  type: u16
-  addr: 0x2003800
-  count: 0x400
-  enum: ClipdataBehaviorType
+  desc: gUnknown_02000018
+  label: gUnknown_02000018
+  type: null
+  addr: 0x2000018
+  size: 0x4
+  line: ''
 -
-  desc: Tilemap
-  label: Tilemap_Ram
-  type: u16
-  addr: 0x2004000
-  count: 0x1000
+  desc: gUnknown_0200001C
+  label: gUnknown_0200001C
+  type: null
+  addr: 0x200001C
+  size: 0x4
+  line: ''
 -
-  desc: Tilemap (0x400)
-  label: Tilemap_400_Ram
-  type: u16
-  addr: 0x2006000
-  count: 0x1000
+  desc: gUnknown_02000020
+  label: gUnknown_02000020
+  type: null
+  addr: 0x2000020
+  size: 0x4
+  line: ''
 -
-  desc: Pause overlay tilemap
-  label: PauseOverlayTilemap
-  type: u16
-  addr: 0x2009800
-  count: 0x400
+  desc: gUnknown_02000024
+  label: gUnknown_02000024
+  type: null
+  addr: 0x2000024
+  size: 0x4
+  line: ''
 -
-  desc: Animated graphics
-  label: AnimatedGfx
-  type: u16
-  addr: 0x201B000
-  size: 0x800
+  desc: gUnknown_02000028
+  label: gUnknown_02000028
+  type: null
+  addr: 0x2000028
+  size: 0x4
+  line: ''
 -
-  desc: Decompressed clipdata
-  label: DecompClipdata
-  type: u16
-  addr: 0x2027800
-  count: 0x1800
+  desc: gUnknown_0200002C
+  label: gUnknown_0200002C
+  type: null
+  addr: 0x200002C
+  size: 0x4
+  line: ''
 -
-  desc: Decompressed BG0 map
-  label: DecompBG0Data
-  type: u16
-  addr: 0x202A800
-  count: 0x1800
+  desc: gUnknown_02000030
+  label: gUnknown_02000030
+  type: null
+  addr: 0x2000030
+  size: 0x4
+  line: ''
 -
-  desc: Decompressed BG1 map
-  label: DecompBG1Data
-  type: u16
-  addr: 0x202D800
-  count: 0x1800
+  desc: gUnknown_02000034
+  label: gUnknown_02000034
+  type: null
+  addr: 0x2000034
+  size: 0x4
+  line: ''
 -
-  desc: Decompressed BG2 map
-  label: DecompBG2Data
-  type: u16
-  addr: 0x2030800
-  count: 0x1800
+  desc: gUnknown_02000038
+  label: gUnknown_02000038
+  type: null
+  addr: 0x2000038
+  size: 0x4
+  line: ''
 -
-  desc: Minimap tiles with obtained items
-  label: MinimapTilesWithObtainedItems
-  addr: 0x2033800
-  size: 0x800
+  desc: gUnknown_0200003C
+  label: gUnknown_0200003C
+  type: null
+  addr: 0x200003C
+  size: 0x8
+  line: ''
 -
-  desc: Decompressed minimap visited tiles
-  label: DecompExploredMinimap
-  addr: 0x2034000
-  size: 0x800
+  desc: gUnknown_02000044
+  label: gUnknown_02000044
+  type: null
+  addr: 0x2000044
+  size: 0x8
+  line: ''
 -
-  desc: Decompressed minimap data
-  label: DecompMinimapData
-  addr: 0x2034800
-  size: 0x800
+  desc: gUnknown_0200004C
+  label: gUnknown_0200004C
+  type: null
+  addr: 0x200004C
+  size: 0x8
+  line: ''
 -
-  desc: Items collected
-  label: ItemsCollected
-  addr: 0x2036C00
-  size: 0x800
+  desc: gUnknown_02000054
+  label: gUnknown_02000054
+  type: null
+  addr: 0x2000054
+  size: 0x8
+  line: ''
 -
-  desc: Visited minimap tiles
-  label: VisitedMinimapTiles
-  addr: 0x2037400
-  size: 0x400
+  desc: gUnknown_0200005C
+  label: gUnknown_0200005C
+  type: null
+  addr: 0x200005C
+  size: 0x4
+  line: ''
 -
-  desc: Hatches opened
-  label: HatchesOpened
-  addr: 0x2037C00
+  desc: gUnknown_02000060
+  label: gUnknown_02000060
+  type: null
+  addr: 0x2000060
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02000064
+  label: gUnknown_02000064
+  type: null
+  addr: 0x2000064
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02000068
+  label: gUnknown_02000068
+  type: null
+  addr: 0x2000068
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0200006C
+  label: gUnknown_0200006C
+  type: null
+  addr: 0x200006C
+  size: 0x1C
+  line: ''
+-
+  desc: gUnknown_02000088
+  label: gUnknown_02000088
+  type: u8 []
+  addr: 0x2000088
+  size: 0x1F8
+  line: ''
+-
+  desc: gUnknown_02000280
+  label: gUnknown_02000280
+  type: s16
+  addr: 0x2000280
+  size: 0x280
+  line: ''
+-
+  desc: gUnknown_02000500
+  label: gUnknown_02000500
+  type: s16 *
+  addr: 0x2000500
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02000504
+  label: gUnknown_02000504
+  type: s16 *
+  addr: 0x2000504
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02000508
+  label: gUnknown_02000508
+  type: s16 *
+  addr: 0x2000508
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0200050C
+  label: gUnknown_0200050C
+  type: u16 (*)[8][16]
+  addr: 0x200050C
+  size: 0x294
+  line: ''
+-
+  desc: gUnknown_020007A0
+  label: gUnknown_020007A0
+  type: null
+  addr: 0x20007A0
+  size: 0x40
+  line: ''
+-
+  desc: gUnknown_020007E0
+  label: gUnknown_020007E0
+  type: null
+  addr: 0x20007E0
+  size: 0x140
+  line: ''
+-
+  desc: gUnknown_02000920
+  label: gUnknown_02000920
+  type: null
+  addr: 0x2000920
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_02000938
+  label: gUnknown_02000938
+  type: null
+  addr: 0x2000938
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02000940
+  label: gUnknown_02000940
+  type: null
+  addr: 0x2000940
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02000944
+  label: gUnknown_02000944
+  type: null
+  addr: 0x2000944
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02000948
+  label: gUnknown_02000948
+  type: null
+  addr: 0x2000948
+  size: 0x318
+  line: ''
+-
+  desc: gUnknown_02000C60
+  label: gUnknown_02000C60
+  type: null
+  addr: 0x2000C60
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_02000C78
+  label: gUnknown_02000C78
+  type: null
+  addr: 0x2000C78
+  size: 0x288
+  line: ''
+-
+  desc: gUnknown_02000F00
+  label: gUnknown_02000F00
+  type: null
+  addr: 0x2000F00
   size: 0x100
+  line: ''
 -
-  desc: Events triggered
-  label: EventsTriggered
-  addr: 0x2037E00
+  desc: gBmMapBuffer
+  label: gBmMapBuffer
+  type: u16 []
+  addr: 0x2001000
+  size: 0x88
+  line: ''
+-
+  desc: gUnknown_02001088
+  label: gUnknown_02001088
+  type: null
+  addr: 0x2001088
+  size: 0xF8
+  line: ''
+-
+  desc: gUnknown_02001180
+  label: gUnknown_02001180
+  type: null
+  addr: 0x2001180
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02001184
+  label: gUnknown_02001184
+  type: null
+  addr: 0x2001184
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02001188
+  label: gUnknown_02001188
+  type: null
+  addr: 0x2001188
+  size: 0xDE8
+  line: ''
+-
+  desc: gConvoyItemCount
+  label: gConvoyItemCount
+  type: u8
+  addr: 0x2001F70
+  size: 0xC8
+  line: ''
+-
+  desc: gUnknown_02002038
+  label: gUnknown_02002038
+  type: null
+  addr: 0x2002038
+  size: 0x50
+  line: ''
+-
+  desc: gUnknown_02002088
+  label: gUnknown_02002088
+  type: null
+  addr: 0x2002088
+  size: 0x6EC
+  line: ''
+-
+  desc: gUnknown_02002774
+  label: gUnknown_02002774
+  type: struct Font
+  addr: 0x2002774
+  size: 0x18
+  line: ''
+-
+  desc: gTradeMenuText
+  label: gTradeMenuText
+  type: struct TextHandle [2][UNIT_ITEM_COUNT]
+  addr: 0x200278C
+  size: 0x50
+  line: ''
+-
+  desc: sWeatherEffect
+  label: sWeatherEffect
+  type: union WeatherEffectData
+  addr: 0x20027DC
+  size: 0x300
+  line: bmio.c:116
+-
+  desc: sGradientEffect
+  label: sGradientEffect
+  type: union GradientEffectData
+  addr: 0x2002ADC
+  size: 0x400
+  line: bmio.c:117
+-
+  desc: gaBattleForecastTextStructs
+  label: gaBattleForecastTextStructs
+  type: struct TextHandle [6]
+  addr: 0x2002FDC
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_02002FF4
+  label: gUnknown_02002FF4
+  type: null
+  addr: 0x2002FF4
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_0200300C
+  label: gUnknown_0200300C
+  type: u16 [8][16]
+  addr: 0x200300C
+  size: 0x7C
+  line: ''
+-
+  desc: gUnknown_02003088
+  label: gUnknown_02003088
+  type: null
+  addr: 0x2003088
+  size: 0x84
+  line: ''
+-
+  desc: gUnknown_0200310C
+  label: gUnknown_0200310C
+  type: u16 []
+  addr: 0x200310C
+  size: 0x7A0
+  line: ''
+-
+  desc: gUnknown_020038AC
+  label: gUnknown_020038AC
+  type: struct Font
+  addr: 0x20038AC
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_020038C4
+  label: gUnknown_020038C4
+  type: int
+  addr: 0x20038C4
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_020038C8
+  label: gUnknown_020038C8
+  type: struct Struct020038C8 [2]
+  addr: 0x20038C8
+  size: 0x100
+  line: ''
+-
+  desc: gUnknown_020039C8
+  label: gUnknown_020039C8
+  type: null
+  addr: 0x20039C8
+  size: 0x40
+  line: ''
+-
+  desc: gUnknown_02003A08
+  label: gUnknown_02003A08
+  type: null
+  addr: 0x2003A08
+  size: 0x100
+  line: ''
+-
+  desc: gUnknown_02003B08
+  label: gUnknown_02003B08
+  type: struct TextHandle
+  addr: 0x2003B08
+  size: 0x40
+  line: ''
+-
+  desc: gUnknown_02003B48
+  label: gUnknown_02003B48
+  type: struct TextHandle [8]
+  addr: 0x2003B48
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_02003B70
+  label: gUnknown_02003B70
+  type: struct TextHandle
+  addr: 0x2003B70
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_02003B88
+  label: gUnknown_02003B88
+  type: u16 []
+  addr: 0x2003B88
   size: 0x20
+  line: ''
 -
-  desc: SRAM
-  label: Sram
-  type: SaveFileRam
-  addr: 0x2038000
-  count: 0x6
+  desc: gUnknown_02003BA8
+  label: gUnknown_02003BA8
+  type: struct Struct0859E7D4 []
+  addr: 0x2003BA8
+  size: 0x40
+  line: ''
 -
-  desc: Debug flag
-  label: DebugFlag
+  desc: gUnknown_02003BE8
+  label: gUnknown_02003BE8
+  type: struct Struct02003BE8
+  addr: 0x2003BE8
+  size: 0x14
+  line: ''
+-
+  desc: gStatScreen
+  label: gStatScreen
+  type: struct StatScreenSt
+  addr: 0x2003BFC
+  size: 0x130
+  line: ''
+-
+  desc: gBmFrameTmap0
+  label: gBmFrameTmap0
+  type: u16 []
+  addr: 0x2003D2C
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_02003D54
+  label: gUnknown_02003D54
+  type: u16 []
+  addr: 0x2003D54
+  size: 0x9C
+  line: ''
+-
+  desc: gUnknown_02003DF0
+  label: gUnknown_02003DF0
+  type: null
+  addr: 0x2003DF0
+  size: 0x46
+  line: ''
+-
+  desc: gUnknown_02003E36
+  label: gUnknown_02003E36
+  type: s16 []
+  addr: 0x2003E36
+  size: 0x3A
+  line: ''
+-
+  desc: gUnknown_02003E70
+  label: gUnknown_02003E70
+  type: null
+  addr: 0x2003E70
+  size: 0xC
+  line: ''
+-
+  desc: gUnknown_02003E7C
+  label: gUnknown_02003E7C
+  type: null
+  addr: 0x2003E7C
+  size: 0xA
+  line: ''
+-
+  desc: gUnknown_02003E86
+  label: gUnknown_02003E86
+  type: null
+  addr: 0x2003E86
+  size: 0xFE
+  line: ''
+-
+  desc: gUnknown_02003F84
+  label: gUnknown_02003F84
+  type: null
+  addr: 0x2003F84
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_02003FAC
+  label: gUnknown_02003FAC
+  type: s16 []
+  addr: 0x2003FAC
+  size: 0x60
+  line: ''
+-
+  desc: gUnknown_0200400C
+  label: gUnknown_0200400C
+  type: null
+  addr: 0x200400C
+  size: 0x48
+  line: ''
+-
+  desc: gUnknown_02004054
+  label: gUnknown_02004054
+  type: u16 []
+  addr: 0x2004054
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_0200407C
+  label: gUnknown_0200407C
+  type: null
+  addr: 0x200407C
+  size: 0xC
+  line: ''
+-
+  desc: gUnknown_02004088
+  label: gUnknown_02004088
+  type: u8 []
+  addr: 0x2004088
+  size: 0x26
+  line: ''
+-
+  desc: gUnknown_020040AE
+  label: gUnknown_020040AE
+  type: u16 []
+  addr: 0x20040AE
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_020040B2
+  label: gUnknown_020040B2
+  type: null
+  addr: 0x20040B2
+  size: 0x76
+  line: ''
+-
+  desc: gUnknown_02004128
+  label: gUnknown_02004128
+  type: null
+  addr: 0x2004128
+  size: 0xA0
+  line: ''
+-
+  desc: gUnknown_020041C8
+  label: gUnknown_020041C8
+  type: u8 []
+  addr: 0x20041C8
+  size: 0x64
+  line: ''
+-
+  desc: gUnknown_0200422C
+  label: gUnknown_0200422C
+  type: u16 []
+  addr: 0x200422C
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_02004254
+  label: gUnknown_02004254
+  type: u16 []
+  addr: 0x2004254
+  size: 0x258
+  line: ''
+-
+  desc: gUnknown_020044AC
+  label: gUnknown_020044AC
+  type: s16 []
+  addr: 0x20044AC
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_020044D4
+  label: gUnknown_020044D4
+  type: u16 []
+  addr: 0x20044D4
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_020044EC
+  label: gUnknown_020044EC
+  type: u16 []
+  addr: 0x20044EC
+  size: 0x240
+  line: ''
+-
+  desc: gBmFrameTmap1
+  label: gBmFrameTmap1
+  type: u16 []
+  addr: 0x200472C
+  size: 0x480
+  line: ''
+-
+  desc: gChapterStatusText
+  label: gChapterStatusText
+  type: struct TextHandle [2]
+  addr: 0x2004BAC
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_02004BBC
+  label: gUnknown_02004BBC
+  type: struct Struct2004BBC
+  addr: 0x2004BBC
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02004BC4
+  label: gUnknown_02004BC4
+  type: null
+  addr: 0x2004BC4
+  size: 0x1C
+  line: ''
+-
+  desc: gMUGfxBuffer
+  label: gMUGfxBuffer
+  type: u8 []
+  addr: 0x2004BE0
+  size: 0x2C58
+  line: ''
+-
+  desc: gUnknown_02007838
+  label: gUnknown_02007838
+  type: null
+  addr: 0x2007838
+  size: 0xA0
+  line: ''
+-
+  desc: gUnknown_020078D8
+  label: gUnknown_020078D8
+  type: null
+  addr: 0x20078D8
+  size: 0x728
+  line: ''
+-
+  desc: gUnknown_02008000
+  label: gUnknown_02008000
+  type: null
+  addr: 0x2008000
+  size: 0x7A0
+  line: ''
+-
+  desc: gUnknown_020087A0
+  label: gUnknown_020087A0
+  type: null
+  addr: 0x20087A0
+  size: 0x1228
+  line: ''
+-
+  desc: gUnknown_020099C8
+  label: gUnknown_020099C8
+  type: null
+  addr: 0x20099C8
+  size: 0x910
+  line: ''
+-
+  desc: gUnknown_0200A2D8
+  label: gUnknown_0200A2D8
+  type: null
+  addr: 0x200A2D8
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_0200A300
+  label: gUnknown_0200A300
+  type: null
+  addr: 0x200A300
+  size: 0xC00
+  line: ''
+-
+  desc: gUnknown_0200AF00
+  label: gUnknown_0200AF00
+  type: null
+  addr: 0x200AF00
+  size: 0x1400
+  line: ''
+-
+  desc: gUnknown_0200C300
+  label: gUnknown_0200C300
+  type: null
+  addr: 0x200C300
+  size: 0x800
+  line: ''
+-
+  desc: gUnknown_0200CB00
+  label: gUnknown_0200CB00
+  type: null
+  addr: 0x200CB00
+  size: 0x8E0
+  line: ''
+-
+  desc: gUnknown_0200D3E0
+  label: gUnknown_0200D3E0
+  type: null
+  addr: 0x200D3E0
+  size: 0x300
+  line: ''
+-
+  desc: gUnknown_0200D6E0
+  label: gUnknown_0200D6E0
+  type: null
+  addr: 0x200D6E0
+  size: 0x100
+  line: ''
+-
+  desc: gUnknown_0200D7E0
+  label: gUnknown_0200D7E0
+  type: null
+  addr: 0x200D7E0
+  size: 0x800
+  line: ''
+-
+  desc: gUnknown_0200DFE0
+  label: gUnknown_0200DFE0
+  type: null
+  addr: 0x200DFE0
+  size: 0x80
+  line: ''
+-
+  desc: gUnknown_0200E060
+  label: gUnknown_0200E060
+  type: null
+  addr: 0x200E060
+  size: 0x38
+  line: ''
+-
+  desc: gUnknown_0200E098
+  label: gUnknown_0200E098
+  type: null
+  addr: 0x200E098
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_0200E0A0
+  label: gUnknown_0200E0A0
+  type: null
+  addr: 0x200E0A0
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_0200E0A8
+  label: gUnknown_0200E0A8
+  type: null
+  addr: 0x200E0A8
+  size: 0x98
+  line: ''
+-
+  desc: gUnknown_0200E140
+  label: gUnknown_0200E140
+  type: null
+  addr: 0x200E140
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_0200E148
+  label: gUnknown_0200E148
+  type: null
+  addr: 0x200E148
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_0200E150
+  label: gUnknown_0200E150
+  type: null
+  addr: 0x200E150
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_0200E158
+  label: gUnknown_0200E158
+  type: null
+  addr: 0x200E158
+  size: 0x1000
+  line: ''
+-
+  desc: gUnknown_0200F158
+  label: gUnknown_0200F158
+  type: null
+  addr: 0x200F158
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0200F15C
+  label: gUnknown_0200F15C
+  type: null
+  addr: 0x200F15C
+  size: 0x6C
+  line: ''
+-
+  desc: gUnknown_0200F1C8
+  label: gUnknown_0200F1C8
+  type: u8 []
+  addr: 0x200F1C8
+  size: 0xE44
+  line: ''
+-
+  desc: gUnknown_0201000C
+  label: gUnknown_0201000C
+  type: null
+  addr: 0x201000C
+  size: 0x1170
+  line: ''
+-
+  desc: gUnknown_0201117C
+  label: gUnknown_0201117C
+  type: null
+  addr: 0x201117C
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02011184
+  label: gUnknown_02011184
+  type: null
+  addr: 0x2011184
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_020111A4
+  label: gUnknown_020111A4
+  type: null
+  addr: 0x20111A4
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_020111CC
+  label: gUnknown_020111CC
+  type: null
+  addr: 0x20111CC
+  size: 0x9FC
+  line: ''
+-
+  desc: gUnknown_02011BC8
+  label: gUnknown_02011BC8
+  type: null
+  addr: 0x2011BC8
+  size: 0x604
+  line: ''
+-
+  desc: gUnknown_020121CC
+  label: gUnknown_020121CC
+  type: null
+  addr: 0x20121CC
+  size: 0x108
+  line: ''
+-
+  desc: gUnknown_020122D4
+  label: gUnknown_020122D4
+  type: null
+  addr: 0x20122D4
+  size: 0x640
+  line: ''
+-
+  desc: gUnknown_02012914
+  label: gUnknown_02012914
+  type: null
+  addr: 0x2012914
+  size: 0x640
+  line: ''
+-
+  desc: gUnknown_02012F54
+  label: gUnknown_02012F54
+  type: null
+  addr: 0x2012F54
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02012F56
+  label: gUnknown_02012F56
+  type: null
+  addr: 0x2012F56
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02012F58
+  label: gUnknown_02012F58
+  type: null
+  addr: 0x2012F58
+  size: 0x500
+  line: ''
+-
+  desc: gUnknown_02013458
+  label: gUnknown_02013458
+  type: null
+  addr: 0x2013458
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02013460
+  label: gUnknown_02013460
+  type: null
+  addr: 0x2013460
+  size: 0x38
+  line: ''
+-
+  desc: gUnknown_02013498
+  label: gUnknown_02013498
+  type: null
+  addr: 0x2013498
+  size: 0x78
+  line: ''
+-
+  desc: gUnknown_02013510
+  label: gUnknown_02013510
+  type: null
+  addr: 0x2013510
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_02013538
+  label: gUnknown_02013538
+  type: null
+  addr: 0x2013538
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_02013560
+  label: gUnknown_02013560
+  type: null
+  addr: 0x2013560
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_02013570
+  label: gUnknown_02013570
+  type: null
+  addr: 0x2013570
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_02013588
+  label: gUnknown_02013588
+  type: null
+  addr: 0x2013588
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02013590
+  label: gUnknown_02013590
+  type: null
+  addr: 0x2013590
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02013598
+  label: gUnknown_02013598
+  type: null
+  addr: 0x2013598
+  size: 0x70
+  line: ''
+-
+  desc: gUnknown_02013608
+  label: gUnknown_02013608
+  type: null
+  addr: 0x2013608
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_02013630
+  label: gUnknown_02013630
+  type: null
+  addr: 0x2013630
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_02013640
+  label: gUnknown_02013640
+  type: null
+  addr: 0x2013640
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02013648
+  label: gUnknown_02013648
+  type: null
+  addr: 0x2013648
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_02013660
+  label: gUnknown_02013660
+  type: null
+  addr: 0x2013660
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02013668
+  label: gUnknown_02013668
+  type: null
+  addr: 0x2013668
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02013670
+  label: gUnknown_02013670
+  type: null
+  addr: 0x2013670
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_02013698
+  label: gUnknown_02013698
+  type: null
+  addr: 0x2013698
+  size: 0x40
+  line: ''
+-
+  desc: gUnknown_020136D8
+  label: gUnknown_020136D8
+  type: null
+  addr: 0x20136D8
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_020136F0
+  label: gUnknown_020136F0
+  type: null
+  addr: 0x20136F0
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_020136F4
+  label: gUnknown_020136F4
+  type: null
+  addr: 0x20136F4
+  size: 0x800
+  line: ''
+-
+  desc: gUnknown_02013EF4
+  label: gUnknown_02013EF4
+  type: null
+  addr: 0x2013EF4
+  size: 0x6D4
+  line: ''
+-
+  desc: gUnknown_020145C8
+  label: gUnknown_020145C8
+  type: u8 []
+  addr: 0x20145C8
+  size: 0x12C
+  line: ''
+-
+  desc: gUnknown_020146F4
+  label: gUnknown_020146F4
+  type: null
+  addr: 0x20146F4
+  size: 0x6D4
+  line: ''
+-
+  desc: gUnknown_02014DC8
+  label: gUnknown_02014DC8
+  type: null
+  addr: 0x2014DC8
+  size: 0x12C
+  line: ''
+-
+  desc: gUnknown_02014EF4
+  label: gUnknown_02014EF4
+  type: null
+  addr: 0x2014EF4
+  size: 0x16D4
+  line: ''
+-
+  desc: gUnknown_020165C8
+  label: gUnknown_020165C8
+  type: null
+  addr: 0x20165C8
+  size: 0x260
+  line: ''
+-
+  desc: gUnknown_02016828
+  label: gUnknown_02016828
+  type: null
+  addr: 0x2016828
+  size: 0x1A0
+  line: ''
+-
+  desc: gUnknown_020169C8
+  label: gUnknown_020169C8
+  type: null
+  addr: 0x20169C8
+  size: 0x400
+  line: ''
+-
+  desc: gUnknown_02016DC8
+  label: gUnknown_02016DC8
+  type: null
+  addr: 0x2016DC8
+  size: 0x80
+  line: ''
+-
+  desc: gUnknown_02016E48
+  label: gUnknown_02016E48
+  type: null
+  addr: 0x2016E48
+  size: 0x200
+  line: ''
+-
+  desc: gUnknown_02017048
+  label: gUnknown_02017048
+  type: null
+  addr: 0x2017048
+  size: 0x200
+  line: ''
+-
+  desc: gUnknown_02017248
+  label: gUnknown_02017248
+  type: null
+  addr: 0x2017248
+  size: 0x200
+  line: ''
+-
+  desc: gUnknown_02017448
+  label: gUnknown_02017448
+  type: null
+  addr: 0x2017448
+  size: 0x200
+  line: ''
+-
+  desc: gUnknown_02017648
+  label: gUnknown_02017648
+  type: null
+  addr: 0x2017648
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_02017660
+  label: gUnknown_02017660
+  type: null
+  addr: 0x2017660
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02017668
+  label: gUnknown_02017668
+  type: null
+  addr: 0x2017668
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02017670
+  label: gUnknown_02017670
+  type: null
+  addr: 0x2017670
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02017678
+  label: gUnknown_02017678
+  type: null
+  addr: 0x2017678
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_020176A0
+  label: gUnknown_020176A0
+  type: null
+  addr: 0x20176A0
+  size: 0x40
+  line: ''
+-
+  desc: gUnknown_020176E0
+  label: gUnknown_020176E0
+  type: null
+  addr: 0x20176E0
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_020176F0
+  label: gUnknown_020176F0
+  type: null
+  addr: 0x20176F0
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_02017700
+  label: gUnknown_02017700
+  type: null
+  addr: 0x2017700
+  size: 0x24
+  line: ''
+-
+  desc: gUnknown_02017724
+  label: gUnknown_02017724
+  type: null
+  addr: 0x2017724
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02017728
+  label: gUnknown_02017728
+  type: null
+  addr: 0x2017728
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201772C
+  label: gUnknown_0201772C
+  type: null
+  addr: 0x201772C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02017730
+  label: gUnknown_02017730
+  type: null
+  addr: 0x2017730
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02017734
+  label: gUnknown_02017734
+  type: null
+  addr: 0x2017734
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02017738
+  label: gUnknown_02017738
+  type: null
+  addr: 0x2017738
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201773C
+  label: gUnknown_0201773C
+  type: null
+  addr: 0x201773C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02017740
+  label: gUnknown_02017740
+  type: null
+  addr: 0x2017740
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02017744
+  label: gUnknown_02017744
+  type: null
+  addr: 0x2017744
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02017748
+  label: gUnknown_02017748
+  type: null
+  addr: 0x2017748
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201774C
+  label: gUnknown_0201774C
+  type: null
+  addr: 0x201774C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02017750
+  label: gUnknown_02017750
+  type: null
+  addr: 0x2017750
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02017754
+  label: gUnknown_02017754
+  type: null
+  addr: 0x2017754
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02017758
+  label: gUnknown_02017758
+  type: null
+  addr: 0x2017758
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201775C
+  label: gUnknown_0201775C
+  type: null
+  addr: 0x201775C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02017760
+  label: gUnknown_02017760
+  type: null
+  addr: 0x2017760
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02017764
+  label: gUnknown_02017764
+  type: null
+  addr: 0x2017764
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02017768
+  label: gUnknown_02017768
+  type: null
+  addr: 0x2017768
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201776C
+  label: gUnknown_0201776C
+  type: null
+  addr: 0x201776C
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02017774
+  label: gUnknown_02017774
+  type: null
+  addr: 0x2017774
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02017778
+  label: gUnknown_02017778
+  type: null
+  addr: 0x2017778
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201777C
+  label: gUnknown_0201777C
+  type: null
+  addr: 0x201777C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02017780
+  label: gUnknown_02017780
+  type: null
+  addr: 0x2017780
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_02017790
+  label: gUnknown_02017790
+  type: u8 []
+  addr: 0x2017790
+  size: 0x1D00
+  line: ''
+-
+  desc: gUnknown_02019490
+  label: gUnknown_02019490
+  type: null
+  addr: 0x2019490
+  size: 0x300
+  line: ''
+-
+  desc: gUnknown_02019790
+  label: gUnknown_02019790
+  type: u8 []
+  addr: 0x2019790
+  size: 0x570
+  line: ''
+-
+  desc: gUnknown_02019D00
+  label: gUnknown_02019D00
+  type: null
+  addr: 0x2019D00
+  size: 0xA90
+  line: ''
+-
+  desc: gUnknown_0201A790
+  label: gUnknown_0201A790
+  type: u8 []
+  addr: 0x201A790
+  size: 0x800
+  line: ''
+-
+  desc: gUnknown_0201AF90
+  label: gUnknown_0201AF90
+  type: null
+  addr: 0x201AF90
+  size: 0x30
+  line: ''
+-
+  desc: gUnknown_0201AFC0
+  label: gUnknown_0201AFC0
+  type: null
+  addr: 0x201AFC0
+  size: 0x30
+  line: ''
+-
+  desc: gUnknown_0201AFF0
+  label: gUnknown_0201AFF0
+  type: null
+  addr: 0x201AFF0
+  size: 0xE8
+  line: ''
+-
+  desc: gUnknown_0201B0D8
+  label: gUnknown_0201B0D8
+  type: null
+  addr: 0x201B0D8
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_0201B100
+  label: gUnknown_0201B100
+  type: null
+  addr: 0x201B100
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201B104
+  label: gUnknown_0201B104
+  type: null
+  addr: 0x201B104
+  size: 0xE0
+  line: ''
+-
+  desc: gUnknown_0201B1E4
+  label: gUnknown_0201B1E4
+  type: null
+  addr: 0x201B1E4
+  size: 0x1C0
+  line: ''
+-
+  desc: gUnknown_0201B3A4
+  label: gUnknown_0201B3A4
+  type: null
+  addr: 0x201B3A4
+  size: 0x8C
+  line: ''
+-
+  desc: gUnknown_0201B430
+  label: gUnknown_0201B430
+  type: null
+  addr: 0x201B430
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_0201B458
+  label: gUnknown_0201B458
+  type: null
+  addr: 0x201B458
+  size: 0x2C0
+  line: ''
+-
+  desc: gUnknown_0201B718
+  label: gUnknown_0201B718
+  type: null
+  addr: 0x201B718
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201B71C
+  label: gUnknown_0201B71C
+  type: null
+  addr: 0x201B71C
+  size: 0x3C
+  line: ''
+-
+  desc: gUnknown_0201B758
+  label: gUnknown_0201B758
+  type: null
+  addr: 0x201B758
+  size: 0x82
+  line: ''
+-
+  desc: gUnknown_0201B7DA
+  label: gUnknown_0201B7DA
+  type: null
+  addr: 0x201B7DA
+  size: 0x8A
+  line: ''
+-
+  desc: gUnknown_0201B864
+  label: gUnknown_0201B864
+  type: null
+  addr: 0x201B864
+  size: 0xCC
+  line: ''
+-
+  desc: gUnknown_0201B930
+  label: gUnknown_0201B930
+  type: null
+  addr: 0x201B930
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_0201B958
+  label: gUnknown_0201B958
+  type: null
+  addr: 0x201B958
+  size: 0x280
+  line: ''
+-
+  desc: gUnknown_0201BBD8
+  label: gUnknown_0201BBD8
+  type: null
+  addr: 0x201BBD8
+  size: 0x258
+  line: ''
+-
+  desc: gUnknown_0201BE30
+  label: gUnknown_0201BE30
+  type: null
+  addr: 0x201BE30
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_0201BE32
+  label: gUnknown_0201BE32
+  type: null
+  addr: 0x201BE32
+  size: 0x782
+  line: ''
+-
+  desc: gUnknown_0201C5B4
+  label: gUnknown_0201C5B4
+  type: null
+  addr: 0x201C5B4
+  size: 0xC
+  line: ''
+-
+  desc: gUnknown_0201C5C0
+  label: gUnknown_0201C5C0
+  type: null
+  addr: 0x201C5C0
+  size: 0xC
+  line: ''
+-
+  desc: gUnknown_0201C5CC
+  label: gUnknown_0201C5CC
+  type: null
+  addr: 0x201C5CC
+  size: 0x3
+  line: ''
+-
+  desc: gUnknown_0201C5CF
+  label: gUnknown_0201C5CF
+  type: null
+  addr: 0x201C5CF
+  size: 0x1
+  line: ''
+-
+  desc: gUnknown_0201C5D0
+  label: gUnknown_0201C5D0
+  type: null
+  addr: 0x201C5D0
+  size: 0x1
+  line: ''
+-
+  desc: gUnknown_0201C5D1
+  label: gUnknown_0201C5D1
+  type: null
+  addr: 0x201C5D1
+  size: 0x3
+  line: ''
+-
+  desc: gUnknown_0201C5D4
+  label: gUnknown_0201C5D4
+  type: null
+  addr: 0x201C5D4
+  size: 0x1BC
+  line: ''
+-
+  desc: gUnknown_0201C790
+  label: gUnknown_0201C790
+  type: null
+  addr: 0x201C790
+  size: 0x140
+  line: ''
+-
+  desc: gUnknown_0201C8D0
+  label: gUnknown_0201C8D0
+  type: null
+  addr: 0x201C8D0
+  size: 0x42
+  line: ''
+-
+  desc: gUnknown_0201C912
+  label: gUnknown_0201C912
+  type: null
+  addr: 0x201C912
+  size: 0x4C2
+  line: ''
+-
+  desc: gUnknown_0201CDD4
+  label: gUnknown_0201CDD4
+  type: null
+  addr: 0x201CDD4
+  size: 0x1B0
+  line: ''
+-
+  desc: gUnknown_0201CF84
+  label: gUnknown_0201CF84
+  type: null
+  addr: 0x201CF84
+  size: 0x4A4
+  line: ''
+-
+  desc: gUnknown_0201D428
+  label: gUnknown_0201D428
+  type: null
+  addr: 0x201D428
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_0201D438
+  label: gUnknown_0201D438
+  type: null
+  addr: 0x201D438
+  size: 0x32
+  line: ''
+-
+  desc: gUnknown_0201D46A
+  label: gUnknown_0201D46A
+  type: null
+  addr: 0x201D46A
+  size: 0x696
+  line: ''
+-
+  desc: gUnknown_0201DB00
+  label: gUnknown_0201DB00
+  type: null
+  addr: 0x201DB00
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_0201DB28
+  label: gUnknown_0201DB28
+  type: null
+  addr: 0x201DB28
+  size: 0x1620
+  line: ''
+-
+  desc: gUnknown_0201F148
+  label: gUnknown_0201F148
+  type: null
+  addr: 0x201F148
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_0201F160
+  label: gUnknown_0201F160
+  type: null
+  addr: 0x201F160
+  size: 0x38
+  line: ''
+-
+  desc: gUnknown_0201F198
+  label: gUnknown_0201F198
+  type: null
+  addr: 0x201F198
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201F19C
+  label: gUnknown_0201F19C
+  type: null
+  addr: 0x201F19C
+  size: 0x7AC
+  line: ''
+-
+  desc: gUnknown_0201F948
+  label: gUnknown_0201F948
+  type: null
+  addr: 0x201F948
+  size: 0x30
+  line: ''
+-
+  desc: gUnknown_0201F978
+  label: gUnknown_0201F978
+  type: null
+  addr: 0x201F978
+  size: 0x30
+  line: ''
+-
+  desc: gUnknown_0201F9A8
+  label: gUnknown_0201F9A8
+  type: null
+  addr: 0x201F9A8
+  size: 0x60
+  line: ''
+-
+  desc: gUnknown_0201FA08
+  label: gUnknown_0201FA08
+  type: null
+  addr: 0x201FA08
+  size: 0x30
+  line: ''
+-
+  desc: gUnknown_0201FA38
+  label: gUnknown_0201FA38
+  type: null
+  addr: 0x201FA38
+  size: 0x30
+  line: ''
+-
+  desc: gUnknown_0201FA68
+  label: gUnknown_0201FA68
+  type: null
+  addr: 0x201FA68
+  size: 0x60
+  line: ''
+-
+  desc: gUnknown_0201FAC8
+  label: gUnknown_0201FAC8
+  type: null
+  addr: 0x201FAC8
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201FACC
+  label: gUnknown_0201FACC
+  type: null
+  addr: 0x201FACC
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201FAD0
+  label: gUnknown_0201FAD0
+  type: null
+  addr: 0x201FAD0
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201FAD4
+  label: gUnknown_0201FAD4
+  type: null
+  addr: 0x201FAD4
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201FAD8
+  label: gUnknown_0201FAD8
+  type: null
+  addr: 0x201FAD8
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201FADC
+  label: gUnknown_0201FADC
+  type: struct Unknown_0201FADC
+  addr: 0x201FADC
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_0201FB04
+  label: gUnknown_0201FB04
+  type: null
+  addr: 0x201FB04
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_0201FB0C
+  label: gUnknown_0201FB0C
+  type: null
+  addr: 0x201FB0C
+  size: 0xC
+  line: ''
+-
+  desc: gUnknown_0201FB18
+  label: gUnknown_0201FB18
+  type: null
+  addr: 0x201FB18
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201FB1C
+  label: gUnknown_0201FB1C
+  type: null
+  addr: 0x201FB1C
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_0201FB24
+  label: gUnknown_0201FB24
+  type: null
+  addr: 0x201FB24
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201FB28
+  label: gUnknown_0201FB28
+  type: null
+  addr: 0x201FB28
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201FB2C
+  label: gUnknown_0201FB2C
+  type: null
+  addr: 0x201FB2C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201FB30
+  label: gUnknown_0201FB30
+  type: null
+  addr: 0x201FB30
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201FB34
+  label: gUnknown_0201FB34
+  type: null
+  addr: 0x201FB34
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201FB38
+  label: gUnknown_0201FB38
+  type: null
+  addr: 0x201FB38
+  size: 0x140
+  line: ''
+-
+  desc: gUnknown_0201FC78
+  label: gUnknown_0201FC78
+  type: null
+  addr: 0x201FC78
+  size: 0x140
+  line: ''
+-
+  desc: gUnknown_0201FDB8
+  label: gUnknown_0201FDB8
+  type: null
+  addr: 0x201FDB8
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201FDBC
+  label: gUnknown_0201FDBC
+  type: null
+  addr: 0x201FDBC
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201FDC0
+  label: gUnknown_0201FDC0
+  type: null
+  addr: 0x201FDC0
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0201FDC4
+  label: gUnknown_0201FDC4
+  type: null
+  addr: 0x201FDC4
+  size: 0x140
+  line: ''
+-
+  desc: gUnknown_0201FF04
+  label: gUnknown_0201FF04
+  type: null
+  addr: 0x201FF04
+  size: 0x140
+  line: ''
+-
+  desc: gUnknown_02020044
+  label: gUnknown_02020044
+  type: null
+  addr: 0x2020044
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02020048
+  label: gUnknown_02020048
+  type: null
+  addr: 0x2020048
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_02020058
+  label: gUnknown_02020058
+  type: null
+  addr: 0x2020058
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_02020068
+  label: gUnknown_02020068
+  type: null
+  addr: 0x2020068
+  size: 0x40
+  line: ''
+-
+  desc: gUnknown_020200A8
+  label: gUnknown_020200A8
+  type: null
+  addr: 0x20200A8
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_020200AC
+  label: gUnknown_020200AC
+  type: null
+  addr: 0x20200AC
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_020200B0
+  label: gUnknown_020200B0
+  type: null
+  addr: 0x20200B0
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_020200B4
+  label: gUnknown_020200B4
+  type: null
+  addr: 0x20200B4
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_020200B8
+  label: gUnknown_020200B8
+  type: null
+  addr: 0x20200B8
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_020200D8
+  label: gUnknown_020200D8
+  type: null
+  addr: 0x20200D8
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_020200DC
+  label: gUnknown_020200DC
+  type: null
+  addr: 0x20200DC
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_020200E0
+  label: gUnknown_020200E0
+  type: null
+  addr: 0x20200E0
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_02020108
+  label: gUnknown_02020108
+  type: null
+  addr: 0x2020108
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0202010C
+  label: gUnknown_0202010C
+  type: null
+  addr: 0x202010C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02020110
+  label: gUnknown_02020110
+  type: null
+  addr: 0x2020110
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02020112
+  label: gUnknown_02020112
+  type: null
+  addr: 0x2020112
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02020114
+  label: gUnknown_02020114
+  type: null
+  addr: 0x2020114
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_02020124
+  label: gUnknown_02020124
+  type: null
+  addr: 0x2020124
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_02020134
+  label: gUnknown_02020134
+  type: null
+  addr: 0x2020134
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02020136
+  label: gUnknown_02020136
+  type: null
+  addr: 0x2020136
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02020138
+  label: gUnknown_02020138
+  type: null
+  addr: 0x2020138
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0202013C
+  label: gUnknown_0202013C
+  type: null
+  addr: 0x202013C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02020140
+  label: gUnknown_02020140
+  type: null
+  addr: 0x2020140
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02020144
+  label: gUnknown_02020144
+  type: null
+  addr: 0x2020144
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02020148
+  label: gUnknown_02020148
+  type: null
+  addr: 0x2020148
+  size: 0x40
+  line: ''
+-
+  desc: gUnknown_02020188
+  label: gUnknown_02020188
+  type: u8 []
+  addr: 0x2020188
+  size: 0x80
+  line: ''
+-
+  desc: gUnknown_02020208
+  label: gUnknown_02020208
+  type: null
+  addr: 0x2020208
+  size: 0x80
+  line: ''
+-
+  desc: gUnknown_02020288
+  label: gUnknown_02020288
+  type: null
+  addr: 0x2020288
+  size: 0x700
+  line: ''
+-
+  desc: gUnknown_02020988
+  label: gUnknown_02020988
+  type: null
+  addr: 0x2020988
+  size: 0x800
+  line: ''
+-
+  desc: gUnknown_02021188
+  label: gUnknown_02021188
+  type: null
+  addr: 0x2021188
+  size: 0x1000
+  line: ''
+-
+  desc: gUnknown_02022188
+  label: gUnknown_02022188
+  type: null
+  addr: 0x2022188
+  size: 0x100
+  line: ''
+-
+  desc: gUnknown_02022288
+  label: gUnknown_02022288
+  type: s8 []
+  addr: 0x2022288
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_020222A8
+  label: gUnknown_020222A8
+  type: s8 []
+  addr: 0x20222A8
+  size: 0x60
+  line: ''
+-
+  desc: gUnknown_02022308
+  label: gUnknown_02022308
+  type: null
+  addr: 0x2022308
+  size: 0x5A0
+  line: ''
+-
+  desc: gPaletteBuffer
+  label: gPaletteBuffer
+  type: u16 []
+  addr: 0x20228A8
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_020228AA
+  label: gUnknown_020228AA
+  type: null
+  addr: 0x20228AA
+  size: 0x1E
+  line: ''
+-
+  desc: gUnknown_020228C8
+  label: gUnknown_020228C8
+  type: null
+  addr: 0x20228C8
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_020228E8
+  label: gUnknown_020228E8
+  type: null
+  addr: 0x20228E8
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_02022908
+  label: gUnknown_02022908
+  type: null
+  addr: 0x2022908
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_02022928
+  label: gUnknown_02022928
+  type: u16 []
+  addr: 0x2022928
+  size: 0x40
+  line: ''
+-
+  desc: gUnknown_02022968
+  label: gUnknown_02022968
+  type: u16 []
+  addr: 0x2022968
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_02022988
+  label: gUnknown_02022988
+  type: null
+  addr: 0x2022988
+  size: 0xE0
+  line: ''
+-
+  desc: gUnknown_02022A68
+  label: gUnknown_02022A68
+  type: null
+  addr: 0x2022A68
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_02022A88
+  label: gUnknown_02022A88
+  type: null
+  addr: 0x2022A88
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_02022AA8
+  label: gUnknown_02022AA8
+  type: null
+  addr: 0x2022AA8
+  size: 0x12
+  line: ''
+-
+  desc: gUnknown_02022ABA
+  label: gUnknown_02022ABA
+  type: null
+  addr: 0x2022ABA
+  size: 0x2E
+  line: ''
+-
+  desc: gUnknown_02022AE8
+  label: gUnknown_02022AE8
+  type: null
+  addr: 0x2022AE8
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_02022B08
+  label: gUnknown_02022B08
+  type: null
+  addr: 0x2022B08
+  size: 0x1C
+  line: ''
+-
+  desc: gUnknown_02022B24
+  label: gUnknown_02022B24
+  type: null
+  addr: 0x2022B24
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02022B28
+  label: gUnknown_02022B28
+  type: null
+  addr: 0x2022B28
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_02022B48
+  label: gUnknown_02022B48
+  type: null
+  addr: 0x2022B48
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_02022B68
+  label: gUnknown_02022B68
+  type: null
+  addr: 0x2022B68
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_02022B88
+  label: gUnknown_02022B88
+  type: null
+  addr: 0x2022B88
+  size: 0x1C
+  line: ''
+-
+  desc: gUnknown_02022BA4
+  label: gUnknown_02022BA4
+  type: u16 []
+  addr: 0x2022BA4
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02022BA8
+  label: gUnknown_02022BA8
+  type: null
+  addr: 0x2022BA8
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_02022BC8
+  label: gUnknown_02022BC8
+  type: null
+  addr: 0x2022BC8
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_02022BE8
+  label: gUnknown_02022BE8
+  type: null
+  addr: 0x2022BE8
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_02022C08
+  label: gUnknown_02022C08
+  type: null
+  addr: 0x2022C08
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_02022C28
+  label: gUnknown_02022C28
+  type: u16 []
+  addr: 0x2022C28
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_02022C48
+  label: gUnknown_02022C48
+  type: u16 []
+  addr: 0x2022C48
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_02022C68
+  label: gUnknown_02022C68
+  type: u16 []
+  addr: 0x2022C68
+  size: 0x40
+  line: ''
+-
+  desc: gBG0TilemapBuffer
+  label: gBG0TilemapBuffer
+  type: u16 []
+  addr: 0x2022CA8
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02022CAA
+  label: gUnknown_02022CAA
+  type: null
+  addr: 0x2022CAA
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02022CAC
+  label: gUnknown_02022CAC
+  type: null
+  addr: 0x2022CAC
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02022CAE
+  label: gUnknown_02022CAE
+  type: null
+  addr: 0x2022CAE
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02022CB0
+  label: gUnknown_02022CB0
+  type: null
+  addr: 0x2022CB0
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02022CB4
+  label: gUnknown_02022CB4
+  type: null
+  addr: 0x2022CB4
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02022CB8
+  label: gUnknown_02022CB8
+  type: null
+  addr: 0x2022CB8
+  size: 0xC
+  line: ''
+-
+  desc: gUnknown_02022CC4
+  label: gUnknown_02022CC4
+  type: null
+  addr: 0x2022CC4
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02022CC6
+  label: gUnknown_02022CC6
+  type: null
+  addr: 0x2022CC6
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02022CCA
+  label: gUnknown_02022CCA
+  type: null
+  addr: 0x2022CCA
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02022CCE
+  label: gUnknown_02022CCE
+  type: null
+  addr: 0x2022CCE
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02022CD0
+  label: gUnknown_02022CD0
+  type: null
+  addr: 0x2022CD0
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02022CD4
+  label: gUnknown_02022CD4
+  type: null
+  addr: 0x2022CD4
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02022CDC
+  label: gUnknown_02022CDC
+  type: null
+  addr: 0x2022CDC
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_02022CEC
+  label: gUnknown_02022CEC
+  type: null
+  addr: 0x2022CEC
+  size: 0x16
+  line: ''
+-
+  desc: gUnknown_02022D02
+  label: gUnknown_02022D02
+  type: null
+  addr: 0x2022D02
+  size: 0x6
+  line: ''
+-
+  desc: gUnknown_02022D08
+  label: gUnknown_02022D08
+  type: null
+  addr: 0x2022D08
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02022D10
+  label: gUnknown_02022D10
+  type: null
+  addr: 0x2022D10
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02022D18
+  label: gUnknown_02022D18
+  type: null
+  addr: 0x2022D18
+  size: 0x16
+  line: ''
+-
+  desc: gUnknown_02022D2E
+  label: gUnknown_02022D2E
+  type: u16 []
+  addr: 0x2022D2E
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02022D36
+  label: gUnknown_02022D36
+  type: null
+  addr: 0x2022D36
+  size: 0x6
+  line: ''
+-
+  desc: gUnknown_02022D3C
+  label: gUnknown_02022D3C
+  type: null
+  addr: 0x2022D3C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02022D40
+  label: gUnknown_02022D40
+  type: null
+  addr: 0x2022D40
+  size: 0x32
+  line: ''
+-
+  desc: gUnknown_02022D72
+  label: gUnknown_02022D72
+  type: null
+  addr: 0x2022D72
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02022D76
+  label: gUnknown_02022D76
+  type: null
+  addr: 0x2022D76
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_02022D86
+  label: gUnknown_02022D86
+  type: null
+  addr: 0x2022D86
+  size: 0x2E
+  line: ''
+-
+  desc: gUnknown_02022DB4
+  label: gUnknown_02022DB4
+  type: null
+  addr: 0x2022DB4
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02022DB8
+  label: gUnknown_02022DB8
+  type: u16 []
+  addr: 0x2022DB8
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02022DBA
+  label: gUnknown_02022DBA
+  type: u16 []
+  addr: 0x2022DBA
+  size: 0x30
+  line: ''
+-
+  desc: gUnknown_02022DEA
+  label: gUnknown_02022DEA
+  type: null
+  addr: 0x2022DEA
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02022DEE
+  label: gUnknown_02022DEE
+  type: null
+  addr: 0x2022DEE
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02022DF2
+  label: gUnknown_02022DF2
+  type: null
+  addr: 0x2022DF2
+  size: 0xE
+  line: ''
+-
+  desc: gUnknown_02022E00
+  label: gUnknown_02022E00
+  type: null
+  addr: 0x2022E00
+  size: 0x2E
+  line: ''
+-
+  desc: gUnknown_02022E2E
+  label: gUnknown_02022E2E
+  type: null
+  addr: 0x2022E2E
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02022E30
+  label: gUnknown_02022E30
+  type: null
+  addr: 0x2022E30
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02022E34
+  label: gUnknown_02022E34
+  type: null
+  addr: 0x2022E34
+  size: 0x2A
+  line: ''
+-
+  desc: gUnknown_02022E5E
+  label: gUnknown_02022E5E
+  type: null
+  addr: 0x2022E5E
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02022E60
+  label: gUnknown_02022E60
+  type: null
+  addr: 0x2022E60
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02022E68
+  label: gUnknown_02022E68
+  type: null
+  addr: 0x2022E68
+  size: 0xE
+  line: ''
+-
+  desc: gUnknown_02022E76
+  label: gUnknown_02022E76
+  type: null
+  addr: 0x2022E76
+  size: 0x1A
+  line: ''
+-
+  desc: gUnknown_02022E90
+  label: gUnknown_02022E90
+  type: null
+  addr: 0x2022E90
+  size: 0x24
+  line: ''
+-
+  desc: gUnknown_02022EB4
+  label: gUnknown_02022EB4
+  type: null
+  addr: 0x2022EB4
+  size: 0x34
+  line: ''
+-
+  desc: gUnknown_02022EE8
+  label: gUnknown_02022EE8
+  type: null
+  addr: 0x2022EE8
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02022EEA
+  label: gUnknown_02022EEA
+  type: null
+  addr: 0x2022EEA
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02022EEC
+  label: gUnknown_02022EEC
+  type: null
+  addr: 0x2022EEC
+  size: 0xA
+  line: ''
+-
+  desc: gUnknown_02022EF6
+  label: gUnknown_02022EF6
+  type: null
+  addr: 0x2022EF6
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_02022F06
+  label: gUnknown_02022F06
+  type: null
+  addr: 0x2022F06
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02022F0A
+  label: gUnknown_02022F0A
+  type: null
+  addr: 0x2022F0A
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02022F0E
+  label: gUnknown_02022F0E
+  type: null
+  addr: 0x2022F0E
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02022F10
+  label: gUnknown_02022F10
+  type: null
+  addr: 0x2022F10
+  size: 0xA
+  line: ''
+-
+  desc: gUnknown_02022F1A
+  label: gUnknown_02022F1A
+  type: null
+  addr: 0x2022F1A
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02022F1E
+  label: gUnknown_02022F1E
+  type: null
+  addr: 0x2022F1E
+  size: 0xA
+  line: ''
+-
+  desc: gUnknown_02022F28
+  label: gUnknown_02022F28
+  type: null
+  addr: 0x2022F28
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02022F2A
+  label: gUnknown_02022F2A
+  type: null
+  addr: 0x2022F2A
+  size: 0xE
+  line: ''
+-
+  desc: gUnknown_02022F38
+  label: gUnknown_02022F38
+  type: null
+  addr: 0x2022F38
+  size: 0x16
+  line: ''
+-
+  desc: gUnknown_02022F4E
+  label: gUnknown_02022F4E
+  type: null
+  addr: 0x2022F4E
+  size: 0x1C
+  line: ''
+-
+  desc: gUnknown_02022F6A
+  label: gUnknown_02022F6A
+  type: null
+  addr: 0x2022F6A
+  size: 0x3E
+  line: ''
+-
+  desc: gUnknown_02022FA8
+  label: gUnknown_02022FA8
+  type: null
+  addr: 0x2022FA8
+  size: 0x16
+  line: ''
+-
+  desc: gUnknown_02022FBE
+  label: gUnknown_02022FBE
+  type: null
+  addr: 0x2022FBE
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02022FC6
+  label: gUnknown_02022FC6
+  type: null
+  addr: 0x2022FC6
+  size: 0xE
+  line: ''
+-
+  desc: gUnknown_02022FD4
+  label: gUnknown_02022FD4
+  type: null
+  addr: 0x2022FD4
+  size: 0x14
+  line: ''
+-
+  desc: gUnknown_02022FE8
+  label: gUnknown_02022FE8
+  type: null
+  addr: 0x2022FE8
+  size: 0x2E
+  line: ''
+-
+  desc: gUnknown_02023016
+  label: gUnknown_02023016
+  type: null
+  addr: 0x2023016
+  size: 0x12
+  line: ''
+-
+  desc: gUnknown_02023028
+  label: gUnknown_02023028
+  type: null
+  addr: 0x2023028
+  size: 0x26
+  line: ''
+-
+  desc: gUnknown_0202304E
+  label: gUnknown_0202304E
+  type: null
+  addr: 0x202304E
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_0202306E
+  label: gUnknown_0202306E
+  type: null
+  addr: 0x202306E
+  size: 0x16
+  line: ''
+-
+  desc: gUnknown_02023084
+  label: gUnknown_02023084
+  type: null
+  addr: 0x2023084
+  size: 0x24
+  line: ''
+-
+  desc: gUnknown_020230A8
+  label: gUnknown_020230A8
+  type: null
+  addr: 0x20230A8
+  size: 0x22
+  line: ''
+-
+  desc: gUnknown_020230CA
+  label: gUnknown_020230CA
+  type: null
+  addr: 0x20230CA
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_020230CE
+  label: gUnknown_020230CE
+  type: null
+  addr: 0x20230CE
+  size: 0x26
+  line: ''
+-
+  desc: gUnknown_020230F4
+  label: gUnknown_020230F4
+  type: null
+  addr: 0x20230F4
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_020230F6
+  label: gUnknown_020230F6
+  type: null
+  addr: 0x20230F6
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_0202310E
+  label: gUnknown_0202310E
+  type: null
+  addr: 0x202310E
+  size: 0x6
+  line: ''
+-
+  desc: gUnknown_02023114
+  label: gUnknown_02023114
+  type: null
+  addr: 0x2023114
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02023116
+  label: gUnknown_02023116
+  type: null
+  addr: 0x2023116
+  size: 0x1A
+  line: ''
+-
+  desc: gUnknown_02023130
+  label: gUnknown_02023130
+  type: null
+  addr: 0x2023130
+  size: 0x6
+  line: ''
+-
+  desc: gUnknown_02023136
+  label: gUnknown_02023136
+  type: null
+  addr: 0x2023136
+  size: 0x372
+  line: ''
+-
+  desc: gBG1TilemapBuffer
+  label: gBG1TilemapBuffer
+  type: u16 []
+  addr: 0x20234A8
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_020234AC
+  label: gUnknown_020234AC
+  type: null
+  addr: 0x20234AC
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_020234AE
+  label: gUnknown_020234AE
+  type: null
+  addr: 0x20234AE
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_020234B0
+  label: gUnknown_020234B0
+  type: null
+  addr: 0x20234B0
+  size: 0xE
+  line: ''
+-
+  desc: gUnknown_020234BE
+  label: gUnknown_020234BE
+  type: null
+  addr: 0x20234BE
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_020234C0
+  label: gUnknown_020234C0
+  type: null
+  addr: 0x20234C0
+  size: 0xA
+  line: ''
+-
+  desc: gUnknown_020234CA
+  label: gUnknown_020234CA
+  type: null
+  addr: 0x20234CA
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_020234CE
+  label: gUnknown_020234CE
+  type: null
+  addr: 0x20234CE
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_020234D0
+  label: gUnknown_020234D0
+  type: null
+  addr: 0x20234D0
+  size: 0x12
+  line: ''
+-
+  desc: gUnknown_020234E2
+  label: gUnknown_020234E2
+  type: null
+  addr: 0x20234E2
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_020234E4
+  label: gUnknown_020234E4
+  type: null
+  addr: 0x20234E4
+  size: 0x64
+  line: ''
+-
+  desc: gUnknown_02023548
+  label: gUnknown_02023548
+  type: null
+  addr: 0x2023548
+  size: 0x62
+  line: ''
+-
+  desc: gUnknown_020235AA
+  label: gUnknown_020235AA
+  type: null
+  addr: 0x20235AA
+  size: 0x40
+  line: ''
+-
+  desc: gUnknown_020235EA
+  label: gUnknown_020235EA
+  type: null
+  addr: 0x20235EA
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_020235EE
+  label: gUnknown_020235EE
+  type: null
+  addr: 0x20235EE
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_020235F0
+  label: gUnknown_020235F0
+  type: null
+  addr: 0x20235F0
+  size: 0xC
+  line: ''
+-
+  desc: gUnknown_020235FC
+  label: gUnknown_020235FC
+  type: null
+  addr: 0x20235FC
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_020235FE
+  label: gUnknown_020235FE
+  type: null
+  addr: 0x20235FE
+  size: 0x2A
+  line: ''
+-
+  desc: gUnknown_02023628
+  label: gUnknown_02023628
+  type: null
+  addr: 0x2023628
+  size: 0xBC
+  line: ''
+-
+  desc: gUnknown_020236E4
+  label: gUnknown_020236E4
+  type: null
+  addr: 0x20236E4
+  size: 0x104
+  line: ''
+-
+  desc: gUnknown_020237E8
+  label: gUnknown_020237E8
+  type: null
+  addr: 0x20237E8
+  size: 0x2E
+  line: ''
+-
+  desc: gUnknown_02023816
+  label: gUnknown_02023816
+  type: null
+  addr: 0x2023816
+  size: 0x12
+  line: ''
+-
+  desc: gUnknown_02023828
+  label: gUnknown_02023828
+  type: null
+  addr: 0x2023828
+  size: 0x26
+  line: ''
+-
+  desc: gUnknown_0202384E
+  label: gUnknown_0202384E
+  type: null
+  addr: 0x202384E
+  size: 0x30
+  line: ''
+-
+  desc: gUnknown_0202387E
+  label: gUnknown_0202387E
+  type: null
+  addr: 0x202387E
+  size: 0x2A
+  line: ''
+-
+  desc: gUnknown_020238A8
+  label: gUnknown_020238A8
+  type: null
+  addr: 0x20238A8
+  size: 0x22
+  line: ''
+-
+  desc: gUnknown_020238CA
+  label: gUnknown_020238CA
+  type: null
+  addr: 0x20238CA
+  size: 0x2A
+  line: ''
+-
+  desc: gUnknown_020238F4
+  label: gUnknown_020238F4
+  type: null
+  addr: 0x20238F4
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_020238F6
+  label: gUnknown_020238F6
+  type: null
+  addr: 0x20238F6
+  size: 0x48
+  line: ''
+-
+  desc: gUnknown_0202393E
+  label: gUnknown_0202393E
+  type: null
+  addr: 0x202393E
+  size: 0x2E
+  line: ''
+-
+  desc: gUnknown_0202396C
+  label: gUnknown_0202396C
+  type: null
+  addr: 0x202396C
+  size: 0x3C
+  line: ''
+-
+  desc: gUnknown_020239A8
+  label: gUnknown_020239A8
+  type: null
+  addr: 0x20239A8
+  size: 0x300
+  line: ''
+-
+  desc: gBG2TilemapBuffer
+  label: gBG2TilemapBuffer
+  type: u16 []
+  addr: 0x2023CA8
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02023CAA
+  label: gUnknown_02023CAA
+  type: null
+  addr: 0x2023CAA
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02023CAE
+  label: gUnknown_02023CAE
+  type: null
+  addr: 0x2023CAE
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02023CB6
+  label: gUnknown_02023CB6
+  type: null
+  addr: 0x2023CB6
+  size: 0xA
+  line: ''
+-
+  desc: gUnknown_02023CC0
+  label: gUnknown_02023CC0
+  type: null
+  addr: 0x2023CC0
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02023CC2
+  label: gUnknown_02023CC2
+  type: null
+  addr: 0x2023CC2
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02023CC6
+  label: gUnknown_02023CC6
+  type: null
+  addr: 0x2023CC6
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02023CC8
+  label: gUnknown_02023CC8
+  type: null
+  addr: 0x2023CC8
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_02023CE8
+  label: gUnknown_02023CE8
+  type: null
+  addr: 0x2023CE8
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02023CEA
+  label: gUnknown_02023CEA
+  type: null
+  addr: 0x2023CEA
+  size: 0x22
+  line: ''
+-
+  desc: gUnknown_02023D0C
+  label: gUnknown_02023D0C
+  type: null
+  addr: 0x2023D0C
+  size: 0x6
+  line: ''
+-
+  desc: gUnknown_02023D12
+  label: gUnknown_02023D12
+  type: null
+  addr: 0x2023D12
+  size: 0x2E
+  line: ''
+-
+  desc: gUnknown_02023D40
+  label: gUnknown_02023D40
+  type: null
+  addr: 0x2023D40
+  size: 0x48
+  line: ''
+-
+  desc: gUnknown_02023D88
+  label: gUnknown_02023D88
+  type: null
+  addr: 0x2023D88
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_02023D90
+  label: gUnknown_02023D90
+  type: null
+  addr: 0x2023D90
+  size: 0xC
+  line: ''
+-
+  desc: gUnknown_02023D9C
+  label: gUnknown_02023D9C
+  type: null
+  addr: 0x2023D9C
+  size: 0xE
+  line: ''
+-
+  desc: gUnknown_02023DAA
+  label: gUnknown_02023DAA
+  type: null
+  addr: 0x2023DAA
+  size: 0xE
+  line: ''
+-
+  desc: gUnknown_02023DB8
+  label: gUnknown_02023DB8
+  type: u16 []
+  addr: 0x2023DB8
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02023DBA
+  label: gUnknown_02023DBA
+  type: null
+  addr: 0x2023DBA
+  size: 0x2E
+  line: ''
+-
+  desc: gUnknown_02023DE8
+  label: gUnknown_02023DE8
+  type: null
+  addr: 0x2023DE8
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_02023DEA
+  label: gUnknown_02023DEA
+  type: null
+  addr: 0x2023DEA
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_02023DEE
+  label: gUnknown_02023DEE
+  type: null
+  addr: 0x2023DEE
+  size: 0xA
+  line: ''
+-
+  desc: gUnknown_02023DF8
+  label: gUnknown_02023DF8
+  type: null
+  addr: 0x2023DF8
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_02023E10
+  label: gUnknown_02023E10
+  type: null
+  addr: 0x2023E10
+  size: 0x32
+  line: ''
+-
+  desc: gUnknown_02023E42
+  label: gUnknown_02023E42
+  type: null
+  addr: 0x2023E42
+  size: 0x2A
+  line: ''
+-
+  desc: gUnknown_02023E6C
+  label: gUnknown_02023E6C
+  type: null
+  addr: 0x2023E6C
+  size: 0x16
+  line: ''
+-
+  desc: gUnknown_02023E82
+  label: gUnknown_02023E82
+  type: null
+  addr: 0x2023E82
+  size: 0x6
+  line: ''
+-
+  desc: gUnknown_02023E88
+  label: gUnknown_02023E88
+  type: null
+  addr: 0x2023E88
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_02023EA8
+  label: gUnknown_02023EA8
+  type: null
+  addr: 0x2023EA8
+  size: 0xC0
+  line: ''
+-
+  desc: gUnknown_02023F68
+  label: gUnknown_02023F68
+  type: null
+  addr: 0x2023F68
+  size: 0x52
+  line: ''
+-
+  desc: gUnknown_02023FBA
+  label: gUnknown_02023FBA
+  type: null
+  addr: 0x2023FBA
+  size: 0x50
+  line: ''
+-
+  desc: gUnknown_0202400A
+  label: gUnknown_0202400A
+  type: null
+  addr: 0x202400A
+  size: 0x3A
+  line: ''
+-
+  desc: gUnknown_02024044
+  label: gUnknown_02024044
+  type: null
+  addr: 0x2024044
+  size: 0x6
+  line: ''
+-
+  desc: gUnknown_0202404A
+  label: gUnknown_0202404A
+  type: null
+  addr: 0x202404A
+  size: 0x45E
+  line: ''
+-
+  desc: gBG3TilemapBuffer
+  label: gBG3TilemapBuffer
+  type: u16 []
+  addr: 0x20244A8
+  size: 0x800
+  line: ''
+-
+  desc: gBGVramTilemapPointers
+  label: gBGVramTilemapPointers
+  type: void *[]
+  addr: 0x2024CA8
+  size: 0x10
+  line: ''
+-
+  desc: gMainCallback
+  label: gMainCallback
+  type: void (*)(void)
+  addr: 0x2024CB8
+  size: 0x8
+  line: ''
+-
+  desc: sKeyStatusBuffer
+  label: sKeyStatusBuffer
+  type: struct KeyStatusBuffer
+  addr: 0x2024CC0
+  size: 0x14
+  line: main.c:11
+-
+  desc: gUnknown_02024CD4
+  label: gUnknown_02024CD4
+  type: struct Struct02024CD4
+  addr: 0x2024CD4
+  size: 0x8
+  line: hardware.c:5
+-
+  desc: gUnknown_02024CDC
+  label: gUnknown_02024CDC
+  type: struct TileDataTransfer []
+  addr: 0x2024CDC
+  size: 0x180
+  line: hardware.c:6
+-
+  desc: sSoundStatus
+  label: sSoundStatus
+  type: struct Struct02024E5C
+  addr: 0x2024E5C
+  size: 0xC
+  line: soundwrapper.c:16
+-
+  desc: sProcArray
+  label: sProcArray
+  type: struct Proc [64]
+  addr: 0x2024E68
+  size: 0x1B00
+  line: proc.c:15
+-
+  desc: sProcAllocList
+  label: sProcAllocList
+  type: struct Proc *[64 + 1]
+  addr: 0x2026968
+  size: 0x104
+  line: proc.c:17
+-
+  desc: sProcAllocListHead
+  label: sProcAllocListHead
+  type: struct Proc **
+  addr: 0x2026A6C
+  size: 0x4
+  line: proc.c:18
+-
+  desc: gProcTreeRootArray
+  label: gProcTreeRootArray
+  type: struct Proc *[8]
+  addr: 0x2026A70
+  size: 0x20
+  line: proc.c:20
+-
+  desc: DrawnIconLookupTable
+  label: DrawnIconLookupTable
+  type: struct IconStruct [224]
+  addr: 0x2026A90
+  size: 0x380
+  line: icon.c:7
+-
+  desc: IconGFXIDLookupTable
+  label: IconGFXIDLookupTable
+  type: u8 [32]
+  addr: 0x2026E10
+  size: 0x20
+  line: icon.c:8
+-
+  desc: gUnknown_02026E30
+  label: gUnknown_02026E30
+  type: struct Struct02026E30
+  addr: 0x2026E30
+  size: 0x2014
+  line: fontgrp.c:31
+-
+  desc: gUnknown_02028E44
+  label: gUnknown_02028E44
+  type: char [9]
+  addr: 0x2028E44
+  size: 0x9
+  line: fontgrp.c:32
+-
+  desc: gUnknown_02028E50
+  label: gUnknown_02028E50
+  type: int
+  addr: 0x2028E50
+  size: 0x4
+  line: fontgrp.c:33
+-
+  desc: gUnknown_02028E54
+  label: gUnknown_02028E54
+  type: int
+  addr: 0x2028E54
+  size: 0x4
+  line: fontgrp.c:34
+-
+  desc: gDefaultFont
+  label: gDefaultFont
+  type: struct Font
+  addr: 0x2028E58
+  size: 0x18
+  line: fontgrp.c:35
+-
+  desc: gCurrentFont
+  label: gCurrentFont
+  type: struct Font *
+  addr: 0x2028E70
+  size: 0x4
+  line: fontgrp.c:36
+-
+  desc: gUnknown_02028E74
+  label: gUnknown_02028E74
   type: u8
+  addr: 0x2028E74
+  size: 0x1
+  line: fontgrp.c:37
+-
+  desc: gUnknown_02028E78
+  label: gUnknown_02028E78
+  type: struct Struct02028E78 [64]
+  addr: 0x2028E78
+  size: 0x100
+  line: fontgrp.c:38
+-
+  desc: sAnimPool
+  label: sAnimPool
+  type: struct Anim [ANIM_MAX_COUNT]
+  addr: 0x2028F78
+  size: 0xE10
+  line: animedrv.c:47
+-
+  desc: sFirstAnim
+  label: sFirstAnim
+  type: struct Anim *
+  addr: 0x2029D88
+  size: 0x4
+  line: animedrv.c:48
+-
+  desc: sSpritePool
+  label: sSpritePool
+  type: struct SpriteEntry [0x80]
+  addr: 0x2029D8C
+  size: 0x800
+  line: ctc.c:132
+-
+  desc: sSpriteLayers
+  label: sSpriteLayers
+  type: struct SpriteEntry [0x10]
+  addr: 0x202A58C
+  size: 0x100
+  line: ctc.c:133
+-
+  desc: gUnknown_0202A68C
+  label: gUnknown_0202A68C
+  type: null
+  addr: 0x202A68C
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_0202A6AC
+  label: gUnknown_0202A6AC
+  type: struct TextBuffer0202A6AC
+  addr: 0x202A6AC
+  size: 0x555
+  line: ''
+-
+  desc: gUnknown_0202AC01
+  label: gUnknown_0202AC01
+  type: null
+  addr: 0x202AC01
+  size: 0x555
+  line: ''
+-
+  desc: gUnknown_0202B156
+  label: gUnknown_0202B156
+  type: null
+  addr: 0x202B156
+  size: 0x356
+  line: ''
+-
+  desc: gUnknown_0202B4AC
+  label: gUnknown_0202B4AC
+  type: u8 []
+  addr: 0x202B4AC
+  size: 0x100
+  line: ''
+-
+  desc: gUnknown_0202B5AC
+  label: gUnknown_0202B5AC
+  type: null
+  addr: 0x202B5AC
+  size: 0x100
+  line: ''
+-
+  desc: gUnknown_0202B6AC
+  label: gUnknown_0202B6AC
+  type: int
+  addr: 0x202B6AC
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0202B6B0
+  label: gUnknown_0202B6B0
+  type: null
+  addr: 0x202B6B0
+  size: 0x600
+  line: ''
+-
+  desc: gGameState
+  label: gGameState
+  type: struct Struct0202BCB0
+  addr: 0x202BCB0
+  size: 0x40
+  line: ''
+-
+  desc: gRAMChapterData
+  label: gRAMChapterData
+  type: struct RAMChapterData
+  addr: 0x202BCF0
+  size: 0xE
+  line: ''
+-
+  desc: gUnknown_0202BCFE
+  label: gUnknown_0202BCFE
+  type: null
+  addr: 0x202BCFE
+  size: 0xD
+  line: ''
+-
+  desc: gUnknown_0202BD0B
+  label: gUnknown_0202BD0B
+  type: null
+  addr: 0x202BD0B
+  size: 0x25
+  line: ''
+-
+  desc: gUnknown_0202BD30
+  label: gUnknown_0202BD30
+  type: null
+  addr: 0x202BD30
+  size: 0x1
+  line: ''
+-
+  desc: gUnknown_0202BD31
+  label: gUnknown_0202BD31
+  type: null
+  addr: 0x202BD31
+  size: 0x9
+  line: ''
+-
+  desc: gUnknown_0202BD3A
+  label: gUnknown_0202BD3A
+  type: null
+  addr: 0x202BD3A
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_0202BD3C
+  label: gUnknown_0202BD3C
+  type: null
+  addr: 0x202BD3C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0202BD40
+  label: gUnknown_0202BD40
+  type: null
+  addr: 0x202BD40
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0202BD44
+  label: gUnknown_0202BD44
+  type: null
+  addr: 0x202BD44
+  size: 0x100
+  line: ''
+-
+  desc: gActiveUnitId
+  label: gActiveUnitId
+  type: u8
+  addr: 0x202BE44
+  size: 0x1
+  line: bmunit.c:22
+-
+  desc: gActiveUnitMoveOrigin
+  label: gActiveUnitMoveOrigin
+  type: struct Vec2
+  addr: 0x202BE48
+  size: 0x4
+  line: bmunit.c:23
+-
+  desc: gUnitArrayBlue
+  label: gUnitArrayBlue
+  type: struct Unit [62]
+  addr: 0x202BE4C
+  size: 0x1170
+  line: bmunit.c:25
+-
+  desc: gUnitArrayRed
+  label: gUnitArrayRed
+  type: struct Unit [50]
+  addr: 0x202CFBC
+  size: 0xE10
+  line: bmunit.c:26
+-
+  desc: gUnitArrayGreen
+  label: gUnitArrayGreen
+  type: struct Unit [20]
+  addr: 0x202DDCC
+  size: 0x5A0
+  line: bmunit.c:27
+-
+  desc: gUnitArrayPurple
+  label: gUnitArrayPurple
+  type: struct Unit [5]
+  addr: 0x202E36C
+  size: 0x168
+  line: bmunit.c:28
+-
+  desc: gBmMapSize
+  label: gBmMapSize
+  type: struct Vec2
+  addr: 0x202E4D4
+  size: 0x4
+  line: bmmap.c:28
+-
+  desc: gBmMapUnit
+  label: gBmMapUnit
+  type: u8 **
+  addr: 0x202E4D8
+  size: 0x4
+  line: bmmap.c:30
+-
+  desc: gBmMapTerrain
+  label: gBmMapTerrain
+  type: u8 **
+  addr: 0x202E4DC
+  size: 0x4
+  line: bmmap.c:31
+-
+  desc: gBmMapMovement
+  label: gBmMapMovement
+  type: u8 **
+  addr: 0x202E4E0
+  size: 0x4
+  line: bmmap.c:32
+-
+  desc: gBmMapRange
+  label: gBmMapRange
+  type: u8 **
+  addr: 0x202E4E4
+  size: 0x4
+  line: bmmap.c:33
+-
+  desc: gBmMapFog
+  label: gBmMapFog
+  type: u8 **
+  addr: 0x202E4E8
+  size: 0x4
+  line: bmmap.c:34
+-
+  desc: gBmMapHidden
+  label: gBmMapHidden
+  type: u8 **
+  addr: 0x202E4EC
+  size: 0x4
+  line: bmmap.c:35
+-
+  desc: gBmMapOther
+  label: gBmMapOther
+  type: u8 **
+  addr: 0x202E4F0
+  size: 0x4
+  line: bmmap.c:36
+-
+  desc: sBmMapUnitPool
+  label: sBmMapUnitPool
+  type: u8 [MAP_POOL_SIZE]
+  addr: 0x202E4F4
+  size: 0x7B8
+  line: bmmap.c:38
+-
+  desc: sBmMapTerrainPool
+  label: sBmMapTerrainPool
+  type: u8 [MAP_POOL_SIZE]
+  addr: 0x202ECAC
+  size: 0x7B8
+  line: bmmap.c:39
+-
+  desc: sBmMapFogPool
+  label: sBmMapFogPool
+  type: u8 [MAP_POOL_SIZE]
+  addr: 0x202F464
+  size: 0x7B8
+  line: bmmap.c:40
+-
+  desc: sBmMapHiddenPool
+  label: sBmMapHiddenPool
+  type: u8 [MAP_POOL_SIZE]
+  addr: 0x202FC1C
+  size: 0x7B8
+  line: bmmap.c:41
+-
+  desc: sBmMapOtherPool
+  label: sBmMapOtherPool
+  type: u8 [MAP_POOL_SIZE]
+  addr: 0x20303D4
+  size: 0x7B8
+  line: bmmap.c:42
+-
+  desc: sTilesetConfig
+  label: sTilesetConfig
+  type: u16 [0x1000 + 0x200]
+  addr: 0x2030B8C
+  size: 0x2400
+  line: bmmap.c:44
+-
+  desc: sBmBaseTilesPool
+  label: sBmBaseTilesPool
+  type: u16 [MAP_POOL_SIZE]
+  addr: 0x2032F8C
+  size: 0xF70
+  line: bmmap.c:46
+-
+  desc: gWorkingMovementScript
+  label: gWorkingMovementScript
+  type: u8 []
+  addr: 0x2033EFC
+  size: 0x40
+  line: ''
+-
+  desc: gSubjectUnit
+  label: gSubjectUnit
+  type: struct Unit *
+  addr: 0x2033F3C
+  size: 0x4
+  line: bmtarget.c:17
+-
+  desc: gUnknown_02033F40
+  label: gUnknown_02033F40
+  type: null
+  addr: 0x2033F40
+  size: 0xD0
+  line: ''
+-
+  desc: gUnknown_02034010
+  label: gUnknown_02034010
+  type: null
+  addr: 0x2034010
+  size: 0x2000
+  line: ''
+-
+  desc: gUnknown_02036010
+  label: gUnknown_02036010
+  type: null
+  addr: 0x2036010
+  size: 0x2000
+  line: ''
+-
+  desc: gUnknown_02038010
+  label: gUnknown_02038010
+  type: null
+  addr: 0x2038010
+  size: 0x2000
+  line: ''
+-
+  desc: gUnknown_0203A010
+  label: gUnknown_0203A010
+  type: null
+  addr: 0x203A010
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203A014
+  label: gUnknown_0203A014
+  type: null
+  addr: 0x203A014
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203A018
+  label: gUnknown_0203A018
+  type: null
+  addr: 0x203A018
+  size: 0x4B0
+  line: ''
+-
+  desc: gUnknown_0203A4C8
+  label: gUnknown_0203A4C8
+  type: null
+  addr: 0x203A4C8
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203A4CC
+  label: gUnknown_0203A4CC
+  type: null
+  addr: 0x203A4CC
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203A4D0
+  label: gUnknown_0203A4D0
+  type: null
+  addr: 0x203A4D0
+  size: 0x4
+  line: ''
+-
+  desc: gBattleStats
+  label: gBattleStats
+  type: struct BattleStats
+  addr: 0x203A4D4
+  size: 0x18
+  line: bmbattle.c:60
+-
+  desc: gBattleActor
+  label: gBattleActor
+  type: struct BattleUnit
+  addr: 0x203A4EC
+  size: 0x80
+  line: bmbattle.c:62
+-
+  desc: gBattleTarget
+  label: gBattleTarget
+  type: struct BattleUnit
+  addr: 0x203A56C
+  size: 0x80
+  line: bmbattle.c:63
+-
+  desc: gBattleHitArray
+  label: gBattleHitArray
+  type: struct BattleHit [BATTLE_HIT_MAX]
+  addr: 0x203A5EC
+  size: 0x1C
+  line: bmbattle.c:65
+-
+  desc: gBattleHitIterator
+  label: gBattleHitIterator
+  type: struct BattleHit *
+  addr: 0x203A608
+  size: 0x4
+  line: bmbattle.c:66
+-
+  desc: sUnknown_0203A60C
+  label: sUnknown_0203A60C
+  type: "struct \n{\n  u8 unk00;\n  u8 unk01;\n  u8 unk02;\n}"
+  addr: 0x203A60C
+  size: 0x4
+  line: bmbattle.c:72
+-
+  desc: sTradeMenuProc
+  label: sTradeMenuProc
+  type: struct TradeMenuProc *
+  addr: 0x203A610
+  size: 0x4
+  line: bmtrade.c:135
+-
+  desc: sTrapPool
+  label: sTrapPool
+  type: struct Trap [TRAP_MAX_COUNT]
+  addr: 0x203A614
+  size: 0x200
+  line: bmtrick.c:19
+-
+  desc: sTrapLast
+  label: sTrapLast
+  type: struct Trap
+  addr: 0x203A814
+  size: 0x8
+  line: bmtrick.c:20
+-
+  desc: gConvoyItemArray
+  label: gConvoyItemArray
+  type: u16 []
+  addr: 0x203A81C
+  size: 0xC8
+  line: bmcontainer.c:8
+-
+  desc: sUnitStackBase
+  label: sUnitStackBase
+  type: struct Unit *
+  addr: 0x203A8E4
+  size: 0x4
+  line: bmusort.c:6
+-
+  desc: sUnitStackTop
+  label: sUnitStackTop
+  type: struct Unit *
+  addr: 0x203A8E8
+  size: 0x4
+  line: bmusort.c:7
+-
+  desc: sUnitStackSize
+  label: sUnitStackSize
+  type: u8
+  addr: 0x203A8EC
+  size: 0x1
+  line: bmusort.c:8
+-
+  desc: gUnknown_0203A8F0
+  label: gUnknown_0203A8F0
+  type: struct ArenaData
+  addr: 0x203A8F0
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_0203A910
+  label: gUnknown_0203A910
+  type: struct Unit
+  addr: 0x203A910
+  size: 0x48
+  line: ''
+-
+  desc: gActionData
+  label: gActionData
+  type: struct ActionData
+  addr: 0x203A958
+  size: 0x6
+  line: ''
+-
+  desc: gUnknown_0203A95E
+  label: gUnknown_0203A95E
+  type: null
+  addr: 0x203A95E
+  size: 0x16
+  line: ''
+-
+  desc: gUnknown_0203A974
+  label: gUnknown_0203A974
+  type: null
+  addr: 0x203A974
+  size: 0x88
+  line: ''
+-
+  desc: gUnknown_0203A9FC
+  label: gUnknown_0203A9FC
+  type: null
+  addr: 0x203A9FC
+  size: 0x8
+  line: ''
+-
+  desc: gAiState
+  label: gAiState
+  type: struct AiState
+  addr: 0x203AA04
+  size: 0x7B
+  line: ''
+-
+  desc: gUnknown_0203AA7F
+  label: gUnknown_0203AA7F
+  type: null
+  addr: 0x203AA7F
+  size: 0x1
+  line: ''
+-
+  desc: gUnknown_0203AA80
+  label: gUnknown_0203AA80
+  type: null
+  addr: 0x203AA80
+  size: 0xA
+  line: ''
+-
+  desc: gUnknown_0203AA8A
+  label: gUnknown_0203AA8A
+  type: null
+  addr: 0x203AA8A
+  size: 0xA
+  line: ''
+-
+  desc: gAiDecision
+  label: gAiDecision
+  type: struct AiDecision
+  addr: 0x203AA94
+  size: 0xC
+  line: ''
+-
+  desc: gUnknown_0203AAA0
+  label: gUnknown_0203AAA0
+  type: null
+  addr: 0x203AAA0
+  size: 0x1B84
+  line: ''
+-
+  desc: gUnknown_0203C624
+  label: gUnknown_0203C624
+  type: null
+  addr: 0x203C624
+  size: 0x400
+  line: ''
+-
+  desc: gUnknown_0203CA24
+  label: gUnknown_0203CA24
+  type: null
+  addr: 0x203CA24
+  size: 0x1000
+  line: ''
+-
+  desc: gUnknown_0203DA24
+  label: gUnknown_0203DA24
+  type: null
+  addr: 0x203DA24
+  size: 0xC
+  line: ''
+-
+  desc: gUnknown_0203DA30
+  label: gUnknown_0203DA30
+  type: null
+  addr: 0x203DA30
+  size: 0x48
+  line: ''
+-
+  desc: gUnknown_0203DA78
+  label: gUnknown_0203DA78
+  type: null
+  addr: 0x203DA78
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_0203DA88
+  label: gUnknown_0203DA88
+  type: null
+  addr: 0x203DA88
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_0203DAB0
+  label: gUnknown_0203DAB0
+  type: null
+  addr: 0x203DAB0
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_0203DAC0
+  label: gUnknown_0203DAC0
+  type: null
+  addr: 0x203DAC0
+  size: 0x5
+  line: ''
+-
+  desc: gUnknown_0203DAC5
+  label: gUnknown_0203DAC5
+  type: null
+  addr: 0x203DAC5
+  size: 0x4B
+  line: ''
+-
+  desc: gUnknown_0203DB10
+  label: gUnknown_0203DB10
+  type: null
+  addr: 0x203DB10
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203DB14
+  label: gUnknown_0203DB14
+  type: null
+  addr: 0x203DB14
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_0203DB1C
+  label: gUnknown_0203DB1C
+  type: null
+  addr: 0x203DB1C
+  size: 0x48
+  line: ''
+-
+  desc: gUnknown_0203DB64
+  label: gUnknown_0203DB64
+  type: null
+  addr: 0x203DB64
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_0203DB7C
+  label: gUnknown_0203DB7C
+  type: null
+  addr: 0x203DB7C
+  size: 0xC8
+  line: ''
+-
+  desc: gUnknown_0203DC44
+  label: gUnknown_0203DC44
+  type: null
+  addr: 0x203DC44
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203DC48
+  label: gUnknown_0203DC48
+  type: null
+  addr: 0x203DC48
+  size: 0xC4
+  line: ''
+-
+  desc: gUnknown_0203DD0C
+  label: gUnknown_0203DD0C
+  type: null
+  addr: 0x203DD0C
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_0203DD1C
+  label: gUnknown_0203DD1C
+  type: null
+  addr: 0x203DD1C
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_0203DD24
+  label: gUnknown_0203DD24
+  type: null
+  addr: 0x203DD24
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203DD28
+  label: gUnknown_0203DD28
+  type: null
+  addr: 0x203DD28
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203DD2C
+  label: gUnknown_0203DD2C
+  type: null
+  addr: 0x203DD2C
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_0203DD4C
+  label: gUnknown_0203DD4C
+  type: null
+  addr: 0x203DD4C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203DD50
+  label: gUnknown_0203DD50
+  type: null
+  addr: 0x203DD50
+  size: 0x3C
+  line: ''
+-
+  desc: gUnknown_0203DD8C
+  label: gUnknown_0203DD8C
+  type: null
+  addr: 0x203DD8C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203DD90
+  label: gUnknown_0203DD90
+  type: null
+  addr: 0x203DD90
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203DD94
+  label: gUnknown_0203DD94
+  type: null
+  addr: 0x203DD94
+  size: 0x1
+  line: ''
+-
+  desc: gUnknown_0203DD95
+  label: gUnknown_0203DD95
+  type: null
+  addr: 0x203DD95
+  size: 0x5
+  line: ''
+-
+  desc: gUnknown_0203DD9A
+  label: gUnknown_0203DD9A
+  type: null
+  addr: 0x203DD9A
+  size: 0x5
+  line: ''
+-
+  desc: gUnknown_0203DD9F
+  label: gUnknown_0203DD9F
+  type: null
+  addr: 0x203DD9F
+  size: 0x15
+  line: ''
+-
+  desc: gUnknown_0203DDB4
+  label: gUnknown_0203DDB4
+  type: null
+  addr: 0x203DDB4
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_0203DDDC
+  label: gUnknown_0203DDDC
+  type: null
+  addr: 0x203DDDC
+  size: 0x4
+  line: ''
+-
+  desc: sPrevHandScreenPosition
+  label: sPrevHandScreenPosition
+  type: struct Vec2
+  addr: 0x203DDE0
+  size: 0x4
+  line: uiutils.c:173
+-
+  desc: sPrevHandClockFrame
+  label: sPrevHandClockFrame
+  type: int
+  addr: 0x203DDE4
+  size: 0x4
+  line: uiutils.c:176
+-
+  desc: sSelectTargetRoot
+  label: sSelectTargetRoot
+  type: struct Vec2
+  addr: 0x203DDE8
+  size: 0x4
+  line: uiselecttarget.c:11
+-
+  desc: sSelectTargetList
+  label: sSelectTargetList
+  type: struct SelectTarget [MAX_TARGET_LIST_COUNT]
+  addr: 0x203DDEC
+  size: 0x300
+  line: uiselecttarget.c:13
+-
+  desc: sSelectTargetCount
+  label: sSelectTargetCount
+  type: int
+  addr: 0x203E0EC
+  size: 0x4
+  line: uiselecttarget.c:15
+-
+  desc: gUnknown_0203E0F0
+  label: gUnknown_0203E0F0
+  type: null
+  addr: 0x203E0F0
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E0F4
+  label: gUnknown_0203E0F4
+  type: null
+  addr: 0x203E0F4
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E0F8
+  label: gUnknown_0203E0F8
+  type: null
+  addr: 0x203E0F8
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E0FC
+  label: gUnknown_0203E0FC
+  type: null
+  addr: 0x203E0FC
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_0203E0FE
+  label: gUnknown_0203E0FE
+  type: null
+  addr: 0x203E0FE
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_0203E100
+  label: gUnknown_0203E100
+  type: null
+  addr: 0x203E100
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_0203E102
+  label: gUnknown_0203E102
+  type: null
+  addr: 0x203E102
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_0203E104
+  label: gUnknown_0203E104
+  type: null
+  addr: 0x203E104
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E108
+  label: gUnknown_0203E108
+  type: null
+  addr: 0x203E108
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E10C
+  label: gUnknown_0203E10C
+  type: null
+  addr: 0x203E10C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E110
+  label: gUnknown_0203E110
+  type: null
+  addr: 0x203E110
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E114
+  label: gUnknown_0203E114
+  type: null
+  addr: 0x203E114
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E118
+  label: gUnknown_0203E118
+  type: null
+  addr: 0x203E118
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_0203E11A
+  label: gUnknown_0203E11A
+  type: null
+  addr: 0x203E11A
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_0203E11C
+  label: gUnknown_0203E11C
+  type: null
+  addr: 0x203E11C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E120
+  label: gUnknown_0203E120
+  type: null
+  addr: 0x203E120
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_0203E122
+  label: gUnknown_0203E122
+  type: null
+  addr: 0x203E122
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_0203E12A
+  label: gUnknown_0203E12A
+  type: null
+  addr: 0x203E12A
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_0203E152
+  label: gUnknown_0203E152
+  type: null
+  addr: 0x203E152
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E156
+  label: gUnknown_0203E156
+  type: null
+  addr: 0x203E156
+  size: 0x2C
+  line: ''
+-
+  desc: gUnknown_0203E182
+  label: gUnknown_0203E182
+  type: null
+  addr: 0x203E182
+  size: 0x6
+  line: ''
+-
+  desc: gUnknown_0203E188
+  label: gUnknown_0203E188
+  type: null
+  addr: 0x203E188
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E18C
+  label: gUnknown_0203E18C
+  type: null
+  addr: 0x203E18C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E190
+  label: gUnknown_0203E190
+  type: null
+  addr: 0x203E190
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E194
+  label: gUnknown_0203E194
+  type: null
+  addr: 0x203E194
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_0203E19C
+  label: gUnknown_0203E19C
+  type: null
+  addr: 0x203E19C
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_0203E1A4
+  label: gUnknown_0203E1A4
+  type: null
+  addr: 0x203E1A4
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_0203E1AC
+  label: gUnknown_0203E1AC
+  type: null
+  addr: 0x203E1AC
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E1B0
+  label: gUnknown_0203E1B0
+  type: null
+  addr: 0x203E1B0
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E1B4
+  label: gUnknown_0203E1B4
+  type: null
+  addr: 0x203E1B4
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E1B8
+  label: gUnknown_0203E1B8
+  type: null
+  addr: 0x203E1B8
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E1BC
+  label: gUnknown_0203E1BC
+  type: null
+  addr: 0x203E1BC
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E1C0
+  label: gUnknown_0203E1C0
+  type: null
+  addr: 0x203E1C0
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E1C4
+  label: gUnknown_0203E1C4
+  type: null
+  addr: 0x203E1C4
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E1C8
+  label: gUnknown_0203E1C8
+  type: null
+  addr: 0x203E1C8
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E1CC
+  label: gUnknown_0203E1CC
+  type: null
+  addr: 0x203E1CC
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E1D0
+  label: gUnknown_0203E1D0
+  type: null
+  addr: 0x203E1D0
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E1D4
+  label: gUnknown_0203E1D4
+  type: null
+  addr: 0x203E1D4
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E1D8
+  label: gUnknown_0203E1D8
+  type: null
+  addr: 0x203E1D8
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E1DC
+  label: gUnknown_0203E1DC
+  type: null
+  addr: 0x203E1DC
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E1E0
+  label: gUnknown_0203E1E0
+  type: null
+  addr: 0x203E1E0
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E1E4
+  label: gUnknown_0203E1E4
+  type: null
+  addr: 0x203E1E4
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E1E8
+  label: gUnknown_0203E1E8
+  type: null
+  addr: 0x203E1E8
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E1EC
+  label: gUnknown_0203E1EC
+  type: null
+  addr: 0x203E1EC
+  size: 0x4
+  line: ''
+-
+  desc: gCurrentMapAnimState
+  label: gCurrentMapAnimState
+  type: struct MapAnimState
+  addr: 0x203E1F0
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_0203E1F8
+  label: gUnknown_0203E1F8
+  type: null
+  addr: 0x203E1F8
+  size: 0x5C
+  line: ''
+-
+  desc: gUnknown_0203E254
+  label: gUnknown_0203E254
+  type: null
+  addr: 0x203E254
+  size: 0x500
+  line: ''
+-
+  desc: gUnknown_0203E754
+  label: gUnknown_0203E754
+  type: null
+  addr: 0x203E754
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_0203E75C
+  label: gUnknown_0203E75C
+  type: null
+  addr: 0x203E75C
+  size: 0x8
+  line: ''
+-
+  desc: sStatScreenInfo
+  label: sStatScreenInfo
+  type: struct StatScreenInfo
+  addr: 0x203E764
+  size: 0x4
+  line: statscreen.c:154
+-
+  desc: sMutableHbi
+  label: sMutableHbi
+  type: struct HelpBoxInfo
+  addr: 0x203E768
+  size: 0x1C
+  line: statscreen.c:156
+-
+  desc: sLastHbi
+  label: sLastHbi
+  type: struct HelpBoxInfo
+  addr: 0x203E784
+  size: 0x4
+  line: statscreen.c:157
+-
+  desc: sHbOrigin
+  label: sHbOrigin
+  type: struct Vec2
+  addr: 0x203E788
+  size: 0x4
+  line: statscreen.c:158
+-
+  desc: gUnknown_0203E78C
+  label: gUnknown_0203E78C
+  type: null
+  addr: 0x203E78C
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_0203E794
+  label: gUnknown_0203E794
+  type: null
+  addr: 0x203E794
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_0203E7AC
+  label: gUnknown_0203E7AC
+  type: null
+  addr: 0x203E7AC
+  size: 0x1C
+  line: ''
+-
+  desc: gUnknown_0203E7C8
+  label: gUnknown_0203E7C8
+  type: null
+  addr: 0x203E7C8
+  size: 0x1C
+  line: ''
+-
+  desc: gUnknown_0203E7E4
+  label: gUnknown_0203E7E4
+  type: null
+  addr: 0x203E7E4
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E7E8
+  label: gUnknown_0203E7E8
+  type: null
+  addr: 0x203E7E8
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_0203E800
+  label: gUnknown_0203E800
+  type: null
+  addr: 0x203E800
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_0203E828
+  label: gUnknown_0203E828
+  type: null
+  addr: 0x203E828
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E82C
+  label: gUnknown_0203E82C
+  type: null
+  addr: 0x203E82C
+  size: 0x50
+  line: ''
+-
+  desc: gUnknown_0203E87C
+  label: gUnknown_0203E87C
+  type: null
+  addr: 0x203E87C
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_0203E884
+  label: gUnknown_0203E884
+  type: null
+  addr: 0x203E884
+  size: 0xA
+  line: ''
+-
+  desc: gBoolSramWorking
+  label: gBoolSramWorking
+  type: s8
+  addr: 0x203E88E
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_0203E890
+  label: gUnknown_0203E890
+  type: null
+  addr: 0x203E890
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203E894
+  label: gUnknown_0203E894
+  type: null
+  addr: 0x203E894
+  size: 0x460
+  line: ''
+-
+  desc: gUnknown_0203ECF4
+  label: gUnknown_0203ECF4
+  type: null
+  addr: 0x203ECF4
+  size: 0xC0
+  line: ''
+-
+  desc: gUnknown_0203EDB4
+  label: gUnknown_0203EDB4
+  type: null
+  addr: 0x203EDB4
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203EDB8
+  label: gUnknown_0203EDB8
+  type: null
+  addr: 0x203EDB8
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203EDBC
+  label: gUnknown_0203EDBC
+  type: null
+  addr: 0x203EDBC
+  size: 0xC4
+  line: ''
+-
+  desc: gUnknown_0203EE80
+  label: gUnknown_0203EE80
+  type: null
+  addr: 0x203EE80
+  size: 0xC4
+  line: ''
+-
+  desc: gUnknown_0203EF44
+  label: gUnknown_0203EF44
+  type: null
+  addr: 0x203EF44
+  size: 0x1C
+  line: ''
+-
+  desc: gUnknown_0203EF60
+  label: gUnknown_0203EF60
+  type: null
+  addr: 0x203EF60
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203EF64
+  label: gUnknown_0203EF64
+  type: null
+  addr: 0x203EF64
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0203EF68
+  label: gUnknown_0203EF68
+  type: null
+  addr: 0x203EF68
+  size: 0x4C
+  line: ''
+-
+  desc: gUnknown_0203EFB4
+  label: gUnknown_0203EFB4
+  type: null
+  addr: 0x203EFB4
+  size: 0x4
+  line: ''
+-
+  desc: end
+  label: end
+  type: int
+  addr: 0x203EFB8
+  size: 0x0
+  line: ''
+-
+  desc: gRNSeeds
+  label: gRNSeeds
+  type: u16 [3]
   addr: 0x3000000
+  size: 0x6
+  line: rng.c:4
 -
-  desc: 16-bit frame counter
-  label: FrameCounter16Bit
-  type: u16
-  addr: 0x3000002
--
-  desc: Stereo flag
-  label: StereoFlag
-  type: u8
-  addr: 0x3000004
--
-  desc: Written to BLDALPHA (alpha blending coefficients)
-  label: WrittenToBLDALPHA
-  type: u16
-  addr: 0x3000006
--
-  desc: Written to BLDCNT (color special effects selection)
-  label: WrittenToBLDCNT
-  type: u16
+  desc: gLCGRNValue
+  label: gLCGRNValue
+  type: int
   addr: 0x3000008
+  size: 0x4
+  line: rng.c:5
 -
-  desc: Written to DISPCNT (LCD control)
-  label: WrittenToDISPCNT
-  type: u16
-  addr: 0x300000A
+  desc: gUnknown_0300000C
+  label: gUnknown_0300000C
+  type: s8
+  addr: 0x300000C
+  size: 0x1
+  line: ''
 -
-  desc: Written to WININ_H (inside of window 1)
-  label: WrittenToWININ_H
+  desc: sModifiedBGs
+  label: sModifiedBGs
   type: u8
+  addr: 0x300000D
+  size: 0x1
+  line: ''
+-
+  desc: sModifiedPalette
+  label: sModifiedPalette
+  type: s8
   addr: 0x300000E
+  size: 0x2
+  line: ''
 -
-  desc: Written to WINOUT_L (outside of windows)
-  label: WrittenToWINOUT_L
-  type: u8
-  addr: 0x300000F
--
-  desc: Written to 0x05000000 (transparent color)
-  label: WrittenTo5000000
+  desc: gUnknown_03000010
+  label: gUnknown_03000010
   type: u16
   addr: 0x3000010
+  size: 0x4
+  line: ''
 -
-  desc: Written to BLDY (brightness coefficient)
-  label: WrittenToBLDY
-  type: s8
-  addr: 0x3000012
--
-  desc: File screen options unlocked
-  label: FileScreenOptionsUnlocked
-  type: FileScreenOptionsUnlocked
+  desc: gGameClock
+  label: gGameClock
+  type: u32
   addr: 0x3000014
+  size: 0x4
+  line: ''
 -
-  desc: Language
-  label: Language
+  desc: gUnknown_03000018
+  label: gUnknown_03000018
   type: u8
+  addr: 0x3000018
+  size: 0x1
+  line: ''
+-
+  desc: gUnknown_03000019
+  label: gUnknown_03000019
+  type: u8
+  addr: 0x3000019
+  size: 0x1
+  line: ''
+-
+  desc: gUnknown_0300001A
+  label: gUnknown_0300001A
+  type: u8
+  addr: 0x300001A
+  size: 0x6
+  line: ''
+-
+  desc: gUnknown_03000020
+  label: gUnknown_03000020
+  type: struct OamDataTransfer
   addr: 0x3000020
-  enum: Language
+  size: 0x10
+  line: ''
 -
-  desc: Game completion
-  label: GameCompletion
-  type: GameCompletion
-  addr: 0x3000024
--
-  desc: Completed game flag copy
-  label: CompletedGameFlagCopy
-  type: u8
-  addr: 0x3000028
--
-  desc: Fades backgrounds to black or white
-  label: FadeBGBlackWhite
-  type: u8
-  addr: 0x3000029
-  enum: BackgroundFade
--
-  desc: Which background's position is written to BG3OFS
-  label: BGPositionWrittenToBG3OFS
-  type: u8
-  addr: 0x300002A
--
-  desc: Samus on top of backgrounds flag
-  label: SamusOnTopOfBGFlag
-  type: u8
-  addr: 0x300002B
--
-  desc: Difficulty
-  label: Difficulty
-  type: u8
-  addr: 0x300002C
-  enum: Difficulty
--
-  desc: Use mothership doors flag
-  label: MothershipDoorsFlag
-  type: u8
-  addr: 0x300002D
--
-  desc: Time attack flag
-  label: TimeAttackFlag
-  type: u8
-  addr: 0x300002E
--
-  desc: Room's music track
-  label: RoomMusicTrack
-  type: u16
+  desc: gUnknown_03000030
+  label: gUnknown_03000030
+  type: struct OamDataTransfer
   addr: 0x3000030
+  size: 0x10
+  line: ''
 -
-  desc: Current demo
-  label: CurrDemo
-  type: CurrDemo
-  addr: 0x3000038
+  desc: sMusicProc1
+  label: sMusicProc1
+  type: struct Proc *
+  addr: 0x3000040
+  size: 0x4
+  line: soundwrapper.c:18
 -
-  desc: Reboot game flag
-  label: RebootGameFlag
-  type: u8
-  addr: 0x300003C
--
-  desc: Disable scrolling flag
-  label: DisableScrollingFlag
-  type: u8
-  addr: 0x300003D
--
-  desc: Skip door transition flag
-  label: SkipDoorTransitionFlag
-  type: u8
-  addr: 0x3000042
--
-  desc: Disable soft-reset flag
-  label: DisableSoftResetFlag
-  type: u8
-  addr: 0x3000043
--
-  desc: Collecting tank flag
-  label: CollectingTankFlag
-  type: u8
+  desc: sMusicProc2
+  label: sMusicProc2
+  type: struct Proc *
   addr: 0x3000044
+  size: 0x4
+  line: soundwrapper.c:19
 -
-  desc: Disable animated graphics timer
-  label: DisableAnimatedGfxTimer
-  type: u8
-  addr: 0x3000045
--
-  desc: Animated graphics to update
-  label: AnimatedGfxToUpdate
-  type: flags16
-  addr: 0x3000046
--
-  desc: Disable doors and tanks flag
-  label: DisableDoorsAndTanksFlag
-  type: u8
+  desc: sSceneStateCore
+  label: sSceneStateCore
+  type: struct SceneState
   addr: 0x3000048
--
-  desc: Disable pause flag
-  label: DisablePauseFlag
-  type: u8
-  addr: 0x3000049
--
-  desc: Hide HUD flag
-  label: HideHudFlag
-  type: u8
-  addr: 0x300004A
--
-  desc: Ship landing cutscene flag
-  label: ShipLandingCutsceneFlag
-  type: u8
-  addr: 0x300004B
--
-  desc: Disable clipdata changing transparency flag
-  label: DisableClipdataChangingTransparencyFlag
-  type: u8
-  addr: 0x300004C
--
-  desc: Disable animated palette flag
-  label: DisableAnimatedPaletteFlag
-  type: u8
-  addr: 0x300004D
--
-  desc: Current area
-  label: AreaID
-  type: u8
-  addr: 0x3000054
-  enum: AreaID
--
-  desc: Current room
-  label: RoomID
-  type: u8
-  addr: 0x3000055
--
-  desc: Last door used
-  label: PrevDoor
-  type: u8
-  addr: 0x3000056
--
-  desc: Last door properties
-  label: PrevDoorProperties
-  type: u8
-  addr: 0x3000057
--
-  desc: Bit 6 of above, displays new location pop-up
-  label: DoorDisplayLocationFlag
-  type: u8
-  addr: 0x3000058
--
-  desc: Minimap X coordinate
-  label: MinimapXPosition
-  type: u8
-  addr: 0x3000059
--
-  desc: Minimap Y coordinate
-  label: MinimapYPosition
-  type: u8
-  addr: 0x300005A
--
-  desc: Number of never reform blocks broken
-  label: NumNeverReformBlocksBroken
-  type: NumNeverReformBlocksBroken
-  addr: 0x300005B
--
-  desc: Number of items collected
-  label: NumItemsCollected
-  type: NumItemsCollected
-  addr: 0x3000063
--
-  desc: Current haze value
-  label: CurrHazeValue
-  type: u8
-  addr: 0x300006B
-  enum: HazeType
--
-  desc: Room effect actual Y position
-  label: RoomEffectActualYPosition
-  type: u16
-  addr: 0x300006C
--
-  desc: Room effect Y position offset
-  label: RoomEffectYPositionOffset
-  type: u16
-  addr: 0x300006E
--
-  desc: DISPCNT backup
-  label: DISPCNTBackup
-  type: u16
-  addr: 0x3000076
--
-  desc: Spriteset
-  label: SpritesetNum
-  type: u8
-  addr: 0x3000078
--
-  desc: Current clipdata affecting action
-  label: CurrClipdataAffectingAction
-  type: u8
-  addr: 0x3000079
-  enum: ClipdataAffectingAction
--
-  desc: Spriteset entry used
-  label: SpritesetEntryUsed
-  type: u8
-  addr: 0x300007A
--
-  desc: Door unlock timer
-  label: DoorUnlockTimer
-  type: u8
-  addr: 0x300007B
--
-  desc: Disable drawing sprites flag
-  label: DisableDrawingSpritesFlag
-  type: u8
-  addr: 0x300007C
--
-  desc: Current cutscene
-  label: CurrCutscene
-  type: u8
-  addr: 0x300007D
--
-  desc: Haze VRAM info
-  label: HazeVramInfo
-  type: HazeVramInfo
-  addr: 0x3000080
--
-  desc: Backup of I/O registers
-  label: BackupOfIORegisters
-  type: BackupOfIORegisters
-  addr: 0x3000088
--
-  desc: Background pointers and dimensions
-  label: BGPtrsAndDimensions
-  type: BGPtrsAndDimensions
-  addr: 0x300009C
--
-  desc: Current room entry
-  label: CurrRoomEntry
-  type: CurrRoomEntry
-  addr: 0x30000BC
--
-  desc: Current affecting clipdata
-  label: CurrAffectingClipdata
-  type: CurrAffectingClipdata
-  addr: 0x30000DC
--
-  desc: Background positions
-  label: BGPositions
-  type: BGPositions
-  addr: 0x30000E4
--
-  desc: BG2 movement
-  label: BG2Movement
-  type: BG2Movement
-  addr: 0x30000FC
--
-  desc: Lock screen position
-  label: LockScreenPosition
-  type: LockScreenPosition
-  addr: 0x3000100
--
-  desc: Suit flash effect
-  label: SuitFlashEffect
-  type: SuitFlashEffect
-  addr: 0x3000108
--
-  desc: Screen shake Y
-  label: ScreenShakeY
-  type: ScreenShake
-  addr: 0x3000110
--
-  desc: Screen shake X
-  label: ScreenShakeX
-  type: ScreenShake
-  addr: 0x3000114
--
-  desc: Current scrolls
-  label: CurrScrolls
-  type: CurrScrolls
-  addr: 0x3000118
--
-  desc: Current power bomb
-  label: CurrPowerBomb
-  type: CurrPowerBomb
-  addr: 0x3000130
--
-  desc: Screen position and velocity
-  label: ScreenPositionAndVelocity
-  type: ScreenPositionAndVelocity
-  addr: 0x3000144
--
-  desc: Max in-game time flag
-  label: MaxInGameTimeFlag
-  type: u8
-  addr: 0x300014C
--
-  desc: In-game timer
-  label: InGameTimer
-  type: InGameTime
-  addr: 0x3000150
--
-  desc: Best completion times (unused)
-  label: BestCompletionTimes
-  type: InGameTime
-  addr: 0x3000154
-  count: 0xC
--
-  desc: In-game time at bosses
-  label: InGameTimeAtBosses
-  type: InGameTimeAtBosses
-  addr: 0x3000184
--
-  desc: Last elevator used
-  label: LastElevatorUsed
-  type: LastElevatorUsed
-  addr: 0x3000198
--
-  desc: Alarm timer
-  label: AlarmTimer
-  type: u16
-  addr: 0x30001A8
--
-  desc: Sprite data
-  label: SpriteDataSlot0
-  type: SpriteData
-  addr: 0x30001AC
-  count: 0x18
--
-  desc: Spriteset sprite IDs
-  label: SpritesetSpriteIDs
-  type: u8
-  addr: 0x30006EC
-  count: 0xF
-  enum: PrimarySpriteID
--
-  desc: Spriteset sprite graphics slots
-  label: SpritesetSpriteGfxSlots
-  type: u8
-  addr: 0x30006FB
-  count: 0xF
--
-  desc: Sub-sprite data 1
-  label: SubSpriteData1
-  type: SubSpriteData
-  addr: 0x300070C
--
-  desc: Sub-sprite data 2
-  label: SubSpriteData2
-  type: SubSpriteData
-  addr: 0x3000720
--
-  desc: Current sprite being processed
-  label: CurrSpriteData
-  type: SpriteData
-  addr: 0x3000738
--
-  desc: Sprite debris
-  label: SpriteDebris
-  type: SpriteDebris
-  addr: 0x3000770
-  count: 0x8
--
-  desc: Previous vertical collision check
-  label: PrevVerticalCollisionCheck
-  type: u8
-  addr: 0x30007F0
-  enum: CollisionCheck
--
-  desc: Previous collision check
-  label: PrevCollisionCheck
-  type: u8
-  addr: 0x30007F1
-  enum: CollisionCheck
--
-  desc: Sprite draw order
-  label: SpriteDrawOrder
-  type: u8
-  addr: 0x30007F3
-  count: 0x18
--
-  desc: Boss work variables
-  label: BossWork
-  type: BossWork
-  addr: 0x300080C
--
-  desc: Sprite random number
-  label: SpriteRandomNum
-  type: u8
-  addr: 0x300083C
--
-  desc: Particle effects
-  label: ParticleEffects
-  type: ParticleEffect
-  addr: 0x3000840
-  count: 0x10
--
-  desc: Missiles highlight status
-  label: MissileHighlightStatus
-  type: u8
-  addr: 0x3000900
--
-  desc: Power bombs highlight status
-  label: PowerBombHighlightStatus
-  type: u8
-  addr: 0x3000901
--
-  desc: Super missiles highlight status
-  label: SuperMissileHighlightStatus
-  type: u8
-  addr: 0x3000902
--
-  desc: Update corner map flag
-  label: UpdateCornerMapFlag
-  type: u8
-  addr: 0x3000903
--
-  desc: Energy digits
-  label: EnergyDigits
-  type: AmmoDigits
-  addr: 0x3000904
--
-  desc: Max energy digits
-  label: MaxEnergyDigits
-  type: AmmoDigits
-  addr: 0x3000908
--
-  desc: Missiles digits
-  label: MissileDigits
-  type: AmmoDigits
-  addr: 0x300090C
--
-  desc: Power bombs digits
-  label: PowerBombDigits
-  type: AmmoDigits
-  addr: 0x3000910
--
-  desc: Super missiles digits
-  label: SuperMissileDigits
-  type: AmmoDigits
-  addr: 0x3000914
--
-  desc: Current particle effect OAM frame pointer
-  label: CurrParticleEffectOamFramePtr
-  type: ptr
-  addr: 0x3000918
--
-  desc: Ammo digit graphics
-  label: AmmoDigitGfx
-  type: gfx
-  addr: 0x300091C
-  size: 0x40
--
-  desc: Escape timer status
-  label: EscapeTimerStatus
-  type: u8
-  addr: 0x300095C
-  enum: EscapeTimerStatus
--
-  desc: Escape timer counter
-  label: EscapeTimerCounter
-  type: u8
-  addr: 0x300095D
--
-  desc: Escape timer digits
-  label: EscapeTimerDigits
-  type: EscapeTimerDigits
-  addr: 0x300095E
--
-  desc: Particle escape OAM frames
-  label: ParticleEscapeOamFrames
-  addr: 0x3000964
-  size: 0x2
-  count: 0x19
--
-  desc: Energy refill animation
-  label: EnergyRefillAnimation
-  type: u8
-  addr: 0x3000996
--
-  desc: Missile refill animation
-  label: MissileRefillAnimation
-  type: u8
-  addr: 0x3000997
--
-  desc: Super missile refill animation
-  label: SuperMissileRefillAnimation
-  type: u8
-  addr: 0x3000998
--
-  desc: Power bomb refill animation
-  label: PowerBombRefillAnimation
-  type: u8
-  addr: 0x3000999
--
-  desc: Particle Samus reflection OAM frames
-  label: ParticleSamusReflectionOamFrames
-  addr: 0x300099A
-  size: 0x2
-  count: 0x49
--
-  desc: Projectile data
-  label: ProjectileDataSlot0
-  type: ProjectileData
-  addr: 0x3000A2C
-  count: 0x10
--
-  desc: Arm cannon Y position
-  label: ArmCannonYPosition
-  type: u16
-  addr: 0x3000BEC
--
-  desc: Arm cannon X position
-  label: ArmCannonXPosition
-  type: u16
-  addr: 0x3000BEE
--
-  desc: Pause screen flag
-  label: PauseScreenFlag
-  type: u8
-  addr: 0x3000BF0
-  enum: PauseScreenFlag
--
-  desc: Area of previous room
-  label: AreaOfPrevRoom
-  type: u8
-  addr: 0x3000BF1
-  enum: AreaID
--
-  desc: File select options cursor index
-  label: FileSelectOptionsCursorIndex
-  type: u8
-  addr: 0x3000BF3
--
-  desc: Current message
-  label: CurrMessage
-  type: CurrMessage
-  addr: 0x3000C0C
--
-  desc: Most recent save file
-  label: MostRecentSaveFile
-  type: u8
-  addr: 0x3000C1E
--
-  desc: Game mode
-  label: GameMode
-  type: u16
-  addr: 0x3000C70
-  enum: GameMode
--
-  desc: Sub-game mode 1
-  label: SubGameMode1
-  type: u16
-  addr: 0x3000C72
--
-  desc: Sub-game mode 2
-  label: SubGameMode2
-  type: u8
-  addr: 0x3000C74
--
-  desc: Sub-game mode 3
-  label: SubGameMode3
-  type: u8
-  addr: 0x3000C75
--
-  desc: Cleared every frame
-  label: ClearedEveryFrame
-  type: u8
-  addr: 0x3000C76
--
-  desc: 8-bit frame counter
-  label: FrameCounter8Bit
-  type: u8
-  addr: 0x3000C77
--
-  desc: V-Blank request flag
-  label: VBlankRequestFlag
-  type: u16
-  addr: 0x3000C78
--
-  desc: Interrupt code
-  label: InterruptCode
-  addr: 0x3000C7C
-  size: 0x200
--
-  desc: OAM data
-  label: OamData
-  addr: 0x3000E7C
+  size: 0x84
+  line: ''
+-
+  desc: gUnknown_030000D0
+  label: gUnknown_030000D0
+  type: null
+  addr: 0x30000D0
   size: 0x8
-  count: 0xA0
+  line: ''
 -
-  desc: Button input
-  label: ButtonInput
+  desc: gUnknown_030000D8
+  label: gUnknown_030000D8
+  type: null
+  addr: 0x30000D8
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_030000E8
+  label: gUnknown_030000E8
+  type: null
+  addr: 0x30000E8
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_030000F0
+  label: gUnknown_030000F0
+  type: null
+  addr: 0x30000F0
+  size: 0x18
+  line: ''
+-
+  desc: sAPArray
+  label: sAPArray
+  type: struct APHandle [0x14]
+  addr: 0x3000108
+  size: 0x320
+  line: ap.c:50
+-
+  desc: gUnknown_03000428
+  label: gUnknown_03000428
+  type: null
+  addr: 0x3000428
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_03000430
+  label: gUnknown_03000430
+  type: null
+  addr: 0x3000430
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03000434
+  label: gUnknown_03000434
+  type: null
+  addr: 0x3000434
+  size: 0x4
+  line: ''
+-
+  desc: gEventCallQueue
+  label: gEventCallQueue
+  type: struct EnqueuedEventCall []
+  addr: 0x3000438
+  size: 0x80
+  line: ''
+-
+  desc: gEventSlots
+  label: gEventSlots
+  type: unsigned [0xE]
+  addr: 0x30004B8
+  size: 0x2C
+  line: ''
+-
+  desc: gUnknown_030004E4
+  label: gUnknown_030004E4
+  type: null
+  addr: 0x30004E4
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_030004E6
+  label: gUnknown_030004E6
+  type: null
+  addr: 0x30004E6
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_030004E8
+  label: gUnknown_030004E8
+  type: null
+  addr: 0x30004E8
+  size: 0x8
+  line: ''
+-
+  desc: gEventSlotQueue
+  label: gEventSlotQueue
+  type: unsigned []
+  addr: 0x30004F0
+  size: 0x78
+  line: ''
+-
+  desc: gEventSlotCounter
+  label: gEventSlotCounter
+  type: unsigned
+  addr: 0x3000568
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_03000570
+  label: gUnknown_03000570
+  type: null
+  addr: 0x3000570
+  size: 0x40
+  line: ''
+-
+  desc: gUnknown_030005B0
+  label: gUnknown_030005B0
+  type: struct ProcCmd [4]
+  addr: 0x30005B0
+  size: 0x20
+  line: ''
+-
+  desc: gPopupInst
+  label: gPopupInst
+  type: struct PopupInstruction [4]
+  addr: 0x30005D0
+  size: 0x20
+  line: popup.c:37
+-
+  desc: gpPopupUnit
+  label: gpPopupUnit
+  type: struct Unit *
+  addr: 0x30005F0
+  size: 0x4
+  line: popup.c:38
+-
+  desc: gPopupItem
+  label: gPopupItem
   type: u16
-  addr: 0x300137C
-  enum: ButtonInput
+  addr: 0x30005F4
+  size: 0x2
+  line: popup.c:39
 -
-  desc: Button input copy
-  label: ButtonInputCopy
-  type: u16
-  addr: 0x300137E
-  enum: ButtonInput
--
-  desc: Changed input
-  label: ChangedInput
-  type: u16
-  addr: 0x3001380
-  enum: ButtonInput
--
-  desc: Next OAM slot
-  label: NextOamSlot
-  type: u8
-  addr: 0x3001382
--
-  desc: Written to BG2X (BG2 reference point X-coordinate)
-  label: WrittenToBG2X
+  desc: gPopupNumber
+  label: gPopupNumber
   type: u32
-  addr: 0x3001394
+  addr: 0x30005F8
+  size: 0x4
+  line: popup.c:40
 -
-  desc: Written to BG2Y (BG2 reference point Y-coordinate)
-  label: WrittenToBG2Y
-  type: u32
-  addr: 0x3001398
+  desc: gUnknown_030005FC
+  label: gUnknown_030005FC
+  type: null
+  addr: 0x30005FC
+  size: 0x4
+  line: ''
 -
-  desc: Written to MOSAIC_H (mosaic size)
-  label: WrittenToMOSAIC_H
-  type: u16
-  addr: 0x300139C
+  desc: gUnknown_03000600
+  label: gUnknown_03000600
+  type: null
+  addr: 0x3000600
+  size: 0x100
+  line: ''
 -
-  desc: Written to MOSAIC_L (mosaic size)
-  label: WrittenToMOSAIC_L
-  type: u16
-  addr: 0x300139E
+  desc: gUnknown_03000700
+  label: gUnknown_03000700
+  type: null
+  addr: 0x3000700
+  size: 0x100
+  line: ''
 -
-  desc: Written to BG2PA (BG2 rotation/scaling parameter A)
-  label: WrittenToBG2PA
-  type: u16
-  addr: 0x30013A6
+  desc: gUnknown_03000800
+  label: gUnknown_03000800
+  type: null
+  addr: 0x3000800
+  size: 0x8
+  line: ''
 -
-  desc: Written to BG2PB (BG2 rotation/scaling parameter B)
-  label: WrittenToBG2PB
-  type: u16
-  addr: 0x30013A8
+  desc: sInitializingMap
+  label: sInitializingMap
+  type: u8 **
+  addr: 0x3000808
+  size: 0x4
+  line: bmmap.c:48
 -
-  desc: Written to BG2PC (BG2 rotation/scaling parameter C)
-  label: WrittenToBG2PC
-  type: u16
-  addr: 0x30013AA
+  desc: sBmMapMovementPool
+  label: sBmMapMovementPool
+  type: u8 [MAP_POOL_SIZE]
+  addr: 0x3000810
+  size: 0x7B8
+  line: bmmap.c:50
 -
-  desc: Written to BG2PD (BG2 rotation/scaling parameter D)
-  label: WrittenToBG2PD
-  type: u16
-  addr: 0x30013AC
+  desc: sBmMapRangePool
+  label: sBmMapRangePool
+  type: u8 [MAP_POOL_SIZE]
+  addr: 0x3000FC8
+  size: 0x7B8
+  line: bmmap.c:51
 -
-  desc: Written to BLDY (brightness coefficient)
-  label: WrittenToBLDY
-  type: u16
-  addr: 0x30013AE
--
-  desc: Written to BLDALPHA_L (alpha blending coefficients)
-  label: WrittenToBLDALPHA_L
-  type: u16
-  addr: 0x30013B0
--
-  desc: Written to BLDALPHA_H (alpha blending coefficients)
-  label: WrittenToBLDALPHA_H
-  type: u16
-  addr: 0x30013B2
--
-  desc: BG0 X position
-  label: BG0XPosition
-  type: u16
-  addr: 0x30013B4
--
-  desc: BG0 Y position
-  label: BG0YPosition
-  type: u16
-  addr: 0x30013B6
--
-  desc: BG1 X position
-  label: BG1XPosition
-  type: u16
-  addr: 0x30013B8
--
-  desc: BG1 Y position
-  label: BG1YPosition
-  type: u16
-  addr: 0x30013BA
--
-  desc: BG2 X position
-  label: BG2XPosition
-  type: u16
-  addr: 0x30013BC
--
-  desc: BG2 Y position
-  label: BG2YPosition
-  type: u16
-  addr: 0x30013BE
--
-  desc: BG3 X position
-  label: BG3XPosition
-  type: u16
-  addr: 0x30013C0
--
-  desc: BG3 Y position
-  label: BG3YPosition
-  type: u16
-  addr: 0x30013C2
--
-  desc: Samus data
-  label: SamusData
-  type: SamusData
-  addr: 0x30013D4
--
-  desc: Samus data copy when changing pose
-  label: SamusDataCopy
-  type: SamusData
-  addr: 0x30013F4
--
-  desc: Samus weapon info
-  label: SamusWeaponInfo
-  type: SamusWeaponInfo
-  addr: 0x3001414
--
-  desc: Samus echo
-  label: SamusEcho
-  type: SamusEcho
-  addr: 0x300141C
--
-  desc: Screw attack and speed booster animation
-  label: ScrewAttackSpeedBoosterAnimation
-  type: ScrewAttackSpeedBoosterAnimation
-  addr: 0x3001528
--
-  desc: Equipment
-  label: Equipment
-  type: Equipment
-  addr: 0x3001530
--
-  desc: Samus hazard damage
-  label: SamusHazardDamage
-  type: SamusHazardDamage
-  addr: 0x3001544
--
-  desc: Samus environment effects
-  label: SamusEnvironmentEffects
-  type: SamusEnvironmentEffect
-  addr: 0x300154C
-  count: 0x5
--
-  desc: Samus physics
-  label: SamusPhysics
-  type: SamusPhysics
-  addr: 0x3001588
--
-  desc: Previous X position
-  label: PrevXPosition
-  type: u16
-  addr: 0x3001600
--
-  desc: Previous Y position
-  label: PrevYPosition
-  type: u16
-  addr: 0x3001602
--
-  desc: Ending flags
-  label: EndingFlags
+  desc: gUnknown_03001780
+  label: gUnknown_03001780
   type: u8
-  addr: 0x3001604
-  enum: EndingFlags
+  addr: 0x3001780
+  size: 0x8
+  line: ''
 -
-  desc: Prevent movement timer
-  label: PreventMovementTimer
-  type: u16
-  addr: 0x3001606
+  desc: gUnknown_03001788
+  label: gUnknown_03001788
+  type: struct UnitDefinition
+  addr: 0x3001788
+  size: 0x18
+  line: ''
 -
-  desc: Disable drawing Samus and scrolling flag
-  label: DisableDrawingSamusAndScrollingFlag
-  type: u8
-  addr: 0x3001608
--
-  desc: Button assignments
-  label: ButtonAssignments
-  type: ButtonAssignments
-  addr: 0x300168C
--
-  desc: Time attack best time password
-  label: TimeAttackBestTimePassword
-  type: u8
-  addr: 0x3001694
-  count: 0x14
--
-  desc: Time attack best in-game time
-  label: TimeAttackBestInGameTime
-  type: InGameTime
-  addr: 0x30016A8
--
-  desc: Time attack best 100% time password
-  label: TimeAttackBest100pTimePassword
-  type: u8
-  addr: 0x30016AC
-  count: 0x14
--
-  desc: Time attack best 100% in-game time
-  label: TimeAttackBest100pInGameTime
-  type: InGameTime
-  addr: 0x30016C0
--
-  desc: Non-gameplay RAM
-  label: NonGameplayRam
-  type: NonGameplayRam
-  addr: 0x30016C4
--
-  desc: Haze process code
-  label: HazeProcessCode
-  type: thumb
-  addr: 0x3001944
-  size: 0x200
--
-  desc: Pointer to V-Blank code
-  label: VBlankCodePtr
-  type: ptr.thumb
-  addr: 0x3001CEC
--
-  desc: Pointer to H-Blank code
-  label: HBlankCodePtr
-  type: ptr.thumb
-  addr: 0x3001CF0
--
-  desc: Serial communication code pointer
-  label: SerialCommunicationCodePtr
-  type: ptr.thumb
-  addr: 0x3001CF4
--
-  desc: Pointer to V-Count code
-  label: VCountCodePtr
-  type: ptr.thumb
-  addr: 0x3001CF8
--
-  desc: Timer 3 overflow code pointer
-  label: Timer3OverflowCodePtr
-  type: ptr.thumb
-  addr: 0x3001CFC
--
-  desc: Music info
-  label: MusicInfo
-  type: MusicInfo
-  addr: 0x3001D00
--
-  desc: Raw sound data
-  label: RawSoundData
-  type: s8
-  addr: 0x3002924
-  count: 0xB40
--
-  desc: Pointer to sound code A
-  label: SoundCodeAPtr
-  type: ptr.arm
-  addr: 0x3003B8C
--
-  desc: Sound code A
-  label: SoundCodeARam
-  addr: 0x3003B90
-  size: 0x658
--
-  desc: Pointer to sound code B
-  label: SoundCodeBPtr
-  type: ptr.arm
-  addr: 0x30041E8
--
-  desc: Sound code B
-  label: SoundCodeBRam
-  addr: 0x30041EC
-  size: 0xA4
--
-  desc: Pointer to sound code C
-  label: SoundCodeCPtr
-  type: ptr.arm
-  addr: 0x3004290
--
-  desc: Sound code C
-  label: SoundCodeCRam
-  addr: 0x3004294
-  size: 0xAC
--
-  desc: Demo input number
-  label: DemoInputNumber
-  type: u16
-  addr: 0x30053CA
--
-  desc: Demo input timer
-  label: DemoInputTimer
-  type: u16
-  addr: 0x30053CC
--
-  desc: Demo button input
-  label: DemoButtonInput
-  type: u16
-  addr: 0x30053CE
-  enum: ButtonInput
--
-  desc: Samus palette
-  label: SamusPalette
-  type: palette
-  addr: 0x30053E0
-  count: 0x2
--
-  desc: Tilemap and clipdata pointers
-  label: TilemapAndClipdataPtrs
-  type: TilemapAndClipdataPtrs
-  addr: 0x3005450
--
-  desc: Hatch data
-  label: HatchData
-  type: HatchData
-  addr: 0x300545C
-  count: 0x10
--
-  desc: Number of valid hatches in current room
-  label: NumValidHatchesInCurrRoom
-  type: u8
-  addr: 0x30054DC
--
-  desc: Door position start
-  label: DoorPositionStart
-  type: DoorPositionStart
-  addr: 0x30054E0
--
-  desc: Doors unlocked flag
-  label: DoorsUnlockedFlag
-  type: u8
-  addr: 0x30054E4
--
-  desc: Hatches locked
-  label: HatchesLocked
-  type: HatchesLocked
-  addr: 0x30054E6
--
-  desc: BG3 movement
-  label: BG3Movement
-  type: BG3Movement
-  addr: 0x30054EC
--
-  desc: BG0 movement
-  label: BG0Movement
-  type: BG0Movement
-  addr: 0x30054F4
--
-  desc: Tileset's transparent color
-  label: TilesetTransparentColor
-  type: u16
-  addr: 0x30054FC
--
-  desc: Door transition Y position offset
-  label: DoorTransitionYPositionOffset
-  type: u16
-  addr: 0x300550C
--
-  desc: Destination room
-  label: DestinationRoom
-  type: u8
-  addr: 0x300550E
--
-  desc: Rain sound effect
-  label: RainSoundEffect
-  type: u16
-  addr: 0x3005518
--
-  desc: Current special background effect
-  label: CurrSpecialBGEffect
-  type: SpecialBGEffect
-  addr: 0x3005520
--
-  desc: Breaking and reforming blocks
-  label: BreakingAndReformingBlocks
-  type: BreakingOrReformingBlock
-  addr: 0x3005528
-  count: 0x30
--
-  desc: Tank behavior type
-  label: TankBehaviorType
-  type: u8
-  addr: 0x30056A8
--
-  desc: Last tank collected X position
-  label: LastTankCollectedXPosition
-  type: u8
-  addr: 0x30056AA
--
-  desc: Last tank collected Y position
-  label: LastTankCollectedYPosition
-  type: u8
-  addr: 0x30056AB
--
-  desc: Bomb chain data
-  label: BombChainData
-  type: BombChainData
-  addr: 0x30056AC
-  count: 0x4
--
-  desc: BLDALPHA related data 1
-  label: BLDALPHARelatedData1
-  type: BLDALPHAData
-  addr: 0x30056CC
--
-  desc: BLDALPHA related data 2
-  label: BLDALPHARelatedData2
-  type: BLDALPHAData
-  addr: 0x30056D4
--
-  desc: Animated palette timing
-  label: AnimatedPaletteTiming
-  type: AnimatedPaletteTiming
-  addr: 0x30056EC
--
-  desc: Animated palette and tileset number
-  label: AnimatedPaletteAndTilesetNum
-  type: AnimatedPaletteAndTilesetNum
-  addr: 0x30056F4
--
-  desc: Current special background effect
-  label: CurrSpecialBGEffect
-  type: SpecialBGEffect
-  addr: 0x30056F8
--
-  desc: Current room scrolls data pointer
-  label: CurrRoomScrollsDataPtr
-  type: ptr
-  addr: 0x3005708
--
-  desc: Haze loops 1
-  label: HazeLoops1
-  type: HazeLoops
-  addr: 0x300571C
--
-  desc: Haze loops 2
-  label: HazeLoops2
-  type: HazeLoops
-  addr: 0x3005724
--
-  desc: Haze process code pointer
-  label: HazeProcessCodePtr
-  type: ptr.thumb
-  addr: 0x300572C
--
-  desc: Animated tileset data
-  label: AnimatedTilesetData
-  addr: 0x3005730
+  desc: gDungeonState
+  label: gDungeonState
+  type: struct Struct030017A0
+  addr: 0x30017A0
   size: 0xC
-  count: 0x10
+  line: ''
 -
-  desc: IME backup
-  label: IME_Backup
+  desc: gUnknown_030017AC
+  label: gUnknown_030017AC
+  type: null
+  addr: 0x30017AC
+  size: 0x1C
+  line: ''
+-
+  desc: gUnknown_030017C8
+  label: gUnknown_030017C8
+  type: null
+  addr: 0x30017C8
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_030017CC
+  label: gUnknown_030017CC
+  type: null
+  addr: 0x30017CC
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_030017D0
+  label: gUnknown_030017D0
+  type: null
+  addr: 0x30017D0
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_030017D4
+  label: gUnknown_030017D4
+  type: null
+  addr: 0x30017D4
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_030017D8
+  label: gUnknown_030017D8
+  type: null
+  addr: 0x30017D8
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_030017E0
+  label: gUnknown_030017E0
+  type: null
+  addr: 0x30017E0
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_030017E4
+  label: gUnknown_030017E4
+  type: null
+  addr: 0x30017E4
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_030017E8
+  label: gUnknown_030017E8
+  type: null
+  addr: 0x30017E8
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_030017EC
+  label: gUnknown_030017EC
+  type: null
+  addr: 0x30017EC
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_030017F0
+  label: gUnknown_030017F0
+  type: null
+  addr: 0x30017F0
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_030017F2
+  label: gUnknown_030017F2
+  type: null
+  addr: 0x30017F2
+  size: 0x6
+  line: ''
+-
+  desc: gUnknown_030017F8
+  label: gUnknown_030017F8
+  type: null
+  addr: 0x30017F8
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_03001800
+  label: gUnknown_03001800
+  type: null
+  addr: 0x3001800
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_03001808
+  label: gUnknown_03001808
+  type: null
+  addr: 0x3001808
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0300180C
+  label: gUnknown_0300180C
+  type: null
+  addr: 0x300180C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03001810
+  label: gUnknown_03001810
+  type: null
+  addr: 0x3001810
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_03001818
+  label: gUnknown_03001818
+  type: null
+  addr: 0x3001818
+  size: 0x14
+  line: ''
+-
+  desc: gUnknown_0300182C
+  label: gUnknown_0300182C
+  type: null
+  addr: 0x300182C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03001830
+  label: gUnknown_03001830
+  type: null
+  addr: 0x3001830
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03001834
+  label: gUnknown_03001834
+  type: null
+  addr: 0x3001834
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03001838
+  label: gUnknown_03001838
+  type: null
+  addr: 0x3001838
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_03001840
+  label: gUnknown_03001840
+  type: null
+  addr: 0x3001840
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_03001850
+  label: gUnknown_03001850
+  type: null
+  addr: 0x3001850
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_03001860
+  label: gUnknown_03001860
+  type: null
+  addr: 0x3001860
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03001864
+  label: gUnknown_03001864
+  type: null
+  addr: 0x3001864
+  size: 0xC
+  line: ''
+-
+  desc: sMenuOverrides
+  label: sMenuOverrides
+  type: struct MenuItemOverride [MENU_OVERRIDE_MAX]
+  addr: 0x3001870
+  size: 0x80
+  line: uimenu.c:698
+-
+  desc: gUnknown_030018F0
+  label: gUnknown_030018F0
+  type: null
+  addr: 0x30018F0
+  size: 0x8
+  line: ''
+-
+  desc: sKeptPixelsWordMask.189
+  label: sKeptPixelsWordMask.189
+  type: null
+  addr: 0x30018F8
+  size: 0x4
+  line: ''
+-
+  desc: sClearedPixelWordMask.190
+  label: sClearedPixelWordMask.190
+  type: null
+  addr: 0x30018FC
+  size: 0x4
+  line: ''
+-
+  desc: sMUConfigArray
+  label: sMUConfigArray
+  type: struct MUConfig [MU_MAX_COUNT]
+  addr: 0x3001900
+  size: 0x130
+  line: mu.c:151
+-
+  desc: gUnknown_03001A30
+  label: gUnknown_03001A30
+  type: null
+  addr: 0x3001A30
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03001A34
+  label: gUnknown_03001A34
+  type: null
+  addr: 0x3001A34
+  size: 0x200
+  line: ''
+-
+  desc: gUnknown_03001C34
+  label: gUnknown_03001C34
+  type: null
+  addr: 0x3001C34
+  size: 0x1
+  line: ''
+-
+  desc: gUnknown_03001C35
+  label: gUnknown_03001C35
+  type: null
+  addr: 0x3001C35
+  size: 0x1
+  line: ''
+-
+  desc: gUnknown_03001C36
+  label: gUnknown_03001C36
+  type: null
+  addr: 0x3001C36
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_03001C38
+  label: gUnknown_03001C38
+  type: null
+  addr: 0x3001C38
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_03001C48
+  label: gUnknown_03001C48
+  type: null
+  addr: 0x3001C48
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_03001C50
+  label: gUnknown_03001C50
+  type: null
+  addr: 0x3001C50
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_03001C68
+  label: gUnknown_03001C68
+  type: null
+  addr: 0x3001C68
+  size: 0xC
+  line: ''
+-
+  desc: gUnknown_03001C74
+  label: gUnknown_03001C74
+  type: null
+  addr: 0x3001C74
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_03001C7C
+  label: gUnknown_03001C7C
+  type: null
+  addr: 0x3001C7C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03001C80
+  label: gUnknown_03001C80
+  type: null
+  addr: 0x3001C80
+  size: 0x40
+  line: ''
+-
+  desc: gUnknown_03001CC0
+  label: gUnknown_03001CC0
+  type: null
+  addr: 0x3001CC0
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_03001CC8
+  label: gUnknown_03001CC8
+  type: null
+  addr: 0x3001CC8
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_03001CE8
+  label: gUnknown_03001CE8
+  type: null
+  addr: 0x3001CE8
+  size: 0x68
+  line: ''
+-
+  desc: gUnknown_03001D50
+  label: gUnknown_03001D50
+  type: null
+  addr: 0x3001D50
+  size: 0x50
+  line: ''
+-
+  desc: gUnknown_03001DA0
+  label: gUnknown_03001DA0
+  type: null
+  addr: 0x3001DA0
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_03001DA8
+  label: gUnknown_03001DA8
+  type: null
+  addr: 0x3001DA8
+  size: 0x40
+  line: ''
+-
+  desc: gUnknown_03001DE8
+  label: gUnknown_03001DE8
+  type: null
+  addr: 0x3001DE8
+  size: 0x48
+  line: ''
+-
+  desc: gUnknown_03001E30
+  label: gUnknown_03001E30
+  type: null
+  addr: 0x3001E30
+  size: 0x8
+  line: ''
+-
+  desc: gMPlayTrack_BGM1
+  label: gMPlayTrack_BGM1
+  type: null
+  addr: 0x3001E38
+  size: 0x280
+  line: ''
+-
+  desc: gMPlayTrack_BGM2
+  label: gMPlayTrack_BGM2
+  type: null
+  addr: 0x30020B8
+  size: 0x280
+  line: ''
+-
+  desc: gMPlayTrack_SE1_SYS1
+  label: gMPlayTrack_SE1_SYS1
+  type: null
+  addr: 0x3002338
+  size: 0xA0
+  line: ''
+-
+  desc: gMPlayTrack_SE2_SYS2
+  label: gMPlayTrack_SE2_SYS2
+  type: null
+  addr: 0x30023D8
+  size: 0xA0
+  line: ''
+-
+  desc: gMPlayTrack_SE3_BMP1
+  label: gMPlayTrack_SE3_BMP1
+  type: null
+  addr: 0x3002478
+  size: 0x140
+  line: ''
+-
+  desc: gMPlayTrack_SE4_BMP2
+  label: gMPlayTrack_SE4_BMP2
+  type: null
+  addr: 0x30025B8
+  size: 0x140
+  line: ''
+-
+  desc: gMPlayTrack_SE5_BMP3
+  label: gMPlayTrack_SE5_BMP3
+  type: null
+  addr: 0x30026F8
+  size: 0x190
+  line: ''
+-
+  desc: gMPlayTrack_SE6_BMP4
+  label: gMPlayTrack_SE6_BMP4
+  type: null
+  addr: 0x3002888
+  size: 0x140
+  line: ''
+-
+  desc: gMPlayTrack_SE7_EVT
+  label: gMPlayTrack_SE7_EVT
+  type: null
+  addr: 0x30029C8
+  size: 0xA0
+  line: ''
+-
+  desc: verifySramFast_Work
+  label: verifySramFast_Work
+  type: u16 [80]
+  addr: 0x3002A68
+  size: 0xA0
+  line: agb_sram.c:6
+-
+  desc: readSramFast_Work
+  label: readSramFast_Work
+  type: u16 [64]
+  addr: 0x3002B08
+  size: 0x80
+  line: agb_sram.c:7
+-
+  desc: heap_end.63
+  label: heap_end.63
+  type: null
+  addr: 0x3002B88
+  size: 0x4
+  line: ''
+-
+  desc: monitor_stdin
+  label: monitor_stdin
+  type: null
+  addr: 0x3002B8C
+  size: 0x4
+  line: ''
+-
+  desc: monitor_stdout
+  label: monitor_stdout
+  type: null
+  addr: 0x3002B90
+  size: 0x4
+  line: ''
+-
+  desc: monitor_stderr
+  label: monitor_stderr
+  type: null
+  addr: 0x3002B94
+  size: 0x4
+  line: ''
+-
+  desc: openfiles
+  label: openfiles
+  type: null
+  addr: 0x3002B98
+  size: 0xA0
+  line: ''
+-
+  desc: thenan.3
+  label: thenan.3
+  type: null
+  addr: 0x3002C50
+  size: 0x10
+  line: ''
+-
+  desc: SoundMainRAM_Buffer
+  label: SoundMainRAM_Buffer
+  type: char [0x400]
+  addr: 0x3002C60
+  size: 0x400
+  line: m4a.c:7
+-
+  desc: gUnknown_03002C61
+  label: gUnknown_03002C61
+  type: null
+  addr: 0x3002C61
+  size: 0x3FF
+  line: ''
+-
+  desc: gUnknown_03003060
+  label: gUnknown_03003060
+  type: u8
+  addr: 0x3003060
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_03003070
+  label: gUnknown_03003070
+  type: void *
+  addr: 0x3003070
+  size: 0x10
+  line: ''
+-
+  desc: gLCDControlBuffer
+  label: gLCDControlBuffer
+  type: struct Struct03003080
+  addr: 0x3003080
+  size: 0xC
+  line: ''
+-
+  desc: gUnknown_0300308C
+  label: gUnknown_0300308C
+  type: null
+  addr: 0x300308C
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03003090
+  label: gUnknown_03003090
+  type: null
+  addr: 0x3003090
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03003094
+  label: gUnknown_03003094
+  type: null
+  addr: 0x3003094
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03003098
+  label: gUnknown_03003098
+  type: null
+  addr: 0x3003098
+  size: 0x1C
+  line: ''
+-
+  desc: gUnknown_030030B4
+  label: gUnknown_030030B4
+  type: null
+  addr: 0x30030B4
+  size: 0x2
+  line: ''
+-
+  desc: gUnknown_030030B6
+  label: gUnknown_030030B6
+  type: null
+  addr: 0x30030B6
+  size: 0x6
+  line: ''
+-
+  desc: gUnknown_030030BC
+  label: gUnknown_030030BC
   type: u16
-  addr: 0x30058B2
+  addr: 0x30030BC
+  size: 0xC
+  line: ''
 -
-  desc: IE backup
-  label: IE_Backup
+  desc: gUnknown_030030C8
+  label: gUnknown_030030C8
+  type: null
+  addr: 0x30030C8
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_030030D8
+  label: gUnknown_030030D8
+  type: null
+  addr: 0x30030D8
+  size: 0x18
+  line: ''
+-
+  desc: gIRQHandlers
+  label: gIRQHandlers
+  type: void *[14]
+  addr: 0x30030F0
+  size: 0x38
+  line: ''
+-
+  desc: gUnknown_03003128
+  label: gUnknown_03003128
+  type: void (*)(void)
+  addr: 0x3003128
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0300312C
+  label: gUnknown_0300312C
   type: u16
-  addr: 0x30058B4
+  addr: 0x300312C
+  size: 0x4
+  line: ''
 -
-  desc: TM3CNT_H backup
-  label: TM3CNT_H_Backup
-  type: u16
-  addr: 0x30058B6
+  desc: gUnknown_03003130
+  label: gUnknown_03003130
+  type: void (*)(int, int, const u16 *, int)
+  addr: 0x3003130
+  size: 0x4
+  line: ''
 -
-  desc: SIOCNT backup
-  label: SIOCNT_Backup
-  type: u16
-  addr: 0x30058B8
+  desc: sHBlankHandler1
+  label: sHBlankHandler1
+  type: void (*)(void)
+  addr: 0x3003134
+  size: 0xC
+  line: ''
 -
-  desc: RCNT backup
-  label: RCNT_Backup
-  type: u16
-  addr: 0x30058BA
+  desc: gUnknown_03003140
+  label: gUnknown_03003140
+  type: u16 []
+  addr: 0x3003140
+  size: 0x100
+  line: ''
 -
-  desc: Error flags
-  label: ErrorFlags
-  type: u32
-  addr: 0x30058BC
-  enum: ErrorFlags
+  desc: gUnknown_03003240
+  label: gUnknown_03003240
+  type: u32 []
+  addr: 0x3003240
+  size: 0x300
+  line: ''
 -
-  desc: Track 8
-  label: Track8
-  addr: 0x3005910
+  desc: gUnknown_03003540
+  label: gUnknown_03003540
+  type: null
+  addr: 0x3003540
+  size: 0x200
+  line: ''
+-
+  desc: gUnknown_03003740
+  label: gUnknown_03003740
+  type: void (*)(int, int, int, int)
+  addr: 0x3003740
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03003744
+  label: gUnknown_03003744
+  type: u32 *
+  addr: 0x3003744
+  size: 0x4
+  line: ''
+-
+  desc: sHBlankHandler2
+  label: sHBlankHandler2
+  type: void (*)(void)
+  addr: 0x3003748
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_03003750
+  label: gUnknown_03003750
+  type: u8 []
+  addr: 0x3003750
+  size: 0xA00
+  line: ''
+-
+  desc: gUnknown_03004150
+  label: gUnknown_03004150
+  type: void (*)(const char *, char *)
+  addr: 0x3004150
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03004154
+  label: gUnknown_03004154
+  type: void (*)(int, int, const u16 *, int)
+  addr: 0x3004154
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03004158
+  label: gUnknown_03004158
+  type: u16 *
+  addr: 0x3004158
+  size: 0x8
+  line: ''
+-
+  desc: IntrMain_Buffer
+  label: IntrMain_Buffer
+  type: u32 [0x200]
+  addr: 0x3004160
+  size: 0x800
+  line: ''
+-
+  desc: gUnknown_03004960
+  label: gUnknown_03004960
+  type: void (*)(int, int, int)
+  addr: 0x3004960
+  size: 0x10
+  line: ''
+-
+  desc: gSpriteAllocIt
+  label: gSpriteAllocIt
+  type: struct SpriteEntry *
+  addr: 0x3004970
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_03004980
+  label: gUnknown_03004980
+  type: struct Unknown_03004980
+  addr: 0x3004980
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_03004990
+  label: gUnknown_03004990
+  type: null
+  addr: 0x3004990
+  size: 0x10
+  line: ''
+-
+  desc: gWorkingBmMap
+  label: gWorkingBmMap
+  type: u8 **
+  addr: 0x30049A0
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_030049B0
+  label: gUnknown_030049B0
+  type: struct UnkMovMapFill []
+  addr: 0x30049B0
+  size: 0x200
+  line: ''
+-
+  desc: gWorkingTerrainMoveCosts
+  label: gWorkingTerrainMoveCosts
+  type: u8 []
+  addr: 0x3004BB0
+  size: 0x50
+  line: ''
+-
+  desc: gStatGainSimUnit
+  label: gStatGainSimUnit
+  type: struct Unit
+  addr: 0x3004C00
+  size: 0x50
+  line: ''
+-
+  desc: gUnknown_03004C50
+  label: gUnknown_03004C50
+  type: struct UnkMovMapFill []
+  addr: 0x3004C50
+  size: 0x200
+  line: ''
+-
+  desc: gActiveUnit
+  label: gActiveUnit
+  type: struct Unit *
+  addr: 0x3004E50
+  size: 0x10
+  line: ''
+-
+  desc: gMovMapFillState
+  label: gMovMapFillState
+  type: struct MovMapFillState
+  addr: 0x3004E60
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_03004E70
+  label: gUnknown_03004E70
+  type: null
+  addr: 0x3004E70
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03004E74
+  label: gUnknown_03004E74
+  type: null
+  addr: 0x3004E74
+  size: 0xC
+  line: ''
+-
+  desc: gUnknown_03004E80
+  label: gUnknown_03004E80
+  type: null
+  addr: 0x3004E80
+  size: 0x6
+  line: ''
+-
+  desc: gUnknown_03004E86
+  label: gUnknown_03004E86
+  type: null
+  addr: 0x3004E86
+  size: 0x82
+  line: ''
+-
+  desc: gUnknown_03004F08
+  label: gUnknown_03004F08
+  type: null
+  addr: 0x3004F08
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03004F0C
+  label: gUnknown_03004F0C
+  type: null
+  addr: 0x3004F0C
+  size: 0x4
+  line: ''
+-
+  desc: AiDecideMainFunc
+  label: AiDecideMainFunc
+  type: void (*)(void)
+  addr: 0x3004F10
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_03004F20
+  label: gUnknown_03004F20
+  type: null
+  addr: 0x3004F20
+  size: 0x80
+  line: ''
+-
+  desc: gUnknown_03004FA0
+  label: gUnknown_03004FA0
+  type: null
+  addr: 0x3004FA0
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03004FA4
+  label: gUnknown_03004FA4
+  type: null
+  addr: 0x3004FA4
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03004FA8
+  label: gUnknown_03004FA8
+  type: null
+  addr: 0x3004FA8
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03004FAC
+  label: gUnknown_03004FAC
+  type: null
+  addr: 0x3004FAC
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03004FB0
+  label: gUnknown_03004FB0
+  type: null
+  addr: 0x3004FB0
+  size: 0xE0
+  line: ''
+-
+  desc: gUnknown_03005090
+  label: gUnknown_03005090
+  type: null
+  addr: 0x3005090
+  size: 0x80
+  line: ''
+-
+  desc: gUnknown_03005110
+  label: gUnknown_03005110
+  type: null
+  addr: 0x3005110
+  size: 0x140
+  line: ''
+-
+  desc: gUnknown_03005250
+  label: gUnknown_03005250
+  type: null
+  addr: 0x3005250
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_03005270
+  label: gUnknown_03005270
+  type: null
+  addr: 0x3005270
+  size: 0x10
+  line: ''
+-
+  desc: gUnknown_03005280
+  label: gUnknown_03005280
+  type: struct GMapData
+  addr: 0x3005280
+  size: 0xA4
+  line: ''
+-
+  desc: gUnknown_03005324
+  label: gUnknown_03005324
+  type: null
+  addr: 0x3005324
+  size: 0x25
+  line: ''
+-
+  desc: gUnknown_03005349
+  label: gUnknown_03005349
+  type: null
+  addr: 0x3005349
+  size: 0x5
+  line: ''
+-
+  desc: gGmMonsterRnState
+  label: gGmMonsterRnState
+  type: u16 []
+  addr: 0x300534E
+  size: 0x12
+  line: ''
+-
+  desc: gUnknown_03005360
+  label: gUnknown_03005360
+  type: struct Font
+  addr: 0x3005360
+  size: 0x20
+  line: ''
+-
+  desc: gUnknown_03005380
+  label: gUnknown_03005380
+  type: struct Font
+  addr: 0x3005380
+  size: 0x18
+  line: ''
+-
+  desc: gUnknown_03005398
+  label: gUnknown_03005398
+  type: s8 []
+  addr: 0x3005398
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_030053A0
+  label: gUnknown_030053A0
+  type: struct Unknown_030053A0
+  addr: 0x30053A0
   size: 0x40
+  line: ''
 -
-  desc: Track 3
-  label: Track3
-  addr: 0x3005950
+  desc: gUnknown_030053E0
+  label: gUnknown_030053E0
+  type: struct Unknown_030053E0
+  addr: 0x30053E0
+  size: 0x28
+  line: ''
+-
+  desc: gUnknown_03005408
+  label: gUnknown_03005408
+  type: u16 []
+  addr: 0x3005408
+  size: 0x8
+  line: ''
+-
+  desc: gSoundInfo
+  label: gSoundInfo
+  type: struct SoundInfo
+  addr: 0x3005410
+  size: 0xFB0
+  line: m4a.c:9
+-
+  desc: gMPlayInfo_SE4_BMP2
+  label: gMPlayInfo_SE4_BMP2
+  type: struct MusicPlayerInfo
+  addr: 0x30063C0
   size: 0x40
+  line: ''
 -
-  desc: Track 1
-  label: Track1
-  addr: 0x3005990
+  desc: gMPlayInfo_SE5_BMP3
+  label: gMPlayInfo_SE5_BMP3
+  type: struct MusicPlayerInfo
+  addr: 0x3006400
   size: 0x40
+  line: ''
 -
-  desc: Track 6
-  label: Track6
-  addr: 0x30059D0
+  desc: gMPlayInfo_BGM1
+  label: gMPlayInfo_BGM1
+  type: struct MusicPlayerInfo
+  addr: 0x3006440
   size: 0x40
+  line: ''
 -
-  desc: Track 4
-  label: Track4
-  addr: 0x3005A10
+  desc: gMPlayJumpTable
+  label: gMPlayJumpTable
+  type: void *[]
+  addr: 0x3006480
+  size: 0x90
+  line: m4a.c:10
+-
+  desc: gUnknown_03006484
+  label: gUnknown_03006484
+  type: null
+  addr: 0x3006484
+  size: 0x84
+  line: ''
+-
+  desc: gUnknown_03006508
+  label: gUnknown_03006508
+  type: null
+  addr: 0x3006508
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_0300650C
+  label: gUnknown_0300650C
+  type: null
+  addr: 0x300650C
+  size: 0x4
+  line: ''
+-
+  desc: gCgbChans
+  label: gCgbChans
+  type: struct CgbChannel []
+  addr: 0x3006510
+  size: 0x100
+  line: m4a.c:11
+-
+  desc: gMPlayInfo_SE6_BMP4
+  label: gMPlayInfo_SE6_BMP4
+  type: struct MusicPlayerInfo
+  addr: 0x3006610
   size: 0x40
+  line: ''
 -
-  desc: Track 0
-  label: Track0
-  addr: 0x3005A50
+  desc: gMPlayInfo_BGM2
+  label: gMPlayInfo_BGM2
+  type: struct MusicPlayerInfo
+  addr: 0x3006650
   size: 0x40
+  line: ''
 -
-  desc: Track 7
-  label: Track7
-  addr: 0x3005A90
+  desc: gMPlayInfo_SE1_SYS1
+  label: gMPlayInfo_SE1_SYS1
+  type: struct MusicPlayerInfo
+  addr: 0x3006690
   size: 0x40
+  line: ''
 -
-  desc: Track 2
-  label: Track2
-  addr: 0x3005AD0
+  desc: gMPlayInfo_SE3_BMP1
+  label: gMPlayInfo_SE3_BMP1
+  type: struct MusicPlayerInfo
+  addr: 0x30066D0
   size: 0x40
+  line: ''
 -
-  desc: Track 5
-  label: Track5
-  addr: 0x3005B10
+  desc: gMPlayMemAccArea
+  label: gMPlayMemAccArea
+  type: u8 []
+  addr: 0x3006710
+  size: 0x10
+  line: m4a.c:16
+-
+  desc: gMPlayInfo_SE7_EVT
+  label: gMPlayInfo_SE7_EVT
+  type: struct MusicPlayerInfo
+  addr: 0x3006720
   size: 0x40
+  line: ''
 -
-  desc: Pointer to interrupt code
-  label: InterruptCodePtr
-  type: ptr.arm
-  addr: 0x3007FFC
+  desc: gMPlayInfo_SE2_SYS2
+  label: gMPlayInfo_SE2_SYS2
+  type: struct MusicPlayerInfo
+  addr: 0x3006760
+  size: 0x40
+  line: ''
+-
+  desc: ReadSramFast
+  label: ReadSramFast
+  type: void (*)(const u8 *src, u8 *dest, u32 size)
+  addr: 0x30067A0
+  size: 0x4
+  line: agb_sram.c:10
+-
+  desc: VerifySramFast
+  label: VerifySramFast
+  type: u32 (*)(const u8 *src, u8 *dest, u32 size)
+  addr: 0x30067A4
+  size: 0x4
+  line: agb_sram.c:9
+-
+  desc: errno
+  label: errno
+  type: null
+  addr: 0x30067A8
+  size: 0x4
+  line: ''
+-
+  desc: gUnknown_03007E00
+  label: gUnknown_03007E00
+  type: null
+  addr: 0x3007E00
+  size: 0x100
+  line: ''
+-
+  desc: gUnknown_03007F00
+  label: gUnknown_03007F00
+  type: null
+  addr: 0x3007F00
+  size: 0xA0
+  line: ''
+-
+  desc: gUnknown_03007FA0
+  label: gUnknown_03007FA0
+  type: null
+  addr: 0x3007FA0
+  size: 0x50
+  line: ''
+-
+  desc: gUnknown_03007FF0
+  label: gUnknown_03007FF0
+  type: null
+  addr: 0x3007FF0
+  size: 0x8
+  line: ''
+-
+  desc: gUnknown_03007FF8
+  label: gUnknown_03007FF8
+  type: null
+  addr: 0x3007FF8
+  size: 0x0
+  line: ''
