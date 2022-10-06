@@ -6,14 +6,13 @@ These files contain labeled RAM and ROM data, along with struct and enum definit
 ## Structure
 - `yaml` - Info files in YAML format; large files are split for easier editing
 - `json` - Combined YAML files in JSON format; used for the data maps website
-- `sym` - Symbols files for each game and version; can be used with no$gba
 - `tools`
   - `utils.py` - Functions for working with YAML data
   - `validator.py` - Script for validating data and converting to JSON
   - `dumper.py` - Script for finding and outputing data from a ROM file
   - `constants.py` - Defines constants used by other scripts
 
-Game directories are `fe6` for Binding Blade and `fe8` for The Sacred Stones, while `unk` is for unlabeled data.
+Game directories are `fe6` for Binding Blade and `fe8` for The Sacred Stones.
 
 ## Data Format
 - ram / rom
@@ -32,12 +31,6 @@ Game directories are `fe6` for Binding Blade and `fe8` for The Sacred Stones, wh
   - mode (`thumb` or `arm`)
   - params
   - return
-- structs
-  - size
-  - vars
-- enums
-  - desc
-  - val
 
 ### Primitive Types
 - `u8` - Unsigned 8 bit integer
