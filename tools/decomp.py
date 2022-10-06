@@ -18,7 +18,7 @@ class MyVisitor(GnuCGenerator):
         if name in symbols:
             retVal = self.visit(n.decl.type.type)
             if retVal != '' and retVal != 'void':
-                symbols[name]['return'] = retVal
+                symbols[name]['return'] = [{'desc': 'result', 'type': retVal}]
             args = self.visit(n.decl.type.args)
             if args != '' and args != 'void':
                 symbols[name]['params'] = []

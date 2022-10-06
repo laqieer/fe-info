@@ -182,7 +182,9 @@
   size: 0xC8
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: random.c:9
 -
   desc: RandInit
@@ -224,7 +226,9 @@
   size: 0x22
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: random.c:72
 -
   desc: RandNext
@@ -235,7 +239,9 @@
   params:
   - desc: max
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: random.c:79
 -
   desc: RandRoll
@@ -246,7 +252,9 @@
   params:
   - desc: threshold
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: random.c:86
 -
   desc: RandRoll2Rn
@@ -257,7 +265,9 @@
   params:
   - desc: threshold
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: random.c:91
 -
   desc: RandInitB
@@ -277,7 +287,9 @@
   size: 0x38
   mode: thumb
   params: null
-  return: unsigned
+  return:
+  - desc: result
+    type: unsigned
   line: random.c:111
 -
   desc: GetGameTime
@@ -286,7 +298,9 @@
   size: 0x16
   mode: thumb
   params: null
-  return: unsigned
+  return:
+  - desc: result
+    type: unsigned
   line: hardware.c:56
 -
   desc: SetGameTime
@@ -323,7 +337,9 @@
     type: u16 *
   - desc: seconds
     type: u16 *
-  return: i8
+  return:
+  - desc: result
+    type: i8
   line: hardware.c:77
 -
   desc: EnableBgSync
@@ -409,7 +425,9 @@
   params:
   - desc: bgid
     type: u16
-  return: struct BgCnt *
+  return:
+  - desc: result
+    type: struct BgCnt *
   line: hardware.c:168
 -
   desc: GetBgChrOffset
@@ -420,7 +438,9 @@
   params:
   - desc: bg
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: hardware.c:181
 -
   desc: GetBgChrId
@@ -433,7 +453,9 @@
     type: int
   - desc: offset
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: hardware.c:187
 -
   desc: GetBgTilemapOffset
@@ -444,7 +466,9 @@
   params:
   - desc: bg
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: hardware.c:194
 -
   desc: SetBgChrOffset
@@ -854,7 +878,9 @@
   params:
   - desc: bg
     type: int
-  return: u16 *
+  return:
+  - desc: result
+    type: u16 *
   line: hardware.c:710
 -
   desc: SoftResetIfKeyCombo
@@ -982,7 +1008,9 @@
   size: 0x16
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: oam.c:31
 -
   desc: SyncHiOam
@@ -1043,7 +1071,9 @@
   size: 0x16
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: sound.c:64
 -
   desc: IsBgmPlaying
@@ -1052,7 +1082,9 @@
   size: 0x1A
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: sound.c:69
 -
   desc: func_fe6_08002F9C
@@ -1393,7 +1425,9 @@
     type: const struct ProcScr *
   - desc: parent
     type: ProcPtr
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: proc.c:67
 -
   desc: SpawnProcLocking
@@ -1406,7 +1440,9 @@
     type: const struct ProcScr *
   - desc: parent
     type: ProcPtr
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: proc.c:97
 -
   desc: ClearProc
@@ -1437,7 +1473,9 @@
   size: 0x2C
   mode: thumb
   params: null
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: proc.c:146
 -
   desc: FreeProc
@@ -1529,7 +1567,9 @@
   params:
   - desc: script
     type: const struct ProcScr *
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: proc.c:247
 -
   desc: Proc_FindActive
@@ -1540,7 +1580,9 @@
   params:
   - desc: script
     type: const struct ProcScr *
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: proc.c:261
 -
   desc: Proc_FindMarked
@@ -1551,7 +1593,9 @@
   params:
   - desc: mark
     type: int
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: proc.c:275
 -
   desc: Proc_Goto
@@ -1754,7 +1798,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:441
 -
   desc: ProcCmd_Name
@@ -1765,7 +1811,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:447
 -
   desc: ProcCmd_Call
@@ -1776,7 +1824,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:455
 -
   desc: ProcCmd_CallRet
@@ -1787,7 +1837,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:465
 -
   desc: ProcCmd_CallArg
@@ -1798,7 +1850,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:473
 -
   desc: ProcCmd_While
@@ -1809,7 +1863,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:485
 -
   desc: ProcCmd_Repeat
@@ -1820,7 +1876,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:500
 -
   desc: ProcCmd_SetEndFunc
@@ -1831,7 +1889,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:508
 -
   desc: ProcCmd_SpawnChild
@@ -1842,7 +1902,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:516
 -
   desc: ProcCmd_SpawnLockChild
@@ -1853,7 +1915,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:524
 -
   desc: ProcCmd_SpawnBugged
@@ -1864,7 +1928,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:532
 -
   desc: ProcCmd_WhileExists
@@ -1875,7 +1941,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:544
 -
   desc: ProcCmd_EndEach
@@ -1886,7 +1954,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:554
 -
   desc: ProcCmd_BreakEach
@@ -1897,7 +1967,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:562
 -
   desc: ProcCmd_Nop
@@ -1908,7 +1980,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:570
 -
   desc: ProcCmd_GotoScript
@@ -1919,7 +1993,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:577
 -
   desc: ProcCmd_Goto
@@ -1930,7 +2006,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:584
 -
   desc: SleepRepeatFunc
@@ -1952,7 +2030,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:599
 -
   desc: ProcCmd_Mark
@@ -1963,7 +2043,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:612
 -
   desc: ProcCmd_Nop2
@@ -1974,7 +2056,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:620
 -
   desc: ProcCmd_Block
@@ -1985,7 +2069,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:626
 -
   desc: ProcCmd_EndIfDup
@@ -1996,7 +2082,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:631
 -
   desc: ProcCmd_EndDups
@@ -2007,7 +2095,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:653
 -
   desc: ProcCmd_Nop3
@@ -2018,7 +2108,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:675
 -
   desc: ProcCmd_SetFlag2
@@ -2029,7 +2121,9 @@
   params:
   - desc: proc
     type: struct ProcDummy *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: proc.c:682
 -
   desc: StepProcScr
@@ -2170,7 +2264,9 @@
   size: 0x42
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: icon.c:45
 -
   desc: IconSlot2Chr
@@ -2181,7 +2277,9 @@
   params:
   - desc: num
     type: int
-  return: u16
+  return:
+  - desc: result
+    type: u16
   line: icon.c:58
 -
   desc: GetNewIconSlot
@@ -2192,7 +2290,9 @@
   params:
   - desc: icon
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: icon.c:63
 -
   desc: GetIconChr
@@ -2203,7 +2303,9 @@
   params:
   - desc: icon
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: icon.c:79
 -
   desc: PutIcon
@@ -2406,7 +2508,9 @@
     type: u16
   - desc: pressed
     type: u16
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: debug-text.c:240
 -
   desc: DebugInitObj
@@ -2477,7 +2581,9 @@
   size: 0xE
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: text.c:88
 -
   desc: ResetText
@@ -2608,7 +2714,9 @@
   params:
   - desc: text
     type: struct Text *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: text.c:192
 -
   desc: Text_GetCursor
@@ -2619,7 +2727,9 @@
   params:
   - desc: text
     type: struct Text *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: text.c:197
 -
   desc: Text_SetCursor
@@ -2669,7 +2779,9 @@
   params:
   - desc: text
     type: struct Text *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: text.c:217
 -
   desc: Text_SetParams
@@ -2721,7 +2833,9 @@
   params:
   - desc: str
     type: const char *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: text.c:260
 -
   desc: GetCharTextLen
@@ -2734,7 +2848,9 @@
     type: const char *
   - desc: out_width
     type: int *
-  return: const char *
+  return:
+  - desc: result
+    type: const char *
   line: text.c:296
 -
   desc: GetStringTextCenteredPos
@@ -2747,7 +2863,9 @@
     type: int
   - desc: str
     type: const char *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: text.c:322
 -
   desc: GetStringTextBox
@@ -2773,7 +2891,9 @@
   params:
   - desc: str
     type: const char *
-  return: const char *
+  return:
+  - desc: result
+    type: const char *
   line: text.c:350
 -
   desc: Text_DrawString
@@ -2825,7 +2945,9 @@
     type: struct Text *
   - desc: str
     type: const char *
-  return: const char *
+  return:
+  - desc: result
+    type: const char *
   line: text.c:442
 -
   desc: GetTextDrawDest
@@ -2836,7 +2958,9 @@
   params:
   - desc: text
     type: struct Text *
-  return: u8 *
+  return:
+  - desc: result
+    type: u8 *
   line: text.c:478
 -
   desc: GetColorLut
@@ -2847,7 +2971,9 @@
   params:
   - desc: color
     type: int
-  return: const u16 *
+  return:
+  - desc: result
+    type: const u16 *
   line: text.c:485
 -
   desc: DrawTextGlyph
@@ -2981,7 +3107,9 @@
     type: struct Text *
   - desc: str
     type: const char *
-  return: const char *
+  return:
+  - desc: result
+    type: const char *
   line: text.c:605
 -
   desc: GetStringTextLenAscii
@@ -2992,7 +3120,9 @@
   params:
   - desc: str
     type: const char *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: text.c:617
 -
   desc: func_fe6_080065BC
@@ -3062,7 +3192,9 @@
   params:
   - desc: text
     type: struct Text *
-  return: u8 *
+  return:
+  - desc: result
+    type: u8 *
   line: text.c:682
 -
   desc: DrawSpriteTextGlyph
@@ -3103,7 +3235,9 @@
     type: int
   - desc: char_per_tick
     type: int
-  return: const char *
+  return:
+  - desc: result
+    type: const char *
   line: text.c:768
 -
   desc: IsTextPrinting
@@ -3114,7 +3248,9 @@
   params:
   - desc: text
     type: struct Text *
-  return: i8
+  return:
+  - desc: result
+    type: i8
   line: text.c:792
 -
   desc: EndTextPrinting
@@ -3184,7 +3320,9 @@
     type: int
   - desc: id
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: text.c:846
 -
   desc: GetSpecialCharChr
@@ -3197,7 +3335,9 @@
     type: int
   - desc: id
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: text.c:859
 -
   desc: PutSpecialChar
@@ -3421,7 +3561,9 @@
   params:
   - desc: script
     type: const void *
-  return: struct BaSprite *
+  return:
+  - desc: result
+    type: struct BaSprite *
   line: banim-sprite.c:125
 -
   desc: BasCreate
@@ -3434,7 +3576,9 @@
     type: const void *
   - desc: displayPriority
     type: u16
-  return: struct BaSprite *
+  return:
+  - desc: result
+    type: struct BaSprite *
   line: banim-sprite.c:163
 -
   desc: BasSort
@@ -3476,7 +3620,9 @@
   params:
   - desc: bas
     type: struct BaSprite *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: banim-sprite.c:255
 -
   desc: BasInsert
@@ -3607,7 +3753,9 @@
     type: const u16 *
   - desc: tileref
     type: int
-  return: struct SpriteProc *
+  return:
+  - desc: result
+    type: struct SpriteProc *
   line: sprite.c:193
 -
   desc: MoveSpriteRefresher
@@ -3633,7 +3781,9 @@
   params:
   - desc: fid
     type: int
-  return: const struct FaceInfo *
+  return:
+  - desc: result
+    type: const struct FaceInfo *
   line: face.c:221
 -
   desc: GetFace_Unk
@@ -3644,7 +3794,9 @@
   params:
   - desc: fid
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: face.c:226
 -
   desc: InitFaces
@@ -3673,7 +3825,9 @@
   size: 0x42
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: face.c:255
 -
   desc: UpdateFaceTalk
@@ -3712,7 +3866,9 @@
     type: int
   - desc: disp
     type: int
-  return: struct FaceProc *
+  return:
+  - desc: result
+    type: struct FaceProc *
   line: face.c:307
 -
   desc: StartFace
@@ -3731,7 +3887,9 @@
     type: int
   - desc: disp
     type: int
-  return: struct FaceProc *
+  return:
+  - desc: result
+    type: struct FaceProc *
   line: face.c:317
 -
   desc: EndFace
@@ -3766,7 +3924,9 @@
     type: struct FaceProc *
   - desc: disp
     type: u32
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: face.c:387
 -
   desc: SetFaceDispById
@@ -3779,7 +3939,9 @@
     type: int
   - desc: disp
     type: u32
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: face.c:393
 -
   desc: GetFaceDisp
@@ -3790,7 +3952,9 @@
   params:
   - desc: proc
     type: struct FaceProc *
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: face.c:398
 -
   desc: GetFaceDispById
@@ -3801,7 +3965,9 @@
   params:
   - desc: slot
     type: int
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: face.c:403
 -
   desc: FaceRefreshSprite
@@ -4040,7 +4206,9 @@
   params:
   - desc: fid
     type: int
-  return: const u8 *
+  return:
+  - desc: result
+    type: const u8 *
   line: face.c:643
 -
   desc: ApplyFactionFacePal
@@ -4109,7 +4277,9 @@
     type: const char *
   - desc: parent
     type: ProcPtr
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: talk.c:386
 -
   desc: StartTalkMsg
@@ -4124,7 +4294,9 @@
     type: int
   - desc: msg
     type: int
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: talk.c:418
 -
   desc: StartTalkMsgExt
@@ -4141,7 +4313,9 @@
     type: int
   - desc: parent
     type: ProcPtr
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: talk.c:423
 -
   desc: StartTalk
@@ -4156,7 +4330,9 @@
     type: int
   - desc: str
     type: const char *
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: talk.c:428
 -
   desc: EndTalk
@@ -4209,7 +4385,9 @@
   params:
   - desc: flag
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: talk.c:454
 -
   desc: SetTalkPrintDelay
@@ -4275,7 +4453,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: talk.c:599
 -
   desc: TalkSpritePrepNextChar
@@ -4286,7 +4466,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: talk.c:636
 -
   desc: LockTalk
@@ -4306,7 +4488,9 @@
   size: 0x22
   mode: thumb
   params: null
-  return: i8
+  return:
+  - desc: result
+    type: i8
   line: talk.c:657
 -
   desc: ResumeTalk
@@ -4326,7 +4510,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: int
+  return:
+  - desc: result
+    type: int
   line: talk.c:667
 -
   desc: SetActiveTalkFace
@@ -4378,7 +4564,9 @@
   params:
   - desc: x
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: talk.c:987
 -
   desc: SetTalkFaceLayer
@@ -4413,7 +4601,9 @@
   size: 0x22
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: talk.c:1069
 -
   desc: StartTalkFaceMove
@@ -4618,7 +4808,9 @@
   params:
   - desc: cmd
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: talk.c:1358
 -
   desc: ClearTalkBubble
@@ -4797,7 +4989,9 @@
   size: 0x3A
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: talk.c:1660
 -
   desc: GetTalkFaceHPos
@@ -4808,7 +5002,9 @@
   params:
   - desc: talk_face
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: talk.c:1668
 -
   desc: SetTalkFaceDisp
@@ -4852,7 +5048,9 @@
   size: 0x22
   mode: thumb
   params: null
-  return: i8
+  return:
+  - desc: result
+    type: i8
   line: talk.c:1700
 -
   desc: FaceExists
@@ -4861,7 +5059,9 @@
   size: 0x22
   mode: thumb
   params: null
-  return: i8
+  return:
+  - desc: result
+    type: i8
   line: talk.c:1705
 -
   desc: GetTalkChoiceResult
@@ -4870,7 +5070,9 @@
   size: 0x16
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: talk.c:1710
 -
   desc: SetTalkNumber
@@ -4981,7 +5183,9 @@
     type: const char *
   - desc: isBubbleOpen
     type: i8
-  return: int
+  return:
+  - desc: result
+    type: int
   line: talk.c:1808
 -
   desc: IsTalkDebugActive
@@ -4990,7 +5194,9 @@
   size: 0x22
   mode: thumb
   params: null
-  return: i8
+  return:
+  - desc: result
+    type: i8
   line: talk.c:2008
 -
   desc: StartTalkDebug
@@ -5113,7 +5319,9 @@
   size: 0x2E
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: event.c:403
 -
   desc: func_fe6_0800CE74
@@ -5122,7 +5330,9 @@
   size: 0x1A
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: event.c:411
 -
   desc: func_fe6_0800CE90
@@ -5131,7 +5341,9 @@
   size: 0x26
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:417
 -
   desc: PreparePopup
@@ -5142,7 +5354,9 @@
   params:
   - desc: proc
     type: struct PopupProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:424
 -
   desc: PutPopup
@@ -5304,7 +5518,9 @@
     type: int
   - desc: parent
     type: ProcPtr
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: event.c:703
 -
   desc: StartPopupExt
@@ -5325,7 +5541,9 @@
     type: int
   - desc: parent
     type: ProcPtr
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: event.c:708
 -
   desc: EndPopup
@@ -5431,7 +5649,9 @@
   params:
   - desc: script
     type: const u32 *
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: event.c:801
 -
   desc: StartEventLocking
@@ -5444,7 +5664,9 @@
     type: const u32 *
   - desc: parent
     type: ProcPtr
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: event.c:806
 -
   desc: StartEventInternal
@@ -5457,7 +5679,9 @@
     type: const u32 *
   - desc: parent
     type: ProcPtr
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: event.c:811
 -
   desc: Event_OnInit
@@ -5534,7 +5758,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: event.c:924
 -
   desc: Event_DarkenThenFunc
@@ -5624,7 +5850,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1093
 -
   desc: EvtCmd_Background
@@ -5635,7 +5863,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1110
 -
   desc: EvtCmd_BackgroundMore
@@ -5646,7 +5876,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1129
 -
   desc: EvtCmd_ClearTalk
@@ -5657,7 +5889,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1148
 -
   desc: EvtCmd_ClearSkip
@@ -5668,7 +5902,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1164
 -
   desc: DisplayBackground
@@ -5701,7 +5937,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1209
 -
   desc: EvtCmd_TalkMore
@@ -5712,7 +5950,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1229
 -
   desc: EvtCmd_TalkAuto
@@ -5723,7 +5963,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1249
 -
   desc: EvtCmd_TalkContinue
@@ -5734,7 +5976,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1265
 -
   desc: EventTalkWait
@@ -5756,7 +6000,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1293
 -
   desc: EvtCmd_CameraPid
@@ -5767,7 +6013,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1322
 -
   desc: CanDisplayUnitMovement
@@ -5782,7 +6030,9 @@
     type: int
   - desc: y
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: event.c:1346
 -
   desc: EvtCmd_MovePosition
@@ -5793,7 +6043,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1360
 -
   desc: EvtCmd_MovePid
@@ -5804,7 +6056,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1391
 -
   desc: EvtCmd_MovePidScript
@@ -5815,7 +6069,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1417
 -
   desc: EvtCmd_MovePositionScript
@@ -5826,7 +6082,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1449
 -
   desc: EvtCmd_MovePidNextTo
@@ -5837,7 +6095,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1481
 -
   desc: TryMoveUnit
@@ -5871,7 +6131,9 @@
     type: int
   - desc: y
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: event.c:1545
 -
   desc: DisplayMovement
@@ -5886,7 +6148,9 @@
     type: struct Unit *
   - desc: movescr
     type: const u8 *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: event.c:1579
 -
   desc: WaitForMu_0800F094
@@ -5919,7 +6183,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1645
 -
   desc: EvtCmd_LoadUnitsParty
@@ -5930,7 +6196,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1659
 -
   desc: GetNextAvailableBlueUnitId
@@ -5941,7 +6209,9 @@
   params:
   - desc: start
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1671
 -
   desc: UnitInfoRequiresNoMovement
@@ -5952,7 +6222,9 @@
   params:
   - desc: info
     type: const struct UnitInfo *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: event.c:1694
 -
   desc: EventUnitLoadWait
@@ -5996,7 +6268,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1828
 -
   desc: EvtCmd_UnitCameraOn
@@ -6007,7 +6281,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1837
 -
   desc: EvtCmd_UnitCameraOff
@@ -6018,7 +6294,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1843
 -
   desc: EvtCmd_Func
@@ -6029,7 +6307,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1849
 -
   desc: EvtCmd_FuncUntil
@@ -6040,7 +6320,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1867
 -
   desc: EvtCmd_FuncWhile
@@ -6051,7 +6333,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1890
 -
   desc: EvtCmd_Stop
@@ -6062,7 +6346,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1913
 -
   desc: EvtCmd_Label
@@ -6073,7 +6359,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1918
 -
   desc: EventGotoLabel
@@ -6086,7 +6374,9 @@
     type: ProcPtr
   - desc: label
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1923
 -
   desc: EvtCmd_Goto
@@ -6097,7 +6387,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1939
 -
   desc: EvtCmd_GotoIfnAlive
@@ -6108,7 +6400,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1946
 -
   desc: EvtCmd_GotoIfnInTeam
@@ -6119,7 +6413,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1965
 -
   desc: EvtCmd_GotoIfyFunc
@@ -6130,7 +6426,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:1984
 -
   desc: EvtCmd_GotoIfnFunc
@@ -6141,7 +6439,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2000
 -
   desc: EvtCmd_GotoIfySkip
@@ -6152,7 +6452,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2016
 -
   desc: EvtCmd_GotoIfyFlag
@@ -6163,7 +6465,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2024
 -
   desc: EvtCmd_GotoIfnFlag
@@ -6174,7 +6478,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2050
 -
   desc: EvtCmd_GotoIfyActive
@@ -6185,7 +6491,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2076
 -
   desc: EvtCmd_Jump
@@ -6196,7 +6504,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2102
 -
   desc: EvtCmd_GiveItem
@@ -6207,7 +6517,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2116
 -
   desc: EvtCmd_GiveItemTo
@@ -6218,7 +6530,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2124
 -
   desc: EventGiveItem
@@ -6233,7 +6547,9 @@
     type: u16
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2138
 -
   desc: EvtCmd_MapChange
@@ -6244,7 +6560,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2148
 -
   desc: EvtCmd_MapChangePosition
@@ -6255,7 +6573,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2184
 -
   desc: EvtCmd_SetFaction
@@ -6266,7 +6586,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2225
 -
   desc: EvtCmd_FlashCursorPosition
@@ -6277,7 +6599,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2251
 -
   desc: EvtCmd_FlashCursorPid
@@ -6288,7 +6612,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2274
 -
   desc: EventFlashCursorWait
@@ -6332,7 +6658,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2316
 -
   desc: EventCursor_OnLoop
@@ -6354,7 +6682,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2342
 -
   desc: EvtCmd_RemovePid
@@ -6365,7 +6695,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2348
 -
   desc: EvtCmd_RemovePidDisplayed
@@ -6376,7 +6708,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2364
 -
   desc: EventRemoveDisplayedWait
@@ -6415,7 +6749,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2422
 -
   desc: EvtCmd_SetAiPosition
@@ -6426,7 +6762,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2447
 -
   desc: EvtCmd_SetFlag
@@ -6437,7 +6775,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2476
 -
   desc: EvtCmd_ClearFlag
@@ -6448,7 +6788,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2484
 -
   desc: EvtCmd_PlayBgm
@@ -6459,7 +6801,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2492
 -
   desc: EvtCmd_OverrideBgm
@@ -6470,7 +6814,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2504
 -
   desc: EvtCmd_RestoreBgm
@@ -6481,7 +6827,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2517
 -
   desc: EvtCmd_FadeBgmOut
@@ -6492,7 +6840,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2524
 -
   desc: EvtCmd_LowerBgmVolume
@@ -6503,7 +6853,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2536
 -
   desc: EvtCmd_RestoreBgmVolume
@@ -6514,7 +6866,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2546
 -
   desc: EvtCmd_PlaySe
@@ -6525,7 +6879,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2560
 -
   desc: EventEndBattleMap
@@ -6536,7 +6892,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2572
 -
   desc: EvtCmd_NextChapter
@@ -6547,7 +6905,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2578
 -
   desc: EvtCmd_EndGame
@@ -6558,7 +6918,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2600
 -
   desc: EvtCmd_SetMap
@@ -6569,7 +6931,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2608
 -
   desc: EvtCmd_NoSkip
@@ -6580,7 +6944,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2631
 -
   desc: EventFadeFromSkipWait
@@ -6602,7 +6968,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2657
 -
   desc: EvtCmd_YesSkip
@@ -6613,7 +6981,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2672
 -
   desc: EvtCmd_FadeToBlack
@@ -6624,7 +6994,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2682
 -
   desc: EvtCmd_FadeFromBlack
@@ -6635,7 +7007,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2694
 -
   desc: EvtCmd_FadeToWhite
@@ -6646,7 +7020,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2706
 -
   desc: EvtCmd_FadeFromWhite
@@ -6657,7 +7033,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2718
 -
   desc: EvtCmd_ExitMap
@@ -6668,7 +7046,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2730
 -
   desc: EvtCmd_EnterMap
@@ -6679,7 +7059,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2736
 -
   desc: EvtCmd_GiveMoney
@@ -6690,7 +7072,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2742
 -
   desc: EvtCmd_FightScript
@@ -6701,7 +7085,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2765
 -
   desc: EventScriptedBattleWait
@@ -6734,7 +7120,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2852
 -
   desc: EvtCmd_FuncOnSkip
@@ -6745,7 +7133,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2858
 -
   desc: EvtCmd_SetWeather
@@ -6756,7 +7146,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2866
 -
   desc: DoChangeWeather
@@ -6778,7 +7170,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2883
 -
   desc: EvtCmd_WmEnd
@@ -6789,7 +7183,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2901
 -
   desc: EvtCmd_WmZoomTo
@@ -6800,7 +7196,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2914
 -
   desc: EvtCmd_WmZoomBack
@@ -6811,7 +7209,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2932
 -
   desc: EventWmZoomWait
@@ -6833,7 +7233,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:2984
 -
   desc: WmPutFace_OnInit
@@ -6866,7 +7268,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3048
 -
   desc: WmRemoveFace_OnInit
@@ -6910,7 +7314,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3113
 -
   desc: WmMoveFace_OnInit
@@ -6943,7 +7349,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3148
 -
   desc: EvtCmd_WmNop55
@@ -6954,7 +7362,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3156
 -
   desc: EvtCmd_WmTalk
@@ -6965,7 +7375,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3164
 -
   desc: EvtCmd_WmTalkBoxBottom
@@ -6976,7 +7388,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3187
 -
   desc: EvtCmd_WmTalkBoxTop
@@ -6987,7 +7401,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3202
 -
   desc: EvtCmd_WmTalkBoxRemove
@@ -6998,7 +7414,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3217
 -
   desc: EvtCmd_WmArrow
@@ -7009,7 +7427,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3227
 -
   desc: EvtCmd_WmPutHighlight
@@ -7020,7 +7440,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3240
 -
   desc: EvtCmd_WmRemoveHighlight
@@ -7031,7 +7453,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3255
 -
   desc: EventWmRemoveHighlightWait
@@ -7053,7 +7477,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3280
 -
   desc: EventWmRemoveHighlightsWait
@@ -7075,7 +7501,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3301
 -
   desc: EvtCmd_WmRemoveDot
@@ -7086,7 +7514,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3318
 -
   desc: EvtCmd_WmPutFlag
@@ -7097,7 +7527,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3330
 -
   desc: EvtCmd_WmRemoveFlag
@@ -7108,7 +7540,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3347
 -
   desc: EvtCmd_WmPutMapText
@@ -7119,7 +7553,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3359
 -
   desc: EvtCmd_WmRemoveMapText
@@ -7130,7 +7566,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3379
 -
   desc: EvtCmd_End
@@ -7141,7 +7579,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3391
 -
   desc: EvtCmd_Kill
@@ -7152,7 +7592,9 @@
   params:
   - desc: proc
     type: struct EventProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3409
 -
   desc: EventClearTalkDisplayed
@@ -7199,7 +7641,9 @@
   size: 0x1C
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: event.c:3449
 -
   desc: IsEventProcRunning
@@ -7208,7 +7652,9 @@
   size: 0x22
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: event.c:3454
 -
   desc: KillTalkAndEvent
@@ -7237,7 +7683,9 @@
   params:
   - desc: msgid
     type: int
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: event.c:3473
 -
   desc: StartTalkSupportEvent
@@ -7248,7 +7696,9 @@
   params:
   - desc: msgid
     type: int
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: event.c:3481
 -
   desc: StartWeaponBrokePopup
@@ -7464,7 +7914,9 @@
   size: 0x38
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event.c:3619
 -
   desc: InitPlayerDeployUnits
@@ -7586,7 +8038,9 @@
     type: const u16 *
   - desc: layer
     type: u16
-  return: struct SpriteAnim *
+  return:
+  - desc: result
+    type: struct SpriteAnim *
   line: sprite-anim.c:53
 -
   desc: EndSpriteAnim
@@ -7612,7 +8066,9 @@
     type: int
   - desc: y
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: sprite-anim.c:75
 -
   desc: PutAnim
@@ -7638,7 +8094,9 @@
   params:
   - desc: anim
     type: struct SpriteAnim *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: sprite-anim.c:103
 -
   desc: PutAnimAffine
@@ -7736,7 +8194,9 @@
   params:
   - desc: info
     type: const u16 *
-  return: struct SpriteAnim *
+  return:
+  - desc: result
+    type: struct SpriteAnim *
   line: sprite-anim.c:335
 -
   desc: StartSpriteAnimProc
@@ -7757,7 +8217,9 @@
     type: int
   - desc: layer
     type: int
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: sprite-anim.c:348
 -
   desc: AnimProc_Update
@@ -7825,7 +8287,9 @@
   size: 0x22
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: sprite-anim.c:399
 -
   desc: GetFurthestSaveChapter
@@ -7834,7 +8298,9 @@
   size: 0x82
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: game-controller.c:224
 -
   desc: GC_StartClassDemo
@@ -7845,7 +8311,9 @@
   params:
   - desc: proc
     type: struct GameController *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: game-controller.c:249
 -
   desc: GC_CheckSramResetKeyCombo
@@ -8061,7 +8529,9 @@
   size: 0x1E
   mode: thumb
   params: null
-  return: struct GameController *
+  return:
+  - desc: result
+    type: struct GameController *
   line: game-controller.c:505
 -
   desc: SetNextGameAction
@@ -8092,7 +8562,9 @@
   size: 0x26
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: game-controller.c:522
 -
   desc: RestartGameAndChapter
@@ -8139,7 +8611,9 @@
   params:
   - desc: id
     type: int
-  return: char *
+  return:
+  - desc: result
+    type: char *
   line: msg.c:12
 -
   desc: Interpolate
@@ -8158,7 +8632,9 @@
     type: int
   - desc: end
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: util.c:52
 -
   desc: func_fe6_08013BEC
@@ -8180,7 +8656,9 @@
     type: const char *
   - desc: strB
     type: const char *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: util.c:172
 -
   desc: StringCopy
@@ -8243,7 +8721,9 @@
   params:
   - desc: data
     type: const void *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: util.c:235
 -
   desc: Unused_08013CEC
@@ -8258,7 +8738,9 @@
     type: int
   - desc: arg_2
     type: int
-  return: struct Unk *
+  return:
+  - desc: result
+    type: struct Unk *
   line: util.c:246
 -
   desc: Unused_08013D04
@@ -8271,7 +8753,9 @@
     type: struct Unk_08013CEC *
   - desc: src
     type: const u8 *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: util.c:256
 -
   desc: Unused_08013D34
@@ -8284,7 +8768,9 @@
     type: struct Unk_08013CEC *
   - desc: arg_1
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: util.c:272
 -
   desc: Register2dChrMove
@@ -8475,7 +8961,9 @@
   params:
   - desc: arg_0
     type: int
-  return: struct Unk *
+  return:
+  - desc: result
+    type: struct Unk *
   line: util.c:494
 -
   desc: DarkenPals
@@ -8593,7 +9081,9 @@
     type: int
   - desc: parent
     type: ProcPtr
-  return: struct PalFadeSt *
+  return:
+  - desc: result
+    type: struct PalFadeSt *
   line: util.c:671
 -
   desc: EndPalFade
@@ -8741,7 +9231,9 @@
   size: 0x46
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: util.c:875
 -
   desc: StartFadeToBlack
@@ -9326,7 +9818,9 @@
   params:
   - desc: proc
     type: struct FadeUnkProc *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: util.c:1269
 -
   desc: func_fe6_08014AB8
@@ -9412,7 +9906,9 @@
     type: int
   - desc: buf
     type: char *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: util.c:1368
 -
   desc: PutStringCentered
@@ -9429,7 +9925,9 @@
     type: int
   - desc: str
     type: const char *
-  return: struct Text *
+  return:
+  - desc: result
+    type: struct Text *
   line: util.c:1422
 -
   desc: PutString
@@ -9444,7 +9942,9 @@
     type: int
   - desc: str
     type: const char *
-  return: struct Text *
+  return:
+  - desc: result
+    type: struct Text *
   line: util.c:1439
 -
   desc: func_fe6_08014D50
@@ -9472,7 +9972,9 @@
     type: int
   - desc: parent
     type: ProcPtr
-  return: struct UnkProc_085C4E64 *
+  return:
+  - desc: result
+    type: struct UnkProc_085C4E64 *
   line: util.c:1478
 -
   desc: func_fe6_08014D9C
@@ -9815,7 +10317,9 @@
     type: int
   - desc: y
     type: int
-  return: u16 *
+  return:
+  - desc: result
+    type: u16 *
   line: util.c:1823
 -
   desc: func_fe6_08015344
@@ -9835,7 +10339,9 @@
   params:
   - desc: x
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: util.c:1861
 -
   desc: PlaySeSpacial
@@ -10054,7 +10560,9 @@
     type: const int *
   - desc: rvec
     type: const int *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: util.c:2081
 -
   desc: VecCrossVec
@@ -10086,7 +10594,9 @@
     type: int
   - desc: arg_3
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: util.c:2093
 -
   desc: OnVBlank
@@ -10131,7 +10641,9 @@
   size: 0xC
   mode: thumb
   params: null
-  return: u8
+  return:
+  - desc: result
+    type: u8
   line: bm.c:380
 -
   desc: HandleChangePhase
@@ -10151,7 +10663,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: int
+  return:
+  - desc: result
+    type: int
   line: bm.c:410
 -
   desc: BmMain_StartPhase
@@ -10184,7 +10698,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: int
+  return:
+  - desc: result
+    type: int
   line: bm.c:454
 -
   desc: BmMain_SuspendBeforePhase
@@ -10266,7 +10782,9 @@
   params:
   - desc: x
     type: int
-  return: u16
+  return:
+  - desc: result
+    type: u16
   line: bm.c:659
 -
   desc: GetCameraAdjustedY
@@ -10277,7 +10795,9 @@
   params:
   - desc: y
     type: int
-  return: u16
+  return:
+  - desc: result
+    type: u16
   line: bm.c:678
 -
   desc: GetCameraCenteredX
@@ -10288,7 +10808,9 @@
   params:
   - desc: x
     type: int
-  return: u16
+  return:
+  - desc: result
+    type: u16
   line: bm.c:697
 -
   desc: GetCameraCenteredY
@@ -10299,7 +10821,9 @@
   params:
   - desc: y
     type: int
-  return: u16
+  return:
+  - desc: result
+    type: u16
   line: bm.c:710
 -
   desc: PutMapCursor
@@ -10394,7 +10918,9 @@
     type: int
   - desc: y
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: bm.c:868
 -
   desc: IsCameraNotWatchingPosition
@@ -10407,7 +10933,9 @@
     type: int
   - desc: y
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: bm.c:895
 -
   desc: CameraMove_08016290
@@ -10418,7 +10946,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: bm.c:906
 -
   desc: UnkMapCursor_OnLoop
@@ -10453,7 +10983,9 @@
   size: 0x66
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: bm.c:956
 -
   desc: StartMapSongBgm
@@ -10473,7 +11005,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:160
 -
   desc: GetItemPowBonus
@@ -10484,7 +11018,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:173
 -
   desc: GetItemSklBonus
@@ -10495,7 +11031,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:186
 -
   desc: GetItemSpdBonus
@@ -10506,7 +11044,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:199
 -
   desc: GetItemDefBonus
@@ -10517,7 +11057,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:212
 -
   desc: GetItemResBonus
@@ -10528,7 +11070,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:225
 -
   desc: GetItemLckBonus
@@ -10539,7 +11083,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:238
 -
   desc: CreateItem
@@ -10550,7 +11096,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:251
 -
   desc: CanUnitUseWeapon
@@ -10563,7 +11111,9 @@
     type: struct Unit *
   - desc: item
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item.c:261
 -
   desc: CanUnitUseStaff
@@ -10576,7 +11126,9 @@
     type: struct Unit *
   - desc: item
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item.c:300
 -
   desc: func_fe6_08016694
@@ -10653,7 +11205,9 @@
   params:
   - desc: item
     type: int
-  return: u16
+  return:
+  - desc: result
+    type: u16
   line: item.c:386
 -
   desc: GetUnitEquippedWeapon
@@ -10664,7 +11218,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: u16
+  return:
+  - desc: result
+    type: u16
   line: item.c:399
 -
   desc: GetUnitEquippedWeaponSlot
@@ -10675,7 +11231,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:412
 -
   desc: CanItemReachDistance
@@ -10688,7 +11246,9 @@
     type: int
   - desc: distance
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item.c:425
 -
   desc: UnitEquipItemSlot
@@ -10714,7 +11274,9 @@
     type: u16
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item.c:448
 -
   desc: GetItemRangeString
@@ -10725,7 +11287,9 @@
   params:
   - desc: item
     type: int
-  return: const char *
+  return:
+  - desc: result
+    type: const char *
   line: item.c:485
 -
   desc: GetWeaponLevelFromExp
@@ -10736,7 +11300,9 @@
   params:
   - desc: wexp
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:537
 -
   desc: GetWeaponLevelStringFromExp
@@ -10747,7 +11313,9 @@
   params:
   - desc: wexp
     type: int
-  return: const char *
+  return:
+  - desc: result
+    type: const char *
   line: item.c:560
 -
   desc: GetWeaponLevelSpecialCharFromExp
@@ -10758,7 +11326,9 @@
   params:
   - desc: wexp
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:576
 -
   desc: GetItemKindString
@@ -10769,7 +11339,9 @@
   params:
   - desc: kind
     type: int
-  return: const char *
+  return:
+  - desc: result
+    type: const char *
   line: item.c:592
 -
   desc: IsItemDisplayUseable
@@ -10782,7 +11354,9 @@
     type: struct Unit *
   - desc: item
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item.c:612
 -
   desc: Unused_08016C50
@@ -10795,7 +11369,9 @@
     type: struct Unit *
   - desc: item
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item.c:635
 -
   desc: GetUnitItemHealAmount
@@ -10808,7 +11384,9 @@
     type: struct Unit *
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:643
 -
   desc: FindUnitItemSlot
@@ -10821,7 +11399,9 @@
     type: struct Unit *
   - desc: iid
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:687
 -
   desc: IsItemStealable
@@ -10832,7 +11412,9 @@
   params:
   - desc: item
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item.c:700
 -
   desc: IsItemRepairable
@@ -10843,7 +11425,9 @@
   params:
   - desc: item
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item.c:705
 -
   desc: GetItemReach
@@ -10854,7 +11438,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:722
 -
   desc: GetUnitWeaponReach
@@ -10867,7 +11453,9 @@
     type: struct Unit *
   - desc: item_slot
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:757
 -
   desc: GetUnitItemUseReach
@@ -10880,7 +11468,9 @@
     type: struct Unit *
   - desc: item_slot
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:773
 -
   desc: GetUnitStaffReach
@@ -10891,7 +11481,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:824
 -
   desc: GetTotalConvoyItemsValue
@@ -10900,7 +11492,9 @@
   size: 0x54
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:860
 -
   desc: GetTotalUnitItemsValue
@@ -10909,7 +11503,9 @@
   size: 0x80
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:875
 -
   desc: func_fe6_08017104
@@ -10918,7 +11514,9 @@
   size: 0x22
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:888
 -
   desc: GetItemIid
@@ -10929,7 +11527,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:28
 -
   desc: GetItemName
@@ -10940,7 +11540,9 @@
   params:
   - desc: item
     type: int
-  return: const char *
+  return:
+  - desc: result
+    type: const char *
   line: item.c:33
 -
   desc: GetItemDescMsg
@@ -10951,7 +11553,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:38
 -
   desc: GetItemUseDescMsg
@@ -10962,7 +11566,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:43
 -
   desc: GetItemKind
@@ -10973,7 +11579,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:48
 -
   desc: GetItemAttributes
@@ -10984,7 +11592,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:56
 -
   desc: GetItemUses
@@ -10995,7 +11605,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:61
 -
   desc: GetItemMaxUses
@@ -11006,7 +11618,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:69
 -
   desc: GetItemMight
@@ -11017,7 +11631,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:77
 -
   desc: GetItemHit
@@ -11028,7 +11644,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:82
 -
   desc: GetItemWeight
@@ -11039,7 +11657,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:87
 -
   desc: GetItemCrit
@@ -11050,7 +11670,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:92
 -
   desc: GetItemValue
@@ -11061,7 +11683,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:97
 -
   desc: GetItemMinRange
@@ -11072,7 +11696,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:102
 -
   desc: GetItemMaxRange
@@ -11083,7 +11709,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:107
 -
   desc: GetItemEncodedRange
@@ -11094,7 +11722,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:112
 -
   desc: GetItemRequiredExp
@@ -11105,7 +11735,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:117
 -
   desc: GetItemEffectiveness
@@ -11116,7 +11748,9 @@
   params:
   - desc: item
     type: int
-  return: const u8 *
+  return:
+  - desc: result
+    type: const u8 *
   line: item.c:122
 -
   desc: GetItemBonuses
@@ -11127,7 +11761,9 @@
   params:
   - desc: item
     type: int
-  return: const struct ItemBonuses *
+  return:
+  - desc: result
+    type: const struct ItemBonuses *
   line: item.c:127
 -
   desc: GetItemIcon
@@ -11138,7 +11774,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:132
 -
   desc: GetItemWeaponEffect
@@ -11149,7 +11787,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:140
 -
   desc: GetItemEffect
@@ -11160,7 +11800,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:145
 -
   desc: GetItemCostPerUse
@@ -11171,7 +11813,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:150
 -
   desc: GetItemMaxValue
@@ -11182,7 +11826,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item.c:155
 -
   desc: GetItemInfo
@@ -11193,7 +11839,9 @@
   params:
   - desc: iid
     type: int
-  return: const struct ItemInfo *
+  return:
+  - desc: result
+    type: const struct ItemInfo *
   line: item.c:23
 -
   desc: InitUnits
@@ -11237,7 +11885,9 @@
   params:
   - desc: faction
     type: int
-  return: struct Unit *
+  return:
+  - desc: result
+    type: struct Unit *
   line: unit.c:93
 -
   desc: GetUnitVision
@@ -11248,7 +11898,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:221
 -
   desc: SetUnitStatus
@@ -11272,7 +11924,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:259
 -
   desc: UnitAddItem
@@ -11285,7 +11939,9 @@
     type: struct Unit *
   - desc: item
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: unit.c:282
 -
   desc: UnitRemoveInvalidItems
@@ -11307,7 +11963,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:332
 -
   desc: UnitHasItem
@@ -11320,7 +11978,9 @@
     type: struct Unit *
   - desc: item
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: unit.c:345
 -
   desc: BatchCreateUnits
@@ -11331,7 +11991,9 @@
   params:
   - desc: info
     type: const struct UnitInfo *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:360
 -
   desc: CreateUnit
@@ -11342,7 +12004,9 @@
   params:
   - desc: info
     type: const struct UnitInfo *
-  return: struct Unit *
+  return:
+  - desc: result
+    type: struct Unit *
   line: unit.c:375
 -
   desc: UnitInitFromInfo
@@ -11475,7 +12139,9 @@
   params:
   - desc: pid
     type: int
-  return: struct Unit *
+  return:
+  - desc: result
+    type: struct Unit *
   line: unit.c:605
 -
   desc: CanUnitCarry
@@ -11488,7 +12154,9 @@
     type: struct Unit *
   - desc: other
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: unit.c:626
 -
   desc: UnitRescue
@@ -11529,7 +12197,9 @@
     type: struct Unit *
   - desc: other
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: unit.c:663
 -
   desc: KillUnit
@@ -11665,7 +12335,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:931
 -
   desc: GetUnitMagRange
@@ -11676,7 +12348,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:942
 -
   desc: UnitKnowsMagic
@@ -11687,7 +12361,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: unit.c:947
 -
   desc: func_fe6_080181B0
@@ -11715,7 +12391,9 @@
     type: struct Unit *
   - desc: terrain
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:970
 -
   desc: GetAidIconFromAttributes
@@ -11726,7 +12404,9 @@
   params:
   - desc: attributes
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:1002
 -
   desc: func_fe6_08018258
@@ -11737,7 +12417,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:1016
 -
   desc: CanActiveUnitStillMove
@@ -11746,7 +12428,9 @@
   size: 0xB8
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: unit.c:1032
 -
   desc: GetUnitCurrentHp
@@ -11757,7 +12441,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:116
 -
   desc: GetUnitMaxHp
@@ -11768,7 +12454,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:111
 -
   desc: GetUnitPower
@@ -11779,7 +12467,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:124
 -
   desc: GetUnitSkill
@@ -11790,7 +12480,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:129
 -
   desc: GetUnitSpeed
@@ -11801,7 +12493,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:139
 -
   desc: GetUnitDefense
@@ -11812,7 +12506,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:149
 -
   desc: GetUnitResistance
@@ -11823,7 +12519,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:154
 -
   desc: GetUnitLuck
@@ -11834,7 +12532,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:159
 -
   desc: GetUnitFid
@@ -11845,7 +12545,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:164
 -
   desc: GetUnitChibiId
@@ -11856,7 +12558,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:177
 -
   desc: GetUnitLeaderPid
@@ -11867,7 +12571,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit.c:185
 -
   desc: SetUnitLeaderPid
@@ -11917,7 +12623,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: const char *
+  return:
+  - desc: result
+    type: const char *
   line: unit.c:677
 -
   desc: GetUnitStatusName
@@ -11928,7 +12636,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: const char *
+  return:
+  - desc: result
+    type: const char *
   line: unit.c:254
 -
   desc: GetUnit
@@ -11939,7 +12649,9 @@
   params:
   - desc: uid
     type: int
-  return: struct Unit *
+  return:
+  - desc: result
+    type: struct Unit *
   line: unit.c:38
 -
   desc: GetJInfo
@@ -11950,7 +12662,9 @@
   params:
   - desc: jid
     type: int
-  return: const struct JInfo *
+  return:
+  - desc: result
+    type: const struct JInfo *
   line: unit.c:43
 -
   desc: GetPInfo
@@ -11961,7 +12675,9 @@
   params:
   - desc: pid
     type: int
-  return: const struct PInfo *
+  return:
+  - desc: result
+    type: const struct PInfo *
   line: unit.c:51
 -
   desc: UnitRemoveItem
@@ -11987,7 +12703,9 @@
     type: struct Unit *
   - desc: terrain
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: unit.c:718
 -
   desc: InitMapForChapter
@@ -12237,7 +12955,9 @@
   params:
   - desc: terrain
     type: int
-  return: const char *
+  return:
+  - desc: result
+    type: const char *
   line: map.c:624
 -
   desc: GetTerrainHealAmount
@@ -12248,7 +12968,9 @@
   params:
   - desc: terrain
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: map.c:629
 -
   desc: DoesTerrainHealStatus
@@ -12259,7 +12981,9 @@
   params:
   - desc: terrain
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: map.c:634
 -
   desc: func_fe6_080192E4
@@ -12541,7 +13265,9 @@
   size: 0x8
   mode: thumb
   params: null
-  return: const i8 *
+  return:
+  - desc: result
+    type: const i8 *
   line: mapwork.c:694
 -
   desc: func_fe6_0801A5AC
@@ -12589,7 +13315,9 @@
   params:
   - desc: menu
     type: struct MenuProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:93
 -
   desc: func_fe6_0801A698
@@ -12602,7 +13330,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:104
 -
   desc: func_fe6_0801A724
@@ -12615,7 +13345,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:127
 -
   desc: func_fe6_0801A748
@@ -12628,7 +13360,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:138
 -
   desc: func_fe6_0801A760
@@ -12641,7 +13375,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: debug-menu.c:148
 -
   desc: func_fe6_0801A7D4
@@ -12654,7 +13390,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:166
 -
   desc: func_fe6_0801A81C
@@ -12667,7 +13405,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:179
 -
   desc: func_fe6_0801A820
@@ -12680,7 +13420,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: debug-menu.c:184
 -
   desc: func_fe6_0801A89C
@@ -12693,7 +13435,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:207
 -
   desc: func_fe6_0801A940
@@ -12706,7 +13450,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:251
 -
   desc: func_fe6_0801A944
@@ -12719,7 +13465,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: debug-menu.c:256
 -
   desc: func_fe6_0801A9A8
@@ -12732,7 +13480,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:268
 -
   desc: func_fe6_0801AA70
@@ -12745,7 +13495,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:320
 -
   desc: func_fe6_0801AA74
@@ -12758,7 +13510,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:325
 -
   desc: func_fe6_0801AA8C
@@ -12771,7 +13525,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:333
 -
   desc: func_fe6_0801AABC
@@ -12782,7 +13538,9 @@
   params:
   - desc: menu
     type: struct MenuProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:351
 -
   desc: func_fe6_0801AAE0
@@ -12802,7 +13560,9 @@
   params:
   - desc: menu
     type: struct MenuProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:375
 -
   desc: func_fe6_0801ABE8
@@ -12813,7 +13573,9 @@
   params:
   - desc: menu
     type: struct MenuProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:399
 -
   desc: func_fe6_0801AC2C
@@ -12826,7 +13588,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:410
 -
   desc: func_fe6_0801ACD8
@@ -12839,7 +13603,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:436
 -
   desc: func_fe6_0801AD14
@@ -12852,7 +13618,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:453
 -
   desc: func_fe6_0801AD28
@@ -12865,7 +13633,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:460
 -
   desc: func_fe6_0801AD3C
@@ -12878,7 +13648,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:467
 -
   desc: func_fe6_0801AD4C
@@ -12891,7 +13663,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:474
 -
   desc: func_fe6_0801AD50
@@ -12904,7 +13678,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:479
 -
   desc: func_fe6_0801AD6C
@@ -12917,7 +13693,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:489
 -
   desc: func_fe6_0801AD84
@@ -12930,7 +13708,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:494
 -
   desc: func_fe6_0801ADB4
@@ -12943,7 +13723,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:508
 -
   desc: func_fe6_0801ADCC
@@ -12956,7 +13738,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:513
 -
   desc: func_fe6_0801ADEC
@@ -12969,7 +13753,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: debug-menu.c:524
 -
   desc: func_fe6_0801AE60
@@ -12982,7 +13768,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:540
 -
   desc: func_fe6_0801AEB8
@@ -12995,7 +13783,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:556
 -
   desc: func_fe6_0801AEBC
@@ -13008,7 +13798,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:561
 -
   desc: func_fe6_0801AEC8
@@ -13021,7 +13813,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:568
 -
   desc: DebugCpControlMenu_Entry_Display
@@ -13034,7 +13828,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: debug-menu.c:575
 -
   desc: DebugCpControlMenu_Entry_Idle
@@ -13047,7 +13843,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:601
 -
   desc: func_fe6_0801B018
@@ -13060,7 +13858,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: debug-menu.c:635
 -
   desc: PlayerPhase_Suspend
@@ -13168,7 +13968,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: player-phase.c:608
 -
   desc: PlayerPhase_AttemptReMove
@@ -13179,7 +13981,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: player-phase.c:662
 -
   desc: PlayerPhase_0801B9B0
@@ -13190,7 +13994,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: player-phase.c:694
 -
   desc: PlayerPhase_WatchActiveUnit
@@ -13201,7 +14007,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: player-phase.c:705
 -
   desc: PlayerPhase_FinishAction
@@ -13245,7 +14053,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: player-phase.c:793
 -
   desc: CanSelectMoveTo
@@ -13258,7 +14068,9 @@
     type: int
   - desc: y
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: player-phase.c:823
 -
   desc: PlayerPhase_BeginMove
@@ -13388,7 +14200,9 @@
   params:
   - desc: uid
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: player-phase.c:991
 -
   desc: TrySwitchViewedUnit
@@ -13429,7 +14243,9 @@
     type: int
   - desc: yb
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: bmfx.c:526
 -
   desc: StartMuForRescueTransfterAnim
@@ -13440,7 +14256,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: struct MuProc *
+  return:
+  - desc: result
+    type: struct MuProc *
   line: bmfx.c:549
 -
   desc: RescueTransferSpriteAnim_Loop
@@ -13534,7 +14352,9 @@
   size: 0x18
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: bmfx.c:662
 -
   desc: GetPlayerInitialCursorPosition
@@ -13593,7 +14413,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: int
+  return:
+  - desc: result
+    type: int
   line: bmfx.c:764
 -
   desc: DiscardItem_PostItemSelect
@@ -13604,7 +14426,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: int
+  return:
+  - desc: result
+    type: int
   line: bmfx.c:772
 -
   desc: DiscardItem_0801C58C
@@ -13615,7 +14439,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: int
+  return:
+  - desc: result
+    type: int
   line: bmfx.c:786
 -
   desc: DiscardItem_0801C59C
@@ -13626,7 +14452,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: int
+  return:
+  - desc: result
+    type: int
   line: bmfx.c:792
 -
   desc: HandleGiveUnitItem
@@ -13654,7 +14482,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: bmfx.c:813
 -
   desc: DiscardItemMenu_ExtraEntry_Display
@@ -13667,7 +14497,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: bmfx.c:818
 -
   desc: DiscardItemMenu_InventoryEntry_Select
@@ -13680,7 +14512,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: bmfx.c:828
 -
   desc: DiscardItemMenu_ExtraEntry_Select
@@ -13693,7 +14527,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: bmfx.c:838
 -
   desc: SetFogVision
@@ -14680,7 +15516,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:99
 -
   desc: MapMenu_Suspend_Available
@@ -14693,7 +15531,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:106
 -
   desc: MapMenu_Suspend_Select
@@ -14706,7 +15546,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:114
 -
   desc: MapMenu_End_Select
@@ -14719,7 +15561,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:127
 -
   desc: MapMenu_Unit_Select
@@ -14732,7 +15576,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:133
 -
   desc: MapMenu_Options_Select
@@ -14745,7 +15591,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:141
 -
   desc: MapMenu_Status_Select
@@ -14758,7 +15606,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:147
 -
   desc: func_fe6_0801EAE4
@@ -14771,7 +15621,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:153
 -
   desc: TutorialInterruptMenu_Continue_Select
@@ -14784,7 +15636,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: u8
+  return:
+  - desc: result
+    type: u8
   line: map-menu.c:159
 -
   desc: CheckTutorialInterruptPromptResult
@@ -14808,7 +15662,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:170
 -
   desc: UnitActionMenu_Wait_Select
@@ -14821,7 +15677,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:176
 -
   desc: MapSelectActionReturnToUnitActionMenuWithCamera
@@ -14834,7 +15692,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:182
 -
   desc: BackToUnitMenu_CamWatch
@@ -14869,7 +15729,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:220
 -
   desc: MenuActionReturnToUnitActionMenu
@@ -14882,7 +15744,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:236
 -
   desc: RescueMapSelect_Help
@@ -14895,7 +15759,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:250
 -
   desc: UnitActionMenu_Rescue_Available
@@ -14908,7 +15774,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:255
 -
   desc: UnitActionMenu_Rescue_Select
@@ -14921,7 +15789,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:271
 -
   desc: RescueMapSelect_Select
@@ -14934,7 +15804,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:279
 -
   desc: UnitActionMenu_Drop_Available
@@ -14947,7 +15819,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:287
 -
   desc: UnitActionMenu_Drop_Select
@@ -14960,7 +15834,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:303
 -
   desc: DropRescueMapSelect_Select
@@ -14973,7 +15849,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:311
 -
   desc: UnitActionMenu_Take_Available
@@ -14986,7 +15864,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:322
 -
   desc: UnitActionMenu_Take_Select
@@ -14999,7 +15879,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:341
 -
   desc: UnitActionMenu_Give_Available
@@ -15012,7 +15894,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:349
 -
   desc: UnitActionMenu_Give_Select
@@ -15025,7 +15909,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:368
 -
   desc: func_fe6_0801EE4C
@@ -15051,7 +15937,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:384
 -
   desc: GiveRescueMapSelect_Select
@@ -15064,7 +15952,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:397
 -
   desc: UnitActionMenu_Attack_Available
@@ -15077,7 +15967,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:410
 -
   desc: UnitActionMenu_Attack_Select
@@ -15090,7 +15982,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:456
 -
   desc: UnitActionMenu_AttackBallista_Select
@@ -15103,7 +15997,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:485
 -
   desc: UnitActionMenu_AttackRegular_Select
@@ -15116,7 +16012,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:495
 -
   desc: UnitActionMenu_Attack_SwitchIn
@@ -15129,7 +16027,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:507
 -
   desc: UnitActionMenu_Attack_SwitchOut
@@ -15142,7 +16042,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:530
 -
   desc: UnitAttackItemMenu_Entry_Available
@@ -15155,7 +16057,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:536
 -
   desc: UnitAttackItemMenu_Entry_Select
@@ -15168,7 +16072,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:554
 -
   desc: UnitAttackItemMenu_Entry_Display
@@ -15181,7 +16087,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: map-menu.c:569
 -
   desc: UnitAttackItemMenu_Entry_SwitchIn
@@ -15194,7 +16102,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:579
 -
   desc: UnitAttackItemMenu_Entry_SwitchOut
@@ -15207,7 +16117,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:596
 -
   desc: AttackMapSelect_Select
@@ -15220,7 +16132,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:604
 -
   desc: func_fe6_0801F35C
@@ -15255,7 +16169,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:631
 -
   desc: AttackMapSelect_SwitchIn
@@ -15268,7 +16184,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:638
 -
   desc: AttackMapSelect_End
@@ -15279,7 +16197,9 @@
   params:
   - desc: proc
     type: struct MapSelectProc *
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: map-menu.c:663
 -
   desc: AnyMenu_Trade_Available
@@ -15292,7 +16212,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:674
 -
   desc: UnitActionMenu_Trade_Select
@@ -15305,7 +16227,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:690
 -
   desc: TradeMapSelect_Select
@@ -15318,7 +16242,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:700
 -
   desc: UnitActionMenu_Seize_Available
@@ -15331,7 +16257,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:708
 -
   desc: UnitActionMenu_Seize_Select
@@ -15344,7 +16272,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:720
 -
   desc: UnitActionMenu_Visit_Available
@@ -15357,7 +16287,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:726
 -
   desc: UnitActionMenu_Visit_Select
@@ -15370,7 +16302,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:743
 -
   desc: UnitActionMenu_Play_Available
@@ -15383,7 +16317,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:755
 -
   desc: UnitActionMenu_Dance_Available
@@ -15396,7 +16332,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:771
 -
   desc: UnitActionMenu_Refresh_Select
@@ -15409,7 +16347,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:787
 -
   desc: RefreshMapSelect_Select
@@ -15422,7 +16362,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:798
 -
   desc: UnitActionMenu_Item_Available
@@ -15435,7 +16377,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:806
 -
   desc: UnitActionMenu_Item_Select
@@ -15448,7 +16392,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:817
 -
   desc: UnitItemMenu_Entry_Display
@@ -15461,7 +16407,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: map-menu.c:837
 -
   desc: UnitItemMenu_Entry_Available
@@ -15474,7 +16422,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:854
 -
   desc: UnitItemMenu_Entry_Select
@@ -15487,7 +16437,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:868
 -
   desc: SingleItemMenu_Entry_SwitchIn
@@ -15500,7 +16452,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:885
 -
   desc: SingleItemMenu_Entry_SwitchOut
@@ -15513,7 +16467,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:890
 -
   desc: func_fe6_0801F854
@@ -15548,7 +16504,9 @@
   params:
   - desc: menu
     type: struct MenuProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:907
 -
   desc: func_fe6_0801F8E0
@@ -15559,7 +16517,9 @@
   params:
   - desc: menu
     type: struct MenuProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:919
 -
   desc: func_fe6_0801F8F8
@@ -15570,7 +16530,9 @@
   params:
   - desc: menu
     type: struct MenuProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:929
 -
   desc: func_fe6_0801F948
@@ -15581,7 +16543,9 @@
   params:
   - desc: menu
     type: struct MenuProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:944
 -
   desc: UnitItemActionMenu_Use_Available
@@ -15594,7 +16558,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:976
 -
   desc: UnitItemActionMenu_Equip_Available
@@ -15607,7 +16573,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:993
 -
   desc: UnitItemActionMenu_Discard_Available
@@ -15620,7 +16588,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1004
 -
   desc: UnitItemActionMenu_Use_Select
@@ -15633,7 +16603,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1014
 -
   desc: UnitItemActionMenu_Equip_Select
@@ -15646,7 +16618,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1028
 -
   desc: UnitItemActionMenu_Trade_Select
@@ -15659,7 +16633,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1041
 -
   desc: UnitItemActionMenu_Discard_Select
@@ -15672,7 +16648,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1053
 -
   desc: UnitItemDiscardPromptMenu_Yes_Select
@@ -15685,7 +16663,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1073
 -
   desc: UnitAttackBallista_Entry_Available
@@ -15698,7 +16678,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1081
 -
   desc: UnitAttackBallista_Entry_Display
@@ -15711,7 +16693,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: map-menu.c:1092
 -
   desc: UnitAttackBallista_Entry_Select
@@ -15724,7 +16708,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1100
 -
   desc: UnitAttackBallista_Entry_SwitchIn
@@ -15737,7 +16723,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1112
 -
   desc: UnitActionMenu_Staff_Available
@@ -15750,7 +16738,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1130
 -
   desc: UnitActionMenu_Staff_Select
@@ -15763,7 +16753,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1151
 -
   desc: UnitActionMenu_Staff_SwitchIn
@@ -15776,7 +16768,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1172
 -
   desc: UnitActionMenu_Staff_SwitchOut
@@ -15789,7 +16783,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1185
 -
   desc: UnitStaffItemMenu_Entry_Available
@@ -15802,7 +16798,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1191
 -
   desc: UnitStaffItemMenu_Entry_Select
@@ -15815,7 +16813,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1204
 -
   desc: UnitStaffItemMenu_Entry_Display
@@ -15828,7 +16828,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: map-menu.c:1216
 -
   desc: UnitStaffItemMenu_Entry_SwitchIn
@@ -15841,7 +16843,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1221
 -
   desc: UnitStaffItemMenu_Entry_SwitchOut
@@ -15854,7 +16858,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1236
 -
   desc: UnitActionMenu_Talk_Available
@@ -15867,7 +16873,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1244
 -
   desc: UnitActionMenu_Talk_Select
@@ -15880,7 +16888,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1260
 -
   desc: TalkMapSelect_Select
@@ -15893,7 +16903,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1274
 -
   desc: UnitActionMenu_Support_Available
@@ -15906,7 +16918,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1282
 -
   desc: UnitActionMenu_Support_Select
@@ -15919,7 +16933,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1303
 -
   desc: SupportMapSelect_Select
@@ -15932,7 +16948,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1317
 -
   desc: UnitActionMenu_Door_Available
@@ -15945,7 +16963,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1325
 -
   desc: UnitActionMenu_Door_Select
@@ -15958,7 +16978,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1339
 -
   desc: UnitActionMenu_Chest_Available
@@ -15971,7 +16993,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1348
 -
   desc: UnitActionMenu_Chest_Select
@@ -15984,7 +17008,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1360
 -
   desc: UnitActionMenu_Supply_Available
@@ -15997,7 +17023,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1368
 -
   desc: UnitActionMenu_Supply_Select
@@ -16010,7 +17038,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1398
 -
   desc: UnitActionMenu_Armory_Available
@@ -16023,7 +17053,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1407
 -
   desc: UnitActionMenu_Armory_Select
@@ -16036,7 +17068,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1416
 -
   desc: UnitActionMenu_Vendor_Available
@@ -16049,7 +17083,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1422
 -
   desc: UnitActionMenu_Vendor_Select
@@ -16062,7 +17098,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1431
 -
   desc: UnitActionMenu_Secret_Available
@@ -16075,7 +17113,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1437
 -
   desc: UnitActionMenu_Secret_Select
@@ -16088,7 +17128,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1446
 -
   desc: UnitActionMenu_Arena_Available
@@ -16101,7 +17143,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1452
 -
   desc: UnitActionMenu_Arena_Select
@@ -16114,7 +17158,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1464
 -
   desc: UnitActionMenu_Steal_Available
@@ -16127,7 +17173,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1480
 -
   desc: UnitActionMenu_Steal_Select
@@ -16140,7 +17188,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1499
 -
   desc: StealMapSelect_Init
@@ -16164,7 +17214,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1521
 -
   desc: StealMapSelect_Select
@@ -16177,7 +17229,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1527
 -
   desc: StealItemMenu_Entry_Available
@@ -16190,7 +17244,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1552
 -
   desc: StealItemMenu_Entry_Display
@@ -16203,7 +17259,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: map-menu.c:1563
 -
   desc: StealItemMenu_Entry_Select
@@ -16216,7 +17274,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1571
 -
   desc: MenuHelpBoxActiveUnitInventory
@@ -16229,7 +17289,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1585
 -
   desc: MenuHelpBoxTargetUnitInventory
@@ -16242,7 +17304,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1596
 -
   desc: MenuHelpBoxActiveUnitBallista
@@ -16255,7 +17319,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1602
 -
   desc: HealMapSelect_Init
@@ -16279,7 +17345,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1631
 -
   desc: RescueMapSelect_Init
@@ -16303,7 +17371,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1643
 -
   desc: DropRescueMapSelect_Init
@@ -16327,7 +17397,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1654
 -
   desc: GiveRescueMapSelect_Init
@@ -16351,7 +17423,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1664
 -
   desc: TakeRescueMapSelect_Init
@@ -16375,7 +17449,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1676
 -
   desc: TradeMapSelect_Init
@@ -16399,7 +17475,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1688
 -
   desc: TalkMapSelect_Init
@@ -16423,7 +17501,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1700
 -
   desc: RefreshMapSelect_Init
@@ -16447,7 +17527,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1712
 -
   desc: WarpUnitMapSelect_Init
@@ -16471,7 +17553,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: map-menu.c:1723
 -
   desc: CountFactionMoveableUnits
@@ -16482,7 +17566,9 @@
   params:
   - desc: faction
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: faction.c:9
 -
   desc: CountFactionUnitsWithoutState
@@ -16495,7 +17581,9 @@
     type: int
   - desc: prohibited_state
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: faction.c:35
 -
   desc: AreUnitIdsAllied
@@ -16508,7 +17596,9 @@
     type: int
   - desc: uidB
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: faction.c:58
 -
   desc: AreUnitIdsSameFaction
@@ -16521,7 +17611,9 @@
     type: int
   - desc: uidB
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: faction.c:66
 -
   desc: GetActiveFactionAlliance
@@ -16530,7 +17622,9 @@
   size: 0x14
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: faction.c:74
 -
   desc: GetActiveFactionOpposingAlliance
@@ -16539,7 +17633,9 @@
   size: 0x18
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: faction.c:79
 -
   desc: GetGold
@@ -16548,7 +17644,9 @@
   size: 0xC
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: gold.c:9
 -
   desc: SetGold
@@ -17259,7 +18357,9 @@
   params:
   - desc: id
     type: unsigned
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unitsprite.c:386
 -
   desc: ApplyUnitSpriteImage16x16
@@ -17272,7 +18372,9 @@
     type: int
   - desc: id
     type: unsigned
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unitsprite.c:424
 -
   desc: ApplyUnitSpriteImage16x32
@@ -17285,7 +18387,9 @@
     type: int
   - desc: id
     type: unsigned
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unitsprite.c:442
 -
   desc: ApplyUnitSpriteImage32x32
@@ -17298,7 +18402,9 @@
     type: int
   - desc: id
     type: unsigned
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unitsprite.c:462
 -
   desc: SyncUnitSpriteSheet
@@ -17327,7 +18433,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unitsprite.c:532
 -
   desc: GetUnitSpritePalette
@@ -17338,7 +18446,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unitsprite.c:540
 -
   desc: RefreshUnitSprites
@@ -17358,7 +18468,9 @@
   params:
   - desc: y
     type: int
-  return: struct UnitSprite *
+  return:
+  - desc: result
+    type: struct UnitSprite *
   line: unitsprite.c:645
 -
   desc: PutUnitSpritesOam
@@ -17416,7 +18528,9 @@
     type: int
   - desc: y
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: unitsprite.c:888
 -
   desc: PutUnitSprite
@@ -17513,7 +18627,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: u8
+  return:
+  - desc: result
+    type: u8
   line: unitsprite.c:1021
 -
   desc: GetUnitSupportCount
@@ -17524,7 +18640,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: support.c:31
 -
   desc: GetUnitSupportPid
@@ -17537,7 +18655,9 @@
     type: struct Unit *
   - desc: num
     type: int
-  return: u8
+  return:
+  - desc: result
+    type: u8
   line: support.c:39
 -
   desc: GetUnitSupportUnit
@@ -17550,7 +18670,9 @@
     type: struct Unit *
   - desc: num
     type: int
-  return: struct Unit *
+  return:
+  - desc: result
+    type: struct Unit *
   line: support.c:47
 -
   desc: GetUnitSupportLevel
@@ -17563,7 +18685,9 @@
     type: struct Unit *
   - desc: num
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: support.c:70
 -
   desc: GetUnitTotalSupportLevel
@@ -17574,7 +18698,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: support.c:86
 -
   desc: UnitGainSupportExp
@@ -17613,7 +18739,9 @@
     type: struct Unit *
   - desc: num
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: support.c:120
 -
   desc: GetUnitInitialSupportExp
@@ -17626,7 +18754,9 @@
     type: struct Unit *
   - desc: num
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: support.c:145
 -
   desc: GetUnitSupportNumByPid
@@ -17639,7 +18769,9 @@
     type: struct Unit *
   - desc: pid
     type: u8
-  return: int
+  return:
+  - desc: result
+    type: int
   line: support.c:153
 -
   desc: ClearUnitSupports
@@ -17670,7 +18802,9 @@
   params:
   - desc: affinity
     type: int
-  return: const struct SupportBonuses *
+  return:
+  - desc: result
+    type: const struct SupportBonuses *
   line: support.c:250
 -
   desc: ApplyAffinityBonuses
@@ -17709,7 +18843,9 @@
     type: struct Unit *
   - desc: bonuses
     type: struct SupportBonuses *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: support.c:285
 -
   desc: GetUnitAffinityIcon
@@ -17720,7 +18856,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: support.c:334
 -
   desc: GetAffinityIconByPid
@@ -17731,7 +18869,9 @@
   params:
   - desc: pid
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: support.c:344
 -
   desc: GetSupportLevelSpecialChar
@@ -17742,7 +18882,9 @@
   params:
   - desc: level
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: support.c:354
 -
   desc: GetAffinityName
@@ -17753,7 +18895,9 @@
   params:
   - desc: affinity
     type: int
-  return: const char *
+  return:
+  - desc: result
+    type: const char *
   line: support.c:367
 -
   desc: CanUnitUseItem
@@ -17766,7 +18910,9 @@
     type: struct Unit *
   - desc: item
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item-use.c:78
 -
   desc: GetUnitItemCantUseMsg
@@ -17779,7 +18925,9 @@
     type: struct Unit *
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item-use.c:181
 -
   desc: DoUseUnitItem
@@ -17805,7 +18953,9 @@
     type: struct Unit *
   - desc: )
     type: void (*list_targets)(struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item-use.c:311
 -
   desc: CanUnitUseHealItem
@@ -17816,7 +18966,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item-use.c:317
 -
   desc: CanUnitUseBindingBladeToHeal
@@ -17827,7 +18979,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item-use.c:325
 -
   desc: CanUnitUsePureWaterItem
@@ -17838,7 +18992,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item-use.c:333
 -
   desc: CanUnitUseTorchItem
@@ -17849,7 +19005,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item-use.c:341
 -
   desc: CanUnitUseAntitoxinItem
@@ -17860,7 +19018,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item-use.c:349
 -
   desc: CanUnitUseChestKeyItem
@@ -17871,7 +19031,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item-use.c:357
 -
   desc: CanUnitUseDoorKeyItem
@@ -17882,7 +19044,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item-use.c:368
 -
   desc: CanUnitUseBridgeKeyItem
@@ -17893,7 +19057,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item-use.c:374
 -
   desc: CanUnitUseLockpickItem
@@ -17904,7 +19070,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item-use.c:380
 -
   desc: CanUnitUsePromotionItem
@@ -17917,7 +19085,9 @@
     type: struct Unit *
   - desc: item
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item-use.c:391
 -
   desc: CanUnitUseStatGainItem
@@ -17930,7 +19100,9 @@
     type: struct Unit *
   - desc: item
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: item-use.c:434
 -
   desc: SetStaffUseAction
@@ -17965,7 +19137,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: item-use.c:501
 -
   desc: DoUseRescueStaff
@@ -18046,7 +19220,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: item-use.c:637
 -
   desc: DoUseWarpStaff
@@ -18070,7 +19246,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: item-use.c:661
 -
   desc: DoUseUnlockStaff
@@ -18096,7 +19274,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: item-use.c:684
 -
   desc: DoUseRepairStaff
@@ -18120,7 +19300,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: item-use.c:713
 -
   desc: RepairMapSelect_Init
@@ -18144,7 +19326,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: item-use.c:724
 -
   desc: RepairItemMenu_Entry_SwitchOut
@@ -18157,7 +19341,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: item-use.c:729
 -
   desc: RepairItemMenu_Entry_Available
@@ -18170,7 +19356,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: item-use.c:733
 -
   desc: RepairItemMenu_Entry_Display
@@ -18183,7 +19371,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: item-use.c:746
 -
   desc: RepairItemMenu_Entry_Select
@@ -18196,7 +19386,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: item-use.c:757
 -
   desc: DoUseHealStaff
@@ -18233,7 +19425,9 @@
   params:
   - desc: proc
     type: struct MapSelectProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item-use.c:804
 -
   desc: RestoreMapSelect_SwitchIn
@@ -18246,7 +19440,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: item-use.c:809
 -
   desc: DoUseBarrierStaff
@@ -18268,7 +19464,9 @@
   params:
   - desc: proc
     type: struct MapSelectProc *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item-use.c:826
 -
   desc: BarrierMapSelect_SwitchIn
@@ -18281,7 +19479,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: item-use.c:831
 -
   desc: DoUseAttackStaff
@@ -18307,7 +19507,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: item-use.c:848
 -
   desc: AttackStaffMapSelect_SwitchIn
@@ -18320,7 +19522,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: item-use.c:853
 -
   desc: SubtitleMapSelect_End
@@ -18473,7 +19677,9 @@
     type: u16
   - desc: simulationResult
     type: bool
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: battle.c:225
 -
   desc: BattleRandRoll2Rn
@@ -18486,7 +19692,9 @@
     type: u16
   - desc: simulationResult
     type: bool
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: battle.c:233
 -
   desc: InitBattleUnit
@@ -18783,7 +19991,9 @@
     type: struct BattleUnit **
   - desc: defender
     type: struct BattleUnit **
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: battle.c:615
 -
   desc: BattleGenerateRoundHits
@@ -18796,7 +20006,9 @@
     type: struct BattleUnit *
   - desc: defender
     type: struct BattleUnit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: battle.c:640
 -
   desc: GetBattleUnitHitCount
@@ -18807,7 +20019,9 @@
   params:
   - desc: attacker
     type: struct BattleUnit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: battle.c:662
 -
   desc: BattleCheckBraveEffect
@@ -18818,7 +20032,9 @@
   params:
   - desc: attacker
     type: struct BattleUnit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: battle.c:671
 -
   desc: BattleCheckTriangleAttack
@@ -18831,7 +20047,9 @@
     type: struct BattleUnit *
   - desc: defender
     type: struct BattleUnit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: battle.c:680
 -
   desc: BattleUpdateBattleStats
@@ -18894,7 +20112,9 @@
     type: struct BattleUnit *
   - desc: defender
     type: struct BattleUnit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: battle.c:858
 -
   desc: BattleApplyExpGains
@@ -18914,7 +20134,9 @@
   params:
   - desc: growth
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: battle.c:904
 -
   desc: GetAutoleveledStatIncrease
@@ -18927,7 +20149,9 @@
     type: int
   - desc: levels
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: battle.c:920
 -
   desc: CheckBattleUnitLevelUp
@@ -18995,7 +20219,9 @@
   params:
   - desc: bu
     type: struct BattleUnit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: battle.c:1113
 -
   desc: HasBattleUnitGainedWeaponLevel
@@ -19006,7 +20232,9 @@
   params:
   - desc: bu
     type: struct BattleUnit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: battle.c:1157
 -
   desc: UpdateUnitFromBattle
@@ -19061,7 +20289,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: battle.c:1241
 -
   desc: GetUnitRoundExp
@@ -19074,7 +20304,9 @@
     type: struct Unit *
   - desc: other
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: battle.c:1251
 -
   desc: GetUnitPowerLevel
@@ -19085,7 +20317,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: battle.c:1265
 -
   desc: GetUnitClassKillExpBonus
@@ -19098,7 +20332,9 @@
     type: struct Unit *
   - desc: defeated
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: battle.c:1275
 -
   desc: GetUnitKillExpBonus
@@ -19111,7 +20347,9 @@
     type: struct Unit *
   - desc: other
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: battle.c:1288
 -
   desc: GetBattleUnitExpGain
@@ -19124,7 +20362,9 @@
     type: struct BattleUnit *
   - desc: other
     type: struct BattleUnit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: battle.c:1308
 -
   desc: BattleApplyItemExpGains
@@ -19144,7 +20384,9 @@
   params:
   - desc: bu
     type: struct BattleUnit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: battle.c:1344
 -
   desc: BattleApplyMiscActionExpGains
@@ -19259,7 +20501,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: battle.c:1561
 -
   desc: GetBattleAnimType
@@ -19268,7 +20512,9 @@
   size: 0x5A
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: battle.c:1574
 -
   desc: BattlePrintDebugUnitInfo
@@ -19360,7 +20606,9 @@
     type: struct Unit *
   - desc: target
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: battle.c:1707
 -
   desc: BattleGenerateArena
@@ -19380,7 +20628,9 @@
   size: 0x10
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: battle.c:1770
 -
   desc: DidBattleUnitBreakWeapon
@@ -19391,7 +20641,9 @@
   params:
   - desc: bu
     type: struct BattleUnit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: battle.c:1775
 -
   desc: BattleHitAdvance
@@ -19457,7 +20709,9 @@
     type: int
   - desc: row
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: trademenu.c:236
 -
   desc: TradeMenu_InitItemText
@@ -19501,7 +20755,9 @@
   params:
   - desc: proc
     type: struct TradeMenuProc *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: trademenu.c:302
 -
   desc: TradeMenu_ApplyItemSwap
@@ -19589,7 +20845,9 @@
   params:
   - desc: proc
     type: struct TradeMenuProc *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: trademenu.c:509
 -
   desc: TradeMenu_ClearDisplay
@@ -19648,7 +20906,9 @@
     type: struct Unit *
   - desc: unused
     type: int
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: trademenu.c:605
 -
   desc: InitTraps
@@ -19670,7 +20930,9 @@
     type: int
   - desc: y
     type: int
-  return: struct Trap *
+  return:
+  - desc: result
+    type: struct Trap *
   line: trap.c:106
 -
   desc: AddTrap
@@ -19687,7 +20949,9 @@
     type: int
   - desc: extra
     type: int
-  return: struct Trap *
+  return:
+  - desc: result
+    type: struct Trap *
   line: trap.c:119
 -
   desc: AddDamagingTrap
@@ -19710,7 +20974,9 @@
     type: int
   - desc: damage
     type: int
-  return: struct Trap *
+  return:
+  - desc: result
+    type: struct Trap *
   line: trap.c:136
 -
   desc: AddFireTrap
@@ -19837,7 +21103,9 @@
     type: int
   - desc: y
     type: int
-  return: struct Trap *
+  return:
+  - desc: result
+    type: struct Trap *
   line: trap.c:235
 -
   desc: GetBallistaItemAt
@@ -19850,7 +21118,9 @@
     type: int
   - desc: y
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: trap.c:262
 -
   desc: GetDummyBallistaItemAt
@@ -19863,7 +21133,9 @@
     type: int
   - desc: y
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: trap.c:306
 -
   desc: GetObstacleHpAt
@@ -19876,7 +21148,9 @@
     type: int
   - desc: y
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: trap.c:329
 -
   desc: GetMapChange
@@ -19887,7 +21161,9 @@
   params:
   - desc: id
     type: int
-  return: const struct MapChangeInfo *
+  return:
+  - desc: result
+    type: const struct MapChangeInfo *
   line: trap.c:349
 -
   desc: GetMapChangeIdAt
@@ -19900,7 +21176,9 @@
     type: int
   - desc: y
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: trap.c:367
 -
   desc: ApplyMapChange
@@ -20139,7 +21417,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: trap.c:720
 -
   desc: GetTrap
@@ -20150,7 +21430,9 @@
   params:
   - desc: id
     type: int
-  return: struct Trap *
+  return:
+  - desc: result
+    type: struct Trap *
   line: trap.c:101
 -
   desc: DoItemHealStaffAction
@@ -20783,7 +22065,9 @@
   size: 0x28
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: chapter.c:37
 -
   desc: IsFirstPlaythrough
@@ -20792,7 +22076,9 @@
   size: 0x2E
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: chapter.c:44
 -
   desc: InitPlayConfig
@@ -20881,7 +22167,9 @@
   params:
   - desc: parent
     type: struct GenericProc *
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: chapter.c:261
 -
   desc: EndMapMain
@@ -20972,7 +22260,9 @@
   size: 0x8
   mode: thumb
   params: null
-  return: u16 *
+  return:
+  - desc: result
+    type: u16 *
   line: supply.c:11
 -
   desc: ClearSupplyItems
@@ -20999,7 +22289,9 @@
   size: 0x20
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: supply.c:42
 -
   desc: AddSupplyItem
@@ -21010,7 +22302,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: supply.c:55
 -
   desc: RemoveSupplyItem
@@ -21032,7 +22326,9 @@
   params:
   - desc: item
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: supply.c:80
 -
   desc: UnitRearrangeInit
@@ -21116,7 +22412,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: arena.c:221
 -
   desc: ArenaGetJobWeaponKind
@@ -21127,7 +22425,9 @@
   params:
   - desc: jinfo
     type: const struct JInfo *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: arena.c:243
 -
   desc: ArenaGenOpposingJid
@@ -21138,7 +22438,9 @@
   params:
   - desc: weapon_kind
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: arena.c:265
 -
   desc: ArenaIsMagicWeaponKind
@@ -21149,7 +22451,9 @@
   params:
   - desc: weapon_kind
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: arena.c:330
 -
   desc: ArenaGetOpposingLevel
@@ -21160,7 +22464,9 @@
   params:
   - desc: level
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: arena.c:349
 -
   desc: ArenaGetPowerRanking
@@ -21173,7 +22479,9 @@
     type: struct Unit *
   - desc: opponent_is_magic
     type: bool
-  return: int
+  return:
+  - desc: result
+    type: int
   line: arena.c:361
 -
   desc: ArenaGenOpponentUnit
@@ -21202,7 +22510,9 @@
   params:
   - desc: item
     type: u16
-  return: u16
+  return:
+  - desc: result
+    type: u16
   line: arena.c:454
 -
   desc: ArenaAdjustOpponentDamage
@@ -21211,7 +22521,9 @@
   size: 0x148
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: arena.c:483
 -
   desc: ArenaAdjustOpponentPowerRanking
@@ -21220,7 +22532,9 @@
   size: 0x150
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: arena.c:546
 -
   desc: ArenaGenMatchupGoldValue
@@ -21238,7 +22552,9 @@
   size: 0xC
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: arena.c:631
 -
   desc: ArenaGetResult
@@ -21247,7 +22563,9 @@
   size: 0xC
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: arena.c:636
 -
   desc: ArenaSetResult
@@ -21278,7 +22596,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: arena.c:666
 -
   desc: SaveActionRand
@@ -21307,7 +22627,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: action.c:118
 -
   desc: DoRescueAction
@@ -21318,7 +22640,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: action.c:177
 -
   desc: DoRescueDropAction
@@ -21329,7 +22653,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: action.c:189
 -
   desc: DoVisitAction
@@ -21340,7 +22666,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: action.c:211
 -
   desc: func_fe6_0802A234
@@ -21366,7 +22694,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: action.c:228
 -
   desc: func_fe6_0802A2C0
@@ -21377,7 +22707,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: action.c:238
 -
   desc: DoCombatAction
@@ -21388,7 +22720,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: action.c:248
 -
   desc: func_fe6_0802A35C
@@ -21399,7 +22733,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: action.c:265
 -
   desc: DoRefreshAction
@@ -21410,7 +22746,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: action.c:271
 -
   desc: DoTalkAction
@@ -21421,7 +22759,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: action.c:287
 -
   desc: DoSupportAction
@@ -21432,7 +22772,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: action.c:293
 -
   desc: DoStealAction
@@ -21443,7 +22785,9 @@
   params:
   - desc: proc
     type: ProcPtr
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: action.c:326
 -
   desc: DeathDropSpriteAnim_Loop
@@ -21627,7 +22971,9 @@
     type: i8
   - desc: y
     type: i8
-  return: int
+  return:
+  - desc: result
+    type: int
   line: movepath.c:103
 -
   desc: GenMovePathFromMoveScript
@@ -21672,7 +23018,9 @@
   size: 0x7A
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: movepath.c:190
 -
   desc: InitMovePath
@@ -21703,7 +23051,9 @@
   params:
   - desc: path
     type: u8
-  return: u8
+  return:
+  - desc: result
+    type: u8
   line: movepath.c:272
 -
   desc: GetMovePathDirTo
@@ -21714,7 +23064,9 @@
   params:
   - desc: path
     type: u8
-  return: u8
+  return:
+  - desc: result
+    type: u8
   line: movepath.c:290
 -
   desc: ShouldDrawMovePathBitAt
@@ -21731,7 +23083,9 @@
     type: u8
   - desc: yEdge
     type: u8
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: movepath.c:308
 -
   desc: DrawMovePath
@@ -21850,7 +23204,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: prep-phase.c:356
 -
   desc: PrepPhase_MapSwapSelectBegin
@@ -21943,7 +23299,9 @@
   size: 0x8C
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: code_0802B814.c:17
 -
   desc: func_fe6_0802B8A0
@@ -21952,7 +23310,9 @@
   size: 0x88
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: code_0802B814.c:42
 -
   desc: func_fe6_0802B928
@@ -21961,7 +23321,9 @@
   size: 0x3C
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: code_0802B814.c:67
 -
   desc: func_fe6_0802B964
@@ -21970,7 +23332,9 @@
   size: 0x1C
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: code_0802B814.c:79
 -
   desc: func_fe6_0802B980
@@ -21979,7 +23343,9 @@
   size: 0x1C
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: code_0802B814.c:86
 -
   desc: func_fe6_0802B99C
@@ -21988,7 +23354,9 @@
   size: 0x40
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: code_0802B814.c:93
 -
   desc: func_fe6_0802B9DC
@@ -21997,7 +23365,9 @@
   size: 0x2C
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: code_0802B814.c:108
 -
   desc: func_fe6_0802BA08
@@ -22006,7 +23376,9 @@
   size: 0x3C
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: code_0802B814.c:114
 -
   desc: func_fe6_0802BA44
@@ -22028,7 +23400,9 @@
   params:
   - desc: chapter
     type: int
-  return: const struct ChapterInfo *
+  return:
+  - desc: result
+    type: const struct ChapterInfo *
   line: chapter-info.c:9
 -
   desc: GetChapterMap
@@ -22039,7 +23413,9 @@
   params:
   - desc: chapter
     type: int
-  return: const u8 *
+  return:
+  - desc: result
+    type: const u8 *
   line: chapter-info.c:17
 -
   desc: GetChapterMapChanges
@@ -22050,7 +23426,9 @@
   params:
   - desc: chapter
     type: int
-  return: const struct MapChangeInfo *
+  return:
+  - desc: result
+    type: const struct MapChangeInfo *
   line: chapter-info.c:26
 -
   desc: GetChapterEventInfo
@@ -22061,7 +23439,9 @@
   params:
   - desc: chapter
     type: int
-  return: const struct ChapterEventInfo *
+  return:
+  - desc: result
+    type: const struct ChapterEventInfo *
   line: chapter-info.c:34
 -
   desc: GetChapterUnk_0802BBD0
@@ -22072,7 +23452,9 @@
   params:
   - desc: chapter
     type: int
-  return: const char *
+  return:
+  - desc: result
+    type: const char *
   line: chapter-info.c:42
 -
   desc: UnitPanel_OnLoop
@@ -22094,7 +23476,9 @@
   params:
   - desc: parent
     type: ProcPtr
-  return: struct UnitPanelProc *
+  return:
+  - desc: result
+    type: struct UnitPanelProc *
   line: unit-panel.c:74
 -
   desc: InitUnitPanelSpriteTextPositions
@@ -22126,7 +23510,9 @@
     type: int
   - desc: lines
     type: int
-  return: struct UnitPanelProc *
+  return:
+  - desc: result
+    type: struct UnitPanelProc *
   line: unit-panel.c:103
 -
   desc: GetUnitPanelXForUnit
@@ -22139,7 +23525,9 @@
     type: struct Unit *
   - desc: width
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: unit-panel.c:143
 -
   desc: DrawUnitHpText
@@ -22579,7 +23967,9 @@
   size: 0x18
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: subtitle-help.c:235
 -
   desc: ApplyHazardHealing
@@ -23018,7 +24408,9 @@
   size: 0x32
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: battle-preview.c:65
 -
   desc: InitBattlePreviewIconPalBuf
@@ -23136,7 +24528,9 @@
   params:
   - desc: faction
     type: int
-  return: const u16 *
+  return:
+  - desc: result
+    type: const u16 *
   line: battle-preview.c:320
 -
   desc: InitBattlePreviewFramePalettes
@@ -23295,7 +24689,9 @@
     type: struct MapSelectProc *
   - desc: target
     type: struct SelectTarget *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: battle-preview.c:679
 -
   desc: func_fe6_0802E43C
@@ -23308,7 +24704,9 @@
     type: int
   - desc: isEffective
     type: bool
-  return: int
+  return:
+  - desc: result
+    type: int
   line: battle-preview.c:713
 -
   desc: func_fe6_0802E460
@@ -23407,7 +24805,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-order.c:99
 -
   desc: GetUnitAiScore
@@ -23418,7 +24818,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-order.c:136
 -
   desc: BuildAiUnitList
@@ -23427,7 +24829,9 @@
   size: 0xA0
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-order.c:161
 -
   desc: SortAiUnitList
@@ -23670,7 +25074,9 @@
   params:
   - desc: proc
     type: struct AiPerformProc *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-perform.c:246
 -
   desc: AiStaffAction
@@ -23681,7 +25087,9 @@
   params:
   - desc: proc
     type: struct AiPerformProc *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-perform.c:280
 -
   desc: AiUseItemAction
@@ -23692,7 +25100,9 @@
   params:
   - desc: proc
     type: struct AiPerformProc *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-perform.c:294
 -
   desc: AiRefreshAction
@@ -23703,7 +25113,9 @@
   params:
   - desc: proc
     type: struct AiPerformProc *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-perform.c:307
 -
   desc: AiTalkAction
@@ -23714,7 +25126,9 @@
   params:
   - desc: proc
     type: struct AiPerformProc *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-perform.c:312
 -
   desc: AiPerform_WatchTarget
@@ -23769,7 +25183,9 @@
   params:
   - desc: proc
     type: struct AiPerformProc *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-perform.c:464
 -
   desc: AiEscapeAction
@@ -23780,7 +25196,9 @@
   params:
   - desc: proc
     type: struct AiPerformProc *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-perform.c:469
 -
   desc: AiWaitAndClearScreenAction
@@ -23791,7 +25209,9 @@
   params:
   - desc: proc
     type: struct AiPerformProc *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-perform.c:480
 -
   desc: AiPerform_0802F29C
@@ -23817,7 +25237,9 @@
     type: u8
   - desc: right
     type: u32
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:31
 -
   desc: AiFindTargetInReachByPid
@@ -23830,7 +25252,9 @@
     type: int
   - desc: out
     type: struct Vec2i *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:77
 -
   desc: AiFindTargetInReachByJid
@@ -23843,7 +25267,9 @@
     type: int
   - desc: out
     type: struct Vec2i *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:132
 -
   desc: AiFindTargetInReachByFunc
@@ -23856,7 +25282,9 @@
     type: bool (*func)(struct Unit *
   - desc: out
     type: struct Vec2i *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:175
 -
   desc: AiRandomMove
@@ -23880,7 +25308,9 @@
     type: struct Unit *
   - desc: item
     type: u16
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:264
 -
   desc: AiCouldReachByBirdsEyeDistance
@@ -23895,7 +25325,9 @@
     type: struct Unit *
   - desc: item
     type: u16
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:274
 -
   desc: AiIsInShortList
@@ -23908,7 +25340,9 @@
     type: const u16 *
   - desc: item
     type: u16
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:284
 -
   desc: AiIsInByteList
@@ -23921,7 +25355,9 @@
     type: const u8 *
   - desc: item
     type: u8
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:297
 -
   desc: AiFindClosestTerrainPosition
@@ -23936,7 +25372,9 @@
     type: int
   - desc: out
     type: struct Vec2i *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:310
 -
   desc: AiGetPositionRange
@@ -23949,7 +25387,9 @@
     type: int
   - desc: y
     type: int
-  return: u8
+  return:
+  - desc: result
+    type: u8
   line: ai-utility.c:354
 -
   desc: AiFindClosestTerrainAdjacentPosition
@@ -23964,7 +25404,9 @@
     type: int
   - desc: out
     type: struct Vec2i *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:365
 -
   desc: AiFindClosestUnlockPosition
@@ -23977,7 +25419,9 @@
     type: int
   - desc: out
     type: struct Vec2i *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:412
 -
   desc: AiCountUnitsInRange
@@ -23986,7 +25430,9 @@
   size: 0x74
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-utility.c:522
 -
   desc: AiCountEnemyUnitsInRange
@@ -23995,7 +25441,9 @@
   size: 0x7C
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-utility.c:545
 -
   desc: AiCountAlliedUnitsInRange
@@ -24004,7 +25452,9 @@
   size: 0x7C
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-utility.c:571
 -
   desc: AiCountNearbyUnits
@@ -24017,7 +25467,9 @@
     type: short
   - desc: y
     type: short
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-utility.c:597
 -
   desc: AiCountNearbyEnemyUnits
@@ -24030,7 +25482,9 @@
     type: short
   - desc: y
     type: short
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-utility.c:624
 -
   desc: AiCountNearbyAlliedUnits
@@ -24043,7 +25497,9 @@
     type: short
   - desc: y
     type: short
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-utility.c:654
 -
   desc: AiMakeMoveRangeMapsForUnitAndWeapon
@@ -24099,7 +25555,9 @@
     type: int
   - desc: out
     type: struct Vec2i *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:743
 -
   desc: AiGetItemStealRank
@@ -24110,7 +25568,9 @@
   params:
   - desc: item
     type: u16
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-utility.c:780
 -
   desc: AiGetUnitStealItemSlot
@@ -24121,7 +25581,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: i8
+  return:
+  - desc: result
+    type: i8
   line: ai-utility.c:798
 -
   desc: AiFindSafestReachableLocation
@@ -24134,7 +25596,9 @@
     type: struct Unit *
   - desc: out
     type: struct Vec2i *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:827
 -
   desc: AiFindPillageLocation
@@ -24147,7 +25611,9 @@
     type: struct Vec2i *
   - desc: outItemSlot
     type: u8 *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:869
 -
   desc: AiGetChestUnlockItemSlot
@@ -24158,7 +25624,9 @@
   params:
   - desc: out
     type: u8 *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:893
 -
   desc: AiTryMoveTowards
@@ -24194,7 +25662,9 @@
     type: short
   - desc: out
     type: struct Vec2i *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:990
 -
   desc: AiGetJobRank
@@ -24205,7 +25675,9 @@
   params:
   - desc: jid
     type: u8
-  return: u8
+  return:
+  - desc: result
+    type: u8
   line: ai-utility.c:1034
 -
   desc: AiUnitWithPidExists
@@ -24216,7 +25688,9 @@
   params:
   - desc: pid
     type: u16
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:1058
 -
   desc: AiIsWithinRectDistance
@@ -24235,7 +25709,9 @@
     type: u8
   - desc: maxDistance
     type: u8
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:1087
 -
   desc: AiLocationIsPillageTarget
@@ -24248,7 +25724,9 @@
     type: u8
   - desc: y
     type: u8
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:1097
 -
   desc: func_fe6_080308B0
@@ -24318,7 +25796,9 @@
   params:
   - desc: out
     type: struct Vec2i *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:1242
 -
   desc: func_fe6_08030B94
@@ -24327,7 +25807,9 @@
   size: 0x48
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-utility.c:1280
 -
   desc: func_fe6_08030BDC
@@ -24336,7 +25818,9 @@
   size: 0x9C
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-utility.c:1306
 -
   desc: AiUnitHasAnyStaff
@@ -24347,7 +25831,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-utility.c:1333
 -
   desc: func_fe6_08030CBC
@@ -24367,7 +25853,9 @@
   size: 0x54
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-script.c:58
 -
   desc: AiExecFallbackScriptA
@@ -24376,7 +25864,9 @@
   size: 0x3C
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-script.c:71
 -
   desc: AiTryExecScriptB
@@ -24385,7 +25875,9 @@
   size: 0x54
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-script.c:83
 -
   desc: AiExecFallbackScriptB
@@ -24394,7 +25886,9 @@
   size: 0x3C
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-script.c:96
 -
   desc: AiDoExecScript
@@ -24460,7 +25954,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-script.c:256
 -
   desc: AiIsUnitNonActive
@@ -24471,7 +25967,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-script.c:264
 -
   desc: AiIsUnitEnemyAndNotInScrList
@@ -24482,7 +25980,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-script.c:272
 -
   desc: AiIsUnitEnemyOrInScrList
@@ -24493,7 +25993,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-script.c:280
 -
   desc: AiIsUnitEnemyAndScrPid
@@ -24504,7 +26006,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-script.c:288
 -
   desc: AiIsUnitEnemyAndScrJid
@@ -24515,7 +26019,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-script.c:296
 -
   desc: AiCmd_ActionOnPid
@@ -24806,7 +26312,9 @@
   size: 0x4
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-script.c:679
 -
   desc: func_fe6_080318F0
@@ -24817,7 +26325,9 @@
   params:
   - desc: arg
     type: const u8 *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-script.c:685
 -
   desc: AiAttemptOffensiveAction
@@ -24828,7 +26338,9 @@
   params:
   - desc: unit)
     type: bool (*is_enemy)(struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-battle.c:30
 -
   desc: AiAttemptCombatWithinMovement
@@ -24839,7 +26351,9 @@
   params:
   - desc: unit)
     type: bool (*is_enemy)(struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-battle.c:120
 -
   desc: AiFillReversedAttackRangeMap
@@ -24880,7 +26394,9 @@
     type: bool (*is_enemy)(struct Unit *
   - desc: st
     type: struct AiCombatSimulationSt *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-battle.c:219
 -
   desc: AiAttemptStealAction_GetMovementAt
@@ -24893,7 +26409,9 @@
     type: int
   - desc: y
     type: int
-  return: u8
+  return:
+  - desc: result
+    type: u8
   line: ai-battle.c:304
 -
   desc: AiAttemptStealActionWithinMovement
@@ -24902,7 +26420,9 @@
   size: 0x148
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-battle.c:315
 -
   desc: AiSimulateBestBattleAgainstTarget
@@ -24913,7 +26433,9 @@
   params:
   - desc: st
     type: struct AiCombatSimulationSt *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-battle.c:377
 -
   desc: AiSimulateBestBallistaBattleAgainstTarget
@@ -24926,7 +26448,9 @@
     type: struct AiCombatSimulationSt *
   - desc: item
     type: u16
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-battle.c:415
 -
   desc: AiGetCombatPositionScore
@@ -24941,7 +26465,9 @@
     type: int
   - desc: st
     type: struct AiCombatSimulationSt *
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: ai-battle.c:456
 -
   desc: AiIsBadFight
@@ -24952,7 +26478,9 @@
   params:
   - desc: st
     type: struct AiCombatSimulationSt *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-battle.c:471
 -
   desc: AiSimulateBattleAgainstTargetAtPosition
@@ -24963,7 +26491,9 @@
   params:
   - desc: st
     type: struct AiCombatSimulationSt *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-battle.c:488
 -
   desc: AiGetDamageDealtCombatScoreComponent
@@ -24972,7 +26502,9 @@
   size: 0x60
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-battle.c:512
 -
   desc: AiGetOpponentLowHpScoreComponent
@@ -24981,7 +26513,9 @@
   size: 0x24
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-battle.c:534
 -
   desc: AiGetFriendZoneCombatScoreComponent
@@ -24990,7 +26524,9 @@
   size: 0xA4
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-battle.c:547
 -
   desc: AiGetTargetJobCombatScoreComponent
@@ -24999,7 +26535,9 @@
   size: 0x34
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-battle.c:607
 -
   desc: AiGetTurnCombatScoreComponent
@@ -25008,7 +26546,9 @@
   size: 0x18
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-battle.c:622
 -
   desc: AiGetDamageTakenScoreComponent
@@ -25017,7 +26557,9 @@
   size: 0x60
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-battle.c:627
 -
   desc: AiGetDangerScoreComponent
@@ -25026,7 +26568,9 @@
   size: 0x38
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-battle.c:649
 -
   desc: AiGetLowHpScoreComponent
@@ -25035,7 +26579,9 @@
   size: 0x24
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-battle.c:662
 -
   desc: AiComputeCombatScore
@@ -25061,7 +26607,9 @@
     type: int
   - desc: unit
     type: struct Unit *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-battle.c:704
 -
   desc: AiGetTerrainCombatPositionScoreComponent
@@ -25074,7 +26622,9 @@
     type: int
   - desc: y
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-battle.c:718
 -
   desc: AiGetFriendZoneCombatPositionScoreComponent
@@ -25087,7 +26637,9 @@
     type: int
   - desc: y
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ai-battle.c:727
 -
   desc: AiRefreshDangerMap
@@ -25120,7 +26672,9 @@
     type: int
   - desc: threshold
     type: u8
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-080326C4.c:124
 -
   desc: AiTryGetNearestHealPoint
@@ -25131,7 +26685,9 @@
   params:
   - desc: out
     type: struct Vec2i *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-080326C4.c:132
 -
   desc: func_fe6_08032A08
@@ -25151,7 +26707,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-080326C4.c:233
 -
   desc: AiTryHealSelf
@@ -25160,7 +26718,9 @@
   size: 0xA4
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-080326C4.c:263
 -
   desc: AiTryMoveTowardsEscape
@@ -25169,7 +26729,9 @@
   size: 0xA6
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-080326C4.c:297
 -
   desc: func_fe6_08032C2C
@@ -25178,7 +26740,9 @@
   size: 0x88
   mode: thumb
   params: null
-  return: const struct AiEscapePt *
+  return:
+  - desc: result
+    type: const struct AiEscapePt *
   line: ai-080326C4.c:325
 -
   desc: func_fe6_08032CB4
@@ -25187,7 +26751,9 @@
   size: 0x34
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-080326C4.c:373
 -
   desc: func_fe6_08032CE8
@@ -25198,7 +26764,9 @@
   params:
   - desc: out
     type: u16 *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: ai-080326C4.c:445
 -
   desc: func_fe6_08032DF4
@@ -29589,7 +31157,9 @@
   size: 0xC
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ui.c:238
 -
   desc: GetUiHandPrevY
@@ -29598,7 +31168,9 @@
   size: 0xC
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: ui.c:243
 -
   desc: ClearUi
@@ -29678,7 +31250,9 @@
     type: int
   - desc: right
     type: int
-  return: struct MenuProc *
+  return:
+  - desc: result
+    type: struct MenuProc *
   line: menu.c:49
 -
   desc: StartLockingMenu
@@ -29691,7 +31265,9 @@
     type: const struct MenuInfo *
   - desc: parent
     type: ProcPtr
-  return: struct MenuProc *
+  return:
+  - desc: result
+    type: struct MenuProc *
   line: menu.c:61
 -
   desc: StartMenuExt
@@ -29704,7 +31280,9 @@
     type: const struct MenuInfo *
   - desc: rect
     type: struct MenuRect
-  return: struct MenuProc *
+  return:
+  - desc: result
+    type: struct MenuProc *
   line: menu.c:66
 -
   desc: StartMenu
@@ -29715,7 +31293,9 @@
   params:
   - desc: info
     type: const struct MenuInfo *
-  return: struct MenuProc *
+  return:
+  - desc: result
+    type: struct MenuProc *
   line: menu.c:71
 -
   desc: StartLockingMenuExt
@@ -29730,7 +31310,9 @@
     type: struct MenuRect
   - desc: parent
     type: ProcPtr
-  return: struct MenuProc *
+  return:
+  - desc: result
+    type: struct MenuProc *
   line: menu.c:76
 -
   desc: EndMenu
@@ -29741,7 +31323,9 @@
   params:
   - desc: proc
     type: struct MenuProc *
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: menu.c:144
 -
   desc: EndMenus
@@ -29820,7 +31404,9 @@
   params:
   - desc: proc
     type: struct MenuProc *
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: menu.c:351
 -
   desc: GetMenuCursorPosition
@@ -29848,7 +31434,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: menu.c:389
 -
   desc: MenuEntryDisabled
@@ -29861,7 +31449,9 @@
     type: const struct MenuEntInfo *
   - desc: id
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: menu.c:394
 -
   desc: MenuActionClose
@@ -29874,7 +31464,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: menu.c:399
 -
   desc: MenuHelpBoxRegular
@@ -29887,7 +31479,9 @@
     type: struct MenuProc *
   - desc: ent
     type: struct MenuEntProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: menu.c:404
 -
   desc: Menu_HelpBoxInit
@@ -29920,7 +31514,9 @@
   params:
   - desc: proc
     type: struct MenuProc *
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: menu.c:444
 -
   desc: Menu_FrozenHelpBoxMain
@@ -29944,7 +31540,9 @@
     type: struct MenuProc *
   - desc: msg
     type: int
-  return: fu8
+  return:
+  - desc: result
+    type: fu8
   line: menu.c:469
 -
   desc: FreezeMenu
@@ -29979,7 +31577,9 @@
     type: int
   - desc: right
     type: int
-  return: struct MenuProc *
+  return:
+  - desc: result
+    type: struct MenuProc *
   line: menu.c:499
 -
   desc: ApplyMenuCursorScroll
@@ -30005,7 +31605,9 @@
   params:
   - desc: proc
     type: struct MenuProc *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: menu.c:172
 -
   desc: BeginTargetList
@@ -30081,7 +31683,9 @@
   params:
   - desc: info
     type: const struct MapSelectInfo *
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: map-select.c:127
 -
   desc: StartMapSelectExt
@@ -30096,7 +31700,9 @@
     type: fu8 (*on_a_press)(struct MapSelectProc *
   - desc: target)
     type: struct SelectTarget *
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: map-select.c:154
 -
   desc: EndMapSelect
@@ -30107,7 +31713,9 @@
   params:
   - desc: proc
     type: struct MapSelectProc *
-  return: ProcPtr
+  return:
+  - desc: result
+    type: ProcPtr
   line: map-select.c:164
 -
   desc: HandleMapSelectSwitching
@@ -30129,7 +31737,9 @@
   params:
   - desc: proc
     type: struct MapSelectProc *
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: map-select.c:205
 -
   desc: FreezeMapSelect
@@ -30156,7 +31766,9 @@
   size: 0x5E
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: map-select.c:251
 -
   desc: GetLinkedTargetsNear
@@ -30165,7 +31777,9 @@
   size: 0xA4
   mode: thumb
   params: null
-  return: struct SelectTarget *
+  return:
+  - desc: result
+    type: struct SelectTarget *
   line: map-select.c:276
 -
   desc: GetLinkedTargetsFar
@@ -30174,7 +31788,9 @@
   size: 0x10
   mode: thumb
   params: null
-  return: struct SelectTarget *
+  return:
+  - desc: result
+    type: struct SelectTarget *
   line: map-select.c:313
 -
   desc: GetLinkedTargets
@@ -30183,7 +31799,9 @@
   size: 0x18
   mode: thumb
   params: null
-  return: struct SelectTarget *
+  return:
+  - desc: result
+    type: struct SelectTarget *
   line: map-select.c:319
 -
   desc: CountTargets
@@ -30192,7 +31810,9 @@
   size: 0xC
   mode: thumb
   params: null
-  return: int
+  return:
+  - desc: result
+    type: int
   line: map-select.c:43
 -
   desc: GetTarget
@@ -30203,7 +31823,9 @@
   params:
   - desc: i
     type: int
-  return: struct SelectTarget *
+  return:
+  - desc: result
+    type: struct SelectTarget *
   line: map-select.c:48
 -
   desc: func_fe6_0804256C
@@ -40093,7 +41715,9 @@
     type: int
   - desc: pal
     type: int
-  return: struct MuProc *
+  return:
+  - desc: result
+    type: struct MuProc *
   line: mu.c:254
 -
   desc: StartMu
@@ -40104,7 +41728,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: struct MuProc *
+  return:
+  - desc: result
+    type: struct MuProc *
   line: mu.c:264
 -
   desc: UpdateMu
@@ -40152,7 +41778,9 @@
     type: int
   - desc: y
     type: int
-  return: struct MuProc *
+  return:
+  - desc: result
+    type: struct MuProc *
   line: mu.c:291
 -
   desc: StartMuInternal
@@ -40169,7 +41797,9 @@
     type: u16
   - desc: pal
     type: int
-  return: struct MuProc *
+  return:
+  - desc: result
+    type: struct MuProc *
   line: mu.c:307
 -
   desc: SetMuFacing
@@ -40222,7 +41852,9 @@
   size: 0x22
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: mu.c:400
 -
   desc: MuExistsActive
@@ -40231,7 +41863,9 @@
   size: 0x68
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: mu.c:405
 -
   desc: IsMuActive
@@ -40242,7 +41876,9 @@
   params:
   - desc: mu
     type: struct MuProc *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: mu.c:435
 -
   desc: SetMuMoveScript
@@ -40274,7 +41910,9 @@
     type: int
   - desc: movescr
     type: const u8 *
-  return: struct MuProc *
+  return:
+  - desc: result
+    type: struct MuProc *
   line: mu.c:467
 -
   desc: MuStepSe_Init
@@ -40410,7 +42048,9 @@
   size: 0x22
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: mu.c:674
 -
   desc: Mu_OnStateBump
@@ -40593,7 +42233,9 @@
   size: 0x40
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: mu.c:898
 -
   desc: ResetMuAnims
@@ -40611,7 +42253,9 @@
   size: 0x98
   mode: thumb
   params: null
-  return: struct MuConfig *
+  return:
+  - desc: result
+    type: struct MuConfig *
   line: mu.c:924
 -
   desc: GetMuDisplayPosition
@@ -40624,7 +42268,9 @@
     type: struct MuProc *
   - desc: out
     type: struct Vec2i *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: mu.c:942
 -
   desc: PutMu
@@ -40646,7 +42292,9 @@
   params:
   - desc: mu
     type: struct MuProc *
-  return: u16
+  return:
+  - desc: result
+    type: u16
   line: mu.c:1005
 -
   desc: GetMuImgBufById
@@ -40657,7 +42305,9 @@
   params:
   - desc: id
     type: int
-  return: u8 *
+  return:
+  - desc: result
+    type: u8 *
   line: mu.c:1026
 -
   desc: GetMuImg
@@ -40668,7 +42318,9 @@
   params:
   - desc: mu
     type: struct MuProc *
-  return: const u8 *
+  return:
+  - desc: result
+    type: const u8 *
   line: mu.c:1031
 -
   desc: GetMuAnimForJid
@@ -40679,7 +42331,9 @@
   params:
   - desc: jid
     type: u16
-  return: const u16 *
+  return:
+  - desc: result
+    type: const u16 *
   line: mu.c:1036
 -
   desc: StartMuDeathFade
@@ -41038,7 +42692,9 @@
   params:
   - desc: bu
     type: struct BattleUnit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: manim.c:433
 -
   desc: func_fe6_08061908
@@ -41060,7 +42716,9 @@
   params:
   - desc: bu
     type: struct BattleUnit *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: manim.c:457
 -
   desc: func_fe6_0806199C
@@ -41372,7 +43030,9 @@
     type: int
   - desc: y_to
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: manim.c:1003
 -
   desc: func_fe6_08062A80
@@ -41532,7 +43192,9 @@
   params:
   - desc: unit
     type: struct Unit *
-  return: const u16 *
+  return:
+  - desc: result
+    type: const u16 *
   line: manim.c:1217
 -
   desc: func_fe6_08063120
@@ -41729,7 +43391,9 @@
   size: 0x276
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: manim.c:1759
 -
   desc: func_fe6_0806495C
@@ -43492,7 +45156,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: struct EventInfo *
+  return:
+  - desc: result
+    type: struct EventInfo *
   line: eventinfo.c:75
 -
   desc: SearchNextAvailableEvent
@@ -43503,7 +45169,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: struct EventInfo *
+  return:
+  - desc: result
+    type: struct EventInfo *
   line: eventinfo.c:101
 -
   desc: EvtListCmd_End
@@ -43514,7 +45182,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: eventinfo.c:118
 -
   desc: EvtListCmd_Flag
@@ -43525,7 +45195,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: eventinfo.c:123
 -
   desc: EvtListCmd_Turn
@@ -43536,7 +45208,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: eventinfo.c:136
 -
   desc: EvtListCmd_TurnHard
@@ -43547,7 +45221,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: eventinfo.c:166
 -
   desc: EvtListCmd_Talk
@@ -43558,7 +45234,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: eventinfo.c:177
 -
   desc: EvtListCmd_Tile
@@ -43569,7 +45247,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: eventinfo.c:193
 -
   desc: EvtListCmd_TileWithMapChange
@@ -43580,7 +45260,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: eventinfo.c:216
 -
   desc: EvtListCmd_ItemChest
@@ -43591,7 +45273,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: eventinfo.c:223
 -
   desc: EvtListCmd_Door
@@ -43602,7 +45286,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: eventinfo.c:245
 -
   desc: EvtListCmd_Drawbridge
@@ -43613,7 +45299,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: eventinfo.c:268
 -
   desc: EvtListCmd_Shop
@@ -43624,7 +45312,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: eventinfo.c:291
 -
   desc: EvtListCmd_Area
@@ -43635,7 +45325,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: eventinfo.c:312
 -
   desc: EvtListCmd_AreaHard
@@ -43646,7 +45338,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: eventinfo.c:333
 -
   desc: EvtListCmd_Func
@@ -43657,7 +45351,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: int
+  return:
+  - desc: result
+    type: int
   line: eventinfo.c:344
 -
   desc: EventInfoCheckTalk
@@ -43672,7 +45368,9 @@
     type: fu8
   - desc: pid_b
     type: fu8
-  return: int
+  return:
+  - desc: result
+    type: int
   line: eventinfo.c:359
 -
   desc: CheckActiveUnitArea
@@ -43689,7 +45387,9 @@
     type: int
   - desc: y2
     type: int
-  return: int
+  return:
+  - desc: result
+    type: int
   line: eventinfo.c:372
 -
   desc: CheckAnyBlueUnitArea
@@ -43706,7 +45406,9 @@
     type: int
   - desc: y2
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:382
 -
   desc: func_fe6_0806AD48
@@ -43717,7 +45419,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:398
 -
   desc: func_fe6_0806AD74
@@ -43728,7 +45432,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:409
 -
   desc: func_fe6_0806ADC4
@@ -43739,7 +45445,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:426
 -
   desc: func_fe6_0806ADDC
@@ -43750,7 +45458,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:431
 -
   desc: func_fe6_0806AE04
@@ -43761,7 +45471,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:439
 -
   desc: func_fe6_0806AE2C
@@ -43772,7 +45484,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:447
 -
   desc: func_fe6_0806AE54
@@ -43783,7 +45497,9 @@
   params:
   - desc: info
     type: struct EventInfo *
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:455
 -
   desc: func_fe6_0806AE7C
@@ -43800,7 +45516,9 @@
     type: int
   - desc: y2
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:463
 -
   desc: CheckAvailableTurnEvent
@@ -43809,7 +45527,9 @@
   size: 0x30
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:479
 -
   desc: StartAvailableTurnEvents
@@ -43831,7 +45551,9 @@
     type: fu8
   - desc: pid_b
     type: fu8
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:510
 -
   desc: StartAvailableTalkEvent
@@ -43872,7 +45594,9 @@
     type: fi8
   - desc: y
     type: fi8
-  return: int
+  return:
+  - desc: result
+    type: int
   line: eventinfo.c:572
 -
   desc: StartAvailableTileEvent
@@ -43911,7 +45635,9 @@
     type: fi8
   - desc: y
     type: fi8
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:681
 -
   desc: StartAvailableVisitTileEvent
@@ -43937,7 +45663,9 @@
     type: fi8
   - desc: y
     type: fi8
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:697
 -
   desc: StartAvailableShopTileEvent
@@ -43963,7 +45691,9 @@
     type: fi8
   - desc: y
     type: fi8
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:722
 -
   desc: StartAvailableChestTileEvent
@@ -43989,7 +45719,9 @@
     type: fi8
   - desc: y
     type: fi8
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:738
 -
   desc: StartAvailableDoorTileEvent
@@ -44015,7 +45747,9 @@
     type: fi8
   - desc: y
     type: fi8
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:754
 -
   desc: StartAvailableBridgeTileEvent
@@ -44037,7 +45771,9 @@
   size: 0xE
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:770
 -
   desc: StartAvailableVictoryEvent
@@ -44055,7 +45791,9 @@
   size: 0x1C
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:780
 -
   desc: CheckAvailableActionSelectEvent
@@ -44064,7 +45802,9 @@
   size: 0x34
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:788
 -
   desc: StartAvailableActionSelectEvent
@@ -44073,7 +45813,9 @@
   size: 0x34
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:800
 -
   desc: CheckAvailableMoveSelectConfirmEvent
@@ -44082,7 +45824,9 @@
   size: 0x4
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:817
 -
   desc: StartAvailableMoveSelectConfirmEvent
@@ -44091,7 +45835,9 @@
   size: 0x4
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:822
 -
   desc: StartAvailableAttackMenuEvent
@@ -44100,7 +45846,9 @@
   size: 0x1C
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:827
 -
   desc: StartAvailableAttackMenuItemEvent
@@ -44109,7 +45857,9 @@
   size: 0x1C
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:837
 -
   desc: StartAvailableMapMenuEvent
@@ -44118,7 +45868,9 @@
   size: 0x1C
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:847
 -
   desc: CheckAvailableMoveEvent
@@ -44127,7 +45879,9 @@
   size: 0x40
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:857
 -
   desc: StartAvailableMoveEvent
@@ -44145,7 +45899,9 @@
   size: 0x30
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:885
 -
   desc: StartChapterVictoryEvent
@@ -44172,7 +45928,9 @@
   size: 0x18
   mode: thumb
   params: null
-  return: const struct UnitInfo *
+  return:
+  - desc: result
+    type: const struct UnitInfo *
   line: eventinfo.c:924
 -
   desc: GetAvailableBattleTalkExt
@@ -44185,7 +45943,9 @@
     type: fu8
   - desc: pid_b
     type: fu8
-  return: const struct BattleTalkEnt *
+  return:
+  - desc: result
+    type: const struct BattleTalkEnt *
   line: eventinfo.c:929
 -
   desc: GetAvailableBattleTalk
@@ -44198,7 +45958,9 @@
     type: fu8
   - desc: it
     type: const struct BattleTalkEnt *
-  return: const struct BattleTalkEnt *
+  return:
+  - desc: result
+    type: const struct BattleTalkEnt *
   line: eventinfo.c:954
 -
   desc: CheckBattleTalk
@@ -44211,7 +45973,9 @@
     type: fu8
   - desc: pid_b
     type: fu8
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:974
 -
   desc: StartBattleTalk
@@ -44235,7 +45999,9 @@
   params:
   - desc: pid
     type: fu8
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:1034
 -
   desc: StartBattleDefeatTalk
@@ -44255,7 +46021,9 @@
   size: 0x4
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:1080
 -
   desc: func_fe6_0806B89C
@@ -44282,7 +46050,9 @@
   size: 0x4
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:1093
 -
   desc: func_fe6_0806B8A8
@@ -44300,7 +46070,9 @@
   size: 0x4
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:1102
 -
   desc: func_fe6_0806B8B0
@@ -44309,7 +46081,9 @@
   size: 0x4
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:1107
 -
   desc: func_fe6_0806B8B4
@@ -44376,7 +46150,9 @@
   params:
   - desc: flag
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:1148
 -
   desc: ClearChapterFlag
@@ -44418,7 +46194,9 @@
   params:
   - desc: flag
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:1195
 -
   desc: ClearPermanentFlag
@@ -44460,7 +46238,9 @@
   params:
   - desc: flag
     type: int
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: eventinfo.c:1240
 -
   desc: ClearFlag
@@ -44480,7 +46260,9 @@
   size: 0x8
   mode: thumb
   params: null
-  return: u8 *
+  return:
+  - desc: result
+    type: u8 *
   line: eventinfo.c:1256
 -
   desc: GetPermanentFlagBitsSize
@@ -44489,7 +46271,9 @@
   size: 0x4
   mode: thumb
   params: null
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: eventinfo.c:1261
 -
   desc: GetChapterFlagBits
@@ -44498,7 +46282,9 @@
   size: 0x8
   mode: thumb
   params: null
-  return: u8 *
+  return:
+  - desc: result
+    type: u8 *
   line: eventinfo.c:1266
 -
   desc: GetChapterFlagBitsSize
@@ -44507,7 +46293,9 @@
   size: 0x4
   mode: thumb
   params: null
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: eventinfo.c:1271
 -
   desc: EvtCheck_IsHard
@@ -44516,7 +46304,9 @@
   size: 0x18
   mode: thumb
   params: null
-  return: bool
+  return:
+  - desc: result
+    type: bool
   line: event-functions.c:19
 -
   desc: GetHardModeBonusLevelsByPid
@@ -44527,7 +46317,9 @@
   params:
   - desc: pid
     type: u8
-  return: int
+  return:
+  - desc: result
+    type: int
   line: event-functions.c:27
 -
   desc: ApplyAllHardModeBonusLevels
@@ -59320,7 +61112,9 @@
     type: u8
   - desc: fineAdjust
     type: u8
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: m4a.c:21
 -
   desc: UnusedDummyFunc
@@ -59685,7 +61479,9 @@
     type: u8
   - desc: fineAdjust
     type: u8
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: m4a.c:782
 -
   desc: CgbOscOff
@@ -60182,7 +61978,9 @@
     type: u8 *
   - desc: size
     type: u32
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: agb-sram.c:25
 -
   desc: SetSramFastFunc
@@ -60206,7 +62004,9 @@
     type: u8 *
   - desc: size
     type: u32
-  return: u32
+  return:
+  - desc: result
+    type: u32
   line: agb-sram.c:75
 -
   desc: __ashldi3
