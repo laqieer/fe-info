@@ -11,6 +11,7 @@ These files contain labeled RAM and ROM data, along with struct and enum definit
   - `validator.py` - Script for validating data and converting to JSON
   - `dumper.py` - Script for finding and outputing data from a ROM file
   - `constants.py` - Defines constants used by other scripts
+  - `decomp.py` - Script for finding data from decomp project and outputing to YAML
 
 Game directories are `fe6` for Binding Blade and `fe8` for The Sacred Stones.
 
