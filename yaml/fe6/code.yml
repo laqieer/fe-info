@@ -2384,7 +2384,7 @@
   - desc: fmt
     type: const char *
   - desc: '...'
-    type: ''
+    type: varargs
   return: null
   line: debug-text.c:74
 -
@@ -2406,7 +2406,7 @@
   - desc: fmt
     type: const char *
   - desc: '...'
-    type: ''
+    type: varargs
   return: null
   line: debug-text.c:100
 -
@@ -5769,8 +5769,8 @@
   size: 0x2C
   mode: thumb
   params:
-  - desc: proc)
-    type: void (*func)(struct EventProc *
+  - desc: func
+    type: void (*)(struct EventProc *proc)
   - desc: eproc
     type: struct EventProc *
   return: null
@@ -10169,8 +10169,8 @@
   size: 0x1C
   mode: thumb
   params:
-  - desc: func)(void)
-    type: void (*
+  - desc: func
+    type: void (*)(void)
   - desc: delay
     type: int
   return: null
@@ -10182,8 +10182,8 @@
   size: 0x20
   mode: thumb
   params:
-  - desc: func)(int)
-    type: void (*
+  - desc: func
+    type: void (*)(int)
   - desc: arg
     type: int
   - desc: delay
@@ -17677,8 +17677,8 @@
   size: 0x6C
   mode: thumb
   params:
-  - desc: unit)
-    type: void (*func)(struct Unit *
+  - desc: func
+    type: void (*)(struct Unit *unit)
   return: null
   line: target-list.c:21
 -
@@ -17688,8 +17688,8 @@
   size: 0x6C
   mode: thumb
   params:
-  - desc: unit)
-    type: void (*func)(struct Unit *
+  - desc: func
+    type: void (*)(struct Unit *unit)
   return: null
   line: target-list.c:40
 -
@@ -17699,10 +17699,8 @@
   size: 0x58
   mode: thumb
   params:
-  - desc: func)(int x
-    type: void (*
-  - desc: y)
-    type: int
+  - desc: func
+    type: void (*)(int x, int y)
   return: null
   line: target-list.c:59
 -
@@ -17716,8 +17714,8 @@
     type: int
   - desc: y
     type: int
-  - desc: unit)
-    type: void (*tryEnlistTarget)(struct Unit *
+  - desc: tryEnlistTarget
+    type: void (*)(struct Unit *unit)
   return: null
   line: target-list.c:75
 -
@@ -17731,10 +17729,8 @@
     type: int
   - desc: y
     type: int
-  - desc: tryEnlistTarget)(int x
-    type: void (*
-  - desc: y)
-    type: int
+  - desc: tryEnlistTarget
+    type: void (*)(int x, int y)
   return: null
   line: target-list.c:85
 -
@@ -17748,10 +17744,8 @@
     type: int
   - desc: y
     type: int
-  - desc: tryEnlistTarget)(int x
-    type: void (*
-  - desc: y)
-    type: int
+  - desc: tryEnlistTarget
+    type: void (*)(int x, int y)
   return: null
   line: target-list.c:95
 -
@@ -17761,8 +17755,8 @@
   size: 0x50
   mode: thumb
   params:
-  - desc: unit)
-    type: void (*tryEnlistTarget)(struct Unit *
+  - desc: tryEnlistTarget
+    type: void (*)(struct Unit *unit)
   return: null
   line: target-list.c:105
 -
@@ -18951,8 +18945,8 @@
   params:
   - desc: unit
     type: struct Unit *
-  - desc: )
-    type: void (*list_targets)(struct Unit *
+  - desc: list_targets
+    type: void (*)(struct Unit *)
   return:
     desc: result
     type: bool
@@ -19150,8 +19144,8 @@
   params:
   - desc: unit
     type: struct Unit *
-  - desc: unit)
-    type: void (*list_targets)(struct Unit *
+  - desc: list_targets
+    type: void (*)(struct Unit *unit)
   return: null
   line: item-use.c:509
 -
@@ -19259,8 +19253,8 @@
   params:
   - desc: unit
     type: struct Unit *
-  - desc: unit)
-    type: void (*list_targets)(struct Unit *
+  - desc: list_targets
+    type: void (*)(struct Unit *unit)
   return: null
   line: item-use.c:671
 -
@@ -19399,8 +19393,8 @@
   params:
   - desc: unit
     type: struct Unit *
-  - desc: unit)
-    type: void (*list_targets)(struct Unit *
+  - desc: list_targets
+    type: void (*)(struct Unit *unit)
   return: null
   line: item-use.c:782
 -
@@ -19412,8 +19406,8 @@
   params:
   - desc: unit
     type: struct Unit *
-  - desc: unit)
-    type: void (*list_targets)(struct Unit *
+  - desc: list_targets
+    type: void (*)(struct Unit *unit)
   return: null
   line: item-use.c:793
 -
@@ -19492,8 +19486,8 @@
   params:
   - desc: unit
     type: struct Unit *
-  - desc: unit)
-    type: void (*list_targets)(struct Unit *
+  - desc: list_targets
+    type: void (*)(struct Unit *unit)
   return: null
   line: item-use.c:837
 -
@@ -25278,8 +25272,8 @@
   size: 0x118
   mode: thumb
   params:
-  - desc: unit)
-    type: bool (*func)(struct Unit *
+  - desc: func
+    type: bool (*)(struct Unit *unit)
   - desc: out
     type: struct Vec2i *
   return:
@@ -25549,10 +25543,8 @@
     type: int
   - desc: y
     type: int
-  - desc: funcArg)(int x
-    type: u8 (*
-  - desc: y)
-    type: int
+  - desc: funcArg
+    type: u8 (*)(int x, int y)
   - desc: out
     type: struct Vec2i *
   return:
@@ -26336,8 +26328,8 @@
   size: 0x1D8
   mode: thumb
   params:
-  - desc: unit)
-    type: bool (*is_enemy)(struct Unit *
+  - desc: is_enemy
+    type: bool (*)(struct Unit *unit)
   return:
     desc: result
     type: bool
@@ -26349,8 +26341,8 @@
   size: 0x150
   mode: thumb
   params:
-  - desc: unit)
-    type: bool (*is_enemy)(struct Unit *
+  - desc: is_enemy
+    type: bool (*)(struct Unit *unit)
   return:
     desc: result
     type: bool
@@ -26390,8 +26382,8 @@
   size: 0x18A
   mode: thumb
   params:
-  - desc: unit)
-    type: bool (*is_enemy)(struct Unit *
+  - desc: is_enemy
+    type: bool (*)(struct Unit *unit)
   - desc: st
     type: struct AiCombatSimulationSt *
   return:
@@ -31696,10 +31688,8 @@
   params:
   - desc: info
     type: const struct MapSelectInfo *
-  - desc: proc
-    type: fu8 (*on_a_press)(struct MapSelectProc *
-  - desc: target)
-    type: struct SelectTarget *
+  - desc: on_a_press
+    type: fu8 (*)(struct MapSelectProc *proc, struct SelectTarget *target)
   return:
     desc: result
     type: ProcPtr

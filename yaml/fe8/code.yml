@@ -614,8 +614,8 @@
   size: 0xC
   mode: thumb
   params:
-  - desc: func)(void)
-    type: void (*
+  - desc: func
+    type: void (*)(void)
   return: null
   line: hardware.c:274
 -
@@ -1018,8 +1018,8 @@
   size: 0x14
   mode: thumb
   params:
-  - desc: hblankHandler)(void)
-    type: void (*
+  - desc: hblankHandler
+    type: void (*)(void)
   return: null
   line: hardware.c:1002
 -
@@ -1029,8 +1029,8 @@
   size: 0x14
   mode: thumb
   params:
-  - desc: hblankHandler)(void)
-    type: void (*
+  - desc: hblankHandler
+    type: void (*)(void)
   return: null
   line: hardware.c:1008
 -
@@ -2876,7 +2876,7 @@
   - desc: fmt
     type: const char *
   - desc: '...'
-    type: ''
+    type: varargs
   return: null
   line: fontgrp.c:86
 -
@@ -2898,7 +2898,7 @@
   - desc: fmt
     type: const char *
   - desc: '...'
-    type: ''
+    type: varargs
   return: null
   line: fontgrp.c:112
 -
@@ -3080,7 +3080,7 @@
   - desc: fmt
     type: const char *
   - desc: '...'
-    type: ''
+    type: varargs
   return: null
   line: fontgrp.c:315
 -
@@ -14493,8 +14493,8 @@
     type: int
   - desc: y
     type: int
-  - desc: mct[TERRAIN_COUNT]
-    type: const s8
+  - desc: mct
+    type: const s8 [TERRAIN_COUNT]
   return: null
   line: bmidoten.c:48
 -
@@ -14508,8 +14508,8 @@
     type: int
   - desc: y
     type: int
-  - desc: mct[TERRAIN_COUNT]
-    type: const s8
+  - desc: mct
+    type: const s8 [TERRAIN_COUNT]
   return: null
   line: bmidoten.c:56
 -
@@ -14536,8 +14536,8 @@
   size: 0x20
   mode: thumb
   params:
-  - desc: mct[TERRAIN_COUNT]
-    type: const s8
+  - desc: mct
+    type: const s8 [TERRAIN_COUNT]
   return: null
   line: bmidoten.c:71
 -
@@ -14583,8 +14583,8 @@
     type: int
   - desc: y
     type: int
-  - desc: output[]
-    type: u8
+  - desc: output
+    type: u8 []
   return: null
   line: bmidoten.c:146
 -
@@ -20213,8 +20213,8 @@
   size: 0x6C
   mode: thumb
   params:
-  - desc: unit)
-    type: void (*func)(struct Unit *
+  - desc: func
+    type: void (*)(struct Unit *unit)
   return: null
   line: bmtarget.c:27
 -
@@ -20224,8 +20224,8 @@
   size: 0x6C
   mode: thumb
   params:
-  - desc: unit)
-    type: void (*func)(struct Unit *
+  - desc: func
+    type: void (*)(struct Unit *unit)
   return: null
   line: bmtarget.c:49
 -
@@ -20235,10 +20235,8 @@
   size: 0x58
   mode: thumb
   params:
-  - desc: func)(int x
-    type: void (*
-  - desc: y)
-    type: int
+  - desc: func
+    type: void (*)(int x, int y)
   return: null
   line: bmtarget.c:71
 -
@@ -20252,8 +20250,8 @@
     type: int
   - desc: y
     type: int
-  - desc: unit)
-    type: void (*func)(struct Unit *
+  - desc: func
+    type: void (*)(struct Unit *unit)
   return: null
   line: bmtarget.c:89
 -
@@ -20267,10 +20265,8 @@
     type: int
   - desc: y
     type: int
-  - desc: func)(int x
-    type: void (*
-  - desc: y)
-    type: int
+  - desc: func
+    type: void (*)(int x, int y)
   return: null
   line: bmtarget.c:100
 -
@@ -20284,10 +20280,8 @@
     type: int
   - desc: y
     type: int
-  - desc: func)(int x
-    type: void (*
-  - desc: y)
-    type: int
+  - desc: func
+    type: void (*)(int x, int y)
   return: null
   line: bmtarget.c:111
 -
@@ -20301,10 +20295,8 @@
     type: int
   - desc: y
     type: int
-  - desc: func)(int x
-    type: void (*
-  - desc: y)
-    type: int
+  - desc: func
+    type: void (*)(int x, int y)
   return: null
   line: bmtarget.c:130
 -
@@ -20314,8 +20306,8 @@
   size: 0x50
   mode: thumb
   params:
-  - desc: unit)
-    type: void (*func)(struct Unit *
+  - desc: func
+    type: void (*)(struct Unit *unit)
   return: null
   line: bmtarget.c:141
 -
@@ -21818,8 +21810,8 @@
   params:
   - desc: unit
     type: struct Unit *
-  - desc: )
-    type: void (*func)(struct Unit *
+  - desc: func
+    type: void (*)(struct Unit *)
   return:
     desc: result
     type: s8
@@ -22030,8 +22022,8 @@
   params:
   - desc: unit
     type: struct Unit *
-  - desc: )
-    type: void (*func)(struct Unit *
+  - desc: func
+    type: void (*)(struct Unit *)
   return: null
   line: bmitemuse.c:681
 -
@@ -22043,8 +22035,8 @@
   params:
   - desc: unit
     type: struct Unit *
-  - desc: )
-    type: void (*func)(struct Unit *
+  - desc: func
+    type: void (*)(struct Unit *)
   - desc: msgHelp
     type: int
   return: null
@@ -22154,8 +22146,8 @@
   params:
   - desc: unit
     type: struct Unit *
-  - desc: )
-    type: void (*func)(struct Unit *
+  - desc: func
+    type: void (*)(struct Unit *)
   - desc: msgHelp
     type: int
   return: null
@@ -22296,8 +22288,8 @@
   params:
   - desc: unit
     type: struct Unit *
-  - desc: )
-    type: void (*func)(struct Unit *
+  - desc: func
+    type: void (*)(struct Unit *)
   return: null
   line: bmitemuse.c:975
 -
@@ -22309,8 +22301,8 @@
   params:
   - desc: unit
     type: struct Unit *
-  - desc: )
-    type: void (*func)(struct Unit *
+  - desc: func
+    type: void (*)(struct Unit *)
   return: null
   line: bmitemuse.c:986
 -
@@ -22389,8 +22381,8 @@
   params:
   - desc: unit
     type: struct Unit *
-  - desc: )
-    type: void (*func)(struct Unit *
+  - desc: func
+    type: void (*)(struct Unit *)
   return: null
   line: bmitemuse.c:1030
 -
@@ -36951,8 +36943,8 @@
   size: 0x3E
   mode: thumb
   params:
-  - desc: list[MENU_OVERRIDE_MAX]
-    type: u8
+  - desc: list
+    type: u8 [MENU_OVERRIDE_MAX]
   return: null
   line: uimenu.c:709
 -
@@ -36962,8 +36954,8 @@
   size: 0x28
   mode: thumb
   params:
-  - desc: list[MENU_OVERRIDE_MAX]
-    type: u8
+  - desc: list
+    type: u8 [MENU_OVERRIDE_MAX]
   return: null
   line: uimenu.c:722
 -
@@ -37133,10 +37125,8 @@
   params:
   - desc: selectInfo
     type: const struct SelectInfo *
-  - desc: onSelect)(ProcPtr
-    type: u8 (*
-  - desc: )
-    type: struct SelectTarget *
+  - desc: onSelect
+    type: u8 (*)(ProcPtr, struct SelectTarget *)
   return:
     desc: result
     type: ProcPtr
@@ -50979,8 +50969,8 @@
   size: 0x20
   mode: thumb
   params:
-  - desc: commands[MU_COMMAND_MAX_COUNT]
-    type: const u8
+  - desc: commands
+    type: const u8 [MU_COMMAND_MAX_COUNT]
   return: null
   line: mu.c:762
 -
@@ -51027,8 +51017,8 @@
   params:
   - desc: proc
     type: struct MUProc *
-  - desc: commands[MU_COMMAND_MAX_COUNT]
-    type: const u8
+  - desc: commands
+    type: const u8 [MU_COMMAND_MAX_COUNT]
   return: null
   line: mu.c:845
 -
@@ -51046,8 +51036,8 @@
     type: u16
   - desc: palId
     type: unsigned
-  - desc: commands[MU_COMMAND_MAX_COUNT]
-    type: const u8
+  - desc: commands
+    type: const u8 [MU_COMMAND_MAX_COUNT]
   return:
     desc: result
     type: struct MUProc *

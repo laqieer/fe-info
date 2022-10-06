@@ -3,6 +3,7 @@ import re
 import sys
 import subprocess
 import pycparser
+from pycparser.c_ast import EllipsisParam
 from pycparserext.ext_c_parser import GnuCParser
 from pycparserext.ext_c_generator import GnuCGenerator
 from constants import *
@@ -19,19 +20,18 @@ class MyVisitor(GnuCGenerator):
             retVal = self.visit(n.decl.type.type)
             if retVal != '' and retVal != 'void':
                 symbols[name]['return'] = {'desc': 'result', 'type': retVal}
-            args = self.visit(n.decl.type.args)
-            if args != '' and args != 'void':
-                symbols[name]['params'] = []
-                for arg in args.split(', '):
-                    separator = ' '
-                    if '*' in arg:
-                        separator = '*'
-                    arr = arg.split(separator)
-                    argName = arr[-1]
-                    argType = separator.join(arr[:-1])
-                    if separator == '*':
-                        argType += '*'
-                    symbols[name]['params'].append({'desc': argName, 'type': argType})
+            if n.decl.type.args is not None:
+                for param in n.decl.type.args.params:
+                    if isinstance(param, EllipsisParam):
+                        paramName = '...'
+                        paramType = 'varargs'
+                    else:
+                        paramName = param.name
+                        paramType = self.visit(param.type)
+                    if paramName is not None and paramType != 'void':
+                        if 'params' not in symbols[name]:
+                            symbols[name]['params'] = []
+                        symbols[name]['params'].append({'desc': paramName, 'type': paramType})
         decl = self.visit(n.decl)
         self.indent_level = 0
         body = self.visit(n.body)
