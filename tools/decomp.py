@@ -69,24 +69,33 @@ def readDeclFromSrc(path: str) -> None:
                                             r'-iquote', r'.'])
     MyVisitor().visit(ast)
 
+# Matches a readelf -SW section row: [ Nr] Name Type Addr Off Size ...
+# Requires a non-empty section name, so the NULL row and header are ignored.
+SECTION_PAT = re.compile(
+    r'^\s*\[\s*\d+\]\s+(\S+)\s+\S+\s+([0-9a-fA-F]+)\s+[0-9a-fA-F]+\s+([0-9a-fA-F]+)')
+
+
+def isRamSection(section: str) -> bool:
+    # Fire Emblem ROMs place RAM data in IWRAM and the EWRAM overlay/data
+    # sections (e.g. ewram_data, ewram_overlay_*). Older linker scripts used
+    # a single "EWRAM" section, so accept that too.
+    return (section == 'IWRAM' or section == 'EWRAM' or
+            section.lower().startswith('ewram'))
+
+
 def readSectionsFromElf(path: str) -> None:
     try:
-        result = subprocess.run(['arm-none-eabi-readelf', '-S', path], capture_output=True, text=True, check=True)
+        # -W (wide) prevents section names from being truncated as "name[...]"
+        result = subprocess.run(['arm-none-eabi-readelf', '-SW', path], capture_output=True, text=True, check=True)
     except subprocess.CalledProcessError as err:
         print(err)
         print(err.stderr)
         sys.exit(1)
-    lines = result.stdout.splitlines()
-    result = re.search( r'There are (\d+) section headers', lines[0], re.I)
-    if result:
-        num = int(result.group(1))
-    else:
-        print('cannot find section num')
-        print(lines[0])
-        sys.exit(1)
-    for i in range(5, 4 + num):
-        Name, _, Addr, _, Size = lines[i].split(']')[1].split()[:5]
-        sections[Name] = {'addr': int(Addr, 16), 'size': int(Size, 16)}
+    for line in result.stdout.splitlines():
+        m = SECTION_PAT.match(line)
+        if m:
+            name, addr, size = m.group(1), m.group(2), m.group(3)
+            sections[name] = {'addr': int(addr, 16), 'size': int(size, 16)}
 
 def readSymbolsFromElf(path: str) -> None:
     try:
@@ -95,32 +104,45 @@ def readSymbolsFromElf(path: str) -> None:
         print(err)
         print(err.stderr)
         sys.exit(1)
-    lines = result.stdout.splitlines()
-    for i in range(6, len(lines)):
-        Name, Value, _, Type, Size, _, Last = [x.strip() for x in lines[i].split('|')]
-        lasts = Last.split()
-        Section = ''
-        Line = ''
-        if len(lasts) >= 2:
-            Line = lasts[1]
-        if len(lasts) >= 1:
-            Section = lasts[0]
-        if Section not in ('ROM', 'EWRAM', 'IWRAM'):
+    # First pass: collect real ROM/RAM symbols (skip *ABS*, *UND*, debug, etc.)
+    entries = []
+    for line in result.stdout.splitlines():
+        parts = line.split('|')
+        if len(parts) < 7:
             continue
-        Value = int(Value, 16)
-        if Size == '':
-            Size = sections[Section]['addr'] + sections[Section]['size']
-            if i < len(lines) - 1:
-                Size = min(Size, int(lines[i + 1].split('|')[1].strip(), 16))
-            Size -= Value
-        else:
-            Size = int(Size, 16)
+        Name = parts[0].strip()
+        Value = parts[1].strip()
+        Type = parts[3].strip()
+        Size = parts[4].strip()
+        # nm -l appends "section  /path/to/file:line" to the last column
+        lasts = parts[6].split()
+        if not lasts:
+            continue
+        Section = lasts[0]
+        Line = lasts[1] if len(lasts) >= 2 else ''
+        if not (Section == 'ROM' or isRamSection(Section)):
+            continue
+        try:
+            Value = int(Value, 16)
+        except ValueError:
+            continue
+        Size = int(Size, 16) if Size else None
+        entries.append([Value, Size, Name, Type, Section, Line])
+    # Sort by address so sizes can be inferred from the next symbol
+    entries.sort(key=lambda e: e[0])
+    # Second pass: infer missing sizes and build the symbol table
+    for i, (Value, Size, Name, Type, Section, Line) in enumerate(entries):
+        if Size is None:
+            sec = sections.get(Section)
+            end = sec['addr'] + sec['size'] if sec else Value
+            if i + 1 < len(entries) and entries[i + 1][0] > Value:
+                end = min(end, entries[i + 1][0])
+            Size = end - Value
+            if Size < 0:
+                Size = 0
         MapType = MAP_RAM
         if Section == 'ROM':
-            if Type == 'FUNC':
-                MapType = MAP_CODE
-            else:
-                MapType = MAP_DATA
+            MapType = MAP_CODE if Type == 'FUNC' else MAP_DATA
         symbols[Name] = {
             'mapType': MapType,
             'addr': Value,
@@ -162,9 +184,22 @@ def main() -> int:
     # you need to install devkitARM or GNU Arm Embedded Toolchain and add it to your env PATH first
     srcPath = sys.argv[1]
     dstPath = sys.argv[2]
+    # optional explicit path to a combined C source for type enrichment
+    cPath = sys.argv[3] if len(sys.argv) > 3 else srcPath + '.c'
     readSectionsFromElf(srcPath + '.elf')
     readSymbolsFromElf(srcPath + '.elf')
-    readDeclFromSrc(srcPath + '.c')
+    # Type/param enrichment from C source is optional: the ELF alone yields a
+    # complete label/address/size map. Skip gracefully if the source is
+    # missing or cannot be parsed.
+    if os.path.isfile(cPath):
+        try:
+            readDeclFromSrc(cPath)
+        except Exception as err:
+            print(f'warning: skipping type enrichment from {cPath}: {err}',
+                  file=sys.stderr)
+    else:
+        print(f'note: no C source at {cPath}; skipping type enrichment',
+              file=sys.stderr)
     writeDataToYaml(dstPath, MAP_CODE)
     writeDataToYaml(dstPath, MAP_DATA)
     writeDataToYaml(dstPath, MAP_RAM)
