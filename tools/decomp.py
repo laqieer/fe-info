@@ -75,12 +75,20 @@ SECTION_PAT = re.compile(
     r'^\s*\[\s*\d+\]\s+(\S+)\s+\S+\s+([0-9a-fA-F]+)\s+[0-9a-fA-F]+\s+([0-9a-fA-F]+)')
 
 
-def isRamSection(section: str) -> bool:
-    # Fire Emblem ROMs place RAM data in IWRAM and the EWRAM overlay/data
-    # sections (e.g. ewram_data, ewram_overlay_*). Older linker scripts used
-    # a single "EWRAM" section, so accept that too.
-    return (section == 'IWRAM' or section == 'EWRAM' or
-            section.lower().startswith('ewram'))
+# GBA memory regions, classified by address so this works regardless of how
+# a given decomp project names its sections (fe6/fe8u use ROM/IWRAM/ewram_*,
+# fe8j uses .rom/.bss_*). EWRAM/IWRAM are RAM; ROM is code or data.
+EWRAM_START, EWRAM_END = 0x02000000, 0x03000000
+IWRAM_START, IWRAM_END = 0x03000000, 0x04000000
+ROM_START, ROM_END = 0x08000000, 0x0A000000
+
+
+def classifyByAddr(addr: int):
+    if ROM_START <= addr < ROM_END:
+        return 'ROM'
+    if EWRAM_START <= addr < IWRAM_END:
+        return 'RAM'
+    return None
 
 
 def readSectionsFromElf(path: str) -> None:
@@ -120,11 +128,15 @@ def readSymbolsFromElf(path: str) -> None:
             continue
         Section = lasts[0]
         Line = lasts[1] if len(lasts) >= 2 else ''
-        if not (Section == 'ROM' or isRamSection(Section)):
+        # Skip absolute/undefined/common symbols (*ABS*, *UND*, *COM*)
+        if Section.startswith('*'):
             continue
         try:
             Value = int(Value, 16)
         except ValueError:
+            continue
+        # Keep only symbols that land in ROM/EWRAM/IWRAM
+        if classifyByAddr(Value) is None:
             continue
         Size = int(Size, 16) if Size else None
         entries.append([Value, Size, Name, Type, Section, Line])
@@ -140,9 +152,10 @@ def readSymbolsFromElf(path: str) -> None:
             Size = end - Value
             if Size < 0:
                 Size = 0
-        MapType = MAP_RAM
-        if Section == 'ROM':
+        if classifyByAddr(Value) == 'ROM':
             MapType = MAP_CODE if Type == 'FUNC' else MAP_DATA
+        else:
+            MapType = MAP_RAM
         symbols[Name] = {
             'mapType': MapType,
             'addr': Value,

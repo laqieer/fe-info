@@ -68,15 +68,15 @@ def combine_yamls(data_list: List[InfoFile]) -> InfoFile:
 def compare_addrs(entry1, entry2) -> int:
     addr1 = entry1["addr"]
     addr2 = entry2["addr"]
-    if isinstance(addr1, dict):
-        for region in REGIONS:
-            if region in addr1 and region in addr2:
-                addr1 = addr1[region]
-                addr2 = addr2[region]
-                break
-        if isinstance(addr1, dict):
-            return 0
-    return addr1 - addr2
+    # A plain int address applies to every region; a dict is region-specific.
+    # Compare on the first region for which both entries have a value so that
+    # versioned and plain addresses can be sorted together.
+    for region in REGIONS:
+        a1 = addr1.get(region) if isinstance(addr1, dict) else addr1
+        a2 = addr2.get(region) if isinstance(addr2, dict) else addr2
+        if a1 is not None and a2 is not None:
+            return a1 - a2
+    return 0
 
 
 def ints_to_strs(data: InfoFile) -> None:
