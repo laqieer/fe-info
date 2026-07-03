@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "$ref": "urn:definitions#/definitions/Name"
+            },
+            "desc": {
+                "$ref": "urn:definitions#/definitions/Description"
+            },
+            "size": {
+                "type": "integer"
+            },
+            "vars": {
+                "type": "array",
+                "items": {
+                    "$ref": "urn:definitions#/definitions/NamedVar"
+                },
+                "minItems": 1
+            },
+            "loc": {
+                "$ref": "urn:definitions#/definitions/Location"
+            }
+        },
+        "required": ["name", "size", "vars", "loc"],
+        "additionalProperties": false
+    }
+}

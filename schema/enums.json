@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "$ref": "urn:definitions#/definitions/Name"
+            },
+            "desc": {
+                "$ref": "urn:definitions#/definitions/Description"
+            },
+            "vals": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "$ref": "urn:definitions#/definitions/Name"
+                        },
+                        "desc": {
+                            "$ref": "urn:definitions#/definitions/Description"
+                        },
+                        "val": {
+                            "type": "integer"
+                        }
+                    },
+                    "required": ["name", "val"],
+                    "additionalProperties": false
+                },
+                "minItems": 1
+            },
+            "loc": {
+                "$ref": "urn:definitions#/definitions/Location"
+            }
+        },
+        "required": ["name", "vals", "loc"],
+        "additionalProperties": false
+    }
+}

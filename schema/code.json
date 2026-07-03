@@ -1,0 +1,83 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "$ref": "urn:definitions#/definitions/Name"
+            },
+            "desc": {
+                "$ref": "urn:definitions#/definitions/Description"
+            },
+            "addr": {
+                "$ref": "urn:definitions#/definitions/RegionInt"
+            },
+            "size": {
+                "$ref": "urn:definitions#/definitions/RegionInt"
+            },
+            "mode": {
+                "type": "string",
+                "enum": ["thumb", "arm"]
+            },
+            "params": {
+                "oneOf": [
+                    {
+                        "type": "null"
+                    },
+                    {
+                        "type": "array",
+                        "items": {
+                            "$ref": "urn:definitions#/definitions/NamedVar"
+                        }
+                    }
+                ]
+            },
+            "return": {
+                "oneOf": [
+                    {
+                        "type": "null"
+                    },
+                    {
+                        "$ref": "urn:definitions#/definitions/Var"
+                    }
+                ]
+            },
+            "loc": {
+                "$ref": "urn:definitions#/definitions/Location"
+            }
+        },
+        "required": ["name", "addr", "size", "mode", "params", "return", "loc"],
+        "additionalProperties": false
+    },
+    "$defs": {
+        "CodeVar": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "$ref": "urn:definitions#/definitions/Name"
+                },
+                "desc": {
+                    "$ref": "urn:definitions#/definitions/Description"
+                },
+                "type": {
+                    "$ref": "urn:definitions#/definitions/Type"
+                },
+                "count": {
+                    "$ref": "urn:definitions#/definitions/RegionInt"
+                },
+                "cat": {
+                    "$ref": "urn:definitions#/definitions/Category"
+                },
+                "comp": {
+                    "$ref": "urn:definitions#/definitions/Compression"
+                },
+                "enum": {
+                    "$ref": "urn:definitions#/definitions/Name"
+                }
+            },
+            "required": ["name", "type"],
+            "additionalProperties": false
+        }
+    }
+}
