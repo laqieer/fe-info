@@ -9,6 +9,7 @@ These files contain labeled RAM and ROM data, along with struct and enum definit
 - `tools`
   - `utils.py` - Functions for working with YAML data
   - `validator.py` - Script for validating data and converting to JSON
+  - `validate_schema.py` - Script for validating the JSON files against the schemas in `schema/`
   - `dumper.py` - Script for finding and outputing data from a ROM file
   - `constants.py` - Defines constants used by other scripts
   - `decomp.py` - Script for finding data from decomp project and outputing to YAML
@@ -16,22 +17,38 @@ These files contain labeled RAM and ROM data, along with struct and enum definit
 Game directories are `fe6` for Binding Blade and `fe8` for The Sacred Stones.
 
 ## Data Format
-- ram / rom
+Addresses, sizes, offsets and counts are hexadecimal strings (no `0x` prefix).
+When a value differs between regions it is instead an object keyed by region
+(`U`, `E`, `J`, `C`, `B`), e.g. `addr: {J: "8000000", U: "8000010"}`.
+
+- ram / rom (`data`)
   - desc
   - label
-  - type
+  - type (may be `null` for labels/symbols that have no C type)
   - addr
-  - size (optional)
+  - size
   - count (optional, assume count=1 if not specified)
   - enum (optional)
+  - line (optional, source location `file:line`)
 - code
   - desc
   - label
   - addr
   - size
   - mode (`thumb` or `arm`)
-  - params
-  - return
+  - params (`null`, or a list of `{desc, type}`)
+  - return (`null`, or `{desc, type}`)
+  - line (optional, source location `file:line`)
+
+## Validation
+The `schema/` directory contains JSON Schemas describing the generated JSON in
+`json/`. Validate every file (requires `jsonschema`):
+
+```
+python3 tools/validate_schema.py            # all games and maps
+python3 tools/validate_schema.py --game fe8 --map data
+```
+
 
 ### Primitive Types
 - `u8` - Unsigned 8 bit integer

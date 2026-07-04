@@ -4,80 +4,31 @@
     "items": {
         "type": "object",
         "properties": {
-            "name": {
-                "$ref": "urn:definitions#/definitions/Name"
-            },
-            "desc": {
-                "$ref": "urn:definitions#/definitions/Description"
-            },
-            "addr": {
-                "$ref": "urn:definitions#/definitions/RegionInt"
-            },
-            "size": {
-                "$ref": "urn:definitions#/definitions/RegionInt"
-            },
-            "mode": {
-                "type": "string",
-                "enum": ["thumb", "arm"]
-            },
+            "desc": { "$ref": "urn:definitions#/definitions/Description" },
+            "label": { "$ref": "urn:definitions#/definitions/Label" },
+            "addr": { "$ref": "urn:definitions#/definitions/RegionHex" },
+            "size": { "$ref": "urn:definitions#/definitions/RegionHex" },
+            "mode": { "$ref": "urn:definitions#/definitions/Mode" },
             "params": {
                 "oneOf": [
-                    {
-                        "type": "null"
-                    },
+                    { "type": "null" },
                     {
                         "type": "array",
-                        "items": {
-                            "$ref": "urn:definitions#/definitions/NamedVar"
-                        }
+                        "items": { "$ref": "urn:definitions#/definitions/Param" },
+                        "minItems": 1
                     }
                 ]
             },
             "return": {
                 "oneOf": [
-                    {
-                        "type": "null"
-                    },
-                    {
-                        "$ref": "urn:definitions#/definitions/Var"
-                    }
+                    { "type": "null" },
+                    { "$ref": "urn:definitions#/definitions/Param" }
                 ]
             },
-            "loc": {
-                "$ref": "urn:definitions#/definitions/Location"
-            }
+            "notes": { "type": "string" },
+            "line": { "$ref": "urn:definitions#/definitions/Line" }
         },
-        "required": ["name", "addr", "size", "mode", "params", "return", "loc"],
+        "required": ["desc", "label", "addr", "size", "mode", "params", "return"],
         "additionalProperties": false
-    },
-    "$defs": {
-        "CodeVar": {
-            "type": "object",
-            "properties": {
-                "name": {
-                    "$ref": "urn:definitions#/definitions/Name"
-                },
-                "desc": {
-                    "$ref": "urn:definitions#/definitions/Description"
-                },
-                "type": {
-                    "$ref": "urn:definitions#/definitions/Type"
-                },
-                "count": {
-                    "$ref": "urn:definitions#/definitions/RegionInt"
-                },
-                "cat": {
-                    "$ref": "urn:definitions#/definitions/Category"
-                },
-                "comp": {
-                    "$ref": "urn:definitions#/definitions/Compression"
-                },
-                "enum": {
-                    "$ref": "urn:definitions#/definitions/Name"
-                }
-            },
-            "required": ["name", "type"],
-            "additionalProperties": false
-        }
     }
 }

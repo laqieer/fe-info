@@ -4,37 +4,25 @@
     "items": {
         "type": "object",
         "properties": {
-            "name": {
-                "$ref": "urn:definitions#/definitions/Name"
-            },
-            "desc": {
-                "$ref": "urn:definitions#/definitions/Description"
-            },
+            "desc": { "$ref": "urn:definitions#/definitions/Description" },
+            "label": { "$ref": "urn:definitions#/definitions/Label" },
+            "notes": { "type": "string" },
             "vals": {
                 "type": "array",
                 "items": {
                     "type": "object",
                     "properties": {
-                        "name": {
-                            "$ref": "urn:definitions#/definitions/Name"
-                        },
-                        "desc": {
-                            "$ref": "urn:definitions#/definitions/Description"
-                        },
-                        "val": {
-                            "type": "integer"
-                        }
+                        "desc": { "$ref": "urn:definitions#/definitions/Description" },
+                        "label": { "$ref": "urn:definitions#/definitions/Label" },
+                        "val": { "$ref": "urn:definitions#/definitions/HexInt" },
+                        "notes": { "type": "string" }
                     },
-                    "required": ["name", "val"],
+                    "required": ["desc", "label", "val"],
                     "additionalProperties": false
-                },
-                "minItems": 1
-            },
-            "loc": {
-                "$ref": "urn:definitions#/definitions/Location"
+                }
             }
         },
-        "required": ["name", "vals", "loc"],
+        "required": ["desc", "label", "vals"],
         "additionalProperties": false
     }
 }

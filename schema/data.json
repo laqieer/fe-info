@@ -4,35 +4,18 @@
     "items": {
         "type": "object",
         "properties": {
-            "name": {
-                "$ref": "urn:definitions#/definitions/Name"
-            },
-            "desc": {
-                "$ref": "urn:definitions#/definitions/Description"
-            },
-            "type": {
-                "$ref": "urn:definitions#/definitions/Type"
-            },
-            "count": {
-                "$ref": "urn:definitions#/definitions/RegionInt"
-            },
-            "addr": {
-                "$ref": "urn:definitions#/definitions/RegionInt"
-            },
-            "cat": {
-                "$ref": "urn:definitions#/definitions/Category"
-            },
-            "comp": {
-                "$ref": "urn:definitions#/definitions/Compression"
-            },
-            "enum": {
-                "$ref": "urn:definitions#/definitions/Name"
-            },
-            "loc": {
-                "$ref": "urn:definitions#/definitions/Location"
-            }
+            "desc": { "$ref": "urn:definitions#/definitions/Description" },
+            "label": { "$ref": "urn:definitions#/definitions/Label" },
+            "type": { "$ref": "urn:definitions#/definitions/NullableType" },
+            "addr": { "$ref": "urn:definitions#/definitions/RegionHex" },
+            "size": { "$ref": "urn:definitions#/definitions/RegionHex" },
+            "count": { "$ref": "urn:definitions#/definitions/HexInt" },
+            "cat": { "$ref": "urn:definitions#/definitions/Category" },
+            "enum": { "$ref": "urn:definitions#/definitions/Label" },
+            "notes": { "type": "string" },
+            "line": { "$ref": "urn:definitions#/definitions/Line" }
         },
-        "required": ["name", "type", "addr", "loc"],
+        "required": ["desc", "label", "type", "addr"],
         "additionalProperties": false
     }
 }

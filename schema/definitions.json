@@ -1,9 +1,14 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "urn:definitions",
     "definitions": {
         "Name": {
             "type": "string",
             "pattern": "^[A-Za-z_][A-Za-z0-9_]*$"
+        },
+        "Label": {
+            "type": "string",
+            "pattern": "^[A-Za-z_.][A-Za-z0-9_.]*$"
         },
         "Description": {
             "type": "string",
@@ -13,32 +18,45 @@
             "type": "string",
             "minLength": 1
         },
-        "RegionInt": {
+        "NullableType": {
             "oneOf": [
-                {
-                    "type": "integer",
-                    "minimum": 0
-                },
+                { "type": "null" },
+                { "$ref": "#/definitions/Type" }
+            ]
+        },
+        "HexInt": {
+            "type": "string",
+            "pattern": "^[0-9A-Fa-f]+$"
+        },
+        "RegionHex": {
+            "oneOf": [
+                { "$ref": "#/definitions/HexInt" },
                 {
                     "type": "object",
                     "properties": {
-                        "U": { "type": "integer" },
-                        "E": { "type": "integer" },
-                        "J": { "type": "integer" },
-                        "C": { "type": "integer" },
-                        "B": { "type": "integer" }
+                        "U": { "$ref": "#/definitions/HexInt" },
+                        "E": { "$ref": "#/definitions/HexInt" },
+                        "J": { "$ref": "#/definitions/HexInt" },
+                        "C": { "$ref": "#/definitions/HexInt" },
+                        "B": { "$ref": "#/definitions/HexInt" }
                     },
-                    "additionalProperties": false
+                    "additionalProperties": false,
+                    "minProperties": 1
                 }
             ]
+        },
+        "Line": {
+            "type": "string"
+        },
+        "Mode": {
+            "type": "string",
+            "enum": ["thumb", "arm"]
         },
         "Category": {
             "type": "string",
             "enum": [
-                "bool",
                 "flags",
                 "ascii",
-                "sjis",
                 "text",
                 "gfx",
                 "tilemap",
@@ -51,72 +69,13 @@
                 "arm"
             ]
         },
-        "Compression": {
-            "type": "string",
-            "enum": ["rle", "lz"]
-        },
-        "Location": {
-            "oneOf": [
-                {
-                    "type": "null"
-                },
-                {
-                    "type": "string",
-                    "pattern": "[A-Za-z0-9_]+\\.[A-Za-z]+:[0-9]+$"
-                }
-            ]
-        },
-        "Var": {
+        "Param": {
             "type": "object",
             "properties": {
-                "desc": {
-                    "$ref": "#/definitions/Description"
-                },
-                "type": {
-                    "$ref": "#/definitions/Type"
-                },
-                "count": {
-                    "$ref": "#/definitions/RegionInt"
-                },
-                "cat": {
-                    "$ref": "#/definitions/Category"
-                },
-                "comp": {
-                    "$ref": "#/definitions/Compression"
-                },
-                "enum": {
-                    "$ref": "#/definitions/Name"
-                }
+                "desc": { "$ref": "#/definitions/Description" },
+                "type": { "$ref": "#/definitions/Type" }
             },
-            "required": ["type"],
-            "additionalProperties": false
-        },
-        "NamedVar": {
-            "type": "object",
-            "properties": {
-                "name": {
-                    "$ref": "#/definitions/Name"
-                },
-                "desc": {
-                    "$ref": "#/definitions/Description"
-                },
-                "type": {
-                    "$ref": "#/definitions/Type"
-                },
-                "count": {
-                    "$ref": "#/definitions/RegionInt"
-                },
-                "cat": {
-                    "$ref": "#/definitions/Category"
-                },
-                "comp": {
-                    "$ref": "#/definitions/Compression"
-                },
-                "enum": {
-                    "$ref": "#/definitions/Name"
-                }
-            },
-            "required": ["name", "type"],
+            "required": ["desc", "type"],
             "additionalProperties": false
         }
     }
