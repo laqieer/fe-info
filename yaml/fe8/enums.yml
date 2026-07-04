@@ -1,1 +1,4917 @@
-[]
+- desc: glb_pos
+  label: glb_pos
+  vals:
+  - desc: POS_L
+    label: POS_L
+    val: '0'
+  - desc: POS_R
+    label: POS_R
+    val: '1'
+  - desc: POS_INVALID
+    label: POS_INVALID
+    val: FFFFFFFF
+- desc: BmSt_gameStateBits
+  label: BmSt_gameStateBits
+  vals:
+  - desc: BM_FLAG_0
+    label: BM_FLAG_0
+    val: '1'
+  - desc: BM_FLAG_1
+    label: BM_FLAG_1
+    val: '2'
+  - desc: BM_FLAG_2
+    label: BM_FLAG_2
+    val: '4'
+  - desc: BM_FLAG_3
+    label: BM_FLAG_3
+    val: '8'
+  - desc: BM_FLAG_PREPSCREEN
+    label: BM_FLAG_PREPSCREEN
+    val: '10'
+  - desc: BM_FLAG_5
+    label: BM_FLAG_5
+    val: '20'
+  - desc: BM_FLAG_LINKARENA
+    label: BM_FLAG_LINKARENA
+    val: '40'
+- desc: BmSt_TakenAction
+  label: BmSt_TakenAction
+  vals:
+  - desc: BM_TAKEN_ACTION_TAKE
+    label: BM_TAKEN_ACTION_TAKE
+    val: '1'
+  - desc: BM_TAKEN_ACTION_TRADE
+    label: BM_TAKEN_ACTION_TRADE
+    val: '2'
+  - desc: BM_TAKEN_ACTION_SUPPLY
+    label: BM_TAKEN_ACTION_SUPPLY
+    val: '4'
+  - desc: BM_TAKEN_ACTION_BALLISTA
+    label: BM_TAKEN_ACTION_BALLISTA
+    val: '8'
+- desc: PlaySt_AnimConfType
+  label: PlaySt_AnimConfType
+  vals:
+  - desc: PLAY_ANIMCONF_ON
+    label: PLAY_ANIMCONF_ON
+    val: '0'
+  - desc: PLAY_ANIMCONF_OFF
+    label: PLAY_ANIMCONF_OFF
+    val: '1'
+  - desc: PLAY_ANIMCONF_SOLO_ANIM
+    label: PLAY_ANIMCONF_SOLO_ANIM
+    val: '2'
+  - desc: PLAY_ANIMCONF_ON_UNIQUE_BG
+    label: PLAY_ANIMCONF_ON_UNIQUE_BG
+    val: '3'
+- desc: PlaySt_chapterStateBits
+  label: PlaySt_chapterStateBits
+  vals:
+  - desc: PLAY_FLAG_STATSCREENPAGE0
+    label: PLAY_FLAG_STATSCREENPAGE0
+    val: '1'
+  - desc: PLAY_FLAG_STATSCREENPAGE1
+    label: PLAY_FLAG_STATSCREENPAGE1
+    val: '2'
+  - desc: PLAY_FLAG_POSTGAME
+    label: PLAY_FLAG_POSTGAME
+    val: '4'
+  - desc: PLAY_FLAG_TUTORIAL
+    label: PLAY_FLAG_TUTORIAL
+    val: '8'
+  - desc: PLAY_FLAG_PREPSCREEN
+    label: PLAY_FLAG_PREPSCREEN
+    val: '10'
+  - desc: PLAY_FLAG_COMPLETE
+    label: PLAY_FLAG_COMPLETE
+    val: '20'
+  - desc: PLAY_FLAG_HARD
+    label: PLAY_FLAG_HARD
+    val: '40'
+  - desc: PLAY_FLAG_EXTRA_MAP
+    label: PLAY_FLAG_EXTRA_MAP
+    val: '80'
+  - desc: PLAY_FLAG_STATSCREENPAGE_SHIFT
+    label: PLAY_FLAG_STATSCREENPAGE_SHIFT
+    val: '0'
+  - desc: PLAY_FLAG_STATSCREENPAGE_MASK
+    label: PLAY_FLAG_STATSCREENPAGE_MASK
+    val: '3'
+- desc: PlaySt_chapterModeIndex
+  label: PlaySt_chapterModeIndex
+  vals:
+  - desc: CHAPTER_MODE_COMMON
+    label: CHAPTER_MODE_COMMON
+    val: '1'
+  - desc: CHAPTER_MODE_EIRIKA
+    label: CHAPTER_MODE_EIRIKA
+    val: '2'
+  - desc: CHAPTER_MODE_EPHRAIM
+    label: CHAPTER_MODE_EPHRAIM
+    val: '3'
+  - desc: CHAPTER_MODE_ANY
+    label: CHAPTER_MODE_ANY
+    val: FF
+- desc: langaguge_index
+  label: langaguge_index
+  vals:
+  - desc: LANG_JAPANESE
+    label: LANG_JAPANESE
+    val: '0'
+  - desc: LANG_ENGLISH
+    label: LANG_ENGLISH
+    val: '1'
+- desc: text_colors
+  label: text_colors
+  vals:
+  - desc: TEXT_COLOR_0123
+    label: TEXT_COLOR_0123
+    val: '0'
+  - desc: TEXT_COLOR_0456
+    label: TEXT_COLOR_0456
+    val: '1'
+  - desc: TEXT_COLOR_0789
+    label: TEXT_COLOR_0789
+    val: '2'
+  - desc: TEXT_COLOR_0ABC
+    label: TEXT_COLOR_0ABC
+    val: '3'
+  - desc: TEXT_COLOR_0DEF
+    label: TEXT_COLOR_0DEF
+    val: '4'
+  - desc: TEXT_COLOR_0030
+    label: TEXT_COLOR_0030
+    val: '5'
+  - desc: TEXT_COLOR_4DEF
+    label: TEXT_COLOR_4DEF
+    val: '6'
+  - desc: TEXT_COLOR_456F
+    label: TEXT_COLOR_456F
+    val: '7'
+  - desc: TEXT_COLOR_47CF
+    label: TEXT_COLOR_47CF
+    val: '8'
+  - desc: TEXT_COLOR_MASK
+    label: TEXT_COLOR_MASK
+    val: '9'
+  - desc: TEXT_COLOR_COUNT
+    label: TEXT_COLOR_COUNT
+    val: A
+  - desc: TEXT_COLOR_SYSTEM_WHITE
+    label: TEXT_COLOR_SYSTEM_WHITE
+    val: '0'
+  - desc: TEXT_COLOR_SYSTEM_GRAY
+    label: TEXT_COLOR_SYSTEM_GRAY
+    val: '1'
+  - desc: TEXT_COLOR_SYSTEM_BLUE
+    label: TEXT_COLOR_SYSTEM_BLUE
+    val: '2'
+  - desc: TEXT_COLOR_SYSTEM_GOLD
+    label: TEXT_COLOR_SYSTEM_GOLD
+    val: '3'
+  - desc: TEXT_COLOR_SYSTEM_GREEN
+    label: TEXT_COLOR_SYSTEM_GREEN
+    val: '4'
+  - desc: TEXT_COLOR_SYSTEM_BLACK
+    label: TEXT_COLOR_SYSTEM_BLACK
+    val: '5'
+- desc: text_special_char
+  label: text_special_char
+  vals:
+  - desc: TEXT_SPECIAL_BIGNUM_0
+    label: TEXT_SPECIAL_BIGNUM_0
+    val: '0'
+  - desc: TEXT_SPECIAL_BIGNUM_1
+    label: TEXT_SPECIAL_BIGNUM_1
+    val: '1'
+  - desc: TEXT_SPECIAL_BIGNUM_2
+    label: TEXT_SPECIAL_BIGNUM_2
+    val: '2'
+  - desc: TEXT_SPECIAL_BIGNUM_3
+    label: TEXT_SPECIAL_BIGNUM_3
+    val: '3'
+  - desc: TEXT_SPECIAL_BIGNUM_4
+    label: TEXT_SPECIAL_BIGNUM_4
+    val: '4'
+  - desc: TEXT_SPECIAL_BIGNUM_5
+    label: TEXT_SPECIAL_BIGNUM_5
+    val: '5'
+  - desc: TEXT_SPECIAL_BIGNUM_6
+    label: TEXT_SPECIAL_BIGNUM_6
+    val: '6'
+  - desc: TEXT_SPECIAL_BIGNUM_7
+    label: TEXT_SPECIAL_BIGNUM_7
+    val: '7'
+  - desc: TEXT_SPECIAL_BIGNUM_8
+    label: TEXT_SPECIAL_BIGNUM_8
+    val: '8'
+  - desc: TEXT_SPECIAL_BIGNUM_9
+    label: TEXT_SPECIAL_BIGNUM_9
+    val: '9'
+  - desc: TEXT_SPECIAL_SMALLNUM_0
+    label: TEXT_SPECIAL_SMALLNUM_0
+    val: A
+  - desc: TEXT_SPECIAL_SMALLNUM_1
+    label: TEXT_SPECIAL_SMALLNUM_1
+    val: B
+  - desc: TEXT_SPECIAL_SMALLNUM_2
+    label: TEXT_SPECIAL_SMALLNUM_2
+    val: C
+  - desc: TEXT_SPECIAL_SMALLNUM_3
+    label: TEXT_SPECIAL_SMALLNUM_3
+    val: D
+  - desc: TEXT_SPECIAL_SMALLNUM_4
+    label: TEXT_SPECIAL_SMALLNUM_4
+    val: E
+  - desc: TEXT_SPECIAL_SMALLNUM_5
+    label: TEXT_SPECIAL_SMALLNUM_5
+    val: F
+  - desc: TEXT_SPECIAL_SMALLNUM_6
+    label: TEXT_SPECIAL_SMALLNUM_6
+    val: '10'
+  - desc: TEXT_SPECIAL_SMALLNUM_7
+    label: TEXT_SPECIAL_SMALLNUM_7
+    val: '11'
+  - desc: TEXT_SPECIAL_SMALLNUM_8
+    label: TEXT_SPECIAL_SMALLNUM_8
+    val: '12'
+  - desc: TEXT_SPECIAL_SMALLNUM_9
+    label: TEXT_SPECIAL_SMALLNUM_9
+    val: '13'
+  - desc: TEXT_SPECIAL_DASH
+    label: TEXT_SPECIAL_DASH
+    val: '14'
+  - desc: TEXT_SPECIAL_PLUS
+    label: TEXT_SPECIAL_PLUS
+    val: '15'
+  - desc: TEXT_SPECIAL_SLASH
+    label: TEXT_SPECIAL_SLASH
+    val: '16'
+  - desc: TEXT_SPECIAL_TILDE
+    label: TEXT_SPECIAL_TILDE
+    val: '17'
+  - desc: TEXT_SPECIAL_S
+    label: TEXT_SPECIAL_S
+    val: '18'
+  - desc: TEXT_SPECIAL_A
+    label: TEXT_SPECIAL_A
+    val: '19'
+  - desc: TEXT_SPECIAL_B
+    label: TEXT_SPECIAL_B
+    val: 1A
+  - desc: TEXT_SPECIAL_C
+    label: TEXT_SPECIAL_C
+    val: 1B
+  - desc: TEXT_SPECIAL_D
+    label: TEXT_SPECIAL_D
+    val: 1C
+  - desc: TEXT_SPECIAL_E
+    label: TEXT_SPECIAL_E
+    val: 1D
+  - desc: TEXT_SPECIAL_G
+    label: TEXT_SPECIAL_G
+    val: 1E
+  - desc: TEXT_SPECIAL_K
+    label: TEXT_SPECIAL_K
+    val: 1F
+  - desc: TEXT_SPECIAL_COLON
+    label: TEXT_SPECIAL_COLON
+    val: '20'
+  - desc: TEXT_SPECIAL_DOT
+    label: TEXT_SPECIAL_DOT
+    val: '21'
+  - desc: TEXT_SPECIAL_HP_A
+    label: TEXT_SPECIAL_HP_A
+    val: '22'
+  - desc: TEXT_SPECIAL_HP_B
+    label: TEXT_SPECIAL_HP_B
+    val: '23'
+  - desc: TEXT_SPECIAL_LV_A
+    label: TEXT_SPECIAL_LV_A
+    val: '24'
+  - desc: TEXT_SPECIAL_LV_B
+    label: TEXT_SPECIAL_LV_B
+    val: '25'
+  - desc: TEXT_SPECIAL_ARROW
+    label: TEXT_SPECIAL_ARROW
+    val: '26'
+  - desc: TEXT_SPECIAL_HEART
+    label: TEXT_SPECIAL_HEART
+    val: '27'
+  - desc: TEXT_SPECIAL_100_A
+    label: TEXT_SPECIAL_100_A
+    val: '28'
+  - desc: TEXT_SPECIAL_100_B
+    label: TEXT_SPECIAL_100_B
+    val: '29'
+  - desc: TEXT_SPECIAL_PERCENT
+    label: TEXT_SPECIAL_PERCENT
+    val: 2A
+  - desc: TEXT_SPECIAL_35
+    label: TEXT_SPECIAL_35
+    val: '35'
+  - desc: TEXT_SPECIAL_NOTHING
+    label: TEXT_SPECIAL_NOTHING
+    val: FF
+- desc: interpolate_method
+  label: interpolate_method
+  vals:
+  - desc: INTERPOLATE_LINEAR
+    label: INTERPOLATE_LINEAR
+    val: '0'
+  - desc: INTERPOLATE_SQUARE
+    label: INTERPOLATE_SQUARE
+    val: '1'
+  - desc: INTERPOLATE_CUBIC
+    label: INTERPOLATE_CUBIC
+    val: '2'
+  - desc: INTERPOLATE_POW4
+    label: INTERPOLATE_POW4
+    val: '3'
+  - desc: INTERPOLATE_RSQUARE
+    label: INTERPOLATE_RSQUARE
+    val: '4'
+  - desc: INTERPOLATE_RCUBIC
+    label: INTERPOLATE_RCUBIC
+    val: '5'
+- desc: udef_ai_index
+  label: udef_ai_index
+  vals:
+  - desc: UDEF_AIIDX_AI_A
+    label: UDEF_AIIDX_AI_A
+    val: '0'
+  - desc: UDEF_AIIDX_AI_B
+    label: UDEF_AIIDX_AI_B
+    val: '1'
+  - desc: UDEF_AIIDX_AI_CONF_L
+    label: UDEF_AIIDX_AI_CONF_L
+    val: '2'
+  - desc: UDEF_AIIDX_AI_CONF_H
+    label: UDEF_AIIDX_AI_CONF_H
+    val: '3'
+  - desc: UDEF_AIIDX_MAX
+    label: UDEF_AIIDX_MAX
+    val: '4'
+- desc: unit_affinity_index
+  label: unit_affinity_index
+  vals:
+  - desc: UNIT_AFFIN_FIRE
+    label: UNIT_AFFIN_FIRE
+    val: '1'
+  - desc: UNIT_AFFIN_THUNDER
+    label: UNIT_AFFIN_THUNDER
+    val: '2'
+  - desc: UNIT_AFFIN_WIND
+    label: UNIT_AFFIN_WIND
+    val: '3'
+  - desc: UNIT_AFFIN_ICE
+    label: UNIT_AFFIN_ICE
+    val: '4'
+  - desc: UNIT_AFFIN_DARK
+    label: UNIT_AFFIN_DARK
+    val: '5'
+  - desc: UNIT_AFFIN_LIGHT
+    label: UNIT_AFFIN_LIGHT
+    val: '6'
+  - desc: UNIT_AFFIN_ANIMA
+    label: UNIT_AFFIN_ANIMA
+    val: '7'
+- desc: SPRITE_SHAPES
+  label: SPRITE_SHAPES
+  vals:
+  - desc: SQUARE
+    label: SQUARE
+    val: '0'
+  - desc: WIDE
+    label: WIDE
+    val: '1'
+  - desc: TALL
+    label: TALL
+    val: '2'
+- desc: SPRITE_SIZECODE
+  label: SPRITE_SIZECODE
+  vals:
+  - desc: Sprite_8x8
+    label: Sprite_8x8
+    val: '0'
+  - desc: Sprite_16x16
+    label: Sprite_16x16
+    val: '1'
+  - desc: Sprite_32x32
+    label: Sprite_32x32
+    val: '2'
+  - desc: Sprite_64x64
+    label: Sprite_64x64
+    val: '3'
+  - desc: Sprite_16x8
+    label: Sprite_16x8
+    val: '4'
+  - desc: Sprite_32x8
+    label: Sprite_32x8
+    val: '5'
+  - desc: Sprite_32x16
+    label: Sprite_32x16
+    val: '6'
+  - desc: Sprite_64x32
+    label: Sprite_64x32
+    val: '7'
+  - desc: Sprite_8x16
+    label: Sprite_8x16
+    val: '8'
+  - desc: Sprite_8x32
+    label: Sprite_8x32
+    val: '9'
+  - desc: Sprite_16x32
+    label: Sprite_16x32
+    val: A
+  - desc: Sprite_32x64
+    label: Sprite_32x64
+    val: B
+- desc: song_idx
+  label: song_idx
+  vals:
+  - desc: SONG_NONE
+    label: SONG_NONE
+    val: '0'
+  - desc: SONG_THE_VALIANT
+    label: SONG_THE_VALIANT
+    val: '1'
+  - desc: SONG_MAIN_THEME_EXT
+    label: SONG_MAIN_THEME_EXT
+    val: '2'
+  - desc: SONG_PROLOGUE
+    label: SONG_PROLOGUE
+    val: '3'
+  - desc: SONG_THE_BEGINNING
+    label: SONG_THE_BEGINNING
+    val: '4'
+  - desc: SONG_TREASURED_MEMORIES
+    label: SONG_TREASURED_MEMORIES
+    val: '5'
+  - desc: SONG_GRIM_JOURNEY
+    label: SONG_GRIM_JOURNEY
+    val: '6'
+  - desc: SONG_TIES_OF_FRIENDSHIP
+    label: SONG_TIES_OF_FRIENDSHIP
+    val: '7'
+  - desc: SONG_RAY_OF_HOPE
+    label: SONG_RAY_OF_HOPE
+    val: '8'
+  - desc: SONG_DISTANT_ROADS
+    label: SONG_DISTANT_ROADS
+    val: '9'
+  - desc: SONG_RISE_ABOVE
+    label: SONG_RISE_ABOVE
+    val: A
+  - desc: SONG_FOLLOW_ME
+    label: SONG_FOLLOW_ME
+    val: B
+  - desc: SONG_DETERMINATION
+    label: SONG_DETERMINATION
+    val: C
+  - desc: SONG_TRUTH_DESPAIR_AND_HOPE
+    label: SONG_TRUTH_DESPAIR_AND_HOPE
+    val: D
+  - desc: SONG_LAND_OF_PROMISE
+    label: SONG_LAND_OF_PROMISE
+    val: E
+  - desc: SONG_BINDING_VOW
+    label: SONG_BINDING_VOW
+    val: F
+  - desc: SONG_GRASP_AT_VICTORY
+    label: SONG_GRASP_AT_VICTORY
+    val: '10'
+  - desc: SONG_SHADOWS_APPROACH
+    label: SONG_SHADOWS_APPROACH
+    val: '11'
+  - desc: SONG_CONFRONT_THE_PAST
+    label: SONG_CONFRONT_THE_PAST
+    val: '12'
+  - desc: SONG_SHADOW_OF_THE_ENEMY
+    label: SONG_SHADOW_OF_THE_ENEMY
+    val: '13'
+  - desc: SONG_ASSAULT
+    label: SONG_ASSAULT
+    val: '14'
+  - desc: SONG_FROM_THE_DARKNESS
+    label: SONG_FROM_THE_DARKNESS
+    val: '15'
+  - desc: SONG_TWISTED_SHADOWS_A
+    label: SONG_TWISTED_SHADOWS_A
+    val: '16'
+  - desc: SONG_TWISTED_SHADOWS_B
+    label: SONG_TWISTED_SHADOWS_B
+    val: '17'
+  - desc: SONG_ENVOY_FROM_THE_DARK
+    label: SONG_ENVOY_FROM_THE_DARK
+    val: '18'
+  - desc: SONG_ATTACK
+    label: SONG_ATTACK
+    val: '19'
+  - desc: SONG_DEFENSE
+    label: SONG_DEFENSE
+    val: 1A
+  - desc: SONG_THE_BATTLE_MUST_BE_WON
+    label: SONG_THE_BATTLE_MUST_BE_WON
+    val: 1B
+  - desc: SONG_POWERFUL_FOE
+    label: SONG_POWERFUL_FOE
+    val: 1C
+  - desc: SONG_THE_PRINCES_DESPAIR
+    label: SONG_THE_PRINCES_DESPAIR
+    val: 1D
+  - desc: SONG_RETURN_OF_THE_DEMON_KING
+    label: SONG_RETURN_OF_THE_DEMON_KING
+    val: 1E
+  - desc: SONG_SACRED_STRENGTH
+    label: SONG_SACRED_STRENGTH
+    val: 1F
+  - desc: SONG_TETHYS
+    label: SONG_TETHYS
+    val: '20'
+  - desc: SONG_HEALING
+    label: SONG_HEALING
+    val: '21'
+  - desc: SONG_CURING
+    label: SONG_CURING
+    val: '22'
+  - desc: SONG_TO_A_HIGHER_PLACE
+    label: SONG_TO_A_HIGHER_PLACE
+    val: '23'
+  - desc: SONG_ADVANCE
+    label: SONG_ADVANCE
+    val: '24'
+  - desc: SONG_TENSION
+    label: SONG_TENSION
+    val: '25'
+  - desc: SONG_RAID
+    label: SONG_RAID
+    val: '26'
+  - desc: SONG_REUNION
+    label: SONG_REUNION
+    val: '27'
+  - desc: SONG_INDIGNATION
+    label: SONG_INDIGNATION
+    val: '28'
+  - desc: SONG_SORROW
+    label: SONG_SORROW
+    val: '29'
+  - desc: SONG_LAUGHTER
+    label: SONG_LAUGHTER
+    val: 2A
+  - desc: SONG_LEGACY
+    label: SONG_LEGACY
+    val: 2B
+  - desc: SONG_LYON
+    label: SONG_LYON
+    val: 2C
+  - desc: SONG_LOST_HEART
+    label: SONG_LOST_HEART
+    val: 2D
+  - desc: SONG_SOLVE_THE_RIDDLE
+    label: SONG_SOLVE_THE_RIDDLE
+    val: 2E
+  - desc: SONG_LIGHTS_IN_THE_DARK
+    label: SONG_LIGHTS_IN_THE_DARK
+    val: 2F
+  - desc: SONG_COMRADES
+    label: SONG_COMRADES
+    val: '30'
+  - desc: SONG_VICTORY
+    label: SONG_VICTORY
+    val: '31'
+  - desc: SONG_INTO_THE_SHADOW_OF_VICTORY
+    label: SONG_INTO_THE_SHADOW_OF_VICTORY
+    val: '32'
+  - desc: SONG_MAIN_THEME_REPRISE
+    label: SONG_MAIN_THEME_REPRISE
+    val: '33'
+  - desc: SONG_COMBAT_PREPARATION
+    label: SONG_COMBAT_PREPARATION
+    val: '34'
+  - desc: SONG_SHOPS
+    label: SONG_SHOPS
+    val: '35'
+  - desc: SONG_ARMORIES
+    label: SONG_ARMORIES
+    val: '36'
+  - desc: SONG_BONDS
+    label: SONG_BONDS
+    val: '37'
+  - desc: SONG_COLOSSEUM_ENTRANCE
+    label: SONG_COLOSSEUM_ENTRANCE
+    val: '38'
+  - desc: SONG_IN_THE_COLOSSEUM
+    label: SONG_IN_THE_COLOSSEUM
+    val: '39'
+  - desc: SONG_COLOSSEUM_VICTORY
+    label: SONG_COLOSSEUM_VICTORY
+    val: 3A
+  - desc: SONG_COLOSSEUM_DEFEAT
+    label: SONG_COLOSSEUM_DEFEAT
+    val: 3B
+  - desc: SONG_VICTORY_SONG_A
+    label: SONG_VICTORY_SONG_A
+    val: 3C
+  - desc: SONG_VICTORY_SONG_B
+    label: SONG_VICTORY_SONG_B
+    val: 3D
+  - desc: SONG_GAME_OVER
+    label: SONG_GAME_OVER
+    val: 3E
+  - desc: SONG_IN_SORROWS_SHROUD
+    label: SONG_IN_SORROWS_SHROUD
+    val: 3F
+  - desc: SONG_RECORDS
+    label: SONG_RECORDS
+    val: '40'
+  - desc: SONG_VICTORY_AND_THE_FUTURE
+    label: SONG_VICTORY_AND_THE_FUTURE
+    val: '41'
+  - desc: SONG_FLY_WITH_THE_BREEZE
+    label: SONG_FLY_WITH_THE_BREEZE
+    val: '42'
+  - desc: SONG_MAIN_THEME
+    label: SONG_MAIN_THEME
+    val: '43'
+  - desc: SONG_LYON_ORGAN_ARRANGEMENT
+    label: SONG_LYON_ORGAN_ARRANGEMENT
+    val: '44'
+  - desc: SONG_THE_FINAL_BATTLE
+    label: SONG_THE_FINAL_BATTLE
+    val: '45'
+  - desc: SONG_EPILOGUE
+    label: SONG_EPILOGUE
+    val: '46'
+  - desc: SONG_47
+    label: SONG_47
+    val: '47'
+  - desc: SONG_49
+    label: SONG_49
+    val: '49'
+  - desc: SONG_4A
+    label: SONG_4A
+    val: 4A
+  - desc: SONG_4B
+    label: SONG_4B
+    val: 4B
+  - desc: SONG_4C
+    label: SONG_4C
+    val: 4C
+  - desc: SONG_4D
+    label: SONG_4D
+    val: 4D
+  - desc: SONG_4E
+    label: SONG_4E
+    val: 4E
+  - desc: SONG_52
+    label: SONG_52
+    val: '52'
+  - desc: SONG_53
+    label: SONG_53
+    val: '53'
+  - desc: SONG_54
+    label: SONG_54
+    val: '54'
+  - desc: SONG_55
+    label: SONG_55
+    val: '55'
+  - desc: SONG_BGM_ED_STAFF_2
+    label: SONG_BGM_ED_STAFF_2
+    val: '56'
+  - desc: SONG_5A
+    label: SONG_5A
+    val: 5A
+  - desc: SONG_5B
+    label: SONG_5B
+    val: 5B
+  - desc: SONG_5C
+    label: SONG_5C
+    val: 5C
+  - desc: SONG_60
+    label: SONG_60
+    val: '60'
+  - desc: SONG_61
+    label: SONG_61
+    val: '61'
+  - desc: SONG_65
+    label: SONG_65
+    val: '65'
+  - desc: SONG_SE_SYS_CURSOR_UD1
+    label: SONG_SE_SYS_CURSOR_UD1
+    val: '66'
+  - desc: SONG_SE_SYS_CURSOR_LR1
+    label: SONG_SE_SYS_CURSOR_LR1
+    val: '67'
+  - desc: SONG_68
+    label: SONG_68
+    val: '68'
+  - desc: SONG_69
+    label: SONG_69
+    val: '69'
+  - desc: SONG_SE_SYS_WINDOW_SELECT1
+    label: SONG_SE_SYS_WINDOW_SELECT1
+    val: 6A
+  - desc: SONG_SE_SYS_WINDOW_CANSEL1
+    label: SONG_SE_SYS_WINDOW_CANSEL1
+    val: 6B
+  - desc: SONG_6C
+    label: SONG_6C
+    val: 6C
+  - desc: SONG_6D
+    label: SONG_6D
+    val: 6D
+  - desc: SONG_6E
+    label: SONG_6E
+    val: 6E
+  - desc: SONG_6F
+    label: SONG_6F
+    val: 6F
+  - desc: SONG_70
+    label: SONG_70
+    val: '70'
+  - desc: SONG_71
+    label: SONG_71
+    val: '71'
+  - desc: SONG_73
+    label: SONG_73
+    val: '73'
+  - desc: SONG_74
+    label: SONG_74
+    val: '74'
+  - desc: SONG_75
+    label: SONG_75
+    val: '75'
+  - desc: SONG_76
+    label: SONG_76
+    val: '76'
+  - desc: SONG_77
+    label: SONG_77
+    val: '77'
+  - desc: SONG_78
+    label: SONG_78
+    val: '78'
+  - desc: SONG_79
+    label: SONG_79
+    val: '79'
+  - desc: SONG_7A
+    label: SONG_7A
+    val: 7A
+  - desc: SONG_7B
+    label: SONG_7B
+    val: 7B
+  - desc: SONG_7C
+    label: SONG_7C
+    val: 7C
+  - desc: SONG_7D
+    label: SONG_7D
+    val: 7D
+  - desc: SONG_7E
+    label: SONG_7E
+    val: 7E
+  - desc: SONG_SE_POINT_UP
+    label: SONG_SE_POINT_UP
+    val: '80'
+  - desc: SONG_81
+    label: SONG_81
+    val: '81'
+  - desc: SONG_82
+    label: SONG_82
+    val: '82'
+  - desc: SONG_83
+    label: SONG_83
+    val: '83'
+  - desc: SONG_84
+    label: SONG_84
+    val: '84'
+  - desc: SONG_85
+    label: SONG_85
+    val: '85'
+  - desc: SONG_86
+    label: SONG_86
+    val: '86'
+  - desc: SONG_87
+    label: SONG_87
+    val: '87'
+  - desc: SONG_88
+    label: SONG_88
+    val: '88'
+  - desc: SONG_89
+    label: SONG_89
+    val: '89'
+  - desc: SONG_8A
+    label: SONG_8A
+    val: 8A
+  - desc: SONG_8B
+    label: SONG_8B
+    val: 8B
+  - desc: SONG_8C
+    label: SONG_8C
+    val: 8C
+  - desc: SONG_8D
+    label: SONG_8D
+    val: 8D
+  - desc: SONG_8E
+    label: SONG_8E
+    val: 8E
+  - desc: SONG_8F
+    label: SONG_8F
+    val: 8F
+  - desc: SONG_90
+    label: SONG_90
+    val: '90'
+  - desc: SONG_91
+    label: SONG_91
+    val: '91'
+  - desc: SONG_95
+    label: SONG_95
+    val: '95'
+  - desc: SONG_96
+    label: SONG_96
+    val: '96'
+  - desc: SONG_97
+    label: SONG_97
+    val: '97'
+  - desc: SONG_9A
+    label: SONG_9A
+    val: 9A
+  - desc: SONG_9B
+    label: SONG_9B
+    val: 9B
+  - desc: SONG_9C
+    label: SONG_9C
+    val: 9C
+  - desc: SONG_SE_BMP_MOVE_BIRD1A_T1
+    label: SONG_SE_BMP_MOVE_BIRD1A_T1
+    val: A0
+  - desc: SONG_A4
+    label: SONG_A4
+    val: A4
+  - desc: SONG_A5
+    label: SONG_A5
+    val: A5
+  - desc: SONG_A6
+    label: SONG_A6
+    val: A6
+  - desc: SONG_A8
+    label: SONG_A8
+    val: A8
+  - desc: SONG_A9
+    label: SONG_A9
+    val: A9
+  - desc: SONG_AA
+    label: SONG_AA
+    val: AA
+  - desc: SONG_AB
+    label: SONG_AB
+    val: AB
+  - desc: SONG_AC
+    label: SONG_AC
+    val: AC
+  - desc: SONG_AF
+    label: SONG_AF
+    val: AF
+  - desc: SONG_B0
+    label: SONG_B0
+    val: B0
+  - desc: SONG_B1
+    label: SONG_B1
+    val: B1
+  - desc: SONG_B3
+    label: SONG_B3
+    val: B3
+  - desc: SONG_B4
+    label: SONG_B4
+    val: B4
+  - desc: SONG_B5
+    label: SONG_B5
+    val: B5
+  - desc: SONG_B6
+    label: SONG_B6
+    val: B6
+  - desc: SONG_B7
+    label: SONG_B7
+    val: B7
+  - desc: SONG_SE_MONEY
+    label: SONG_SE_MONEY
+    val: B9
+  - desc: SONG_BA
+    label: SONG_BA
+    val: BA
+  - desc: SONG_BB
+    label: SONG_BB
+    val: BB
+  - desc: SONG_BC
+    label: SONG_BC
+    val: BC
+  - desc: SONG_BD
+    label: SONG_BD
+    val: BD
+  - desc: SONG_BE
+    label: SONG_BE
+    val: BE
+  - desc: SONG_BF
+    label: SONG_BF
+    val: BF
+  - desc: SONG_C4
+    label: SONG_C4
+    val: C4
+  - desc: SONG_C6
+    label: SONG_C6
+    val: C6
+  - desc: SONG_C8
+    label: SONG_C8
+    val: C8
+  - desc: SONG_C9
+    label: SONG_C9
+    val: C9
+  - desc: SONG_CA
+    label: SONG_CA
+    val: CA
+  - desc: SONG_CB
+    label: SONG_CB
+    val: CB
+  - desc: SONG_CD
+    label: SONG_CD
+    val: CD
+  - desc: SONG_CE
+    label: SONG_CE
+    val: CE
+  - desc: SONG_CF
+    label: SONG_CF
+    val: CF
+  - desc: SONG_D1
+    label: SONG_D1
+    val: D1
+  - desc: SONG_D2
+    label: SONG_D2
+    val: D2
+  - desc: SONG_D3
+    label: SONG_D3
+    val: D3
+  - desc: SONG_D4
+    label: SONG_D4
+    val: D4
+  - desc: SONG_D5
+    label: SONG_D5
+    val: D5
+  - desc: SONG_D6
+    label: SONG_D6
+    val: D6
+  - desc: SONG_D7
+    label: SONG_D7
+    val: D7
+  - desc: SONG_D8
+    label: SONG_D8
+    val: D8
+  - desc: SONG_DC
+    label: SONG_DC
+    val: DC
+  - desc: SONG_DD
+    label: SONG_DD
+    val: DD
+  - desc: SONG_DE
+    label: SONG_DE
+    val: DE
+  - desc: SONG_E7
+    label: SONG_E7
+    val: E7
+  - desc: SONG_EA
+    label: SONG_EA
+    val: EA
+  - desc: SONG_EB
+    label: SONG_EB
+    val: EB
+  - desc: SONG_EC
+    label: SONG_EC
+    val: EC
+  - desc: SONG_ED
+    label: SONG_ED
+    val: ED
+  - desc: SONG_F1
+    label: SONG_F1
+    val: F1
+  - desc: SONG_F6
+    label: SONG_F6
+    val: F6
+  - desc: SONG_FD
+    label: SONG_FD
+    val: FD
+  - desc: SONG_10F
+    label: SONG_10F
+    val: 10F
+  - desc: SONG_117
+    label: SONG_117
+    val: '117'
+  - desc: SONG_134
+    label: SONG_134
+    val: '134'
+  - desc: SONG_135
+    label: SONG_135
+    val: '135'
+  - desc: SONG_136
+    label: SONG_136
+    val: '136'
+  - desc: SONG_13F
+    label: SONG_13F
+    val: 13F
+  - desc: SONG_140
+    label: SONG_140
+    val: '140'
+  - desc: SONG_141
+    label: SONG_141
+    val: '141'
+  - desc: SONG_142
+    label: SONG_142
+    val: '142'
+  - desc: SONG_14A
+    label: SONG_14A
+    val: 14A
+  - desc: SONG_154
+    label: SONG_154
+    val: '154'
+  - desc: SONG_15E
+    label: SONG_15E
+    val: 15E
+  - desc: SONG_168
+    label: SONG_168
+    val: '168'
+  - desc: SONG_172
+    label: SONG_172
+    val: '172'
+  - desc: SONG_17C
+    label: SONG_17C
+    val: 17C
+  - desc: SONG_186
+    label: SONG_186
+    val: '186'
+  - desc: SONG_190
+    label: SONG_190
+    val: '190'
+  - desc: SONG_192
+    label: SONG_192
+    val: '192'
+  - desc: SONG_194
+    label: SONG_194
+    val: '194'
+  - desc: SONG_1AE
+    label: SONG_1AE
+    val: 1AE
+  - desc: SONG_1B1
+    label: SONG_1B1
+    val: 1B1
+  - desc: SONG_1B2
+    label: SONG_1B2
+    val: 1B2
+  - desc: SONG_1CC
+    label: SONG_1CC
+    val: 1CC
+  - desc: SONG_1CE
+    label: SONG_1CE
+    val: 1CE
+  - desc: SONG_1D0
+    label: SONG_1D0
+    val: 1D0
+  - desc: SONG_1EA
+    label: SONG_1EA
+    val: 1EA
+  - desc: SONG_1EC
+    label: SONG_1EC
+    val: 1EC
+  - desc: SONG_1EE
+    label: SONG_1EE
+    val: 1EE
+  - desc: SONG_208
+    label: SONG_208
+    val: '208'
+  - desc: SONG_20A
+    label: SONG_20A
+    val: 20A
+  - desc: SONG_20C
+    label: SONG_20C
+    val: 20C
+  - desc: SONG_226
+    label: SONG_226
+    val: '226'
+  - desc: SONG_228
+    label: SONG_228
+    val: '228'
+  - desc: SONG_22A
+    label: SONG_22A
+    val: 22A
+  - desc: SONG_244
+    label: SONG_244
+    val: '244'
+  - desc: SONG_246
+    label: SONG_246
+    val: '246'
+  - desc: SONG_248
+    label: SONG_248
+    val: '248'
+  - desc: SONG_262
+    label: SONG_262
+    val: '262'
+  - desc: SONG_263
+    label: SONG_263
+    val: '263'
+  - desc: SONG_265
+    label: SONG_265
+    val: '265'
+  - desc: SONG_267
+    label: SONG_267
+    val: '267'
+  - desc: SONG_269
+    label: SONG_269
+    val: '269'
+  - desc: SONG_26A
+    label: SONG_26A
+    val: 26A
+  - desc: SONG_2CD
+    label: SONG_2CD
+    val: 2CD
+  - desc: SONG_2CE
+    label: SONG_2CE
+    val: 2CE
+  - desc: SONG_2CF
+    label: SONG_2CF
+    val: 2CF
+  - desc: SONG_2D0
+    label: SONG_2D0
+    val: 2D0
+  - desc: SONG_2D1
+    label: SONG_2D1
+    val: 2D1
+  - desc: SONG_2D2
+    label: SONG_2D2
+    val: 2D2
+  - desc: SONG_2D3
+    label: SONG_2D3
+    val: 2D3
+  - desc: SONG_2D4
+    label: SONG_2D4
+    val: 2D4
+  - desc: SONG_2D5
+    label: SONG_2D5
+    val: 2D5
+  - desc: SONG_SE_SHATTER_STONE
+    label: SONG_SE_SHATTER_STONE
+    val: 2D6
+  - desc: SONG_2D7
+    label: SONG_2D7
+    val: 2D7
+  - desc: SONG_2D8
+    label: SONG_2D8
+    val: 2D8
+  - desc: SONG_2D9
+    label: SONG_2D9
+    val: 2D9
+  - desc: SONG_2DD
+    label: SONG_2DD
+    val: 2DD
+  - desc: SONG_2DE
+    label: SONG_2DE
+    val: 2DE
+  - desc: SONG_2DF
+    label: SONG_2DF
+    val: 2DF
+  - desc: SONG_2E0
+    label: SONG_2E0
+    val: 2E0
+  - desc: SONG_2E4
+    label: SONG_2E4
+    val: 2E4
+  - desc: SONG_2E5
+    label: SONG_2E5
+    val: 2E5
+  - desc: SONG_2E6
+    label: SONG_2E6
+    val: 2E6
+  - desc: SONG_2E7
+    label: SONG_2E7
+    val: 2E7
+  - desc: SONG_2E8
+    label: SONG_2E8
+    val: 2E8
+  - desc: SONG_2EB
+    label: SONG_2EB
+    val: 2EB
+  - desc: SONG_2F7
+    label: SONG_2F7
+    val: 2F7
+  - desc: SONG_2F8
+    label: SONG_2F8
+    val: 2F8
+  - desc: SONG_2F9
+    label: SONG_2F9
+    val: 2F9
+  - desc: SONG_302
+    label: SONG_302
+    val: '302'
+  - desc: SONG_303
+    label: SONG_303
+    val: '303'
+  - desc: SONG_304
+    label: SONG_304
+    val: '304'
+  - desc: SONG_305
+    label: SONG_305
+    val: '305'
+  - desc: SONG_306
+    label: SONG_306
+    val: '306'
+  - desc: SONG_307
+    label: SONG_307
+    val: '307'
+  - desc: SONG_308
+    label: SONG_308
+    val: '308'
+  - desc: SONG_309
+    label: SONG_309
+    val: '309'
+  - desc: SONG_30A
+    label: SONG_30A
+    val: 30A
+  - desc: SONG_30B
+    label: SONG_30B
+    val: 30B
+  - desc: SONG_30C
+    label: SONG_30C
+    val: 30C
+  - desc: SONG_30D
+    label: SONG_30D
+    val: 30D
+  - desc: SONG_30E
+    label: SONG_30E
+    val: 30E
+  - desc: SONG_30F
+    label: SONG_30F
+    val: 30F
+  - desc: SONG_310
+    label: SONG_310
+    val: '310'
+  - desc: SONG_311
+    label: SONG_311
+    val: '311'
+  - desc: SONG_312
+    label: SONG_312
+    val: '312'
+  - desc: SONG_313
+    label: SONG_313
+    val: '313'
+  - desc: SONG_314
+    label: SONG_314
+    val: '314'
+  - desc: SONG_SYS_CHAPTER_START
+    label: SONG_SYS_CHAPTER_START
+    val: '316'
+  - desc: SONG_317
+    label: SONG_317
+    val: '317'
+  - desc: SONG_320
+    label: SONG_320
+    val: '320'
+  - desc: SONG_321
+    label: SONG_321
+    val: '321'
+  - desc: SONG_322
+    label: SONG_322
+    val: '322'
+  - desc: SONG_325
+    label: SONG_325
+    val: '325'
+  - desc: SONG_326
+    label: SONG_326
+    val: '326'
+  - desc: SONG_327
+    label: SONG_327
+    val: '327'
+  - desc: SONG_329
+    label: SONG_329
+    val: '329'
+  - desc: SONG_32A
+    label: SONG_32A
+    val: 32A
+  - desc: SONG_32B
+    label: SONG_32B
+    val: 32B
+  - desc: SONG_32C
+    label: SONG_32C
+    val: 32C
+  - desc: SONG_32E
+    label: SONG_32E
+    val: 32E
+  - desc: SONG_32F
+    label: SONG_32F
+    val: 32F
+  - desc: SONG_330
+    label: SONG_330
+    val: '330'
+  - desc: SONG_331
+    label: SONG_331
+    val: '331'
+  - desc: SONG_332
+    label: SONG_332
+    val: '332'
+  - desc: SONG_334
+    label: SONG_334
+    val: '334'
+  - desc: SONG_336
+    label: SONG_336
+    val: '336'
+  - desc: SONG_33A
+    label: SONG_33A
+    val: 33A
+  - desc: SONG_33E
+    label: SONG_33E
+    val: 33E
+  - desc: SONG_338
+    label: SONG_338
+    val: '338'
+  - desc: SONG_340
+    label: SONG_340
+    val: '340'
+  - desc: SONG_342
+    label: SONG_342
+    val: '342'
+  - desc: SONG_344
+    label: SONG_344
+    val: '344'
+  - desc: SONG_348
+    label: SONG_348
+    val: '348'
+  - desc: SONG_34A
+    label: SONG_34A
+    val: 34A
+  - desc: SONG_34C
+    label: SONG_34C
+    val: 34C
+  - desc: SONG_34E
+    label: SONG_34E
+    val: 34E
+  - desc: SONG_352
+    label: SONG_352
+    val: '352'
+  - desc: SONG_354
+    label: SONG_354
+    val: '354'
+  - desc: SONG_356
+    label: SONG_356
+    val: '356'
+  - desc: SONG_358
+    label: SONG_358
+    val: '358'
+  - desc: SONG_35C
+    label: SONG_35C
+    val: 35C
+  - desc: SONG_35E
+    label: SONG_35E
+    val: 35E
+  - desc: SONG_360
+    label: SONG_360
+    val: '360'
+  - desc: SONG_362
+    label: SONG_362
+    val: '362'
+  - desc: SONG_366
+    label: SONG_366
+    val: '366'
+  - desc: SONG_368
+    label: SONG_368
+    val: '368'
+  - desc: SONG_36A
+    label: SONG_36A
+    val: 36A
+  - desc: SONG_36C
+    label: SONG_36C
+    val: 36C
+  - desc: SONG_370
+    label: SONG_370
+    val: '370'
+  - desc: SONG_372
+    label: SONG_372
+    val: '372'
+  - desc: SONG_374
+    label: SONG_374
+    val: '374'
+  - desc: SONG_376
+    label: SONG_376
+    val: '376'
+  - desc: SONG_37A
+    label: SONG_37A
+    val: 37A
+  - desc: SONG_37B
+    label: SONG_37B
+    val: 37B
+  - desc: SONG_37C
+    label: SONG_37C
+    val: 37C
+  - desc: SONG_37D
+    label: SONG_37D
+    val: 37D
+  - desc: SONG_37F
+    label: SONG_37F
+    val: 37F
+  - desc: SONG_384
+    label: SONG_384
+    val: '384'
+  - desc: SONG_3B7
+    label: SONG_3B7
+    val: 3B7
+  - desc: SONG_3BA
+    label: SONG_3BA
+    val: 3BA
+  - desc: SONG_3BB
+    label: SONG_3BB
+    val: 3BB
+  - desc: SONG_3BF
+    label: SONG_3BF
+    val: 3BF
+  - desc: SONG_3C0
+    label: SONG_3C0
+    val: 3C0
+  - desc: SONG_3C2
+    label: SONG_3C2
+    val: 3C2
+  - desc: SONG_3C3
+    label: SONG_3C3
+    val: 3C3
+  - desc: SONG_3C4
+    label: SONG_3C4
+    val: 3C4
+  - desc: SONG_3CA
+    label: SONG_3CA
+    val: 3CA
+  - desc: SONG_3CF
+    label: SONG_3CF
+    val: 3CF
+  - desc: SONG_SILENT
+    label: SONG_SILENT
+    val: 7FFF
+- desc: save_chunk_index
+  label: save_chunk_index
+  vals:
+  - desc: SAVE_ID_GAME0
+    label: SAVE_ID_GAME0
+    val: '0'
+  - desc: SAVE_ID_GAME1
+    label: SAVE_ID_GAME1
+    val: '1'
+  - desc: SAVE_ID_GAME2
+    label: SAVE_ID_GAME2
+    val: '2'
+  - desc: SAVE_ID_SUSPEND
+    label: SAVE_ID_SUSPEND
+    val: '3'
+  - desc: SAVE_ID_SUSPEND_ALT
+    label: SAVE_ID_SUSPEND_ALT
+    val: '4'
+  - desc: SAVE_ID_ARENA
+    label: SAVE_ID_ARENA
+    val: '5'
+  - desc: SAVE_ID_XMAP
+    label: SAVE_ID_XMAP
+    val: '6'
+  - desc: SAVE_ID_MAX
+    label: SAVE_ID_MAX
+    val: '7'
+- desc: bmsave_magics_fe8
+  label: bmsave_magics_fe8
+  vals:
+  - desc: SAVEMAGIC16
+    label: SAVEMAGIC16
+    val: 200A
+  - desc: SAVEMAGIC32
+    label: SAVEMAGIC32
+    val: '40624'
+  - desc: SAVEMAGIC32_ARENA
+    label: SAVEMAGIC32_ARENA
+    val: '20112'
+  - desc: SAVEMAGIC32_XMAP
+    label: SAVEMAGIC32_XMAP
+    val: '20223'
+- desc: packed_unit_state_bits
+  label: packed_unit_state_bits
+  vals:
+  - desc: PACKED_US_DEAD
+    label: PACKED_US_DEAD
+    val: '1'
+  - desc: PACKED_US_UNDEPLOYED
+    label: PACKED_US_UNDEPLOYED
+    val: '2'
+  - desc: PACKED_US_SOLO_ANIM1
+    label: PACKED_US_SOLO_ANIM1
+    val: '4'
+  - desc: PACKED_US_SOLO_ANIM2
+    label: PACKED_US_SOLO_ANIM2
+    val: '8'
+  - desc: PACKED_US_METIS_TOME
+    label: PACKED_US_METIS_TOME
+    val: '10'
+  - desc: PACKED_US_B4
+    label: PACKED_US_B4
+    val: '20'
+  - desc: PACKED_US_B5
+    label: PACKED_US_B5
+    val: '40'
+  - desc: PACKED_US_NEW_FRIEND
+    label: PACKED_US_NEW_FRIEND
+    val: '80'
+- desc: video_savemenu
+  label: video_savemenu
+  vals:
+  - desc: BGCHR_SAVEMENU_SUBBOX_TEXT
+    label: BGCHR_SAVEMENU_SUBBOX_TEXT
+    val: '80'
+  - desc: BGPAL_SAVEMENU_SUBBOX_TEXT
+    label: BGPAL_SAVEMENU_SUBBOX_TEXT
+    val: '4'
+  - desc: BGCHR_SAVEMENU_BGFOG
+    label: BGCHR_SAVEMENU_BGFOG
+    val: '260'
+  - desc: BGPAL_SAVEMENU_BGFOG
+    label: BGPAL_SAVEMENU_BGFOG
+    val: '7'
+  - desc: OBJCHR_SAVEMENU_SPRITES
+    label: OBJCHR_SAVEMENU_SPRITES
+    val: '40'
+  - desc: OBJPAL_SAVEMENU_SPRITES
+    label: OBJPAL_SAVEMENU_SPRITES
+    val: '2'
+  - desc: OBJCHR_SAVEMENU_MAINCHOICE_STR
+    label: OBJCHR_SAVEMENU_MAINCHOICE_STR
+    val: '200'
+  - desc: OBJCHR_SAVEMENU_TITLEBG
+    label: OBJCHR_SAVEMENU_TITLEBG
+    val: 2C0
+  - desc: OBJPAL_SAVEMENU_TITLEBG
+    label: OBJPAL_SAVEMENU_TITLEBG
+    val: '8'
+  - desc: OBJCHR_SAVEMENU_TITLEGFX
+    label: OBJCHR_SAVEMENU_TITLEGFX
+    val: '340'
+- desc: video_savemenu_slotsel
+  label: video_savemenu_slotsel
+  vals:
+  - desc: OBJCHR_SAVEMENU_SLOTSEL_HELPBOX
+    label: OBJCHR_SAVEMENU_SLOTSEL_HELPBOX
+    val: '200'
+  - desc: OBJPAL_SAVEMENU_SLOTSEL_HELPBOX
+    label: OBJPAL_SAVEMENU_SLOTSEL_HELPBOX
+    val: '9'
+- desc: savemenuproc_st
+  label: savemenuproc_st
+  vals:
+  - desc: CTRL_TIMER_MAX
+    label: CTRL_TIMER_MAX
+    val: '8'
+- desc: wm_node_idx
+  label: wm_node_idx
+  vals:
+  - desc: WM_NODE_BorderMulan
+    label: WM_NODE_BorderMulan
+    val: '0'
+  - desc: WM_NODE_CastleFrelia
+    label: WM_NODE_CastleFrelia
+    val: '1'
+  - desc: WM_NODE_Ide
+    label: WM_NODE_Ide
+    val: '2'
+  - desc: WM_NODE_BorgoRidge
+    label: WM_NODE_BorgoRidge
+    val: '3'
+  - desc: WM_NODE_ZahaWoods
+    label: WM_NODE_ZahaWoods
+    val: '4'
+  - desc: WM_NODE_Serafew
+    label: WM_NODE_Serafew
+    val: '5'
+  - desc: WM_NODE_AdlasPlains
+    label: WM_NODE_AdlasPlains
+    val: '6'
+  - desc: WM_NODE_Renvall1
+    label: WM_NODE_Renvall1
+    val: '7'
+  - desc: WM_NODE_Renvall2
+    label: WM_NODE_Renvall2
+    val: '8'
+  - desc: WM_NODE_PortKiris
+    label: WM_NODE_PortKiris
+    val: '9'
+  - desc: WM_NODE_TerazPlateau
+    label: WM_NODE_TerazPlateau
+    val: A
+  - desc: WM_NODE_CaerPelyn
+    label: WM_NODE_CaerPelyn
+    val: B
+  - desc: WM_NODE_HamillCanyon
+    label: WM_NODE_HamillCanyon
+    val: C
+  - desc: WM_NODE_JehannaHall
+    label: WM_NODE_JehannaHall
+    val: D
+  - desc: WM_NODE_FortRigwald
+    label: WM_NODE_FortRigwald
+    val: E
+  - desc: WM_NODE_Bethroen
+    label: WM_NODE_Bethroen
+    val: F
+  - desc: WM_NODE_Taizel
+    label: WM_NODE_Taizel
+    val: '10'
+  - desc: WM_NODE_ZaalbulMarsh
+    label: WM_NODE_ZaalbulMarsh
+    val: '11'
+  - desc: WM_NODE_GradoKeep
+    label: WM_NODE_GradoKeep
+    val: '12'
+  - desc: WM_NODE_JehannaHall2
+    label: WM_NODE_JehannaHall2
+    val: '13'
+  - desc: WM_NODE_RenaisCastle
+    label: WM_NODE_RenaisCastle
+    val: '14'
+  - desc: WM_NODE_NarubeRiver
+    label: WM_NODE_NarubeRiver
+    val: '15'
+  - desc: WM_NODE_NelerasPeak
+    label: WM_NODE_NelerasPeak
+    val: '16'
+  - desc: WM_NODE_RaustenCourt
+    label: WM_NODE_RaustenCourt
+    val: '17'
+  - desc: WM_NODE_DarklingWoods
+    label: WM_NODE_DarklingWoods
+    val: '18'
+  - desc: WM_NODE_BlackTemple
+    label: WM_NODE_BlackTemple
+    val: '19'
+  - desc: WM_NODE_TowerOfValni
+    label: WM_NODE_TowerOfValni
+    val: 1A
+  - desc: WM_NODE_LagdouRuins
+    label: WM_NODE_LagdouRuins
+    val: 1B
+  - desc: WM_NODE_MelkaenCoast
+    label: WM_NODE_MelkaenCoast
+    val: 1C
+- desc: wm_path_idx
+  label: wm_path_idx
+  vals:
+  - desc: WM_PATH_00
+    label: WM_PATH_00
+    val: '0'
+  - desc: WM_PATH_01
+    label: WM_PATH_01
+    val: '1'
+  - desc: WM_PATH_02
+    label: WM_PATH_02
+    val: '2'
+  - desc: WM_PATH_03
+    label: WM_PATH_03
+    val: '3'
+  - desc: WM_PATH_04
+    label: WM_PATH_04
+    val: '4'
+  - desc: WM_PATH_05
+    label: WM_PATH_05
+    val: '5'
+  - desc: WM_PATH_06
+    label: WM_PATH_06
+    val: '6'
+  - desc: WM_PATH_07
+    label: WM_PATH_07
+    val: '7'
+  - desc: WM_PATH_08
+    label: WM_PATH_08
+    val: '8'
+  - desc: WM_PATH_09
+    label: WM_PATH_09
+    val: '9'
+  - desc: WM_PATH_0A
+    label: WM_PATH_0A
+    val: A
+  - desc: WM_PATH_0B
+    label: WM_PATH_0B
+    val: B
+  - desc: WM_PATH_0C
+    label: WM_PATH_0C
+    val: C
+  - desc: WM_PATH_0D
+    label: WM_PATH_0D
+    val: D
+  - desc: WM_PATH_0E
+    label: WM_PATH_0E
+    val: E
+  - desc: WM_PATH_0F
+    label: WM_PATH_0F
+    val: F
+  - desc: WM_PATH_10
+    label: WM_PATH_10
+    val: '10'
+  - desc: WM_PATH_11
+    label: WM_PATH_11
+    val: '11'
+  - desc: WM_PATH_12
+    label: WM_PATH_12
+    val: '12'
+  - desc: WM_PATH_13
+    label: WM_PATH_13
+    val: '13'
+  - desc: WM_PATH_14
+    label: WM_PATH_14
+    val: '14'
+  - desc: WM_PATH_15
+    label: WM_PATH_15
+    val: '15'
+  - desc: WM_PATH_16
+    label: WM_PATH_16
+    val: '16'
+  - desc: WM_PATH_17
+    label: WM_PATH_17
+    val: '17'
+  - desc: WM_PATH_18
+    label: WM_PATH_18
+    val: '18'
+  - desc: WM_PATH_19
+    label: WM_PATH_19
+    val: '19'
+  - desc: WM_PATH_1A
+    label: WM_PATH_1A
+    val: 1A
+  - desc: WM_PATH_1B
+    label: WM_PATH_1B
+    val: 1B
+  - desc: WM_PATH_1C
+    label: WM_PATH_1C
+    val: 1C
+  - desc: WM_PATH_1D
+    label: WM_PATH_1D
+    val: 1D
+  - desc: WM_PATH_1E
+    label: WM_PATH_1E
+    val: 1E
+  - desc: WM_PATH_1F
+    label: WM_PATH_1F
+    val: 1F
+  - desc: WM_PATH_MAX
+    label: WM_PATH_MAX
+    val: '20'
+- desc: wm_hightlighted_nation_idx
+  label: wm_hightlighted_nation_idx
+  vals:
+  - desc: WM_NATION_Frelia
+    label: WM_NATION_Frelia
+    val: '0'
+  - desc: WM_NATION_Grado
+    label: WM_NATION_Grado
+    val: '1'
+  - desc: WM_NATION_Jehanna
+    label: WM_NATION_Jehanna
+    val: '2'
+  - desc: WM_NATION_Carcino
+    label: WM_NATION_Carcino
+    val: '3'
+  - desc: WM_NATION_ZahaWoods
+    label: WM_NATION_ZahaWoods
+    val: '4'
+  - desc: WM_NATION_Rausten
+    label: WM_NATION_Rausten
+    val: '5'
+  - desc: WM_NATION_Pokhara
+    label: WM_NATION_Pokhara
+    val: '6'
+  - desc: WM_NATION_Renais
+    label: WM_NATION_Renais
+    val: '7'
+  - desc: WM_NATION_MAX
+    label: WM_NATION_MAX
+    val: '8'
+- desc: wm_mu_idx
+  label: wm_mu_idx
+  vals:
+  - desc: WM_MU_0
+    label: WM_MU_0
+    val: '0'
+  - desc: WM_MU_1
+    label: WM_MU_1
+    val: '1'
+  - desc: WM_MU_2
+    label: WM_MU_2
+    val: '2'
+  - desc: WM_MU_3
+    label: WM_MU_3
+    val: '3'
+  - desc: WM_MU_4
+    label: WM_MU_4
+    val: '4'
+  - desc: WM_MU_5
+    label: WM_MU_5
+    val: '5'
+  - desc: WM_MU_6
+    label: WM_MU_6
+    val: '6'
+  - desc: WM_MU_MAX
+    label: WM_MU_MAX
+    val: '7'
+  - desc: WM_MU_ANY
+    label: WM_MU_ANY
+    val: FFFFFFFF
+- desc: worldmap_unit_alignace
+  label: worldmap_unit_alignace
+  vals:
+  - desc: WM_FACTION_BLUE
+    label: WM_FACTION_BLUE
+    val: '0'
+  - desc: WM_FACTION_RED
+    label: WM_FACTION_RED
+    val: '1'
+  - desc: WM_FACTION_GREEN
+    label: WM_FACTION_GREEN
+    val: '2'
+- desc: gm_route_flags
+  label: gm_route_flags
+  vals:
+  - desc: GM_ROUTE_FLAG_0
+    label: GM_ROUTE_FLAG_0
+    val: '1'
+  - desc: GM_ROUTE_FLAG_1
+    label: GM_ROUTE_FLAG_1
+    val: '2'
+  - desc: GM_ROUTE_FLAG_2
+    label: GM_ROUTE_FLAG_2
+    val: '4'
+  - desc: GM_ROUTE_FLAG_3
+    label: GM_ROUTE_FLAG_3
+    val: '8'
+  - desc: GM_ROUTE_FLAG_4
+    label: GM_ROUTE_FLAG_4
+    val: '10'
+  - desc: GM_ROUTE_FLAG_5
+    label: GM_ROUTE_FLAG_5
+    val: '20'
+  - desc: GM_ROUTE_FLAG_6
+    label: GM_ROUTE_FLAG_6
+    val: '40'
+  - desc: GM_ROUTE_FLAG_7
+    label: GM_ROUTE_FLAG_7
+    val: '80'
+- desc: gm_unit_state_bitfile
+  label: gm_unit_state_bitfile
+  vals:
+  - desc: GM_UNIT_STATE_B0
+    label: GM_UNIT_STATE_B0
+    val: '1'
+  - desc: GM_UNIT_STATE_B1
+    label: GM_UNIT_STATE_B1
+    val: '2'
+  - desc: GM_UNIT_STATE_B2
+    label: GM_UNIT_STATE_B2
+    val: '4'
+  - desc: GM_UNIT_STATE_B3
+    label: GM_UNIT_STATE_B3
+    val: '8'
+  - desc: GM_UNIT_STATE_B4
+    label: GM_UNIT_STATE_B4
+    val: '10'
+  - desc: GM_UNIT_STATE_B5
+    label: GM_UNIT_STATE_B5
+    val: '20'
+  - desc: GM_UNIT_STATE_B6
+    label: GM_UNIT_STATE_B6
+    val: '40'
+  - desc: GM_UNIT_STATE_B7
+    label: GM_UNIT_STATE_B7
+    val: '80'
+- desc: gm_node_states
+  label: gm_node_states
+  vals:
+  - desc: GM_NODE_STATE_VALID
+    label: GM_NODE_STATE_VALID
+    val: '1'
+  - desc: GM_NODE_STATE_CLEARED
+    label: GM_NODE_STATE_CLEARED
+    val: '2'
+- desc: gm_state_bits
+  label: gm_state_bits
+  vals:
+  - desc: GM_STATE_0
+    label: GM_STATE_0
+    val: '1'
+  - desc: GM_STATE_MONSGEN
+    label: GM_STATE_MONSGEN
+    val: '2'
+  - desc: GM_STATE_2
+    label: GM_STATE_2
+    val: '4'
+  - desc: GM_STATE_3
+    label: GM_STATE_3
+    val: '8'
+  - desc: GM_STATE_4
+    label: GM_STATE_4
+    val: '10'
+  - desc: GM_STATE_5
+    label: GM_STATE_5
+    val: '20'
+  - desc: GM_STATE_SKIPPED
+    label: GM_STATE_SKIPPED
+    val: '40'
+  - desc: GM_STATE_NOFADE
+    label: GM_STATE_NOFADE
+    val: '80'
+- desc: world_map_monster_location_idx
+  label: world_map_monster_location_idx
+  vals:
+  - desc: WM_MON_LOC_0
+    label: WM_MON_LOC_0
+    val: '0'
+  - desc: WM_MON_LOC_1
+    label: WM_MON_LOC_1
+    val: '1'
+  - desc: WM_MON_LOC_2
+    label: WM_MON_LOC_2
+    val: '2'
+  - desc: WM_MON_LOC_3
+    label: WM_MON_LOC_3
+    val: '3'
+  - desc: WM_MON_LOC_4
+    label: WM_MON_LOC_4
+    val: '4'
+  - desc: WM_MON_LOC_5
+    label: WM_MON_LOC_5
+    val: '5'
+  - desc: WM_MON_LOC_6
+    label: WM_MON_LOC_6
+    val: '6'
+  - desc: WM_MON_LOC_7
+    label: WM_MON_LOC_7
+    val: '7'
+  - desc: WM_MON_LOC_8
+    label: WM_MON_LOC_8
+    val: '8'
+  - desc: WM_MON_LOC_MAX
+    label: WM_MON_LOC_MAX
+    val: '9'
+- desc: gmap_rm_flags
+  label: gmap_rm_flags
+  vals:
+  - desc: GMAPRM_FLAG_0
+    label: GMAPRM_FLAG_0
+    val: '1'
+  - desc: GMAPRM_FLAG_1
+    label: GMAPRM_FLAG_1
+    val: '2'
+  - desc: GMAPRM_FLAG_UNBLOCK
+    label: GMAPRM_FLAG_UNBLOCK
+    val: '4'
+  - desc: GMAPRM_FLAG_3
+    label: GMAPRM_FLAG_3
+    val: '8'
+  - desc: GMAPRM_FLAG_4
+    label: GMAPRM_FLAG_4
+    val: '10'
+  - desc: GMAPRM_FLAG_5
+    label: GMAPRM_FLAG_5
+    val: '20'
+  - desc: GMAPRM_FLAG_6
+    label: GMAPRM_FLAG_6
+    val: '40'
+  - desc: GMAPRM_FLAG_7
+    label: GMAPRM_FLAG_7
+    val: '80'
+- desc: gmap_rm_proc_label_idx
+  label: gmap_rm_proc_label_idx
+  vals:
+  - desc: GMAPRM_LABEL_0
+    label: GMAPRM_LABEL_0
+    val: '0'
+  - desc: GMAPRM_LABEL_1
+    label: GMAPRM_LABEL_1
+    val: '1'
+- desc: BmBgxConf_type
+  label: BmBgxConf_type
+  vals:
+  - desc: BMFX_CONFT_IMG
+    label: BMFX_CONFT_IMG
+    val: '0'
+  - desc: BMFX_CONFT_ZIMG
+    label: BMFX_CONFT_ZIMG
+    val: '1'
+  - desc: BMFX_CONFT_TSA
+    label: BMFX_CONFT_TSA
+    val: '2'
+  - desc: BMFX_CONFT_PAL
+    label: BMFX_CONFT_PAL
+    val: '3'
+  - desc: BMFX_CONFT_LOOP_START
+    label: BMFX_CONFT_LOOP_START
+    val: '4'
+  - desc: BMFX_CONFT_LOOP
+    label: BMFX_CONFT_LOOP
+    val: '5'
+  - desc: BMFX_CONFT_BLOCKING
+    label: BMFX_CONFT_BLOCKING
+    val: '6'
+  - desc: BMFX_CONFT_7
+    label: BMFX_CONFT_7
+    val: '7'
+  - desc: BMFX_CONFT_CALL_IDLE
+    label: BMFX_CONFT_CALL_IDLE
+    val: '8'
+  - desc: BMFX_CONFT_BREAK
+    label: BMFX_CONFT_BREAK
+    val: '9'
+  - desc: BMFX_CONFT_END
+    label: BMFX_CONFT_END
+    val: A
+- desc: Anim_state
+  label: Anim_state
+  vals:
+  - desc: ANIM_BIT_ENABLED
+    label: ANIM_BIT_ENABLED
+    val: '1'
+  - desc: ANIM_BIT_HIDDEN
+    label: ANIM_BIT_HIDDEN
+    val: '2'
+  - desc: ANIM_BIT_2
+    label: ANIM_BIT_2
+    val: '4'
+  - desc: ANIM_BIT_FROZEN
+    label: ANIM_BIT_FROZEN
+    val: '8'
+- desc: Anim_state2
+  label: Anim_state2
+  vals:
+  - desc: ANIM_BIT2_0001
+    label: ANIM_BIT2_0001
+    val: '1'
+  - desc: ANIM_BIT2_0002
+    label: ANIM_BIT2_0002
+    val: '2'
+  - desc: ANIM_BIT2_0004
+    label: ANIM_BIT2_0004
+    val: '4'
+  - desc: ANIM_BIT2_0008
+    label: ANIM_BIT2_0008
+    val: '8'
+  - desc: ANIM_BIT2_0010
+    label: ANIM_BIT2_0010
+    val: '10'
+  - desc: ANIM_BIT2_0020
+    label: ANIM_BIT2_0020
+    val: '20'
+  - desc: ANIM_BIT2_0040
+    label: ANIM_BIT2_0040
+    val: '40'
+  - desc: ANIM_BIT2_0080
+    label: ANIM_BIT2_0080
+    val: '80'
+  - desc: ANIM_BIT2_FRONT_FRAME
+    label: ANIM_BIT2_FRONT_FRAME
+    val: '100'
+  - desc: ANIM_BIT2_BACK_FRAME
+    label: ANIM_BIT2_BACK_FRAME
+    val: '0'
+  - desc: ANIM_BIT2_POS_RIGHT
+    label: ANIM_BIT2_POS_RIGHT
+    val: '200'
+  - desc: ANIM_BIT2_POS_LEFT
+    label: ANIM_BIT2_POS_LEFT
+    val: '0'
+  - desc: ANIM_BIT2_0400
+    label: ANIM_BIT2_0400
+    val: '400'
+  - desc: ANIM_BIT2_0800
+    label: ANIM_BIT2_0800
+    val: '800'
+  - desc: ANIM_BIT2_COMMAND
+    label: ANIM_BIT2_COMMAND
+    val: '1000'
+  - desc: ANIM_BIT2_FRAME
+    label: ANIM_BIT2_FRAME
+    val: '2000'
+  - desc: ANIM_BIT2_STOP
+    label: ANIM_BIT2_STOP
+    val: '4000'
+  - desc: ANIM_BIT2_8000
+    label: ANIM_BIT2_8000
+    val: '8000'
+- desc: Anim_state3
+  label: Anim_state3
+  vals:
+  - desc: ANIM_BIT3_TAKE_BACK_ENABLE
+    label: ANIM_BIT3_TAKE_BACK_ENABLE
+    val: '1'
+  - desc: ANIM_BIT3_NEXT_ROUND_START
+    label: ANIM_BIT3_NEXT_ROUND_START
+    val: '2'
+  - desc: ANIM_BIT3_C01_BLOCKING_IN_BATTLE
+    label: ANIM_BIT3_C01_BLOCKING_IN_BATTLE
+    val: '4'
+  - desc: ANIM_BIT3_HIT_EFFECT_APPLIED
+    label: ANIM_BIT3_HIT_EFFECT_APPLIED
+    val: '8'
+  - desc: ANIM_BIT3_0010
+    label: ANIM_BIT3_0010
+    val: '10'
+  - desc: ANIM_BIT3_BLOCKING
+    label: ANIM_BIT3_BLOCKING
+    val: '20'
+  - desc: ANIM_BIT3_BLOCKEND
+    label: ANIM_BIT3_BLOCKEND
+    val: '40'
+  - desc: ANIM_BIT3_0080
+    label: ANIM_BIT3_0080
+    val: '80'
+  - desc: ANIM_BIT3_0100
+    label: ANIM_BIT3_0100
+    val: '100'
+  - desc: ANIM_BIT3_0200
+    label: ANIM_BIT3_0200
+    val: '200'
+  - desc: ANIM_BIT3_0400
+    label: ANIM_BIT3_0400
+    val: '400'
+  - desc: ANIM_BIT3_0800
+    label: ANIM_BIT3_0800
+    val: '800'
+  - desc: ANIM_BIT3_1000
+    label: ANIM_BIT3_1000
+    val: '1000'
+  - desc: ANIM_BIT3_2000
+    label: ANIM_BIT3_2000
+    val: '2000'
+  - desc: ANIM_BIT3_4000
+    label: ANIM_BIT3_4000
+    val: '4000'
+  - desc: ANIM_BIT3_NEW_ROUND_START
+    label: ANIM_BIT3_NEW_ROUND_START
+    val: '8000'
+- desc: anim_inst_type
+  label: anim_inst_type
+  vals:
+  - desc: ANIM_INS_TYPE_STOP
+    label: ANIM_INS_TYPE_STOP
+    val: '0'
+  - desc: ANIM_INS_TYPE_END
+    label: ANIM_INS_TYPE_END
+    val: '1'
+  - desc: ANIM_INS_TYPE_LOOP
+    label: ANIM_INS_TYPE_LOOP
+    val: '2'
+  - desc: ANIM_INS_TYPE_MOVE
+    label: ANIM_INS_TYPE_MOVE
+    val: '3'
+  - desc: ANIM_INS_TYPE_WAIT
+    label: ANIM_INS_TYPE_WAIT
+    val: '4'
+  - desc: ANIM_INS_TYPE_COMMAND
+    label: ANIM_INS_TYPE_COMMAND
+    val: '5'
+  - desc: ANIM_INS_TYPE_FRAME
+    label: ANIM_INS_TYPE_FRAME
+    val: '6'
+- desc: ekr_lvup_status_index
+  label: ekr_lvup_status_index
+  vals:
+  - desc: EKRLVUP_STAT_HP
+    label: EKRLVUP_STAT_HP
+    val: '0'
+  - desc: EKRLVUP_STAT_POW
+    label: EKRLVUP_STAT_POW
+    val: '1'
+  - desc: EKRLVUP_STAT_SKL
+    label: EKRLVUP_STAT_SKL
+    val: '2'
+  - desc: EKRLVUP_STAT_SPD
+    label: EKRLVUP_STAT_SPD
+    val: '3'
+  - desc: EKRLVUP_STAT_LCK
+    label: EKRLVUP_STAT_LCK
+    val: '4'
+  - desc: EKRLVUP_STAT_DEF
+    label: EKRLVUP_STAT_DEF
+    val: '5'
+  - desc: EKRLVUP_STAT_RES
+    label: EKRLVUP_STAT_RES
+    val: '6'
+  - desc: EKRLVUP_STAT_CON
+    label: EKRLVUP_STAT_CON
+    val: '7'
+  - desc: EKRLVUP_STAT_MAX
+    label: EKRLVUP_STAT_MAX
+    val: '8'
+  - desc: EKRLVUP_STAT_CLASS
+    label: EKRLVUP_STAT_CLASS
+    val: '8'
+  - desc: EKRLVUP_STAT_LV_MSG
+    label: EKRLVUP_STAT_LV_MSG
+    val: '9'
+  - desc: EKRLVUP_STAT_LV_VAL
+    label: EKRLVUP_STAT_LV_VAL
+    val: A
+  - desc: EKRLVUP_STAT_PNAME
+    label: EKRLVUP_STAT_PNAME
+    val: '8'
+  - desc: EKRLVUP_STAT_LVPRE_MSG
+    label: EKRLVUP_STAT_LVPRE_MSG
+    val: '9'
+  - desc: EKRLVUP_STAT_LVPRE_VAL
+    label: EKRLVUP_STAT_LVPRE_VAL
+    val: A
+- desc: prep_atmenu_item_index
+  label: prep_atmenu_item_index
+  vals:
+  - desc: PREP_MAINMENU_UNIT
+    label: PREP_MAINMENU_UNIT
+    val: '0'
+  - desc: PREP_MAINMENU_ITEM
+    label: PREP_MAINMENU_ITEM
+    val: '1'
+  - desc: PREP_MAINMENU_SAVE
+    label: PREP_MAINMENU_SAVE
+    val: '2'
+  - desc: PREP_MAINMENU_UNK3
+    label: PREP_MAINMENU_UNK3
+    val: '3'
+  - desc: PREP_MAINMENU_SUPPORT
+    label: PREP_MAINMENU_SUPPORT
+    val: '4'
+  - desc: PREP_MAINMENU_CHECKMAP
+    label: PREP_MAINMENU_CHECKMAP
+    val: '7'
+- desc: proc_label_prep_unit_select
+  label: proc_label_prep_unit_select
+  vals:
+  - desc: PROC_LABEL_PREPUNIT_0
+    label: PROC_LABEL_PREPUNIT_0
+    val: '0'
+  - desc: PROC_LABEL_PREPUNIT_IDLE
+    label: PROC_LABEL_PREPUNIT_IDLE
+    val: '1'
+  - desc: PROC_LABEL_PREPUNIT_2
+    label: PROC_LABEL_PREPUNIT_2
+    val: '2'
+  - desc: PROC_LABEL_PREPUNIT_PRESS_SELECT
+    label: PROC_LABEL_PREPUNIT_PRESS_SELECT
+    val: '3'
+  - desc: PROC_LABEL_PREPUNIT_PRESS_R
+    label: PROC_LABEL_PREPUNIT_PRESS_R
+    val: '4'
+  - desc: PROC_LABEL_PREPUNIT_PRESS_B
+    label: PROC_LABEL_PREPUNIT_PRESS_B
+    val: A
+  - desc: PROC_LABEL_PREPUNIT_GAME_START
+    label: PROC_LABEL_PREPUNIT_GAME_START
+    val: '63'
+  - desc: PROC_LABEL_PREPUNIT_END
+    label: PROC_LABEL_PREPUNIT_END
+    val: '64'
+- desc: prepitem_textindex
+  label: prepitem_textindex
+  vals:
+  - desc: TEXT_PREPITEM_HP
+    label: TEXT_PREPITEM_HP
+    val: '0'
+  - desc: TEXT_PREPITEM_POW
+    label: TEXT_PREPITEM_POW
+    val: '1'
+  - desc: TEXT_PREPITEM_SKL
+    label: TEXT_PREPITEM_SKL
+    val: '2'
+  - desc: TEXT_PREPITEM_SPD
+    label: TEXT_PREPITEM_SPD
+    val: '3'
+  - desc: TEXT_PREPITEM_LCK
+    label: TEXT_PREPITEM_LCK
+    val: '4'
+  - desc: TEXT_PREPITEM_DEF
+    label: TEXT_PREPITEM_DEF
+    val: '5'
+  - desc: TEXT_PREPITEM_RES
+    label: TEXT_PREPITEM_RES
+    val: '6'
+  - desc: TEXT_PREPITEM_CON
+    label: TEXT_PREPITEM_CON
+    val: '7'
+  - desc: TEXT_PREPITEM_CLASS
+    label: TEXT_PREPITEM_CLASS
+    val: '8'
+  - desc: TEXT_PREPITEM_LEVEL
+    label: TEXT_PREPITEM_LEVEL
+    val: '9'
+  - desc: TEXT_PREPITEM_DESC1
+    label: TEXT_PREPITEM_DESC1
+    val: '19'
+  - desc: TEXT_PREPITEM_DESC2
+    label: TEXT_PREPITEM_DESC2
+    val: 1A
+  - desc: TEXT_PREPITEM_POPUP
+    label: TEXT_PREPITEM_POPUP
+    val: 1B
+  - desc: TEXT_PREPITEM_DESC3
+    label: TEXT_PREPITEM_DESC3
+    val: 1D
+- desc: proc_label_prep_item_use
+  label: proc_label_prep_item_use
+  vals:
+  - desc: PROC_LABEL_PREPITEMUSE_INIT
+    label: PROC_LABEL_PREPITEMUSE_INIT
+    val: '0'
+  - desc: PROC_LABEL_PREPITEMUSE_MAIN
+    label: PROC_LABEL_PREPITEMUSE_MAIN
+    val: '1'
+  - desc: PROC_LABEL_PREPITEMUSE_CONFIRM
+    label: PROC_LABEL_PREPITEMUSE_CONFIRM
+    val: '2'
+  - desc: PROC_LABEL_PREPITEMUSE_EXEC_ITEMEFFECT
+    label: PROC_LABEL_PREPITEMUSE_EXEC_ITEMEFFECT
+    val: '3'
+  - desc: PROC_LABEL_PREPITEMUSE_EXEC_JUNA
+    label: PROC_LABEL_PREPITEMUSE_EXEC_JUNA
+    val: '4'
+  - desc: PROC_LABEL_PREPITEMUSE_EXEC_PROMO
+    label: PROC_LABEL_PREPITEMUSE_EXEC_PROMO
+    val: '5'
+  - desc: PROC_LABEL_PREPITEMUSE_EXIT_FADE
+    label: PROC_LABEL_PREPITEMUSE_EXIT_FADE
+    val: '6'
+  - desc: PROC_LABEL_PREPITEMUSE_END
+    label: PROC_LABEL_PREPITEMUSE_END
+    val: '7'
+- desc: event_autoload_pid_idx
+  label: event_autoload_pid_idx
+  vals:
+  - desc: CHARACTER_EVT_LEADER
+    label: CHARACTER_EVT_LEADER
+    val: '0'
+  - desc: CHARACTER_EVT_ACTIVE
+    label: CHARACTER_EVT_ACTIVE
+    val: FFFFFFFF
+  - desc: CHARACTER_EVT_SLOTB
+    label: CHARACTER_EVT_SLOTB
+    val: FFFFFFFE
+  - desc: CHARACTER_EVT_SLOT2
+    label: CHARACTER_EVT_SLOT2
+    val: FFFFFFFD
+- desc: popup_opcode_index
+  label: popup_opcode_index
+  vals:
+  - desc: POPUP_OP_END
+    label: POPUP_OP_END
+    val: '0'
+  - desc: POPUP_OP_SPACE
+    label: POPUP_OP_SPACE
+    val: '1'
+  - desc: POPUP_OP_ITEM_NAME
+    label: POPUP_OP_ITEM_NAME
+    val: '2'
+  - desc: POPUP_OP_ITEM_STR_CAP
+    label: POPUP_OP_ITEM_STR_CAP
+    val: '3'
+  - desc: POPUP_OP_ITEM_STR
+    label: POPUP_OP_ITEM_STR
+    val: '4'
+  - desc: POPUP_OP_UNIT_NAME
+    label: POPUP_OP_UNIT_NAME
+    val: '5'
+  - desc: POPUP_OP_MSG
+    label: POPUP_OP_MSG
+    val: '6'
+  - desc: POPUP_OP_STR
+    label: POPUP_OP_STR
+    val: '7'
+  - desc: POPUP_OP_COLOR
+    label: POPUP_OP_COLOR
+    val: '8'
+  - desc: POPUP_OP_ITEM_ICON
+    label: POPUP_OP_ITEM_ICON
+    val: '9'
+  - desc: POPUP_OP_WTYPE_ICON
+    label: POPUP_OP_WTYPE_ICON
+    val: A
+  - desc: POPUP_OP_NUM
+    label: POPUP_OP_NUM
+    val: B
+  - desc: POPUP_OP_SOUND
+    label: POPUP_OP_SOUND
+    val: C
+- desc: fe_ch_idx
+  label: fe_ch_idx
+  vals:
+  - desc: CHFE_L_X
+    label: CHFE_L_X
+    val: '0'
+  - desc: CHFE_L_NL
+    label: CHFE_L_NL
+    val: '1'
+  - desc: CHFE_L_2NL
+    label: CHFE_L_2NL
+    val: '2'
+  - desc: CHFE_L_A
+    label: CHFE_L_A
+    val: '3'
+  - desc: CHFE_L_Pause8
+    label: CHFE_L_Pause8
+    val: '4'
+  - desc: CHFE_L_Pause16
+    label: CHFE_L_Pause16
+    val: '5'
+  - desc: CHFE_L_Pause32
+    label: CHFE_L_Pause32
+    val: '6'
+  - desc: CHFE_L_Pause64
+    label: CHFE_L_Pause64
+    val: '7'
+  - desc: CHFE_L_OpenFarLeft
+    label: CHFE_L_OpenFarLeft
+    val: '8'
+  - desc: CHFE_L_OpenMidLeft
+    label: CHFE_L_OpenMidLeft
+    val: '9'
+  - desc: CHFE_L_OpenLeft
+    label: CHFE_L_OpenLeft
+    val: A
+  - desc: CHFE_L_OpenRight
+    label: CHFE_L_OpenRight
+    val: B
+  - desc: CHFE_L_OpenMidRight
+    label: CHFE_L_OpenMidRight
+    val: C
+  - desc: CHFE_L_OpenFarRight
+    label: CHFE_L_OpenFarRight
+    val: D
+  - desc: CHFE_L_OpenFarFarLeft
+    label: CHFE_L_OpenFarFarLeft
+    val: E
+  - desc: CHFE_L_OpenFarFarRight
+    label: CHFE_L_OpenFarFarRight
+    val: F
+  - desc: CHFE_L_LoadFace
+    label: CHFE_L_LoadFace
+    val: '10'
+  - desc: CHFE_L_ClearFace
+    label: CHFE_L_ClearFace
+    val: '11'
+  - desc: CHFE_L_NormalPrint
+    label: CHFE_L_NormalPrint
+    val: '12'
+  - desc: CHFE_L_FastPrint
+    label: CHFE_L_FastPrint
+    val: '13'
+  - desc: CHFE_L_CloseSpeechFast
+    label: CHFE_L_CloseSpeechFast
+    val: '14'
+  - desc: CHFE_L_CloseSpeechSlow
+    label: CHFE_L_CloseSpeechSlow
+    val: '15'
+  - desc: CHFE_L_ToggleMouthMove
+    label: CHFE_L_ToggleMouthMove
+    val: '16'
+  - desc: CHFE_L_ToggleSmile
+    label: CHFE_L_ToggleSmile
+    val: '17'
+  - desc: CHFE_L_Yes
+    label: CHFE_L_Yes
+    val: '18'
+  - desc: CHFE_L_No
+    label: CHFE_L_No
+    val: '19'
+  - desc: CHFE_L_BuySell
+    label: CHFE_L_BuySell
+    val: 1A
+  - desc: CHFE_L_ShopContinue
+    label: CHFE_L_ShopContinue
+    val: 1B
+  - desc: CHFE_L_SendToBack
+    label: CHFE_L_SendToBack
+    val: 1C
+  - desc: CHFE_L_FastPrint2
+    label: CHFE_L_FastPrint2
+    val: 1D
+  - desc: CHFE_L_DEnd
+    label: CHFE_L_DEnd
+    val: 1F
+- desc: talk_choice
+  label: talk_choice
+  vals:
+  - desc: TALK_CHOICE_CANCEL
+    label: TALK_CHOICE_CANCEL
+    val: '0'
+  - desc: TALK_CHOICE_YES
+    label: TALK_CHOICE_YES
+    val: '1'
+  - desc: TALK_CHOICE_NO
+    label: TALK_CHOICE_NO
+    val: '2'
+- desc: mu_config_ctrl_bits
+  label: mu_config_ctrl_bits
+  vals:
+  - desc: MU_CONFIG_SPPED_SLOW
+    label: MU_CONFIG_SPPED_SLOW
+    val: '40'
+  - desc: MU_CONFIG_SPPED_NORMAL
+    label: MU_CONFIG_SPPED_NORMAL
+    val: '80'
+  - desc: MU_CONFIG_SPPED_FAST
+    label: MU_CONFIG_SPPED_FAST
+    val: '100'
+- desc: EventExecType
+  label: EventExecType
+  vals:
+  - desc: EV_EXEC_WORLDMAP
+    label: EV_EXEC_WORLDMAP
+    val: '0'
+  - desc: EV_EXEC_CUTSCENE
+    label: EV_EXEC_CUTSCENE
+    val: '1'
+  - desc: EV_EXEC_GAMEPLAY
+    label: EV_EXEC_GAMEPLAY
+    val: '2'
+  - desc: EV_EXEC_QUIET
+    label: EV_EXEC_QUIET
+    val: '3'
+  - desc: EV_EXEC_UNK4
+    label: EV_EXEC_UNK4
+    val: '4'
+  - desc: EV_EXEC_UNK5
+    label: EV_EXEC_UNK5
+    val: '5'
+- desc: EventStateFlags
+  label: EventStateFlags
+  vals:
+  - desc: EV_STATE_NONE
+    label: EV_STATE_NONE
+    val: '0'
+  - desc: EV_STATE_ABORT
+    label: EV_STATE_ABORT
+    val: '1'
+  - desc: EV_STATE_0002
+    label: EV_STATE_0002
+    val: '2'
+  - desc: EV_STATE_SKIPPING
+    label: EV_STATE_SKIPPING
+    val: '4'
+  - desc: EV_STATE_0008
+    label: EV_STATE_0008
+    val: '8'
+  - desc: EV_STATE_NOSKIP
+    label: EV_STATE_NOSKIP
+    val: '10'
+  - desc: EV_STATE_0020
+    label: EV_STATE_0020
+    val: '20'
+  - desc: EV_STATE_0040
+    label: EV_STATE_0040
+    val: '40'
+  - desc: EV_STATE_NOFADE
+    label: EV_STATE_NOFADE
+    val: '80'
+  - desc: EV_STATE_FADEDIN
+    label: EV_STATE_FADEDIN
+    val: '100'
+  - desc: EV_STATE_UNITCAM
+    label: EV_STATE_UNITCAM
+    val: '200'
+  - desc: EV_STATE_CHANGECH
+    label: EV_STATE_CHANGECH
+    val: '400'
+  - desc: EV_STATE_CHANGEGM
+    label: EV_STATE_CHANGEGM
+    val: '800'
+  - desc: EV_STATE_GFXLOCKED
+    label: EV_STATE_GFXLOCKED
+    val: '1000'
+- desc: EventCommandReturnCode
+  label: EventCommandReturnCode
+  vals:
+  - desc: EVC_ADVANCE_CONTINUE
+    label: EVC_ADVANCE_CONTINUE
+    val: '0'
+  - desc: EVC_STOP_CONTINUE
+    label: EVC_STOP_CONTINUE
+    val: '1'
+  - desc: EVC_ADVANCE_YIELD
+    label: EVC_ADVANCE_YIELD
+    val: '2'
+  - desc: EVC_STOP_YIELD
+    label: EVC_STOP_YIELD
+    val: '3'
+  - desc: EVC_UNK4
+    label: EVC_UNK4
+    val: '4'
+  - desc: EVC_END
+    label: EVC_END
+    val: '5'
+  - desc: EVC_ERROR
+    label: EVC_ERROR
+    val: '6'
+- desc: EventSlotIdx
+  label: EventSlotIdx
+  vals:
+  - desc: EVT_SLOT_0
+    label: EVT_SLOT_0
+    val: '0'
+  - desc: EVT_SLOT_1
+    label: EVT_SLOT_1
+    val: '1'
+  - desc: EVT_SLOT_2
+    label: EVT_SLOT_2
+    val: '2'
+  - desc: EVT_SLOT_3
+    label: EVT_SLOT_3
+    val: '3'
+  - desc: EVT_SLOT_4
+    label: EVT_SLOT_4
+    val: '4'
+  - desc: EVT_SLOT_5
+    label: EVT_SLOT_5
+    val: '5'
+  - desc: EVT_SLOT_6
+    label: EVT_SLOT_6
+    val: '6'
+  - desc: EVT_SLOT_7
+    label: EVT_SLOT_7
+    val: '7'
+  - desc: EVT_SLOT_8
+    label: EVT_SLOT_8
+    val: '8'
+  - desc: EVT_SLOT_9
+    label: EVT_SLOT_9
+    val: '9'
+  - desc: EVT_SLOT_A
+    label: EVT_SLOT_A
+    val: A
+  - desc: EVT_SLOT_B
+    label: EVT_SLOT_B
+    val: B
+  - desc: EVT_SLOT_C
+    label: EVT_SLOT_C
+    val: C
+  - desc: EVT_SLOT_D
+    label: EVT_SLOT_D
+    val: D
+- desc: char_identifier_event
+  label: char_identifier_event
+  vals:
+  - desc: CHAR_EVT_PLAYER_LEADER
+    label: CHAR_EVT_PLAYER_LEADER
+    val: '0'
+  - desc: CHAR_EVT_ACTIVE_UNIT
+    label: CHAR_EVT_ACTIVE_UNIT
+    val: FFFFFFFF
+  - desc: CHAR_EVT_POSITION_AT_SLOTB
+    label: CHAR_EVT_POSITION_AT_SLOTB
+    val: FFFFFFFE
+  - desc: CHAR_EVT_SLOT2
+    label: CHAR_EVT_SLOT2
+    val: FFFFFFFD
+- desc: trade_menu_rect
+  label: trade_menu_rect
+  vals:
+  - desc: UNIT_PANEL_WIDTH
+    label: UNIT_PANEL_WIDTH
+    val: '6'
+  - desc: ITEM_PANEL_WIDTH
+    label: ITEM_PANEL_WIDTH
+    val: '7'
+  - desc: ITEM_PANEL_LEFT_X
+    label: ITEM_PANEL_LEFT_X
+    val: '1'
+  - desc: ITEM_PANEL_LEFT_Y
+    label: ITEM_PANEL_LEFT_Y
+    val: '8'
+  - desc: ITEM_PANEL_RIGHT_X
+    label: ITEM_PANEL_RIGHT_X
+    val: F
+  - desc: ITEM_PANEL_RIGHT_Y
+    label: ITEM_PANEL_RIGHT_Y
+    val: '8'
+- desc: trade_menu_proc_label_idx
+  label: trade_menu_proc_label_idx
+  vals:
+  - desc: L_TRADEMENU_UNSELECTED
+    label: L_TRADEMENU_UNSELECTED
+    val: '0'
+  - desc: L_TRADEMENU_SELECTED
+    label: L_TRADEMENU_SELECTED
+    val: '1'
+  - desc: L_TRADEMENU_END
+    label: L_TRADEMENU_END
+    val: '2'
+  - desc: L_TRADEMENU_LOADFORCED
+    label: L_TRADEMENU_LOADFORCED
+    val: '65'
+- desc: trade_menu_tutorial_status_idx
+  label: trade_menu_tutorial_status_idx
+  vals:
+  - desc: TRADE_TUT_NONE
+    label: TRADE_TUT_NONE
+    val: '0'
+  - desc: TRADE_TUT_INIT
+    label: TRADE_TUT_INIT
+    val: '1'
+- desc: event_cmd_idx
+  label: event_cmd_idx
+  vals:
+  - desc: EV_CMD_NOP
+    label: EV_CMD_NOP
+    val: '0'
+  - desc: EV_CMD_END
+    label: EV_CMD_END
+    val: '1'
+  - desc: EV_CMD_EVSET
+    label: EV_CMD_EVSET
+    val: '2'
+  - desc: EV_CMD_EVCHECK
+    label: EV_CMD_EVCHECK
+    val: '3'
+  - desc: EV_CMD_RANDOMNUMBER
+    label: EV_CMD_RANDOMNUMBER
+    val: '4'
+  - desc: EV_CMD_SVAL
+    label: EV_CMD_SVAL
+    val: '5'
+  - desc: EV_CMD_SLOT_OPS
+    label: EV_CMD_SLOT_OPS
+    val: '6'
+  - desc: EV_CMD_QUEUE_OPS
+    label: EV_CMD_QUEUE_OPS
+    val: '7'
+  - desc: EV_CMD_LABEL
+    label: EV_CMD_LABEL
+    val: '8'
+  - desc: EV_CMD_GOTO
+    label: EV_CMD_GOTO
+    val: '9'
+  - desc: EV_CMD_CALL
+    label: EV_CMD_CALL
+    val: A
+  - desc: EV_CMD_ENQUEUE_CALL
+    label: EV_CMD_ENQUEUE_CALL
+    val: B
+  - desc: EV_CMD_BRANCH
+    label: EV_CMD_BRANCH
+    val: C
+  - desc: EV_CMD_ASMC
+    label: EV_CMD_ASMC
+    val: D
+  - desc: EV_CMD_STALL
+    label: EV_CMD_STALL
+    val: E
+  - desc: EV_CMD_COUNTER
+    label: EV_CMD_COUNTER
+    val: F
+  - desc: EV_CMD_EVBITMODIFY
+    label: EV_CMD_EVBITMODIFY
+    val: '10'
+  - desc: EV_CMD_IGNOREKEYS
+    label: EV_CMD_IGNOREKEYS
+    val: '11'
+  - desc: EV_CMD_BGMCHANGE_12
+    label: EV_CMD_BGMCHANGE_12
+    val: '12'
+  - desc: EV_CMD_BGMCHANGE_13
+    label: EV_CMD_BGMCHANGE_13
+    val: '13'
+  - desc: EV_CMD_BGMOVERWRITE
+    label: EV_CMD_BGMOVERWRITE
+    val: '14'
+  - desc: EV_CMD_BGMVOLUMECHANGE
+    label: EV_CMD_BGMVOLUMECHANGE
+    val: '15'
+  - desc: EV_CMD_PLAYSE
+    label: EV_CMD_PLAYSE
+    val: '16'
+  - desc: EV_CMD_FADE
+    label: EV_CMD_FADE
+    val: '17'
+  - desc: EV_CMD_COLORFADE
+    label: EV_CMD_COLORFADE
+    val: '18'
+  - desc: EV_CMD_CHECKVARIOUS
+    label: EV_CMD_CHECKVARIOUS
+    val: '19'
+  - desc: EV_CMD_SETTEXTTYPE
+    label: EV_CMD_SETTEXTTYPE
+    val: 1A
+  - desc: EV_CMD_DISPLAYTEXT
+    label: EV_CMD_DISPLAYTEXT
+    val: 1B
+  - desc: EV_CMD_CONTINUETEXT
+    label: EV_CMD_CONTINUETEXT
+    val: 1C
+  - desc: EV_CMD_ENDTEXT
+    label: EV_CMD_ENDTEXT
+    val: 1D
+  - desc: EV_CMD_DISPLAYFACE
+    label: EV_CMD_DISPLAYFACE
+    val: 1E
+  - desc: EV_CMD_MOVEFACE
+    label: EV_CMD_MOVEFACE
+    val: 1F
+  - desc: EV_CMD_CLEARTEXTBOX
+    label: EV_CMD_CLEARTEXTBOX
+    val: '20'
+  - desc: EV_CMD_SHOWBG
+    label: EV_CMD_SHOWBG
+    val: '21'
+  - desc: EV_CMD_CLEARSCREEN
+    label: EV_CMD_CLEARSCREEN
+    val: '22'
+  - desc: EV_CMD_23
+    label: EV_CMD_23
+    val: '23'
+  - desc: EV_CMD_24
+    label: EV_CMD_24
+    val: '24'
+  - desc: EV_CMD_LOMA
+    label: EV_CMD_LOMA
+    val: '25'
+  - desc: EV_CMD_CAMERACONTROL
+    label: EV_CMD_CAMERACONTROL
+    val: '26'
+  - desc: EV_CMD_TILE_CHANGE
+    label: EV_CMD_TILE_CHANGE
+    val: '27'
+  - desc: EV_CMD_CHANGEWEATHER
+    label: EV_CMD_CHANGEWEATHER
+    val: '28'
+  - desc: EV_CMD_CHANGEFOGVISION
+    label: EV_CMD_CHANGEFOGVISION
+    val: '29'
+  - desc: EV_CMD_CHANGECHAPTER
+    label: EV_CMD_CHANGECHAPTER
+    val: 2A
+  - desc: EV_CMD_LOAD_PRECONF
+    label: EV_CMD_LOAD_PRECONF
+    val: 2B
+  - desc: EV_CMD_LOADUNIT
+    label: EV_CMD_LOADUNIT
+    val: 2C
+  - desc: EV_CMD_CHANGE_PAL
+    label: EV_CMD_CHANGE_PAL
+    val: 2D
+  - desc: EV_CMD_GET_PID
+    label: EV_CMD_GET_PID
+    val: 2E
+  - desc: EV_CMD_MOVEUNIT
+    label: EV_CMD_MOVEUNIT
+    val: 2F
+  - desc: EV_CMD_ENUN
+    label: EV_CMD_ENUN
+    val: '30'
+  - desc: EV_CMD_TOGGLERANGE
+    label: EV_CMD_TOGGLERANGE
+    val: '31'
+  - desc: EV_CMD_LOADSINGLEUNIT
+    label: EV_CMD_LOADSINGLEUNIT
+    val: '32'
+  - desc: EV_CMD_CHECKSTATE
+    label: EV_CMD_CHECKSTATE
+    val: '33'
+  - desc: EV_CMD_CHANGESTATE
+    label: EV_CMD_CHANGESTATE
+    val: '34'
+  - desc: EV_CMD_CHANGECLASS
+    label: EV_CMD_CHANGECLASS
+    val: '35'
+  - desc: EV_CMD_CHECKINAREA
+    label: EV_CMD_CHECKINAREA
+    val: '36'
+  - desc: EV_CMD_GIVEITEM
+    label: EV_CMD_GIVEITEM
+    val: '37'
+  - desc: EV_CMD_CHANGEACTIVEUNIT
+    label: EV_CMD_CHANGEACTIVEUNIT
+    val: '38'
+  - desc: EV_CMD_CHANGEAI
+    label: EV_CMD_CHANGEAI
+    val: '39'
+  - desc: EV_CMD_DISPLAYPOPUP
+    label: EV_CMD_DISPLAYPOPUP
+    val: 3A
+  - desc: EV_CMD_DISPLAYCURSOR
+    label: EV_CMD_DISPLAYCURSOR
+    val: 3B
+  - desc: EV_CMD_MOVE_CURSOR
+    label: EV_CMD_MOVE_CURSOR
+    val: 3C
+  - desc: EV_CMD_MENUOVERRIDE
+    label: EV_CMD_MENUOVERRIDE
+    val: 3D
+  - desc: EV_CMD_PREPSCREEN
+    label: EV_CMD_PREPSCREEN
+    val: 3E
+  - desc: EV_CMD_SCRIPT_BATTLE
+    label: EV_CMD_SCRIPT_BATTLE
+    val: 3F
+  - desc: EV_CMD_PROM
+    label: EV_CMD_PROM
+    val: '40'
+  - desc: EV_CMD_WARP
+    label: EV_CMD_WARP
+    val: '41'
+  - desc: EV_CMD_EARTHQUAKE
+    label: EV_CMD_EARTHQUAKE
+    val: '42'
+  - desc: EV_CMD_SUMMONUNIT
+    label: EV_CMD_SUMMONUNIT
+    val: '43'
+  - desc: EV_CMD_BREAKSTONE
+    label: EV_CMD_BREAKSTONE
+    val: '44'
+  - desc: EV_CMD_GLOWING_CROSS
+    label: EV_CMD_GLOWING_CROSS
+    val: '45'
+  - desc: EV_CMD_WM_80
+    label: EV_CMD_WM_80
+    val: '80'
+  - desc: EV_CMD_WM_81
+    label: EV_CMD_WM_81
+    val: '81'
+  - desc: EV_CMD_WM_82
+    label: EV_CMD_WM_82
+    val: '82'
+  - desc: EV_CMD_WM_SETCAM
+    label: EV_CMD_WM_SETCAM
+    val: '83'
+  - desc: EV_CMD_WM_84
+    label: EV_CMD_WM_84
+    val: '84'
+  - desc: EV_CMD_WM_CENTERCAMONLORD
+    label: EV_CMD_WM_CENTERCAMONLORD
+    val: '85'
+  - desc: EV_CMD_WM_MOVECAM
+    label: EV_CMD_WM_MOVECAM
+    val: '86'
+  - desc: EV_CMD_WM_MOVECAMTO
+    label: EV_CMD_WM_MOVECAMTO
+    val: '87'
+  - desc: EV_CMD_WM_88
+    label: EV_CMD_WM_88
+    val: '88'
+  - desc: EV_CMD_WM_WAITFORCAM
+    label: EV_CMD_WM_WAITFORCAM
+    val: '89'
+  - desc: EV_CMD_WM_8A
+    label: EV_CMD_WM_8A
+    val: 8A
+  - desc: EV_CMD_WM_8B
+    label: EV_CMD_WM_8B
+    val: 8B
+  - desc: EV_CMD_WM_8C
+    label: EV_CMD_WM_8C
+    val: 8C
+  - desc: EV_CMD_WM_8D
+    label: EV_CMD_WM_8D
+    val: 8D
+  - desc: EV_CMD_WM_8E
+    label: EV_CMD_WM_8E
+    val: 8E
+  - desc: EV_CMD_WM_8F
+    label: EV_CMD_WM_8F
+    val: 8F
+  - desc: EV_CMD_WM_DRAWPATH
+    label: EV_CMD_WM_DRAWPATH
+    val: '90'
+  - desc: EV_CMD_WM_DRAWPATH2
+    label: EV_CMD_WM_DRAWPATH2
+    val: '91'
+  - desc: EV_CMD_WM_REMOVEPATH
+    label: EV_CMD_WM_REMOVEPATH
+    val: '92'
+  - desc: EV_CMD_WM_LOADLOCATION2
+    label: EV_CMD_WM_LOADLOCATION2
+    val: '93'
+  - desc: EV_CMD_WM_REMOVELOCATION
+    label: EV_CMD_WM_REMOVELOCATION
+    val: '94'
+  - desc: EV_CMD_WM_LOADLOCATION3
+    label: EV_CMD_WM_LOADLOCATION3
+    val: '95'
+  - desc: EV_CMD_DRAWPATH3
+    label: EV_CMD_DRAWPATH3
+    val: '96'
+  - desc: EV_CMD_WM_CREATENEXTDESTINATION
+    label: EV_CMD_WM_CREATENEXTDESTINATION
+    val: '97'
+  - desc: EV_CMD_WM_98
+    label: EV_CMD_WM_98
+    val: '98'
+  - desc: EV_CMD_WM_WAITFORFX
+    label: EV_CMD_WM_WAITFORFX
+    val: '99'
+  - desc: EV_CMD_WM_SETDESTINATION
+    label: EV_CMD_WM_SETDESTINATION
+    val: 9A
+  - desc: EV_CMD_WM_9B
+    label: EV_CMD_WM_9B
+    val: 9B
+  - desc: EV_CMD_WM_9C
+    label: EV_CMD_WM_9C
+    val: 9C
+  - desc: EV_CMD_WM_9D
+    label: EV_CMD_WM_9D
+    val: 9D
+  - desc: EV_CMD_PUTSPRITE
+    label: EV_CMD_PUTSPRITE
+    val: 9E
+  - desc: EV_CMD_WM_9F
+    label: EV_CMD_WM_9F
+    val: 9F
+  - desc: EV_CMD_WM_REMSPRITE
+    label: EV_CMD_WM_REMSPRITE
+    val: A0
+  - desc: EV_CMD_WM_MAKELORDVISIBLE
+    label: EV_CMD_WM_MAKELORDVISIBLE
+    val: A1
+  - desc: EV_CMD_WM_MAKELORDDISAPPEAR
+    label: EV_CMD_WM_MAKELORDDISAPPEAR
+    val: A2
+  - desc: EV_CMD_WM_FADEINSPRITE
+    label: EV_CMD_WM_FADEINSPRITE
+    val: A3
+  - desc: EV_CMD_WM_FADEOUTSPRITE
+    label: EV_CMD_WM_FADEOUTSPRITE
+    val: A4
+  - desc: EV_CMD_WM_WAITFORSPRITELOAD
+    label: EV_CMD_WM_WAITFORSPRITELOAD
+    val: A5
+  - desc: EV_CMD_WM_A6
+    label: EV_CMD_WM_A6
+    val: A6
+  - desc: EV_CMD_WM_PUTSPRITE
+    label: EV_CMD_WM_PUTSPRITE
+    val: A7
+  - desc: EV_CMD_WM_PUTMOVINGSPRITE
+    label: EV_CMD_WM_PUTMOVINGSPRITE
+    val: A8
+  - desc: EV_CMD_WM_MOVESPRITETO
+    label: EV_CMD_WM_MOVESPRITETO
+    val: A9
+  - desc: EV_CMD_WM_AA
+    label: EV_CMD_WM_AA
+    val: AA
+  - desc: EV_CMD_WM_AB
+    label: EV_CMD_WM_AB
+    val: AB
+  - desc: EV_CMD_WM_WAITFORSPRITES
+    label: EV_CMD_WM_WAITFORSPRITES
+    val: AC
+  - desc: EV_CMD_WM_SATURATE_COLORS
+    label: EV_CMD_WM_SATURATE_COLORS
+    val: AD
+  - desc: EV_CMD_WM_AE
+    label: EV_CMD_WM_AE
+    val: AE
+  - desc: EV_CMD_WM_SHOWTEXTWINDOW
+    label: EV_CMD_WM_SHOWTEXTWINDOW
+    val: AF
+  - desc: EV_CMD_WM_B0
+    label: EV_CMD_WM_B0
+    val: B0
+  - desc: EV_CMD_WM_WAITFORTEXT
+    label: EV_CMD_WM_WAITFORTEXT
+    val: B1
+  - desc: EV_CMD_WM_FADEOUT
+    label: EV_CMD_WM_FADEOUT
+    val: B2
+  - desc: EV_CMD_WM_TEXTDECORATE
+    label: EV_CMD_WM_TEXTDECORATE
+    val: B3
+  - desc: EV_CMD_WM_SHOWDRAWNMAP
+    label: EV_CMD_WM_SHOWDRAWNMAP
+    val: B4
+  - desc: EV_CMD_WM_WAITFORFXCLEAR1
+    label: EV_CMD_WM_WAITFORFXCLEAR1
+    val: B5
+  - desc: EV_CMD_WM_MOVECAM2
+    label: EV_CMD_WM_MOVECAM2
+    val: B6
+  - desc: EV_CMD_WM_WAITFORFXCLEAR2
+    label: EV_CMD_WM_WAITFORFXCLEAR2
+    val: B7
+  - desc: EV_CMD_WM_HIGHLIGHT
+    label: EV_CMD_WM_HIGHLIGHT
+    val: B8
+  - desc: EV_CMD_WM_HIGHLIGHTCLEAR1
+    label: EV_CMD_WM_HIGHLIGHTCLEAR1
+    val: B9
+  - desc: EV_CMD_WM_HIGHLIGHTCLEAR2
+    label: EV_CMD_WM_HIGHLIGHTCLEAR2
+    val: BA
+  - desc: EV_CMD_WM_BB
+    label: EV_CMD_WM_BB
+    val: BB
+  - desc: EV_CMD_WM_PLACEDOT
+    label: EV_CMD_WM_PLACEDOT
+    val: BC
+  - desc: EV_CMD_WM_FXCLEAR1
+    label: EV_CMD_WM_FXCLEAR1
+    val: BD
+  - desc: EV_CMD_WM_FXCLEAR2
+    label: EV_CMD_WM_FXCLEAR2
+    val: BE
+  - desc: EV_CMD_WM_BF
+    label: EV_CMD_WM_BF
+    val: BF
+  - desc: EV_CMD_WM_C0
+    label: EV_CMD_WM_C0
+    val: C0
+  - desc: EV_CMD_WM_SKIPWN
+    label: EV_CMD_WM_SKIPWN
+    val: C1
+  - desc: EV_CMD_WM_C2
+    label: EV_CMD_WM_C2
+    val: C2
+  - desc: EV_CMD_WM_SPAWNLORD
+    label: EV_CMD_WM_SPAWNLORD
+    val: C3
+  - desc: EV_CMD_WM_SHOWPORTRAIT
+    label: EV_CMD_WM_SHOWPORTRAIT
+    val: C4
+  - desc: EV_CMD_WM_CLEARPORTRAIT
+    label: EV_CMD_WM_CLEARPORTRAIT
+    val: C5
+  - desc: EV_CMD_WM_TEXT
+    label: EV_CMD_WM_TEXT
+    val: C6
+  - desc: EV_CMD_WM_TEXTSTART
+    label: EV_CMD_WM_TEXTSTART
+    val: C7
+  - desc: EV_CMD_WM_C8
+    label: EV_CMD_WM_C8
+    val: C8
+  - desc: EV_CMD_WM_REMOVETEXT
+    label: EV_CMD_WM_REMOVETEXT
+    val: C9
+  - desc: EV_CMD_WM_CA
+    label: EV_CMD_WM_CA
+    val: CA
+  - desc: EV_CMD_WM_CB
+    label: EV_CMD_WM_CB
+    val: CB
+  - desc: EV_CMD_WM_CC
+    label: EV_CMD_WM_CC
+    val: CC
+  - desc: EV_CMD_WM_CD
+    label: EV_CMD_WM_CD
+    val: CD
+  - desc: EV_CMD_WM_CE
+    label: EV_CMD_WM_CE
+    val: CE
+  - desc: EV_CMD_WM_CF
+    label: EV_CMD_WM_CF
+    val: CF
+- desc: event_sub_cmd_idx
+  label: event_sub_cmd_idx
+  vals:
+  - desc: EVSUBCMD_ENDA
+    label: EVSUBCMD_ENDA
+    val: '0'
+  - desc: EVSUBCMD_ENDB
+    label: EVSUBCMD_ENDB
+    val: '1'
+  - desc: EVSUBCMD_EVBIT_F
+    label: EVSUBCMD_EVBIT_F
+    val: '0'
+  - desc: EVSUBCMD_EVBIT_T
+    label: EVSUBCMD_EVBIT_T
+    val: '8'
+  - desc: EVSUBCMD_ENUF
+    label: EVSUBCMD_ENUF
+    val: '1'
+  - desc: EVSUBCMD_ENUT
+    label: EVSUBCMD_ENUT
+    val: '9'
+  - desc: EVSUBCMD_CHECK_EVBIT
+    label: EVSUBCMD_CHECK_EVBIT
+    val: '0'
+  - desc: EVSUBCMD_CHECK_EVENTID
+    label: EVSUBCMD_CHECK_EVENTID
+    val: '1'
+  - desc: EVSUBCMD_SADD
+    label: EVSUBCMD_SADD
+    val: '0'
+  - desc: EVSUBCMD_SSUB
+    label: EVSUBCMD_SSUB
+    val: '1'
+  - desc: EVSUBCMD_SMUL
+    label: EVSUBCMD_SMUL
+    val: '2'
+  - desc: EVSUBCMD_SDIV
+    label: EVSUBCMD_SDIV
+    val: '3'
+  - desc: EVSUBCMD_SMOD
+    label: EVSUBCMD_SMOD
+    val: '4'
+  - desc: EVSUBCMD_SAND
+    label: EVSUBCMD_SAND
+    val: '5'
+  - desc: EVSUBCMD_SORR
+    label: EVSUBCMD_SORR
+    val: '6'
+  - desc: EVSUBCMD_SXOR
+    label: EVSUBCMD_SXOR
+    val: '7'
+  - desc: EVSUBCMD_SLSL
+    label: EVSUBCMD_SLSL
+    val: '8'
+  - desc: EVSUBCMD_SLSR
+    label: EVSUBCMD_SLSR
+    val: '9'
+  - desc: EVSUBCMD_SENQUEUE
+    label: EVSUBCMD_SENQUEUE
+    val: '0'
+  - desc: EVSUBCMD_SENQUEUE_S1
+    label: EVSUBCMD_SENQUEUE_S1
+    val: '1'
+  - desc: EVSUBCMD_SDEQUEUE
+    label: EVSUBCMD_SDEQUEUE
+    val: '2'
+  - desc: EVSUBCMD_ENQUEUE_DIRECT
+    label: EVSUBCMD_ENQUEUE_DIRECT
+    val: '0'
+  - desc: EVSUBCMD_ENQUEUE_TRIGGER
+    label: EVSUBCMD_ENQUEUE_TRIGGER
+    val: '1'
+  - desc: EVSUBCMD_BEQ
+    label: EVSUBCMD_BEQ
+    val: '0'
+  - desc: EVSUBCMD_BNE
+    label: EVSUBCMD_BNE
+    val: '1'
+  - desc: EVSUBCMD_BGE
+    label: EVSUBCMD_BGE
+    val: '2'
+  - desc: EVSUBCMD_BGT
+    label: EVSUBCMD_BGT
+    val: '3'
+  - desc: EVSUBCMD_BLE
+    label: EVSUBCMD_BLE
+    val: '4'
+  - desc: EVSUBCMD_BLT
+    label: EVSUBCMD_BLT
+    val: '5'
+  - desc: EVSUBCMD_STAL
+    label: EVSUBCMD_STAL
+    val: '0'
+  - desc: EVSUBCMD_STAL1
+    label: EVSUBCMD_STAL1
+    val: '1'
+  - desc: EVSUBCMD_STAL2
+    label: EVSUBCMD_STAL2
+    val: '2'
+  - desc: EVSUBCMD_STAL3
+    label: EVSUBCMD_STAL3
+    val: '3'
+  - desc: EVSUBCMD_COUNTER_CHECK
+    label: EVSUBCMD_COUNTER_CHECK
+    val: '0'
+  - desc: EVSUBCMD_COUNTER_SET
+    label: EVSUBCMD_COUNTER_SET
+    val: '1'
+  - desc: EVSUBCMD_COUNTER_INC
+    label: EVSUBCMD_COUNTER_INC
+    val: '2'
+  - desc: EVSUBCMD_COUNTER_DEC
+    label: EVSUBCMD_COUNTER_DEC
+    val: '3'
+  - desc: EVSUBCMD_MUSCFAST
+    label: EVSUBCMD_MUSCFAST
+    val: '2'
+  - desc: EVSUBCMD_MUSCMID
+    label: EVSUBCMD_MUSCMID
+    val: '4'
+  - desc: EVSUBCMD_MUSCSLOW
+    label: EVSUBCMD_MUSCSLOW
+    val: '6'
+  - desc: EVSUBCMD_MUSCSSLOW
+    label: EVSUBCMD_MUSCSSLOW
+    val: '8'
+  - desc: EVSUBCMD_MUSS
+    label: EVSUBCMD_MUSS
+    val: '0'
+  - desc: EVSUBCMD_MURE
+    label: EVSUBCMD_MURE
+    val: '1'
+  - desc: EVSUBCMD_MUSI
+    label: EVSUBCMD_MUSI
+    val: '0'
+  - desc: EVSUBCMD_MUNO
+    label: EVSUBCMD_MUNO
+    val: '1'
+  - desc: EVSUBCMD_FADU
+    label: EVSUBCMD_FADU
+    val: '0'
+  - desc: EVSUBCMD_FADI
+    label: EVSUBCMD_FADI
+    val: '1'
+  - desc: EVSUBCMD_FAWU
+    label: EVSUBCMD_FAWU
+    val: '2'
+  - desc: EVSUBCMD_FAWI
+    label: EVSUBCMD_FAWI
+    val: '3'
+  - desc: EVSUBCMD_STARTFADE
+    label: EVSUBCMD_STARTFADE
+    val: '0'
+  - desc: EVSUBCMD_ENDFADE
+    label: EVSUBCMD_ENDFADE
+    val: '1'
+  - desc: EVSUBCMD_FADECOLORS
+    label: EVSUBCMD_FADECOLORS
+    val: '2'
+  - desc: EVSUBCMD_CHECK_MODE
+    label: EVSUBCMD_CHECK_MODE
+    val: '0'
+  - desc: EVSUBCMD_CHECK_CHAPTER_NUMBER
+    label: EVSUBCMD_CHECK_CHAPTER_NUMBER
+    val: '1'
+  - desc: EVSUBCMD_CHECK_HARD
+    label: EVSUBCMD_CHECK_HARD
+    val: '2'
+  - desc: EVSUBCMD_CHECK_TURNS
+    label: EVSUBCMD_CHECK_TURNS
+    val: '3'
+  - desc: EVSUBCMD_CHECK_ENEMIES
+    label: EVSUBCMD_CHECK_ENEMIES
+    val: '4'
+  - desc: EVSUBCMD_CHECK_OTHERS
+    label: EVSUBCMD_CHECK_OTHERS
+    val: '5'
+  - desc: EVSUBCMD_CHECK_SKIRMISH
+    label: EVSUBCMD_CHECK_SKIRMISH
+    val: '6'
+  - desc: EVSUBCMD_CHECK_TUTORIAL
+    label: EVSUBCMD_CHECK_TUTORIAL
+    val: '7'
+  - desc: EVSUBCMD_CHECK_MONEY
+    label: EVSUBCMD_CHECK_MONEY
+    val: '8'
+  - desc: EVSUBCMD_19CHECK_EVENTID
+    label: EVSUBCMD_19CHECK_EVENTID
+    val: '9'
+  - desc: EVSUBCMD_CHECK_POSTGAME
+    label: EVSUBCMD_CHECK_POSTGAME
+    val: A
+  - desc: EVSUBCMD_TEXTSTART
+    label: EVSUBCMD_TEXTSTART
+    val: '0'
+  - desc: EVSUBCMD_REMOVEPORTRAITS
+    label: EVSUBCMD_REMOVEPORTRAITS
+    val: '1'
+  - desc: EVSUBCMD_0x1A22
+    label: EVSUBCMD_0x1A22
+    val: '2'
+  - desc: EVSUBCMD_TUTORIALTEXTBOXSTART
+    label: EVSUBCMD_TUTORIALTEXTBOXSTART
+    val: '3'
+  - desc: EVSUBCMD_SOLOTEXTBOXSTART
+    label: EVSUBCMD_SOLOTEXTBOXSTART
+    val: '4'
+  - desc: EVSUBCMD_0x1A25
+    label: EVSUBCMD_0x1A25
+    val: '5'
+  - desc: EVSUBCMD_TEXTSHOW
+    label: EVSUBCMD_TEXTSHOW
+    val: '0'
+  - desc: EVSUBCMD_TEXTSHOW2
+    label: EVSUBCMD_TEXTSHOW2
+    val: '1'
+  - desc: EVSUBCMD_REMA
+    label: EVSUBCMD_REMA
+    val: '2'
+  - desc: EVSUBCMD_BACG
+    label: EVSUBCMD_BACG
+    val: '0'
+  - desc: EVSUBCMD_0x2141
+    label: EVSUBCMD_0x2141
+    val: '1'
+  - desc: EVSUBCMD_2142
+    label: EVSUBCMD_2142
+    val: '2'
+  - desc: EVSUBCMD_2143
+    label: EVSUBCMD_2143
+    val: '3'
+  - desc: EVSUBCMD_CAMERA_AT
+    label: EVSUBCMD_CAMERA_AT
+    val: '0'
+  - desc: EVSUBCMD_CAMERA_CHAR
+    label: EVSUBCMD_CAMERA_CHAR
+    val: '1'
+  - desc: EVSUBCMD_CAMERA2_AT
+    label: EVSUBCMD_CAMERA2_AT
+    val: '8'
+  - desc: EVSUBCMD_CAMERA2_CHAR
+    label: EVSUBCMD_CAMERA2_CHAR
+    val: '9'
+  - desc: EVSUBCMD_TILECHANGE
+    label: EVSUBCMD_TILECHANGE
+    val: '0'
+  - desc: EVSUBCMD_TILEREVERT
+    label: EVSUBCMD_TILEREVERT
+    val: '1'
+  - desc: EVSUBCMD_MNTS
+    label: EVSUBCMD_MNTS
+    val: '0'
+  - desc: EVSUBCMD_MNCH
+    label: EVSUBCMD_MNCH
+    val: '1'
+  - desc: EVSUBCMD_MNC2
+    label: EVSUBCMD_MNC2
+    val: '2'
+  - desc: EVSUBCMD_MNC3
+    label: EVSUBCMD_MNC3
+    val: '3'
+  - desc: EVSUBCMD_MNC4
+    label: EVSUBCMD_MNC4
+    val: '4'
+  - desc: EVSUBCMD_LOAD_SETCOUNT
+    label: EVSUBCMD_LOAD_SETCOUNT
+    val: '0'
+  - desc: EVSUBCMD_LOAD_SETCHANCE
+    label: EVSUBCMD_LOAD_SETCHANCE
+    val: '1'
+  - desc: EVSUBCMD_LOAD_NOREDA
+    label: EVSUBCMD_LOAD_NOREDA
+    val: '2'
+  - desc: EVSUBCMD_LOAD1
+    label: EVSUBCMD_LOAD1
+    val: '0'
+  - desc: EVSUBCMD_LOAD2
+    label: EVSUBCMD_LOAD2
+    val: '1'
+  - desc: EVSUBCMD_LOAD3
+    label: EVSUBCMD_LOAD3
+    val: '2'
+  - desc: EVSUBCMD_LOAD4
+    label: EVSUBCMD_LOAD4
+    val: '3'
+  - desc: EVSUBCMD_CHECK_AT
+    label: EVSUBCMD_CHECK_AT
+    val: '0'
+  - desc: EVSUBCMD_CHECK_ACTIVE
+    label: EVSUBCMD_CHECK_ACTIVE
+    val: '1'
+  - desc: EVSUBCMD_MOVE
+    label: EVSUBCMD_MOVE
+    val: '0'
+  - desc: EVSUBCMD_MOVEONTO
+    label: EVSUBCMD_MOVEONTO
+    val: '1'
+  - desc: EVSUBCMD_MOVE_1STEP
+    label: EVSUBCMD_MOVE_1STEP
+    val: '2'
+  - desc: EVSUBCMD_MOVE_DEFINED
+    label: EVSUBCMD_MOVE_DEFINED
+    val: '3'
+  - desc: EVSUBCMD_MOVE_CLOSEST
+    label: EVSUBCMD_MOVE_CLOSEST
+    val: '8'
+  - desc: EVSUBCMD_MOVE_NEXTTO
+    label: EVSUBCMD_MOVE_NEXTTO
+    val: '9'
+  - desc: EVSUBCMD_MOVE_1STEP_CLOSEST
+    label: EVSUBCMD_MOVE_1STEP_CLOSEST
+    val: A
+  - desc: EVSUBCMD_MOVE_DEFINED_CLOSEST
+    label: EVSUBCMD_MOVE_DEFINED_CLOSEST
+    val: B
+  - desc: EVSUBCMD_CHECK_EXISTS
+    label: EVSUBCMD_CHECK_EXISTS
+    val: '0'
+  - desc: EVSUBCMD_CHECK_STATUS
+    label: EVSUBCMD_CHECK_STATUS
+    val: '1'
+  - desc: EVSUBCMD_CHECK_ALIVE
+    label: EVSUBCMD_CHECK_ALIVE
+    val: '2'
+  - desc: EVSUBCMD_CHECK_DEPLOYED
+    label: EVSUBCMD_CHECK_DEPLOYED
+    val: '3'
+  - desc: EVSUBCMD_CHECK_ACTIVEID
+    label: EVSUBCMD_CHECK_ACTIVEID
+    val: '4'
+  - desc: EVSUBCMD_CHECK_ALLEGIANCE
+    label: EVSUBCMD_CHECK_ALLEGIANCE
+    val: '5'
+  - desc: EVSUBCMD_CHECK_COORDS
+    label: EVSUBCMD_CHECK_COORDS
+    val: '6'
+  - desc: EVSUBCMD_CHECK_CLASS
+    label: EVSUBCMD_CHECK_CLASS
+    val: '7'
+  - desc: EVSUBCMD_CHECK_LUCK
+    label: EVSUBCMD_CHECK_LUCK
+    val: '8'
+  - desc: EVSUBCMD_SHOW_ATTACK_RANGE
+    label: EVSUBCMD_SHOW_ATTACK_RANGE
+    val: '0'
+  - desc: EVSUBCMD_HIDE_ATTACK_RANGE
+    label: EVSUBCMD_HIDE_ATTACK_RANGE
+    val: '1'
+  - desc: EVSUBCMD_REMU
+    label: EVSUBCMD_REMU
+    val: '0'
+  - desc: EVSUBCMD_REVEAL
+    label: EVSUBCMD_REVEAL
+    val: '1'
+  - desc: EVSUBCMD_CUSA
+    label: EVSUBCMD_CUSA
+    val: '2'
+  - desc: EVSUBCMD_CUSN
+    label: EVSUBCMD_CUSN
+    val: '3'
+  - desc: EVSUBCMD_CUSE
+    label: EVSUBCMD_CUSE
+    val: '4'
+  - desc: EVSUBCMD_SET_HP
+    label: EVSUBCMD_SET_HP
+    val: '5'
+  - desc: EVSUBCMD_SET_ENDTURN
+    label: EVSUBCMD_SET_ENDTURN
+    val: '6'
+  - desc: EVSUBCMD_3427
+    label: EVSUBCMD_3427
+    val: '7'
+  - desc: EVSUBCMD_SET_STATE
+    label: EVSUBCMD_SET_STATE
+    val: '8'
+  - desc: EVSUBCMD_3529
+    label: EVSUBCMD_3529
+    val: '9'
+  - desc: EVSUBCMD_CLEA
+    label: EVSUBCMD_CLEA
+    val: A
+  - desc: EVSUBCMD_CLEN
+    label: EVSUBCMD_CLEN
+    val: B
+  - desc: EVSUBCMD_CLEE
+    label: EVSUBCMD_CLEE
+    val: C
+  - desc: EVSUBCMD_KILL
+    label: EVSUBCMD_KILL
+    val: D
+  - desc: EVSUBCMD_DISA_IF
+    label: EVSUBCMD_DISA_IF
+    val: E
+  - desc: EVSUBCMD_DISA
+    label: EVSUBCMD_DISA
+    val: F
+  - desc: EVSUBCMD_SPAWN_ALLY
+    label: EVSUBCMD_SPAWN_ALLY
+    val: '0'
+  - desc: EVSUBCMD_SPAWN_NPC
+    label: EVSUBCMD_SPAWN_NPC
+    val: '1'
+  - desc: EVSUBCMD_SPAWN_ENEMY
+    label: EVSUBCMD_SPAWN_ENEMY
+    val: '2'
+  - desc: EVSUBCMD_SPAWN_CUTSCENE_ALLY
+    label: EVSUBCMD_SPAWN_CUTSCENE_ALLY
+    val: F
+  - desc: EVSUBCMD_GIVEITEMTO
+    label: EVSUBCMD_GIVEITEMTO
+    val: '0'
+  - desc: EVSUBCMD_GIVEITEMTOMAIN
+    label: EVSUBCMD_GIVEITEMTOMAIN
+    val: '1'
+  - desc: EVSUBCMD_GIVETOSLOT3
+    label: EVSUBCMD_GIVETOSLOT3
+    val: '2'
+  - desc: EVTSUBCMD_CHAI
+    label: EVTSUBCMD_CHAI
+    val: '0'
+  - desc: EVTSUBCMD_CHAI_AT
+    label: EVTSUBCMD_CHAI_AT
+    val: '1'
+  - desc: EVSUBCMD_POPUP
+    label: EVSUBCMD_POPUP
+    val: '0'
+  - desc: EVSUBCMD_BROWNTEXTBOX
+    label: EVSUBCMD_BROWNTEXTBOX
+    val: '1'
+  - desc: EVSUBCMD_CURSOR_AT
+    label: EVSUBCMD_CURSOR_AT
+    val: '0'
+  - desc: EVSUBCMD_CURSOR_UNIT
+    label: EVSUBCMD_CURSOR_UNIT
+    val: '1'
+  - desc: EVSUBCMD_CURE
+    label: EVSUBCMD_CURE
+    val: '2'
+  - desc: EVSUBCMD_CURSOR_FLASHING_AT
+    label: EVSUBCMD_CURSOR_FLASHING_AT
+    val: '4'
+  - desc: EVSUBCMD_CURSOR_FLASHING_UNIT
+    label: EVSUBCMD_CURSOR_FLASHING_UNIT
+    val: '5'
+  - desc: EVSUBCMD_DISABLEOPTIONS
+    label: EVSUBCMD_DISABLEOPTIONS
+    val: '0'
+  - desc: EVSUBCMD_DISABLEWEAPONS
+    label: EVSUBCMD_DISABLEWEAPONS
+    val: '1'
+  - desc: EVSUBCMD_CHECK_CURSOR
+    label: EVSUBCMD_CHECK_CURSOR
+    val: '0'
+  - desc: EVSUBCMD_SET_CURSOR
+    label: EVSUBCMD_SET_CURSOR
+    val: '1'
+  - desc: EVSUBCMD_FIGHT
+    label: EVSUBCMD_FIGHT
+    val: '0'
+  - desc: EVSUBCMD_FIGHT_MAP
+    label: EVSUBCMD_FIGHT_MAP
+    val: '1'
+  - desc: EVSUBCMD_FIGHT_SCRIPT
+    label: EVSUBCMD_FIGHT_SCRIPT
+    val: '2'
+  - desc: EVSUBCMD_WARP_OUT
+    label: EVSUBCMD_WARP_OUT
+    val: '0'
+  - desc: EVSUBCMD_WARP_IN
+    label: EVSUBCMD_WARP_IN
+    val: '1'
+  - desc: EVSUBCMD_WARP_STAL
+    label: EVSUBCMD_WARP_STAL
+    val: F
+  - desc: EVSUBCMD_EARTHQUAKE_START
+    label: EVSUBCMD_EARTHQUAKE_START
+    val: '0'
+  - desc: EVSUBCMD_EARTHQUAKE_END
+    label: EVSUBCMD_EARTHQUAKE_END
+    val: F
+  - desc: EVSUBCMD_GLOWINGCROSS
+    label: EVSUBCMD_GLOWINGCROSS
+    val: '0'
+  - desc: EVSUBCMD_GLOWINGCROSS_END
+    label: EVSUBCMD_GLOWINGCROSS_END
+    val: F
+- desc: event_trigger_types
+  label: event_trigger_types
+  vals:
+  - desc: EVT_LIST_CMD_END
+    label: EVT_LIST_CMD_END
+    val: '0'
+  - desc: EVT_LIST_CMD_FLAG
+    label: EVT_LIST_CMD_FLAG
+    val: '1'
+  - desc: EVT_LIST_CMD_TURN
+    label: EVT_LIST_CMD_TURN
+    val: '2'
+  - desc: EVT_LIST_CMD_CHAR
+    label: EVT_LIST_CMD_CHAR
+    val: '3'
+  - desc: EVT_LIST_CMD_CHARASM
+    label: EVT_LIST_CMD_CHARASM
+    val: '4'
+  - desc: EVT_LIST_CMD_LOCA
+    label: EVT_LIST_CMD_LOCA
+    val: '5'
+  - desc: EVT_LIST_CMD_VILL
+    label: EVT_LIST_CMD_VILL
+    val: '6'
+  - desc: EVT_LIST_CMD_CHES
+    label: EVT_LIST_CMD_CHES
+    val: '7'
+  - desc: EVT_LIST_CMD_DOOR
+    label: EVT_LIST_CMD_DOOR
+    val: '8'
+  - desc: EVT_LIST_CMD_DRAWBRIDGE
+    label: EVT_LIST_CMD_DRAWBRIDGE
+    val: '9'
+  - desc: EVT_LIST_CMD_SHOP
+    label: EVT_LIST_CMD_SHOP
+    val: A
+  - desc: EVT_LIST_CMD_AREA
+    label: EVT_LIST_CMD_AREA
+    val: B
+  - desc: EVT_LIST_CMD_NEVER_C
+    label: EVT_LIST_CMD_NEVER_C
+    val: C
+  - desc: EVT_LIST_CMD_NEVER_D
+    label: EVT_LIST_CMD_NEVER_D
+    val: D
+  - desc: EVT_LIST_CMD_E
+    label: EVT_LIST_CMD_E
+    val: E
+  - desc: EVT_LIST_CMD_F
+    label: EVT_LIST_CMD_F
+    val: F
+  - desc: EVT_LIST_CMD_10
+    label: EVT_LIST_CMD_10
+    val: '10'
+- desc: event3D_menu1override_bitfiles
+  label: event3D_menu1override_bitfiles
+  vals:
+  - desc: EVENT_MENUOVERRIDE_ATTACK
+    label: EVENT_MENUOVERRIDE_ATTACK
+    val: '1'
+  - desc: EVENT_MENUOVERRIDE_STAFF
+    label: EVENT_MENUOVERRIDE_STAFF
+    val: '2'
+  - desc: EVENT_MENUOVERRIDE_WAIT
+    label: EVENT_MENUOVERRIDE_WAIT
+    val: '4'
+  - desc: EVENT_MENUOVERRIDE_RESCUE
+    label: EVENT_MENUOVERRIDE_RESCUE
+    val: '8'
+  - desc: EVENT_MENUOVERRIDE_DROP
+    label: EVENT_MENUOVERRIDE_DROP
+    val: '10'
+  - desc: EVENT_MENUOVERRIDE_VISIT
+    label: EVENT_MENUOVERRIDE_VISIT
+    val: '20'
+  - desc: EVENT_MENUOVERRIDE_TALK
+    label: EVENT_MENUOVERRIDE_TALK
+    val: '40'
+  - desc: EVENT_MENUOVERRIDE_ITEM
+    label: EVENT_MENUOVERRIDE_ITEM
+    val: '80'
+  - desc: EVENT_MENUOVERRIDE_DISCARD
+    label: EVENT_MENUOVERRIDE_DISCARD
+    val: '100'
+  - desc: EVENT_MENUOVERRIDE_TRADE
+    label: EVENT_MENUOVERRIDE_TRADE
+    val: '200'
+  - desc: EVENT_MENUOVERRIDE_SUPPLY
+    label: EVENT_MENUOVERRIDE_SUPPLY
+    val: '400'
+  - desc: EVENT_MENUOVERRIDE_SUPPORT
+    label: EVENT_MENUOVERRIDE_SUPPORT
+    val: '800'
+  - desc: EVENT_MENUOVERRIDE_ARMORY
+    label: EVENT_MENUOVERRIDE_ARMORY
+    val: '1000'
+  - desc: EVENT_MENUOVERRIDE_OPTIONS
+    label: EVENT_MENUOVERRIDE_OPTIONS
+    val: '2000'
+  - desc: EVENT_MENUOVERRIDE_END
+    label: EVENT_MENUOVERRIDE_END
+    val: '4000'
+- desc: event3D_menu2override_bitfiles
+  label: event3D_menu2override_bitfiles
+  vals:
+  - desc: EVENT_MENUOVERRIDE_WEAPON1
+    label: EVENT_MENUOVERRIDE_WEAPON1
+    val: '1'
+  - desc: EVENT_MENUOVERRIDE_WEAPON2
+    label: EVENT_MENUOVERRIDE_WEAPON2
+    val: '2'
+  - desc: EVENT_MENUOVERRIDE_WEAPON3
+    label: EVENT_MENUOVERRIDE_WEAPON3
+    val: '4'
+  - desc: EVENT_MENUOVERRIDE_WEAPON4
+    label: EVENT_MENUOVERRIDE_WEAPON4
+    val: '8'
+  - desc: EVENT_MENUOVERRIDE_WEAPON5
+    label: EVENT_MENUOVERRIDE_WEAPON5
+    val: '10'
+- desc: event_flag_idx
+  label: event_flag_idx
+  vals:
+  - desc: EVFLAG_ALWAYS_FALSE
+    label: EVFLAG_ALWAYS_FALSE
+    val: '0'
+  - desc: EVFLAG_BATTLE_QUOTES
+    label: EVFLAG_BATTLE_QUOTES
+    val: '1'
+  - desc: EVFLAG_DEFEAT_BOSS
+    label: EVFLAG_DEFEAT_BOSS
+    val: '2'
+  - desc: EVFLAG_WIN
+    label: EVFLAG_WIN
+    val: '3'
+  - desc: EVFLAG_BGM_CHANGE
+    label: EVFLAG_BGM_CHANGE
+    val: '4'
+  - desc: EVFLAG_5
+    label: EVFLAG_5
+    val: '5'
+  - desc: EVFLAG_DEFEAT_ALL
+    label: EVFLAG_DEFEAT_ALL
+    val: '6'
+  - desc: EVFLAG_GAMEOVER
+    label: EVFLAG_GAMEOVER
+    val: '65'
+  - desc: EVFLAG_OBJWINDOW_DISABLE
+    label: EVFLAG_OBJWINDOW_DISABLE
+    val: '66'
+  - desc: EVFLAG_EXTRA_UNIT_BASE
+    label: EVFLAG_EXTRA_UNIT_BASE
+    val: '67'
+  - desc: EVFLAG_HIDE_BLINKING_ICON
+    label: EVFLAG_HIDE_BLINKING_ICON
+    val: '84'
+  - desc: EVFLAG_136
+    label: EVFLAG_136
+    val: '88'
+- desc: game_ctrl_proc_lable
+  label: game_ctrl_proc_lable
+  vals:
+  - desc: LGAMECTRL_GAME_INTRO_UI
+    label: LGAMECTRL_GAME_INTRO_UI
+    val: '0'
+  - desc: LGAMECTRL_OP_ANIM
+    label: LGAMECTRL_OP_ANIM
+    val: '1'
+  - desc: LGAMECTRL_CLASS_REEL
+    label: LGAMECTRL_CLASS_REEL
+    val: '2'
+  - desc: LGAMECTRL_TITLE_DIRECT
+    label: LGAMECTRL_TITLE_DIRECT
+    val: '4'
+  - desc: LGAMECTRL_EXEC_SAVEMENU
+    label: LGAMECTRL_EXEC_SAVEMENU
+    val: '5'
+  - desc: LGAMECTRL_EXEC_BM_EXT
+    label: LGAMECTRL_EXEC_BM_EXT
+    val: '6'
+  - desc: LGAMECTRL_EXEC_BM
+    label: LGAMECTRL_EXEC_BM
+    val: '7'
+  - desc: LGAMECTRL_POST_NORMAL_CHAPTER
+    label: LGAMECTRL_POST_NORMAL_CHAPTER
+    val: '9'
+  - desc: LGAMECTRL_POST_EXTRA_MAP
+    label: LGAMECTRL_POST_EXTRA_MAP
+    val: A
+  - desc: LGAMECTRL_EXEC_BM_
+    label: LGAMECTRL_EXEC_BM_
+    val: F
+  - desc: LGAMECTRL_EXEC_ENDING_SCENE
+    label: LGAMECTRL_EXEC_ENDING_SCENE
+    val: '11'
+  - desc: LGAMECTRL_ERASE_SAVE
+    label: LGAMECTRL_ERASE_SAVE
+    val: '12'
+  - desc: LGAMECTRL_POST_TITLE_IDLE
+    label: LGAMECTRL_POST_TITLE_IDLE
+    val: 1A
+- desc: chapter_idx
+  label: chapter_idx
+  vals:
+  - desc: CHAPTER_L_PROLOGUE
+    label: CHAPTER_L_PROLOGUE
+    val: '0'
+  - desc: CHAPTER_L_1
+    label: CHAPTER_L_1
+    val: '1'
+  - desc: CHAPTER_L_2
+    label: CHAPTER_L_2
+    val: '2'
+  - desc: CHAPTER_L_3
+    label: CHAPTER_L_3
+    val: '3'
+  - desc: CHAPTER_L_4
+    label: CHAPTER_L_4
+    val: '4'
+  - desc: CHAPTER_L_5X
+    label: CHAPTER_L_5X
+    val: '5'
+  - desc: CHAPTER_L_5
+    label: CHAPTER_L_5
+    val: '6'
+  - desc: CHAPTER_L_6
+    label: CHAPTER_L_6
+    val: '7'
+  - desc: CHAPTER_L_7
+    label: CHAPTER_L_7
+    val: '8'
+  - desc: CHAPTER_L_8
+    label: CHAPTER_L_8
+    val: '9'
+  - desc: CHAPTER_E_9
+    label: CHAPTER_E_9
+    val: A
+  - desc: CHAPTER_E_10
+    label: CHAPTER_E_10
+    val: B
+  - desc: CHAPTER_E_12
+    label: CHAPTER_E_12
+    val: C
+  - desc: CHAPTER_E_13
+    label: CHAPTER_E_13
+    val: D
+  - desc: CHAPTER_E_14
+    label: CHAPTER_E_14
+    val: E
+  - desc: CHAPTER_E_15
+    label: CHAPTER_E_15
+    val: F
+  - desc: CHAPTER_E_16
+    label: CHAPTER_E_16
+    val: '10'
+  - desc: CHAPTER_E_17
+    label: CHAPTER_E_17
+    val: '11'
+  - desc: CHAPTER_E_18
+    label: CHAPTER_E_18
+    val: '12'
+  - desc: CHAPTER_E_19
+    label: CHAPTER_E_19
+    val: '13'
+  - desc: CHAPTER_E_20
+    label: CHAPTER_E_20
+    val: '14'
+  - desc: CHAPTER_E_21
+    label: CHAPTER_E_21
+    val: '15'
+  - desc: CHAPTER_E_21X
+    label: CHAPTER_E_21X
+    val: '16'
+  - desc: CHAPTER_I_9
+    label: CHAPTER_I_9
+    val: '17'
+  - desc: CHAPTER_I_10
+    label: CHAPTER_I_10
+    val: '18'
+  - desc: CHAPTER_I_12
+    label: CHAPTER_I_12
+    val: '19'
+  - desc: CHAPTER_I_13
+    label: CHAPTER_I_13
+    val: 1A
+  - desc: CHAPTER_I_14
+    label: CHAPTER_I_14
+    val: 1B
+  - desc: CHAPTER_I_15
+    label: CHAPTER_I_15
+    val: 1C
+  - desc: CHAPTER_I_16
+    label: CHAPTER_I_16
+    val: 1D
+  - desc: CHAPTER_I_17
+    label: CHAPTER_I_17
+    val: 1E
+  - desc: CHAPTER_I_18
+    label: CHAPTER_I_18
+    val: 1F
+  - desc: CHAPTER_I_19
+    label: CHAPTER_I_19
+    val: '20'
+  - desc: CHAPTER_I_20
+    label: CHAPTER_I_20
+    val: '21'
+  - desc: CHAPTER_I_21
+    label: CHAPTER_I_21
+    val: '22'
+  - desc: CHAPTER_I_21X
+    label: CHAPTER_I_21X
+    val: '23'
+  - desc: CHAPTER_T_01
+    label: CHAPTER_T_01
+    val: '24'
+  - desc: CHAPTER_T_02
+    label: CHAPTER_T_02
+    val: '25'
+  - desc: CHAPTER_T_03
+    label: CHAPTER_T_03
+    val: '26'
+  - desc: CHAPTER_T_04
+    label: CHAPTER_T_04
+    val: '27'
+  - desc: CHAPTER_T_05
+    label: CHAPTER_T_05
+    val: '28'
+  - desc: CHAPTER_T_06
+    label: CHAPTER_T_06
+    val: '29'
+  - desc: CHAPTER_T_07
+    label: CHAPTER_T_07
+    val: 2A
+  - desc: CHAPTER_T_08
+    label: CHAPTER_T_08
+    val: 2B
+  - desc: CHAPTER_2C
+    label: CHAPTER_2C
+    val: 2C
+  - desc: CHAPTER_2D
+    label: CHAPTER_2D
+    val: 2D
+  - desc: CHAPTER_R_01
+    label: CHAPTER_R_01
+    val: 2E
+  - desc: CHAPTER_R_02
+    label: CHAPTER_R_02
+    val: 2F
+  - desc: CHAPTER_R_03
+    label: CHAPTER_R_03
+    val: '30'
+  - desc: CHAPTER_R_04
+    label: CHAPTER_R_04
+    val: '31'
+  - desc: CHAPTER_R_05
+    label: CHAPTER_R_05
+    val: '32'
+  - desc: CHAPTER_R_06
+    label: CHAPTER_R_06
+    val: '33'
+  - desc: CHAPTER_R_07
+    label: CHAPTER_R_07
+    val: '34'
+  - desc: CHAPTER_R_08
+    label: CHAPTER_R_08
+    val: '35'
+  - desc: CHAPTER_R_09
+    label: CHAPTER_R_09
+    val: '36'
+  - desc: CHAPTER_R_10
+    label: CHAPTER_R_10
+    val: '37'
+  - desc: CHAPTER_CASTLE_FRELIA
+    label: CHAPTER_CASTLE_FRELIA
+    val: '38'
+  - desc: CHAPTER_MALKAEN_COAST
+    label: CHAPTER_MALKAEN_COAST
+    val: '39'
+  - desc: CHAPTER_3A
+    label: CHAPTER_3A
+    val: 3A
+  - desc: CHAPTER_3B
+    label: CHAPTER_3B
+    val: 3B
+  - desc: CHAPTER_3C
+    label: CHAPTER_3C
+    val: 3C
+  - desc: CHAPTER_E_11
+    label: CHAPTER_E_11
+    val: 3D
+  - desc: CHAPTER_I_11
+    label: CHAPTER_I_11
+    val: 3E
+  - desc: CHAPTER_3F
+    label: CHAPTER_3F
+    val: 3F
+  - desc: CHAPTER_40
+    label: CHAPTER_40
+    val: '40'
+  - desc: CHAPTER_41
+    label: CHAPTER_41
+    val: '41'
+  - desc: CHAPTER_42
+    label: CHAPTER_42
+    val: '42'
+  - desc: CHAPTER_43
+    label: CHAPTER_43
+    val: '43'
+  - desc: CHAPTER_44
+    label: CHAPTER_44
+    val: '44'
+  - desc: CHAPTER_45
+    label: CHAPTER_45
+    val: '45'
+  - desc: CHAPTER_46
+    label: CHAPTER_46
+    val: '46'
+  - desc: CHAPTER_47
+    label: CHAPTER_47
+    val: '47'
+  - desc: CHAPTER_48
+    label: CHAPTER_48
+    val: '48'
+  - desc: CHAPTER_49
+    label: CHAPTER_49
+    val: '49'
+  - desc: CHAPTER_4A
+    label: CHAPTER_4A
+    val: 4A
+  - desc: CHAPTER_4B
+    label: CHAPTER_4B
+    val: 4B
+  - desc: CHAPTER_4C
+    label: CHAPTER_4C
+    val: 4C
+  - desc: CHAPTER_4D
+    label: CHAPTER_4D
+    val: 4D
+  - desc: CHAPTER_4E
+    label: CHAPTER_4E
+    val: 4E
+  - desc: CHAPTER_75
+    label: CHAPTER_75
+    val: '75'
+  - desc: CHAPTER_7F
+    label: CHAPTER_7F
+    val: 7F
+  - desc: CHAPTER_FE
+    label: CHAPTER_FE
+    val: FE
+  - desc: CHAPTER_FF
+    label: CHAPTER_FF
+    val: FF
+- desc: summonDK_proc_lables
+  label: summonDK_proc_lables
+  vals:
+  - desc: PROC_LABEL_SUMDK_LOAD_START
+    label: PROC_LABEL_SUMDK_LOAD_START
+    val: '0'
+  - desc: PROC_LABEL_SUMDK_LOAD_TERMINAL
+    label: PROC_LABEL_SUMDK_LOAD_TERMINAL
+    val: '1'
+  - desc: PROC_LABEL_SUMDK_LOAD_POS_DOWN
+    label: PROC_LABEL_SUMDK_LOAD_POS_DOWN
+    val: '2'
+  - desc: PROC_LABEL_SUMDK_LOAD_POS_RIGHT
+    label: PROC_LABEL_SUMDK_LOAD_POS_RIGHT
+    val: '3'
+  - desc: PROC_LABEL_SUMDK_LOAD_POS_LEFT
+    label: PROC_LABEL_SUMDK_LOAD_POS_LEFT
+    val: '4'
+  - desc: PROC_LABEL_SUMDK_LOAD_POS_UP
+    label: PROC_LABEL_SUMDK_LOAD_POS_UP
+    val: '5'
+  - desc: PROC_LABEL_SUMDK_LOAD_POS_END
+    label: PROC_LABEL_SUMDK_LOAD_POS_END
+    val: '6'
+- desc: wpn_manim_flash_color
+  label: wpn_manim_flash_color
+  vals:
+  - desc: SPELL_ASSOC_MCOLOR_NORMAL
+    label: SPELL_ASSOC_MCOLOR_NORMAL
+    val: '0'
+  - desc: SPELL_ASSOC_MCOLOR_DARK
+    label: SPELL_ASSOC_MCOLOR_DARK
+    val: '1'
+  - desc: SPELL_ASSOC_MCOLOR_FIRE
+    label: SPELL_ASSOC_MCOLOR_FIRE
+    val: '2'
+  - desc: SPELL_ASSOC_MCOLOR_ICE
+    label: SPELL_ASSOC_MCOLOR_ICE
+    val: '3'
+  - desc: SPELL_ASSOC_MCOLOR_WIND
+    label: SPELL_ASSOC_MCOLOR_WIND
+    val: '4'
+  - desc: SPELL_ASSOC_MCOLOR_LIGHT
+    label: SPELL_ASSOC_MCOLOR_LIGHT
+    val: '5'
+- desc: spellassoc_efxmagic_idx
+  label: spellassoc_efxmagic_idx
+  vals:
+  - desc: SASSOC_EFX_Dummy
+    label: SASSOC_EFX_Dummy
+    val: '0'
+  - desc: SASSOC_EFX_HandAxe
+    label: SASSOC_EFX_HandAxe
+    val: '1'
+  - desc: SASSOC_EFX_Arrow
+    label: SASSOC_EFX_Arrow
+    val: '2'
+  - desc: SASSOC_EFX_Javelin
+    label: SASSOC_EFX_Javelin
+    val: '3'
+  - desc: SASSOC_EFX_JavelinCavalier
+    label: SASSOC_EFX_JavelinCavalier
+    val: '4'
+  - desc: SASSOC_EFX_JavelinSoldier
+    label: SASSOC_EFX_JavelinSoldier
+    val: '5'
+  - desc: SASSOC_EFX_JavelinPaladin
+    label: SASSOC_EFX_JavelinPaladin
+    val: '6'
+  - desc: SASSOC_EFX_JavelinPragasus
+    label: SASSOC_EFX_JavelinPragasus
+    val: '7'
+  - desc: SASSOC_EFX_JavlinFalcon
+    label: SASSOC_EFX_JavlinFalcon
+    val: '8'
+  - desc: SASSOC_EFX_JavlinWyvernRider
+    label: SASSOC_EFX_JavlinWyvernRider
+    val: '9'
+  - desc: SASSOC_EFX_JavlinWyvernLord
+    label: SASSOC_EFX_JavlinWyvernLord
+    val: A
+- desc: sio_save_config_bitfile
+  label: sio_save_config_bitfile
+  vals:
+  - desc: SIO_SAVE_CONF_B3
+    label: SIO_SAVE_CONF_B3
+    val: '8'
+- desc: bmshop_bgchr
+  label: bmshop_bgchr
+  vals:
+  - desc: OBJCHR_SHOP_SPINARROW
+    label: OBJCHR_SHOP_SPINARROW
+    val: '240'
+  - desc: OBJPAL_SHOP_SPINARROW
+    label: OBJPAL_SHOP_SPINARROW
+    val: '3'
+  - desc: OBJCHR_SHOP_GOLDBOX
+    label: OBJCHR_SHOP_GOLDBOX
+    val: '260'
+  - desc: OBJPAL_SHOP_GOLDBOX
+    label: OBJPAL_SHOP_GOLDBOX
+    val: '4'
+  - desc: BGPAL_SHOP_4
+    label: BGPAL_SHOP_4
+    val: '4'
+  - desc: BGPAL_SHOP_MAINBG
+    label: BGPAL_SHOP_MAINBG
+    val: E
+- desc: game_save_blocks
+  label: game_save_blocks
+  vals:
+  - desc: GAMESAVE_SIZE_PLAYST
+    label: GAMESAVE_SIZE_PLAYST
+    val: 4C
+  - desc: GAMESAVE_SIZE_UNITS
+    label: GAMESAVE_SIZE_UNITS
+    val: 72C
+  - desc: GAMESAVE_SIZE_GMMONSTER
+    label: GAMESAVE_SIZE_GMMONSTER
+    val: '24'
+  - desc: GAMESAVE_SIZE_SUPPLY
+    label: GAMESAVE_SIZE_SUPPLY
+    val: B0
+  - desc: GAMESAVE_SIZE_PIDSTATS
+    label: GAMESAVE_SIZE_PIDSTATS
+    val: '460'
+  - desc: GAMESAVE_SIZE_CHAPTERSTATS
+    label: GAMESAVE_SIZE_CHAPTERSTATS
+    val: C0
+  - desc: GAMESAVE_SIZE_PERMANENTFLAGS
+    label: GAMESAVE_SIZE_PERMANENTFLAGS
+    val: 1C
+  - desc: GAMESAVE_SIZE_BONUSCLAIM
+    label: GAMESAVE_SIZE_BONUSCLAIM
+    val: '4'
+  - desc: GAMESAVE_SIZE_GMINFO
+    label: GAMESAVE_SIZE_GMINFO
+    val: '24'
+  - desc: GAMESAVE_SIZE_DUNGEON
+    label: GAMESAVE_SIZE_DUNGEON
+    val: '18'
+- desc: game_save_memory_map
+  label: game_save_memory_map
+  vals:
+  - desc: GAMESAVE_OFFSET_START
+    label: GAMESAVE_OFFSET_START
+    val: '0'
+  - desc: GAMESAVE_OFFSET_PLAYST
+    label: GAMESAVE_OFFSET_PLAYST
+    val: '0'
+  - desc: GAMESAVE_OFFSET_UNITS
+    label: GAMESAVE_OFFSET_UNITS
+    val: 4C
+  - desc: GAMESAVE_OFFSET_GMMONSTER
+    label: GAMESAVE_OFFSET_GMMONSTER
+    val: '778'
+  - desc: GAMESAVE_OFFSET_SUPPLY
+    label: GAMESAVE_OFFSET_SUPPLY
+    val: 79C
+  - desc: GAMESAVE_OFFSET_PIDSTATS
+    label: GAMESAVE_OFFSET_PIDSTATS
+    val: 84C
+  - desc: GAMESAVE_OFFSET_CHAPTERSTATS
+    label: GAMESAVE_OFFSET_CHAPTERSTATS
+    val: CAC
+  - desc: GAMESAVE_OFFSET_PERMANENTFLAGS
+    label: GAMESAVE_OFFSET_PERMANENTFLAGS
+    val: D6C
+  - desc: GAMESAVE_OFFSET_BONUSCLAIM
+    label: GAMESAVE_OFFSET_BONUSCLAIM
+    val: D88
+  - desc: GAMESAVE_OFFSET_GMINFO
+    label: GAMESAVE_OFFSET_GMINFO
+    val: D8C
+  - desc: GAMESAVE_OFFSET_DUNGEON
+    label: GAMESAVE_OFFSET_DUNGEON
+    val: DB0
+  - desc: GAMESAVE_OFFSET_MAX
+    label: GAMESAVE_OFFSET_MAX
+    val: DC8
+- desc: suspend_save_blocks
+  label: suspend_save_blocks
+  vals:
+  - desc: SUSPENDSAVE_SIZE_PLAYST
+    label: SUSPENDSAVE_SIZE_PLAYST
+    val: 4C
+  - desc: SUSPENDSAVE_SIZE_ACTION
+    label: SUSPENDSAVE_SIZE_ACTION
+    val: '38'
+  - desc: SUSPENDSAVE_SIZE_UNITS_BLUE
+    label: SUSPENDSAVE_SIZE_UNITS_BLUE
+    val: A5C
+  - desc: SUSPENDSAVE_SIZE_GMMONSTER
+    label: SUSPENDSAVE_SIZE_GMMONSTER
+    val: '34'
+  - desc: SUSPENDSAVE_SIZE_UNITS_RED
+    label: SUSPENDSAVE_SIZE_UNITS_RED
+    val: A28
+  - desc: SUSPENDSAVE_SIZE_UNITS_GREEN
+    label: SUSPENDSAVE_SIZE_UNITS_GREEN
+    val: '208'
+  - desc: SUSPENDSAVE_SIZE_TRAPS
+    label: SUSPENDSAVE_SIZE_TRAPS
+    val: '200'
+  - desc: SUSPENDSAVE_SIZE_SUPPLY
+    label: SUSPENDSAVE_SIZE_SUPPLY
+    val: B0
+  - desc: SUSPENDSAVE_SIZE_PIDSTATS
+    label: SUSPENDSAVE_SIZE_PIDSTATS
+    val: '460'
+  - desc: SUSPENDSAVE_SIZE_CHAPTERSTATS
+    label: SUSPENDSAVE_SIZE_CHAPTERSTATS
+    val: C0
+  - desc: SUSPENDSAVE_SIZE_FORCENMENU
+    label: SUSPENDSAVE_SIZE_FORCENMENU
+    val: '10'
+  - desc: SUSPENDSAVE_SIZE_PERMANENTFLAGS
+    label: SUSPENDSAVE_SIZE_PERMANENTFLAGS
+    val: '19'
+  - desc: SUSPENDSAVE_SIZE_CHAPTERFLAGS
+    label: SUSPENDSAVE_SIZE_CHAPTERFLAGS
+    val: '7'
+  - desc: SUSPENDSAVE_SIZE_GMINFO
+    label: SUSPENDSAVE_SIZE_GMINFO
+    val: '24'
+  - desc: SUSPENDSAVE_SIZE_DUNGEON
+    label: SUSPENDSAVE_SIZE_DUNGEON
+    val: C
+  - desc: SUSPENDSAVE_SIZE_EVENTSLOTCNT
+    label: SUSPENDSAVE_SIZE_EVENTSLOTCNT
+    val: '4'
+- desc: suspend_save_memory_map
+  label: suspend_save_memory_map
+  vals:
+  - desc: SUSPENDSAVE_OFFSET_START
+    label: SUSPENDSAVE_OFFSET_START
+    val: '0'
+  - desc: SUSPENDSAVE_OFFSET_PLAYST
+    label: SUSPENDSAVE_OFFSET_PLAYST
+    val: '0'
+  - desc: SUSPENDSAVE_OFFSET_ACTION
+    label: SUSPENDSAVE_OFFSET_ACTION
+    val: 4C
+  - desc: SUSPENDSAVE_OFFSET_UNITS_BLUE
+    label: SUSPENDSAVE_OFFSET_UNITS_BLUE
+    val: '84'
+  - desc: SUSPENDSAVE_OFFSET_GMMONSTER
+    label: SUSPENDSAVE_OFFSET_GMMONSTER
+    val: AE0
+  - desc: SUSPENDSAVE_OFFSET_UNITS_RED
+    label: SUSPENDSAVE_OFFSET_UNITS_RED
+    val: B14
+  - desc: SUSPENDSAVE_OFFSET_UNITS_GREEN
+    label: SUSPENDSAVE_OFFSET_UNITS_GREEN
+    val: 153C
+  - desc: SUSPENDSAVE_OFFSET_TRAPS
+    label: SUSPENDSAVE_OFFSET_TRAPS
+    val: '1744'
+  - desc: SUSPENDSAVE_OFFSET_SUPPLY
+    label: SUSPENDSAVE_OFFSET_SUPPLY
+    val: '1944'
+  - desc: SUSPENDSAVE_OFFSET_PIDSTATS
+    label: SUSPENDSAVE_OFFSET_PIDSTATS
+    val: 19F4
+  - desc: SUSPENDSAVE_OFFSET_CHAPTERSTATS
+    label: SUSPENDSAVE_OFFSET_CHAPTERSTATS
+    val: 1E54
+  - desc: SUSPENDSAVE_OFFSET_FORCENMENU
+    label: SUSPENDSAVE_OFFSET_FORCENMENU
+    val: 1F14
+  - desc: SUSPENDSAVE_OFFSET_PERMANENTFLAGS
+    label: SUSPENDSAVE_OFFSET_PERMANENTFLAGS
+    val: 1F24
+  - desc: SUSPENDSAVE_OFFSET_CHAPTERFLAGS
+    label: SUSPENDSAVE_OFFSET_CHAPTERFLAGS
+    val: 1F3D
+  - desc: SUSPENDSAVE_OFFSET_GMINFO
+    label: SUSPENDSAVE_OFFSET_GMINFO
+    val: 1F44
+  - desc: SUSPENDSAVE_OFFSET_DUNGEON
+    label: SUSPENDSAVE_OFFSET_DUNGEON
+    val: 1F68
+  - desc: SUSPENDSAVE_OFFSET_EVENTSLOTCNT
+    label: SUSPENDSAVE_OFFSET_EVENTSLOTCNT
+    val: 1F74
+  - desc: SUSPENDSAVE_OFFSET_MAX
+    label: SUSPENDSAVE_OFFSET_MAX
+    val: 1F78
+- desc: global_sram_blocks
+  label: global_sram_blocks
+  vals:
+  - desc: SRAM_SIZE_HEADER
+    label: SRAM_SIZE_HEADER
+    val: '64'
+  - desc: SRAM_SIZE_BLOCKINFO
+    label: SRAM_SIZE_BLOCKINFO
+    val: '70'
+  - desc: SRAM_SIZE_SUSPEND
+    label: SRAM_SIZE_SUSPEND
+    val: 1F78
+  - desc: SRAM_SIZE_GAMESAVE
+    label: SRAM_SIZE_GAMESAVE
+    val: DC8
+  - desc: SRAM_SIZE_MARENA
+    label: SRAM_SIZE_MARENA
+    val: '874'
+  - desc: SRAM_SIZE_XMAP
+    label: SRAM_SIZE_XMAP
+    val: C00
+- desc: global_sram_memory_map
+  label: global_sram_memory_map
+  vals:
+  - desc: SRAM_OFFSET_START
+    label: SRAM_OFFSET_START
+    val: '0'
+  - desc: SRAM_OFFSET_HEADER
+    label: SRAM_OFFSET_HEADER
+    val: '0'
+  - desc: SRAM_OFFSET_BLOCKINFO
+    label: SRAM_OFFSET_BLOCKINFO
+    val: '64'
+  - desc: SRAM_OFFSET_SUS0
+    label: SRAM_OFFSET_SUS0
+    val: D4
+  - desc: SRAM_OFFSET_SUS1
+    label: SRAM_OFFSET_SUS1
+    val: 204C
+  - desc: SRAM_OFFSET_SAV0
+    label: SRAM_OFFSET_SAV0
+    val: 3FC4
+  - desc: SRAM_OFFSET_SAV1
+    label: SRAM_OFFSET_SAV1
+    val: 4D8C
+  - desc: SRAM_OFFSET_SAV2
+    label: SRAM_OFFSET_SAV2
+    val: 5B54
+  - desc: SRAM_OFFSET_MARENA
+    label: SRAM_OFFSET_MARENA
+    val: 691C
+  - desc: SRAM_OFFSET_END
+    label: SRAM_OFFSET_END
+    val: '7190'
+  - desc: SRAM_OFFSET_XMAP
+    label: SRAM_OFFSET_XMAP
+    val: '7400'
+- desc: ClassReelScrOpCode
+  label: ClassReelScrOpCode
+  vals:
+  - desc: CLASS_REEL_OP_0
+    label: CLASS_REEL_OP_0
+    val: '0'
+  - desc: CLASS_REEL_OP_1
+    label: CLASS_REEL_OP_1
+    val: '1'
+  - desc: CLASS_REEL_OP_2
+    label: CLASS_REEL_OP_2
+    val: '2'
+  - desc: CLASS_REEL_OP_3
+    label: CLASS_REEL_OP_3
+    val: '3'
+  - desc: CLASS_REEL_OP_4
+    label: CLASS_REEL_OP_4
+    val: '4'
+  - desc: CLASS_REEL_OP_5
+    label: CLASS_REEL_OP_5
+    val: '5'
+  - desc: CLASS_REEL_OP_6
+    label: CLASS_REEL_OP_6
+    val: '6'
+  - desc: CLASS_REEL_OP_7
+    label: CLASS_REEL_OP_7
+    val: '7'
+  - desc: CLASS_REEL_OP_8
+    label: CLASS_REEL_OP_8
+    val: '8'
+- desc: ekr_battle_unit_position
+  label: ekr_battle_unit_position
+  vals:
+  - desc: EKR_POS_L
+    label: EKR_POS_L
+    val: '0'
+  - desc: EKR_POS_R
+    label: EKR_POS_R
+    val: '1'
+- desc: ekr_hit_identifer
+  label: ekr_hit_identifer
+  vals:
+  - desc: EKR_HITTED
+    label: EKR_HITTED
+    val: '0'
+  - desc: EKR_MISS
+    label: EKR_MISS
+    val: '1'
+- desc: gEkrDistanceType_index
+  label: gEkrDistanceType_index
+  vals:
+  - desc: EKR_DISTANCE_CLOSE
+    label: EKR_DISTANCE_CLOSE
+    val: '0'
+  - desc: EKR_DISTANCE_FAR
+    label: EKR_DISTANCE_FAR
+    val: '1'
+  - desc: EKR_DISTANCE_FARFAR
+    label: EKR_DISTANCE_FARFAR
+    val: '2'
+  - desc: EKR_DISTANCE_MONOCOMBAT
+    label: EKR_DISTANCE_MONOCOMBAT
+    val: '3'
+  - desc: EKR_DISTANCE_PROMOTION
+    label: EKR_DISTANCE_PROMOTION
+    val: '4'
+  - desc: EKR_DISTANCE_MAX
+    label: EKR_DISTANCE_MAX
+    val: '5'
+- desc: AnimRoundData_type_identifier
+  label: AnimRoundData_type_identifier
+  vals:
+  - desc: ANIM_ROUND_HIT_CLOSE
+    label: ANIM_ROUND_HIT_CLOSE
+    val: '0'
+  - desc: ANIM_ROUND_CRIT_CLOSE
+    label: ANIM_ROUND_CRIT_CLOSE
+    val: '1'
+  - desc: ANIM_ROUND_NONCRIT_FAR
+    label: ANIM_ROUND_NONCRIT_FAR
+    val: '2'
+  - desc: ANIM_ROUND_CRIT_FAR
+    label: ANIM_ROUND_CRIT_FAR
+    val: '3'
+  - desc: ANIM_ROUND_TAKING_MISS_CLOSE
+    label: ANIM_ROUND_TAKING_MISS_CLOSE
+    val: '4'
+  - desc: ANIM_ROUND_TAKING_MISS_FAR
+    label: ANIM_ROUND_TAKING_MISS_FAR
+    val: '5'
+  - desc: ANIM_ROUND_TAKING_HIT_CLOSE
+    label: ANIM_ROUND_TAKING_HIT_CLOSE
+    val: '6'
+  - desc: ANIM_ROUND_STANDING
+    label: ANIM_ROUND_STANDING
+    val: '7'
+  - desc: ANIM_ROUND_TAKING_HIT_FAR
+    label: ANIM_ROUND_TAKING_HIT_FAR
+    val: '8'
+  - desc: ANIM_ROUND_MISS_CLOSE
+    label: ANIM_ROUND_MISS_CLOSE
+    val: '9'
+  - desc: ANIM_ROUND_MAX
+    label: ANIM_ROUND_MAX
+    val: A
+  - desc: ANIM_ROUND_INVALID
+    label: ANIM_ROUND_INVALID
+    val: FFFFFFFF
+- desc: anim_round_type
+  label: anim_round_type
+  vals:
+  - desc: ANIM_ROUND_BIT8
+    label: ANIM_ROUND_BIT8
+    val: '100'
+  - desc: ANIM_ROUND_PIERCE
+    label: ANIM_ROUND_PIERCE
+    val: '200'
+  - desc: ANIM_ROUND_GREAT_SHIELD
+    label: ANIM_ROUND_GREAT_SHIELD
+    val: '400'
+  - desc: ANIM_ROUND_SURE_SHOT
+    label: ANIM_ROUND_SURE_SHOT
+    val: '800'
+  - desc: ANIM_ROUND_SILENCER
+    label: ANIM_ROUND_SILENCER
+    val: '1000'
+  - desc: ANIM_ROUND_POISON
+    label: ANIM_ROUND_POISON
+    val: '2000'
+  - desc: ANIM_ROUND_BIT14
+    label: ANIM_ROUND_BIT14
+    val: '4000'
+  - desc: ANIM_ROUND_DEVIL
+    label: ANIM_ROUND_DEVIL
+    val: '8000'
+- desc: banim_mode_index
+  label: banim_mode_index
+  vals:
+  - desc: BANIM_MODE_NORMAL_ATK
+    label: BANIM_MODE_NORMAL_ATK
+    val: '0'
+  - desc: BANIM_MODE_NORMAL_ATK_PRIORITY_L
+    label: BANIM_MODE_NORMAL_ATK_PRIORITY_L
+    val: '1'
+  - desc: BANIM_MODE_CRIT_ATK
+    label: BANIM_MODE_CRIT_ATK
+    val: '2'
+  - desc: BANIM_MODE_CRIT_ATK_PRIORITY_L
+    label: BANIM_MODE_CRIT_ATK_PRIORITY_L
+    val: '3'
+  - desc: BANIM_MODE_RANGED_ATK
+    label: BANIM_MODE_RANGED_ATK
+    val: '4'
+  - desc: BANIM_MODE_RANGED_CRIT_ATK
+    label: BANIM_MODE_RANGED_CRIT_ATK
+    val: '5'
+  - desc: BANIM_MODE_CLOSE_DODGE
+    label: BANIM_MODE_CLOSE_DODGE
+    val: '6'
+  - desc: BANIM_MODE_RANGED_DODGE
+    label: BANIM_MODE_RANGED_DODGE
+    val: '7'
+  - desc: BANIM_MODE_STANDING
+    label: BANIM_MODE_STANDING
+    val: '8'
+  - desc: BANIM_MODE_STANDING2
+    label: BANIM_MODE_STANDING2
+    val: '9'
+  - desc: BANIM_MODE_RANGED_STANDING
+    label: BANIM_MODE_RANGED_STANDING
+    val: A
+  - desc: BANIM_MODE_MISSED_ATK
+    label: BANIM_MODE_MISSED_ATK
+    val: B
+  - desc: BANIM_MODE_INVALID
+    label: BANIM_MODE_INVALID
+    val: FFFFFFFF
+- desc: banim_faction_palette_idx
+  label: banim_faction_palette_idx
+  vals:
+  - desc: BANIMPAL_BLUE
+    label: BANIMPAL_BLUE
+    val: '0'
+  - desc: BANIMPAL_RED
+    label: BANIMPAL_RED
+    val: '1'
+  - desc: BANIMPAL_GREEN
+    label: BANIMPAL_GREEN
+    val: '2'
+  - desc: BANIMPAL_PURPLE
+    label: BANIMPAL_PURPLE
+    val: '3'
+- desc: efx_hp_change_type
+  label: efx_hp_change_type
+  vals:
+  - desc: EFX_HPT_CHANGED
+    label: EFX_HPT_CHANGED
+    val: '0'
+  - desc: EFX_HPT_DEFEATED
+    label: EFX_HPT_DEFEATED
+    val: '1'
+  - desc: EFX_HPT_NOT_CHANGE
+    label: EFX_HPT_NOT_CHANGE
+    val: '2'
+- desc: dragonstatus_type
+  label: dragonstatus_type
+  vals:
+  - desc: EKRDRGON_TYPE_NORMAL
+    label: EKRDRGON_TYPE_NORMAL
+    val: '0'
+  - desc: EKRDRGON_TYPE_DRACO_ZOMBIE
+    label: EKRDRGON_TYPE_DRACO_ZOMBIE
+    val: '1'
+  - desc: EKRDRGON_TYPE_DEMON_KING
+    label: EKRDRGON_TYPE_DEMON_KING
+    val: '2'
+  - desc: EKRDRGON_TYPE_MYRRH
+    label: EKRDRGON_TYPE_MYRRH
+    val: '3'
+- desc: dragonstatue_attr
+  label: dragonstatue_attr
+  vals:
+  - desc: EKRDRGON_ATTR_START
+    label: EKRDRGON_ATTR_START
+    val: '1'
+  - desc: EKRDRGON_ATTR_BANIMFX_PREPARED
+    label: EKRDRGON_ATTR_BANIMFX_PREPARED
+    val: '2'
+  - desc: EKRDRGON_ATTR_BANIMFINISH
+    label: EKRDRGON_ATTR_BANIMFINISH
+    val: '4'
+  - desc: EKRDRGON_ATTR_END
+    label: EKRDRGON_ATTR_END
+    val: '8'
+  - desc: EKRDRGON_ATTR_DEAD
+    label: EKRDRGON_ATTR_DEAD
+    val: '1000'
+  - desc: EKRDRGON_ATTR_SKIP
+    label: EKRDRGON_ATTR_SKIP
+    val: '2000'
+- desc: ekrtriangle_types
+  label: ekrtriangle_types
+  vals:
+  - desc: EKR_TRI_JTYPE_DEFAULT
+    label: EKR_TRI_JTYPE_DEFAULT
+    val: '0'
+  - desc: EKR_TRI_JTYPE_PROMOTED
+    label: EKR_TRI_JTYPE_PROMOTED
+    val: '1'
+  - desc: EKR_TRI_WTYPE_DEFAULT
+    label: EKR_TRI_WTYPE_DEFAULT
+    val: '0'
+  - desc: EKR_TRI_WTYPE_ALTERNATIVE
+    label: EKR_TRI_WTYPE_ALTERNATIVE
+    val: '1'
+  - desc: EKR_TRI_WTYPE_ALTERNATIVE2
+    label: EKR_TRI_WTYPE_ALTERNATIVE2
+    val: '2'
+- desc: banim_indexes
+  label: banim_indexes
+  vals:
+  - desc: BANIM_INDEX_MYRRH_MAIN
+    label: BANIM_INDEX_MYRRH_MAIN
+    val: C4
+  - desc: BANIM_INDEX_MYRRH_INTRO
+    label: BANIM_INDEX_MYRRH_INTRO
+    val: C5
+  - desc: BANIM_INDEX_MYRRH_EXIT
+    label: BANIM_INDEX_MYRRH_EXIT
+    val: C6
+  - desc: BANIM_INDEX_MYRRH_NOWPN
+    label: BANIM_INDEX_MYRRH_NOWPN
+    val: C7
+- desc: promohandler_proc_label
+  label: promohandler_proc_label
+  vals:
+  - desc: PROMO_HANDLER_LABEL_REINIT
+    label: PROMO_HANDLER_LABEL_REINIT
+    val: '0'
+  - desc: PROMO_HANDLER_LABEL_IDLE
+    label: PROMO_HANDLER_LABEL_IDLE
+    val: '1'
+  - desc: PROMO_HANDLER_LABEL_END
+    label: PROMO_HANDLER_LABEL_END
+    val: '2'
+- desc: promohandler_bmtype
+  label: promohandler_bmtype
+  vals:
+  - desc: PROMO_HANDLER_TYPE_TRANINEE
+    label: PROMO_HANDLER_TYPE_TRANINEE
+    val: '0'
+  - desc: PROMO_HANDLER_TYPE_BM
+    label: PROMO_HANDLER_TYPE_BM
+    val: '1'
+  - desc: PROMO_HANDLER_TYPE_PREP
+    label: PROMO_HANDLER_TYPE_PREP
+    val: '2'
+- desc: promohandler_stat
+  label: promohandler_stat
+  vals:
+  - desc: PROMO_HANDLER_STAT_INIT
+    label: PROMO_HANDLER_STAT_INIT
+    val: '0'
+  - desc: PROMO_HANDLER_STAT_IDLE
+    label: PROMO_HANDLER_STAT_IDLE
+    val: '1'
+  - desc: PROMO_HANDLER_STAT_END
+    label: PROMO_HANDLER_STAT_END
+    val: '2'
+- desc: promomain_proc_label
+  label: promomain_proc_label
+  vals:
+  - desc: PROMOMAIN_LABEL_START
+    label: PROMOMAIN_LABEL_START
+    val: '0'
+  - desc: PROMOMAIN_LABEL_1
+    label: PROMOMAIN_LABEL_1
+    val: '1'
+  - desc: PROMOMAIN_LABEL_TRAINEE
+    label: PROMOMAIN_LABEL_TRAINEE
+    val: '2'
+  - desc: PROMOMAIN_LABEL_3
+    label: PROMOMAIN_LABEL_3
+    val: '3'
+  - desc: PROMOMAIN_LABEL_SEL_EN
+    label: PROMOMAIN_LABEL_SEL_EN
+    val: '4'
+  - desc: PROMOMAIN_LABEL_POST_SEL
+    label: PROMOMAIN_LABEL_POST_SEL
+    val: '5'
+- desc: promomain_stat
+  label: promomain_stat
+  vals:
+  - desc: PROMO_MAIN_STAT_INIT
+    label: PROMO_MAIN_STAT_INIT
+    val: '0'
+  - desc: PROMO_MAIN_STAT_SELECTION
+    label: PROMO_MAIN_STAT_SELECTION
+    val: '1'
+  - desc: PROMO_MAIN_STAT_2
+    label: PROMO_MAIN_STAT_2
+    val: '2'
+  - desc: PROMO_MAIN_STAT_TRAINEE_EVENT
+    label: PROMO_MAIN_STAT_TRAINEE_EVENT
+    val: FF
+- desc: classchg_proc_label
+  label: classchg_proc_label
+  vals:
+  - desc: PROC_CLASSCHG_SEL_INIT
+    label: PROC_CLASSCHG_SEL_INIT
+    val: '0'
+  - desc: PROC_CLASSCHG_SEL_1
+    label: PROC_CLASSCHG_SEL_1
+    val: '1'
+  - desc: PROC_CLASSCHG_SEL_2
+    label: PROC_CLASSCHG_SEL_2
+    val: '2'
+  - desc: PROC_CLASSCHG_SEL_END1
+    label: PROC_CLASSCHG_SEL_END1
+    val: '3'
+  - desc: PROC_CLASSCHG_SEL_4
+    label: PROC_CLASSCHG_SEL_4
+    val: '4'
+  - desc: PROC_CLASSCHG_SEL_END2
+    label: PROC_CLASSCHG_SEL_END2
+    val: '5'
+- desc: unit_ai1_data_enum
+  label: unit_ai1_data_enum
+  vals:
+  - desc: AI_CMD_CONDITIONAL
+    label: AI_CMD_CONDITIONAL
+    val: '0'
+  - desc: AI_CMD_CALL_FUNC
+    label: AI_CMD_CALL_FUNC
+    val: '1'
+  - desc: AI_CMD_SET_AI
+    label: AI_CMD_SET_AI
+    val: '2'
+  - desc: AI_CMD_GOTO
+    label: AI_CMD_GOTO
+    val: '3'
+  - desc: AI_CMD_ACTION_ON_CHAR
+    label: AI_CMD_ACTION_ON_CHAR
+    val: '4'
+  - desc: AI_CMD_ACTION
+    label: AI_CMD_ACTION
+    val: '5'
+  - desc: AI_CMD_NOP
+    label: AI_CMD_NOP
+    val: '6'
+  - desc: AI_CMD_ACTION_IN_PLACE
+    label: AI_CMD_ACTION_IN_PLACE
+    val: '7'
+  - desc: AI_CMD_ACTION_ON_CLASS
+    label: AI_CMD_ACTION_ON_CLASS
+    val: '8'
+  - desc: AI_CMD_STAFF_ACTION
+    label: AI_CMD_STAFF_ACTION
+    val: '9'
+  - desc: AI_CMD_STAFF_ACTION_2
+    label: AI_CMD_STAFF_ACTION_2
+    val: A
+  - desc: AI_CMD_STAFF_ACTION_3
+    label: AI_CMD_STAFF_ACTION_3
+    val: B
+  - desc: AI_CMD_MOVE_TOWARDS
+    label: AI_CMD_MOVE_TOWARDS
+    val: C
+  - desc: AI_CMD_MOVE_TOWARDS_CHAR
+    label: AI_CMD_MOVE_TOWARDS_CHAR
+    val: D
+  - desc: AI_CMD_NOP_0E
+    label: AI_CMD_NOP_0E
+    val: E
+  - desc: AI_CMD_MOVE_TOWARDS_CLASS
+    label: AI_CMD_MOVE_TOWARDS_CLASS
+    val: F
+  - desc: AI_CMD_PILLAGE
+    label: AI_CMD_PILLAGE
+    val: '10'
+  - desc: AI_CMD_MOVE_TO_SAFETY
+    label: AI_CMD_MOVE_TO_SAFETY
+    val: '11'
+  - desc: AI_CMD_MOVE_TO_ENEMY
+    label: AI_CMD_MOVE_TO_ENEMY
+    val: '12'
+  - desc: AI_CMD_MOVE_TO_ENEMY_2
+    label: AI_CMD_MOVE_TO_ENEMY_2
+    val: '13'
+  - desc: AI_CMD_NOP_14
+    label: AI_CMD_NOP_14
+    val: '14'
+  - desc: AI_CMD_NOP_15
+    label: AI_CMD_NOP_15
+    val: '15'
+  - desc: AI_CMD_MOVE_RANDOM
+    label: AI_CMD_MOVE_RANDOM
+    val: '16'
+  - desc: AI_CMD_ESCAPE
+    label: AI_CMD_ESCAPE
+    val: '17'
+  - desc: AI_CMD_ATTACK_WALLS
+    label: AI_CMD_ATTACK_WALLS
+    val: '18'
+  - desc: AI_CMD_MOVE_TO_TERRAIN
+    label: AI_CMD_MOVE_TO_TERRAIN
+    val: '19'
+  - desc: AI_CMD_MOVE_TO_LISTED_TERRAIN
+    label: AI_CMD_MOVE_TO_LISTED_TERRAIN
+    val: 1A
+  - desc: AI_CMD_1B
+    label: AI_CMD_1B
+    val: 1B
+  - desc: AI_CMD_LABEL
+    label: AI_CMD_LABEL
+    val: 1C
+  - desc: AI_CMD_COUNT
+    label: AI_CMD_COUNT
+    val: 1D
+- desc: ScriptKind
+  label: ScriptKind
+  vals:
+  - desc: AI_SCRIPT_AI1
+    label: AI_SCRIPT_AI1
+    val: '0'
+  - desc: AI_SCRIPT_AI2
+    label: AI_SCRIPT_AI2
+    val: '1'

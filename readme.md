@@ -10,6 +10,7 @@ These files contain labeled RAM and ROM data, along with struct and enum definit
   - `utils.py` - Functions for working with YAML data
   - `validator.py` - Script for validating data and converting to JSON
   - `validate_schema.py` - Script for validating the JSON files against the schemas in `schema/`
+  - `dwarf_dump.py` - Script for extracting enum and struct definitions from a decomp ELF's DWARF info
   - `dumper.py` - Script for finding and outputing data from a ROM file
   - `constants.py` - Defines constants used by other scripts
   - `decomp.py` - Script for finding data from decomp project and outputing to YAML
