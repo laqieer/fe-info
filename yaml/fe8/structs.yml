@@ -2765,8 +2765,8 @@
     type: unsigned char [2]
     offset: '2'
     count: '2'
-- desc: Unknown_08A209FC
-  label: Unknown_08A209FC
+- desc: DifficultyMenuCursorPosition
+  label: DifficultyMenuCursorPosition
   size: '4'
   vars:
   - desc: a
@@ -7642,8 +7642,8 @@
     label: pOpenPaths
     type: struct OpenPaths *
     offset: '40'
-- desc: Unknown_3001DA8
-  label: Unknown_3001DA8
+- desc: GMapScreenVSyncCopyRequest
+  label: GMapScreenVSyncCopyRequest
   size: '8'
   vars:
   - desc: unk_00
@@ -7744,7 +7744,7 @@
     offset: '38'
   - desc: unk_3c
     label: unk_3c
-    type: struct Unknown_3001DA8 *
+    type: struct GMapScreenVSyncCopyRequest *
     offset: 3C
   - desc: unk_40
     label: unk_40
@@ -13089,8 +13089,8 @@
     label: pQuakePureProc
     type: ProcPtr
     offset: '60'
-- desc: Unknown_030053E0
-  label: Unknown_030053E0
+- desc: EfxopMagicDesc
+  label: EfxopMagicDesc
   size: '28'
   vars:
   - desc: u00
@@ -21290,8 +21290,8 @@
     label: supportCount
     type: u8
     offset: A
-- desc: Unknown_02013460
-  label: Unknown_02013460
+- desc: UnitListMuralPaletteCycle
+  label: UnitListMuralPaletteCycle
   size: '14'
   vars:
   - desc: unk_00
@@ -24293,8 +24293,8 @@
     label: song
     type: u16
     offset: '58'
-- desc: ManimSomethingProc_08067498
-  label: ManimSomethingProc_08067498
+- desc: ProcMapAnimBgScroll
+  label: ProcMapAnimBgScroll
   size: 6C
   vars:
   - desc: proc_script
@@ -25167,8 +25167,8 @@
     label: newScore
     type: int
     offset: '4'
-- desc: SioUnknown_0203DD90
-  label: SioUnknown_0203DD90
+- desc: LinkArenaBattleState
+  label: LinkArenaBattleState
   size: 4C
   vars:
   - desc: unk_00
@@ -25257,8 +25257,8 @@
     label: points
     type: u32
     offset: '4'
-- desc: Proc_Sio_085A93A0
-  label: Proc_Sio_085A93A0
+- desc: ProcSioLoadingBlendPulse
+  label: ProcSioLoadingBlendPulse
   size: 5C
   vars:
   - desc: proc_script
@@ -37031,8 +37031,8 @@
     label: siodata
     type: u16
     offset: '2'
-- desc: Unk_085B658C
-  label: Unk_085B658C
+- desc: NearTargetLinkOrderEnt
+  label: NearTargetLinkOrderEnt
   size: '4'
   vars:
   - desc: x
@@ -39811,8 +39811,8 @@
     label: unk4C
     type: s16
     offset: 4C
-- desc: ProcEkrDragon_08758720
-  label: ProcEkrDragon_08758720
+- desc: ProcEkrDragonPalFade
+  label: ProcEkrDragonPalFade
   size: '40'
   vars:
   - desc: proc_script
@@ -40896,8 +40896,8 @@
     label: unk_2c
     type: int
     offset: 2C
-- desc: Unknown_08A212DC
-  label: Unknown_08A212DC
+- desc: SoundRoomVolumeGraphPoint
+  label: SoundRoomVolumeGraphPoint
   size: '2'
   vars:
   - desc: x
@@ -42596,8 +42596,8 @@
     label: class
     type: u8
     offset: '2'
-- desc: Struct_8A30978
-  label: Struct_8A30978
+- desc: TsaData
+  label: TsaData
   size: '968'
   vars:
   - desc: a

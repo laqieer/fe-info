@@ -59,8 +59,13 @@ def combine_yamls(data_list: List[InfoFile]) -> InfoFile:
             combined.update(data)
         else:
             raise ValueError("Type mismatch")
-    if isinstance(combined, list):
-        # sort by address
+    if (
+        isinstance(combined, list)
+        and combined
+        and all(isinstance(entry, dict) and "addr" in entry for entry in combined)
+    ):
+        # Only address-bearing map entries are sorted. Enums and structs are
+        # also list-based, but intentionally preserve the generator's order.
         combined.sort(key=cmp_to_key(compare_addrs))
     return combined
 

@@ -110,7 +110,7 @@
   desc: MapFloodCore
   label: MapFloodCore
   addr: 0x8000874
-  size: 0x1AC
+  size: 0x28
   mode: thumb
   params: null
   return: null
@@ -33306,8 +33306,8 @@
   return: null
   line: banim_ekrbattleintro.c:163
 -
-  desc: func_fe6_08048154
-  label: func_fe6_08048154
+  desc: EkrBaStart_BgPaletteIn
+  label: EkrBaStart_BgPaletteIn
   addr: 0x8048154
   size: 0x60
   mode: thumb
@@ -33324,8 +33324,8 @@
   return: null
   line: banim_ekrbattleintro.c:203
 -
-  desc: func_fe6_080481CC
-  label: func_fe6_080481CC
+  desc: EkrBaEnd_BgPaletteIn
+  label: EkrBaEnd_BgPaletteIn
   addr: 0x80481CC
   size: 0x78
   mode: thumb
@@ -33333,8 +33333,8 @@
   return: null
   line: banim_ekrbattleintro.c:210
 -
-  desc: func_fe6_08048244
-  label: func_fe6_08048244
+  desc: EkrBaEnd_RestoreChapterMap
+  label: EkrBaEnd_RestoreChapterMap
   addr: 0x8048244
   size: 0x54
   mode: thumb
@@ -33342,8 +33342,8 @@
   return: null
   line: banim_ekrbattleintro.c:230
 -
-  desc: func_fe6_08048298
-  label: func_fe6_08048298
+  desc: EkrBaEnd_ChapterMapFadeOut
+  label: EkrBaEnd_ChapterMapFadeOut
   addr: 0x8048298
   size: 0x5C
   mode: thumb
@@ -33351,8 +33351,8 @@
   return: null
   line: banim_ekrbattleintro.c:244
 -
-  desc: func_fe6_080482F4
-  label: func_fe6_080482F4
+  desc: EkrBaEnd_InitOutroFx
+  label: EkrBaEnd_InitOutroFx
   addr: 0x80482F4
   size: 0x60
   mode: thumb
@@ -33360,8 +33360,8 @@
   return: null
   line: banim_ekrbattleintro.c:259
 -
-  desc: func_fe6_08048354
-  label: func_fe6_08048354
+  desc: EkrBaEnd_WaitOutroAndEndGauge
+  label: EkrBaEnd_WaitOutroAndEndGauge
   addr: 0x8048354
   size: 0x8C
   mode: thumb
@@ -33369,8 +33369,8 @@
   return: null
   line: banim_ekrbattleintro.c:281
 -
-  desc: func_fe6_080483E0
-  label: func_fe6_080483E0
+  desc: EkrBaEnd_RestoreMapDisplay
+  label: EkrBaEnd_RestoreMapDisplay
   addr: 0x80483E0
   size: 0x90
   mode: thumb
@@ -33378,8 +33378,8 @@
   return: null
   line: banim_ekrbattleintro.c:295
 -
-  desc: func_fe6_08048470
-  label: func_fe6_08048470
+  desc: EkrBaEnd_ScreenFailOut
+  label: EkrBaEnd_ScreenFailOut
   addr: 0x8048470
   size: 0xEC
   mode: thumb
@@ -33387,8 +33387,8 @@
   return: null
   line: banim_ekrbattleintro.c:320
 -
-  desc: func_fe6_0804855C
-  label: func_fe6_0804855C
+  desc: EkrBaEnd_Finish
+  label: EkrBaEnd_Finish
   addr: 0x804855C
   size: 0x18
   mode: thumb
@@ -33403,16 +33403,16 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_ekrbattleintrofx.c:140
 -
   desc: EkrBaseKaiten_Loop
   label: EkrBaseKaiten_Loop
   addr: 0x804894C
-  size: 0x9C
+  size: 0x9A
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_ekrbattleintrofx.c:338
 -
   desc: NewEkrUnitKakudai
   label: NewEkrUnitKakudai
@@ -33421,19 +33421,19 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_ekrbattleintrofx.c:372
 -
-  desc: func_fe6_08048A64
-  label: func_fe6_08048A64
+  desc: EkrUnitKakudai_PrepareAnimScript
+  label: EkrUnitKakudai_PrepareAnimScript
   addr: 0x8048A64
   size: 0x18C
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_ekrbattleintrofx.c:408
 -
-  desc: func_fe6_08048BF0
-  label: func_fe6_08048BF0
+  desc: EkrUnitKakudai_Main
+  label: EkrUnitKakudai_Main
   addr: 0x8048BF0
   size: 0x1A8
   mode: thumb
@@ -33441,8 +33441,8 @@
   return: null
   line: ''
 -
-  desc: func_fe6_08048D98
-  label: func_fe6_08048D98
+  desc: EkrUnitKakudai_End
+  label: EkrUnitKakudai_End
   addr: 0x8048D98
   size: 0xC
   mode: thumb
@@ -33468,8 +33468,8 @@
   return: null
   line: ''
 -
-  desc: func_fe6_08048E08
-  label: func_fe6_08048E08
+  desc: EkrWindowAppear_Main
+  label: EkrWindowAppear_Main
   addr: 0x8048E08
   size: 0x80
   mode: thumb
@@ -33495,8 +33495,8 @@
   return: null
   line: ''
 -
-  desc: func_fe6_08048EEC
-  label: func_fe6_08048EEC
+  desc: EkrNamewinAppear_Delay
+  label: EkrNamewinAppear_Delay
   addr: 0x8048EEC
   size: 0x20
   mode: thumb
@@ -33504,8 +33504,8 @@
   return: null
   line: ''
 -
-  desc: func_fe6_08048F0C
-  label: func_fe6_08048F0C
+  desc: EkrNamewinAppear_Main
+  label: EkrNamewinAppear_Main
   addr: 0x8048F0C
   size: 0x7C
   mode: thumb
@@ -33700,7 +33700,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_ekrmain.c:102
+  line: banim_ekrmain.c:100
 -
   desc: EkrChienCHR_Loop
   label: EkrChienCHR_Loop
@@ -33709,7 +33709,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_ekrmain.c:110
+  line: banim_ekrmain.c:108
 -
   desc: SyncBanimImage
   label: SyncBanimImage
@@ -33718,7 +33718,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_ekrmain.c:116
+  line: banim_ekrmain.c:114
 -
   desc: ApplyBanimUniquePalette
   label: ApplyBanimUniquePalette
@@ -33727,7 +33727,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_ekrmain.c:126
+  line: banim_ekrmain.c:124
 -
   desc: GetBanimPalette
   label: GetBanimPalette
@@ -33736,7 +33736,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_ekrmain.c:137
+  line: banim_ekrmain.c:135
 -
   desc: UpdateBanimFrame
   label: UpdateBanimFrame
@@ -33745,7 +33745,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_ekrmain.c:266
+  line: banim_ekrmain.c:264
 -
   desc: InitMainAnims
   label: InitMainAnims
@@ -33754,7 +33754,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_ekrmain.c:526
+  line: banim_ekrmain.c:524
 -
   desc: InitBattleAnimFrame
   label: InitBattleAnimFrame
@@ -33763,7 +33763,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_ekrmain.c:567
+  line: banim_ekrmain.c:565
 -
   desc: InitLeftAnim
   label: InitLeftAnim
@@ -33772,7 +33772,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_ekrsetup.c:6
 -
   desc: InitRightAnim
   label: InitRightAnim
@@ -33781,7 +33781,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_ekrsetup.c:64
 -
   desc: LoadAnimFrame
   label: LoadAnimFrame
@@ -35329,7 +35329,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3102
+  line: banim_efxmagic.c:3178
 -
   desc: EfxFimbulvetr_Loop
   label: EfxFimbulvetr_Loop
@@ -35338,7 +35338,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3117
+  line: banim_efxmagic.c:3193
 -
   desc: NewEfxFimbulvetrBGTR
   label: NewEfxFimbulvetrBGTR
@@ -35347,7 +35347,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3168
+  line: banim_efxmagic.c:3244
 -
   desc: EfxFimbulvetrBGTR_Loop
   label: EfxFimbulvetrBGTR_Loop
@@ -35356,7 +35356,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3226
+  line: banim_efxmagic.c:3302
 -
   desc: NewEfxFimbulvetrBG
   label: NewEfxFimbulvetrBG
@@ -35365,7 +35365,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3249
+  line: banim_efxmagic.c:3325
 -
   desc: EfxFimbulvetrBG_Loop
   label: EfxFimbulvetrBG_Loop
@@ -35374,7 +35374,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3294
+  line: banim_efxmagic.c:3370
 -
   desc: NewEfxFimbulvetrOBJ
   label: NewEfxFimbulvetrOBJ
@@ -35383,7 +35383,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3319
+  line: banim_efxmagic.c:3395
 -
   desc: EfxFimbulvetrOBJ_Loop
   label: EfxFimbulvetrOBJ_Loop
@@ -35392,7 +35392,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3336
+  line: banim_efxmagic.c:3412
 -
   desc: NewEfxFimbulvetrOBJ2
   label: NewEfxFimbulvetrOBJ2
@@ -35401,7 +35401,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3347
+  line: banim_efxmagic.c:3423
 -
   desc: EfxFimbulvetrOBJ2_Loop
   label: EfxFimbulvetrOBJ2_Loop
@@ -35410,7 +35410,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3364
+  line: banim_efxmagic.c:3440
 -
   desc: NewEfxFimbulvetrOBJ2Fall
   label: NewEfxFimbulvetrOBJ2Fall
@@ -35419,7 +35419,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3375
+  line: banim_efxmagic.c:3451
 -
   desc: EfxFimbulvetrOBJ2Fall_Loop
   label: EfxFimbulvetrOBJ2Fall_Loop
@@ -35428,7 +35428,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3416
+  line: banim_efxmagic.c:3492
 -
   desc: StartSpellAnimBolting
   label: StartSpellAnimBolting
@@ -35437,7 +35437,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3465
+  line: banim_efxmagic.c:3607
 -
   desc: EfxThunderstorm_Loop
   label: EfxThunderstorm_Loop
@@ -35446,7 +35446,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3479
+  line: banim_efxmagic.c:3621
 -
   desc: NewEfxThunderstormBG
   label: NewEfxThunderstormBG
@@ -35455,7 +35455,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3514
+  line: banim_efxmagic.c:3656
 -
   desc: EfxThunderstormBG_Loop
   label: EfxThunderstormBG_Loop
@@ -35464,7 +35464,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3557
+  line: banim_efxmagic.c:3699
 -
   desc: NewEfxThunderstormOBJ
   label: NewEfxThunderstormOBJ
@@ -35473,7 +35473,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3578
+  line: banim_efxmagic.c:3720
 -
   desc: EfxThunderstormOBJ_Loop
   label: EfxThunderstormOBJ_Loop
@@ -35482,7 +35482,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3588
+  line: banim_efxmagic.c:3730
 -
   desc: EfxThunderstormOBJ_End
   label: EfxThunderstormOBJ_End
@@ -35491,7 +35491,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3598
+  line: banim_efxmagic.c:3740
 -
   desc: NewEfxThunderstormCOLOR
   label: NewEfxThunderstormCOLOR
@@ -35500,7 +35500,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3606
+  line: banim_efxmagic.c:3748
 -
   desc: EfxThunderstormCOLOR_LoopA
   label: EfxThunderstormCOLOR_LoopA
@@ -35509,7 +35509,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3616
+  line: banim_efxmagic.c:3758
 -
   desc: EfxThunderstormCOLOR_LoopB
   label: EfxThunderstormCOLOR_LoopB
@@ -35518,7 +35518,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3628
+  line: banim_efxmagic.c:3770
 -
   desc: EfxThunderstormCOLOR_LoopC
   label: EfxThunderstormCOLOR_LoopC
@@ -35527,7 +35527,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3645
+  line: banim_efxmagic.c:3787
 -
   desc: NewEfxThunderstormDARK
   label: NewEfxThunderstormDARK
@@ -35536,7 +35536,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3662
+  line: banim_efxmagic.c:3804
 -
   desc: EfxThunderstormDARK_LoopA
   label: EfxThunderstormDARK_LoopA
@@ -35545,7 +35545,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3677
+  line: banim_efxmagic.c:3819
 -
   desc: EfxThunderstormDARK_LoopB
   label: EfxThunderstormDARK_LoopB
@@ -35554,7 +35554,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3693
+  line: banim_efxmagic.c:3835
 -
   desc: StartSpellAnimAircalibur
   label: StartSpellAnimAircalibur
@@ -35563,7 +35563,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3709
+  line: banim_efxmagic.c:3881
 -
   desc: EfxAlacalibur_Loop
   label: EfxAlacalibur_Loop
@@ -35572,7 +35572,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3724
+  line: banim_efxmagic.c:3896
 -
   desc: NewEfxAlacaliburBG
   label: NewEfxAlacaliburBG
@@ -35581,7 +35581,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3772
+  line: banim_efxmagic.c:3944
 -
   desc: EfxAlacaliburBG_Loop
   label: EfxAlacaliburBG_Loop
@@ -35590,7 +35590,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3800
+  line: banim_efxmagic.c:3972
 -
   desc: NewEfxAlacaliburBGCOL
   label: NewEfxAlacaliburBGCOL
@@ -35599,7 +35599,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3820
+  line: banim_efxmagic.c:3992
 -
   desc: EfxAlacaliburBGCOL_Loop
   label: EfxAlacaliburBGCOL_Loop
@@ -35608,7 +35608,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3848
+  line: banim_efxmagic.c:4020
 -
   desc: NewEfxAlacaliburOBJ
   label: NewEfxAlacaliburOBJ
@@ -35617,7 +35617,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3866
+  line: banim_efxmagic.c:4038
 -
   desc: EfxAlacaliburOBJ_Loop
   label: EfxAlacaliburOBJ_Loop
@@ -35626,7 +35626,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3890
+  line: banim_efxmagic.c:4062
 -
   desc: StartSpellAnimFlux
   label: StartSpellAnimFlux
@@ -35635,7 +35635,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3903
+  line: banim_efxmagic.c:4196
 -
   desc: EfxMistyrain_Loop
   label: EfxMistyrain_Loop
@@ -35644,7 +35644,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3917
+  line: banim_efxmagic.c:4210
 -
   desc: NewEfxMistyrainBG1
   label: NewEfxMistyrainBG1
@@ -35653,7 +35653,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:3978
+  line: banim_efxmagic.c:4271
 -
   desc: NewEfxMistyrainBG2
   label: NewEfxMistyrainBG2
@@ -35662,7 +35662,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4025
+  line: banim_efxmagic.c:4318
 -
   desc: NewEfxMistyrainBG_Loop
   label: NewEfxMistyrainBG_Loop
@@ -35671,7 +35671,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4085
+  line: banim_efxmagic.c:4378
 -
   desc: NewEfxMistyrainOBJ
   label: NewEfxMistyrainOBJ
@@ -35680,7 +35680,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4107
+  line: banim_efxmagic.c:4400
 -
   desc: NewEfxMistyrainOBJ2
   label: NewEfxMistyrainOBJ2
@@ -35689,7 +35689,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4123
+  line: banim_efxmagic.c:4416
 -
   desc: EfxMistyrainOBJ_OnEnd
   label: EfxMistyrainOBJ_OnEnd
@@ -35698,7 +35698,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4141
+  line: banim_efxmagic.c:4434
 -
   desc: EfxMistyrainOBJ1_Loop1
   label: EfxMistyrainOBJ1_Loop1
@@ -35707,7 +35707,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4147
+  line: banim_efxmagic.c:4440
 -
   desc: EfxMistyrainOBJ1_Loop2
   label: EfxMistyrainOBJ1_Loop2
@@ -35716,7 +35716,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4160
+  line: banim_efxmagic.c:4453
 -
   desc: EfxMistyrainOBJ1_Loop3
   label: EfxMistyrainOBJ1_Loop3
@@ -35725,7 +35725,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4173
+  line: banim_efxmagic.c:4466
 -
   desc: EfxMistyrainOBJ2_Loop1
   label: EfxMistyrainOBJ2_Loop1
@@ -35734,7 +35734,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4186
+  line: banim_efxmagic.c:4479
 -
   desc: EfxMistyrainOBJ2_Loop2
   label: EfxMistyrainOBJ2_Loop2
@@ -35743,7 +35743,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4201
+  line: banim_efxmagic.c:4494
 -
   desc: StartSpellAnimNosferatu
   label: StartSpellAnimNosferatu
@@ -35752,7 +35752,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4220
+  line: banim_efxmagic.c:4648
 -
   desc: EfxResire_Loop
   label: EfxResire_Loop
@@ -35761,7 +35761,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4234
+  line: banim_efxmagic.c:4662
 -
   desc: NewEfxResireBG
   label: NewEfxResireBG
@@ -35770,7 +35770,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4285
+  line: banim_efxmagic.c:4713
 -
   desc: NewEfxResireBG2
   label: NewEfxResireBG2
@@ -35779,7 +35779,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4375
+  line: banim_efxmagic.c:4803
 -
   desc: EfxResireBG_Loop1
   label: EfxResireBG_Loop1
@@ -35788,7 +35788,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4403
+  line: banim_efxmagic.c:4831
 -
   desc: EfxResireBG_Loop2
   label: EfxResireBG_Loop2
@@ -35797,7 +35797,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4435
+  line: banim_efxmagic.c:4863
 -
   desc: EfxResireBG_Loop3
   label: EfxResireBG_Loop3
@@ -35806,7 +35806,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4470
+  line: banim_efxmagic.c:4898
 -
   desc: EfxResireBG_Loop4
   label: EfxResireBG_Loop4
@@ -35815,7 +35815,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4491
+  line: banim_efxmagic.c:4919
 -
   desc: EfxResireBG2_Loop
   label: EfxResireBG2_Loop
@@ -35824,7 +35824,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4517
+  line: banim_efxmagic.c:4945
 -
   desc: NewEfxResireRST
   label: NewEfxResireRST
@@ -35833,7 +35833,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4540
+  line: banim_efxmagic.c:4968
 -
   desc: EfxResireRST_Loop
   label: EfxResireRST_Loop
@@ -35842,7 +35842,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4553
+  line: banim_efxmagic.c:4981
 -
   desc: StartSpellAnimLightning
   label: StartSpellAnimLightning
@@ -35851,7 +35851,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4570
+  line: banim_efxmagic.c:5398
 -
   desc: EfxLightning_Loop
   label: EfxLightning_Loop
@@ -35860,7 +35860,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4584
+  line: banim_efxmagic.c:5412
 -
   desc: NewEfxLightningBG
   label: NewEfxLightningBG
@@ -35869,7 +35869,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4625
+  line: banim_efxmagic.c:5453
 -
   desc: EfxLightningBG_Loop
   label: EfxLightningBG_Loop
@@ -35878,7 +35878,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4688
+  line: banim_efxmagic.c:5516
 -
   desc: StartSpellAnimPurge
   label: StartSpellAnimPurge
@@ -35887,7 +35887,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4720
+  line: banim_efxmagic.c:5548
 -
   desc: EfxPurge_PlaySFX
   label: EfxPurge_PlaySFX
@@ -35896,7 +35896,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4736
+  line: banim_efxmagic.c:5564
 -
   desc: EfxPurge_Loop
   label: EfxPurge_Loop
@@ -35905,7 +35905,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4746
+  line: banim_efxmagic.c:5574
 -
   desc: NewEfxPurgeBG
   label: NewEfxPurgeBG
@@ -35914,7 +35914,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4810
+  line: banim_efxmagic.c:5638
 -
   desc: EfxPurgeBG_Loop
   label: EfxPurgeBG_Loop
@@ -35923,7 +35923,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4929
+  line: banim_efxmagic.c:5757
 -
   desc: NewEfxPurgeOBJRND
   label: NewEfxPurgeOBJRND
@@ -35932,7 +35932,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4953
+  line: banim_efxmagic.c:5781
 -
   desc: EfxPurgeOBJRND_Loop
   label: EfxPurgeOBJRND_Loop
@@ -35941,7 +35941,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4968
+  line: banim_efxmagic.c:5796
 -
   desc: NewEfxPurgeOBJ
   label: NewEfxPurgeOBJ
@@ -35950,7 +35950,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:4989
+  line: banim_efxmagic.c:5817
 -
   desc: EfxPurgeOBJ_OnEnd
   label: EfxPurgeOBJ_OnEnd
@@ -35959,7 +35959,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5009
+  line: banim_efxmagic.c:5837
 -
   desc: StartSpellAnimForblaze
   label: StartSpellAnimForblaze
@@ -35968,7 +35968,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5018
+  line: banim_efxmagic.c:5969
 -
   desc: EfxForblaze_Loop
   label: EfxForblaze_Loop
@@ -35977,7 +35977,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5032
+  line: banim_efxmagic.c:5983
 -
   desc: NewEfxForblazeBG1
   label: NewEfxForblazeBG1
@@ -35986,7 +35986,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5091
+  line: banim_efxmagic.c:6042
 -
   desc: EfxForblazeBG1_Loop
   label: EfxForblazeBG1_Loop
@@ -35995,7 +35995,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5159
+  line: banim_efxmagic.c:6110
 -
   desc: NewEfxForblazeBGCOL1
   label: NewEfxForblazeBGCOL1
@@ -36004,7 +36004,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5184
+  line: banim_efxmagic.c:6135
 -
   desc: EfxForblazeBGCOL1_Loop
   label: EfxForblazeBGCOL1_Loop
@@ -36013,7 +36013,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5210
+  line: banim_efxmagic.c:6161
 -
   desc: NewEfxForblazeBGCtrl1
   label: NewEfxForblazeBGCtrl1
@@ -36022,7 +36022,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5227
+  line: banim_efxmagic.c:6178
 -
   desc: EfxForblazeBGCtrl1_Loop1
   label: EfxForblazeBGCtrl1_Loop1
@@ -36031,7 +36031,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5234
+  line: banim_efxmagic.c:6185
 -
   desc: EfxForblazeBGCtrl1_Loop2
   label: EfxForblazeBGCtrl1_Loop2
@@ -36040,7 +36040,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5241
+  line: banim_efxmagic.c:6192
 -
   desc: EfxForblazeBGCtrl1_Loop3
   label: EfxForblazeBGCtrl1_Loop3
@@ -36049,7 +36049,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5248
+  line: banim_efxmagic.c:6199
 -
   desc: NewEfxForblazeObjHandle
   label: NewEfxForblazeObjHandle
@@ -36058,7 +36058,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5256
+  line: banim_efxmagic.c:6207
 -
   desc: EfxForblazeObjHandle_Loop
   label: EfxForblazeObjHandle_Loop
@@ -36067,7 +36067,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5275
+  line: banim_efxmagic.c:6226
 -
   desc: NewEfxForblazeOBJ
   label: NewEfxForblazeOBJ
@@ -36076,7 +36076,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5301
+  line: banim_efxmagic.c:6252
 -
   desc: EfxForblazeOBJ_Loop
   label: EfxForblazeOBJ_Loop
@@ -36085,7 +36085,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5318
+  line: banim_efxmagic.c:6269
 -
   desc: NewEfxForblazeBG2
   label: NewEfxForblazeBG2
@@ -36094,7 +36094,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5329
+  line: banim_efxmagic.c:6280
 -
   desc: EfxForblazeBG2_Loop
   label: EfxForblazeBG2_Loop
@@ -36103,7 +36103,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5351
+  line: banim_efxmagic.c:6302
 -
   desc: NewEfxForblazeOBJCtrl
   label: NewEfxForblazeOBJCtrl
@@ -36112,7 +36112,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5416
+  line: banim_efxmagic.c:6367
 -
   desc: EfxForblazeOBJCtrl_Loop
   label: EfxForblazeOBJCtrl_Loop
@@ -36121,7 +36121,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5434
+  line: banim_efxmagic.c:6385
 -
   desc: NewEfxForblazeOBJFall
   label: NewEfxForblazeOBJFall
@@ -36130,7 +36130,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5466
+  line: banim_efxmagic.c:6417
 -
   desc: EfxForblazeOBJFall_Loop
   label: EfxForblazeOBJFall_Loop
@@ -36139,7 +36139,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5523
+  line: banim_efxmagic.c:6474
 -
   desc: HBlank_EfxForblaze
   label: HBlank_EfxForblaze
@@ -36148,7 +36148,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5546
+  line: banim_efxmagic.c:6497
 -
   desc: NewEfxForblazeRST
   label: NewEfxForblazeRST
@@ -36157,7 +36157,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5556
+  line: banim_efxmagic.c:6507
 -
   desc: EfxForblazeRST_Loop
   label: EfxForblazeRST_Loop
@@ -36166,7 +36166,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5568
+  line: banim_efxmagic.c:6519
 -
   desc: StartSpellAnimDivine
   label: StartSpellAnimDivine
@@ -36175,7 +36175,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5596
+  line: banim_efxmagic.c:6742
 -
   desc: EfxDivine_Loop
   label: EfxDivine_Loop
@@ -36184,7 +36184,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5610
+  line: banim_efxmagic.c:6756
 -
   desc: NewEfxDivineBG
   label: NewEfxDivineBG
@@ -36193,7 +36193,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5668
+  line: banim_efxmagic.c:6814
 -
   desc: NewEfxDivineBG2
   label: NewEfxDivineBG2
@@ -36202,7 +36202,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5695
+  line: banim_efxmagic.c:6872
 -
   desc: NewEfxDivineBG3
   label: NewEfxDivineBG3
@@ -36211,7 +36211,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5722
+  line: banim_efxmagic.c:6906
 -
   desc: EfxDivineBG_Loop
   label: EfxDivineBG_Loop
@@ -36220,7 +36220,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5750
+  line: banim_efxmagic.c:6959
 -
   desc: NewEfxDivineOBJ
   label: NewEfxDivineOBJ
@@ -36229,7 +36229,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5772
+  line: banim_efxmagic.c:6981
 -
   desc: EfxDivineOBJ_Loop
   label: EfxDivineOBJ_Loop
@@ -36238,7 +36238,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5795
+  line: banim_efxmagic.c:7004
 -
   desc: StartSpellAnimAureola
   label: StartSpellAnimAureola
@@ -36247,7 +36247,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5809
+  line: banim_efxmagic.c:7018
 -
   desc: EfxAureola_Loop
   label: EfxAureola_Loop
@@ -36256,7 +36256,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5823
+  line: banim_efxmagic.c:7032
 -
   desc: NewEfxAureolaBG
   label: NewEfxAureolaBG
@@ -36265,7 +36265,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5881
+  line: banim_efxmagic.c:7090
 -
   desc: EfxAureolaBG_Loop
   label: EfxAureolaBG_Loop
@@ -36274,7 +36274,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5910
+  line: banim_efxmagic.c:7128
 -
   desc: NewEfxAureolaBG2
   label: NewEfxAureolaBG2
@@ -36283,7 +36283,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5931
+  line: banim_efxmagic.c:7149
 -
   desc: EfxAureolaBG2_Loop
   label: EfxAureolaBG2_Loop
@@ -36292,7 +36292,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5952
+  line: banim_efxmagic.c:7170
 -
   desc: NewEfxAureolaBG2COL
   label: NewEfxAureolaBG2COL
@@ -36301,7 +36301,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:5985
+  line: banim_efxmagic.c:7203
 -
   desc: EfxAureolaBG2COL_Loop
   label: EfxAureolaBG2COL_Loop
@@ -36310,7 +36310,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6002
+  line: banim_efxmagic.c:7228
 -
   desc: NewEfxAureolaOBJ
   label: NewEfxAureolaOBJ
@@ -36319,7 +36319,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6019
+  line: banim_efxmagic.c:7245
 -
   desc: EfxAureolaOBJ_Loop
   label: EfxAureolaOBJ_Loop
@@ -36328,7 +36328,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6037
+  line: banim_efxmagic.c:7263
 -
   desc: NewEfxAureolaOBJCtrl
   label: NewEfxAureolaOBJCtrl
@@ -36337,7 +36337,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6057
+  line: banim_efxmagic.c:7283
 -
   desc: EfxAureolaOBJCtrl_Loop
   label: EfxAureolaOBJCtrl_Loop
@@ -36346,7 +36346,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6112
+  line: banim_efxmagic.c:7338
 -
   desc: NewEfxAureolaOBJ2
   label: NewEfxAureolaOBJ2
@@ -36355,7 +36355,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6132
+  line: banim_efxmagic.c:7358
 -
   desc: EfxAureolaOBJ2_Loop
   label: EfxAureolaOBJ2_Loop
@@ -36364,7 +36364,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6174
+  line: banim_efxmagic.c:7400
 -
   desc: NewEfxAureolaOBJ3
   label: NewEfxAureolaOBJ3
@@ -36373,7 +36373,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6200
+  line: banim_efxmagic.c:7426
 -
   desc: EfxAureolaOBJ3_Loop
   label: EfxAureolaOBJ3_Loop
@@ -36382,7 +36382,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6213
+  line: banim_efxmagic.c:7439
 -
   desc: NewEfxAureolaOBJ3Ctrl
   label: NewEfxAureolaOBJ3Ctrl
@@ -36391,7 +36391,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6233
+  line: banim_efxmagic.c:7459
 -
   desc: EfxAureolaOBJ3Ctrl_Loop
   label: EfxAureolaOBJ3Ctrl_Loop
@@ -36400,7 +36400,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6277
+  line: banim_efxmagic.c:7503
 -
   desc: StartSpellAnimApocalypse
   label: StartSpellAnimApocalypse
@@ -36409,7 +36409,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6300
+  line: banim_efxmagic.c:7677
 -
   desc: EfxApocalypse_Loop
   label: EfxApocalypse_Loop
@@ -36418,7 +36418,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6314
+  line: banim_efxmagic.c:7691
 -
   desc: NewEfxApocalypseBG
   label: NewEfxApocalypseBG
@@ -36427,7 +36427,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6382
+  line: banim_efxmagic.c:7759
 -
   desc: EfxApocalypseBG_Loop
   label: EfxApocalypseBG_Loop
@@ -36436,7 +36436,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6401
+  line: banim_efxmagic.c:7778
 -
   desc: NewEfxApocalypseBGCtrl
   label: NewEfxApocalypseBGCtrl
@@ -36445,7 +36445,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6411
+  line: banim_efxmagic.c:7788
 -
   desc: EfxApocalypseBGCtrl_Loop
   label: EfxApocalypseBGCtrl_Loop
@@ -36454,7 +36454,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6425
+  line: banim_efxmagic.c:7802
 -
   desc: NewEfxApocalypseBGCOL
   label: NewEfxApocalypseBGCOL
@@ -36463,7 +36463,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6458
+  line: banim_efxmagic.c:7835
 -
   desc: EfxApocalypseBGCOL_Loop
   label: EfxApocalypseBGCOL_Loop
@@ -36472,7 +36472,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6474
+  line: banim_efxmagic.c:7851
 -
   desc: NewEfxApocalypseOBJ
   label: NewEfxApocalypseOBJ
@@ -36481,7 +36481,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6489
+  line: banim_efxmagic.c:7866
 -
   desc: EfxApocalypseOBJ_Loop1
   label: EfxApocalypseOBJ_Loop1
@@ -36490,7 +36490,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic.c:6504
+  line: banim_efxmagic.c:7881
 -
   desc: EfxApocalypseOBJ_Loop2
   label: EfxApocalypseOBJ_Loop2
@@ -36499,7 +36499,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:7908
 -
   desc: EfxApocalypseOBJ_Loop3
   label: EfxApocalypseOBJ_Loop3
@@ -36508,7 +36508,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:7949
 -
   desc: EfxApocalypseOBJ_Loop4
   label: EfxApocalypseOBJ_Loop4
@@ -36517,7 +36517,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:7990
 -
   desc: NewEfxApocalypseBGCOL2
   label: NewEfxApocalypseBGCOL2
@@ -36526,7 +36526,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8037
 -
   desc: EfxApocalypseBGCOL2_Loop
   label: EfxApocalypseBGCOL2_Loop
@@ -36535,7 +36535,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8072
 -
   desc: NewEfxApocalypseDummy
   label: NewEfxApocalypseDummy
@@ -36544,7 +36544,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8090
 -
   desc: EfxApocalypseDummy_Loop
   label: EfxApocalypseDummy_Loop
@@ -36553,7 +36553,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8103
 -
   desc: NewEfxApocalypseBgFlash1
   label: NewEfxApocalypseBgFlash1
@@ -36562,7 +36562,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8117
 -
   desc: EfxApocalypseBgFlash1_Loop
   label: EfxApocalypseBgFlash1_Loop
@@ -36571,7 +36571,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8130
 -
   desc: NewEfxApocalypseBgFlash2
   label: NewEfxApocalypseBgFlash2
@@ -36580,16 +36580,16 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8141
 -
   desc: EfxApocalypseBgFlash2_Loop1
   label: EfxApocalypseBgFlash2_Loop1
   addr: 0x80531F4
-  size: 0x24
+  size: 0x22
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8154
 -
   desc: EfxApocalypseBgFlash2_Loop2
   label: EfxApocalypseBgFlash2_Loop2
@@ -36598,7 +36598,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8164
 -
   desc: NewEfxApocalypseBG2
   label: NewEfxApocalypseBG2
@@ -36607,7 +36607,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8181
 -
   desc: EfxApocalypseBG2_Loop
   label: EfxApocalypseBG2_Loop
@@ -36616,7 +36616,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8224
 -
   desc: NewEfxApocalypseOBJ2
   label: NewEfxApocalypseOBJ2
@@ -36625,7 +36625,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8265
 -
   desc: EfxApocalypseOBJ2_Loop1
   label: EfxApocalypseOBJ2_Loop1
@@ -36634,7 +36634,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8294
 -
   desc: EfxApocalypseOBJ2_Loop2
   label: EfxApocalypseOBJ2_Loop2
@@ -36643,7 +36643,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8310
 -
   desc: NewEfxApocalypseOBJ3
   label: NewEfxApocalypseOBJ3
@@ -36652,7 +36652,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8321
 -
   desc: EfxApocalypseOBJ3_Loop
   label: EfxApocalypseOBJ3_Loop
@@ -36661,7 +36661,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8337
 -
   desc: NewEfxApocalypseOBJ3RND
   label: NewEfxApocalypseOBJ3RND
@@ -36670,7 +36670,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8372
 -
   desc: EfxApocalypseOBJ3RND_Loop
   label: EfxApocalypseOBJ3RND_Loop
@@ -36679,7 +36679,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8425
 -
   desc: StartSpellAnimEclipse
   label: StartSpellAnimEclipse
@@ -36688,7 +36688,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic3.c:13
+  line: banim_efxmagic.c:8724
 -
   desc: EfxHazymoon_Loop
   label: EfxHazymoon_Loop
@@ -36697,7 +36697,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic3.c:27
+  line: banim_efxmagic.c:8738
 -
   desc: NewEfxHazymoonBG1
   label: NewEfxHazymoonBG1
@@ -36706,7 +36706,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic3.c:96
+  line: banim_efxmagic.c:8807
 -
   desc: NewEfxHazymoonBG2
   label: NewEfxHazymoonBG2
@@ -36715,7 +36715,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic3.c:117
+  line: banim_efxmagic.c:8833
 -
   desc: NewEfxHazymoonBG3
   label: NewEfxHazymoonBG3
@@ -36724,7 +36724,7 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic3.c:138
+  line: banim_efxmagic.c:8898
 -
   desc: EfxHazymoonBG_Loop
   label: EfxHazymoonBG_Loop
@@ -36733,16 +36733,16 @@
   mode: thumb
   params: null
   return: null
-  line: banim_efxmagic3.c:157
+  line: banim_efxmagic.c:8934
 -
   desc: NewEfxHazymoonOBJ2
   label: NewEfxHazymoonOBJ2
   addr: 0x8053AFC
-  size: 0x8C
+  size: 0x8A
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8956
 -
   desc: EfxHazymoonOBJ2_OnEnd
   label: EfxHazymoonOBJ2_OnEnd
@@ -36751,34 +36751,34 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8988
 -
   desc: EfxHazymoonOBJ2_Loop1
   label: EfxHazymoonOBJ2_Loop1
   addr: 0x8053BA0
-  size: 0x5C
+  size: 0x5A
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:8994
 -
   desc: EfxHazymoonOBJ2_Loop2
   label: EfxHazymoonOBJ2_Loop2
   addr: 0x8053BFC
-  size: 0x5C
+  size: 0x5A
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9013
 -
   desc: EfxHazymoonOBJ2_Loop3
   label: EfxHazymoonOBJ2_Loop3
   addr: 0x8053C58
-  size: 0x5C
+  size: 0x5A
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9032
 -
   desc: NewEfxHazymoonOBJ3
   label: NewEfxHazymoonOBJ3
@@ -36787,7 +36787,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9051
 -
   desc: EfxHazymoonOBJ3_Loop
   label: EfxHazymoonOBJ3_Loop
@@ -36796,7 +36796,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9067
 -
   desc: NewEfxHazymoonOBJ3RND
   label: NewEfxHazymoonOBJ3RND
@@ -36805,7 +36805,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9095
 -
   desc: EfxHazymoonOBJ3RND_Loop
   label: EfxHazymoonOBJ3RND_Loop
@@ -36814,7 +36814,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9113
 -
   desc: StartSpellAnimFenrir
   label: StartSpellAnimFenrir
@@ -36823,7 +36823,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9122
 -
   desc: EfxFenrir_Loop
   label: EfxFenrir_Loop
@@ -36832,7 +36832,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9136
 -
   desc: NewEfxFenrirBG
   label: NewEfxFenrirBG
@@ -36841,7 +36841,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9213
 -
   desc: EfxFenrirBG_OnEnd
   label: EfxFenrirBG_OnEnd
@@ -36850,7 +36850,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9236
 -
   desc: EfxFenrirBG_Loop
   label: EfxFenrirBG_Loop
@@ -36859,7 +36859,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9243
 -
   desc: NewEfxFenrirBGCOL
   label: NewEfxFenrirBGCOL
@@ -36868,7 +36868,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9254
 -
   desc: EfxFenrirBGCOL_OnEnd
   label: EfxFenrirBGCOL_OnEnd
@@ -36877,7 +36877,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9291
 -
   desc: EfxFenrirBGCOL_Loop
   label: EfxFenrirBGCOL_Loop
@@ -36886,7 +36886,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9296
 -
   desc: NewEfxFenrirOBJ
   label: NewEfxFenrirOBJ
@@ -36895,7 +36895,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9315
 -
   desc: EfxFenrirOBJ_Loop
   label: EfxFenrirOBJ_Loop
@@ -36904,7 +36904,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9334
 -
   desc: NewEfxFenrirBG2_A
   label: NewEfxFenrirBG2_A
@@ -36913,7 +36913,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9345
 -
   desc: NewEfxFenrirBG2_B
   label: NewEfxFenrirBG2_B
@@ -36922,7 +36922,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9441
 -
   desc: EfxFenrirBG2_Loop
   label: EfxFenrirBG2_Loop
@@ -36931,7 +36931,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9467
 -
   desc: NewEfxFenrirOBJ2
   label: NewEfxFenrirOBJ2
@@ -36940,7 +36940,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9498
 -
   desc: EfxFenrirOBJ2_Loop
   label: EfxFenrirOBJ2_Loop
@@ -36949,7 +36949,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9514
 -
   desc: NewEfxFenrirOBJ2Chiri
   label: NewEfxFenrirOBJ2Chiri
@@ -36958,7 +36958,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9532
 -
   desc: EfxFenrirOBJ2Chiri_Loop
   label: EfxFenrirOBJ2Chiri_Loop
@@ -36967,7 +36967,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9566
 -
   desc: StartSpellAnimHeal
   label: StartSpellAnimHeal
@@ -36976,16 +36976,16 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9607
 -
   desc: EfxLive_Loop
   label: EfxLive_Loop
   addr: 0x8054580
-  size: 0x128
+  size: 0x126
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9620
 -
   desc: StartSpellAnimMend
   label: StartSpellAnimMend
@@ -36994,16 +36994,16 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9669
 -
   desc: EfxRelive_Loop
   label: EfxRelive_Loop
   addr: 0x80546D0
-  size: 0x178
+  size: 0x176
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9682
 -
   desc: StartSpellAnimRecover
   label: StartSpellAnimRecover
@@ -37012,16 +37012,16 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9736
 -
   desc: EfxRecover_Loop
   label: EfxRecover_Loop
   addr: 0x8054870
-  size: 0x178
+  size: 0x176
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9749
 -
   desc: StartSpellAnimPhysic
   label: StartSpellAnimPhysic
@@ -37030,16 +37030,16 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9802
 -
   desc: EfxReblow_Loop
   label: EfxReblow_Loop
   addr: 0x8054A10
-  size: 0x188
+  size: 0x186
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9815
 -
   desc: NewEfxLiveBG_A
   label: NewEfxLiveBG_A
@@ -37048,7 +37048,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9914
 -
   desc: NewEfxLiveBG_B
   label: NewEfxLiveBG_B
@@ -37057,7 +37057,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9956
 -
   desc: EfxLiveBG_Loop
   label: EfxLiveBG_Loop
@@ -37066,7 +37066,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:9997
 -
   desc: NewEfxLiveBGCOL_A
   label: NewEfxLiveBGCOL_A
@@ -37075,7 +37075,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10098
 -
   desc: NewEfxLiveBGCOL_B
   label: NewEfxLiveBGCOL_B
@@ -37084,7 +37084,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10123
 -
   desc: EfxLiveBGCOL_Loop
   label: EfxLiveBGCOL_Loop
@@ -37093,7 +37093,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10148
 -
   desc: NewEfxLiveALPHA
   label: NewEfxLiveALPHA
@@ -37102,16 +37102,16 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10162
 -
   desc: EfxLiveALPHA_Delay
   label: EfxLiveALPHA_Delay
   addr: 0x8054EDC
-  size: 0x1C
+  size: 0x1A
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10174
 -
   desc: EfxLiveALPHA_Loop
   label: EfxLiveALPHA_Loop
@@ -37120,7 +37120,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10184
 -
   desc: NewEfxLiveOBJ
   label: NewEfxLiveOBJ
@@ -37129,7 +37129,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10203
 -
   desc: NewEfxReserveOBJ
   label: NewEfxReserveOBJ
@@ -37138,7 +37138,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10227
 -
   desc: EfxLiveOBJ_Loop
   label: EfxLiveOBJ_Loop
@@ -37147,7 +37147,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10244
 -
   desc: EfxReserveOBJ_Loop1
   label: EfxReserveOBJ_Loop1
@@ -37156,7 +37156,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10255
 -
   desc: EfxReserveOBJ_Loop2
   label: EfxReserveOBJ_Loop2
@@ -37165,25 +37165,25 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10271
 -
   desc: NewEfxReblowOBJ
   label: NewEfxReblowOBJ
   addr: 0x80550EC
-  size: 0x48
+  size: 0x46
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10289
 -
   desc: EfxReblowOBJ_Loop1
   label: EfxReblowOBJ_Loop1
   addr: 0x8055134
-  size: 0xCC
+  size: 0xCA
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10308
 -
   desc: EfxReblowOBJ_Loop2
   label: EfxReblowOBJ_Loop2
@@ -37192,7 +37192,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10371
 -
   desc: StartSpellAnimFortify
   label: StartSpellAnimFortify
@@ -37201,7 +37201,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10432
 -
   desc: StartSpellAnimLatona
   label: StartSpellAnimLatona
@@ -37210,7 +37210,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10446
 -
   desc: EfxReserve_Loop
   label: EfxReserve_Loop
@@ -37219,7 +37219,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10460
 -
   desc: NewEfxReserveBG
   label: NewEfxReserveBG
@@ -37228,7 +37228,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10486
 -
   desc: EfxReserveBG_Loop
   label: EfxReserveBG_Loop
@@ -37237,7 +37237,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10510
 -
   desc: NewEfxReserveBGCOL
   label: NewEfxReserveBGCOL
@@ -37246,7 +37246,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10551
 -
   desc: EfxReserveBGCOL_Loop
   label: EfxReserveBGCOL_Loop
@@ -37255,7 +37255,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10638
 -
   desc: NewEfxReserveBG2
   label: NewEfxReserveBG2
@@ -37264,7 +37264,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10655
 -
   desc: EfxReserveBG2_Loop
   label: EfxReserveBG2_Loop
@@ -37273,7 +37273,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10688
 -
   desc: NewEfxReserveBGCOL2
   label: NewEfxReserveBGCOL2
@@ -37282,7 +37282,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10720
 -
   desc: EfxReserveBGCOL2_Loop
   label: EfxReserveBGCOL2_Loop
@@ -37291,7 +37291,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10798
 -
   desc: StartSpellAnimRestore
   label: StartSpellAnimRestore
@@ -37300,7 +37300,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10871
 -
   desc: EfxRest_Loop
   label: EfxRest_Loop
@@ -37309,7 +37309,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10885
 -
   desc: NewEfxRestBG
   label: NewEfxRestBG
@@ -37318,7 +37318,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10922
 -
   desc: EfxRestBG_Loop
   label: EfxRestBG_Loop
@@ -37327,7 +37327,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10956
 -
   desc: NewEfxRestOBJ
   label: NewEfxRestOBJ
@@ -37336,7 +37336,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:10979
 -
   desc: EfxRestOBJ_Loop
   label: EfxRestOBJ_Loop
@@ -37345,7 +37345,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11002
 -
   desc: StartSpellAnimSilence
   label: StartSpellAnimSilence
@@ -37354,16 +37354,16 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11051
 -
   desc: EfxSilence_Loop
   label: EfxSilence_Loop
   addr: 0x8055998
-  size: 0x108
+  size: 0x106
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11065
 -
   desc: NewEfxSilenceBG
   label: NewEfxSilenceBG
@@ -37372,7 +37372,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11103
 -
   desc: EfxSilenceBG_Loop
   label: EfxSilenceBG_Loop
@@ -37381,7 +37381,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11149
 -
   desc: NewEfxSilenceOBJ
   label: NewEfxSilenceOBJ
@@ -37390,7 +37390,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11170
 -
   desc: EfxSilenceOBJ_OnEnd
   label: EfxSilenceOBJ_OnEnd
@@ -37399,7 +37399,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11183
 -
   desc: StartSpellAnimSleep
   label: StartSpellAnimSleep
@@ -37408,16 +37408,16 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11252
 -
   desc: EfxSleep_Loop
   label: EfxSleep_Loop
   addr: 0x8055C30
-  size: 0x100
+  size: 0xFE
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11266
 -
   desc: NewEfxSleepBG
   label: NewEfxSleepBG
@@ -37426,7 +37426,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11304
 -
   desc: EfxSleepBG_Loop
   label: EfxSleepBG_Loop
@@ -37435,7 +37435,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11396
 -
   desc: NewEfxSleepOBJ
   label: NewEfxSleepOBJ
@@ -37444,7 +37444,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11417
 -
   desc: NewEfxSleepOBJ2
   label: NewEfxSleepOBJ2
@@ -37453,7 +37453,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11430
 -
   desc: EfxSleepOBJ_OnEnd
   label: EfxSleepOBJ_OnEnd
@@ -37462,7 +37462,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11447
 -
   desc: NewEfxSleepSE
   label: NewEfxSleepSE
@@ -37471,16 +37471,16 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11452
 -
   desc: EfxSleepSE_PlaySE
   label: EfxSleepSE_PlaySE
   addr: 0x8055EF4
-  size: 0x20
+  size: 0x1E
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11461
 -
   desc: EfxSleepSE_OnEnd
   label: EfxSleepSE_OnEnd
@@ -37489,7 +37489,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11466
 -
   desc: StartSpellAnimHammerne
   label: StartSpellAnimHammerne
@@ -37498,7 +37498,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11527
 -
   desc: EfxHammarne_Loop
   label: EfxHammarne_Loop
@@ -37507,7 +37507,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11541
 -
   desc: NewEfxHammarneBG
   label: NewEfxHammarneBG
@@ -37516,7 +37516,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11577
 -
   desc: EfxHammarneBG_Loop
   label: EfxHammarneBG_Loop
@@ -37525,7 +37525,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11611
 -
   desc: NewEfxHammarneOBJ
   label: NewEfxHammarneOBJ
@@ -37534,7 +37534,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11634
 -
   desc: EfxHammarneOBJ_OnEnd
   label: EfxHammarneOBJ_OnEnd
@@ -37543,7 +37543,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11647
 -
   desc: StartSpellAnimBerserk
   label: StartSpellAnimBerserk
@@ -37552,16 +37552,16 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11701
 -
   desc: EfxBerserk_Loop
   label: EfxBerserk_Loop
   addr: 0x80561DC
-  size: 0xE4
+  size: 0xE2
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11715
 -
   desc: NewEfxBerserkBG
   label: NewEfxBerserkBG
@@ -37570,7 +37570,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11750
 -
   desc: EfxBerserkBG_Loop
   label: EfxBerserkBG_Loop
@@ -37579,7 +37579,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11778
 -
   desc: NewEfxBerserkCLONE
   label: NewEfxBerserkCLONE
@@ -37588,7 +37588,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11795
 -
   desc: EfxBerserkCLONE_Loop
   label: EfxBerserkCLONE_Loop
@@ -37597,7 +37597,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11806
 -
   desc: EfxBerserkCLONE_OnEnd
   label: EfxBerserkCLONE_OnEnd
@@ -37606,7 +37606,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11825
 -
   desc: NewEfxBerserkOBJ
   label: NewEfxBerserkOBJ
@@ -37615,7 +37615,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11830
 -
   desc: EfxBerserkOBJ_OnEnd
   label: EfxBerserkOBJ_OnEnd
@@ -37624,7 +37624,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11853
 -
   desc: EfxBerserkOBJ_Loop1
   label: EfxBerserkOBJ_Loop1
@@ -37633,7 +37633,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11859
 -
   desc: EfxBerserkOBJ_Loop3
   label: EfxBerserkOBJ_Loop3
@@ -37642,7 +37642,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11871
 -
   desc: EfxBerserkOBJ_Loop5
   label: EfxBerserkOBJ_Loop5
@@ -37651,7 +37651,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11883
 -
   desc: EfxBerserkOBJ_Loop7
   label: EfxBerserkOBJ_Loop7
@@ -37660,7 +37660,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11895
 -
   desc: EfxBerserkOBJ_Loop9
   label: EfxBerserkOBJ_Loop9
@@ -37669,7 +37669,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11907
 -
   desc: EfxBerserkOBJ_Loop2
   label: EfxBerserkOBJ_Loop2
@@ -37678,7 +37678,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11919
 -
   desc: EfxBerserkOBJ_Loop4
   label: EfxBerserkOBJ_Loop4
@@ -37687,7 +37687,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11931
 -
   desc: EfxBerserkOBJ_Loop6
   label: EfxBerserkOBJ_Loop6
@@ -37696,7 +37696,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11943
 -
   desc: EfxBerserkOBJ_Loop8
   label: EfxBerserkOBJ_Loop8
@@ -37705,7 +37705,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11955
 -
   desc: EfxBerserkOBJ_Loop10
   label: EfxBerserkOBJ_Loop10
@@ -37714,7 +37714,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:11967
 -
   desc: StartSpellAnimBarrier
   label: StartSpellAnimBarrier
@@ -37723,7 +37723,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:12017
 -
   desc: EfxMshield_Loop
   label: EfxMshield_Loop
@@ -37732,7 +37732,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:12031
 -
   desc: NewEfxMshieldBG
   label: NewEfxMshieldBG
@@ -37741,7 +37741,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:12066
 -
   desc: EfxMshieldBG_Loop
   label: EfxMshieldBG_Loop
@@ -37750,7 +37750,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:12138
 -
   desc: NewEfxMshieldOBJ
   label: NewEfxMshieldOBJ
@@ -37759,7 +37759,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:12159
 -
   desc: NewEfxMshieldOBJ2
   label: NewEfxMshieldOBJ2
@@ -37768,7 +37768,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:12177
 -
   desc: EfxMshieldOBJ_OnEnd
   label: EfxMshieldOBJ_OnEnd
@@ -37777,7 +37777,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: banim_efxmagic.c:12193
 -
   desc: NewEfxDamageMojiEffect
   label: NewEfxDamageMojiEffect
@@ -51316,7 +51316,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: prepscreenfx2.c:25
 -
   desc: func_fe6_0807D9E4
   label: func_fe6_0807D9E4
@@ -51325,7 +51325,7 @@
   mode: thumb
   params: null
   return: null
-  line: prepscreenfx2.c:50
+  line: prepscreenfx2.c:105
 -
   desc: func_fe6_0807DB80
   label: func_fe6_0807DB80
@@ -51334,7 +51334,7 @@
   mode: thumb
   params: null
   return: null
-  line: prepscreenfx2.c:92
+  line: prepscreenfx2.c:147
 -
   desc: PrepAllItems_PutPName
   label: PrepAllItems_PutPName
@@ -51343,7 +51343,7 @@
   mode: thumb
   params: null
   return: null
-  line: prepscreenfx2.c:125
+  line: prepscreenfx2.c:180
 -
   desc: PrepAllItems_PutTotalNum
   label: PrepAllItems_PutTotalNum
@@ -51352,7 +51352,7 @@
   mode: thumb
   params: null
   return: null
-  line: prepscreenfx2.c:150
+  line: prepscreenfx2.c:205
 -
   desc: PrepAllItems_Update
   label: PrepAllItems_Update
@@ -51361,7 +51361,7 @@
   mode: thumb
   params: null
   return: null
-  line: prepscreenfx2.c:164
+  line: prepscreenfx2.c:219
 -
   desc: func_fe6_0807DEC8
   label: func_fe6_0807DEC8
@@ -51370,7 +51370,7 @@
   mode: thumb
   params: null
   return: null
-  line: prepscreenfx2.c:182
+  line: prepscreenfx2.c:237
 -
   desc: PrepAllItems_SwapItems
   label: PrepAllItems_SwapItems
@@ -51379,7 +51379,7 @@
   mode: thumb
   params: null
   return: null
-  line: prepscreenfx2.c:204
+  line: prepscreenfx2.c:259
 -
   desc: func_fe6_0807DFEC
   label: func_fe6_0807DFEC
@@ -51388,7 +51388,7 @@
   mode: thumb
   params: null
   return: null
-  line: prepscreenfx2.c:234
+  line: prepscreenfx2.c:289
 -
   desc: func_fe6_0807E06C
   label: func_fe6_0807E06C
@@ -51397,7 +51397,7 @@
   mode: thumb
   params: null
   return: null
-  line: prep_subitemscreen1.c:21
+  line: prep_subitemscreen1.c:22
 -
   desc: PrepSubItemScreen_Init
   label: PrepSubItemScreen_Init
@@ -51406,7 +51406,7 @@
   mode: thumb
   params: null
   return: null
-  line: prep_subitemscreen1.c:40
+  line: prep_subitemscreen1.c:41
 -
   desc: PrepSubItem_StartTradeScreen
   label: PrepSubItem_StartTradeScreen
@@ -51415,7 +51415,7 @@
   mode: thumb
   params: null
   return: null
-  line: prep_subitemscreen1.c:151
+  line: prep_subitemscreen1.c:152
 -
   desc: func_fe6_0807E544
   label: func_fe6_0807E544
@@ -51424,7 +51424,7 @@
   mode: thumb
   params: null
   return: null
-  line: prep_subitemscreen1.c:196
+  line: prep_subitemscreen1.c:197
 -
   desc: PrepSubItem_Trade_Loop
   label: PrepSubItem_Trade_Loop
@@ -51433,7 +51433,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: prep_subitemscreen1.c:213
 -
   desc: PrepSubItem_StartViewAllScreen
   label: PrepSubItem_StartViewAllScreen
@@ -51948,23 +51948,23 @@
   return: null
   line: prep_utils.c:233
 -
-  desc: func_fe6_08082E74
-  label: func_fe6_08082E74
+  desc: SecretScreen_InitBitstream
+  label: SecretScreen_InitBitstream
   addr: 0x8082E74
   size: 0x4C
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: secretscreen_08082E74.c:5
 -
-  desc: func_fe6_08082EC0
-  label: func_fe6_08082EC0
+  desc: SecretScreen_CeilDivBitCount
+  label: SecretScreen_CeilDivBitCount
   addr: 0x8082EC0
   size: 0x2C
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: secretscreen_08082E74.c:21
 -
   desc: GetSecretScreenRN
   label: GetSecretScreenRN
@@ -51973,46 +51973,46 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: secretscreen_08082E74.c:35
 -
-  desc: func_fe6_08082F18
-  label: func_fe6_08082F18
+  desc: SecretScreen_ShufflePasswordBuf
+  label: SecretScreen_ShufflePasswordBuf
   addr: 0x8082F18
   size: 0x3C
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: secretscreen_08082E74.c:69
 -
-  desc: func_fe6_08082F54
-  label: func_fe6_08082F54
+  desc: SecretScreen_WriteBits
+  label: SecretScreen_WriteBits
   addr: 0x8082F54
   size: 0x94
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: secretscreen_08082E74.c:108
 -
-  desc: SecretRnGetter_08082FE8
-  label: SecretRnGetter_08082FE8
+  desc: SecretScreen_ReadBits
+  label: SecretScreen_ReadBits
   addr: 0x8082FE8
   size: 0x90
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: secretscreen_08082E74.c:123
 -
-  desc: func_fe6_08083078
-  label: func_fe6_08083078
+  desc: SecretScreen_ChecksumPasswordBuf
+  label: SecretScreen_ChecksumPasswordBuf
   addr: 0x8083078
   size: 0x34
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: secretscreen_08082E74.c:139
 -
-  desc: func_fe6_080830AC
-  label: func_fe6_080830AC
+  desc: SecretScreen_EmbedPasswordMeta
+  label: SecretScreen_EmbedPasswordMeta
   addr: 0x80830AC
   size: 0xD4
   mode: thumb
@@ -52020,8 +52020,8 @@
   return: null
   line: ''
 -
-  desc: func_fe6_08083180
-  label: func_fe6_08083180
+  desc: SecretScreen_ExtractPasswordMeta
+  label: SecretScreen_ExtractPasswordMeta
   addr: 0x8083180
   size: 0x120
   mode: thumb
@@ -52029,8 +52029,8 @@
   return: null
   line: ''
 -
-  desc: ModifyPassword
-  label: ModifyPassword
+  desc: SecretScreen_ModifyPassword
+  label: SecretScreen_ModifyPassword
   addr: 0x80832A0
   size: 0xD8
   mode: thumb
@@ -52038,8 +52038,8 @@
   return: null
   line: ''
 -
-  desc: func_fe6_08083378
-  label: func_fe6_08083378
+  desc: SecretScreen_VerifyPassword
+  label: SecretScreen_VerifyPassword
   addr: 0x8083378
   size: 0xD4
   mode: thumb
@@ -52047,8 +52047,8 @@
   return: null
   line: ''
 -
-  desc: func_fe6_0808344C
-  label: func_fe6_0808344C
+  desc: SecretScreen_FindGlyphIndex
+  label: SecretScreen_FindGlyphIndex
   addr: 0x808344C
   size: 0x30
   mode: thumb
@@ -52056,8 +52056,8 @@
   return: null
   line: ''
 -
-  desc: func_fe6_0808347C
-  label: func_fe6_0808347C
+  desc: SecretScreen_MapGlyphsToPasswordBuf
+  label: SecretScreen_MapGlyphsToPasswordBuf
   addr: 0x808347C
   size: 0x38
   mode: thumb
@@ -52065,8 +52065,8 @@
   return: null
   line: ''
 -
-  desc: InitPassword
-  label: InitPassword
+  desc: SecretScreen_EncodePlayRankStats
+  label: SecretScreen_EncodePlayRankStats
   addr: 0x80834B4
   size: 0xC8
   mode: thumb
@@ -52074,8 +52074,8 @@
   return: null
   line: ''
 -
-  desc: func_fe6_0808357C
-  label: func_fe6_0808357C
+  desc: SecretScreen_DecodePlayRankStats
+  label: SecretScreen_DecodePlayRankStats
   addr: 0x808357C
   size: 0x9C
   mode: thumb
@@ -52083,8 +52083,8 @@
   return: null
   line: ''
 -
-  desc: func_fe6_08083618
-  label: func_fe6_08083618
+  desc: SecretScreen_FillPlayRankStats
+  label: SecretScreen_FillPlayRankStats
   addr: 0x8083618
   size: 0x70
   mode: thumb
@@ -52092,8 +52092,8 @@
   return: null
   line: ''
 -
-  desc: PrintPassword
-  label: PrintPassword
+  desc: SecretScreen_PrintPlayRankPassword
+  label: SecretScreen_PrintPlayRankPassword
   addr: 0x8083688
   size: 0xC8
   mode: thumb
@@ -52101,8 +52101,8 @@
   return: null
   line: ''
 -
-  desc: func_fe6_08083750
-  label: func_fe6_08083750
+  desc: SecretScreen_PrintPlayRankStatNumbers
+  label: SecretScreen_PrintPlayRankStatNumbers
   addr: 0x8083750
   size: 0x78
   mode: thumb
@@ -52110,8 +52110,8 @@
   return: null
   line: ''
 -
-  desc: func_fe6_080837C8
-  label: func_fe6_080837C8
+  desc: SecretScreen_PlayRankPasswordInit
+  label: SecretScreen_PlayRankPasswordInit
   addr: 0x80837C8
   size: 0x134
   mode: thumb
@@ -52119,8 +52119,8 @@
   return: null
   line: ''
 -
-  desc: func_fe6_080838FC
-  label: func_fe6_080838FC
+  desc: SecretScreen_PlayRankPasswordLoop
+  label: SecretScreen_PlayRankPasswordLoop
   addr: 0x80838FC
   size: 0x4
   mode: thumb
@@ -52128,8 +52128,8 @@
   return: null
   line: ''
 -
-  desc: func_fe6_08083900
-  label: func_fe6_08083900
+  desc: SecretScreen_PlayRankPasswordEnd
+  label: SecretScreen_PlayRankPasswordEnd
   addr: 0x8083900
   size: 0x30
   mode: thumb
@@ -52146,8 +52146,8 @@
   return: null
   line: ''
 -
-  desc: func_fe6_08083944
-  label: func_fe6_08083944
+  desc: SecretScreen_EncodeUnitData
+  label: SecretScreen_EncodeUnitData
   addr: 0x8083944
   size: 0x124
   mode: thumb
@@ -52155,14 +52155,14 @@
   return: null
   line: ''
 -
-  desc: func_fe6_08083A68
-  label: func_fe6_08083A68
+  desc: SecretScreen_DecodeUnitData
+  label: SecretScreen_DecodeUnitData
   addr: 0x8083A68
   size: 0x124
   mode: thumb
   params: null
   return: null
-  line: secretscreen.c:25
+  line: secretscreen.c:27
 -
   desc: GetFlattenArrayOffset
   label: GetFlattenArrayOffset
@@ -52171,16 +52171,16 @@
   mode: thumb
   params: null
   return: null
-  line: secretscreen.c:58
+  line: secretscreen.c:60
 -
-  desc: func_fe6_08083BC4
-  label: func_fe6_08083BC4
+  desc: SecretScreen_PackUnitData
+  label: SecretScreen_PackUnitData
   addr: 0x8083BC4
   size: 0x2AC
   mode: thumb
   params: null
   return: null
-  line: secretscreen.c:74
+  line: secretscreen.c:76
 -
   desc: PrintSecretScreenTexts
   label: PrintSecretScreenTexts
@@ -52189,7 +52189,7 @@
   mode: thumb
   params: null
   return: null
-  line: secretscreen.c:149
+  line: secretscreen.c:151
 -
   desc: PutSecretScreenLineNumber
   label: PutSecretScreenLineNumber
@@ -52198,7 +52198,7 @@
   mode: thumb
   params: null
   return: null
-  line: secretscreen.c:191
+  line: secretscreen.c:193
 -
   desc: SecretScreen_Init
   label: SecretScreen_Init
@@ -52207,7 +52207,7 @@
   mode: thumb
   params: null
   return: null
-  line: secretscreen.c:206
+  line: secretscreen.c:208
 -
   desc: SecretScreen_Loop_Dummy
   label: SecretScreen_Loop_Dummy
@@ -52216,7 +52216,7 @@
   mode: thumb
   params: null
   return: null
-  line: secretscreen.c:250
+  line: secretscreen.c:252
 -
   desc: SecretScreen_End
   label: SecretScreen_End
@@ -52225,7 +52225,7 @@
   mode: thumb
   params: null
   return: null
-  line: secretscreen.c:253
+  line: secretscreen.c:255
 -
   desc: NewGeneralSecretScreen
   label: NewGeneralSecretScreen
@@ -52234,7 +52234,7 @@
   mode: thumb
   params: null
   return: null
-  line: secretscreen.c:259
+  line: secretscreen.c:261
 -
   desc: NewUniqueSecretScreen
   label: NewUniqueSecretScreen
@@ -52243,7 +52243,7 @@
   mode: thumb
   params: null
   return: null
-  line: secretscreen.c:280
+  line: secretscreen.c:282
 -
   desc: func_fe6_080841EC
   label: func_fe6_080841EC
@@ -53548,7 +53548,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:44
+  line: savemenu.c:45
 -
   desc: func_fe6_08087C60
   label: func_fe6_08087C60
@@ -53557,7 +53557,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:64
+  line: savemenu.c:65
 -
   desc: GetSaveMenuSelectIndex
   label: GetSaveMenuSelectIndex
@@ -53566,7 +53566,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:71
+  line: savemenu.c:72
 -
   desc: func_fe6_08087CB0
   label: func_fe6_08087CB0
@@ -53575,7 +53575,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:90
+  line: savemenu.c:91
 -
   desc: func_fe6_08087CD4
   label: func_fe6_08087CD4
@@ -53584,7 +53584,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:103
+  line: savemenu.c:104
 -
   desc: SaveMenu_InitSong
   label: SaveMenu_InitSong
@@ -53593,7 +53593,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:128
+  line: savemenu.c:129
 -
   desc: SaveMenu_InitDisplay
   label: SaveMenu_InitDisplay
@@ -53602,7 +53602,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:144
+  line: savemenu.c:145
 -
   desc: SaveMenu_PutScreen
   label: SaveMenu_PutScreen
@@ -53611,7 +53611,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:181
+  line: savemenu.c:182
 -
   desc: func_fe6_08088094
   label: func_fe6_08088094
@@ -53620,7 +53620,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:256
+  line: savemenu.c:257
 -
   desc: func_fe6_080881B8
   label: func_fe6_080881B8
@@ -53629,7 +53629,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:310
+  line: savemenu.c:311
 -
   desc: func_fe6_080881C8
   label: func_fe6_080881C8
@@ -53638,7 +53638,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:315
+  line: savemenu.c:316
 -
   desc: func_fe6_08088404
   label: func_fe6_08088404
@@ -53647,7 +53647,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:396
+  line: savemenu.c:397
 -
   desc: func_fe6_080885DC
   label: func_fe6_080885DC
@@ -53656,7 +53656,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:523
+  line: savemenu.c:524
 -
   desc: func_fe6_08088854
   label: func_fe6_08088854
@@ -53665,7 +53665,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:665
+  line: savemenu.c:666
 -
   desc: func_fe6_08088860
   label: func_fe6_08088860
@@ -53674,7 +53674,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:670
+  line: savemenu.c:671
 -
   desc: func_fe6_08088870
   label: func_fe6_08088870
@@ -53683,7 +53683,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:676
+  line: savemenu.c:677
 -
   desc: func_fe6_08088B40
   label: func_fe6_08088B40
@@ -53692,7 +53692,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:757
+  line: savemenu.c:758
 -
   desc: func_fe6_08088B9C
   label: func_fe6_08088B9C
@@ -53701,7 +53701,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:772
+  line: savemenu.c:773
 -
   desc: SaveMenu_ExtraMenuScrollIn
   label: SaveMenu_ExtraMenuScrollIn
@@ -53710,7 +53710,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:787
+  line: savemenu.c:788
 -
   desc: SaveMenu_ExtraMenuScrollOut
   label: SaveMenu_ExtraMenuScrollOut
@@ -53719,7 +53719,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:801
+  line: savemenu.c:802
 -
   desc: SaveMenu_XMap1ScrollIn
   label: SaveMenu_XMap1ScrollIn
@@ -53728,7 +53728,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:815
+  line: savemenu.c:816
 -
   desc: SaveMenu_XMap1ScrollOut
   label: SaveMenu_XMap1ScrollOut
@@ -53737,7 +53737,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:830
+  line: savemenu.c:831
 -
   desc: SaveMenu_ExtraMenu_Loop
   label: SaveMenu_ExtraMenu_Loop
@@ -53746,7 +53746,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:845
+  line: savemenu.c:846
 -
   desc: func_fe6_08088EB8
   label: func_fe6_08088EB8
@@ -53755,7 +53755,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:918
+  line: savemenu.c:919
 -
   desc: SaveMenu_Xmap1_Loop
   label: SaveMenu_Xmap1_Loop
@@ -53764,7 +53764,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:968
+  line: savemenu.c:969
 -
   desc: func_fe6_080890B8
   label: func_fe6_080890B8
@@ -53773,7 +53773,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:1039
+  line: savemenu.c:1040
 -
   desc: SaveMenu_Finish
   label: SaveMenu_Finish
@@ -53782,7 +53782,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:1045
+  line: savemenu.c:1046
 -
   desc: SaveMenu_StartXmapSoundRoom
   label: SaveMenu_StartXmapSoundRoom
@@ -53791,7 +53791,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:1096
+  line: savemenu.c:1097
 -
   desc: func_fe6_080891DC
   label: func_fe6_080891DC
@@ -53800,7 +53800,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:1121
+  line: savemenu.c:1122
 -
   desc: StartMainMenu
   label: StartMainMenu
@@ -53809,7 +53809,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:1230
+  line: savemenu.c:1231
 -
   desc: StartSaveMenu
   label: StartSaveMenu
@@ -53818,7 +53818,7 @@
   mode: thumb
   params: null
   return: null
-  line: savemenu.c:1242
+  line: savemenu.c:1243
 -
   desc: SaveDraw_SavePalette
   label: SaveDraw_SavePalette
@@ -54223,7 +54223,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:39
 -
   desc: func_fe6_0808AB44
   label: func_fe6_0808AB44
@@ -54232,7 +54232,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:92
 -
   desc: Xmap_Init
   label: Xmap_Init
@@ -54241,7 +54241,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:125
 -
   desc: func_fe6_0808AEFC
   label: func_fe6_0808AEFC
@@ -54250,7 +54250,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:231
 -
   desc: func_fe6_0808AF4C
   label: func_fe6_0808AF4C
@@ -54259,7 +54259,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:244
 -
   desc: func_fe6_0808B028
   label: func_fe6_0808B028
@@ -54268,7 +54268,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:274
 -
   desc: func_fe6_0808B194
   label: func_fe6_0808B194
@@ -54277,7 +54277,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:345
 -
   desc: func_fe6_0808B2BC
   label: func_fe6_0808B2BC
@@ -54286,7 +54286,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:378
 -
   desc: func_fe6_0808B378
   label: func_fe6_0808B378
@@ -54295,7 +54295,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:398
 -
   desc: func_fe6_0808B3B8
   label: func_fe6_0808B3B8
@@ -54304,7 +54304,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:414
 -
   desc: func_fe6_0808B40C
   label: func_fe6_0808B40C
@@ -54313,7 +54313,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:429
 -
   desc: func_fe6_0808B430
   label: func_fe6_0808B430
@@ -54322,34 +54322,34 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:439
 -
   desc: Xmap_End
   label: Xmap_End
   addr: 0x808B52C
-  size: 0x40
+  size: 0x3E
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:488
 -
   desc: Xmap_TextEnd
   label: Xmap_TextEnd
   addr: 0x808B56C
-  size: 0xC
+  size: 0xA
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:505
 -
-  desc: SaveMenu_ExecXmap
-  label: SaveMenu_ExecXmap
+  desc: StartXmap
+  label: StartXmap
   addr: 0x808B578
   size: 0x20
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:511
 -
   desc: func_fe6_0808B598
   label: func_fe6_0808B598
@@ -54358,7 +54358,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:517
 -
   desc: func_fe6_0808B628
   label: func_fe6_0808B628
@@ -54367,7 +54367,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:542
 -
   desc: func_fe6_0808B640
   label: func_fe6_0808B640
@@ -54376,7 +54376,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:593
 -
   desc: func_fe6_0808B7A0
   label: func_fe6_0808B7A0
@@ -54385,7 +54385,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:658
 -
   desc: func_fe6_0808B7B4
   label: func_fe6_0808B7B4
@@ -54394,7 +54394,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:663
 -
   desc: func_fe6_0808B854
   label: func_fe6_0808B854
@@ -54403,7 +54403,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:691
 -
   desc: func_fe6_0808B928
   label: func_fe6_0808B928
@@ -54412,10 +54412,10 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: xmap.c:735
 -
-  desc: func_fe6_0808B93C
-  label: func_fe6_0808B93C
+  desc: PutSoundRoomCG
+  label: PutSoundRoomCG
   addr: 0x808B93C
   size: 0x78
   mode: thumb
@@ -54423,50 +54423,50 @@
   return: null
   line: ''
 -
-  desc: func_fe6_0808B9B4
-  label: func_fe6_0808B9B4
+  desc: CountTotalSoundRoomSongs
+  label: CountTotalSoundRoomSongs
   addr: 0x808B9B4
   size: 0x18
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: soundroom.c:436
 -
-  desc: func_fe6_0808B9CC
-  label: func_fe6_0808B9CC
+  desc: Soundroom_Init
+  label: Soundroom_Init
   addr: 0x808B9CC
   size: 0x200
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: soundroom.c:451
 -
   desc: func_fe6_0808BBCC
   label: func_fe6_0808BBCC
   addr: 0x808BBCC
-  size: 0xF0
+  size: 0xEE
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: soundroom.c:517
 -
   desc: func_fe6_0808BCBC
   label: func_fe6_0808BCBC
   addr: 0x808BCBC
-  size: 0x34
+  size: 0x32
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: soundroom.c:565
 -
   desc: func_fe6_0808BCF0
   label: func_fe6_0808BCF0
   addr: 0x808BCF0
-  size: 0x38
+  size: 0x36
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: soundroom.c:576
 -
   desc: func_fe6_0808BD28
   label: func_fe6_0808BD28
@@ -54475,7 +54475,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: soundroom.c:588
 -
   desc: SaveMenu_ExecSoundroom
   label: SaveMenu_ExecSoundroom
@@ -54484,7 +54484,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: soundroom.c:594
 -
   desc: func_fe6_0808BD6C
   label: func_fe6_0808BD6C
@@ -54493,7 +54493,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: soundroom.c:599
 -
   desc: func_fe6_0808BD78
   label: func_fe6_0808BD78
@@ -54502,7 +54502,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: soundroom.c:605
 -
   desc: func_fe6_0808BDF8
   label: func_fe6_0808BDF8
@@ -54511,7 +54511,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: soundroom.c:623
 -
   desc: NewProc_0868AA80
   label: NewProc_0868AA80
@@ -54520,7 +54520,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: soundroom.c:639
 -
   desc: func_fe6_0808BE70
   label: func_fe6_0808BE70
@@ -54529,7 +54529,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: soundroom.c:644
 -
   desc: func_fe6_0808BF00
   label: func_fe6_0808BF00
@@ -54538,7 +54538,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: soundroom.c:666
 -
   desc: func_fe6_0808BFF0
   label: func_fe6_0808BFF0
@@ -54547,16 +54547,16 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: soundroom.c:718
 -
   desc: func_fe6_0808C084
   label: func_fe6_0808C084
   addr: 0x808C084
-  size: 0x14
+  size: 0x12
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: soundroom.c:741
 -
   desc: func_fe6_0808C098
   label: func_fe6_0808C098

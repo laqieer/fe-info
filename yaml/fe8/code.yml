@@ -832,7 +832,7 @@
     J: 0x8001570
     U: 0x800159C
   size:
-    J: 0x3E
+    J: 0xDE
     U: 0x126
   mode: thumb
   params: null
@@ -988,7 +988,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8001BD0.c:5
 -
   desc: EnterSleepMode
   label: EnterSleepMode
@@ -2668,7 +2668,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_5.c:2
 -
   desc: PrintProcessNameRecursive
   label: PrintProcessNameRecursive
@@ -3235,7 +3235,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8003BC0.c:2
 -
   desc: ResetText
   label: ResetText
@@ -3367,7 +3367,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8003D80.c:4
 -
   desc: sub_8003D84
   label: sub_8003D84
@@ -3378,7 +3378,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8003D84.c:4
 -
   desc: Text_Skip
   label: Text_Skip
@@ -3400,7 +3400,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8003D90.c:4
 -
   desc: sub_8003D94
   label: sub_8003D94
@@ -3411,7 +3411,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8003D94.c:4
 -
   desc: sub_8003D98
   label: sub_8003D98
@@ -3422,7 +3422,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8003D98.c:4
 -
   desc: PutText
   label: PutText
@@ -3466,7 +3466,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8003E6C.c:7
 -
   desc: GetStringTextCenteredPos
   label: GetStringTextCenteredPos
@@ -3720,7 +3720,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_9.c:2
 -
   desc: InitSpriteTextFont
   label: InitSpriteTextFont
@@ -3841,7 +3841,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_800487C.c:6
 -
   desc: GreenText_OnLoop
   label: GreenText_OnLoop
@@ -4821,7 +4821,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8006228.c:4
 -
   desc: FaceBlink_CloseEyesLoop
   label: FaceBlink_CloseEyesLoop
@@ -5969,7 +5969,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8008E08.c:2
 -
   desc: nullsub_12
   label: nullsub_12
@@ -5980,7 +5980,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_12.c:2
 -
   desc: TalkBgSync
   label: TalkBgSync
@@ -6057,7 +6057,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_13.c:2
 -
   desc: ScreenFlash_Init
   label: ScreenFlash_Init
@@ -6515,7 +6515,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8009948.c:4
 -
   desc: sub_8009950
   label: sub_8009950
@@ -6528,7 +6528,7 @@
   return:
     desc: result
     type: u8
-  line: ''
+  line: sub_8009950.c:17
 -
   desc: EndProcIfNotMarkedB
   label: EndProcIfNotMarkedB
@@ -6611,7 +6611,7 @@
   - desc: proc
     type: ProcPtr
   return: null
-  line: ''
+  line: sub_8009AD8.c:13
 -
   desc: GameControl_GotoTitleIfAction5
   label: GameControl_GotoTitleIfAction5
@@ -6633,7 +6633,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8009B94.c:6
 -
   desc: GameControl_GotoChapterSwitchIfClassReel
   label: GameControl_GotoChapterSwitchIfClassReel
@@ -6723,7 +6723,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8009CCC.c:3
 -
   desc: GameControl_ChapterSwitch
   label: GameControl_ChapterSwitch
@@ -6771,7 +6771,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8009D88.c:5
 -
   desc: GameControl_StartRuinEvent
   label: GameControl_StartRuinEvent
@@ -6928,7 +6928,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_14.c:2
 -
   desc: Nop_Gamecontrol_0
   label: Nop_Gamecontrol_0
@@ -7034,29 +7034,29 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_800A194.c:12
 -
   desc: SplineEvalCatmullRom
   label: SplineEvalCatmullRom
   addr:
     J: 0x800A34C
   size:
-    J: 0x46
+    J: 0x246
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: SplineEvalCatmullRom.c:25
 -
   desc: SplineSampleAtTime
   label: SplineSampleAtTime
   addr:
     J: 0x800A594
   size:
-    J: 0x56
+    J: 0x1F2
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: SplineSampleAtTime.c:33
 -
   desc: Spline_Ease
   label: Spline_Ease
@@ -7227,7 +7227,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_800B88C.c:42
 -
   desc: Spline_SetupChannels
   label: Spline_SetupChannels
@@ -7488,7 +7488,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_800C124.c:3
 -
   desc: Event84_WmSetCameraOntoNode
   label: Event84_WmSetCameraOntoNode
@@ -7534,7 +7534,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_800C224.c:25
 -
   desc: Event88_WmScrollCameraOntoUnit
   label: Event88_WmScrollCameraOntoUnit
@@ -7591,7 +7591,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_800C3AC.c:2
 -
   desc: Event8D_WmNop
   label: Event8D_WmNop
@@ -8252,7 +8252,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_17.c:2
 -
   desc: Nop_EventscrGmap_0
   label: Nop_EventscrGmap_0
@@ -8285,7 +8285,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_19.c:2
 -
   desc: nullsub_20
   label: nullsub_20
@@ -8296,7 +8296,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_20.c:2
 -
   desc: EventFaceDeamonDelete
   label: EventFaceDeamonDelete
@@ -8362,7 +8362,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_21.c:2
 -
   desc: Nop_EventscrGmap_3
   label: Nop_EventscrGmap_3
@@ -8573,7 +8573,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_800D4A8.c:8
 -
   desc: SetEventSlotC
   label: SetEventSlotC
@@ -8597,7 +8597,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_25.c:2
 -
   desc: IsActiveEventTextTypeOnMap
   label: IsActiveEventTextTypeOnMap
@@ -8825,7 +8825,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_26.c:2
 -
   desc: SlotQueuePush
   label: SlotQueuePush
@@ -8890,7 +8890,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_800D85C.c:2
 -
   desc: Event01_End
   label: Event01_End
@@ -8984,7 +8984,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_800DC04.c:2
 -
   desc: Event09_Goto
   label: Event09_Goto
@@ -9152,7 +9152,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_800E11C.c:16
 -
   desc: Event17_Fade
   label: Event17_Fade
@@ -9171,7 +9171,7 @@
     J: 0x800E1FC
     U: 0x800DFBC
   size:
-    J: 0x40
+    J: 0xCC
     U: 0xB2
   mode: thumb
   params: null
@@ -9624,7 +9624,7 @@
     J: 0x800FAD0
     U: 0x800F914
   size:
-    J: 0x3A
+    J: 0x1D0
     U: 0x204
   mode: thumb
   params: null
@@ -9723,7 +9723,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_800FF08.c:14
 -
   desc: Event30_ENUN
   label: Event30_ENUN
@@ -9806,7 +9806,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80106A0.c:8
 -
   desc: Event37_GiveItem
   label: Event37_GiveItem
@@ -9968,7 +9968,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8010CB4.c:20
 -
   desc: Event41_Warp
   label: Event41_Warp
@@ -10005,7 +10005,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8010E1C.c:3
 -
   desc: Event43_SummonUnit
   label: Event43_SummonUnit
@@ -10246,7 +10246,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_801153C.c:3
 -
   desc: SetPopupItem
   label: SetPopupItem
@@ -10483,7 +10483,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_28.c:2
 -
   desc: BrownTextBox_SetBlendFlag
   label: BrownTextBox_SetBlendFlag
@@ -10854,7 +10854,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8012A38.c:4
 -
   desc: Eventfx_SetScreenConfig
   label: Eventfx_SetScreenConfig
@@ -10922,7 +10922,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8012BDC.c:8
 -
   desc: NewBoomFogFx
   label: NewBoomFogFx
@@ -11021,7 +11021,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_29.c:2
 -
   desc: StringCompare
   label: StringCompare
@@ -11439,7 +11439,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8013844.c:4
 -
   desc: MapPaletteBrightnessFade_Loop
   label: MapPaletteBrightnessFade_Loop
@@ -12937,7 +12937,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8015188.c:10
 -
   desc: sub_80151D0
   label: sub_80151D0
@@ -12948,7 +12948,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8015188.c:28
 -
   desc: sub_8015218
   label: sub_8015218
@@ -12959,7 +12959,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8015188.c:46
 -
   desc: nullsub_32
   label: nullsub_32
@@ -12970,7 +12970,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_32.c:2
 -
   desc: VecDotVec
   label: VecDotVec
@@ -13513,7 +13513,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_33.c:2
 -
   desc: StartCamMoveLinear
   label: StartCamMoveLinear
@@ -16179,7 +16179,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_27.c:2
 -
   desc: DisplayMovementViewTile
   label: DisplayMovementViewTile
@@ -16989,7 +16989,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_801BA6C.c:36
 -
   desc: DebugMenu_WeatherIdle
   label: DebugMenu_WeatherIdle
@@ -17013,7 +17013,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_801BB94.c:2
 -
   desc: DebugMenu_ClearDraw
   label: DebugMenu_ClearDraw
@@ -18969,7 +18969,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_801F9FC.c:6
 -
   desc: sub_801FA0C
   label: sub_801FA0C
@@ -18980,7 +18980,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_801FA0C.c:6
 -
   desc: ChapterIntro_Bg2Scroll_Loop
   label: ChapterIntro_Bg2Scroll_Loop
@@ -19028,7 +19028,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_801FAA0.c:9
 -
   desc: PutScreenFogEffect
   label: PutScreenFogEffect
@@ -19409,7 +19409,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8020D78.c:5
 -
   desc: sub_8020D80
   label: sub_8020D80
@@ -19420,7 +19420,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8020D80.c:5
 -
   desc: ChapterIntro_TickTimerMaybe
   label: ChapterIntro_TickTimerMaybe
@@ -19587,7 +19587,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8021210.c:5
 -
   desc: ProcLightRuneAnim_Init
   label: ProcLightRuneAnim_Init
@@ -19844,7 +19844,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8021AE4.c:8
 -
   desc: sub_8021AFC
   label: sub_8021AFC
@@ -19855,7 +19855,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8021AFC.c:20
 -
   desc: sub_8021B98
   label: sub_8021B98
@@ -19866,7 +19866,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8021B98.c:21
 -
   desc: sub_8021C10
   label: sub_8021C10
@@ -19877,7 +19877,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8021C10.c:4
 -
   desc: sub_8021C28
   label: sub_8021C28
@@ -19888,7 +19888,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8021C28.c:14
 -
   desc: ProcWhiteCircleFx_Loop
   label: ProcWhiteCircleFx_Loop
@@ -20020,7 +20020,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8022140.c:13
 -
   desc: sub_8022178
   label: sub_8022178
@@ -20031,7 +20031,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8022178.c:21
 -
   desc: sub_80221D8
   label: sub_80221D8
@@ -20042,7 +20042,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80221D8.c:9
 -
   desc: sub_8022200
   label: sub_8022200
@@ -20053,7 +20053,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8022200.c:16
 -
   desc: ProcMineFxFunc
   label: ProcMineFxFunc
@@ -20119,7 +20119,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8022578.c:2
 -
   desc: MapMenu_IsSuspendCommandAvailable
   label: MapMenu_IsSuspendCommandAvailable
@@ -22037,7 +22037,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80241D4.c:5
 -
   desc: StealMapSelect_SwitchIn
   label: StealMapSelect_SwitchIn
@@ -25344,7 +25344,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80299B8.c:6
 -
   desc: RepairMenuItemOnChange
   label: RepairMenuItemOnChange
@@ -25372,7 +25372,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_41.c:2
 -
   desc: RepairMenuItemIsAvailable
   label: RepairMenuItemIsAvailable
@@ -25499,7 +25499,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8029BFC.c:6
 -
   desc: BarrierMapSelect_SwitchIn
   label: BarrierMapSelect_SwitchIn
@@ -25931,7 +25931,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_43.c:2
 -
   desc: ComputeBattleUnitStats
   label: ComputeBattleUnitStats
@@ -26599,7 +26599,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_802BFF8.c:2
 -
   desc: GetBattleUnitUpdatedWeaponExp
   label: GetBattleUnitUpdatedWeaponExp
@@ -26998,7 +26998,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_42.c:2
 -
   desc: BattlePrintDebugHitInfo
   label: BattlePrintDebugHitInfo
@@ -31924,7 +31924,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8035650.c:22
 -
   desc: sub_80356C8
   label: sub_80356C8
@@ -31935,7 +31935,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80356C8.c:9
 -
   desc: sub_80357BC
   label: sub_80357BC
@@ -31946,7 +31946,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80357BC.c:19
 -
   desc: sub_803581C
   label: sub_803581C
@@ -31957,7 +31957,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_803581C.c:6
 -
   desc: EndSubtitleHelp
   label: EndSubtitleHelp
@@ -33198,7 +33198,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8037BCC.c:4
 -
   desc: sub_8037BD4
   label: sub_8037BD4
@@ -33209,7 +33209,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8037BD4.c:4
 -
   desc: GetCurrentPromotedLevelBonus
   label: GetCurrentPromotedLevelBonus
@@ -33412,7 +33412,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8038320.c:8
 -
   desc: PushGlobalTimer
   label: PushGlobalTimer
@@ -34296,7 +34296,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_803A2E8.c:2
 -
   desc: AiTalkAction
   label: AiTalkAction
@@ -34445,7 +34445,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_803A6EC.c:2
 -
   desc: AiEscapeAction
   label: AiEscapeAction
@@ -35505,7 +35505,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_803D3CC.c:2
 -
   desc: CpScript_CondTrueReadClass
   label: CpScript_CondTrueReadClass
@@ -36398,7 +36398,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_1.c:2
 -
   desc: GetAiWarpDestinationNearThreatenedAlly
   label: GetAiWarpDestinationNearThreatenedAlly
@@ -36931,7 +36931,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_45.c:2
 -
   desc: Sio_CountConnectedPlayers
   label: Sio_CountConnectedPlayers
@@ -38260,7 +38260,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8045BB4.c:6
 -
   desc: SioMain2_WaitEndAndRoute
   label: SioMain2_WaitEndAndRoute
@@ -38488,7 +38488,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_804690C.c:6
 -
   desc: sub_8046918
   label: sub_8046918
@@ -38499,7 +38499,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8046918.c:6
 -
   desc: LinkArenaTeamBuild_Init
   label: LinkArenaTeamBuild_Init
@@ -39151,7 +39151,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80487D8.c:57
 -
   desc: sub_80489C8
   label: sub_80489C8
@@ -39162,7 +39162,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80489C8.c:22
 -
   desc: sub_8048AC4
   label: sub_8048AC4
@@ -39173,7 +39173,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8048AC4.c:10
 -
   desc: sub_8048B10
   label: sub_8048B10
@@ -39184,7 +39184,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sio_event_08048B10.c:12
 -
   desc: sub_8048BAC
   label: sub_8048BAC
@@ -39195,7 +39195,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8048BAC.c:8
 -
   desc: sub_8048BDC
   label: sub_8048BDC
@@ -39206,7 +39206,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8048BDC.c:8
 -
   desc: sub_8048BF0
   label: sub_8048BF0
@@ -39217,7 +39217,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8048BF0.c:3
 -
   desc: sub_8048C08
   label: sub_8048C08
@@ -39228,7 +39228,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8048C08.c:15
 -
   desc: sub_8048C68
   label: sub_8048C68
@@ -39239,7 +39239,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8048C68.c:5
 -
   desc: sub_8048C7C
   label: sub_8048C7C
@@ -39250,7 +39250,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8048C7C.c:15
 -
   desc: sub_8048CD8
   label: sub_8048CD8
@@ -39261,7 +39261,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8048CD8.c:29
 -
   desc: sub_8048D60
   label: sub_8048D60
@@ -39272,7 +39272,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8048D60.c:5
 -
   desc: sub_8048D74
   label: sub_8048D74
@@ -39283,7 +39283,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8048D74.c:15
 -
   desc: sub_8048DC0
   label: sub_8048DC0
@@ -39294,7 +39294,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8048DC0.c:7
 -
   desc: sub_8048F24
   label: sub_8048F24
@@ -39305,7 +39305,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8048F24.c:15
 -
   desc: sub_8048F78
   label: sub_8048F78
@@ -39316,7 +39316,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8048F78.c:7
 -
   desc: sub_8048FC0
   label: sub_8048FC0
@@ -39327,7 +39327,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8048FC0.c:37
 -
   desc: sub_80490C8
   label: sub_80490C8
@@ -39338,7 +39338,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80490C8.c:13
 -
   desc: sub_80491B8
   label: sub_80491B8
@@ -39349,7 +39349,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80491B8.c:39
 -
   desc: sub_8049274
   label: sub_8049274
@@ -39360,7 +39360,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8049274.c:26
 -
   desc: sub_8049364
   label: sub_8049364
@@ -39371,7 +39371,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8049364.c:33
 -
   desc: sub_804944C
   label: sub_804944C
@@ -39382,7 +39382,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_804944C.c:8
 -
   desc: sub_8049460
   label: sub_8049460
@@ -39393,7 +39393,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8049460.c:20
 -
   desc: sub_80494B0
   label: sub_80494B0
@@ -39404,7 +39404,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80494B0.c:3
 -
   desc: sub_80494C8
   label: sub_80494C8
@@ -39415,7 +39415,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80494C8.c:5
 -
   desc: sub_80494FC
   label: sub_80494FC
@@ -39426,7 +39426,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80494FC.c:38
 -
   desc: sub_8049638
   label: sub_8049638
@@ -39437,7 +39437,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8049638.c:5
 -
   desc: sub_8049658
   label: sub_8049658
@@ -39448,7 +39448,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8049658.c:6
 -
   desc: sub_8049664
   label: sub_8049664
@@ -39459,7 +39459,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8049664.c:7
 -
   desc: Sio_SortPlayersByScore
   label: Sio_SortPlayersByScore
@@ -39503,7 +39503,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_48.c:2
 -
   desc: StartLinkArenaPointsBox
   label: StartLinkArenaPointsBox
@@ -39613,7 +39613,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8049C94.c:3
 -
   desc: PointsSpriteText_LoopIn
   label: PointsSpriteText_LoopIn
@@ -39670,7 +39670,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_804A070.c:5
 -
   desc: LinkArenaBattleMap_BackupUnitItems
   label: LinkArenaBattleMap_BackupUnitItems
@@ -40663,23 +40663,23 @@
   label: Set_UnkData_0
   addr:
     J: 0x804C6C0
-    U: 0x804B920
-  size: 0xC
+  size:
+    J: 0xC
   mode: thumb
   params: null
   return: null
-  line: sio_804B920.c:10
+  line: Set_UnkData_0.c:8
 -
   desc: Clear_UnkData_0
   label: Clear_UnkData_0
   addr:
     J: 0x804C6CC
-    U: 0x804B92C
-  size: 0xC
+  size:
+    J: 0xC
   mode: thumb
   params: null
   return: null
-  line: sio_804B920.c:17
+  line: Clear_UnkData_0.c:8
 -
   desc: Sio_DisableWindowAndBlend
   label: Sio_DisableWindowAndBlend
@@ -40844,7 +40844,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_804CC38.c:5
 -
   desc: sub_804CC58
   label: sub_804CC58
@@ -40855,7 +40855,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_804CC58.c:5
 -
   desc: StartSioMuFadeFromColor
   label: StartSioMuFadeFromColor
@@ -41108,7 +41108,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_47.c:2
 -
   desc: nullsub_46
   label: nullsub_46
@@ -41119,7 +41119,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_46.c:2
 -
   desc: Nop_SioUiutils_0
   label: Nop_SioUiutils_0
@@ -42748,7 +42748,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8050294.c:6
 -
   desc: Menu_FrozenHelpBox_OnLoop
   label: Menu_FrozenHelpBox_OnLoop
@@ -42802,7 +42802,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8050370.c:8
 -
   desc: FreezeMenu
   label: FreezeMenu
@@ -43773,7 +43773,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_52.c:2
 -
   desc: NewEkrLvlupFan
   label: NewEkrLvlupFan
@@ -44694,7 +44694,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_53.c:2
 -
   desc: NewEfxQuake
   label: NewEfxQuake
@@ -45257,7 +45257,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8055B64.c:6
 -
   desc: EndProcEfxWeaponIcon
   label: EndProcEfxWeaponIcon
@@ -45389,7 +45389,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8055E2C.c:17
 -
   desc: sub_8055E64
   label: sub_8055E64
@@ -45400,7 +45400,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8055E64.c:3
 -
   desc: sub_8055E80
   label: sub_8055E80
@@ -45411,7 +45411,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8055E80.c:3
 -
   desc: sub_8055E9C
   label: sub_8055E9C
@@ -45422,7 +45422,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8055E9C.c:3
 -
   desc: sub_8055EB8
   label: sub_8055EB8
@@ -45433,7 +45433,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8055EB8.c:11
 -
   desc: sub_8055F40
   label: sub_8055F40
@@ -45444,7 +45444,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8055F40.c:27
 -
   desc: sub_8055F90
   label: sub_8055F90
@@ -45455,7 +45455,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8055F90.c:9
 -
   desc: sub_805601C
   label: sub_805601C
@@ -45466,7 +45466,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_805601C.c:12
 -
   desc: sub_8056078
   label: sub_8056078
@@ -45477,7 +45477,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8056078.c:11
 -
   desc: SpellFx_Begin
   label: SpellFx_Begin
@@ -45936,7 +45936,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8056C64.c:8
 -
   desc: ekrBaStart_InitScreen
   label: ekrBaStart_InitScreen
@@ -46300,7 +46300,7 @@
     J: 0x8057F80
     U: 0x8056FF8
   size:
-    J: 0x24
+    J: 0xB76
     U: 0xCB2
   mode: thumb
   params: null
@@ -47356,7 +47356,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_54.c:2
 -
   desc: NewefxRestRST
   label: NewefxRestRST
@@ -47747,7 +47747,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_805CF64.c:9
 -
   desc: DummvRST_OnEnd
   label: DummvRST_OnEnd
@@ -48123,7 +48123,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_805DC9C.c:16
 -
   desc: sub_805DD38
   label: sub_805DD38
@@ -48134,7 +48134,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_805DD38.c:13
 -
   desc: sub_805DDF8
   label: sub_805DDF8
@@ -48145,7 +48145,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_805DDF8.c:4
 -
   desc: sub_805DE30
   label: sub_805DE30
@@ -48156,7 +48156,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_805DE30.c:8
 -
   desc: sub_805DE74
   label: sub_805DE74
@@ -48167,7 +48167,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_805DE74.c:10
 -
   desc: sub_805DF40
   label: sub_805DF40
@@ -48178,7 +48178,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_805DF40.c:7
 -
   desc: efxDarkbreathBGCOL_Loop
   label: efxDarkbreathBGCOL_Loop
@@ -48200,7 +48200,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_805DFC8.c:11
 -
   desc: sub_805E004
   label: sub_805E004
@@ -48211,7 +48211,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_805E004.c:14
 -
   desc: StartSubSpell_efxHurtmutOBJ
   label: StartSubSpell_efxHurtmutOBJ
@@ -48233,7 +48233,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_805E130.c:4
 -
   desc: StartSpellAnimArrow
   label: StartSpellAnimArrow
@@ -48332,7 +48332,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_805E488.c:11
 -
   desc: efxIcebreath_Loop_Main
   label: efxIcebreath_Loop_Main
@@ -48376,7 +48376,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_805E5D0.c:9
 -
   desc: efxDarkbreath_Loop_Main
   label: efxDarkbreath_Loop_Main
@@ -48431,7 +48431,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_805E780.c:8
 -
   desc: StartSubSpell_efxDarkbreathOBJ
   label: StartSubSpell_efxDarkbreathOBJ
@@ -48717,7 +48717,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_805F1E4.c:11
 -
   desc: efxFimbulvetr_Loop_Main
   label: efxFimbulvetr_Loop_Main
@@ -49498,7 +49498,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_55.c:2
 -
   desc: sub_8060F84
   label: sub_8060F84
@@ -49509,7 +49509,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8060F84.c:11
 -
   desc: efxDivine_Loop_Main
   label: efxDivine_Loop_Main
@@ -49597,7 +49597,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_56.c:2
 -
   desc: nullsub_57
   label: nullsub_57
@@ -49608,7 +49608,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_57.c:2
 -
   desc: StartSpellAnimEclipse
   label: StartSpellAnimEclipse
@@ -49674,7 +49674,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_806166C.c:8
 -
   desc: StartSubSpell_efxHazymoonOBJ2
   label: StartSubSpell_efxHazymoonOBJ2
@@ -50243,7 +50243,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8062CE4.c:4
 -
   desc: StartSpellAnimFortify
   label: StartSpellAnimFortify
@@ -50441,7 +50441,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80634E0.c:11
 -
   desc: efxSilence_Loop_Main
   label: efxSilence_Loop_Main
@@ -50540,7 +50540,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8063940.c:9
 -
   desc: StartSubSpell_efxSleepOBJ
   label: StartSubSpell_efxSleepOBJ
@@ -50683,7 +50683,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8063D14.c:11
 -
   desc: efxBerserk_Loop_Main
   label: efxBerserk_Loop_Main
@@ -50892,7 +50892,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8064314.c:11
 -
   desc: efxMshield_Loop_Main
   label: efxMshield_Loop_Main
@@ -50958,7 +50958,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8064568.c:6
 -
   desc: StartSpellAnimSleep
   label: StartSpellAnimSleep
@@ -51200,7 +51200,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8064F58.c:7
 -
   desc: efxLunaBG2_Loop
   label: efxLunaBG2_Loop
@@ -51233,7 +51233,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8064FE8.c:2
 -
   desc: efxFenrirBGCOL_Loop
   label: efxFenrirBGCOL_Loop
@@ -51444,7 +51444,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80657BC.c:2
 -
   desc: sub_80657CC
   label: sub_80657CC
@@ -51455,7 +51455,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80657CC.c:7
 -
   desc: StartSubSpell_efxExcaliburSCR
   label: StartSubSpell_efxExcaliburSCR
@@ -51521,7 +51521,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8065A44.c:3
 -
   desc: StartSubSpell_efxExcaliburBGCOL2
   label: StartSubSpell_efxExcaliburBGCOL2
@@ -51543,7 +51543,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8065AA8.c:7
 -
   desc: StartSubSpell_efxExcaliburBG3
   label: StartSubSpell_efxExcaliburBG3
@@ -51576,7 +51576,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8065BF0.c:3
 -
   desc: StartSubSpell_efxExcaliburBGCOL3
   label: StartSubSpell_efxExcaliburBGCOL3
@@ -51598,7 +51598,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8065C54.c:7
 -
   desc: StartSubSpell_efxExcaliburOBJ
   label: StartSubSpell_efxExcaliburOBJ
@@ -51664,7 +51664,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8065E44.c:20
 -
   desc: sub_8065FF0
   label: sub_8065FF0
@@ -51675,7 +51675,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8065FF0.c:16
 -
   desc: efxGespenstBG_Loop
   label: efxGespenstBG_Loop
@@ -51686,7 +51686,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: efxGespenstBG_Loop.c:11
 -
   desc: sub_8066128
   label: sub_8066128
@@ -51697,7 +51697,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8066128.c:13
 -
   desc: sub_80661D0
   label: sub_80661D0
@@ -51708,7 +51708,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80661D0.c:7
 -
   desc: sub_80661EC
   label: sub_80661EC
@@ -51719,7 +51719,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80661EC.c:8
 -
   desc: StartSubSpell_efxGespenstBG4
   label: StartSubSpell_efxGespenstBG4
@@ -51785,7 +51785,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80663A8.c:13
 -
   desc: sub_8066410
   label: sub_8066410
@@ -51796,7 +51796,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8066410.c:4
 -
   desc: sub_8066444
   label: sub_8066444
@@ -51807,7 +51807,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8066444.c:12
 -
   desc: sub_80664B8
   label: sub_80664B8
@@ -51818,7 +51818,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80664B8.c:3
 -
   desc: sub_80664D0
   label: sub_80664D0
@@ -51829,7 +51829,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80664D0.c:5
 -
   desc: sub_80664EC
   label: sub_80664EC
@@ -51840,7 +51840,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80664EC.c:5
 -
   desc: sub_8066508
   label: sub_8066508
@@ -51851,7 +51851,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8066508.c:5
 -
   desc: StartSpellAnimLuna
   label: StartSpellAnimLuna
@@ -52016,7 +52016,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8066B7C.c:20
 -
   desc: sub_8066CC0
   label: sub_8066CC0
@@ -52027,7 +52027,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8066CC0.c:14
 -
   desc: efxLunaBG_Loop
   label: efxLunaBG_Loop
@@ -52049,7 +52049,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8066D7C.c:13
 -
   desc: sub_8066E24
   label: sub_8066E24
@@ -52060,7 +52060,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8066E24.c:7
 -
   desc: sub_8066E40
   label: sub_8066E40
@@ -52071,7 +52071,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8066E40.c:8
 -
   desc: sub_8066E88
   label: sub_8066E88
@@ -52082,7 +52082,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8066E88.c:13
 -
   desc: sub_8066F04
   label: sub_8066F04
@@ -52093,7 +52093,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8066F04.c:10
 -
   desc: efxReblowOBJ_Loop_B
   label: efxReblowOBJ_Loop_B
@@ -52115,7 +52115,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8066F9C.c:9
 -
   desc: efxIvaldiWOUT_Loop
   label: efxIvaldiWOUT_Loop
@@ -52137,7 +52137,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: StartSubSpell_efxLuceBGCOL.c:17
 -
   desc: efxLuceBGCOL_Loop
   label: efxLuceBGCOL_Loop
@@ -52148,7 +52148,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: efxLuceBGCOL_Loop.c:12
 -
   desc: StartSpellAnimIvaldi
   label: StartSpellAnimIvaldi
@@ -52170,7 +52170,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: efxEreshkigal_Loop_Main.c:29
 -
   desc: sub_8067450
   label: sub_8067450
@@ -52181,7 +52181,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8067450.c:11
 -
   desc: sub_806749C
   label: sub_806749C
@@ -52192,7 +52192,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_806749C.c:14
 -
   desc: sub_8067514
   label: sub_8067514
@@ -52203,7 +52203,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8067514.c:13
 -
   desc: efxGorgonOBJ_OnEnd
   label: efxGorgonOBJ_OnEnd
@@ -52225,7 +52225,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_806759C.c:11
 -
   desc: sub_8067600
   label: sub_8067600
@@ -52236,7 +52236,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8067600.c:6
 -
   desc: sub_8067618
   label: sub_8067618
@@ -52247,7 +52247,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8067618.c:5
 -
   desc: sub_8067634
   label: sub_8067634
@@ -52258,7 +52258,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8067634.c:15
 -
   desc: efxHazymoonBG_Loop
   label: efxHazymoonBG_Loop
@@ -52302,7 +52302,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8067834.c:9
 -
   desc: sub_8067884
   label: sub_8067884
@@ -52313,7 +52313,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8067884.c:23
 -
   desc: StartSubSpell_efxSuperdruidOBJ2
   label: StartSubSpell_efxSuperdruidOBJ2
@@ -52346,7 +52346,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8067984.c:11
 -
   desc: efxSuperdruidOBJ2_OnEnd
   label: efxSuperdruidOBJ2_OnEnd
@@ -52478,7 +52478,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8067EA4.c:9
 -
   desc: StartSpellBG_IvaldiBG3
   label: StartSpellBG_IvaldiBG3
@@ -52500,7 +52500,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8067F68.c:9
 -
   desc: StartSpellBG_IvaldiBG4
   label: StartSpellBG_IvaldiBG4
@@ -52667,7 +52667,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8068850.c:8
 -
   desc: StartSpellAnimDemonLight
   label: StartSpellAnimDemonLight
@@ -52792,7 +52792,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8068E34.c:9
 -
   desc: StartSubSpell_efxMaohFlashWOUT
   label: StartSubSpell_efxMaohFlashWOUT
@@ -53132,7 +53132,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8069C44.c:8
 -
   desc: StartSubSpell_efxEvilEyeBG2
   label: StartSubSpell_efxEvilEyeBG2
@@ -53286,7 +53286,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_806A3AC.c:9
 -
   desc: StartSubSpell_efxNaglfarOBJ
   label: StartSubSpell_efxNaglfarOBJ
@@ -53800,7 +53800,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_806B850.c:4
 -
   desc: efxDarkGradoPalFlash_Loop
   label: efxDarkGradoPalFlash_Loop
@@ -54330,7 +54330,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_806D660.c:4
 -
   desc: EfxmagicShadowshot_FadeToBlack_Loop
   label: EfxmagicShadowshot_FadeToBlack_Loop
@@ -54385,7 +54385,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_806D970.c:6
 -
   desc: efxGorgonOBJ_Loop
   label: efxGorgonOBJ_Loop
@@ -54770,7 +54770,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_806ECB4.c:9
 -
   desc: NewEfxPierceCriticalEffect
   label: NewEfxPierceCriticalEffect
@@ -54825,7 +54825,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_806EDD4.c:7
 -
   desc: Loop6C2_EfxLvupBGCOL
   label: Loop6C2_EfxLvupBGCOL
@@ -55577,7 +55577,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80705C8.c:6
 -
   desc: EfxDrsmmoyaMain
   label: EfxDrsmmoyaMain
@@ -55588,7 +55588,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: EfxDrsmmoyaMain.c:13
 -
   desc: sub_807069C
   label: sub_807069C
@@ -55599,7 +55599,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_807069C.c:16
 -
   desc: sub_8070724
   label: sub_8070724
@@ -55610,7 +55610,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8070724.c:8
 -
   desc: sub_8070794
   label: sub_8070794
@@ -55621,7 +55621,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8070794.c:5
 -
   desc: sub_80707BC
   label: sub_80707BC
@@ -55632,7 +55632,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80707BC.c:7
 -
   desc: sub_807083C
   label: sub_807083C
@@ -55643,7 +55643,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_807083C.c:5
 -
   desc: sub_8070874
   label: sub_8070874
@@ -55654,7 +55654,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8070874.c:4
 -
   desc: sub_80708B4
   label: sub_80708B4
@@ -55665,7 +55665,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80708B4.c:3
 -
   desc: sub_80708D8
   label: sub_80708D8
@@ -55676,7 +55676,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80708D8.c:4
 -
   desc: NewEfxSkillType01BG
   label: NewEfxSkillType01BG
@@ -55733,7 +55733,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8070C14.c:8
 -
   desc: EfxSkillCommonBG_FreezeAnims
   label: EfxSkillCommonBG_FreezeAnims
@@ -57874,7 +57874,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80752A4.c:6
 -
   desc: NewEkrClasschgBG1
   label: NewEkrClasschgBG1
@@ -58452,7 +58452,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_60.c:2
 -
   desc: EfxPartsofScrollMain
   label: EfxPartsofScrollMain
@@ -58485,7 +58485,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_61.c:2
 -
   desc: EfxPartsofScroll2Main
   label: EfxPartsofScroll2Main
@@ -58674,7 +58674,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8076F70.c:4
 -
   desc: EkrLvupApfxMain
   label: EkrLvupApfxMain
@@ -58795,7 +58795,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_51.c:2
 -
   desc: NewEkrTriangle
   label: NewEkrTriangle
@@ -58949,7 +58949,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8077C60.c:19
 -
   desc: EkrTriArmorKnightObj2Main2
   label: EkrTriArmorKnightObj2Main2
@@ -59228,7 +59228,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_62.c:2
 -
   desc: ekrPopup_DrawWpnUsable
   label: ekrPopup_DrawWpnUsable
@@ -59415,7 +59415,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_63.c:2
 -
   desc: CheckEkrWpnDemonLight
   label: CheckEkrWpnDemonLight
@@ -59868,7 +59868,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_65.c:2
 -
   desc: EkrDragonTunk_WhiteOutSfx
   label: EkrDragonTunk_WhiteOutSfx
@@ -60176,7 +60176,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_807A154.c:4
 -
   desc: EkrDemonkingObj_UpdateBgPosLoop
   label: EkrDemonkingObj_UpdateBgPosLoop
@@ -60799,7 +60799,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_67.c:2
 -
   desc: RunMuMoveScript
   label: RunMuMoveScript
@@ -60913,7 +60913,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_68.c:2
 -
   desc: Mu_OnStateDoNothing
   label: Mu_OnStateDoNothing
@@ -61655,7 +61655,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_807C37C.c:8
 -
   desc: SetMuMaxWalkSpeed_
   label: SetMuMaxWalkSpeed_
@@ -61786,7 +61786,7 @@
     J: 0x807C8DC
     U: 0x807A4E8
   size:
-    J: 0x40
+    J: 0x134
     U: 0x15C
   mode: thumb
   params: null
@@ -62161,7 +62161,7 @@
     J: 0x807D3BC
     U: 0x807B090
   size:
-    J: 0x28
+    J: 0x186
     U: 0x130
   mode: thumb
   params: null
@@ -62656,7 +62656,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_807E574.c:10
 -
   desc: MADebug_FormatPrint
   label: MADebug_FormatPrint
@@ -62854,7 +62854,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_807F0FC.c:4
 -
   desc: MapAnim_StartGorgonHatchAnim
   label: MapAnim_StartGorgonHatchAnim
@@ -63041,7 +63041,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_807F784.c:3
 -
   desc: MapLatonaShiningfx_Loop3
   label: MapLatonaShiningfx_Loop3
@@ -63074,7 +63074,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_807F860.c:22
 -
   desc: NightMarefx_Loop
   label: NightMarefx_Loop
@@ -63135,23 +63135,23 @@
   label: StartMapAnimEffect_Unk_2
   addr:
     J: 0x807FB1C
-    U: 0x807D7D8
-  size: 0x40
+  size:
+    J: 0x40
   mode: thumb
   params: null
   return: null
-  line: mapanim_staffeffect.c:494
+  line: mapanim_staffeffect_0807FB1C.c:24
 -
   desc: MapAnimEffect_Unk_2_PlaySe
   label: MapAnimEffect_Unk_2_PlaySe
   addr:
     J: 0x807FB5C
-    U: 0x807D818
-  size: 0x14
+  size:
+    J: 0x14
   mode: thumb
   params: null
   return: null
-  line: mapanim_staffeffect.c:504
+  line: mapanim_staffeffect_0807FB1C.c:34
 -
   desc: NewMapAnimEffectAnimator
   label: NewMapAnimEffectAnimator
@@ -63522,12 +63522,12 @@
   label: StartMapAnimEffect_Unk_0
   addr:
     J: 0x808068C
-    U: 0x807E34C
-  size: 0x44
+  size:
+    J: 0x44
   mode: thumb
   params: null
   return: null
-  line: mapanim_staffeffect.c:1133
+  line: mapanim_staffeffect_08080674.c:30
 -
   desc: MapAnim_Init_0
   label: MapAnim_Init_0
@@ -63720,34 +63720,34 @@
   label: StartMapAnimEffect_Unk_1
   addr:
     J: 0x8080D60
-    U: 0x807EA20
-  size: 0x30
+  size:
+    J: 0x30
   mode: thumb
   params: null
   return: null
-  line: mapanim_staffeffect.c:1439
+  line: mapanim_staffeffect_08080CB8.c:42
 -
   desc: EndMapAnimEffect_Unk_1
   label: EndMapAnimEffect_Unk_1
   addr:
     J: 0x8080D90
-    U: 0x807EA50
-  size: 0x10
+  size:
+    J: 0x10
   mode: thumb
   params: null
   return: null
-  line: mapanim_staffeffect.c:1453
+  line: mapanim_staffeffect_08080CB8.c:56
 -
   desc: MapAnimEffect_Unk_1_Loop
   label: MapAnimEffect_Unk_1_Loop
   addr:
     J: 0x8080DA0
-    U: 0x807EA60
-  size: 0x38
+  size:
+    J: 0x38
   mode: thumb
   params: null
   return: null
-  line: mapanim_staffeffect.c:1458
+  line: mapanim_staffeffect_08080CB8.c:61
 -
   desc: PutManimLevelUpFrame
   label: PutManimLevelUpFrame
@@ -63901,7 +63901,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80815F4.c:4
 -
   desc: ManimLevelUpLabelColor_Loop
   label: ManimLevelUpLabelColor_Loop
@@ -64605,7 +64605,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80831C4.c:4
 -
   desc: StartSummonUnitRevealAnim
   label: StartSummonUnitRevealAnim
@@ -64671,7 +64671,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80833A8.c:6
 -
   desc: GlowingCross_Init
   label: GlowingCross_Init
@@ -65359,12 +65359,12 @@
   label: HBlank_MapAnimEffect_Unk_0
   addr:
     J: 0x80842E8
-    U: 0x8081FA8
-  size: 0x54
+  size:
+    J: 0x54
   mode: thumb
   params: null
   return: null
-  line: mapanim_scanline.c:75
+  line: HBlank_MapAnimEffect_Unk_0.c:8
 -
   desc: HBlank_MapAnimGradientColor
   label: HBlank_MapAnimGradientColor
@@ -65551,7 +65551,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80848F0.c:4
 -
   desc: ManimShiftingSineWaveScanlineBuf_Loop
   label: ManimShiftingSineWaveScanlineBuf_Loop
@@ -65683,7 +65683,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8084CE4.c:17
 -
   desc: HBlank_ScrollBG0
   label: HBlank_ScrollBG0
@@ -66431,7 +66431,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8085DDC.c:17
 -
   desc: sub_8085E4C
   label: sub_8085E4C
@@ -66442,7 +66442,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8085E4C.c:2
 -
   desc: sub_8085E50
   label: sub_8085E50
@@ -66453,7 +66453,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8085E50.c:2
 -
   desc: EvCheck0E_
   label: EvCheck0E_
@@ -66640,7 +66640,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80860F0.c:2
 -
   desc: GetChapterFlagBits
   label: GetChapterFlagBits
@@ -66662,7 +66662,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80860FC.c:2
 -
   desc: EnqueueTutEvent
   label: EnqueueTutEvent
@@ -68357,7 +68357,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8087640.c:8
 -
   desc: GameOver_FadeOutCurrentBgm
   label: GameOver_FadeOutCurrentBgm
@@ -68434,7 +68434,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80876E0.c:6
 -
   desc: HideAllAlliesExceptLeader
   label: HideAllAlliesExceptLeader
@@ -68984,7 +68984,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_72.c:2
 -
   desc: EventMapAnim_SlideSquaresOutLoop
   label: EventMapAnim_SlideSquaresOutLoop
@@ -69127,7 +69127,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8088830.c:3
 -
   desc: sub_808884C
   label: sub_808884C
@@ -69138,7 +69138,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_808884C.c:3
 -
   desc: AutolevelSecondaryLord
   label: AutolevelSecondaryLord
@@ -69307,7 +69307,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8088E30.c:4
 -
   desc: BackgroundSlide_Loop
   label: BackgroundSlide_Loop
@@ -70738,7 +70738,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: DrawChapterTitleStrEx_jp.c:13
 -
   desc: DrawChapterTitleBG
   label: DrawChapterTitleBG
@@ -72127,7 +72127,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_73.c:2
 -
   desc: nullsub_74
   label: nullsub_74
@@ -72138,7 +72138,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_74.c:2
 -
   desc: Nop_PlayerInterface_1
   label: Nop_PlayerInterface_1
@@ -73176,7 +73176,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_76.c:2
 -
   desc: UnitList_AddUnit
   label: UnitList_AddUnit
@@ -73653,7 +73653,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_77.c:2
 -
   desc: nullsub_78
   label: nullsub_78
@@ -73664,7 +73664,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_78.c:2
 -
   desc: ResetSioPidPool
   label: ResetSioPidPool
@@ -74955,7 +74955,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8099D78.c:6
 -
   desc: StartSallyCirProc
   label: StartSallyCirProc
@@ -74999,7 +74999,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_8099F9C.c:2
 -
   desc: GetConvoyItemCount_
   label: GetConvoyItemCount_
@@ -76647,7 +76647,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_809EF78.c:3
 -
   desc: StartPrepItemUseScreen
   label: StartPrepItemUseScreen
@@ -77632,7 +77632,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_80.c:2
 -
   desc: nullsub_81
   label: nullsub_81
@@ -77643,7 +77643,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_81.c:2
 -
   desc: FortuneSubMenu_Unused_SetAvailableOptions
   label: FortuneSubMenu_Unused_SetAvailableOptions
@@ -77843,7 +77843,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A2D48.c:11
 -
   desc: CgTextInterpreter_0
   label: CgTextInterpreter_0
@@ -77865,7 +77865,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A2DF8.c:18
 -
   desc: sub_80A2E4C
   label: sub_80A2E4C
@@ -77876,18 +77876,18 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A2E4C.c:8
 -
   desc: DivinationRankSpriteUpdate
   label: DivinationRankSpriteUpdate
   addr:
     J: 0x80A2E64
   size:
-    J: 0x28
+    J: 0x1B4
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: DivinationRankSpriteUpdate.c:33
 -
   desc: sub_80A3018
   label: sub_80A3018
@@ -77898,7 +77898,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A3018.c:10
 -
   desc: sub_80A3074
   label: sub_80A3074
@@ -77909,7 +77909,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A3074.c:27
 -
   desc: sub_80A3118
   label: sub_80A3118
@@ -77920,7 +77920,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A3118.c:19
 -
   desc: sub_80A3228
   label: sub_80A3228
@@ -77931,7 +77931,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A3228.c:24
 -
   desc: sub_80A3250
   label: sub_80A3250
@@ -77942,7 +77942,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A3250.c:8
 -
   desc: sub_80A3274
   label: sub_80A3274
@@ -77953,7 +77953,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A3274.c:12
 -
   desc: sub_80A32C0
   label: sub_80A32C0
@@ -77964,18 +77964,18 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A32C0.c:18
 -
-  desc: sub_80A3300
-  label: sub_80A3300
+  desc: PutDivinationRankSprite
+  label: PutDivinationRankSprite
   addr:
     J: 0x80A3300
   size:
-    J: 0x26
+    J: 0xE0
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: PutDivinationRankSprite.c:28
 -
   desc: sub_80A33E0
   label: sub_80A33E0
@@ -77986,7 +77986,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A33E0.c:26
 -
   desc: sub_80A3458
   label: sub_80A3458
@@ -77997,7 +77997,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A3458.c:39
 -
   desc: sub_80A34F0
   label: sub_80A34F0
@@ -78008,18 +78008,18 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A34F0.c:7
 -
-  desc: sub_80A3528
-  label: sub_80A3528
+  desc: DrawAuguryResultPanel
+  label: DrawAuguryResultPanel
   addr:
     J: 0x80A3528
   size:
-    J: 0x56
+    J: 0x370
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: DrawAuguryResultPanel.c:32
 -
   desc: sub_80A3898
   label: sub_80A3898
@@ -78030,18 +78030,18 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A3898.c:14
 -
   desc: Augury_InitResultScreen
   label: Augury_InitResultScreen
   addr:
     J: 0x80A390C
   size:
-    J: 0x3E
+    J: 0x264
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: Augury_InitResultScreen.c:98
 -
   desc: SaveMenuExtrasMenuLoop
   label: SaveMenuExtrasMenuLoop
@@ -78065,7 +78065,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A3C64.c:29
 -
   desc: sub_80A3CEC
   label: sub_80A3CEC
@@ -78076,7 +78076,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A3CEC.c:15
 -
   desc: sub_80A3DC8
   label: sub_80A3DC8
@@ -78087,7 +78087,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A3DC8.c:5
 -
   desc: sub_80A3E24
   label: sub_80A3E24
@@ -78098,7 +78098,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A3E24.c:24
 -
   desc: sub_80A3EF8
   label: sub_80A3EF8
@@ -78109,7 +78109,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A3EF8.c:21
 -
   desc: sub_80A3F68
   label: sub_80A3F68
@@ -78120,7 +78120,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A3F68.c:24
 -
   desc: sub_80A4088
   label: sub_80A4088
@@ -78131,7 +78131,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A4088.c:16
 -
   desc: sub_80A40A0
   label: sub_80A40A0
@@ -78142,7 +78142,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A40A0.c:16
 -
   desc: sub_80A40D4
   label: sub_80A40D4
@@ -78153,7 +78153,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A40A0.c:39
 -
   desc: sub_80A412C
   label: sub_80A412C
@@ -78164,7 +78164,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A40A0.c:50
 -
   desc: sub_80A4148
   label: sub_80A4148
@@ -78175,7 +78175,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A4148.c:15
 -
   desc: sub_80A4188
   label: sub_80A4188
@@ -78186,7 +78186,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A4188.c:10
 -
   desc: sub_80A421C
   label: sub_80A421C
@@ -78197,7 +78197,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A421C.c:40
 -
   desc: sub_80A43A0
   label: sub_80A43A0
@@ -78208,7 +78208,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A43A0.c:15
 -
   desc: sub_80A43E4
   label: sub_80A43E4
@@ -78219,7 +78219,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A43E4.c:21
 -
   desc: sub_80A4428
   label: sub_80A4428
@@ -78230,7 +78230,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A4428.c:13
 -
   desc: sub_80A447C
   label: sub_80A447C
@@ -78241,7 +78241,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A447C.c:13
 -
   desc: sub_80A44D0
   label: sub_80A44D0
@@ -78252,7 +78252,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A44D0.c:3
 -
   desc: sub_80A44F0
   label: sub_80A44F0
@@ -78263,7 +78263,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A44F0.c:13
 -
   desc: sub_80A4544
   label: sub_80A4544
@@ -78274,7 +78274,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A4544.c:8
 -
   desc: sub_80A4568
   label: sub_80A4568
@@ -78285,7 +78285,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A4568.c:15
 -
   desc: sub_80A45AC
   label: sub_80A45AC
@@ -78296,7 +78296,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A45AC.c:14
 -
   desc: sub_80A4608
   label: sub_80A4608
@@ -78307,7 +78307,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A4608.c:4
 -
   desc: sub_80A462C
   label: sub_80A462C
@@ -78318,7 +78318,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A462C.c:19
 -
   desc: sub_80A467C
   label: sub_80A467C
@@ -78329,7 +78329,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A467C.c:17
 -
   desc: sub_80A46C0
   label: sub_80A46C0
@@ -78340,7 +78340,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A46C0.c:3
 -
   desc: sub_80A46DC
   label: sub_80A46DC
@@ -78351,7 +78351,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A46DC.c:3
 -
   desc: sub_80A46F8
   label: sub_80A46F8
@@ -78362,7 +78362,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A46F8.c:10
 -
   desc: sub_80A4738
   label: sub_80A4738
@@ -78373,7 +78373,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A4738.c:14
 -
   desc: sub_80A47D0
   label: sub_80A47D0
@@ -78384,7 +78384,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A47D0.c:14
 -
   desc: sub_80A4868
   label: sub_80A4868
@@ -78395,7 +78395,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A4868.c:8
 -
   desc: GetSupportScreenUnitCount
   label: GetSupportScreenUnitCount
@@ -79092,7 +79092,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A69F8.c:12
 -
   desc: sub_80A6A0C
   label: sub_80A6A0C
@@ -79103,7 +79103,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A6A0C.c:12
 -
   desc: sub_80A6A1C
   label: sub_80A6A1C
@@ -79114,7 +79114,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A6A0C.c:19
 -
   desc: sub_80A6A30
   label: sub_80A6A30
@@ -79125,7 +79125,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A6A30.c:10
 -
   desc: sub_80A6A7C
   label: sub_80A6A7C
@@ -79136,7 +79136,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A6A7C.c:2
 -
   desc: sub_80A6AA8
   label: sub_80A6AA8
@@ -79147,7 +79147,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A6AA8.c:2
 -
   desc: sub_80A6AC0
   label: sub_80A6AC0
@@ -79158,7 +79158,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A6AC0.c:3
 -
   desc: sub_80A6AFC
   label: sub_80A6AFC
@@ -79169,7 +79169,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A6AFC.c:8
 -
   desc: sub_80A6B90
   label: sub_80A6B90
@@ -79180,7 +79180,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A6B90.c:8
 -
   desc: sub_80A6C20
   label: sub_80A6C20
@@ -79191,7 +79191,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A6C20.c:4
 -
   desc: sub_80A6C60
   label: sub_80A6C60
@@ -79202,40 +79202,40 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A6C60.c:12
 -
-  desc: sub_80A6D34
-  label: sub_80A6D34
+  desc: DecodeLinkArenaRecordHeader
+  label: DecodeLinkArenaRecordHeader
   addr:
     J: 0x80A6D34
   size:
-    J: 0x34
+    J: 0x118
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: DecodeLinkArenaRecordHeader.c:35
 -
-  desc: sub_80A6E4C
-  label: sub_80A6E4C
+  desc: EncodeLinkArenaRecord
+  label: EncodeLinkArenaRecord
   addr:
     J: 0x80A6E4C
   size:
-    J: 0x16
+    J: 0xD0
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: EncodeLinkArenaRecord.c:30
 -
   desc: DecodeAndVerifyArenaRecord
   label: DecodeAndVerifyArenaRecord
   addr:
     J: 0x80A6F1C
   size:
-    J: 0x44
+    J: 0xD4
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: DecodeAndVerifyArenaRecord.c:29
 -
   desc: sub_80A6FF0
   label: sub_80A6FF0
@@ -79246,7 +79246,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A6FF0.c:4
 -
   desc: sub_80A7024
   label: sub_80A7024
@@ -79257,7 +79257,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A7024.c:7
 -
   desc: sub_80A705C
   label: sub_80A705C
@@ -79268,7 +79268,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A705C.c:39
 -
   desc: sub_80A7150
   label: sub_80A7150
@@ -79279,7 +79279,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A7150.c:37
 -
   desc: sub_80A723C
   label: sub_80A723C
@@ -79290,7 +79290,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A723C.c:36
 -
   desc: sub_80A730C
   label: sub_80A730C
@@ -79301,7 +79301,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A730C.c:36
 -
   desc: sub_80A73D4
   label: sub_80A73D4
@@ -79312,7 +79312,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A73D4.c:35
 -
   desc: sub_80A74D4
   label: sub_80A74D4
@@ -79323,7 +79323,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A74D4.c:28
 -
   desc: nullsub_82
   label: nullsub_82
@@ -79334,7 +79334,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_82.c:2
 -
   desc: sub_80A7620
   label: sub_80A7620
@@ -79345,7 +79345,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A7620.c:13
 -
   desc: sub_80A7650
   label: sub_80A7650
@@ -79356,7 +79356,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80A7650.c:15
 -
   desc: BmSave_GetUnusedBuffer
   label: BmSave_GetUnusedBuffer
@@ -79378,7 +79378,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_83.c:2
 -
   desc: SramInit
   label: SramInit
@@ -79842,7 +79842,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_84.c:2
 -
   desc: nullsub_85
   label: nullsub_85
@@ -79853,7 +79853,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_85.c:2
 -
   desc: IsGamePlayedThrough
   label: IsGamePlayedThrough
@@ -81362,7 +81362,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80AB73C.c:6
 -
   desc: sub_80AB748
   label: sub_80AB748
@@ -81373,7 +81373,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80AB748.c:2
 -
   desc: sub_80AB74C
   label: sub_80AB74C
@@ -81384,7 +81384,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80AB74C.c:2
 -
   desc: NullBmMapHidden_
   label: NullBmMapHidden_
@@ -82491,7 +82491,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80AEB98.c:8
 -
   desc: sub_80AEBAC
   label: sub_80AEBAC
@@ -82502,7 +82502,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80AEBAC.c:15
 -
   desc: SaveMenuPostExtraMiscScreen
   label: SaveMenuPostExtraMiscScreen
@@ -83196,7 +83196,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80B06B4.c:8
 -
   desc: SaveMenuInitSaveSlotData
   label: SaveMenuInitSaveSlotData
@@ -83352,7 +83352,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_86.c:2
 -
   desc: sub_80B0E88
   label: sub_80B0E88
@@ -83363,7 +83363,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80B0E88.c:8
 -
   desc: DrawDifficultySprite_Init
   label: DrawDifficultySprite_Init
@@ -83431,7 +83431,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80B1138.c:8
 -
   desc: InterpolateCubicSpline
   label: InterpolateCubicSpline
@@ -83673,7 +83673,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80B1890.c:4
 -
   desc: ParallelFiniteLoop_Loop
   label: ParallelFiniteLoop_Loop
@@ -84168,7 +84168,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_87.c:2
 -
   desc: BgAffinRotScaling
   label: BgAffinRotScaling
@@ -84603,7 +84603,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80B33AC.c:4
 -
   desc: MixPalette_Loop
   label: MixPalette_Loop
@@ -84702,7 +84702,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80B3564.c:13
 -
   desc: CopyTextChar
   label: CopyTextChar
@@ -84834,7 +84834,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80B38B0.c:2
 -
   desc: CountTotalSoundRoomSongs
   label: CountTotalSoundRoomSongs
@@ -84900,7 +84900,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_88.c:2
 -
   desc: SoundRoomSongChange_FadeOutPrevious
   label: SoundRoomSongChange_FadeOutPrevious
@@ -84999,7 +84999,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80B3E40.c:4
 -
   desc: nullsub_89
   label: nullsub_89
@@ -85010,7 +85010,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_89.c:2
 -
   desc: VolumeGraphBuffer_Loop
   label: VolumeGraphBuffer_Loop
@@ -85274,7 +85274,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80B4B34.c:8
 -
   desc: SoundRoom_InitText
   label: SoundRoom_InitText
@@ -85351,7 +85351,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80B4F34.c:4
 -
   desc: SoundRoom_DrawSprites_Loop
   label: SoundRoom_DrawSprites_Loop
@@ -85417,7 +85417,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_90.c:2
 -
   desc: ExtramenuUnk_DrawIconLoop
   label: ExtramenuUnk_DrawIconLoop
@@ -85439,7 +85439,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80B5224.c:8
 -
   desc: sub_80B5238
   label: sub_80B5238
@@ -85450,7 +85450,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80B5238.c:8
 -
   desc: PutChapterBannerSprites
   label: PutChapterBannerSprites
@@ -85685,7 +85685,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80B62A8.c:8
 -
   desc: GetConfigUnk32DifficultyAdjusted
   label: GetConfigUnk32DifficultyAdjusted
@@ -85929,7 +85929,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_91.c:2
 -
   desc: ColFadeOut_Loop
   label: ColFadeOut_Loop
@@ -86676,7 +86676,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_92.c:2
 -
   desc: Shop_EntryDialogue
   label: Shop_EntryDialogue
@@ -87844,7 +87844,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_93.c:2
 -
   desc: GetChapterFundsRank
   label: GetChapterFundsRank
@@ -88277,7 +88277,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80BBF18.c:14
 -
   desc: Fin_Init
   label: Fin_Init
@@ -88435,7 +88435,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80BCA74.c:47
 -
   desc: GameIntroHealthSafetyWaitButton
   label: GameIntroHealthSafetyWaitButton
@@ -88459,7 +88459,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80BCCF0.c:11
 -
   desc: sub_80BCD2C
   label: sub_80BCD2C
@@ -88470,7 +88470,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80BCD2C.c:11
 -
   desc: sub_80BCD5C
   label: sub_80BCD5C
@@ -88481,7 +88481,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80BCD5C.c:8
 -
   desc: sub_80BCD74
   label: sub_80BCD74
@@ -88492,7 +88492,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80BCD74.c:34
 -
   desc: sub_80BCE68
   label: sub_80BCE68
@@ -88503,7 +88503,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80BCE68.c:6
 -
   desc: sub_80BCE94
   label: sub_80BCE94
@@ -88514,7 +88514,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80BCE94.c:6
 -
   desc: GameControlHandlePostNormalOrExtraChapter
   label: GameControlHandlePostNormalOrExtraChapter
@@ -88703,7 +88703,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_94.c:2
 -
   desc: StartWMFaceCtrl
   label: StartWMFaceCtrl
@@ -88879,7 +88879,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_95.c:2
 -
   desc: WorldMap_SetInitialState
   label: WorldMap_SetInitialState
@@ -89024,7 +89024,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80BE578.c:3
 -
   desc: WorldMap_LoopExt
   label: WorldMap_LoopExt
@@ -89758,7 +89758,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80BF950.c:2
 -
   desc: GMapScreen_Loop
   label: GMapScreen_Loop
@@ -90123,7 +90123,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80C0094.c:4
 -
   desc: GmapUnitFade_InterpolateColor
   label: GmapUnitFade_InterpolateColor
@@ -90307,7 +90307,7 @@
     J: 0x80C05C8
     U: 0x80BB798
   size:
-    J: 0x1E
+    J: 0x220
     U: 0x20C
   mode: thumb
   params: null
@@ -90356,7 +90356,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_96.c:2
 -
   desc: GmapCursor_Init
   label: GmapCursor_Init
@@ -90444,7 +90444,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_97.c:2
 -
   desc: MapRoute_Init
   label: MapRoute_Init
@@ -91338,7 +91338,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_100.c:2
 -
   desc: GmMu_OnInit
   label: GmMu_OnInit
@@ -91967,7 +91967,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80C3F7C.c:4
 -
   desc: GmMoveCursor_OnLoop
   label: GmMoveCursor_OnLoop
@@ -92022,7 +92022,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80C40BC.c:4
 -
   desc: GmScrollManage_OnLoop
   label: GmScrollManage_OnLoop
@@ -92167,7 +92167,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_101.c:2
 -
   desc: GmPalFade_Init
   label: GmPalFade_Init
@@ -92442,7 +92442,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_102.c:2
 -
   desc: GmMuEntry_Init
   label: GmMuEntry_Init
@@ -93211,7 +93211,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_104.c:2
 -
   desc: GmapTimeMons_Init
   label: GmapTimeMons_Init
@@ -94610,7 +94610,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_107.c:2
 -
   desc: GMapBaseMenu_Init
   label: GMapBaseMenu_Init
@@ -95571,7 +95571,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80CAEF4.c:5
 -
   desc: Title_PrepareLightExplosionFx
   label: Title_PrepareLightExplosionFx
@@ -95885,7 +95885,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80CBD20.c:4
 -
   desc: OpAnimBldAlphaUpdateBgPalette
   label: OpAnimBldAlphaUpdateBgPalette
@@ -96961,7 +96961,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80D0DB4.c:5
 -
   desc: GameIntroPrepareNintendofx
   label: GameIntroPrepareNintendofx
@@ -97500,7 +97500,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80D2308.c:6
 -
   desc: RefreshBMapDisplay_FromPromotion
   label: RefreshBMapDisplay_FromPromotion
@@ -97810,7 +97810,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: sub_80D2AD8.c:8
 -
   desc: ClassChgExecPromotionReal
   label: ClassChgExecPromotionReal
@@ -98601,7 +98601,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_110.c:2
 -
   desc: MPlayContinue
   label: MPlayContinue
@@ -98833,7 +98833,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: agbsyscall_80D5244.s:11
 -
   desc: ClearChain
   label: ClearChain
@@ -99379,7 +99379,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_4.c:2
 -
   desc: ArcTan2
   label: ArcTan2
@@ -99469,7 +99469,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: libagbsyscall.s:57
 -
   desc: HuffUnComp
   label: HuffUnComp
@@ -99714,7 +99714,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: call_via.s:12
 -
   desc: _call_via_r1
   label: _call_via_r1
@@ -99835,7 +99835,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_111.s:11
 -
   desc: __divsi3
   label: __divsi3
@@ -99857,7 +99857,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_3.s:10
 -
   desc: __modsi3
   label: __modsi3
@@ -100297,7 +100297,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_7.c:2
 -
   desc: nullsub_8
   label: nullsub_8
@@ -100308,7 +100308,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: nullsub_8.c:2
 -
   desc: DisableKeyComboResetEN
   label: DisableKeyComboResetEN
@@ -101477,6 +101477,28 @@
   return: null
   line: sio_points.c:686
 -
+  desc: SetLinkArenaUiBlendWindow
+  label: SetLinkArenaUiBlendWindow
+  addr:
+    U: 0x804B920
+  size:
+    U: 0xC
+  mode: thumb
+  params: null
+  return: null
+  line: sio_804B920.c:10
+-
+  desc: ClearLinkArenaUiBlendWindow
+  label: ClearLinkArenaUiBlendWindow
+  addr:
+    U: 0x804B92C
+  size:
+    U: 0xC
+  mode: thumb
+  params: null
+  return: null
+  line: sio_804B920.c:17
+-
   desc: Sio_WaitBoxTransitionOpen
   label: Sio_WaitBoxTransitionOpen
   addr:
@@ -102233,6 +102255,72 @@
   return: null
   line: mapanim_staffeffect.c:216
 -
+  desc: StartMapAnimEffect_SoundOnly
+  label: StartMapAnimEffect_SoundOnly
+  addr:
+    U: 0x807D7D8
+  size:
+    U: 0x40
+  mode: thumb
+  params: null
+  return: null
+  line: mapanim_staffeffect.c:494
+-
+  desc: MapAnimEffect_SoundOnly_PlaySe
+  label: MapAnimEffect_SoundOnly_PlaySe
+  addr:
+    U: 0x807D818
+  size:
+    U: 0x14
+  mode: thumb
+  params: null
+  return: null
+  line: mapanim_staffeffect.c:504
+-
+  desc: StartMapAnimEffect_SineWaveWindow
+  label: StartMapAnimEffect_SineWaveWindow
+  addr:
+    U: 0x807E34C
+  size:
+    U: 0x44
+  mode: thumb
+  params: null
+  return: null
+  line: mapanim_staffeffect.c:1133
+-
+  desc: StartMapAnimEffect_BgScroll
+  label: StartMapAnimEffect_BgScroll
+  addr:
+    U: 0x807EA20
+  size:
+    U: 0x30
+  mode: thumb
+  params: null
+  return: null
+  line: mapanim_staffeffect.c:1439
+-
+  desc: EndMapAnimEffect_BgScroll
+  label: EndMapAnimEffect_BgScroll
+  addr:
+    U: 0x807EA50
+  size:
+    U: 0x10
+  mode: thumb
+  params: null
+  return: null
+  line: mapanim_staffeffect.c:1453
+-
+  desc: MapAnimEffect_BgScroll_Loop
+  label: MapAnimEffect_BgScroll_Loop
+  addr:
+    U: 0x807EA60
+  size:
+    U: 0x38
+  mode: thumb
+  params: null
+  return: null
+  line: mapanim_staffeffect.c:1458
+-
   desc: ManimLevelUpLabelColor_Init
   label: ManimLevelUpLabelColor_Init
   addr:
@@ -102276,6 +102364,17 @@
   params: null
   return: null
   line: mapanim_spellassoc.c:546
+-
+  desc: HBlank_MapAnimEffect_SineWaveWindow
+  label: HBlank_MapAnimEffect_SineWaveWindow
+  addr:
+    U: 0x8081FA8
+  size:
+    U: 0x54
+  mode: thumb
+  params: null
+  return: null
+  line: mapanim_scanline.c:75
 -
   desc: ManimShiftingSineWaveScanlineBuf_Init
   label: ManimShiftingSineWaveScanlineBuf_Init
@@ -104530,7 +104629,7 @@
   mode: thumb
   params: null
   return: null
-  line: ''
+  line: j_ClearOam.s:10
 -
   desc: ClearOAMBuffer
   label: ClearOAMBuffer

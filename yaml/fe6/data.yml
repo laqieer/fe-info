@@ -104,6 +104,20 @@
   size: 0x4
   line: ''
 -
+  desc: _0800089C
+  label: _0800089C
+  type: null
+  addr: 0x800089C
+  size: 0x10
+  line: ''
+-
+  desc: _080008AC
+  label: _080008AC
+  type: null
+  addr: 0x80008AC
+  size: 0x174
+  line: ''
+-
   desc: ArmCodeEnd
   label: ArmCodeEnd
   type: const u8 []
@@ -25407,7 +25421,7 @@
   type: null
   addr: 0x8112174
   size: 0xC0
-  line: ''
+  line: banim_ekrbattleintrofx.c:92
 -
   desc: RoundTypes_NormalPhy
   label: RoundTypes_NormalPhy
@@ -25995,315 +26009,315 @@
   type: null
   addr: 0x8119FFC
   size: 0x6E
-  line: banim_efxmagic.c:3171
+  line: banim_efxmagic.c:3247
 -
   desc: frames.377
   label: frames.377
   type: null
   addr: 0x811A06A
   size: 0x2E
-  line: banim_efxmagic.c:3253
+  line: banim_efxmagic.c:3329
 -
   desc: frames.408
   label: frames.408
   type: null
   addr: 0x811A098
   size: 0x46
-  line: banim_efxmagic.c:3516
+  line: banim_efxmagic.c:3658
 -
   desc: frames.451
   label: frames.451
   type: null
   addr: 0x811A0DE
   size: 0xA
-  line: banim_efxmagic.c:3773
+  line: banim_efxmagic.c:3945
 -
   desc: frames.458
   label: frames.458
   type: null
   addr: 0x811A0E8
   size: 0x1A
-  line: banim_efxmagic.c:3821
+  line: banim_efxmagic.c:3993
 -
   desc: frames.477
   label: frames.477
   type: null
   addr: 0x811A102
   size: 0x32
-  line: banim_efxmagic.c:3979
+  line: banim_efxmagic.c:4272
 -
   desc: frames.481
   label: frames.481
   type: null
   addr: 0x811A134
   size: 0x76
-  line: banim_efxmagic.c:4026
+  line: banim_efxmagic.c:4319
 -
   desc: frames.518
   label: frames.518
   type: null
   addr: 0x811A1AA
   size: 0x6E
-  line: banim_efxmagic.c:4286
+  line: banim_efxmagic.c:4714
 -
   desc: FrameConf_EfxResireBG3
   label: FrameConf_EfxResireBG3
   type: null
   addr: 0x811A218
   size: 0x5E
-  line: banim_efxmagic.c:4342
+  line: banim_efxmagic.c:4770
 -
   desc: FrameConf_EfxResireBG2
   label: FrameConf_EfxResireBG2
   type: null
   addr: 0x811A276
   size: 0x6
-  line: banim_efxmagic.c:4369
+  line: banim_efxmagic.c:4797
 -
   desc: frame_config.552
   label: frame_config.552
   type: null
   addr: 0x811A27C
   size: 0x86
-  line: banim_efxmagic.c:4628
+  line: banim_efxmagic.c:5456
 -
   desc: frame_config.568
   label: frame_config.568
   type: null
   addr: 0x811A302
   size: 0x176
-  line: banim_efxmagic.c:4813
+  line: banim_efxmagic.c:5641
 -
   desc: frame_config.593
   label: frame_config.593
   type: null
   addr: 0x811A478
   size: 0x96
-  line: banim_efxmagic.c:5094
+  line: banim_efxmagic.c:6045
 -
   desc: frame_config.600
   label: frame_config.600
   type: null
   addr: 0x811A50E
   size: 0x22
-  line: banim_efxmagic.c:5187
+  line: banim_efxmagic.c:6138
 -
-  desc: FrameArray_EfxDivineBG
-  label: FrameArray_EfxDivineBG
+  desc: frames.664
+  label: frames.664
   type: null
   addr: 0x811A530
   size: 0x6E
-  line: ''
+  line: banim_efxmagic.c:6817
 -
-  desc: FrameArray_EfxDivineBG2
-  label: FrameArray_EfxDivineBG2
+  desc: frames.668
+  label: frames.668
   type: null
   addr: 0x811A59E
   size: 0xE
-  line: ''
+  line: banim_efxmagic.c:6875
 -
-  desc: FrameArray_EfxDivineBG3
-  label: FrameArray_EfxDivineBG3
+  desc: frames.672
+  label: frames.672
   type: null
   addr: 0x811A5AC
   size: 0x56
-  line: ''
+  line: banim_efxmagic.c:6909
 -
-  desc: FrameArray_EfxAureolaBG
-  label: FrameArray_EfxAureolaBG
+  desc: frames.691
+  label: frames.691
   type: null
   addr: 0x811A602
   size: 0x16
-  line: ''
+  line: banim_efxmagic.c:7093
 -
-  desc: FrameArray_EfxAureolaBG2COL
-  label: FrameArray_EfxAureolaBG2COL
+  desc: frames.704
+  label: frames.704
   type: null
   addr: 0x811A618
   size: 0x12
-  line: ''
+  line: banim_efxmagic.c:7206
 -
-  desc: FrameArray_EfxApocalypseBGCOL2
-  label: FrameArray_EfxApocalypseBGCOL2
+  desc: frames.780
+  label: frames.780
   type: null
   addr: 0x811A62A
   size: 0x3E
-  line: ''
+  line: banim_efxmagic.c:8040
 -
-  desc: FrameArray_EfxApocalypseBG2
-  label: FrameArray_EfxApocalypseBG2
+  desc: frames.808
+  label: frames.808
   type: null
   addr: 0x811A668
   size: 0x12
-  line: ''
+  line: banim_efxmagic.c:8185
 -
-  desc: FrameArray_EfxHazymoonBG1
-  label: FrameArray_EfxHazymoonBG1
+  desc: frames.842
+  label: frames.842
   type: null
   addr: 0x811A67A
   size: 0x6
-  line: ''
+  line: banim_efxmagic.c:8810
 -
-  desc: FrameArray_EfxHazymoonBG2
-  label: FrameArray_EfxHazymoonBG2
+  desc: frames.846
+  label: frames.846
   type: null
   addr: 0x811A680
   size: 0xA2
-  line: ''
+  line: banim_efxmagic.c:8836
 -
-  desc: FrameArray_EfxHazymoonBG3
-  label: FrameArray_EfxHazymoonBG3
+  desc: frames.850
+  label: frames.850
   type: null
   addr: 0x811A722
   size: 0x36
-  line: ''
+  line: banim_efxmagic.c:8901
 -
-  desc: FrameArray_EfxFenrirBGCOL
-  label: FrameArray_EfxFenrirBGCOL
+  desc: frames.899
+  label: frames.899
   type: null
   addr: 0x811A758
   size: 0x3E
-  line: ''
+  line: banim_efxmagic.c:9257
 -
-  desc: FrameArray_EfxFenrirBG2_A
-  label: FrameArray_EfxFenrirBG2_A
+  desc: frames.915
+  label: frames.915
   type: null
   addr: 0x811A796
   size: 0x102
-  line: ''
+  line: banim_efxmagic.c:9348
 -
-  desc: FrameArray1_EfxLiveBG
-  label: FrameArray1_EfxLiveBG
+  desc: EfxLiveBG_frames_1
+  label: EfxLiveBG_frames_1
   type: null
   addr: 0x811A898
   size: 0x6
-  line: ''
+  line: banim_efxmagic.c:9893
 -
-  desc: FrameArray2_EfxLiveBG
-  label: FrameArray2_EfxLiveBG
+  desc: EfxLiveBG_frames_2
+  label: EfxLiveBG_frames_2
   type: null
   addr: 0x811A89E
   size: 0x6
-  line: ''
+  line: banim_efxmagic.c:9898
 -
-  desc: FrameArray3_EfxLiveBG
-  label: FrameArray3_EfxLiveBG
+  desc: EfxLiveBG_frames_3
+  label: EfxLiveBG_frames_3
   type: null
   addr: 0x811A8A4
   size: 0x6
-  line: ''
+  line: banim_efxmagic.c:9903
 -
-  desc: FrameArray4_EfxLiveBG
-  label: FrameArray4_EfxLiveBG
+  desc: EfxLiveBG_frames_4
+  label: EfxLiveBG_frames_4
   type: null
   addr: 0x811A8AA
   size: 0x6
-  line: ''
+  line: banim_efxmagic.c:9908
 -
-  desc: FrameArray1_EfxLiveBGCOL
-  label: FrameArray1_EfxLiveBGCOL
+  desc: EfxLiveBGCOL_frames_1
+  label: EfxLiveBGCOL_frames_1
   type: null
   addr: 0x811A8B0
   size: 0x42
-  line: ''
+  line: banim_efxmagic.c:10021
 -
-  desc: FrameArray2_EfxLiveBGCOL
-  label: FrameArray2_EfxLiveBGCOL
+  desc: EfxLiveBGCOL_frames_2
+  label: EfxLiveBGCOL_frames_2
   type: null
   addr: 0x811A8F2
   size: 0x42
-  line: ''
+  line: banim_efxmagic.c:10041
 -
-  desc: FrameArray3_EfxLiveBGCOL
-  label: FrameArray3_EfxLiveBGCOL
+  desc: EfxLiveBGCOL_frames_3
+  label: EfxLiveBGCOL_frames_3
   type: null
   addr: 0x811A934
   size: 0x32
-  line: ''
+  line: banim_efxmagic.c:10061
 -
-  desc: FrameArray4_EfxLiveBGCOL
-  label: FrameArray4_EfxLiveBGCOL
+  desc: EfxLiveBGCOL_frames_4
+  label: EfxLiveBGCOL_frames_4
   type: null
   addr: 0x811A966
   size: 0x42
-  line: ''
+  line: banim_efxmagic.c:10077
 -
-  desc: FrameArray_EfxReserveBG
-  label: FrameArray_EfxReserveBG
+  desc: frames.1021
+  label: frames.1021
   type: null
   addr: 0x811A9A8
   size: 0x12
-  line: ''
+  line: banim_efxmagic.c:10489
 -
-  desc: SfxArray_EfxReserveBG
-  label: SfxArray_EfxReserveBG
+  desc: sfx.1025
+  label: sfx.1025
   type: null
   addr: 0x811A9BA
   size: 0x8
-  line: ''
+  line: banim_efxmagic.c:10511
 -
-  desc: SfxLocArray_EfxReserveBG
-  label: SfxLocArray_EfxReserveBG
+  desc: sfx_loc.1026
+  label: sfx_loc.1026
   type: null
   addr: 0x811A9C2
   size: 0x8
-  line: ''
+  line: banim_efxmagic.c:10518
 -
-  desc: FrameArray_EfxReserveBGCOL
-  label: FrameArray_EfxReserveBGCOL
+  desc: frames.1030
+  label: frames.1030
   type: null
   addr: 0x811A9CA
   size: 0x102
-  line: ''
+  line: banim_efxmagic.c:10554
 -
-  desc: FrameArray_EfxReserveBG2
-  label: FrameArray_EfxReserveBG2
+  desc: frames.1037
+  label: frames.1037
   type: null
   addr: 0x811AACC
   size: 0x6
-  line: ''
+  line: banim_efxmagic.c:10658
 -
-  desc: FrameArray_EfxReserveBGCOL2
-  label: FrameArray_EfxReserveBGCOL2
+  desc: frames.1044
+  label: frames.1044
   type: null
   addr: 0x811AAD2
   size: 0xDE
-  line: ''
+  line: banim_efxmagic.c:10723
 -
-  desc: FrameArray_EfxRestBG
-  label: FrameArray_EfxRestBG
+  desc: frames.1057
+  label: frames.1057
   type: null
   addr: 0x811ABB0
   size: 0x36
-  line: ''
+  line: banim_efxmagic.c:10925
 -
-  desc: FrameArray_EfxSilenceBG
-  label: FrameArray_EfxSilenceBG
+  desc: frames.1076
+  label: frames.1076
   type: null
   addr: 0x811ABE6
   size: 0x4A
-  line: ''
+  line: banim_efxmagic.c:11106
 -
-  desc: FrameArray_EfxSleepBG
-  label: FrameArray_EfxSleepBG
+  desc: frames.1095
+  label: frames.1095
   type: null
   addr: 0x811AC30
   size: 0x102
-  line: ''
+  line: banim_efxmagic.c:11307
 -
-  desc: FrameArray_EfxHammarneBG
-  label: FrameArray_EfxHammarneBG
+  desc: frames.1126
+  label: frames.1126
   type: null
   addr: 0x811AD32
   size: 0x36
-  line: ''
+  line: banim_efxmagic.c:11580
 -
-  desc: FrameArray_EfxMshieldBG
-  label: FrameArray_EfxMshieldBG
+  desc: frames.1202
+  label: frames.1202
   type: null
   addr: 0x811AD68
   size: 0xCC
-  line: ''
+  line: banim_efxmagic.c:12069
 -
   desc: frams.27
   label: frams.27
@@ -38695,172 +38709,144 @@
   size: 0x20
   line: ''
 -
-  desc: EndingCG_0832CCB0
-  label: EndingCG_0832CCB0
+  desc: EndingCG_Img1
+  label: EndingCG_Img1
   type: null
   addr: 0x832CCB0
   size: 0xFDC
   line: ''
 -
-  desc: EndingCG_0832DC8C
-  label: EndingCG_0832DC8C
+  desc: EndingCG_Pal1
+  label: EndingCG_Pal1
   type: null
   addr: 0x832DC8C
   size: 0x20
   line: ''
 -
-  desc: EndingCG_0832DCAC
-  label: EndingCG_0832DCAC
+  desc: EndingCG_Img2
+  label: EndingCG_Img2
   type: null
   addr: 0x832DCAC
   size: 0x1100
   line: ''
 -
-  desc: EndingCG_0832EDAC
-  label: EndingCG_0832EDAC
+  desc: EndingCG_Pal2
+  label: EndingCG_Pal2
   type: null
   addr: 0x832EDAC
   size: 0x20
   line: ''
 -
-  desc: EndingCG_0832EDCC
-  label: EndingCG_0832EDCC
+  desc: EndingCG_Img3
+  label: EndingCG_Img3
   type: null
   addr: 0x832EDCC
   size: 0xFA4
   line: ''
 -
-  desc: EndingCG_0832FD70
-  label: EndingCG_0832FD70
+  desc: EndingCG_Pal3
+  label: EndingCG_Pal3
   type: null
   addr: 0x832FD70
   size: 0x20
   line: ''
 -
-  desc: EndingCG_0832FD90
-  label: EndingCG_0832FD90
+  desc: EndingCG_Img4
+  label: EndingCG_Img4
   type: null
   addr: 0x832FD90
   size: 0xD9C
   line: ''
 -
-  desc: EndingCG_08330B2C
-  label: EndingCG_08330B2C
+  desc: EndingCG_Pal4
+  label: EndingCG_Pal4
   type: null
   addr: 0x8330B2C
   size: 0x20
   line: ''
 -
-  desc: EndingCG_08330B4C
-  label: EndingCG_08330B4C
+  desc: EndingCG_Img5
+  label: EndingCG_Img5
   type: null
   addr: 0x8330B4C
   size: 0x1050
   line: ''
 -
-  desc: EndingCG_08331B9C
-  label: EndingCG_08331B9C
+  desc: EndingCG_Pal5
+  label: EndingCG_Pal5
   type: null
   addr: 0x8331B9C
   size: 0x20
   line: ''
 -
-  desc: EndingCG_08331BBC
-  label: EndingCG_08331BBC
+  desc: EndingCG_Img6
+  label: EndingCG_Img6
   type: null
   addr: 0x8331BBC
   size: 0x12A8
   line: ''
 -
-  desc: EndingCG_08332E64
-  label: EndingCG_08332E64
+  desc: EndingCG_Pal6
+  label: EndingCG_Pal6
   type: null
   addr: 0x8332E64
   size: 0x20
   line: ''
 -
-  desc: EndingCG_08332E84
-  label: EndingCG_08332E84
+  desc: EndingCG_Img7
+  label: EndingCG_Img7
   type: null
   addr: 0x8332E84
   size: 0xF50
   line: ''
 -
-  desc: EndingCG_08333DD4
-  label: EndingCG_08333DD4
+  desc: EndingCG_Pal7
+  label: EndingCG_Pal7
   type: null
   addr: 0x8333DD4
   size: 0x20
   line: ''
 -
-  desc: EndingCG_08333DF4
-  label: EndingCG_08333DF4
+  desc: EndingCG_Img8
+  label: EndingCG_Img8
   type: null
   addr: 0x8333DF4
   size: 0x126C
   line: ''
 -
-  desc: EndingCG_08335060
-  label: EndingCG_08335060
+  desc: EndingCG_Pal8
+  label: EndingCG_Pal8
   type: null
   addr: 0x8335060
   size: 0x20
   line: ''
 -
-  desc: EndingCG_08335080
-  label: EndingCG_08335080
+  desc: EndingCG_Img9
+  label: EndingCG_Img9
   type: null
   addr: 0x8335080
   size: 0xC48
   line: ''
 -
-  desc: EndingCG_08335CC8
-  label: EndingCG_08335CC8
+  desc: EndingCG_Pal9
+  label: EndingCG_Pal9
   type: null
   addr: 0x8335CC8
   size: 0x20
   line: ''
 -
-  desc: EndingCG_08335CE8
-  label: EndingCG_08335CE8
+  desc: EndingCG_Img10
+  label: EndingCG_Img10
   type: null
   addr: 0x8335CE8
   size: 0xF58
   line: ''
 -
-  desc: EndingCG_08336C40
-  label: EndingCG_08336C40
+  desc: EndingCG_Pal10
+  label: EndingCG_Pal10
   type: null
   addr: 0x8336C40
-  size: 0x90
-  line: ''
--
-  desc: String_Xmap_08336CD0
-  label: String_Xmap_08336CD0
-  type: null
-  addr: 0x8336CD0
-  size: 0x20
-  line: ''
--
-  desc: String_Xmap_08336CF0
-  label: String_Xmap_08336CF0
-  type: null
-  addr: 0x8336CF0
-  size: 0x8
-  line: ''
--
-  desc: String_Xmap_08336CF8
-  label: String_Xmap_08336CF8
-  type: null
-  addr: 0x8336CF8
-  size: 0x8
-  line: ''
--
-  desc: String_Xmap_08336D00
-  label: String_Xmap_08336D00
-  type: null
-  addr: 0x8336D00
-  size: 0x3C
+  size: 0xFC
   line: ''
 -
   desc: String_Xmap_08336D3C
@@ -83336,133 +83322,133 @@
   type: null
   addr: 0x85CBBB0
   size: 0x18
-  line: ''
+  line: banim_ekrbattleintrofx.c:10
 -
   desc: Imgs_EkrBaseKaiten1
   label: Imgs_EkrBaseKaiten1
   type: null
   addr: 0x85CBBC8
   size: 0x20
-  line: ''
+  line: banim_ekrbattleintrofx.c:16
 -
   desc: Imgs_EkrBaseKaiten2
   label: Imgs_EkrBaseKaiten2
   type: null
   addr: 0x85CBBE8
   size: 0x20
-  line: ''
+  line: banim_ekrbattleintrofx.c:23
 -
   desc: AnimScrs_EkrBaseKaiten1
   label: AnimScrs_EkrBaseKaiten1
   type: null
   addr: 0x85CBC08
   size: 0x20
-  line: ''
+  line: banim_ekrbattleintrofx.c:34
 -
   desc: AnimScrs_EkrBaseKaiten2
   label: AnimScrs_EkrBaseKaiten2
   type: null
   addr: 0x85CBC28
   size: 0x20
-  line: ''
+  line: banim_ekrbattleintrofx.c:41
 -
   desc: AnimScrs_EkrBaseKaiten3
   label: AnimScrs_EkrBaseKaiten3
   type: null
   addr: 0x85CBC48
   size: 0x20
-  line: ''
+  line: banim_ekrbattleintrofx.c:52
 -
   desc: AnimScrs_EkrBaseKaiten4
   label: AnimScrs_EkrBaseKaiten4
   type: null
   addr: 0x85CBC68
   size: 0x20
-  line: ''
+  line: banim_ekrbattleintrofx.c:63
 -
   desc: AnimScrs_EkrBaseKaiten5
   label: AnimScrs_EkrBaseKaiten5
   type: null
   addr: 0x85CBC88
   size: 0x20
-  line: ''
+  line: banim_ekrbattleintrofx.c:70
 -
   desc: AnimScrs_EkrBaseKaiten6
   label: AnimScrs_EkrBaseKaiten6
   type: null
   addr: 0x85CBCA8
   size: 0x20
-  line: ''
+  line: banim_ekrbattleintrofx.c:81
 -
   desc: EkrBaseKaiten_Table1
   label: EkrBaseKaiten_Table1
   type: null
   addr: 0x85CBCC8
   size: 0x20
-  line: ''
+  line: banim_ekrbattleintrofx.c:107
 -
   desc: EkrBaseKaiten_Table2
   label: EkrBaseKaiten_Table2
   type: null
   addr: 0x85CBCE8
   size: 0x20
-  line: ''
+  line: banim_ekrbattleintrofx.c:114
 -
   desc: EkrBaseKaiten_Table3
   label: EkrBaseKaiten_Table3
   type: null
   addr: 0x85CBD08
   size: 0x20
-  line: ''
+  line: banim_ekrbattleintrofx.c:125
 -
   desc: ProcScr_EkrUnitKakudai
   label: ProcScr_EkrUnitKakudai
   type: null
   addr: 0x85CBD28
   size: 0x28
-  line: ''
+  line: banim_ekrbattleintrofx.c:363
 -
   desc: ProcScr_EkrWindowAppear
   label: ProcScr_EkrWindowAppear
   type: null
   addr: 0x85CBD50
   size: 0x18
-  line: ''
+  line: banim_ekrbattleintrofx.c:463
 -
   desc: ProcScr_EkrNamewinAppear
   label: ProcScr_EkrNamewinAppear
   type: null
   addr: 0x85CBD68
   size: 0x20
-  line: ''
+  line: banim_ekrbattleintrofx.c:469
 -
   desc: ProcScr_EkrBaseAppear
   label: ProcScr_EkrBaseAppear
   type: null
   addr: 0x85CBD88
   size: 0x18
-  line: ''
+  line: banim_ekrbattleintrofx.c:476
 -
   desc: AnimScr_DefaultAnim
   label: AnimScr_DefaultAnim
   type: null
   addr: 0x85CBDA0
   size: 0x10
-  line: banim_ekrmain.c:77
+  line: banim_ekrmain.c:75
 -
   desc: TsaConfs_BanimTmA
   label: TsaConfs_BanimTmA
   type: null
   addr: 0x85CBDB0
   size: 0x28
-  line: banim_ekrmain.c:82
+  line: banim_ekrmain.c:80
 -
   desc: ProcScr_EkrChienCHR
   label: ProcScr_EkrChienCHR
   type: null
   addr: 0x85CBDD8
   size: 0x18
-  line: banim_ekrmain.c:95
+  line: banim_ekrmain.c:93
 -
   desc: ProcScr_EfxAnimeDrv
   label: ProcScr_EfxAnimeDrv
@@ -85492,1134 +85478,1134 @@
   type: null
   addr: 0x85D14EC
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:3101
 -
   desc: TsaArray_EfxFimbulvetrBGTR
   label: TsaArray_EfxFimbulvetrBGTR
   type: null
   addr: 0x85D1504
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:3107
 -
   desc: ImgArray_EfxFimbulvetrBGTR
   label: ImgArray_EfxFimbulvetrBGTR
   type: null
   addr: 0x85D151C
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:3116
 -
   desc: ProcScr_EfxFimbulvetrBG
   label: ProcScr_EfxFimbulvetrBG
   type: null
   addr: 0x85D1534
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:3125
 -
   desc: TsaArray_EfxFimbulvetrBG
   label: TsaArray_EfxFimbulvetrBG
   type: null
   addr: 0x85D154C
   size: 0x2C
-  line: ''
+  line: banim_efxmagic.c:3131
 -
   desc: ImgArray_EfxFimbulvetrBG
   label: ImgArray_EfxFimbulvetrBG
   type: null
   addr: 0x85D1578
   size: 0x2C
-  line: ''
+  line: banim_efxmagic.c:3145
 -
   desc: ProcScr_EfxFimbulvetrOBJ
   label: ProcScr_EfxFimbulvetrOBJ
   type: null
   addr: 0x85D15A4
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:3159
 -
   desc: ProcScr_EfxFimbulvetrOBJ2
   label: ProcScr_EfxFimbulvetrOBJ2
   type: null
   addr: 0x85D15BC
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:3165
 -
   desc: ProcScr_EfxFimbulvetrOBJ2Fall
   label: ProcScr_EfxFimbulvetrOBJ2Fall
   type: null
   addr: 0x85D15D4
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:3171
 -
   desc: ProcScr_EfxThunderstorm
   label: ProcScr_EfxThunderstorm
   type: null
   addr: 0x85D15EC
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:3540
 -
   desc: ProcScr_EfxThunderstormBG
   label: ProcScr_EfxThunderstormBG
   type: null
   addr: 0x85D1604
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:3546
 -
   desc: ImgArray_EfxThunderstormBG
   label: ImgArray_EfxThunderstormBG
   type: null
   addr: 0x85D161C
   size: 0x2C
-  line: ''
+  line: banim_efxmagic.c:3552
 -
   desc: TsaArray_EfxThunderstormBG
   label: TsaArray_EfxThunderstormBG
   type: null
   addr: 0x85D1648
   size: 0x2C
-  line: ''
+  line: banim_efxmagic.c:3566
 -
   desc: ProcScr_EfxThunderstormOBJ
   label: ProcScr_EfxThunderstormOBJ
   type: null
   addr: 0x85D1674
   size: 0x28
-  line: ''
+  line: banim_efxmagic.c:3580
 -
   desc: ProcScr_EfxThunderstormCOLOR
   label: ProcScr_EfxThunderstormCOLOR
   type: null
   addr: 0x85D169C
   size: 0x40
-  line: ''
+  line: banim_efxmagic.c:3588
 -
   desc: ProcScr_EfxThunderstormDARK
   label: ProcScr_EfxThunderstormDARK
   type: null
   addr: 0x85D16DC
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:3599
 -
   desc: ProcScr_EfxAlacalibur
   label: ProcScr_EfxAlacalibur
   type: null
   addr: 0x85D16FC
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:3850
 -
   desc: ProcScr_EfxAlacaliburBG
   label: ProcScr_EfxAlacaliburBG
   type: null
   addr: 0x85D1714
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:3856
 -
   desc: TsaArray_EfxAlacaliburBG
   label: TsaArray_EfxAlacaliburBG
   type: null
   addr: 0x85D172C
   size: 0x8
-  line: ''
+  line: banim_efxmagic.c:3862
 -
   desc: ProcScr_EfxAlacaliburBGCOL
   label: ProcScr_EfxAlacaliburBGCOL
   type: null
   addr: 0x85D1734
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:3867
 -
   desc: ProcScr_EfxAlacaliburOBJ
   label: ProcScr_EfxAlacaliburOBJ
   type: null
   addr: 0x85D1754
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:3874
 -
   desc: ProcScr_EfxMistyrain
   label: ProcScr_EfxMistyrain
   type: null
   addr: 0x85D176C
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:4074
 -
   desc: ProcScr_EfxMistyrainBG
   label: ProcScr_EfxMistyrainBG
   type: null
   addr: 0x85D1784
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:4080
 -
   desc: TsaArray_EfxMistyrainBG
   label: TsaArray_EfxMistyrainBG
   type: null
   addr: 0x85D179C
   size: 0xA4
-  line: ''
+  line: banim_efxmagic.c:4086
 -
   desc: ImgArray_EfxMistyrainBG
   label: ImgArray_EfxMistyrainBG
   type: null
   addr: 0x85D1840
   size: 0xA4
-  line: ''
+  line: banim_efxmagic.c:4130
 -
   desc: ProcScr_EfxMistyrainOBJ
   label: ProcScr_EfxMistyrainOBJ
   type: null
   addr: 0x85D18E4
   size: 0x48
-  line: ''
+  line: banim_efxmagic.c:4174
 -
   desc: ProcScr_EfxMistyrainOBJ2
   label: ProcScr_EfxMistyrainOBJ2
   type: null
   addr: 0x85D192C
   size: 0x30
-  line: ''
+  line: banim_efxmagic.c:4186
 -
   desc: ProcScr_EfxResire
   label: ProcScr_EfxResire
   type: null
   addr: 0x85D195C
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:4511
 -
   desc: ProcScr_EfxResireBG
   label: ProcScr_EfxResireBG
   type: null
   addr: 0x85D1974
   size: 0x30
-  line: ''
+  line: banim_efxmagic.c:4517
 -
   desc: ProcScr_EfxResireBG2
   label: ProcScr_EfxResireBG2
   type: null
   addr: 0x85D19A4
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:4526
 -
   desc: ImgArray_EfxResireBG
   label: ImgArray_EfxResireBG
   type: null
   addr: 0x85D19BC
   size: 0xCC
-  line: ''
+  line: banim_efxmagic.c:4532
 -
   desc: TsaArray_EfxResireBG
   label: TsaArray_EfxResireBG
   type: null
   addr: 0x85D1A88
   size: 0xCC
-  line: ''
+  line: banim_efxmagic.c:4586
 -
   desc: ProcScr_EfxResireRST
   label: ProcScr_EfxResireRST
   type: null
   addr: 0x85D1B54
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:4640
 -
   desc: ProcScr_EfxLightning
   label: ProcScr_EfxLightning
   type: null
   addr: 0x85D1B6C
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:4997
 -
   desc: ProcScr_EfxLightningBG
   label: ProcScr_EfxLightningBG
   type: null
   addr: 0x85D1B84
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:5003
 -
   desc: ImgArray_EfxLightningBG
   label: ImgArray_EfxLightningBG
   type: null
   addr: 0x85D1B9C
   size: 0x84
-  line: ''
+  line: banim_efxmagic.c:5009
 -
   desc: PalArray_EfxLightningBG
   label: PalArray_EfxLightningBG
   type: null
   addr: 0x85D1C20
   size: 0x84
-  line: ''
+  line: banim_efxmagic.c:5045
 -
   desc: TsaArray_EfxLightningBG
   label: TsaArray_EfxLightningBG
   type: null
   addr: 0x85D1CA4
   size: 0x84
-  line: ''
+  line: banim_efxmagic.c:5081
 -
   desc: ProcScr_EfxPurge
   label: ProcScr_EfxPurge
   type: null
   addr: 0x85D1D28
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:5117
 -
   desc: ProcScr_EfxPurgeBG
   label: ProcScr_EfxPurgeBG
   type: null
   addr: 0x85D1D40
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:5123
 -
   desc: ImgArray_EfxPurgeBG
   label: ImgArray_EfxPurgeBG
   type: null
   addr: 0x85D1D58
   size: 0x138
-  line: ''
+  line: banim_efxmagic.c:5129
 -
   desc: PalArray_EfxPurgeBG
   label: PalArray_EfxPurgeBG
   type: null
   addr: 0x85D1E90
   size: 0x138
-  line: ''
+  line: banim_efxmagic.c:5210
 -
   desc: TsaArray_EfxPurgeBG
   label: TsaArray_EfxPurgeBG
   type: null
   addr: 0x85D1FC8
   size: 0x138
-  line: ''
+  line: banim_efxmagic.c:5291
 -
   desc: ProcScr_EfxPurgeOBJRND
   label: ProcScr_EfxPurgeOBJRND
   type: null
   addr: 0x85D2100
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:5372
 -
   desc: Vecs_EfxPurgeOBJRND
   label: Vecs_EfxPurgeOBJRND
   type: null
   addr: 0x85D2120
   size: 0x38
-  line: ''
+  line: banim_efxmagic.c:5379
 -
   desc: ProcScr_EfxPurgeOBJ
   label: ProcScr_EfxPurgeOBJ
   type: null
   addr: 0x85D2158
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:5389
 -
   desc: ProcScr_EfxForblaze
   label: ProcScr_EfxForblaze
   type: null
   addr: 0x85D2178
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:5845
 -
   desc: ProcScr_EfxForblazeBG1
   label: ProcScr_EfxForblazeBG1
   type: null
   addr: 0x85D2190
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:5851
 -
   desc: TsaArray_EfxForblazeBG1
   label: TsaArray_EfxForblazeBG1
   type: null
   addr: 0x85D21A8
   size: 0x34
-  line: ''
+  line: banim_efxmagic.c:5857
 -
   desc: ImgArray_EfxForblazeBG1
   label: ImgArray_EfxForblazeBG1
   type: null
   addr: 0x85D21DC
   size: 0x34
-  line: ''
+  line: banim_efxmagic.c:5873
 -
   desc: ProcScr_EfxForblazeBGCOL1
   label: ProcScr_EfxForblazeBGCOL1
   type: null
   addr: 0x85D2210
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:5889
 -
   desc: ProcScr_EfxForblazeBGCtrl1
   label: ProcScr_EfxForblazeBGCtrl1
   type: null
   addr: 0x85D2230
   size: 0x40
-  line: ''
+  line: banim_efxmagic.c:5896
 -
   desc: ProcScr_EfxForblazeObjHandle
   label: ProcScr_EfxForblazeObjHandle
   type: null
   addr: 0x85D2270
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:5907
 -
   desc: XposArray_EfxForblazeOBJ
   label: XposArray_EfxForblazeOBJ
   type: null
   addr: 0x85D2288
   size: 0x58
-  line: ''
+  line: banim_efxmagic.c:5913
 -
   desc: ProcScr_EfxForblazeOBJ
   label: ProcScr_EfxForblazeOBJ
   type: null
   addr: 0x85D22E0
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:5938
 -
   desc: ProcScr_EfxForblazeBG2
   label: ProcScr_EfxForblazeBG2
   type: null
   addr: 0x85D22F8
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:5944
 -
   desc: ProcScr_EfxForblazeOBJCtrl
   label: ProcScr_EfxForblazeOBJCtrl
   type: null
   addr: 0x85D2310
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:5950
 -
   desc: ProcScr_EfxForblazeOBJFall
   label: ProcScr_EfxForblazeOBJFall
   type: null
   addr: 0x85D2328
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:5956
 -
   desc: ProcScr_EfxForblazeRST
   label: ProcScr_EfxForblazeRST
   type: null
   addr: 0x85D2340
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:5962
 -
   desc: ProcScr_EfxDivine
   label: ProcScr_EfxDivine
   type: null
   addr: 0x85D2358
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:6543
 -
   desc: ProcScr_EfxDivineBG
   label: ProcScr_EfxDivineBG
   type: null
   addr: 0x85D2370
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:6549
 -
   desc: ImgArray_EfxDivineBG
   label: ImgArray_EfxDivineBG
   type: null
   addr: 0x85D2388
   size: 0x50
-  line: ''
+  line: banim_efxmagic.c:6555
 -
   desc: TsaArray_EfxDivineBG
   label: TsaArray_EfxDivineBG
   type: null
   addr: 0x85D23D8
   size: 0x50
-  line: ''
+  line: banim_efxmagic.c:6578
 -
   desc: ImgArray_EfxDivineBG2
   label: ImgArray_EfxDivineBG2
   type: null
   addr: 0x85D2428
   size: 0xC
-  line: ''
+  line: banim_efxmagic.c:6601
 -
   desc: TsaArray_EfxDivineBG2
   label: TsaArray_EfxDivineBG2
   type: null
   addr: 0x85D2434
   size: 0xC
-  line: ''
+  line: banim_efxmagic.c:6607
 -
   desc: ImgArray_EfxDivineBG3
   label: ImgArray_EfxDivineBG3
   type: null
   addr: 0x85D2440
   size: 0x54
-  line: ''
+  line: banim_efxmagic.c:6613
 -
   desc: TsaArray_EfxDivineBG3
   label: TsaArray_EfxDivineBG3
   type: null
   addr: 0x85D2494
   size: 0x54
-  line: ''
+  line: banim_efxmagic.c:6637
 -
   desc: ProcScr_EfxDivineOBJ
   label: ProcScr_EfxDivineOBJ
   type: null
   addr: 0x85D24E8
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:6661
 -
   desc: ProcScr_EfxAureola
   label: ProcScr_EfxAureola
   type: null
   addr: 0x85D2500
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:6667
 -
   desc: ProcScr_EfxAureolaBG
   label: ProcScr_EfxAureolaBG
   type: null
   addr: 0x85D2518
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:6673
 -
   desc: ImgArray_EfxAureolaBG
   label: ImgArray_EfxAureolaBG
   type: null
   addr: 0x85D2530
   size: 0x14
-  line: ''
+  line: banim_efxmagic.c:6679
 -
   desc: TsaArray_EfxAureolaBG
   label: TsaArray_EfxAureolaBG
   type: null
   addr: 0x85D2544
   size: 0x14
-  line: ''
+  line: banim_efxmagic.c:6687
 -
   desc: ProcScr_EfxAureolaBG2
   label: ProcScr_EfxAureolaBG2
   type: null
   addr: 0x85D2558
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:6695
 -
   desc: ProcScr_EfxAureolaBG2COL
   label: ProcScr_EfxAureolaBG2COL
   type: null
   addr: 0x85D2570
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:6701
 -
   desc: ProcScr_EfxAureolaOBJ
   label: ProcScr_EfxAureolaOBJ
   type: null
   addr: 0x85D2590
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:6708
 -
   desc: ProcScr_EfxAureolaOBJCtrl
   label: ProcScr_EfxAureolaOBJCtrl
   type: null
   addr: 0x85D25A8
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:6714
 -
   desc: ProcScr_EfxAureolaOBJ2
   label: ProcScr_EfxAureolaOBJ2
   type: null
   addr: 0x85D25C0
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:6720
 -
   desc: ProcScr_EfxAureolaOBJ3
   label: ProcScr_EfxAureolaOBJ3
   type: null
   addr: 0x85D25D8
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:6726
 -
   desc: ProcScr_EfxAureolaOBJ3Ctrl
   label: ProcScr_EfxAureolaOBJ3Ctrl
   type: null
   addr: 0x85D25F0
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:6732
 -
   desc: ProcScr_EfxApocalypse
   label: ProcScr_EfxApocalypse
   type: null
   addr: 0x85D2608
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:7522
 -
   desc: ProcScr_EfxApocalypseBG
   label: ProcScr_EfxApocalypseBG
   type: null
   addr: 0x85D2620
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:7528
 -
   desc: ProcScr_EfxApocalypseBGCtrl
   label: ProcScr_EfxApocalypseBGCtrl
   type: null
   addr: 0x85D2638
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:7534
 -
   desc: ProcScr_EfxApocalypseBGCOL
   label: ProcScr_EfxApocalypseBGCOL
   type: null
   addr: 0x85D2658
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:7541
 -
   desc: ProcScr_EfxApocalypseOBJ
   label: ProcScr_EfxApocalypseOBJ
   type: null
   addr: 0x85D2678
   size: 0x38
-  line: ''
+  line: banim_efxmagic.c:7548
 -
   desc: AnimArray_EfxApocalypseOBJ
   label: AnimArray_EfxApocalypseOBJ
   type: null
   addr: 0x85D26B0
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:7567
 -
   desc: ProcScr_EfxApocalypseBGCOL2
   label: ProcScr_EfxApocalypseBGCOL2
   type: null
   addr: 0x85D26D0
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:7578
 -
   desc: ProcScr_EfxApocalypseDummy
   label: ProcScr_EfxApocalypseDummy
   type: null
   addr: 0x85D26F0
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:7585
 -
   desc: ProcScr_EfxApocalypseBgFlash1
   label: ProcScr_EfxApocalypseBgFlash1
   type: null
   addr: 0x85D2708
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:7591
 -
   desc: ProcScr_EfxApocalypseBgFlash2
   label: ProcScr_EfxApocalypseBgFlash2
   type: null
   addr: 0x85D2720
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:7597
 -
   desc: ProcScr_EfxApocalypseBG2
   label: ProcScr_EfxApocalypseBG2
   type: null
   addr: 0x85D2740
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:7604
 -
   desc: ImgArray_EfxApocalypseBG2
   label: ImgArray_EfxApocalypseBG2
   type: null
   addr: 0x85D2758
   size: 0x10
-  line: ''
+  line: banim_efxmagic.c:7610
 -
   desc: TsaArray_EfxApocalypseBG2
   label: TsaArray_EfxApocalypseBG2
   type: null
   addr: 0x85D2768
   size: 0x10
-  line: ''
+  line: banim_efxmagic.c:7617
 -
   desc: ProcScr_EfxApocalypseOBJ2
   label: ProcScr_EfxApocalypseOBJ2
   type: null
   addr: 0x85D2778
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:7624
 -
   desc: ProcScr_EfxApocalypseOBJ3
   label: ProcScr_EfxApocalypseOBJ3
   type: null
   addr: 0x85D2798
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:7631
 -
   desc: DuraArray_EfxApocalypseOBJ3RND
   label: DuraArray_EfxApocalypseOBJ3RND
   type: null
   addr: 0x85D27B0
   size: 0xCC
-  line: ''
+  line: banim_efxmagic.c:7637
 -
   desc: LoArray_EfxApocalypseOBJ3RND
   label: LoArray_EfxApocalypseOBJ3RND
   type: null
   addr: 0x85D287C
   size: 0xC8
-  line: ''
+  line: banim_efxmagic.c:7647
 -
   desc: StateArray_EfxApocalypseOBJ3RND
   label: StateArray_EfxApocalypseOBJ3RND
   type: null
   addr: 0x85D2944
   size: 0xC8
-  line: ''
+  line: banim_efxmagic.c:7657
 -
   desc: ProcScr_EfxApocalypseOBJ3RND
   label: ProcScr_EfxApocalypseOBJ3RND
   type: null
   addr: 0x85D2A0C
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:7667
 -
   desc: ProcScr_EfxHazymoon
   label: ProcScr_EfxHazymoon
   type: null
   addr: 0x85D2A24
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:8461
 -
   desc: ProcScr_EfxHazymoonBG
   label: ProcScr_EfxHazymoonBG
   type: null
   addr: 0x85D2A3C
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:8467
 -
   desc: TsaArray_EfxHazymoonBG
   label: TsaArray_EfxHazymoonBG
   type: null
   addr: 0x85D2A54
   size: 0x6C
-  line: ''
+  line: banim_efxmagic.c:8473
 -
   desc: ImgArray_EfxHazymoonBG
   label: ImgArray_EfxHazymoonBG
   type: null
   addr: 0x85D2AC0
   size: 0x6C
-  line: ''
+  line: banim_efxmagic.c:8503
 -
   desc: ProcScr_EfxHazymoonOBJ2
   label: ProcScr_EfxHazymoonOBJ2
   type: null
   addr: 0x85D2B2C
   size: 0x48
-  line: ''
+  line: banim_efxmagic.c:8533
 -
   desc: ProcScr_EfxHazymoonOBJ3
   label: ProcScr_EfxHazymoonOBJ3
   type: null
   addr: 0x85D2B74
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:8545
 -
   desc: gEclipseAnimSpriteCoordinates
   label: gEclipseAnimSpriteCoordinates
   type: null
   addr: 0x85D2B8C
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:8551
 -
   desc: ProcScr_EfxHazymoonOBJ3RND
   label: ProcScr_EfxHazymoonOBJ3RND
   type: null
   addr: 0x85D2BA4
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:8556
 -
   desc: ProcScr_EfxFenrir
   label: ProcScr_EfxFenrir
   type: null
   addr: 0x85D2BC4
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:8563
 -
   desc: ProcScr_EfxFenrirBG
   label: ProcScr_EfxFenrirBG
   type: null
   addr: 0x85D2BDC
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:8569
 -
   desc: ProcScr_EfxFenrirBGCOL
   label: ProcScr_EfxFenrirBGCOL
   type: null
   addr: 0x85D2BFC
   size: 0x28
-  line: ''
+  line: banim_efxmagic.c:8576
 -
   desc: ProcScr_EfxFenrirOBJ
   label: ProcScr_EfxFenrirOBJ
   type: null
   addr: 0x85D2C24
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:8584
 -
   desc: ProcScr_EfxFenrirBG2
   label: ProcScr_EfxFenrirBG2
   type: null
   addr: 0x85D2C3C
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:8590
 -
   desc: ImgArray_EfxFenrirBG2_A
   label: ImgArray_EfxFenrirBG2_A
   type: null
   addr: 0x85D2C54
   size: 0xCC
-  line: ''
+  line: banim_efxmagic.c:8596
 -
   desc: TsaArray_EfxFenrirBG2_A
   label: TsaArray_EfxFenrirBG2_A
   type: null
   addr: 0x85D2D20
   size: 0xCC
-  line: ''
+  line: banim_efxmagic.c:8650
 -
   desc: ProcScr_EfxFenrirOBJ2
   label: ProcScr_EfxFenrirOBJ2
   type: null
   addr: 0x85D2DEC
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:8704
 -
   desc: ProcScr_EfxFenrirOBJ2Chiri
   label: ProcScr_EfxFenrirOBJ2Chiri
   type: null
   addr: 0x85D2E04
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:8710
 -
   desc: gFenrirSpriteAngles
   label: gFenrirSpriteAngles
   type: null
   addr: 0x85D2E1C
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:8716
 -
   desc: ProcScr_EfxLive
   label: ProcScr_EfxLive
   type: null
   addr: 0x85D2E3C
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:9599
 -
   desc: ProcScr_EfxRelive
   label: ProcScr_EfxRelive
   type: null
   addr: 0x85D2E54
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:9661
 -
   desc: ProcScr_EfxRecover
   label: ProcScr_EfxRecover
   type: null
   addr: 0x85D2E6C
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:9728
 -
   desc: ProcScr_EfxReblow
   label: ProcScr_EfxReblow
   type: null
   addr: 0x85D2E84
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:9795
 -
   desc: ProcScr_EfxLiveBG
   label: ProcScr_EfxLiveBG
   type: null
   addr: 0x85D2E9C
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:9863
 -
   desc: ProcScr_EfxLiveBGCOL
   label: ProcScr_EfxLiveBGCOL
   type: null
   addr: 0x85D2EB4
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:9870
 -
   desc: ProcScr_EfxLiveALPHA
   label: ProcScr_EfxLiveALPHA
   type: null
   addr: 0x85D2ED4
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:9878
 -
   desc: ProcScr_EfxLiveOBJ
   label: ProcScr_EfxLiveOBJ
   type: null
   addr: 0x85D2EF4
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:9886
 -
   desc: ProcScr_EfxReserveOBJ
   label: ProcScr_EfxReserveOBJ
   type: null
   addr: 0x85D2F0C
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:10218
 -
   desc: ProcScr_EfxReblowOBJ
   label: ProcScr_EfxReblowOBJ
   type: null
   addr: 0x85D2F2C
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:10281
 -
   desc: ProcScr_EfxReserve
   label: ProcScr_EfxReserve
   type: null
   addr: 0x85D2F4C
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:10381
 -
   desc: ProcScr_EfxReserveBG
   label: ProcScr_EfxReserveBG
   type: null
   addr: 0x85D2F64
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:10388
 -
   desc: TsaArray_EfxReserveBG
   label: TsaArray_EfxReserveBG
   type: null
   addr: 0x85D2F7C
   size: 0x10
-  line: ''
+  line: banim_efxmagic.c:10395
 -
   desc: ProcScr_EfxReserveBGCOL
   label: ProcScr_EfxReserveBGCOL
   type: null
   addr: 0x85D2F8C
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:10403
 -
   desc: ProcScr_EfxReserveBG2
   label: ProcScr_EfxReserveBG2
   type: null
   addr: 0x85D2FAC
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:10411
 -
   desc: TsaArray_EfxReserveBG2
   label: TsaArray_EfxReserveBG2
   type: null
   addr: 0x85D2FC4
   size: 0x4
-  line: ''
+  line: banim_efxmagic.c:10418
 -
   desc: ProcScr_EfxReserveBGCOL2
   label: ProcScr_EfxReserveBGCOL2
   type: null
   addr: 0x85D2FC8
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:10423
 -
   desc: ProcScr_EfxRest
   label: ProcScr_EfxRest
   type: null
   addr: 0x85D2FE8
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:10814
 -
   desc: ProcScr_EfxRestBG
   label: ProcScr_EfxRestBG
   type: null
   addr: 0x85D3000
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:10821
 -
   desc: TsaArray_EfxRestBG
   label: TsaArray_EfxRestBG
   type: null
   addr: 0x85D3018
   size: 0x34
-  line: ''
+  line: banim_efxmagic.c:10828
 -
   desc: ImgArray_EfxRestBG
   label: ImgArray_EfxRestBG
   type: null
   addr: 0x85D304C
   size: 0x34
-  line: ''
+  line: banim_efxmagic.c:10845
 -
   desc: ProcScr_EfxRestOBJ
   label: ProcScr_EfxRestOBJ
   type: null
   addr: 0x85D3080
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:10862
 -
   desc: ProcScr_EfxSilence
   label: ProcScr_EfxSilence
   type: null
   addr: 0x85D30A0
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:11006
 -
   desc: ProcScr_EfxSilenceBG
   label: ProcScr_EfxSilenceBG
   type: null
   addr: 0x85D30B8
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:11013
 -
   desc: TsaArray_EfxSilenceBG
   label: TsaArray_EfxSilenceBG
   type: null
   addr: 0x85D30D0
   size: 0x48
-  line: ''
+  line: banim_efxmagic.c:11020
 -
   desc: ProcScr_EfxSilenceOBJ
   label: ProcScr_EfxSilenceOBJ
   type: null
   addr: 0x85D3118
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:11042
 -
   desc: ProcScr_EfxSleep
   label: ProcScr_EfxSleep
   type: null
   addr: 0x85D3138
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:11188
 -
   desc: ProcScr_EfxSleepBG
   label: ProcScr_EfxSleepBG
   type: null
   addr: 0x85D3150
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:11195
 -
   desc: TsaArray_EfxSleepBG
   label: TsaArray_EfxSleepBG
   type: null
   addr: 0x85D3168
   size: 0x40
-  line: ''
+  line: banim_efxmagic.c:11202
 -
   desc: ProcScr_EfxSleepOBJ
   label: ProcScr_EfxSleepOBJ
   type: null
   addr: 0x85D31A8
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:11222
 -
   desc: ProcScr_EfxSleepOBJ2
   label: ProcScr_EfxSleepOBJ2
   type: null
   addr: 0x85D31C8
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:11230
 -
   desc: ProcScr_EfxSleepSE
   label: ProcScr_EfxSleepSE
   type: null
   addr: 0x85D31E8
   size: 0x48
-  line: ''
+  line: banim_efxmagic.c:11238
 -
   desc: ProcScr_EfxHammarne
   label: ProcScr_EfxHammarne
   type: null
   addr: 0x85D3230
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:11470
 -
   desc: ProcScr_EfxHammarneBG
   label: ProcScr_EfxHammarneBG
   type: null
   addr: 0x85D3248
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:11477
 -
   desc: TsaArray_EfxHammarneBG
   label: TsaArray_EfxHammarneBG
   type: null
   addr: 0x85D3260
   size: 0x34
-  line: ''
+  line: banim_efxmagic.c:11484
 -
   desc: ImgArray_EfxHammarneBG
   label: ImgArray_EfxHammarneBG
   type: null
   addr: 0x85D3294
   size: 0x34
-  line: ''
+  line: banim_efxmagic.c:11501
 -
   desc: ProcScr_EfxHammarneOBJ
   label: ProcScr_EfxHammarneOBJ
   type: null
   addr: 0x85D32C8
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:11518
 -
   desc: ProcScr_EfxBerserk
   label: ProcScr_EfxBerserk
   type: null
   addr: 0x85D32E8
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:11651
 -
   desc: ProcScr_EfxBerserkBG
   label: ProcScr_EfxBerserkBG
   type: null
   addr: 0x85D3300
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:11658
 -
   desc: ProcScr_EfxBerserkCLONE
   label: ProcScr_EfxBerserkCLONE
   type: null
   addr: 0x85D3318
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:11665
 -
   desc: ProcScr_EfxBerserkOBJ
   label: ProcScr_EfxBerserkOBJ
   type: null
   addr: 0x85D3338
   size: 0xB8
-  line: ''
+  line: banim_efxmagic.c:11673
 -
   desc: ProcScr_EfxMshield
   label: ProcScr_EfxMshield
   type: null
   addr: 0x85D33F0
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:11978
 -
   desc: ProcScr_EfxMshieldBG
   label: ProcScr_EfxMshieldBG
   type: null
   addr: 0x85D3408
   size: 0x18
-  line: ''
+  line: banim_efxmagic.c:11985
 -
   desc: TsaArray_EfxMshieldBG
   label: TsaArray_EfxMshieldBG
   type: null
   addr: 0x85D3420
   size: 0x14
-  line: ''
+  line: banim_efxmagic.c:11992
 -
   desc: ProcScr_EfxMshieldOBJ
   label: ProcScr_EfxMshieldOBJ
   type: null
   addr: 0x85D3434
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:12001
 -
   desc: ProcScr_EfxMshieldOBJ2
   label: ProcScr_EfxMshieldOBJ2
   type: null
   addr: 0x85D3454
   size: 0x20
-  line: ''
+  line: banim_efxmagic.c:12009
 -
   desc: ProcScr_EfxDamageMojiEffect
   label: ProcScr_EfxDamageMojiEffect
@@ -116450,8 +116436,8 @@
   size: 0x18
   line: prep_utils.c:257
 -
-  desc: gUnk_0867978C
-  label: gUnk_0867978C
+  desc: gSecretScreenPlayRankGlyphTable
+  label: gSecretScreenPlayRankGlyphTable
   type: null
   addr: 0x867978C
   size: 0x44
@@ -116464,8 +116450,8 @@
   size: 0x50
   line: ''
 -
-  desc: gUnk_08679820
-  label: gUnk_08679820
+  desc: gSecretScreenUnitGlyphTable
+  label: gSecretScreenUnitGlyphTable
   type: null
   addr: 0x8679820
   size: 0x104
@@ -125457,14 +125443,14 @@
   type: null
   addr: 0x8689E84
   size: 0x18
-  line: savemenu.c:145
+  line: savemenu.c:146
 -
   desc: ProcScr_SaveMenu
   label: ProcScr_SaveMenu
   type: null
   addr: 0x8689E9C
   size: 0x200
-  line: savemenu.c:1134
+  line: savemenu.c:1135
 -
   desc: ProcScr_SaveDrawFadeIn
   label: ProcScr_SaveDrawFadeIn
@@ -125905,98 +125891,98 @@
   type: null
   addr: 0x868A568
   size: 0x8
-  line: ''
+  line: xmap.c:549
 -
-  desc: Sprite_0868A570
-  label: Sprite_0868A570
+  desc: Sprite_Unk_0868A570
+  label: Sprite_Unk_0868A570
   type: null
   addr: 0x868A570
-  size: 0x1C
-  line: ''
+  size: 0x1A
+  line: xmap.c:555
 -
   desc: ProcScr_Xmap
   label: ProcScr_Xmap
   type: null
   addr: 0x868A58C
   size: 0xA8
-  line: ''
+  line: xmap.c:564
 -
-  desc: ProcScr_0868A634
-  label: ProcScr_0868A634
+  desc: ProcScr_XmapSprites
+  label: ProcScr_XmapSprites
   type: null
   addr: 0x868A634
   size: 0x10
-  line: ''
+  line: xmap.c:651
 -
-  desc: ProcScr_0868A644
-  label: ProcScr_0868A644
+  desc: ProcScr_XmapVSync
+  label: ProcScr_XmapVSync
   type: null
   addr: 0x868A644
   size: 0x20
-  line: ''
+  line: xmap.c:726
 -
-  desc: gUnk_0868A664
-  label: gUnk_0868A664
+  desc: gSoundRoomInfo
+  label: gSoundRoomInfo
   type: null
   addr: 0x868A664
   size: 0x324
-  line: ''
+  line: soundroom.c:28
 -
   desc: Sprite_0868A988
   label: Sprite_0868A988
   type: null
   addr: 0x868A988
-  size: 0x10
-  line: ''
+  size: 0xE
+  line: soundroom.c:364
 -
-  desc: Imgs_0868A998
-  label: Imgs_0868A998
+  desc: gSoundRoomCgInfo
+  label: gSoundRoomCgInfo
   type: null
   addr: 0x868A998
   size: 0x50
-  line: ''
+  line: soundroom.c:370
 -
   desc: Sprite_0868A9E8
   label: Sprite_0868A9E8
   type: null
   addr: 0x868A9E8
   size: 0x8
-  line: ''
+  line: soundroom.c:383
 -
   desc: Sprite_0868A9F0
   label: Sprite_0868A9F0
   type: null
   addr: 0x868A9F0
   size: 0x8
-  line: ''
+  line: soundroom.c:388
 -
   desc: Sprite_0868A9F8
   label: Sprite_0868A9F8
   type: null
   addr: 0x868A9F8
   size: 0x10
-  line: ''
+  line: soundroom.c:393
 -
   desc: ProcScr_SoundRoom
   label: ProcScr_SoundRoom
   type: null
   addr: 0x868AA08
   size: 0x78
-  line: ''
+  line: soundroom.c:399
 -
   desc: ProcScr_0868AA80
   label: ProcScr_0868AA80
   type: null
   addr: 0x868AA80
   size: 0x28
-  line: ''
+  line: soundroom.c:420
 -
   desc: ProcScr_0868AAA8
   label: ProcScr_0868AAA8
   type: null
   addr: 0x868AAA8
   size: 0x20
-  line: ''
+  line: soundroom.c:428
 -
   desc: gpUiConfigSt
   label: gpUiConfigSt

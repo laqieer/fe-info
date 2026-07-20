@@ -39,7 +39,7 @@
   type: null
   addr: 0x2000000
   size: 0x2
-  line: savemenu.c:40
+  line: savemenu.c:41
 -
   desc: gUnk_Sio_02000000
   label: gUnk_Sio_02000000
@@ -53,7 +53,7 @@
   type: null
   addr: 0x2000002
   size: 0x400
-  line: savemenu.c:41
+  line: savemenu.c:42
 -
   desc: gEkrDebugTimer
   label: gEkrDebugTimer
@@ -185,7 +185,7 @@
   label: gBanimImgSheetBuf_Left
   type: null
   addr: 0x2000080
-  size: 0x1000
+  size: 0x2000
   line: banim_ekrmain.c:14
 -
   desc: OpEkrMiniDesc
@@ -229,6 +229,20 @@
   addr: 0x2000464
   size: 0x3
   line: savemenu_2.c:35
+-
+  desc: gSoundRoomText
+  label: gSoundRoomText
+  type: null
+  addr: 0x2000468
+  size: 0x44
+  line: soundroom.c:25
+-
+  desc: gSoundRoom_020004AC
+  label: gSoundRoom_020004AC
+  type: null
+  addr: 0x20004AC
+  size: 0x2
+  line: soundroom.c:26
 -
   desc: gMinimapFrontWinBuf
   label: gMinimapFrontWinBuf
@@ -276,15 +290,8 @@
   label: gText_Unk_Sio_02001018
   type: null
   addr: 0x2001018
-  size: 0x68
+  size: 0x288
   line: ''
--
-  desc: gBanimKakudaiBuf_Left
-  label: gBanimKakudaiBuf_Left
-  type: null
-  addr: 0x2001080
-  size: 0x1000
-  line: banim_ekrmain.c:15
 -
   desc: gUnk_Sio_020012A0
   label: gUnk_Sio_020012A0
@@ -332,8 +339,8 @@
   label: gBanimImgSheetBuf_Right
   type: null
   addr: 0x2002080
-  size: 0x1000
-  line: banim_ekrmain.c:16
+  size: 0x2000
+  line: banim_ekrmain.c:15
 -
   desc: OpEkrMini_OamBuf
   label: OpEkrMini_OamBuf
@@ -391,13 +398,6 @@
   size: 0x100
   line: battlepreview.c:62
 -
-  desc: gBanimKakudaiBuf_Right
-  label: gBanimKakudaiBuf_Right
-  type: null
-  addr: 0x2003080
-  size: 0x1000
-  line: banim_ekrmain.c:17
--
   desc: gStatScreenSt
   label: gStatScreenSt
   type: null
@@ -431,7 +431,7 @@
   type: null
   addr: 0x2004080
   size: 0xA0
-  line: banim_ekrmain.c:18
+  line: banim_ekrmain.c:16
 -
   desc: gStatusScreenSt
   label: gStatusScreenSt
@@ -445,7 +445,7 @@
   type: null
   addr: 0x2004120
   size: 0xA0
-  line: banim_ekrmain.c:19
+  line: banim_ekrmain.c:17
 -
   desc: gMuImgBuf
   label: gMuImgBuf
@@ -459,7 +459,7 @@
   type: null
   addr: 0x20041C0
   size: 0xB000
-  line: banim_ekrmain.c:20
+  line: banim_ekrmain.c:18
 -
   desc: OpEkrMini_PalBuf
   label: OpEkrMini_PalBuf
@@ -676,7 +676,7 @@
   type: null
   addr: 0x200F1C0
   size: 0x5400
-  line: banim_ekrmain.c:21
+  line: banim_ekrmain.c:19
 -
   desc: OpClassDemoTexts
   label: OpClassDemoTexts
@@ -711,7 +711,7 @@
   type: null
   addr: 0x20145C0
   size: 0x2000
-  line: banim_ekrmain.c:22
+  line: banim_ekrmain.c:20
 -
   desc: gPrepMenuItems
   label: gPrepMenuItems
@@ -788,7 +788,7 @@
   type: null
   addr: 0x20165C0
   size: 0x400
-  line: banim_ekrmain.c:23
+  line: banim_ekrmain.c:21
 -
   desc: sSallyCirWinH
   label: sSallyCirWinH
@@ -801,57 +801,71 @@
   label: gUnk_Pal_02016874
   type: null
   addr: 0x2016874
-  size: 0x7C
+  size: 0x74
   line: prep_sallycir.c:8
 -
-  desc: Unk_020168F0
-  label: Unk_020168F0
+  desc: gSecretScreenBitCount
+  label: gSecretScreenBitCount
   type: null
-  addr: 0x20168F0
+  addr: 0x20168E8
   size: 0x4
   line: secretscreen.c:17
 -
-  desc: Unk_020168F4
-  label: Unk_020168F4
+  desc: gSecretScreenBitMask
+  label: gSecretScreenBitMask
+  type: null
+  addr: 0x20168EC
+  size: 0x4
+  line: secretscreen.c:18
+-
+  desc: gSecretScreenSymbolCount
+  label: gSecretScreenSymbolCount
+  type: null
+  addr: 0x20168F0
+  size: 0x4
+  line: secretscreen.c:19
+-
+  desc: gSecretScreenInitSeed
+  label: gSecretScreenInitSeed
   type: null
   addr: 0x20168F4
   size: 0x4
-  line: secretscreen.c:18
+  line: secretscreen.c:20
 -
   desc: gSecretScreenTexts
   label: gSecretScreenTexts
   type: null
   addr: 0x20168F8
   size: 0x28
-  line: secretscreen.c:19
+  line: secretscreen.c:21
 -
   desc: gSecretScreenRN
   label: gSecretScreenRN
   type: null
   addr: 0x2016920
   size: 0x4
-  line: secretscreen.c:20
+  line: secretscreen.c:22
 -
-  desc: Unk_02016924
-  label: Unk_02016924
+  desc: gSecretScreenPasswordBuf
+  label: gSecretScreenPasswordBuf
   type: null
   addr: 0x2016924
   size: 0xA0
-  line: secretscreen.c:21
+  line: secretscreen.c:23
 -
   desc: Buf_EkrGaugeNumImg
   label: Buf_EkrGaugeNumImg
   type: null
   addr: 0x20169C0
   size: 0x400
-  line: banim_ekrmain.c:24
+  line: banim_ekrmain.c:22
 -
-  desc: Unk_020169C4
-  label: Unk_020169C4
+  desc: gSecretScreenPasswordMeta
+  label: gSecretScreenPasswordMeta
   type: null
   addr: 0x20169C4
   size: 0x8
-  line: secretscreen.c:22
+  line: secretscreen.c:24
 -
   desc: gAuguryIndex
   label: gAuguryIndex
@@ -1138,357 +1152,357 @@
   type: null
   addr: 0x2016DC0
   size: 0x80
-  line: banim_ekrmain.c:25
+  line: banim_ekrmain.c:23
 -
   desc: gUnk_Banim_02016E40
   label: gUnk_Banim_02016E40
   type: null
   addr: 0x2016E40
   size: 0x200
-  line: banim_ekrmain.c:26
+  line: banim_ekrmain.c:24
 -
   desc: gUnk_Banim_02017040
   label: gUnk_Banim_02017040
   type: null
   addr: 0x2017040
   size: 0x200
-  line: banim_ekrmain.c:27
+  line: banim_ekrmain.c:25
 -
   desc: gUnk_Banim_02017240
   label: gUnk_Banim_02017240
   type: null
   addr: 0x2017240
   size: 0x200
-  line: banim_ekrmain.c:28
+  line: banim_ekrmain.c:26
 -
   desc: gUnk_Banim_02017440
   label: gUnk_Banim_02017440
   type: null
   addr: 0x2017440
   size: 0x200
-  line: banim_ekrmain.c:29
+  line: banim_ekrmain.c:27
 -
   desc: gBanimFont
   label: gBanimFont
   type: null
   addr: 0x2017640
   size: 0x18
-  line: banim_ekrmain.c:30
+  line: banim_ekrmain.c:28
 -
   desc: gBanimText
   label: gBanimText
   type: null
   addr: 0x2017658
   size: 0xA0
-  line: banim_ekrmain.c:31
+  line: banim_ekrmain.c:29
 -
   desc: gEkrGaugeDecoder
   label: gEkrGaugeDecoder
   type: null
   addr: 0x20176F8
   size: 0x24
-  line: banim_ekrmain.c:32
+  line: banim_ekrmain.c:30
 -
   desc: gEkrBattleEndFlag
   label: gEkrBattleEndFlag
   type: null
   addr: 0x201771C
   size: 0x4
-  line: banim_ekrmain.c:33
+  line: banim_ekrmain.c:31
 -
   desc: gEkrHpBarCount
   label: gEkrHpBarCount
   type: null
   addr: 0x2017720
   size: 0x4
-  line: banim_ekrmain.c:34
+  line: banim_ekrmain.c:32
 -
   desc: gEfxSpellAnimExists
   label: gEfxSpellAnimExists
   type: null
   addr: 0x2017724
   size: 0x4
-  line: banim_ekrmain.c:35
+  line: banim_ekrmain.c:33
 -
   desc: gUnk_Banim_02017728
   label: gUnk_Banim_02017728
   type: null
   addr: 0x2017728
   size: 0x4
-  line: banim_ekrmain.c:36
+  line: banim_ekrmain.c:34
 -
   desc: gEkrDeadExist
   label: gEkrDeadExist
   type: null
   addr: 0x201772C
   size: 0x4
-  line: banim_ekrmain.c:37
+  line: banim_ekrmain.c:35
 -
   desc: gEkrDeadEventExist
   label: gEkrDeadEventExist
   type: null
   addr: 0x2017730
   size: 0x4
-  line: banim_ekrmain.c:38
+  line: banim_ekrmain.c:36
 -
   desc: gEfxQuakeExist
   label: gEfxQuakeExist
   type: null
   addr: 0x2017734
   size: 0x4
-  line: banim_ekrmain.c:39
+  line: banim_ekrmain.c:37
 -
   desc: gEfxHitQuakeExist
   label: gEfxHitQuakeExist
   type: null
   addr: 0x2017738
   size: 0x4
-  line: banim_ekrmain.c:40
+  line: banim_ekrmain.c:38
 -
   desc: gEkrInitPosReal
   label: gEkrInitPosReal
   type: null
   addr: 0x201773C
   size: 0x4
-  line: banim_ekrmain.c:41
+  line: banim_ekrmain.c:39
 -
   desc: gEfxFarAttackExist
   label: gEfxFarAttackExist
   type: null
   addr: 0x2017740
   size: 0x4
-  line: banim_ekrmain.c:42
+  line: banim_ekrmain.c:40
 -
   desc: gEfxBgSemaphore
   label: gEfxBgSemaphore
   type: null
   addr: 0x2017744
   size: 0x4
-  line: banim_ekrmain.c:43
+  line: banim_ekrmain.c:41
 -
   desc: gEfxHpBarResireFlag
   label: gEfxHpBarResireFlag
   type: null
   addr: 0x2017748
   size: 0x4
-  line: banim_ekrmain.c:44
+  line: banim_ekrmain.c:42
 -
   desc: gUnk_Banim_0201774C
   label: gUnk_Banim_0201774C
   type: null
   addr: 0x201774C
   size: 0x4
-  line: banim_ekrmain.c:45
+  line: banim_ekrmain.c:43
 -
   desc: gEfxTeonoState
   label: gEfxTeonoState
   type: null
   addr: 0x2017750
   size: 0x4
-  line: banim_ekrmain.c:46
+  line: banim_ekrmain.c:44
 -
   desc: gEfxTerrainLayerLow
   label: gEfxTerrainLayerLow
   type: null
   addr: 0x2017754
   size: 0x4
-  line: banim_ekrmain.c:47
+  line: banim_ekrmain.c:45
 -
   desc: gEkrBg2QuakeVec
   label: gEkrBg2QuakeVec
   type: null
   addr: 0x2017758
   size: 0x4
-  line: banim_ekrmain.c:48
+  line: banim_ekrmain.c:46
 -
   desc: gUnk_Banim_0201775C
   label: gUnk_Banim_0201775C
   type: null
   addr: 0x201775C
   size: 0x4
-  line: banim_ekrmain.c:49
+  line: banim_ekrmain.c:47
 -
   desc: gEfxSpecalEffectExist
   label: gEfxSpecalEffectExist
   type: null
   addr: 0x2017760
   size: 0x4
-  line: banim_ekrmain.c:50
+  line: banim_ekrmain.c:48
 -
   desc: gpProcEfxStatusUnits
   label: gpProcEfxStatusUnits
   type: null
   addr: 0x2017764
   size: 0x8
-  line: banim_ekrmain.c:51
+  line: banim_ekrmain.c:49
 -
   desc: gpProcEfxWeaponIcon
   label: gpProcEfxWeaponIcon
   type: null
   addr: 0x201776C
   size: 0x4
-  line: banim_ekrmain.c:52
+  line: banim_ekrmain.c:50
 -
   desc: gpProcEfxSpellCast
   label: gpProcEfxSpellCast
   type: null
   addr: 0x2017770
   size: 0x4
-  line: banim_ekrmain.c:53
+  line: banim_ekrmain.c:51
 -
   desc: gpProcEfxHpBarColorChange
   label: gpProcEfxHpBarColorChange
   type: null
   addr: 0x2017774
   size: 0x4
-  line: banim_ekrmain.c:54
+  line: banim_ekrmain.c:52
 -
   desc: gEkrHitNow
   label: gEkrHitNow
   type: null
   addr: 0x2017778
   size: 0x4
-  line: banim_ekrmain.c:55
+  line: banim_ekrmain.c:53
 -
   desc: gSpellAnimBgfx
   label: gSpellAnimBgfx
   type: null
   addr: 0x201777C
   size: 0x1D00
-  line: banim_ekrmain.c:56
+  line: banim_ekrmain.c:54
 -
   desc: gEkrBarfxBuf
   label: gEkrBarfxBuf
   type: null
   addr: 0x201947C
   size: 0x300
-  line: banim_ekrmain.c:57
+  line: banim_ekrmain.c:55
 -
   desc: gEkrTsaBuffer
   label: gEkrTsaBuffer
   type: null
   addr: 0x201977C
   size: 0x1000
-  line: banim_ekrmain.c:58
+  line: banim_ekrmain.c:56
 -
   desc: gBuf_Banim
   label: gBuf_Banim
   type: null
   addr: 0x201A77C
   size: 0x2000
-  line: banim_ekrmain.c:59
+  line: banim_ekrmain.c:57
 -
   desc: gPal_Banim
   label: gPal_Banim
   type: null
   addr: 0x201C77C
   size: 0x140
-  line: banim_ekrmain.c:60
+  line: banim_ekrmain.c:58
 -
   desc: gTmA_Banim
   label: gTmA_Banim
   type: null
   addr: 0x201C8BC
   size: 0xB58
-  line: banim_ekrmain.c:61
+  line: banim_ekrmain.c:59
 -
   desc: gTmB_Banim
   label: gTmB_Banim
   type: null
   addr: 0x201D414
   size: 0xB58
-  line: banim_ekrmain.c:62
+  line: banim_ekrmain.c:60
 -
   desc: gEfxSplitedColorBufA
   label: gEfxSplitedColorBufA
   type: null
   addr: 0x201DF6C
   size: 0x60
-  line: banim_ekrmain.c:63
+  line: banim_ekrmain.c:61
 -
   desc: gEfxSplitedColorBufB
   label: gEfxSplitedColorBufB
   type: null
   addr: 0x201DFCC
   size: 0x60
-  line: banim_ekrmain.c:64
+  line: banim_ekrmain.c:62
 -
   desc: gEfxSplitedColorBufC
   label: gEfxSplitedColorBufC
   type: null
   addr: 0x201E02C
   size: 0xC0
-  line: banim_ekrmain.c:65
+  line: banim_ekrmain.c:63
 -
   desc: gEkrWindowAppearUnexist
   label: gEkrWindowAppearUnexist
   type: null
   addr: 0x201E0EC
   size: 0x4
-  line: banim_ekrmain.c:66
+  line: banim_ekrmain.c:64
 -
   desc: gEkrNameWinAppearExist
   label: gEkrNameWinAppearExist
   type: null
   addr: 0x201E0F0
   size: 0x4
-  line: banim_ekrmain.c:67
+  line: banim_ekrmain.c:65
 -
   desc: gProcEkrBaseAppearExist
   label: gProcEkrBaseAppearExist
   type: null
   addr: 0x201E0F4
   size: 0x4
-  line: banim_ekrmain.c:68
+  line: banim_ekrmain.c:66
 -
   desc: gUnk_Banim_0201E0F8
   label: gUnk_Banim_0201E0F8
   type: null
   addr: 0x201E0F8
   size: 0x4
-  line: banim_ekrmain.c:69
+  line: banim_ekrmain.c:67
 -
   desc: gEkrTerrainfxDesc
   label: gEkrTerrainfxDesc
   type: null
   addr: 0x201E0FC
   size: 0x28
-  line: banim_ekrmain.c:70
+  line: banim_ekrmain.c:68
 -
   desc: gBanimDoneFlag
   label: gBanimDoneFlag
   type: null
   addr: 0x201E124
   size: 0x8
-  line: banim_ekrmain.c:71
+  line: banim_ekrmain.c:69
 -
   desc: gEkrBgPosition
   label: gEkrBgPosition
   type: null
   addr: 0x201E12C
   size: 0x4
-  line: banim_ekrmain.c:72
+  line: banim_ekrmain.c:70
 -
   desc: gUnk_Banim_0201E130
   label: gUnk_Banim_0201E130
   type: null
   addr: 0x201E130
   size: 0x8
-  line: banim_ekrmain.c:73
+  line: banim_ekrmain.c:71
 -
   desc: gpProcEfxAnimeDrv
   label: gpProcEfxAnimeDrv
   type: null
   addr: 0x201E138
   size: 0x4
-  line: banim_ekrmain.c:74
+  line: banim_ekrmain.c:72
 -
   desc: gpImgSheet
   label: gpImgSheet
   type: null
   addr: 0x201E13C
   size: 0x8
-  line: banim_ekrmain.c:75
+  line: banim_ekrmain.c:73
 -
   desc: gpProcEkrTogiColor
   label: gpProcEkrTogiColor
@@ -2771,8 +2785,8 @@
   size: 0x8
   line: banim_ekrbattle.c:40
 -
-  desc: gBanimUnitChgForceImg
-  label: gBanimUnitChgForceImg
+  desc: gBanimBallistaImages
+  label: gBanimBallistaImages
   type: null
   addr: 0x203CD98
   size: 0x8
@@ -3121,8 +3135,8 @@
   size: 0x78
   line: secretscreen.c:14
 -
-  desc: Unk_0203D518
-  label: Unk_0203D518
+  desc: gSecretScreenSupportLevels
+  label: gSecretScreenSupportLevels
   type: null
   addr: 0x203D518
   size: 0xA
@@ -3198,12 +3212,33 @@
   size: 0x4
   line: save_xmap.c:19
 -
+  desc: gXmapState
+  label: gXmapState
+  type: null
+  addr: 0x203DBE8
+  size: 0x54
+  line: xmap.c:32
+-
   desc: gXmapTexts
   label: gXmapTexts
   type: null
   addr: 0x203DC3C
   size: 0x30
-  line: ''
+  line: xmap.c:34
+-
+  desc: gUnk_0203DC6C
+  label: gUnk_0203DC6C
+  type: null
+  addr: 0x203DC6C
+  size: 0x1
+  line: xmap.c:35
+-
+  desc: gUnk_0203DC6D
+  label: gUnk_0203DC6D
+  type: null
+  addr: 0x203DC6D
+  size: 0x1
+  line: xmap.c:36
 -
   desc: gEndingUids1
   label: gEndingUids1
@@ -4106,8 +4141,8 @@
   size: 0x7
   line: ''
 -
-  desc: gSecretScreen_030048C0
-  label: gSecretScreen_030048C0
+  desc: gSecretScreenPlayRankStats
+  label: gSecretScreenPlayRankStats
   type: null
   addr: 0x30048C0
   size: 0x14

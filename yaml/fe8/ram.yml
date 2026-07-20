@@ -2928,8 +2928,8 @@
   size: 0xC
   line: cp_decide.c:26
 -
-  desc: gUnkData_0
-  label: gUnkData_0
+  desc: gAiStoredTargetCharId
+  label: gAiStoredTargetCharId
   type: null
   addr:
     U: 0x203AAA0
@@ -4973,7 +4973,7 @@
     J: 0x3000120
   size:
     J: 0x40
-  line: ''
+  line: m4a.c:15
 -
   desc: gMPlay_SE2
   label: gMPlay_SE2
@@ -4982,7 +4982,7 @@
     J: 0x3000160
   size:
     J: 0x40
-  line: ''
+  line: m4a.c:14
 -
   desc: gMPlay_BGM
   label: gMPlay_BGM
@@ -4991,7 +4991,7 @@
     J: 0x30001A0
   size:
     J: 0x40
-  line: ''
+  line: m4a.c:12
 -
   desc: gSoundInfo
   label: gSoundInfo
@@ -5047,7 +5047,7 @@
     J: 0x3001190
   size:
     J: 0x40
-  line: ''
+  line: m4a.c:13
 -
   desc: sCombatScoreCoefficients
   label: sCombatScoreCoefficients
@@ -5137,7 +5137,7 @@
     J: 0x30018F0
   size:
     J: 0x4
-  line: ''
+  line: mu_0807BA68.c:63
 -
   desc: sClearedPixelWordMask.10
   label: sClearedPixelWordMask.10
@@ -5146,7 +5146,7 @@
     J: 0x30018F4
   size:
     J: 0x4
-  line: ''
+  line: mu_0807BA68.c:64
 -
   desc: gAnims
   label: gAnims
